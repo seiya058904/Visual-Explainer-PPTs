@@ -77,7 +77,8 @@
 ```powershell
 $p = '2026-08-14-ai-weather-learning-the-atmosphere/index.html'
 $html = Get-Content -Raw -Encoding UTF8 $p
-([regex]::Matches($html, '<section class="slide')).Count
+$source = [regex]::Replace($html, '<!--[\\s\\S]*?-->', '')
+([regex]::Matches($source, '<section class="slide')).Count
 ([regex]::Matches($html, 'data-slide-id="[^"]+"')).Count
 ```
 
