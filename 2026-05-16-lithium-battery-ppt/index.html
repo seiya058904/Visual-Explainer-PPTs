@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="color-scheme" content="light" />
+<title>锂电池：被驯服的移动能量密度</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600&family=Noto+Sans+SC:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fafaf8;
+    --paper-rgb:250,250,248;
+    --ink:#0a0a0a;
+    --ink-rgb:10,10,10;
+    --accent:#002FA7;
+    --accent-rgb:0,47,167;
+    --accent-on:#ffffff;
+    --border:#d8d8d5;
+    --muted:#6d6d6d;
+    --muted-2:#8c8c8c;
+    --sans:"Inter","Helvetica Neue","Helvetica","Arial","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+    --mono:"JetBrains Mono","SFMono-Regular","Consolas","Courier New",monospace;
+    --sp-1:8px;
+    --sp-2:12px;
+    --sp-3:16px;
+    --sp-4:24px;
+    --sp-5:32px;
+    --sp-6:40px;
+    --sp-7:48px;
+    --sp-8:64px;
+    --sp-9:80px;
+    --sp-10:96px;
+    --ease:cubic-bezier(.2,0,.28,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  button{font:inherit}
+  canvas.bg{
+    position:fixed;
+    inset:0;
+    width:100vw;
+    height:100vh;
+    pointer-events:none;
+    z-index:0;
+    opacity:.42;
+    mix-blend-mode:multiply;
+  }
+  body.dark-bg canvas.bg{
+    opacity:.32;
+    mix-blend-mode:screen;
+  }
+  body.low-power canvas.bg{
+    display:none!important;
+  }
+  #deck{
+    position:fixed;
+    inset:0;
+    width:10000vw;
+    height:100vh;
+    display:flex;
+    will-change:transform;
+    transition:transform .82s cubic-bezier(.77,0,.175,1);
+    z-index:2;
+  }
+  .slide{
+    width:100vw;
+    height:100vh;
+    flex:0 0 100vw;
+    position:relative;
+    overflow:hidden;
+    padding:5.5vh 5vw 4.6vh;
+    background:var(--paper);
+    color:var(--ink);
+  }
+  .slide.light{background:var(--paper);color:var(--ink)}
+  .slide.dark{background:var(--ink);color:var(--paper)}
+  .slide.accent{background:var(--accent);color:var(--accent-on)}
+  .slide.hero{padding-top:5vh}
+  .slide::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    border-top:1px solid rgba(120,120,120,.08);
+  }
+  .slide.dark::before{border-top-color:rgba(245,245,242,.12)}
+  .canvas-card{
+    position:relative;
+    z-index:1;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    min-height:0;
+  }
+  .chrome{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:2rem;
+    margin-bottom:var(--sp-8);
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    opacity:.72;
+  }
+  .chrome .l,.chrome .r{
+    display:flex;
+    align-items:center;
+    gap:1.2rem;
+    flex-wrap:wrap;
+  }
+  .chrome .sep{
+    width:24px;
+    height:1px;
+    background:currentColor;
+    opacity:.55;
+  }
+  .content{
+    position:relative;
+    flex:1;
+    min-height:0;
+    display:grid;
+    gap:2.2vh;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:minmax(0,1.15fr) minmax(340px,.85fr);
+    gap:4vw;
+    align-items:start;
+  }
+  .split-grid{
+    display:grid;
+    grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+    gap:4vw;
+    align-items:start;
+  }
+  .stack{
+    display:flex;
+    flex-direction:column;
+    gap:2vh;
+    min-width:0;
+  }
+  .kicker{
+    display:inline-flex;
+    align-items:center;
+    gap:.85em;
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:.26em;
+    text-transform:uppercase;
+    opacity:.72;
+  }
+  .kicker::before{
+    content:"";
+    width:24px;
+    height:1px;
+    background:currentColor;
+    opacity:.6;
+  }
+  .t-meta{
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    opacity:.66;
+  }
+  .h-hero{
+    font-size:min(9vw,15.5vh);
+    line-height:.9;
+    letter-spacing:-.04em;
+    font-weight:200;
+    max-width:10.8ch;
+  }
+  .h-xl{
+    font-size:min(6vw,10.6vh);
+    line-height:.95;
+    letter-spacing:-.035em;
+    font-weight:200;
+    max-width:12ch;
+  }
+  .h-md{
+    font-size:clamp(24px,2.7vw,40px);
+    line-height:1.08;
+    letter-spacing:-.025em;
+    font-weight:300;
+  }
+  .lead{
+    font-size:clamp(15px,1.05vw,18px);
+    line-height:1.55;
+    max-width:42ch;
+    opacity:.9;
+  }
+  .body{
+    font-size:clamp(13px,1vw,17px);
+    line-height:1.7;
+    max-width:60ch;
+    opacity:.82;
+  }
+  .body-sm{
+    font-size:clamp(11px,.86vw,14px);
+    line-height:1.55;
+    opacity:.74;
+  }
+  .title-block{
+    display:flex;
+    flex-direction:column;
+    gap:1.8vh;
+  }
+  .panel{
+    border:1px solid currentColor;
+    padding:1.4rem 1.4rem 1.2rem;
+    background:rgba(255,255,255,.02);
+  }
+  .slide.dark .panel{border-color:rgba(245,245,242,.18)}
+  .panel .label{
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    opacity:.75;
+    margin-bottom:.85rem;
+  }
+  .panel .text{font-size:clamp(13px,1vw,16px);line-height:1.72;opacity:.88}
+  .panel .text + .text{margin-top:.6rem}
+  .panel .big{
+    font-size:clamp(28px,3.4vw,52px);
+    line-height:.96;
+    letter-spacing:-.03em;
+    font-weight:200;
+    margin-bottom:.55rem;
+  }
+  .foot{
+    margin-top:auto;
+    padding-top:2vh;
+    padding-bottom:7.8vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:2rem;
+    border-top:1px solid currentColor;
+    opacity:.58;
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+  }
+  .foot .nb{font-family:var(--sans);font-weight:600;letter-spacing:.04em}
+  .chips{
+    display:flex;
+    gap:.6rem;
+    flex-wrap:wrap;
+  }
+  .chip{
+    border:1px solid currentColor;
+    padding:.52rem .82rem;
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+  }
+  .kpi-row{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:1rem;
+  }
+  .kpi{
+    border-top:1px solid currentColor;
+    padding-top:.95rem;
+    min-height:100px;
+  }
+  .kpi .m{
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    opacity:.72;
+  }
+  .kpi .n{
+    display:block;
+    margin-top:.35rem;
+    font-size:clamp(28px,3.8vw,58px);
+    line-height:.92;
+    letter-spacing:-.03em;
+    font-weight:200;
+  }
+  .kpi .l{
+    margin-top:.5rem;
+    font-size:clamp(12px,.92vw,15px);
+    line-height:1.45;
+    opacity:.78;
+  }
+  .timeline{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1.1rem;
+    max-width:60ch;
+  }
+  .timeline .row{
+    display:grid;
+    grid-template-columns:92px 1fr;
+    gap:1.2rem;
+    align-items:flex-start;
+    padding-bottom:1rem;
+    border-bottom:1px solid currentColor;
+    border-color:rgba(127,127,127,.18);
+  }
+  .timeline .year{
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    opacity:.7;
+    padding-top:.2rem;
+  }
+  .timeline .desc{
+    font-size:clamp(13px,1vw,16px);
+    line-height:1.65;
+  }
+  .compare{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0;
+    border:1px solid currentColor;
+  }
+  .compare .col{
+    padding:1.3rem 1.2rem 1.4rem;
+  }
+  .compare .col + .col{
+    border-left:1px solid currentColor;
+  }
+  .compare .tag{
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    opacity:.72;
+    margin-bottom:.95rem;
+  }
+  .compare .big{
+    font-size:clamp(28px,3.6vw,56px);
+    line-height:.94;
+    letter-spacing:-.03em;
+    font-weight:200;
+    margin-bottom:.8rem;
+  }
+  .compare .copy{
+    font-size:clamp(13px,1vw,16px);
+    line-height:1.68;
+    opacity:.84;
+  }
+  .bars{
+    display:grid;
+    gap:.95rem;
+    margin-top:1.3rem;
+  }
+  .bar-row{
+    display:grid;
+    grid-template-columns:74px 1fr 72px;
+    gap:.9rem;
+    align-items:center;
+  }
+  .bar-row .name,
+  .bar-row .state{
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    opacity:.72;
+  }
+  .bar{
+    position:relative;
+    height:14px;
+    border:1px solid currentColor;
+    overflow:hidden;
+  }
+  .bar i{
+    display:block;
+    height:100%;
+    width:0%;
+    background:var(--accent);
+  }
+  .dark .bar i{background:var(--paper)}
+  .ledger{
+    display:grid;
+    gap:.95rem;
+  }
+  .ledger .line{
+    display:grid;
+    grid-template-columns:118px 1fr 82px;
+    gap:1rem;
+    align-items:baseline;
+    padding-bottom:.75rem;
+    border-bottom:1px solid currentColor;
+    border-color:rgba(127,127,127,.18);
+  }
+  .ledger .left,
+  .ledger .right{
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    opacity:.72;
+  }
+  .ledger .mid{
+    font-size:clamp(13px,1vw,16px);
+    line-height:1.62;
+  }
+  .spec{
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:3.5vw;
+    align-items:end;
+  }
+  .spec .block{
+    border-top:1px solid currentColor;
+    padding-top:1rem;
+  }
+  .spec .num{
+    font-size:clamp(44px,6vw,88px);
+    line-height:.88;
+    letter-spacing:-.04em;
+    font-weight:200;
+  }
+  .spec .desc{
+    margin-top:.6rem;
+    font-size:clamp(13px,1vw,16px);
+    line-height:1.7;
+    opacity:.84;
+  }
+  .system-flow{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:1rem;
+  }
+  .system-flow .node{
+    border:1px solid currentColor;
+    padding:1.15rem 1.1rem 1rem;
+    min-height:150px;
+  }
+  .system-flow .node .k{
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    opacity:.72;
+    margin-bottom:.7rem;
+  }
+  .system-flow .node .t{
+    font-size:clamp(22px,2.6vw,40px);
+    line-height:1;
+    letter-spacing:-.03em;
+    font-weight:200;
+    margin-bottom:.65rem;
+  }
+  .system-flow .node .d{
+    font-size:clamp(12px,.96vw,15px);
+    line-height:1.62;
+    opacity:.82;
+  }
+  .closing{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:4vw;
+    align-items:end;
+  }
+  .closing .quote{
+    font-size:clamp(28px,4vw,68px);
+    line-height:.98;
+    letter-spacing:-.035em;
+    font-weight:200;
+    max-width:10ch;
+  }
+  .closing .copy{
+    font-size:clamp(15px,1.05vw,18px);
+    line-height:1.7;
+    max-width:36ch;
+    opacity:.88;
+  }
+  .closing .note{
+    margin-top:1.6rem;
+    border-top:1px solid currentColor;
+    padding-top:1rem;
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    opacity:.72;
+  }
+  .title-hero{
+    font-size:min(10vw,16vh);
+    line-height:.9;
+    letter-spacing:-.045em;
+    font-weight:200;
+    max-width:10.5ch;
+  }
+  .slide.dark .panel,
+  .slide.dark .chip,
+  .slide.dark .kpi,
+  .slide.dark .ledger .line,
+  .slide.dark .compare,
+  .slide.dark .system-flow .node{
+    border-color:rgba(245,245,242,.18);
+  }
+  .slide[data-layout="S01"] .hero-grid{
+    grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);
+  }
+  .slide[data-layout="S01"] .title-hero{
+    max-width:9.6ch;
+  }
+  .slide[data-layout="S01"] .lead{
+    max-width:33ch;
+  }
+  .slide[data-layout="S18"] .kpi-row{margin-top:.2rem}
+  .slide[data-layout="S03"] .split-grid{grid-template-columns:1.05fr .95fr}
+  .slide[data-layout="S06"] .kpi-row{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .slide[data-layout="S08"] .system-flow{grid-template-columns:1fr 1fr 1fr}
+  .slide[data-layout="S10"] .closing{grid-template-columns:1.15fr .85fr}
+  .slide.dark .bar,
+  .slide.dark .compare,
+  .slide.dark .system-flow .node{background:rgba(255,255,255,.01)}
+  .slide.light .bar i{background:var(--accent)}
+  .slide.hero .content{gap:2.5vh}
+  .slide:not(.hero) .content{gap:2vh}
+  .slide[data-layout="S18"] .timeline{max-width:none}
+  .slide[data-layout="S21"] .spec{align-items:center}
+  .slide[data-layout="S21"] .spec .num{font-size:clamp(38px,5vw,72px)}
+  .slide[data-layout="S10"] .title-block{gap:1.5vh}
+  .slide[data-layout="S10"] .lead{max-width:34ch}
+  .slide[data-layout="S10"] .closing .quote{max-width:9ch}
+  .slide[data-layout="S02"] .timeline .desc{max-width:60ch}
+  .slide[data-layout="S07"] .ledger{margin-top:1rem}
+  .hud{
+    position:fixed;
+    right:2vw;
+    bottom:2.8vh;
+    z-index:20;
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    padding:.75rem .85rem;
+    border:1px solid currentColor;
+    background:rgba(7,7,9,.92);
+    color:var(--paper);
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+  }
+  .hud .nb{font-family:var(--sans);font-weight:600;letter-spacing:.04em}
+  .hud button{
+    border:1px solid currentColor;
+    background:transparent;
+    color:inherit;
+    width:36px;
+    height:36px;
+    cursor:pointer;
+  }
+  .hud .overview-toggle{width:36px}
+  .dots{
+    display:flex;
+    gap:.28rem;
+    align-items:center;
+  }
+  .dots button{
+    width:9px;
+    height:9px;
+    border:1px solid currentColor;
+    background:transparent;
+    padding:0;
+    opacity:.72;
+  }
+  .dots button.active{background:currentColor}
+  #overview{
+    position:fixed;
+    inset:0;
+    z-index:30;
+    background:rgba(250,250,248,.95);
+    color:var(--ink);
+    display:none;
+    padding:5vh 5vw;
+  }
+  #overview.dark{background:rgba(10,10,10,.96);color:var(--paper)}
+  .overview-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:2rem;
+    font-family:var(--mono);
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    font-size:11px;
+  }
+  .overview-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:1rem;
+  }
+  .overview-card{
+    border:1px solid currentColor;
+    padding:1rem 1rem .9rem;
+    text-align:left;
+    background:transparent;
+    color:inherit;
+    cursor:pointer;
+    min-height:132px;
+    display:flex;
+    flex-direction:column;
+    gap:.55rem;
+  }
+  .overview-card .nb{
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:.2em;
+    opacity:.68;
+  }
+  .overview-card .ttl{
+    font-size:clamp(18px,2vw,28px);
+    line-height:1.06;
+    letter-spacing:-.025em;
+    font-weight:200;
+  }
+  .overview-card .ly{
+    margin-top:auto;
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    opacity:.66;
+  }
+  @media (max-width: 1200px){
+    .hero-grid,.split-grid,.closing,.spec{grid-template-columns:1fr}
+    .system-flow,.kpi-row,.compare{grid-template-columns:1fr 1fr}
+    .slide[data-layout="S01"] .hero-grid{grid-template-columns:1fr}
+  }
+  @media (max-width: 800px){
+    .slide{padding:4vh 4vw 4.5vh}
+    .chrome,.foot,.hud{font-size:10px}
+    .hero-grid,.split-grid,.closing,.spec,.system-flow,.kpi-row,.compare,.overview-grid{grid-template-columns:1fr}
+    .timeline .row,.ledger .line{grid-template-columns:72px 1fr}
+    .hud{right:2vw;left:2vw;justify-content:space-between}
+    .h-hero,.title-hero{font-size:14vw;max-width:100%}
+    .h-xl{font-size:11vw}
+  }
+</style>
+</head>
+<body>
+  <canvas id="bg" class="bg" aria-hidden="true"></canvas>
+
+  <main id="deck">
+    <section class="slide accent hero" data-layout="S01" data-animate="hero" data-nav-title="锂电池：被驯服的移动能量密度">
+      <div class="canvas-card">
+        <div class="chrome">
+          <div class="l">LI-ION / 01 <span class="sep"></span> 纯文字版</div>
+          <div class="r">SWISS LOCKED MODE <span class="sep"></span> 01 / 10</div>
+        </div>
+        <div class="content hero-grid">
+          <div class="stack">
+            <div class="kicker anim" data-anim="kicker">封面 / 纯文字版</div>
+            <h1 class="title-hero anim" data-anim="title">锂电池：<br>被驯服的移动能量密度</h1>
+            <p class="lead anim" data-anim="lead">现代文明的流动性，取决于能量被压缩到什么程度。</p>
+            <div class="chips anim" data-anim="chips">
+              <span class="chip">手机</span>
+              <span class="chip">电动车</span>
+              <span class="chip">无人机</span>
+              <span class="chip">移动自由</span>
+            </div>
+          </div>
+          <div class="stack">
+            <div class="panel anim" data-anim="panel">
+              <div class="label">核心判断</div>
+              <div class="big">它不是“没有电线”，<br>而是把电线藏起来。</div>
+              <div class="text">锂电池把外部供电的束缚，转化成设备内部可以管理、可以计量、可以控制的化学能。</div>
+            </div>
+            <div class="panel anim" data-anim="panel">
+              <div class="label">三件事</div>
+              <div class="text">轻，才会被带在身边。</div>
+              <div class="text">稳，才会被长期信任。</div>
+              <div class="text">高密度，才会改变移动方式。</div>
+            </div>
+            <div class="panel anim" data-anim="panel">
+              <div class="label">隐藏心脏</div>
+              <div class="big">Li</div>
+              <div class="text">一枚很小的元素，撑起今天最日常的自由。</div>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="nb">01 / 10</div>
+          <div>opening statement</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide light" data-layout="S18" data-animate="timeline" data-nav-title="为什么是今天">
+      <div class="canvas-card">
+        <div class="chrome">
+          <div class="l">LI-ION / 02 <span class="sep"></span> 为什么是今天</div>
+          <div class="r">WHY NOW <span class="sep"></span> 02 / 10</div>
+        </div>
+        <div class="content">
+          <div class="title-block">
+            <div class="kicker anim" data-anim="kicker">章节 02 / 现实入口</div>
+            <h2 class="h-xl anim" data-anim="title">为什么锂电池，<br>会变成今天的基础设施</h2>
+            <p class="body anim" data-anim="lead">不是因为它最完美，而是因为它刚好把三个目标同时拉到了可用区间：足够轻、足够稳、足够能装下现代生活。</p>
+          </div>
+          <div class="timeline anim" data-anim="timeline">
+            <div class="row">
+              <div class="year">1991</div>
+              <div class="desc">商业化锂离子电池开始进入市场，移动电子设备第一次真正摆脱固定电源。</div>
+            </div>
+            <div class="row">
+              <div class="year">2010s</div>
+              <div class="desc">智能手机、电动工具、笔记本和消费电子把“可充电、可反复使用”变成默认选项。</div>
+            </div>
+            <div class="row">
+              <div class="year">2020s</div>
+              <div class="desc">电动车、储能和无人系统把锂电池从“设备零件”推成“产业底层能力”。</div>
+            </div>
+          </div>
+          <div class="kpi-row">
+            <div class="kpi anim" data-anim="kpi">
+              <span class="m">力量</span>
+              <span class="n">3</span>
+              <span class="l">锂是最轻的固体金属之一。</span>
+            </div>
+            <div class="kpi anim" data-anim="kpi">
+              <span class="m">电势</span>
+              <span class="n">-3.04 V</span>
+              <span class="l">低电势意味着更强的化学驱动力。</span>
+            </div>
+            <div class="kpi anim" data-anim="kpi">
+              <span class="m">密度</span>
+              <span class="n">300 Wh/kg</span>
+              <span class="l">单位质量能装进更多可用能量。</span>
+            </div>
+            <div class="kpi anim" data-anim="kpi">
+              <span class="m">厚度</span>
+              <span class="n">&lt;20 μm</span>
+              <span class="l">安全边界靠微米级结构维持。</span>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="nb">02 / 10</div>
+          <div>foundation / why now</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide dark hero" data-layout="S03" data-animate="split" data-nav-title="摇椅式电池">
+      <div class="canvas-card">
+        <div class="chrome">
+          <div class="l">LI-ION / 03 <span class="sep"></span> 摇椅式电池</div>
+          <div class="r">ROCKING-CHAIR <span class="sep"></span> 03 / 10</div>
+        </div>
+        <div class="content split-grid">
+          <div class="stack">
+            <div class="kicker anim" data-anim="kicker">章节 03 / 微观穿梭</div>
+            <h2 class="h-hero anim" data-anim="title">锂离子不是“燃烧”，<br>而是在两端往返穿梭。</h2>
+            <p class="lead anim" data-anim="lead">所谓摇椅式电池，就是把锂离子安放进正极与负极的晶格间隙，让它们像坐在摇椅上一样，在两个稳定位置之间反复移动。</p>
+          </div>
+          <div class="stack">
+            <div class="panel anim" data-anim="panel">
+              <div class="label">充电</div>
+              <div class="text">锂离子从正极脱嵌，沿电解质移动到负极。</div>
+              <div class="text">电子从外电路奔跑，替离子完成平衡。</div>
+            </div>
+            <div class="panel anim" data-anim="panel">
+              <div class="label">放电</div>
+              <div class="text">锂离子再从负极返回正极。</div>
+              <div class="text">电子同时回到外电路，为设备供能。</div>
+            </div>
+            <div class="panel anim" data-anim="panel">
+              <div class="label">意义</div>
+              <div class="text">高度可逆的结构，决定了它能重复很多次，而不必每次都“烧掉自己”。</div>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="nb">03 / 10</div>
+          <div>microscopic shuttle</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide light" data-layout="S06" data-animate="tower" data-nav-title="被压缩的能量方寸">
+      <div class="canvas-card">
+        <div class="chrome">
+          <div class="l">LI-ION / 04 <span class="sep"></span> 被压缩的能量方寸</div>
+          <div class="r">IEA <span class="sep"></span> 04 / 10</div>
+        </div>
+        <div class="content">
+          <div class="title-block">
+            <div class="kicker anim" data-anim="kicker">章节 04 / 质量能量密度</div>
+            <h2 class="h-xl anim" data-anim="title">能量不是变少了，<br>而是被压得更紧了。</h2>
+            <p class="body anim" data-anim="lead">移动文明追求的，不只是“能用多久”，而是“同样重量里能塞多少能量”。这个指标，直接决定设备能不能继续变薄、变轻、变远。</p>
+          </div>
+          <div class="kpi-row">
+            <div class="kpi anim" data-anim="kpi">
+              <span class="m">手机</span>
+              <span class="n">更薄</span>
+              <span class="l">厚度继续被压缩，但续航不能一起掉下去。</span>
+            </div>
+            <div class="kpi anim" data-anim="kpi">
+              <span class="m">电动车</span>
+              <span class="n">更远</span>
+              <span class="l">同样的电池包，要跑出更长的路程。</span>
+            </div>
+            <div class="kpi anim" data-anim="kpi">
+              <span class="m">无人机</span>
+              <span class="n">更久</span>
+              <span class="l">空中平台最怕重量，每一克都要算。</span>
+            </div>
+            <div class="kpi anim" data-anim="kpi">
+              <span class="m">结果</span>
+              <span class="n">300+</span>
+              <span class="l">技术瓶颈被推进到更高的单位质量能量密度。</span>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="nb">04 / 10</div>
+          <div>compressed density</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide dark hero" data-layout="S08" data-animate="compare" data-nav-title="材料的取舍">
+      <div class="canvas-card">
+        <div class="chrome">
+          <div class="l">LI-ION / 05 <span class="sep"></span> 材料的取舍</div>
+          <div class="r">NMC 811 / LFP <span class="sep"></span> 05 / 10</div>
+        </div>
+        <div class="content">
+          <div class="kicker anim" data-anim="kicker">章节 05 / 正极材料</div>
+          <div class="compare anim" data-anim="compare">
+            <div class="col">
+              <div class="tag">NMC 811</div>
+              <div class="big">高能量密度，<br>更像远程路线。</div>
+              <div class="copy">高镍三元更偏向“装得下更多能量”。它追求的是续航上限，但代价是材料稳定性和安全边界要更加精细地管理。</div>
+              <div class="bars">
+                <div class="bar-row">
+                  <div class="name">能量</div>
+                  <div class="bar"><i style="width:84%"></i></div>
+                  <div class="state">高</div>
+                </div>
+                <div class="bar-row">
+                  <div class="name">安全</div>
+                  <div class="bar"><i style="width:48%"></i></div>
+                  <div class="state">中</div>
+                </div>
+                <div class="bar-row">
+                  <div class="name">成本</div>
+                  <div class="bar"><i style="width:58%"></i></div>
+                  <div class="state">中</div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="tag">LFP</div>
+              <div class="big">更稳的长期路线，<br>更像基础设施。</div>
+              <div class="copy">磷酸铁锂把可靠性、寿命和安全性放在更前面。它不追求极限速度，而是追求可长期运行、可大规模部署。</div>
+              <div class="bars">
+                <div class="bar-row">
+                  <div class="name">能量</div>
+                  <div class="bar"><i style="width:62%"></i></div>
+                  <div class="state">中</div>
+                </div>
+                <div class="bar-row">
+                  <div class="name">安全</div>
+                  <div class="bar"><i style="width:84%"></i></div>
+                  <div class="state">高</div>
+                </div>
+                <div class="bar-row">
+                  <div class="name">寿命</div>
+                  <div class="bar"><i style="width:82%"></i></div>
+                  <div class="state">高</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="nb">05 / 10</div>
+          <div>chemistry of balance</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide light" data-layout="S09" data-animate="statement" data-nav-title="微米级防线">
+      <div class="canvas-card">
+        <div class="chrome">
+          <div class="l">LI-ION / 06 <span class="sep"></span> 微米级防线</div>
+          <div class="r">THERMAL SHUTDOWN <span class="sep"></span> 06 / 10</div>
+        </div>
+        <div class="content">
+          <div class="title-block">
+            <div class="kicker anim" data-anim="kicker">章节 06 / 安全不是附加项</div>
+            <h2 class="h-xl anim" data-anim="title">安全不是“额外功能”，<br>安全就是电池本身。</h2>
+            <p class="body anim" data-anim="lead">正负极之间只隔着一层很薄的隔膜。它必须允许离子通过，同时绝对阻断电子直接接触。只要这道边界失守，整套系统就会从“储能”变成“失控”。</p>
+          </div>
+          <div class="ledger anim" data-anim="ledger">
+            <div class="line">
+              <div class="left">隔膜</div>
+              <div class="mid">只让锂离子穿过，不让正负极直接短接。</div>
+              <div class="right">&lt;20 μm</div>
+            </div>
+            <div class="line">
+              <div class="left">热关闭</div>
+              <div class="mid">温度异常升高时，孔隙会主动收缩，切断离子通道。</div>
+              <div class="right">自我保护</div>
+            </div>
+            <div class="line">
+              <div class="left">BMS</div>
+              <div class="mid">电池管理系统持续监控电压、电流与温度，防止局部失控扩大成全局失控。</div>
+              <div class="right">微秒级</div>
+            </div>
+            <div class="line">
+              <div class="left">系统</div>
+              <div class="mid">真正安全的电池，不靠运气，靠结构、算法和边界共同约束。</div>
+              <div class="right">闭环</div>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="nb">06 / 10</div>
+          <div>micron-thick border</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide dark hero" data-layout="S20" data-animate="ledger" data-nav-title="新的地缘版图">
+      <div class="canvas-card">
+        <div class="chrome">
+          <div class="l">LI-ION / 07 <span class="sep"></span> 新的地缘版图</div>
+          <div class="r">SUPPLY CHAIN <span class="sep"></span> 07 / 10</div>
+        </div>
+        <div class="content split-grid">
+          <div class="stack">
+            <div class="kicker anim" data-anim="kicker">章节 07 / 资源不只是资源</div>
+            <h2 class="h-hero anim" data-anim="title">电池一旦进入产业链，<br>就不再只是材料问题。</h2>
+            <p class="lead anim" data-anim="lead">锂、钴、镍、石墨、精炼、制造、回收，整条链条把矿山、港口、工厂、算法和贸易都绑在了一起。能源的形态一变，地缘政治也会跟着变。</p>
+          </div>
+          <div class="ledger anim" data-anim="ledger">
+            <div class="line">
+              <div class="left">矿山</div>
+              <div class="mid">原料从南美盐湖、非洲矿区、澳洲矿山进入全球网络。</div>
+              <div class="right">上游</div>
+            </div>
+            <div class="line">
+              <div class="left">精炼</div>
+              <div class="mid">并不是挖到就能用，真正关键的是中间的加工和提纯。</div>
+              <div class="right">中游</div>
+            </div>
+            <div class="line">
+              <div class="left">制造</div>
+              <div class="mid">电芯、模组、系统集成，把材料变成可交付能力。</div>
+              <div class="right">下游</div>
+            </div>
+            <div class="line">
+              <div class="left">回收</div>
+              <div class="mid">资源会重复进入系统，未来竞争不只是“挖”，还包括“收”。</div>
+              <div class="right">闭环</div>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="nb">07 / 10</div>
+          <div>new geopolitics</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide light" data-layout="S17" data-animate="system" data-nav-title="硅芯片如何治理化学">
+      <div class="canvas-card">
+        <div class="chrome">
+          <div class="l">LI-ION / 08 <span class="sep"></span> 硅芯片如何治理化学</div>
+          <div class="r">BMS <span class="sep"></span> 08 / 10</div>
+        </div>
+        <div class="content">
+          <div class="title-block">
+            <div class="kicker anim" data-anim="kicker">章节 08 / 数字化秩序</div>
+            <h2 class="h-xl anim" data-anim="title">一块电池包，<br>不是火药桶，而是被管理的系统。</h2>
+            <p class="body anim" data-anim="lead">BMS 负责把电池从“化学物质”变成“可交付产品”。它做的不是记录，而是持续判断：哪些电芯该放行，哪些该限流，哪些该停下来。</p>
+          </div>
+          <div class="system-flow anim" data-anim="flow">
+            <div class="node">
+              <div class="k">感知</div>
+              <div class="t">温度<br>电压<br>电流</div>
+              <div class="d">先看见，再判断。没有数据，就没有控制。</div>
+            </div>
+            <div class="node">
+              <div class="k">计算</div>
+              <div class="t">均衡<br>保护<br>估算</div>
+              <div class="d">用算法把每一颗电芯放进同一个秩序里。</div>
+            </div>
+            <div class="node">
+              <div class="k">执行</div>
+              <div class="t">限流<br>断开<br>恢复</div>
+              <div class="d">真正的控制，不是把风险消灭，而是让风险来不及扩大。</div>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="nb">08 / 10</div>
+          <div>digital governance</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide dark hero" data-layout="S21" data-animate="spec" data-nav-title="固态地平线">
+      <div class="canvas-card">
+        <div class="chrome">
+          <div class="l">LI-ION / 09 <span class="sep"></span> 固态地平线</div>
+          <div class="r">SOLID-STATE <span class="sep"></span> 09 / 10</div>
+        </div>
+        <div class="content spec">
+          <div class="stack">
+            <div class="kicker anim" data-anim="kicker">章节 09 / 终局方向</div>
+            <h2 class="h-hero anim" data-anim="title">告别液态，<br>走向固态。</h2>
+            <p class="lead anim" data-anim="lead">全固态电池并不是换一个名字，而是换一种内部秩序。它试图用固态电解质替代易燃液体，从根部压低起火风险，并继续推高能量密度上限。</p>
+          </div>
+          <div class="block anim" data-anim="block">
+            <div class="num">500 Wh/kg</div>
+            <div class="desc">这是实验室里常被提到的下一阶段目标。它不代表今天已经普及，但它说明：锂电池的极限，还没有真正到顶。</div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="nb">09 / 10</div>
+          <div>solid horizon</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide light" data-layout="S10" data-animate="closing" data-nav-title="沉静的微观储能器">
+      <div class="canvas-card">
+        <div class="chrome">
+          <div class="l">LI-ION / 10 <span class="sep"></span> 沉静的微观储能器</div>
+          <div class="r">END <span class="sep"></span> 10 / 10</div>
+        </div>
+        <div class="content closing">
+          <div class="stack">
+            <div class="kicker anim" data-anim="kicker">结尾 / 收束</div>
+            <div class="quote anim" data-anim="quote">它不发声，<br>却一直在工作。</div>
+            <p class="copy anim" data-anim="copy">它没有内燃机的轰鸣，也没有发电机组的宏大姿态。它只是安静地待在设备深处，用锂离子反复往返，为现代文明的移动性持续供电。</p>
+          </div>
+          <div class="stack">
+            <div class="panel anim" data-anim="panel">
+              <div class="label">最后一句话</div>
+              <div class="big">它越隐形，<br>它给世界的自由就越大。</div>
+            </div>
+            <div class="panel anim" data-anim="panel">
+              <div class="label">三条记住</div>
+              <div class="text">它是高密度能量。</div>
+              <div class="text">它是被管理的化学。</div>
+              <div class="text">它是现代流动性的底座。</div>
+            </div>
+            <div class="note anim" data-anim="note">silent reservoir / modern mobility</div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="nb">10 / 10</div>
+          <div>silent reservoir</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="hud" role="navigation" aria-label="slide navigation">
+    <div class="nb" id="pageLabel">01 / 10</div>
+    <button type="button" id="prevBtn" aria-label="previous slide">←</button>
+    <button type="button" id="nextBtn" aria-label="next slide">→</button>
+    <button type="button" class="overview-toggle" id="overviewBtn" aria-label="open overview">O</button>
+    <div class="dots" id="dots" aria-label="slide dots"></div>
+    <span>← → / space / b</span>
+  </div>
+
+  <div id="overview" aria-hidden="true">
+    <div class="overview-head">
+      <div>overview</div>
+      <button type="button" id="overviewClose" aria-label="close overview">×</button>
+    </div>
+    <div class="overview-grid" id="overviewGrid"></div>
+  </div>
+
+  <script>
+    const slides = [...document.querySelectorAll('.slide')];
+    const deck = document.getElementById('deck');
+    const dots = document.getElementById('dots');
+    const pageLabel = document.getElementById('pageLabel');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const overviewBtn = document.getElementById('overviewBtn');
+    const overview = document.getElementById('overview');
+    const overviewGrid = document.getElementById('overviewGrid');
+    const overviewClose = document.getElementById('overviewClose');
+
+    let index = 0;
+    let motionLib = null;
+    let overviewOpen = false;
+    let raf = 0;
+    const total = slides.length;
+
+    const params = new URLSearchParams(location.search);
+    const start = Math.max(0, Math.min(total - 1, (Number.parseInt(params.get('slide') || '', 10) || 1) - 1));
+    index = start;
+
+    const savedLowPower = localStorage.getItem('guizang-ppt-low-power');
+    window.__lowPowerMode = savedLowPower === '1';
+
+    function setLowPower(next, persist = true){
+      window.__lowPowerMode = !!next;
+      document.body.classList.toggle('low-power', window.__lowPowerMode);
+      if (persist) localStorage.setItem('guizang-ppt-low-power', window.__lowPowerMode ? '1' : '0');
+      if (window.__lowPowerMode) stopBackground();
+      else startBackground();
+      if (motionLib && window.__playSlide) window.__playSlide(index);
+    }
+
+    document.body.classList.toggle('low-power', window.__lowPowerMode);
+
+    const canvas = document.getElementById('bg');
+    const ctx = canvas.getContext('2d', { alpha: true });
+    const dotsField = [];
+    const dotCount = 64;
+
+    function fitCanvas(){
+      const dpr = Math.min(2, window.devicePixelRatio || 1);
+      canvas.width = Math.floor(window.innerWidth * dpr);
+      canvas.height = Math.floor(window.innerHeight * dpr);
+      canvas.style.width = window.innerWidth + 'px';
+      canvas.style.height = window.innerHeight + 'px';
+      ctx.setTransform(dpr,0,0,dpr,0,0);
+      if (!dotsField.length){
+        for (let i = 0; i < dotCount; i++){
+          dotsField.push({
+            x: Math.random() * window.innerWidth,
+            y: Math.random() * window.innerHeight,
+            vx: (Math.random() - .5) * .22,
+            vy: (Math.random() - .5) * .22,
+            s: 1 + Math.random() * 1.6
+          });
+        }
+      }
+    }
+
+    function drawBackground(){
+      ctx.clearRect(0,0,window.innerWidth,window.innerHeight);
+      const bgAlpha = document.body.classList.contains('dark-bg') ? .18 : .28;
+      ctx.fillStyle = document.body.classList.contains('dark-bg') ? `rgba(250,250,248,${bgAlpha})` : `rgba(10,10,10,${bgAlpha})`;
+      for (const d of dotsField){
+        d.x += d.vx;
+        d.y += d.vy;
+        if (d.x < -20) d.x = window.innerWidth + 20;
+        if (d.x > window.innerWidth + 20) d.x = -20;
+        if (d.y < -20) d.y = window.innerHeight + 20;
+        if (d.y > window.innerHeight + 20) d.y = -20;
+        ctx.globalAlpha = .55;
+        ctx.beginPath();
+        ctx.arc(d.x, d.y, d.s, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      ctx.globalAlpha = .16;
+      ctx.strokeStyle = document.body.classList.contains('dark-bg') ? 'rgba(250,250,248,.35)' : 'rgba(10,10,10,.15)';
+      for (let x = 0; x < window.innerWidth; x += 96){
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, window.innerHeight);
+        ctx.stroke();
+      }
+      for (let y = 0; y < window.innerHeight; y += 96){
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(window.innerWidth, y);
+        ctx.stroke();
+      }
+      raf = requestAnimationFrame(drawBackground);
+    }
+
+    function startBackground(){
+      if (window.__lowPowerMode) return;
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(drawBackground);
+    }
+    function stopBackground(){
+      cancelAnimationFrame(raf);
+      ctx.clearRect(0,0,window.innerWidth,window.innerHeight);
+    }
+
+    function buildDots(){
+      dots.innerHTML = '';
+      slides.forEach((_, i) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.title = `Go to slide ${String(i + 1).padStart(2, '0')}`;
+        button.addEventListener('click', () => goTo(i));
+        dots.appendChild(button);
+      });
+    }
+
+    function buildOverview(){
+      overviewGrid.innerHTML = '';
+      slides.forEach((slide, i) => {
+        const card = document.createElement('button');
+        card.type = 'button';
+        card.className = 'overview-card';
+        card.innerHTML = `
+          <span class="nb">${String(i + 1).padStart(2, '0')} / ${String(total).padStart(2, '0')}</span>
+          <span class="ttl">${slide.dataset.navTitle}</span>
+          <span class="ly">${slide.dataset.layout}</span>
+        `;
+        card.addEventListener('click', () => {
+          toggleOverview(false);
+          goTo(i);
+        });
+        overviewGrid.appendChild(card);
+      });
+    }
+
+    function toggleOverview(force){
+      overviewOpen = typeof force === 'boolean' ? force : !overviewOpen;
+      overview.style.display = overviewOpen ? 'block' : 'none';
+      overview.setAttribute('aria-hidden', overviewOpen ? 'false' : 'true');
+      deck.style.visibility = overviewOpen ? 'hidden' : 'visible';
+      document.querySelector('.hud').style.visibility = overviewOpen ? 'hidden' : 'visible';
+      overview.classList.toggle('dark', document.body.classList.contains('dark-bg'));
+      if (overviewOpen) buildOverview();
+    }
+
+    function activateDots(){
+      document.querySelectorAll('.dots button').forEach((dot, i) => dot.classList.toggle('active', i === index));
+    }
+
+    function updateUrl(){
+      history.replaceState(null, '', `?slide=${index + 1}`);
+    }
+
+    function updateActive(){
+      slides.forEach((slide, i) => slide.classList.toggle('is-active', i === index));
+      pageLabel.textContent = `${String(index + 1).padStart(2, '0')} / ${String(total).padStart(2, '0')}`;
+      deck.style.transform = `translateX(-${index * 100}vw)`;
+      prevBtn.disabled = index === 0;
+      nextBtn.disabled = index === total - 1;
+      activateDots();
+      document.body.classList.toggle('dark-bg', slides[index].classList.contains('dark') || slides[index].classList.contains('accent'));
+      updateUrl();
+      if (!window.__lowPowerMode) startBackground();
+      if (motionLib && window.__playSlide) setTimeout(() => window.__playSlide(index), 40);
+    }
+
+    function goTo(nextIndex){
+      index = Math.max(0, Math.min(total - 1, nextIndex));
+      updateActive();
+    }
+
+    function clearSlide(slide){
+      slide.querySelectorAll('[data-anim]').forEach(el => {
+        el.style.opacity = '';
+        el.style.transform = '';
+      });
+      slide.querySelectorAll('.bar i').forEach(fill => fill.style.width = fill.dataset.w || fill.style.width);
+    }
+
+    function prepareBars(slide){
+      slide.querySelectorAll('.bar i').forEach(fill => {
+        fill.dataset.w = fill.style.width || '60%';
+        fill.style.width = '0%';
+      });
+    }
+
+    function anim(el, props, opts = {}){
+      if (!motionLib || !motionLib.animate) return;
+      motionLib.animate(el, props, {
+        duration: opts.duration ?? .5,
+        delay: opts.delay ?? 0,
+        easing: opts.easing ?? [0,0,.28,1]
+      });
+    }
+
+    function playSlide(i){
+      if (!motionLib || !motionLib.animate || window.__lowPowerMode) return;
+      const slide = slides[i];
+      const recipe = slide.dataset.animate;
+      const all = [...slide.querySelectorAll('[data-anim]')];
+      clearSlide(slide);
+      const ease = [0,0,.28,1];
+      const step = (base, gap, idx) => base + idx * gap;
+
+      if (recipe === 'hero' || recipe === 'split'){
+        all.forEach((el, idx) => anim(el, { opacity:[0,1], y:[14,0] }, { duration:.58, delay:step(.08,.1,idx), easing:ease }));
+      } else if (recipe === 'timeline'){
+        all.forEach((el, idx) => anim(el, { opacity:[0,1], y:[16,0] }, { duration:.52, delay:step(.08,.12,idx), easing:ease }));
+      } else if (recipe === 'tower' || recipe === 'spec'){
+        all.forEach((el, idx) => anim(el, { opacity:[0,1], y:[12,0] }, { duration:.52, delay:step(.08,.1,idx), easing:ease }));
+      } else if (recipe === 'compare'){
+        const left = slide.querySelector('.compare .col:first-child');
+        const right = slide.querySelector('.compare .col:last-child');
+        if (left) anim(left, { opacity:[0,1], x:[-16,0] }, { duration:.62, delay:.08, easing:ease });
+        if (right) anim(right, { opacity:[0,1], x:[16,0] }, { duration:.62, delay:.24, easing:ease });
+        slide.querySelectorAll('.bar i').forEach((fill, idx) => {
+          anim(fill, { width:['0%', fill.dataset.w || '60%'] }, { duration:.7, delay:.36 + idx * .08, easing:[.2,0,.28,1] });
+        });
+      } else if (recipe === 'statement'){
+        all.forEach((el, idx) => anim(el, { opacity:[0,1], y:[14,0] }, { duration:.5, delay:step(.1,.11,idx), easing:ease }));
+      } else if (recipe === 'ledger' || recipe === 'system'){
+        all.forEach((el, idx) => anim(el, { opacity:[0,1], y:[12,0] }, { duration:.5, delay:step(.08,.09,idx), easing:ease }));
+      } else if (recipe === 'closing'){
+        all.forEach((el, idx) => anim(el, { opacity:[0,1], y:[16,0] }, { duration:.6, delay:step(.08,.12,idx), easing:ease }));
+      } else {
+        all.forEach((el, idx) => anim(el, { opacity:[0,1], y:[12,0] }, { duration:.5, delay:step(.08,.1,idx), easing:ease }));
+      }
+
+      if (recipe === 'compare') prepareBars(slide);
+    }
+
+    async function loadMotion(){
+      try{
+        const mod = await import('./assets/motion.min.js');
+        motionLib = mod.default || mod;
+      }catch{
+        try{
+          const mod = await import('https://cdn.jsdelivr.net/npm/motion@11.11.17/+esm');
+          motionLib = mod;
+        }catch{
+          motionLib = null;
+        }
+      }
+      window.__playSlide = playSlide;
+      updateActive();
+    }
+
+    prevBtn.addEventListener('click', () => goTo(index - 1));
+    nextBtn.addEventListener('click', () => goTo(index + 1));
+    overviewBtn.addEventListener('click', () => toggleOverview());
+    overviewClose.addEventListener('click', () => toggleOverview(false));
+
+    window.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape'){
+        if (overviewOpen) toggleOverview(false);
+        else toggleOverview(true);
+        return;
+      }
+      if (overviewOpen) return;
+      if (event.key === 'ArrowRight' || event.key === 'PageDown' || event.key === ' '){
+        event.preventDefault();
+        goTo(index + 1);
+        return;
+      }
+      if (event.key === 'ArrowLeft' || event.key === 'PageUp'){
+        event.preventDefault();
+        goTo(index - 1);
+        return;
+      }
+      if (event.key === 'Home'){
+        event.preventDefault();
+        goTo(0);
+        return;
+      }
+      if (event.key === 'End'){
+        event.preventDefault();
+        goTo(total - 1);
+        return;
+      }
+      if (event.key.toLowerCase() === 'b'){
+        event.preventDefault();
+        setLowPower(!window.__lowPowerMode);
+      }
+      if (event.key.toLowerCase() === 'o'){
+        event.preventDefault();
+        toggleOverview();
+      }
+    }, { passive:false });
+
+    let tx = 0;
+    let ty = 0;
+    window.addEventListener('touchstart', (event) => {
+      const touch = event.touches[0];
+      tx = touch.clientX;
+      ty = touch.clientY;
+    }, { passive:true });
+    window.addEventListener('touchend', (event) => {
+      const touch = event.changedTouches[0];
+      const dx = touch.clientX - tx;
+      const dy = touch.clientY - ty;
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)){
+        if (dx < 0) goTo(index + 1);
+        else goTo(index - 1);
+      }
+    }, { passive:true });
+
+    let wheelAcc = 0;
+    let wheelTO = null;
+    window.addEventListener('wheel', (event) => {
+      wheelAcc += event.deltaY + event.deltaX;
+      if (Math.abs(wheelAcc) > 50){
+        goTo(index + (wheelAcc > 0 ? 1 : -1));
+        wheelAcc = 0;
+      }
+      clearTimeout(wheelTO);
+      wheelTO = setTimeout(() => wheelAcc = 0, 150);
+    }, { passive:true });
+
+    buildDots();
+    fitCanvas();
+    startBackground();
+    setLowPower(window.__lowPowerMode, false);
+    loadMotion();
+    window.addEventListener('resize', fitCanvas);
+  </script>
+</body>
+</html>

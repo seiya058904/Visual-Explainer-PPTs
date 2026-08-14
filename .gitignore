@@ -1,0 +1,14 @@
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Local tooling output
+node_modules/
+playwright-report/
+test-results/
+*.log
+
+# Editor-local settings
+.vscode/
+.idea/
+
