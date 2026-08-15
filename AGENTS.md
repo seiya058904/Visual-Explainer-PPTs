@@ -361,6 +361,7 @@ hero dark → light → dark → light → hero light → dark → hero dark →
 - `ppt-collection/ai-weather-learning-the-atmosphere.html`：用户已审核通过的 Style A 电子杂志风、靛蓝瓷主题 AI 天气科普分享 PPT。
 - `ppt-collection/qr-code-inside-the-black-white-squares.html`：用户已审核通过的 Style A 电子杂志风、靛蓝瓷主题二维码科普分享 PPT。
 - `ppt-collection/microbial-chocolate-designing-flavour.html`：用户已审核通过的 Style A 电子杂志风巧克力发酵与微生物科普分享 PPT。
+- `ppt-collection/active-noise-cancellation-fighting-sound-with-sound.html`：用户已审核通过的 Style A 电子杂志风、靛蓝瓷主题 ANC 降噪科普分享 PPT。
 - 该文件可以作为成熟案例参考，但不能把它的主题色、页数或版式自动套用到下一个项目；下一次仍必须重新确认风格和约束。
 
 ### 13.9 本轮 AI Weather 复盘（2026-08-14）
@@ -381,3 +382,8 @@ hero dark → light → dark → light → hero light → dark → hero dark →
 - “确认方案”不是要求用户重复确认每个制作步骤；用户已在 Plan Mode 确认整体方向后，实施阶段可以连续完成目录、模板、文案、备注和资源写入。
 - 后续只在三类情况暂停：方案会因新信息发生实质变化、需要不可逆外部操作、或发现用户文案与仓库硬约束冲突。普通排版、间距、断行和局部视觉修复由 agent 自行处理并报告证据。
 - 每次用户反馈视觉问题时，必须记录四件事：复现步骤、根因、页码限定修复、两个标准视口的复验结果；这四项缺一不可，避免只改 CSS 不沉淀经验。
+
+### 13.11 本轮 ANC 复盘（2026-08-15）
+
+- 长 Hero 标题如果包含手动 `<br>`，必须同时检查实际 Grid 列宽；列宽不足时浏览器会在手动断行前再次换行，造成单字或标点独占一行。修复应优先调整局部列比例和标题字号，并在 1280×720 与 1600×900 复测。
+- 内容只有两组短说明时，双列布局容易留下大面积空白；应补充与原文直接对应的机制卡或对比结构，避免用无关装饰填空，并保持卡片网格 `flex:0 0 auto` 以保留 foot 安全区。
