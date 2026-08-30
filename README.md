@@ -20,6 +20,8 @@
 | `2026-05-13-ai-impact-on-modern-life/` | 独立 HTML deck |
 | `2026-05-14-the-art-of-cinema/` | 独立 HTML deck |
 | `2026-05-16-lithium-battery-ppt/` | 含模板运行资源的独立 HTML deck |
+| `2026-08-15-spf-50-sunscreen-decoding/` | 已审核通过的 Style A 防晒科普 deck |
+| `2026-08-15-microwave-where-heat-comes-from/` | 已审核通过的 Style A 微波炉材料选择性加热科普 deck |
 | `5.9/` | 已标记的失败品和历史 PPTX/预览素材，不作为参考或质量基准 |
 
 ## 新项目约定
