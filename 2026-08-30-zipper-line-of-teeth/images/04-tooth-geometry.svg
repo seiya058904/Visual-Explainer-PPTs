@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="ui-sans-serif,'Noto Sans SC',sans-serif">
+  <!-- 深色页用 · 拉链齿凸台与凹槽咬合剖面 -->
+  <g fill="none" stroke-linecap="round">
+    <!-- 左排齿 -->
+    <g stroke="#eedfc7" stroke-width="3.5" fill="rgba(238,223,199,.12)">
+      <path d="M180 160 h 90 v 40 q 0 14 -14 14 h -30 q -14 0 -14 -14 l 0 -30 z"/>
+      <path d="M180 260 h 90 v 40 q 0 14 -14 14 h -30 q -14 0 -14 -14 l 0 -30 z"/>
+      <path d="M180 360 h 90 v 40 q 0 14 -14 14 h -30 q -14 0 -14 -14 l 0 -30 z"/>
+    </g>
+    <!-- 右排齿（凸起插入左排间隙） -->
+    <g stroke="#eedfc7" stroke-width="3.5" fill="rgba(238,223,199,.28)">
+      <path d="M400 200 h 90 v 30 l -30 14 l -30 -14 z"/>
+      <path d="M400 300 h 90 v 30 l -30 14 l -30 -14 z"/>
+      <path d="M400 400 h 90 v 30 l -30 14 l -30 -14 z"/>
+    </g>
+    <!-- 咬合处放大圈 -->
+    <circle cx="380" cy="230" r="60" stroke="#d98e5f" stroke-width="3.5"/>
+    <text x="470" y="140" fill="#d98e5f" font-size="20" font-weight="700">咬合点</text>
+    <path d="M465 148 L 415 190" stroke="#d98e5f" stroke-width="2.5" stroke-dasharray="6 6"/>
+    <!-- 标注 -->
+    <text x="120" y="130" fill="#eedfc7" font-size="20">左排 · 凹槽在上</text>
+    <text x="400" y="480" fill="#eedfc7" font-size="20">右排 · 凸台向下，落进下一颗的凹槽</text>
+    <text x="120" y="540" fill="#eedfc7" font-size="20" opacity=".85">力从这颗齿 → 传给下一颗 → 传给布带</text>
+    <text x="770" y="70" fill="#eedfc7" font-size="17" text-anchor="end" opacity=".55">Hookless No. 2 · 1913（剖面示意）</text>
+  </g>
+</svg>

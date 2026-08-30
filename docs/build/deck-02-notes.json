@@ -1,0 +1,13 @@
+[
+ {"id":"sp-01-cover","title":"一块皂里的分子工程","section":"开场","minutes":1,"purpose":"定调：肥皂是翻译官不是杀手","talk":["提问：洗手液瓶子上写'杀菌'，肥皂写了吗？"],"transition":"从洗不掉的炒锅开始"},
+ {"id":"sp-02-hook","title":"水和油谁也不理谁","section":"钩子","minutes":1,"purpose":"用厨房日常建立认知缺口","talk":["让观众回忆洗碗时'水上漂的油花'"],"transition":"问题不在水，在两类分子的关系"},
+ {"id":"sp-03-remove-not-kill","title":"洗掉不等于杀死","section":"ACT I · 哲学","minutes":1.5,"purpose":"区分移除与杀灭两条清洁路线","talk":["强调'请出去'vs'消灭掉'的对比是全片主线"],"transition":"翻译官需要什么样的分子结构"},
+ {"id":"sp-04-molecule","title":"一头怕水一头爱水","section":"ACT I · 分子","minutes":1.5,"purpose":"两亲分子结构是全部魔力的来源","talk":["类比：外交官持两本护照"],"transition":"这样的分子在油污上会做什么"},
+ {"id":"sp-05-micelle","title":"把油污包成小球","section":"ACT II · 胶束","minutes":1.5,"purpose":"五步讲清胶束形成与冲走","talk":["本页按 → 逐步点亮；强调'外层变成水愿意抱的样子'"],"transition":"包围需要时间——引出 20 秒"},
+ {"id":"sp-06-twentyc","title":"为什么要搓够 20 秒","section":"ACT II · 时钟","minutes":1.5,"purpose":"CDC 时长建议的机制解释","talk":["指缝拇指腕部是常漏区域；流水是必要收尾"],"transition":"既然靠移除，'肥皂杀菌'的说法就要拆"},
+ {"id":"sp-07-myth","title":"肥皂不是消毒剂","section":"ACT III · 误解","minutes":1.5,"purpose":"纠正'肥皂杀菌'的流行解释","talk":["FDA 2016 规则：普通皂不得宣称抗菌（口径待核实）"],"transition":"移除机制还有一个惊人副产品：拆病毒包膜"},
+ {"id":"sp-08-virus","title":"有些病毒怕一块皂","section":"ACT III · 病毒","minutes":1.5,"purpose":"包膜病毒脂质膜与油污同类","talk":["明示：只对包膜病毒有效，无包膜病毒不适用"],"transition":"回看历史：人类先会用后懂原理"},
+ {"id":"sp-09-history","title":"先有肥皂后有解释","section":"ACT IV · 历史","minutes":1,"purpose":"四千年的使用史与近代的解释","talk":["公元前 2800 年巴比伦；19 世纪理论补课"],"transition":"今天的工具箱里皂和免洗液怎么选"},
+ {"id":"sp-10-boundary","title":"免洗液不能替代皂","section":"ACT IV · 边界","minutes":1,"purpose":"CDC 的场景化建议","talk":["脏污时酒精被有机物消耗——回到机制"],"transition":"收束：回到翻译官的定义"},
+ {"id":"sp-11-answer","title":"肥皂真正卖的是翻译能力","section":"收束","minutes":1,"purpose":"新定义：清洁是让东西回到该去的地方","talk":["要素链呼应第 5 页胶束链"]}
+]

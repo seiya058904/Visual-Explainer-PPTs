@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="ui-sans-serif,'Noto Sans SC',sans-serif">
+  <!-- 深色页用 · 混凝：电荷中和，微粒抱团 -->
+  <g fill="none" stroke-linecap="round">
+    <!-- 左：before 彼此排斥 -->
+    <g stroke="#8fb3d9" stroke-width="2">
+      <circle cx="180" cy="200" r="14"/>
+      <circle cx="260" cy="180" r="14"/>
+      <circle cx="220" cy="260" r="14"/>
+    </g>
+    <g stroke="#d98e5f" stroke-width="2.5">
+      <path d="M205 205 l 30 -14"/>
+      <path d="M240 195 l -12 50"/>
+    </g>
+    <text x="150" y="150" fill="#8fb3d9" font-size="20" font-weight="700">加混凝剂前</text>
+    <text x="140" y="310" fill="#d98e5f" font-size="18">同号电荷 · 互相排斥 · 永不沉降</text>
+    <!-- 箭头 -->
+    <path d="M330 230 h 90 M405 220 l 18 10 l -18 10" stroke="#f5f1e8" stroke-width="3.5"/>
+    <text x="375" y="200" fill="#f5f1e8" font-size="20">加入混凝剂</text>
+    <!-- 右：after 抱团 -->
+    <g stroke="#8fb3d9" stroke-width="2">
+      <circle cx="560" cy="210" r="14"/>
+      <circle cx="600" cy="240" r="14"/>
+      <circle cx="545" cy="250" r="14"/>
+      <circle cx="640" cy="200" r="14"/>
+    </g>
+    <path d="M560 210 Q 580 225 600 240 M560 210 Q 550 232 545 250 M600 240 Q 620 222 640 200" stroke="#8fb3d9" stroke-width="2" stroke-dasharray="4 5"/>
+    <text x="500" y="150" fill="#8fb3d9" font-size="20" font-weight="700">加混凝剂后</text>
+    <!-- 絮体下沉 -->
+    <path d="M590 280 q -10 40 -20 90" stroke="#8fb3d9" stroke-width="3"/>
+    <path d="M558 352 l 12 22 l 14 -20" stroke="#8fb3d9" stroke-width="3"/>
+    <ellipse cx="585" cy="420" rx="60" ry="16" fill="rgba(143,179,217,.2)" stroke="#8fb3d9" stroke-width="2.5"/>
+    <text x="585" y="466" fill="#8fb3d9" font-size="19" text-anchor="middle">絮体沉底 · 可被轻松分离</text>
+    <text x="400" y="540" fill="#f5f1e8" font-size="21" text-anchor="middle">中和电荷 → 愿意靠近 → 抱团变重 → 沉降</text>
+    <text x="770" y="70" fill="#f5f1e8" font-size="17" text-anchor="end" opacity=".55">Coagulation · 示意</text>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="ui-sans-serif,'Noto Sans SC',sans-serif">
+  <!-- 浅色页用 · 设定温度越低，制冷耗电越高 -->
+  <g fill="none" stroke-linecap="round">
+    <!-- 坐标 -->
+    <line x1="110" y1="480" x2="720" y2="480" stroke="#0a1f3d" stroke-width="3"/>
+    <line x1="110" y1="120" x2="110" y2="480" stroke="#0a1f3d" stroke-width="2" opacity=".45"/>
+    <text x="90" y="130" fill="#0a1f3d" font-size="20" text-anchor="end" opacity=".7">耗电</text>
+    <text x="716" y="516" fill="#0a1f3d" font-size="20" text-anchor="end" opacity=".7">设定温度 →</text>
+    <!-- 温度刻度 -->
+    <g fill="#0a1f3d" font-size="20" text-anchor="middle" opacity=".75">
+      <text x="200" y="512">28°</text>
+      <text x="330" y="512">26°</text>
+      <text x="460" y="512">24°</text>
+      <text x="590" y="512">22°</text>
+      <text x="690" y="512">20°</text>
+    </g>
+    <!-- 曲线：随设定温度降低而陡升 -->
+    <path d="M180 400 C 280 408, 380 396, 470 360 C 560 322, 630 240, 700 156" stroke="#0a1f3d" stroke-width="4.5"/>
+    <!-- 推荐区带（26°附近） -->
+    <rect x="288" y="120" width="86" height="360" fill="rgba(10,31,61,.07)" stroke="none"/>
+    <text x="331" y="150" fill="#0a1f3d" font-size="19" text-anchor="middle" opacity=".85">舒适区</text>
+    <!-- 标注点 -->
+    <circle cx="330" cy="400" r="8" fill="#0a1f3d"/>
+    <circle cx="690" cy="164" r="8" fill="rgba(10,31,61,.35)" stroke="#0a1f3d" stroke-width="2.5"/>
+    <text x="560" y="120" fill="#0a1f3d" font-size="22" font-weight="700">设定越低 · 账单越陡</text>
+    <text x="720" y="560" fill="#0a1f3d" font-size="18" text-anchor="end" opacity=".55">示意曲线 · 非线性关系，随建筑与气候改变</text>
+  </g>
+</svg>

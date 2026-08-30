@@ -1,0 +1,13 @@
+[
+ {"id":"br-01-cover","title":"它从来不是静止的","section":"开场","minutes":1,"purpose":"定调：桥是被设计来运动的","talk":["提问：你有没有在桥上感觉到轻微震动？"],"transition":"从脚下的伸缩缝说起"},
+ {"id":"br-02-hook","title":"你脚下这座桥正在晃","section":"钩子","minutes":1,"purpose":"建立认知缺口：运动即设计","talk":["伸缩缝的存在就是证据——设计者一开始就预期运动"],"transition":"那桥到底怎么处理力"},
+ {"id":"br-03-loadpath","title":"桥不是抗力是导力","section":"ACT I · 哲学","minutes":1.5,"purpose":"抗力 vs 导力两种思路","talk":["类比：治水疏导优于硬堵"],"transition":"导力只有两条路：压和拉"},
+ {"id":"br-04-forcetypes","title":"只有两句话说得清的力","section":"ACT I · 压与拉","minutes":1.5,"purpose":"拱受压、悬索受拉","talk":["古罗马拱桥与悬索桥跨径纪录的对照"],"transition":"力在桥上怎么接力"},
+ {"id":"br-05-journey","title":"一辆车的重量如何走进河床","section":"ACT II · 接力","minutes":1.5,"purpose":"荷载传递五步","talk":["本页按 → 逐步点亮；终点是基岩"],"transition":"接力之外，桥还在做别的运动"},
+ {"id":"br-06-movement","title":"动本来就写进图纸","section":"ACT II · 运动","minutes":1,"purpose":"变形限值与安全区","talk":["伸缩缝尺寸随桥长；弯沉肉眼难察觉但存在"],"transition":"运动失控会怎样——塔科马"},
+ {"id":"br-07-myth","title":"它不是被风'吹垮'的","section":"ACT III · 误解","minutes":1.5,"purpose":"纠正共振说：气动弹性颤振","talk":["教科书修正史本身就是科学史案例"],"transition":"另一场人群引起的摇摆"},
+ {"id":"br-08-millennium","title":"一座桥被人群摇开了","section":"ACT III · 千禧桥","minutes":1.5,"purpose":"人致同步侧摆与阻尼改造","talk":["人不是重量是节奏；改造后写入规范"],"transition":"把镜头拉近材料"},
+ {"id":"br-09-materials","title":"两种材料互相补短","section":"ACT IV · 材料","minutes":1.5,"purpose":"钢筋混凝土的分工","talk":["热胀系数接近才能共同工作"],"transition":"悬索桥怎么用材料"},
+ {"id":"br-10-cable","title":"一根缆几万公里钢丝","section":"ACT IV · 主缆","minutes":1.5,"purpose":"钢丝束分担拉力","talk":["27,572 股与总长数字口径待核实"],"transition":"收束：驯服运动"},
+ {"id":"br-11-answer","title":"桥梁真正卖的是驯服运动","section":"收束","minutes":1,"purpose":"新定义：安全是动在预料之内","talk":["要素链呼应第 5、6、7、8 页"]}
+]

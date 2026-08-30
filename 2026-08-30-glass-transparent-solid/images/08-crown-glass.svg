@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="ui-sans-serif,'Noto Sans SC',sans-serif">
+  <!-- 浅色页用 · 冕法（crown glass）吹制：中心薄边缘厚 -->
+  <g fill="none" stroke-linecap="round">
+    <!-- 玻璃圆盘：外圈厚 -->
+    <circle cx="400" cy="310" r="210" stroke="#0a1f3d" stroke-width="5"/>
+    <circle cx="400" cy="310" r="168" stroke="#0a1f3d" stroke-width="2.5" opacity=".6"/>
+    <circle cx="400" cy="310" r="120" stroke="#0a1f3d" stroke-width="2" opacity=".45"/>
+    <circle cx="400" cy="310" r="70" stroke="#0a1f3d" stroke-width="2" opacity=".3"/>
+    <!-- 中心 pontil 疤 -->
+    <circle cx="400" cy="310" r="12" fill="rgba(10,31,61,.3)"/>
+    <!-- 旋转吹制箭头 -->
+    <path d="M620 160 A 250 250 0 0 1 660 260" stroke="#0a1f3d" stroke-width="3.5"/>
+    <path d="M648 244 L 662 268 L 672 242" stroke="#0a1f3d" stroke-width="3.5"/>
+    <text x="622" y="130" fill="#0a1f3d" font-size="20" opacity=".8">旋转甩开</text>
+    <!-- 厚薄标注 -->
+    <text x="120" y="560" fill="#0a1f3d" font-size="20">中心 · 薄</text>
+    <text x="640" y="560" fill="#0a1f3d" font-size="20" text-anchor="end">边缘 · 厚</text>
+    <!-- 切块示意（右上取样） -->
+    <g stroke="#0a1f3d" stroke-width="2.5">
+      <path d="M640 380 L 700 380 L 700 470 L 640 470 Z" fill="rgba(10,31,61,.1)"/>
+      <path d="M640 470 L 700 470" stroke-width="6"/>
+    </g>
+    <text x="640" y="500" fill="#0a1f3d" font-size="18" opacity=".8">切下的窗格：一边厚一边薄</text>
+    <text x="740" y="80" fill="#0a1f3d" font-size="18" text-anchor="end" opacity=".55">Crown Glass · 中世纪制造法</text>
+  </g>
+</svg>

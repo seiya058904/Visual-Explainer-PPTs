@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="ui-sans-serif,'Noto Sans SC',sans-serif">
+  <!-- 浅色页用 · 半衰期衰减曲线：200mg 咖啡因 -->
+  <g fill="none" stroke-linecap="round">
+    <line x1="110" y1="480" x2="720" y2="480" stroke="#0a0a0b" stroke-width="3"/>
+    <line x1="110" y1="120" x2="110" y2="480" stroke="#0a0a0b" stroke-width="2" opacity=".4"/>
+    <text x="95" y="130" fill="#0a0a0b" font-size="20" text-anchor="end" opacity=".7">血中咖啡因 mg</text>
+    <!-- 阶梯衰减 200→100→50→25 -->
+    <path d="M150 160 L 340 160 L 340 320 L 530 320 L 530 400 L 700 400" stroke="#0a0a0b" stroke-width="4.5"/>
+    <g fill="#0a0a0b">
+      <circle cx="150" cy="160" r="8"/>
+      <circle cx="340" cy="320" r="8"/>
+      <circle cx="530" cy="400" r="8"/>
+    </g>
+    <!-- 时间刻度 -->
+    <g fill="#0a0a0b" font-size="20" text-anchor="middle" opacity=".75">
+      <text x="150" y="512">15:00</text>
+      <text x="340" y="512">20:00</text>
+      <text x="530" y="512">01:00</text>
+      <text x="700" y="512">06:00</text>
+    </g>
+    <!-- 数值标注 -->
+    <g fill="#0a0a0b" font-size="24" font-weight="700">
+      <text x="180" y="150">200 mg · 下午那杯</text>
+      <text x="365" y="310">≈100 mg · 睡前还剩一半</text>
+      <text x="555" y="390">≈50 mg</text>
+    </g>
+    <!-- 半衰期标注 -->
+    <path d="M340 480 L 340 160" stroke="#0a0a0b" stroke-width="2" stroke-dasharray="7 8" opacity=".45"/>
+    <text x="345" y="450" fill="#0a0a0b" font-size="20" opacity=".8">≈5 小时（个体 2.5–10 h）</text>
+    <text x="720" y="560" fill="#0a0a0b" font-size="18" text-anchor="end" opacity=".55">示意阶梯 · FDA / 药代动力学口径</text>
+  </g>
+</svg>

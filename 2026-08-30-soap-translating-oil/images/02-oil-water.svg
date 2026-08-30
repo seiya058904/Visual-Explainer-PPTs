@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="ui-sans-serif,'Noto Sans SC',sans-serif">
+  <!-- 深色页用 · 水与油互不相溶 -->
+  <g fill="none" stroke-linecap="round">
+    <!-- 透明容器 -->
+    <path d="M180 150 L180 470 L620 470 L620 150" stroke="#f0e6d2" stroke-width="4"/>
+    <!-- 水层 -->
+    <rect x="184" y="300" width="432" height="166" fill="rgba(240,230,210,.12)"/>
+    <text x="210" y="410" fill="#8fb3d9" font-size="24">水层 · 极性分子互相靠近</text>
+    <!-- 油层 -->
+    <rect x="184" y="180" width="432" height="116" fill="rgba(217,142,95,.2)"/>
+    <text x="210" y="250" fill="#d98e5f" font-size="24">油层 · 非极性分子抱团</text>
+    <!-- 分界线（张力） -->
+    <line x1="184" y1="298" x2="616" y2="298" stroke="#f0e6d2" stroke-width="3" opacity=".8"/>
+    <!-- 油滴悬浮被弹回 -->
+    <circle cx="560" cy="330" r="16" fill="rgba(217,142,95,.45)" stroke="#d98e5f" stroke-width="2.5"/>
+    <path d="M560 310 q 10 -14 0 -26" stroke="#d98e5f" stroke-width="2.5"/>
+    <text x="500" y="275" fill="#d98e5f" font-size="18" opacity=".85">油滴试图下沉 · 被水"推"回来</text>
+    <!-- 水分子小圈 -->
+    <g stroke="#8fb3d9" stroke-width="2" opacity=".7">
+      <circle cx="250" cy="340" r="7"/><circle cx="290" cy="370" r="7"/><circle cx="330" cy="345" r="7"/>
+      <circle cx="270" cy="410" r="7"/><circle cx="320" cy="420" r="7"/>
+    </g>
+    <!-- 油分子链 -->
+    <g stroke="#d98e5f" stroke-width="2" opacity=".7">
+      <path d="M240 210 l 16 -8 l 16 8 l 16 -8"/><path d="M330 225 l 16 -8 l 16 8 l 16 -8"/>
+      <path d="M430 205 l 16 -8 l 16 8"/>
+    </g>
+    <text x="120" y="90" fill="#f0e6d2" font-size="22" opacity=".85">同一个碗 · 两类分子 · 互不相溶</text>
+  </g>
+</svg>

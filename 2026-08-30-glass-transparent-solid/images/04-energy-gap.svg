@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="ui-sans-serif,'Noto Sans SC',sans-serif">
+  <!-- 浅色页用 · 可见光光子能量 vs 玻璃禁带宽度 -->
+  <g fill="none" stroke-linecap="round">
+    <!-- 能量轴 -->
+    <line x1="120" y1="500" x2="720" y2="500" stroke="#0a1f3d" stroke-width="3"/>
+    <text x="410" y="545" fill="#0a1f3d" font-size="20" text-anchor="middle" opacity=".7">光子能量 eV →</text>
+    <!-- 禁带门槛（高横线） -->
+    <line x1="120" y1="150" x2="720" y2="150" stroke="#0a1f3d" stroke-width="4"/>
+    <text x="132" y="128" fill="#0a1f3d" font-size="24" font-weight="700">玻璃电子的门槛 ≈ 8.9 eV</text>
+    <!-- 可见光区间（矮柱） -->
+    <rect x="240" y="400" width="220" height="100" fill="rgba(10,31,61,.12)" stroke="#0a1f3d" stroke-width="2.5"/>
+    <text x="350" y="382" fill="#0a1f3d" font-size="24" text-anchor="middle" font-weight="700">可见光 1.8–3.1 eV</text>
+    <text x="350" y="430" fill="#0a1f3d" font-size="19" text-anchor="middle" opacity=".75">买不起这张跃迁的门票</text>
+    <!-- 紫外区间 -->
+    <rect x="520" y="170" width="170" height="100" fill="rgba(10,31,61,.28)" stroke="#0a1f3d" stroke-width="2.5"/>
+    <text x="605" y="230" fill="#0a1f3d" font-size="22" text-anchor="middle" font-weight="700">UV &gt; 3.1 eV</text>
+    <text x="605" y="258" fill="#0a1f3d" font-size="18" text-anchor="middle" opacity=".75">够得着 · 被收下</text>
+    <!-- 落差箭头：可见光被拒 -->
+    <path d="M350 395 L350 230" stroke="#0a1f3d" stroke-width="3" stroke-dasharray="8 8"/>
+    <path d="M340 244 L350 222 L360 244" stroke="#0a1f3d" stroke-width="3"/>
+    <text x="368" y="300" fill="#0a1f3d" font-size="19" opacity=".8">差得太远 · 原路通过</text>
+    <!-- 紫外被收下 -->
+    <path d="M605 265 L605 360" stroke="#0a1f3d" stroke-width="3" stroke-dasharray="8 8" opacity=".6"/>
+    <text x="596" y="330" fill="#0a1f3d" font-size="18" opacity=".8" text-anchor="end">能量匹配 · 被吸收</text>
+  </g>
+</svg>

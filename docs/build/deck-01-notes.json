@@ -1,0 +1,14 @@
+[
+ {"id":"ac-01-cover","title":"冷，是一种被搬运的状态","section":"开场","minutes":1,"purpose":"定调：这场分享要拆掉'冷气'这个直觉","talk":["开场先问观众：空调开启后，房间里的'冷'是从哪来的？","预告结构：方向 → 机器 → 舒适 → 误解 → 能效 → 全球规模"],"transition":"从一个每天都能验证的反差开始"},
+ {"id":"ac-02-hook","title":"房间其实没有变冷","section":"钩子","minutes":1,"purpose":"让观众意识到：冷不是被制造出来的实体","talk":["让听众回家摸一摸空调室外机的排风口——那是房间里的热"],"transition":"冷不存在，那热为什么不自己走出去？"},
+ {"id":"ac-03-thermodynamics","title":"热只想往一个方向走","section":"ACT I · 方向","minutes":1.5,"purpose":"用热力学第二定律解释为什么搬运热需要做功","talk":["类比：水往低处流是自发的，抽水上山要水泵"],"transition":"方向定了，接下来看搬运工长什么样"},
+ {"id":"ac-04-machine","title":"两根盘管 一个泵","section":"ACT II · 机器","minutes":2,"purpose":"按五步讲清空调的完整热量搬运循环","talk":["提醒观众本页按 → 逐步点亮，最后室外机的热风就是第 03 步"],"transition":"循环里真正干活的物质是制冷剂"},
+ {"id":"ac-05-refrigerant","title":"制冷剂是热搬运工","section":"ACT II · 机器","minutes":1.5,"purpose":"解释相变吸热/放热如何构成搬运的两端","talk":["类比：海绵在房间吸水、到室外拧干、再回来"],"transition":"热搬走之后，人为什么还可能觉得热？"},
+ {"id":"ac-06-humidity","title":"26 度也可能比 30 度热","section":"ACT II · 舒适","minutes":1.5,"purpose":"把体感从温度扩展到湿度与蒸发散热","talk":["南方梅雨季与北方干热的对比是现成的例子"],"transition":"既然空调和风扇都在'制冷感'上做文章，误解就在这里发生"},
+ {"id":"ac-07-myth","title":"空调不是一台冷风扇","section":"ACT III · 误解","minutes":1.5,"purpose":"纠正'空调吹冷气'的流行解释","talk":["强调：本页是全片唯一要拆的误解——吹出的是搬运后的结果，不是冷源"],"transition":"搬运要付费，那这笔账到底划不划算？"},
+ {"id":"ac-08-cop","title":"搬热比造热便宜","section":"ACT III · 能效","minutes":1.5,"purpose":"用能效比说明热泵的物理'赚头'","talk":["强调 COP 是约值，随工况、机型变化，不承诺具体机型数值"],"transition":"个体划算，放大到全球就是另一道题"},
+ {"id":"ac-09-scale","title":"16 亿台到 56 亿台","section":"ACT IV · 规模","minutes":1.5,"purpose":"给出全球制冷需求的量级与电力占比","talk":["数据口径：IEA 2018 报告，2016 基准，均带'约'"],"transition":"规模越大，制冷剂的环境账单越不能忽略"},
+ {"id":"ac-10-refrigerant-cost","title":"舒适的代价藏在气体里","section":"ACT IV · 折衷","minutes":1.5,"purpose":"讲两代制冷剂各自的环境代价","talk":["蒙特利尔议定书是罕见的全球环境公约成功案例"],"transition":"把镜头拉回个人：你能控制的是那块温控面板"},
+ {"id":"ac-11-setpoint","title":"每降 1 度都有账单","section":"ACT IV · 选择","minutes":1,"purpose":"把能耗与个人设定温度连起来","talk":["明示数据口径待核实，比例随建筑与气候显著变化"],"transition":"收束：回到开场的那个说法"},
+ {"id":"ac-12-answer","title":"空调真正卖的是热的管理","section":"收束","minutes":1,"purpose":"用新定义替换旧认知：冷是结果，搬运才是工作","talk":["收尾句停顿后再讲要素链，呼应第 4 页的传送带"]}
+]

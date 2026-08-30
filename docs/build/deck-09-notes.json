@@ -1,0 +1,13 @@
+[
+ {"id":"tl-01-cover","title":"三秒钟的物理题","section":"开场","minutes":1,"purpose":"定调：黄灯是被算出来的","talk":["提问：黄灯亮时你的第一反应是踩刹车还是踩油门？"],"transition":"从那个瞬间说起"},
+ {"id":"tl-02-hook","title":"黄灯结束那一秒你赌过什么","section":"钩子","minutes":1,"purpose":"建立共鸣与认知缺口","talk":["强调工程师视角：让选择永远有解"],"transition":"先理解灯到底在分配什么"},
+ {"id":"tl-03-rightofway","title":"灯分配的不是时间","section":"ACT I · 路权","minutes":1.5,"purpose":"路权切片概念","talk":["路口=天然冲突点；信号=时间分片"],"transition":"切片的时长怎么定？看刹车物理"},
+ {"id":"tl-04-brake","title":"停下来需要两段距离","section":"ACT I · 刹车","minutes":1.5,"purpose":"反应距离+制动距离","talk":["速度平方关系：v²/2a；速度翻倍远不止翻倍"],"transition":"两段距离合成黄灯公式"},
+ {"id":"tl-05-formula","title":"黄灯秒数是算出来的","section":"ACT II · 公式","minutes":1.5,"purpose":"ITE kinematic formula","talk":["公式各 term 的含义；3–6 秒是典型区间，随地区规范不同"],"transition":"黄灯没算好会发生什么"},
+ {"id":"tl-06-dilemma","title":"一段进退两难的距离","section":"ACT II · 两难区","minutes":1.5,"purpose":"dilemma zone 概念","talk":["配时目标：消灭两难区——黄灯逐路口计算的原因"],"transition":"有了好配时，红灯真的'安全'吗"},
+ {"id":"tl-07-myth","title":"红灯不等于安全","section":"ACT III · 误解","minutes":1.5,"purpose":"纠正'红灯最安全'","talk":["侧撞减少、追尾增多——风险被重新分配"],"transition":"把这笔交换账算清楚"},
+ {"id":"tl-08-tradeoff","title":"消灭一种事故制造另一种","section":"ACT III · 交换","minutes":1,"purpose":"风险的再分配视角","talk":["交换是否划算：轻代价换重代价"],"transition":"回看信号灯的来历"},
+ {"id":"tl-09-history","title":"第一个信号灯先炸了","section":"ACT IV · 历史","minutes":1.5,"purpose":"1868/1914/1923 三个节点","talk":["细节口径待核实；Morgan 专利是中间档来源"],"transition":"现代信号里还有隐藏细节"},
+ {"id":"tl-10-pedestrian","title":"绿灯亮了路还没清完","section":"ACT IV · 行人","minutes":1,"purpose":"全红清空间隔","talk":["all-red interval：所有方向同时禁止"],"transition":"收束：排队权"},
+ {"id":"tl-11-answer","title":"红绿灯真正卖的是排队权","section":"收束","minutes":1,"purpose":"新定义：冲突切片+运动学保证","talk":["要素链：红黄绿+全红；呼应第 5、6 页"]}
+]

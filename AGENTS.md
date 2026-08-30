@@ -362,6 +362,9 @@ hero dark → light → dark → light → hero light → dark → hero dark →
 - `ppt-collection/qr-code-inside-the-black-white-squares.html`：用户已审核通过的 Style A 电子杂志风、靛蓝瓷主题二维码科普分享 PPT。
 - `ppt-collection/microbial-chocolate-designing-flavour.html`：用户已审核通过的 Style A 电子杂志风巧克力发酵与微生物科普分享 PPT。
 - `ppt-collection/active-noise-cancellation-fighting-sound-with-sound.html`：用户已审核通过的 Style A 电子杂志风、靛蓝瓷主题 ANC 降噪科普分享 PPT。
+- `ppt-collection/spf-50-decoding-sunscreen.html`：用户已审核通过的 Style A 电子杂志风、靛蓝瓷主题 SPF 50 防晒科普分享 PPT。
+- `ppt-collection/microwave-where-heat-comes-from.html`：用户已审核通过的 Style A 电子杂志风、靛蓝瓷主题微波炉材料选择性加热科普 PPT。
+- `ppt-collection/display-how-images-are-made.html`：用户已审核通过的 Style A 电子杂志风、靛蓝瓷主题显示器成像原理科普 PPT。
 - 该文件可以作为成熟案例参考，但不能把它的主题色、页数或版式自动套用到下一个项目；下一次仍必须重新确认风格和约束。
 
 ### 13.9 本轮 AI Weather 复盘（2026-08-14）
@@ -387,3 +390,41 @@ hero dark → light → dark → light → hero light → dark → hero dark →
 
 - 长 Hero 标题如果包含手动 `<br>`，必须同时检查实际 Grid 列宽；列宽不足时浏览器会在手动断行前再次换行，造成单字或标点独占一行。修复应优先调整局部列比例和标题字号，并在 1280×720 与 1600×900 复测。
 - 内容只有两组短说明时，双列布局容易留下大面积空白；应补充与原文直接对应的机制卡或对比结构，避免用无关装饰填空，并保持卡片网格 `flex:0 0 auto` 以保留 foot 安全区。
+
+### 13.12 本轮 10 deck 批量制作复盘（2026-08-30）
+
+- **directional 页 720p 底部溢出是高频失败模式**：kicker + 双行 h-xl + lead + grid-2-6-6 + meta-row 的组合在 1600×900 通过、在 1280×720 溢出约 3–50px（固定最小字号占比变大）。固定修复：lead `margin-bottom` 收到 1.6–2vh、meta-row `margin-top` 收到 1.6vh、frame `padding-top` 2vh；修复后必须双视口复测。批量产出时先在片段层统一间距档位，避免逐 deck 重复踩坑。
+- **左栏 meta 沉底需要 `align-self:stretch`**：`.grid-2-7-5` 等网格默认 `align-items:start`，左列 flex 容器的 `justify-content:space-between` 不生效，meta-row 会贴在 lead 下方造成左下大面积空白；给左列加 `align-self:stretch` 后 meta 才真正贴列底。
+- **SVG 图解的文字必须预估宽度**：`text-anchor` 默认 start，长中文标注会超出 viewBox 被 SVG 视口裁切；右侧标注统一用 `text-anchor="end"` 并把锚点放到 x=770–780。每张 SVG 交付前按"最右文字元素的估计终点 ≤ viewBox 宽 − 20"自查。
+- **pipeline 页内容偏上**：五步 pipeline 总高约 55vh，默认顶置会在下半留大片空白；给该页 `.frame` 加 `justify-content:center; padding-top:2vh` 居中构图。
+- **验收环境 rAF 节流会冻结 Motion 动画**：嵌入式浏览器客页面的 `requestAnimationFrame` 可能完全不被调度（document.hidden=false 但 rAF 为 0），导致 Motion 的 JS 驱动动画（cascade/pipeline 推进）看似失效、截图超时、CSS 过渡停在中间态。这不是模板缺陷（WAAPI 正常、真实浏览器正常）。验收对策：先 `browser.capabilities.get("visibility").set(true)` 把面板放前台；rAF 仍被节流时改用低功耗模式（revealStatic 与动效终态布局一致）做视觉与几何验收，动效推进逻辑改由直接调用 `window.__pipeAdvance()` 与读取 `__currentSlideIndex` 验证。
+- **几何验收脚本要点**：deck 是横向轮播，全页绝对坐标会把未当前页误报为横向溢出；必须把元素 bottom 换算为相对所在 slide 的坐标，且排除 `.frame` 容器自身（其底边恒等于 frame 底）。
+- 片段层批量注入 + 页内相对坐标测量 + 双视口断言的验收流水线脚本保留在 `docs/build/`（inject.py / check.py / fix-directional.py），下批项目可直接复用。
+
+### 13.13 本轮二次验收复盘（2026-08-30，用户要求复检底部裁切后）
+
+- **`align-self:stretch` 沉底列必须同时加 `padding-bottom`**：只有 stretch 时，meta/callout 会被 space-between 推到 frame 底边，与 foot 间距为 0，在 720p 直接构成"元数据贴住 foot"失败。正确组合是 `align-self:stretch; padding-bottom:4.5vh`（内容沉底构图 + 底部安全区）。
+- **审计脚本必须跳过自带大 padding 的容器自身**：带 `padding-bottom` 的容器 border-box 按设计延伸到 frame 底，按 bounding box 测会误报 CLIP/TIGHT；判定时跳过 `computed paddingBottom >= 20px` 的元素，只测真实内容。
+- **border-box 触底 ≠ 内容触底**：几何审查要区分"容器框到达"与"文字到达"，前者是布局手段，后者才是缺陷。
+- **python http.server 无 no-cache 响应头**，重建 index.html 后浏览器可能仍用缓存副本，导致"修复无效"的假象；验收 URL 必须带 cache-buster（如 `?v=N`）或强制 reload。
+- 加强版验收清单（对应 13.5 全部历史失败）：内容 bottom vs frame 底与 foot 顶、hero 页安全区阈值单独收紧、stat-nb 与 stat-note 矩形不相交、stat-nb 高度不得超单行（防折行）、h-xl/h-hero 渲染行数 ≤2（防 `<br>` 后再换行）、grid 不得继承 `flex:1`、无 slide 级滚动溢出。该清单已固化在 `docs/build/` 验收流程中。
+- 修复"贴边"问题时按证据分级：CLIP（内容越过边界）必修；TIGHT（有间隙但小于阈值）按视口和字号权衡，720p 下 ≥8px 即可接受，避免过度压缩内容。
+
+### 13.14 本轮用户截图复检复盘（2026-08-30，"配图下方文字被裁"）
+
+- **用户报告"图表下方 stat 卡说明文字被拦腰裁断"**：截图全部来自"左文右图页右栏 = figure + stat-card 纵向堆叠"的页面。根因：右栏高度 = figure（aspect-ratio 定高）+ gap + stat-card（固定最小字号），在用户浏览器缩放/更小的有效视口下，vh 基准的 frame 变矮而 px 下限的字号不缩，stat-note 越过 frame 底被 overflow:hidden 拦腰裁断。此前 720/900 双视口审计覆盖不到该档位，属于**审计视口盲区**。
+- **固定修复（结构式，不再逐档压缩）**：右栏改为弹性布局——`align-self:stretch; min-height:0; padding-bottom:2vh`，figure 去掉 aspect-ratio 类、改 `flex:1 1 auto; min-height:120px; max-height:56vh`（图表吸收剩余空间），stat-card 保持 auto 高度。任何视口下 stat-card 都完整保留，由图缩放让位。
+- **配套加小视口媒体查询**（inject.py 注入所有 deck）：`@media (max-height:700px), (max-width:1100px)` 下缩小 h-hero/h-xl/lead/stat-nb/callout，缓解固定最小字号在矮视口的相对膨胀；cover 等内联 `font-size` 的标题不受媒体查询影响，属已知限制（内联优先）。
+- **审计视口必须覆盖用户实际观看档位**：双视口 1600×900 + 1280×720 之外，增加 1000×560（模拟浏览器缩放约 160% 的有效视口）。修复后 10 套 × 三视口全清单通过。
+- **审计误报再修**：右栏 `padding-bottom:2vh`（18px 以下）的容器 border-box 仍会触底，skip 阈值 20px 漏掉它；应跳过"所有 paddingBottom > 0 且为布局手段的拉伸容器"，或直接以容器内最后一个内容元素为准。
+- **经验**：用户缩放查看是真实验收场景；"只在标准视口验收"不构成完整验收。凡 aspect-ratio 定高 + 下方还有内容的堆叠列，都必须改弹性分配或证明 min 高度总和 < 最小视口 frame 高。
+
+### 13.15 WARMUP 回归与移除（2026-08-30，用户复检发现）
+
+- 为消除"首次翻页掉帧"注入的 WARMUP 脚本（load 时全部 `img.decode()` + 创建/销毁 backdrop-filter 预热元素）被用户判定为首屏卡顿根因：20 个后续页 SVG 在首屏阶段提前解码、GPU 模糊图层建立恰逢 hero 入场动画。**已从 inject.py 移除并重建全部 10 套**；产物注入面现与已认可旧成品一致（无 WARMUP、无 img.decode）。
+- 教训：针对"首次 X"的预热优化，必须先证明成本收益——预热本身在首屏关键期引入的解码/合成开销可能大于它预防的一次性成本；上线前应做冷启动 A/B，而不是只凭推理注入。
+- **hero 配方无回归**：新旧 deck 的 hero 页均为 `<section class="slide hero ...">`（无显式 data-animate 属性），模板按 `classList.contains('hero')` 自动应用 hero 配方，不存在"退回 cascade"的差异；排查此类问题先读模板分发逻辑再下结论。
+- **探针局限记录**：本环境内嵌面板对全新导航的页面存在渲染冻结（加载后数秒 rAF 0 帧、无 FCP），且对已认可旧成品同样复现——因此"加载后 rAF 计时"在该面板上无法区分 deck 好坏，流畅度验收以用户实际感受 + 独立全屏浏览器为准；几何/文案审计不受影响。
+- 保留的修复（与此回归无关，继续有效）：右栏弹性图卡布局、小视口媒体查询、directional 间距档位、meta 沉底 padding。
+
+- **验收脚本不得污染用户正在浏览的标签页状态**：`__setLowPowerMode(true, {persist:false})` 只改运行态不写存储，但页面不刷新就一直是静态模式（WebGL 关、翻页无过渡=瞬间硬切），用户接着浏览会感觉"卡顿、不丝滑"，且误以为是 deck 缺陷。审计一律用独立标签页；若在被查看的标签页上做过操作，交付前必须恢复动态模式并实测 `transitionend ≈ 0.9s`、WebGL 可见、rAF 正常。用户侧一键恢复：按 B 键或右下角"动态"按钮。

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="ui-sans-serif,'Noto Sans SC',sans-serif">
+  <!-- 浅色页用 · 全球安全饮用水缺口 -->
+  <g fill="none" stroke-linecap="round">
+    <rect x="120" y="140" width="250" height="300" fill="rgba(26,46,31,.15)" stroke="#1a2e1f" stroke-width="3"/>
+    <text x="245" y="270" fill="#1a2e1f" font-size="30" text-anchor="middle" font-weight="700">≈22 亿人</text>
+    <text x="245" y="310" fill="#1a2e1f" font-size="20" text-anchor="middle" opacity=".8">缺乏安全管理</text>
+    <text x="245" y="340" fill="#1a2e1f" font-size="20" text-anchor="middle" opacity=".8">的饮用水</text>
+    <text x="245" y="480" fill="#1a2e1f" font-size="20" text-anchor="middle" opacity=".8">全球人口中的一部分</text>
+    <!-- 对比人数条 -->
+    <rect x="470" y="140" width="60" height="300" fill="#1a2e1f"/>
+    <text x="500" y="480" fill="#1a2e1f" font-size="18" text-anchor="middle" opacity=".7">每 4 人</text>
+    <rect x="545" y="366" width="60" height="74" fill="rgba(26,46,31,.35)" stroke="#1a2e1f" stroke-width="2" stroke-dasharray="7 6"/>
+    <text x="575" y="480" fill="#1a2e1f" font-size="18" text-anchor="middle" opacity=".7">约 1 人</text>
+    <text x="575" y="340" fill="#1a2e1f" font-size="19" text-anchor="middle" font-weight="700">≈1/4</text>
+    <text x="120" y="110" fill="#1a2e1f" font-size="22" font-weight="700">拧开龙头就有安全的水，仍不是这个星球的默认状态</text>
+    <text x="770" y="530" fill="#1a2e1f" font-size="17" text-anchor="end" opacity=".55">WHO/UNICEF JMP · 2022</text>
+  </g>
+</svg>

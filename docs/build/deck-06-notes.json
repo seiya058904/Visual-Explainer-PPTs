@@ -1,0 +1,14 @@
+[
+ {"id":"ct-01-cover","title":"改变世界的不是船","section":"开场","minutes":1,"purpose":"定调：全球化革命的杠杆是标准化","talk":["提问：集装箱和芯片、引擎比，算发明吗？"],"transition":"先看一个被忽略的事实：船没有变快"},
+ {"id":"ct-02-hook","title":"航运革命没有换船","section":"钩子","minutes":1,"purpose":"建立认知缺口：变革发生在码头","talk":["强调'人手一箱的时代结束了'是本片主线"],"transition":"看看船为什么快不起来"},
+ {"id":"ct-03-bottleneck","title":"瓶颈不在海上在码头","section":"ACT I · 瓶颈","minutes":1.5,"purpose":"把成本焦点从航行移到装卸","talk":["散件时代停港周期以天计，船期被码头按住"],"transition":"看看旧码头的一天"},
+ {"id":"ct-04-breakbulk","title":"一袋一桶一个人","section":"ACT I · 散件","minutes":1.5,"purpose":"还原散件装卸时代的成本结构","talk":["每一次转手都是成本与损伤——为标准化做铺垫"],"transition":"答案不是更好的麻袋，是换计量单位"},
+ {"id":"ct-05-standard","title":"一个尺寸所有接口","section":"ACT II · 标准","minutes":1.5,"purpose":"ISO 标准化与一次锁定吊装","talk":["角件是关键：四个角上的孔洞就是统一插座"],"transition":"标准化的回报：成本数字"},
+ {"id":"ct-06-cost","title":"五块八毛六到一毛六","section":"ACT II · 成本","minutes":1.5,"purpose":"装卸成本下降两个数量级","talk":["明示这是 Levinson 的估算，口径为 1950s 美国港口"],"transition":"成本之外，时间也在塌缩"},
+ {"id":"ct-07-time","title":"几个星期变成几个小时","section":"ACT II · 时间","minutes":1.5,"purpose":"Ideal X 首航与装卸周期量级变化","talk":["船在港口的时间也是运费——停港即烧钱"],"transition":"箱子本身很普通，这是最大的误解点"},
+ {"id":"ct-08-myth","title":"革命不在箱子里","section":"ACT III · 误解","minutes":1.5,"purpose":"纠正'铁盒子改变世界'的简化叙事","talk":["强调配套系统：吊机、船、车、报关、库存全部重构"],"transition":"配套重构改变了地理"},
+ {"id":"ct-09-rebuild","title":"港口搬了家工厂也是","section":"ACT III · 重构","minutes":1.5,"purpose":"运费下降重写选址逻辑","talk":["深水港崛起、老码头衰落的全球现象"],"transition":"放大到全球贸易的规模"},
+ {"id":"ct-10-scale","title":"八成贸易走的是海","section":"ACT IV · 规模","minutes":1.5,"purpose":"海运占比与 TEU 体系","talk":["明示按体积口径；按价值占比更低"],"transition":"用一句论点收拢"},
+ {"id":"ct-11-quote","title":"集装箱没有让船变快","section":"ACT V · 引用","minutes":1,"purpose":"Levinson 论点金句页（转述）","talk":["说明是转述，非逐字原文"],"transition":"收束：回到标准"},
+ {"id":"ct-12-answer","title":"集装箱真正卖的是标准本身","section":"收束","minutes":1,"purpose":"新定义：改变世界的是接口统一","talk":["要素链：船港车库同一种箱子；呼应第 5 页"]}
+]

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="ui-sans-serif,'Noto Sans SC',sans-serif">
+  <!-- 深色页用 · 拱受压 vs 悬索受拉 -->
+  <g fill="none" stroke-linecap="round">
+    <!-- 左：拱桥受压 -->
+    <path d="M110 380 Q 240 160 370 380" stroke="#f1efea" stroke-width="6"/>
+    <line x1="110" y1="380" x2="370" y2="380" stroke="#f1efea" stroke-width="3"/>
+    <line x1="240" y1="235" x2="240" y2="300" stroke="#f1efea" stroke-width="2.5"/>
+    <rect x="210" y="300" width="60" height="18" fill="rgba(241,239,234,.3)"/>
+    <path d="M180 400 L 200 420 M300 400 L 280 420" stroke="#c9b08a" stroke-width="3"/>
+    <text x="240" y="130" fill="#c9b08a" font-size="21" text-anchor="middle" font-weight="700">拱 · 受压</text>
+    <text x="240" y="455" fill="#f1efea" font-size="18" text-anchor="middle" opacity=".85">力沿弧线挤向两岸</text>
+    <!-- 右：悬索受拉 -->
+    <path d="M470 300 Q 600 160 730 300" stroke="#f1efea" stroke-width="5"/>
+    <line x1="470" y1="310" x2="730" y2="310" stroke="#f1efea" stroke-width="3"/>
+    <g stroke="#f1efea" stroke-width="2.5" opacity=".8">
+      <line x1="500" y1="310" x2="530" y2="252"/>
+      <line x1="600" y1="310" x2="600" y2="212"/>
+      <line x1="700" y1="310" x2="670" y2="252"/>
+    </g>
+    <g stroke="#c9b08a" stroke-width="3">
+      <path d="M470 300 l -25 30 M473 302 l -18 36"/>
+      <path d="M730 300 l 25 30 M727 302 l 18 36"/>
+    </g>
+    <text x="600" y="130" fill="#c9b08a" font-size="21" text-anchor="middle" font-weight="700">悬索 · 受拉</text>
+    <text x="600" y="455" fill="#f1efea" font-size="18" text-anchor="middle" opacity=".85">力被拽向两岸锚碇</text>
+    <!-- 底部结论 -->
+    <text x="400" y="540" fill="#f1efea" font-size="22" text-anchor="middle">一个挤向大地 · 一个拽向两端</text>
+    <text x="770" y="70" fill="#f1efea" font-size="17" text-anchor="end" opacity=".55">Compression vs Tension · 示意</text>
+  </g>
+</svg>

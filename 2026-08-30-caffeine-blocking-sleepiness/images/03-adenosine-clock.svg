@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="ui-sans-serif,'Noto Sans SC',sans-serif">
+  <!-- 浅色页用 · 睡眠压力锯齿：清醒积累，睡眠清零 -->
+  <g fill="none" stroke-linecap="round">
+    <!-- 坐标 -->
+    <line x1="110" y1="480" x2="720" y2="480" stroke="#0a0a0b" stroke-width="3"/>
+    <line x1="110" y1="120" x2="110" y2="480" stroke="#0a0a0b" stroke-width="2" opacity=".4"/>
+    <text x="95" y="130" fill="#0a0a0b" font-size="20" text-anchor="end" opacity=".7">腺苷水平</text>
+    <!-- 昼夜分带 -->
+    <rect x="110" y="120" width="610" height="360" fill="none"/>
+    <rect x="430" y="120" width="180" height="360" fill="rgba(10,10,11,.07)"/>
+    <text x="520" y="146" fill="#0a0a0b" font-size="18" text-anchor="middle" opacity=".65">睡眠 · 清零</text>
+    <text x="230" y="146" fill="#0a0a0b" font-size="18" opacity=".65">Day 1 · 清醒</text>
+    <text x="650" y="146" fill="#0a0a0b" font-size="18" opacity=".65">Day 2 · 清醒</text>
+    <!-- 锯齿曲线 -->
+    <path d="M130 440 L 420 200 L 430 440 L 600 210 L 615 440 L 700 250" stroke="#0a0a0b" stroke-width="4.5"/>
+    <!-- 咖啡因屏蔽段（虚线降位） -->
+    <path d="M250 330 L 420 200" stroke="#8a6d3b" stroke-width="3.5" stroke-dasharray="9 8"/>
+    <text x="250" y="310" fill="#8a6d3b" font-size="20" font-weight="700">咖啡因：广播被静音</text>
+    <text x="130" y="300" fill="#0a0a0b" font-size="20" opacity=".8">越醒越困 · 持续积累</text>
+    <text x="430" y="470" fill="#0a0a0b" font-size="18" opacity=".6">睡眠时间</text>
+    <text x="720" y="560" fill="#0a0a0b" font-size="18" text-anchor="end" opacity=".55">示意曲线 · Borbély 双过程模型</text>
+  </g>
+</svg>

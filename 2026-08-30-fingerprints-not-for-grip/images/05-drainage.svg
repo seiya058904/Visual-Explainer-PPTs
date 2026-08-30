@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="ui-sans-serif,'Noto Sans SC',sans-serif">
+  <!-- 深色页用 · 指纹沟槽排水通道 -->
+  <g fill="none" stroke-linecap="round">
+    <!-- 皮肤表面剖面：脊与沟 -->
+    <g stroke="#f5f1e8" stroke-width="4">
+      <path d="M100 260 q 40 -46 80 0"/>
+      <path d="M180 260 q 40 -46 80 0"/>
+      <path d="M260 260 q 40 -46 80 0"/>
+      <path d="M340 260 q 40 -46 80 0"/>
+      <path d="M420 260 q 40 -46 80 0"/>
+    </g>
+    <!-- 皮肤底层 -->
+    <line x1="80" y1="300" x2="720" y2="300" stroke="#f5f1e8" stroke-width="2.5" opacity=".4"/>
+    <!-- 水滴滑入沟槽 -->
+    <g fill="#8fb3d9" stroke="none">
+      <circle cx="140" cy="150" r="9"/>
+      <circle cx="150" cy="200" r="9"/>
+      <circle cx="160" cy="245" r="9"/>
+      <circle cx="300" cy="160" r="9"/>
+      <circle cx="310" cy="215" r="9"/>
+      <circle cx="320" cy="248" r="9"/>
+    </g>
+    <path d="M140 160 q 5 40 18 82" stroke="#8fb3d9" stroke-width="2" stroke-dasharray="4 6"/>
+    <!-- 排出箭头 -->
+    <path d="M480 230 q 30 10 60 10 h 90" stroke="#8fb3d9" stroke-width="3"/>
+    <path d="M618 232 l 18 8 l -18 8" stroke="#8fb3d9" stroke-width="3"/>
+    <text x="520" y="200" fill="#8fb3d9" font-size="20">水被沟槽导走</text>
+    <!-- 标注 -->
+    <text x="120" y="120" fill="#f5f1e8" font-size="22" font-weight="700">脊 = 堤 · 沟 = 渠</text>
+    <text x="120" y="360" fill="#f5f1e8" font-size="19" opacity=".8">湿表面上：水有了去处，皮肤才能贴住物体</text>
+    <text x="120" y="430" fill="#f5f1e8" font-size="19" opacity=".8">灵长类雨林场景 · 经典解释</text>
+    <text x="770" y="70" fill="#f5f1e8" font-size="17" text-anchor="end" opacity=".55">Drainage Hypothesis（示意）</text>
+  </g>
+</svg>

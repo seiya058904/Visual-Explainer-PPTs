@@ -1,0 +1,12 @@
+[
+ {"id":"fp-01-cover","title":"皮肤上最著名的误解","section":"开场","minutes":1,"purpose":"定调：常识也需要实验","talk":["先问听众：指纹是干什么用的？等'防滑'的回答出现"],"transition":"用两个日常观察质疑这个答案"},
+ {"id":"fp-02-hook","title":"如果为了防滑它做得并不好","section":"钩子","minutes":1,"purpose":"用湿手与乳胶手套的反例动摇防滑说","talk":["乳胶手套没有指纹却防滑——直觉裂缝在这里"],"transition":"看看这个解释是怎么流行起来的"},
+ {"id":"fp-03-tire-story","title":"一个自带画面的解释","section":"ACT I · 类比","minutes":1,"purpose":"说明轮胎类比长期未经验证","talk":["强调：类比可以启发，但不能替代测量"],"transition":"2009 年有人真的去测了"},
+ {"id":"fp-04-test","title":"实验站到了解释的对面","section":"ACT II · 实验","minutes":1.5,"purpose":"2009 年实验结果与边界","talk":["橡胶垫模拟：接触面积更小、摩擦未增；功能仍开放"],"transition":"防滑不成立，那候选功能有什么"},
+ {"id":"fp-05-drainage","title":"沟槽是水走的地方","section":"ACT II · 假说一","minutes":1.5,"purpose":"排水假说：湿表面仍能触物","talk":["明示这是假说，实验支持有限"],"transition":"第二类候选与触觉有关"},
+ {"id":"fp-06-vibration","title":"脊线像一排麦克风","section":"ACT II · 假说二","minutes":1.5,"purpose":"振动放大与精细触觉","talk":["机制仍在讨论中，不做定论——科学诚实的样子"],"transition":"从功能转向身份：人人不同怎么用"},
+ {"id":"fp-07-uniqueness","title":"人人不同不等于证明唯一","section":"ACT III · 唯一性","minutes":1.5,"purpose":"区分观察层面与证明层面","talk":["安全表述：至今没有发现重复"],"transition":"唯一性被司法使用，边界在哪"},
+ {"id":"fp-08-forensics","title":"匹配不是数学","section":"ACT III · 边界","minutes":1.5,"purpose":"PCAST 2016 对比对方法的评估","talk":["专家判断的误差率缺乏量化——工具要有自知之明"],"transition":"指纹的两次文化再利用"},
+ {"id":"fp-09-reuse","title":"从档案到口袋","section":"ACT IV · 再利用","minutes":1,"purpose":"1892 分类到 2013 Touch ID","talk":["演化先解决触觉，文化再利用为身份"],"transition":"收束：指纹教给我们的方法论"},
+ {"id":"fp-10-answer","title":"指纹教的不是防滑","section":"收束","minutes":1,"purpose":"新定义：求证的态度","talk":["要素链：质疑→实验→假说→边界，呼应全片"]}
+]

@@ -1,0 +1,13 @@
+[
+ {"id":"cf-01-cover","title":"它没有给你任何能量","section":"开场","minutes":1,"purpose":"定调：咖啡因不产生能量，只屏蔽信号","talk":["提问：喝完咖啡你觉得'有劲儿'，那股劲儿从哪来？"],"transition":"从一个共同的体验切入：崩溃"},
+ {"id":"cf-02-hook","title":"咖啡过了累还在","section":"钩子","minutes":1,"purpose":"用'崩溃'体验建立认知缺口","talk":["让观众回忆自己的下午咖啡时刻"],"transition":"要理解崩溃，先理解'困'是什么"},
+ {"id":"cf-03-adenosine","title":"困是一种信号","section":"ACT I · 信号","minutes":1.5,"purpose":"腺苷积累与睡眠压力的机制","talk":["双过程模型是睡眠科学主流框架"],"transition":"信号要起作用，得先找到接收器"},
+ {"id":"cf-04-receptor","title":"一把只认形状的锁","section":"ACT I · 受体","minutes":1,"purpose":"受体按形状结合分子的原理","talk":["强调'只认形状'是下一页假钥匙的前提"],"transition":"形状匹配，就是可以钻的空子"},
+ {"id":"cf-05-block","title":"咖啡因冒名顶替","section":"ACT II · 阻断","minutes":1.5,"purpose":"竞争性拮抗：假钥匙占据受体","talk":["本页是机制核心：不激活、只占位"],"transition":"假钥匙能插多久？看半衰期"},
+ {"id":"cf-06-half-life","title":"下午的咖啡半夜还有一半","section":"ACT II · 时钟","minutes":1.5,"purpose":"半衰期概念与睡前残余量","talk":["明示个体范围 2.5–10h，口径待核实"],"transition":"既然只是屏蔽，'给你能量'的说法就该被拆"},
+ {"id":"cf-07-myth","title":"它不是能量饮料","section":"ACT III · 误解","minutes":1.5,"purpose":"纠正'咖啡因给能量'的解释","talk":["ATP 数量不变——变的只是信号接收"],"transition":"屏蔽用久了，系统会反击"},
+ {"id":"cf-08-tolerance","title":"越喝越多的身体","section":"ACT III · 耐受","minutes":1.5,"purpose":"受体上调导致耐受与戒断","talk":["本页按 → 逐步点亮；强调这是受体数学不是意志力"],"transition":"剂量有边界，边界因人而异"},
+ {"id":"cf-09-boundary","title":"一天最多四百毫克","section":"ACT IV · 边界","minutes":1.5,"purpose":"FDA 剂量边界与个体差异","talk":["孕龄、肝代谢、吸烟都影响半衰期；特殊人群应遵医嘱"],"transition":"咖啡因管不了的那件事，是清账"},
+ {"id":"cf-10-sleep","title":"咖啡因重启不了大脑","section":"ACT IV · 还账","minutes":1,"purpose":"睡眠是唯一清除腺苷的路径","talk":["对比：推迟 vs 清账"],"transition":"收束：回到'给你能量'这个说法"},
+ {"id":"cf-11-answer","title":"咖啡因真正做的是静音广播","section":"收束","minutes":1,"purpose":"新定义：清醒是借来的","talk":["要素链呼应第 4、5 页；停顿收尾"]}
+]

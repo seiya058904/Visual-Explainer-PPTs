@@ -1,0 +1,13 @@
+[
+ {"id":"zp-01-cover","title":"一行可以开合的牙齿","section":"开场","minutes":1,"purpose":"定调：拉链的强度来自整条链","talk":["提问：拉链和魔术贴、纽扣比，强在哪？"],"transition":"从每天提包的那一下说起"},
+ {"id":"zp-02-hook","title":"一根塑料条承住整个包","section":"钩子","minutes":1,"purpose":"建立认知缺口：强度从哪来","talk":["让听众想想背包最重的时刻，拉链没散"],"transition":"'夹住'这个词从根上就不对"},
+ {"id":"zp-03-interlock","title":"不是夹住是锁定","section":"ACT I · 互锁","minutes":1.5,"purpose":"纠正摩擦解释，给出几何互锁","talk":["对比摩擦方案与互锁方案"],"transition":"互锁的具体形状是什么"},
+ {"id":"zp-04-tooth","title":"每颗齿都咬住下一颗","section":"ACT I · 几何","minutes":1.5,"purpose":"Sundback 齿形设计","talk":["凸台-凹槽的接力：一次咬合微不足道，几百次就是强度"],"transition":"力在链上怎么分配"},
+ {"id":"zp-05-load","title":"力被分配到每一颗齿","section":"ACT II · 受力","minutes":1.5,"purpose":"应力分配：没有谁独自承重","talk":["本页按 → 逐步点亮；提及时可让听众拎起包感受"],"transition":"开合两端的关键部件是滑块"},
+ {"id":"zp-06-slider","title":"一个滑块两种工作","section":"ACT II · 滑块","minutes":1.5,"purpose":"Y 形通道一边拆一边锁","talk":["本页按 → 逐步点亮；宽口撬开、窄口压合"],"transition":"几何强度怕什么？怕缺一颗齿"},
+ {"id":"zp-07-myth","title":"链条强度不靠拉紧","section":"ACT III · 误解","minutes":1.5,"purpose":"纠正'咬得越紧越结实'","talk":["坏齿无法靠压力修复——回到几何互锁"],"transition":"从单点到系统：串联可靠性"},
+ {"id":"zp-08-series","title":"一颗坏齿就是全部","section":"ACT III · 串联","minutes":1.5,"purpose":"串联系统模型","talk":["对比并联冗余：拉链没有兜底"],"transition":"回头看它的发明史"},
+ {"id":"zp-09-history","title":"发明之后三十年没人要","section":"ACT IV · 冷遇","minutes":1.5,"purpose":"好发明不等于好产品","talk":["1893 原型 → 1913 现代化 → 1923 命名（年份口径待核实）"],"transition":"转折来自场合的变化"},
+ {"id":"zp-10-fashion","title":"时装界开了门","section":"ACT IV · 转折","minutes":1,"purpose":"1937 时装界采纳","talk":["技术没变，变的是被允许出现的场合"],"transition":"收束：可逆的结构"},
+ {"id":"zp-11-answer","title":"拉链真正卖的是可逆的结构","section":"收束","minutes":1,"purpose":"新定义：把打开也做成结构","talk":["要素链呼应第 4、6 页"]}
+]

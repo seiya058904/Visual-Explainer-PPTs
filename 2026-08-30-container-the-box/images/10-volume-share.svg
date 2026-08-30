@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="ui-sans-serif,'Noto Sans SC',sans-serif">
+  <!-- 浅色页用 · 全球贸易量约八成走海运 -->
+  <g fill="none" stroke-linecap="round">
+    <!-- 环形图 -->
+    <circle cx="400" cy="300" r="170" stroke="rgba(10,31,61,.15)" stroke-width="64" fill="none"/>
+    <!-- 海运 80% 弧（从顶部顺时针） -->
+    <circle cx="400" cy="300" r="170" stroke="#0a1f3d" stroke-width="64" fill="none"
+            stroke-dasharray="855 213" transform="rotate(-90 400 300)"/>
+    <!-- 中心标注 -->
+    <text x="400" y="288" fill="#0a1f3d" font-size="56" text-anchor="middle" font-weight="800">≈80%</text>
+    <text x="400" y="330" fill="#0a1f3d" font-size="22" text-anchor="middle" opacity=".75">走海运（按体积）</text>
+    <!-- 图例 -->
+    <g>
+      <rect x="200" y="510" width="26" height="26" fill="#0a1f3d"/>
+      <text x="238" y="530" fill="#0a1f3d" font-size="20">海运 · 其中大部分为集装箱</text>
+      <rect x="560" y="510" width="26" height="26" fill="rgba(10,31,61,.15)"/>
+      <text x="598" y="530" fill="#0a1f3d" font-size="20">其他</text>
+    </g>
+    <text x="720" y="90" fill="#0a1f3d" font-size="18" text-anchor="end" opacity=".55">UNCTAD · Review of Maritime Transport</text>
+  </g>
+</svg>

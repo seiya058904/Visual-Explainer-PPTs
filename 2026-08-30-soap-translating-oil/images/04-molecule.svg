@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="ui-sans-serif,'Noto Sans SC',sans-serif">
+  <!-- 深色页用 · 两亲分子结构 -->
+  <g fill="none" stroke-linecap="round">
+    <!-- 放大的单个分子 -->
+    <circle cx="300" cy="300" r="70" fill="rgba(143,179,217,.25)" stroke="#8fb3d9" stroke-width="4"/>
+    <text x="300" y="292" fill="#8fb3d9" font-size="24" text-anchor="middle" font-weight="700">亲水头</text>
+    <text x="300" y="322" fill="#8fb3d9" font-size="18" text-anchor="middle" opacity=".8">爱水</text>
+    <!-- 两条尾链 -->
+    <g stroke="#d98e5f" stroke-width="5">
+      <path d="M365 285 l 45 -12 l 40 12 l 45 -12 l 40 12 l 45 -12"/>
+      <path d="M365 318 l 45 12 l 40 -12 l 45 12 l 40 -12 l 45 12"/>
+    </g>
+    <text x="560" y="270" fill="#d98e5f" font-size="24" font-weight="700">亲油尾</text>
+    <text x="560" y="300" fill="#d98e5f" font-size="18" opacity=".8">爱油</text>
+    <!-- 两侧环境标注 -->
+    <text x="150" y="150" fill="#8fb3d9" font-size="20" opacity=".85">← 水这边 · 头朝外</text>
+    <text x="650" y="450" fill="#d98e5f" font-size="20" text-anchor="end" opacity=".85">油这边 · 尾插进 →</text>
+    <!-- 中间说明 -->
+    <text x="400" y="520" fill="#f0e6d2" font-size="22" text-anchor="middle">同一批分子 · 两种身份 · 两个世界</text>
+    <text x="770" y="70" fill="#f0e6d2" font-size="17" text-anchor="end" opacity=".55">Surfactant · 表面活性剂（示意）</text>
+  </g>
+</svg>

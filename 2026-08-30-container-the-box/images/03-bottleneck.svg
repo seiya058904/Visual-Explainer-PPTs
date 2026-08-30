@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="ui-sans-serif,'Noto Sans SC',sans-serif">
+  <!-- 浅色页用 · 海上快、港口慢的瓶颈示意 -->
+  <g fill="none" stroke-linecap="round">
+    <!-- 海面基线 -->
+    <line x1="60" y1="420" x2="740" y2="420" stroke="#0a1f3d" stroke-width="3"/>
+    <g stroke="#0a1f3d" stroke-width="2" opacity=".35">
+      <path d="M80 440 q 20 -8 40 0 q 20 8 40 0"/>
+      <path d="M300 440 q 20 -8 40 0 q 20 8 40 0"/>
+      <path d="M560 440 q 20 -8 40 0 q 20 8 40 0"/>
+    </g>
+    <!-- 左：船快速航行 -->
+    <g stroke="#0a1f3d" stroke-width="3.5">
+      <path d="M110 360 L 250 360 L 230 395 L 130 395 Z"/>
+      <rect x="150" y="330" width="60" height="30" fill="rgba(10,31,61,.15)"/>
+    </g>
+    <text x="120" y="300" fill="#0a1f3d" font-size="22" font-weight="700">海上 · 快</text>
+    <path d="M60 377 L 96 377 M60 388 L 88 388" stroke="#0a1f3d" stroke-width="2.5" opacity=".6"/>
+    <!-- 右：港口排队散件 -->
+    <g stroke="#0a1f3d" stroke-width="3.5">
+      <path d="M560 360 L 720 360 L 700 395 L 580 395 Z"/>
+    </g>
+    <g stroke="#0a1f3d" stroke-width="2.5" fill="rgba(10,31,61,.18)">
+      <rect x="500" y="330" width="26" height="26"/>
+      <rect x="500" y="298" width="26" height="26"/>
+      <rect x="530" y="330" width="26" height="26"/>
+      <rect x="530" y="298" width="26" height="26"/>
+    </g>
+    <!-- 码头工人（简化） -->
+    <g stroke="#0a1f3d" stroke-width="2.5">
+      <circle cx="475" cy="342" r="7"/>
+      <path d="M475 349 L 475 372 M475 356 L 465 366 M475 356 L 485 366 M475 372 L 469 390 M475 372 L 481 390"/>
+      <circle cx="445" cy="352" r="7"/>
+      <path d="M445 359 L 445 382 M445 366 L 435 376 M445 366 L 455 376 M445 382 L 439 400 M445 382 L 451 400"/>
+    </g>
+    <text x="520" y="270" fill="#0a1f3d" font-size="22" font-weight="700">港口 · 慢</text>
+    <text x="470" y="245" fill="#0a1f3d" font-size="19" opacity=".75">逐件搬运 · 以天计</text>
+    <!-- 中间瓶颈标记 -->
+    <g stroke="#0a1f3d" stroke-width="3">
+      <circle cx="400" cy="250" r="34"/>
+      <line x1="378" y1="228" x2="422" y2="272"/>
+    </g>
+    <text x="400" y="180" fill="#0a1f3d" font-size="21" text-anchor="middle" font-weight="700">瓶颈在这里</text>
+    <text x="740" y="560" fill="#0a1f3d" font-size="18" text-anchor="end" opacity=".55">示意 · Levinson, The Box (2006)</text>
+  </g>
+</svg>

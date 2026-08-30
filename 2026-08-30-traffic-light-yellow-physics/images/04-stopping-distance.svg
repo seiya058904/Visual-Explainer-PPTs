@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="ui-sans-serif,'Noto Sans SC',sans-serif">
+  <!-- 浅色页用 · 刹停两段距离随速度变化 -->
+  <g fill="none" stroke-linecap="round">
+    <!-- 30 km/h -->
+    <text x="90" y="200" fill="#0a1f3d" font-size="20">30 km/h</text>
+    <rect x="220" y="180" width="60" height="34" fill="rgba(10,31,61,.5)"/>
+    <rect x="280" y="180" width="60" height="34" fill="rgba(10,31,61,.9)"/>
+    <text x="360" y="204" fill="#0a1f3d" font-size="18" opacity=".8">反应 6 m + 制动 6 m</text>
+    <!-- 60 km/h -->
+    <text x="90" y="300" fill="#0a1f3d" font-size="20">60 km/h</text>
+    <rect x="220" y="280" width="120" height="34" fill="rgba(10,31,61,.5)"/>
+    <rect x="340" y="280" width="240" height="34" fill="rgba(10,31,61,.9)"/>
+    <text x="600" y="304" fill="#0a1f3d" font-size="18" opacity=".8">反应 12 m + 制动 24 m</text>
+    <!-- 图例 -->
+    <rect x="90" y="390" width="24" height="18" fill="rgba(10,31,61,.5)"/>
+    <text x="124" y="405" fill="#0a1f3d" font-size="19">反应距离 · ≈1 秒没踩刹车</text>
+    <rect x="90" y="430" width="24" height="18" fill="rgba(10,31,61,.9)"/>
+    <text x="124" y="445" fill="#0a1f3d" font-size="19">制动距离 · 踩下刹车之后</text>
+    <!-- 结论 -->
+    <text x="400" y="520" fill="#0a1f3d" font-size="23" text-anchor="middle" font-weight="700">速度 ×2 · 刹停距离 ×3 以上</text>
+    <text x="770" y="70" fill="#0a1f3d" font-size="17" text-anchor="end" opacity=".55">示意值 · 干燥路面（量级）</text>
+  </g>
+</svg>

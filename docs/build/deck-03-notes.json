@@ -1,0 +1,13 @@
+[
+ {"id":"gl-01-cover","title":"一场能量的错身而过","section":"开场","minutes":1,"purpose":"定调：透明是一种精确的物理性格","talk":["开场可让听众看向窗外：这片透明是谁决定的？","预告两笔账：光为什么穿过、老玻璃为什么不流"],"transition":"先从最常见的窗讲起"},
+ {"id":"gl-02-hook","title":"窗上的光去了哪里","section":"钩子","minutes":1,"purpose":"建立矛盾：同一面墙，砖不透光玻璃透","talk":["反射率口径待核实，讲解时用'少量'表述"],"transition":"透明不是因为没挡东西"},
+ {"id":"gl-03-mismatch","title":"透明不是'没有东西'","section":"ACT I · 错配","minutes":1.5,"purpose":"铺垫误解并给出准确机制：电子不吸收可见光","talk":["金属 vs 玻璃的对比：自由电子随时收下光子"],"transition":"把这笔账算具体：能量数字"},
+ {"id":"gl-04-ledger","title":"一笔能量对不上的账","section":"ACT I · 账本","minutes":1.5,"purpose":"用禁带宽度 vs 光子能量解释透明","talk":["数字都是约值；可见光 1.8–3.1 eV，SiO₂ 约 8.9 eV"],"transition":"能量更高的紫外就没这么幸运"},
+ {"id":"gl-05-uv","title":"玻璃挡得住晒伤那一半","section":"ACT II · 紫外","minutes":1.5,"purpose":"区分 UVB（挡住）与 UVA（部分穿透）","talk":["靠窗久坐仍需防晒：晒老来自 UVA"],"transition":"从光转到玻璃本身：它到底是什么"},
+ {"id":"gl-06-amorphous","title":"它是固体不是'冻住的液体'","section":"ACT II · 固体","minutes":1.5,"purpose":"澄清非晶态概念，为下一页误解做准备","talk":["晶体有滑移面，玻璃没有——为第 9 页脆性埋伏笔"],"transition":"由此进入本片最大的误解"},
+ {"id":"gl-07-myth","title":"老玻璃并不在流动","section":"ACT III · 误解","minutes":1.5,"purpose":"拆解'玻璃在流动'的流行说法","talk":["crown glass 工艺：旋转吹制，边缘厚中心薄；安装习惯厚边朝下"],"transition":"如果流动说不成立，两千年的证据怎么说"},
+ {"id":"gl-08-evidence","title":"罗马玻璃依然平整","section":"ACT III · 证据","minutes":1.5,"purpose":"用实物证据终结流动说","talk":["软化温度量级随成分变化，是示意值"],"transition":"无序还带来另一个性格：脆"},
+ {"id":"gl-09-brittle","title":"强度与脆弱来自同一处","section":"ACT IV · 材料","minutes":1.5,"purpose":"解释玻璃硬而脆的物理根源","talk":["金属可塑性变形卸力；玻璃裂纹尖端放大应力"],"transition":"现代工业如何驯服这种材料"},
+ {"id":"gl-10-float","title":"让整片世界平整起来","section":"ACT IV · 工艺","minutes":1,"purpose":"浮法工艺：廉价平整玻璃改变城市","talk":["锡液密度大于玻璃熔体，玻璃浮在其上摊平"],"transition":"收束：回到透明这个定义"},
+ {"id":"gl-11-answer","title":"玻璃真正卖的是选择性沉默","section":"收束","minutes":1,"purpose":"用新定义替换旧认知","talk":["三段收束链呼应第 4、5、6 页"]}
+]

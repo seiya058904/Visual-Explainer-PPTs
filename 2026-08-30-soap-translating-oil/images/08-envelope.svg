@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="ui-sans-serif,'Noto Sans SC',sans-serif">
+  <!-- 浅色页用 · 包膜病毒被表面活性剂拆解 -->
+  <g fill="none" stroke-linecap="round">
+    <!-- 完整病毒 -->
+    <circle cx="250" cy="280" r="90" fill="rgba(42,30,19,.08)" stroke="#2a1e13" stroke-width="4"/>
+    <circle cx="250" cy="280" r="60" stroke="#2a1e13" stroke-width="2" stroke-dasharray="6 6" opacity=".6"/>
+    <text x="250" y="272" fill="#2a1e13" font-size="20" text-anchor="middle">RNA</text>
+    <text x="250" y="300" fill="#2a1e13" font-size="18" text-anchor="middle" opacity=".7">脂质包膜</text>
+    <text x="250" y="410" fill="#2a1e13" font-size="20" text-anchor="middle" font-weight="700">包膜病毒 · 结构同油污</text>
+    <!-- 皂分子进攻 -->
+    <g stroke="#8a6d3b" stroke-width="3.5">
+      <path d="M370 250 l 50 -20"/>
+      <path d="M380 300 l 55 5"/>
+      <path d="M370 330 l 45 35"/>
+    </g>
+    <g fill="#8a6d3b">
+      <circle cx="425" cy="228" r="9"/><circle cx="440" cy="306" r="9"/><circle cx="420" cy="368" r="9"/>
+    </g>
+    <text x="430" y="200" fill="#8a6d3b" font-size="19" font-weight="700">皂分子 · 尾端插进脂质膜</text>
+    <!-- 拆解结果 -->
+    <path d="M560 230 L 660 230" stroke="#2a1e13" stroke-width="3"/>
+    <text x="610" y="215" fill="#2a1e13" font-size="18" text-anchor="middle" opacity=".8">膜被拆散</text>
+    <circle cx="640" cy="330" r="34" fill="rgba(42,30,19,.1)" stroke="#2a1e13" stroke-width="3" stroke-dasharray="7 7"/>
+    <text x="640" y="337" fill="#2a1e13" font-size="16" text-anchor="middle">失活</text>
+    <text x="560" y="410" fill="#2a1e13" font-size="20" font-weight="700">包膜破坏 · 感染能力消失</text>
+    <!-- 边界注释 -->
+    <text x="120" y="520" fill="#2a1e13" font-size="18" opacity=".75">注意：仅对"包膜病毒"有效 · 无包膜病毒结构不同，此机制不适用</text>
+    <text x="770" y="70" fill="#2a1e13" font-size="17" text-anchor="end" opacity=".55">示意 · 非等比</text>
+  </g>
+</svg>

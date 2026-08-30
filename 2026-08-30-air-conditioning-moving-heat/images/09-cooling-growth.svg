@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="ui-sans-serif,'Noto Sans SC',sans-serif">
+  <!-- 浅色页用：靛蓝描边 · 全球空调保有量 2016 → 2050 -->
+  <g fill="none" stroke-linecap="round">
+    <!-- 基线与坐标 -->
+    <line x1="110" y1="480" x2="720" y2="480" stroke="#0a1f3d" stroke-width="3"/>
+    <line x1="110" y1="120" x2="110" y2="480" stroke="#0a1f3d" stroke-width="2" opacity=".45"/>
+    <!-- 2016 实测柱 -->
+    <rect x="190" y="384" width="150" height="96" fill="rgba(10,31,61,.85)" stroke="none"/>
+    <text x="265" y="356" fill="#0a1f3d" font-size="30" text-anchor="middle" font-weight="700">1.6 B</text>
+    <text x="265" y="516" fill="#0a1f3d" font-size="22" text-anchor="middle" opacity=".8">2016 · 实际</text>
+    <!-- 2050 预测柱 -->
+    <rect x="470" y="144" width="150" height="336" fill="rgba(10,31,61,.28)" stroke="#0a1f3d" stroke-width="3" stroke-dasharray="10 8"/>
+    <text x="545" y="118" fill="#0a1f3d" font-size="30" text-anchor="middle" font-weight="700">5.6 B</text>
+    <text x="545" y="516" fill="#0a1f3d" font-size="22" text-anchor="middle" opacity=".8">2050 · 预期</text>
+    <!-- 增长箭头 -->
+    <path d="M350 372 C 420 330, 440 260, 458 190" stroke="#0a1f3d" stroke-width="3.5"/>
+    <path d="M446 202 L460 182 L464 206" fill="none" stroke="#0a1f3d" stroke-width="3.5"/>
+    <!-- 注释 -->
+    <text x="640" y="90" fill="#0a1f3d" font-size="20" text-anchor="end" opacity=".7">×3.5 · 三十五年</text>
+    <text x="720" y="560" fill="#0a1f3d" font-size="18" text-anchor="end" opacity=".55">Units in use · IEA (2018)</text>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+[
+ {"id":"tw-01-cover","title":"拧开龙头后的百年工程","section":"开场","minutes":1,"purpose":"定调：干净是一条流水线","talk":["提问：你觉得自来水厂最重要的步骤是什么？多数人会答消毒"],"transition":"从一个气味误会开始"},
+ {"id":"tw-02-hook","title":"干净的水为什么有味","section":"钩子","minutes":1,"purpose":"反转直觉：氯味是保护信号","talk":["让大家回想烧开水的壶壁水垢——那是另一个流程的证据"],"transition":"既然消毒不是全部，看看完整流程"},
+ {"id":"tw-03-process","title":"消毒一下就够了？","section":"ACT I · 误解铺垫","minutes":1.5,"purpose":"铺垫'消毒=全部'的误解","talk":["强调顺序：先物理后化学"],"transition":"五步流水线逐个看"},
+ {"id":"tw-04-process-line","title":"一滴水的通关流程","section":"ACT I · 流水线","minutes":2,"purpose":"五步工艺总览","talk":["本页按 → 逐步点亮；每步解决一类风险"],"transition":"先看最反直觉的一步：让杂质抱团"},
+ {"id":"tw-05-coagulation","title":"先让杂质学会抱团","section":"ACT II · 混凝","minutes":1.5,"purpose":"电荷中和与絮体形成","talk":["类比：磁铁打散后再让粒子相吸"],"transition":"抱团之后交给历史"},
+ {"id":"tw-06-filtration","title":"一层沙子改写城市命运","section":"ACT II · 过滤","minutes":1.5,"purpose":"砂滤的历史与流行病学证据","talk":["John Snow 地图故事：现代流行病学起点"],"transition":"流水线到消毒这一步，误解在这里"},
+ {"id":"tw-07-myth","title":"消毒不是把水洗干净","section":"ACT III · 误解","minutes":1.5,"purpose":"纠正'消毒=干净'","talk":["过滤管看得见，消毒管看不见——分工明确"],"transition":"消毒本身也有两难"},
+ {"id":"tw-08-residual","title":"从水厂到你家还有一百米","section":"ACT III · 余氯","minutes":1.5,"purpose":"余氯为什么存在","talk":["回应第 2 页的氯味——前后呼应"],"transition":"氯的两难：剂量"},
+ {"id":"tw-09-dilemma","title":"消毒也有自己的代价","section":"ACT IV · 两难","minutes":1.5,"purpose":"剂量在有效与副产物之间平衡","talk":["DBPs 监管限值随地区不同；标准=风险管理"],"transition":"拉远到全球：这项技术还没普及"},
+ {"id":"tw-10-global","title":"这项技术还没普及","section":"ACT IV · 全球","minutes":1.5,"purpose":"22 亿人缺乏安全管理饮用水","talk":["JMP 2022 口径：safely managed 定义"],"transition":"收束：流程即产品"},
+ {"id":"tw-11-answer","title":"自来水真正卖的是流程本身","section":"收束","minutes":1,"purpose":"新定义：干净是过程","talk":["五步链呼应第 4 页；氯味呼应第 2 页"]}
+]

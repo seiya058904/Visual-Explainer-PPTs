@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="ui-sans-serif,'Noto Sans SC',sans-serif">
+  <!-- 浅色页用 · 串联系统：一颗失效，整条失效 -->
+  <g fill="none" stroke-linecap="round">
+    <!-- 串联链环 -->
+    <g stroke="#2a1e13" stroke-width="4">
+      <ellipse cx="160" cy="220" rx="52" ry="34"/>
+      <ellipse cx="280" cy="220" rx="52" ry="34"/>
+      <ellipse cx="400" cy="220" rx="52" ry="34"/>
+      <ellipse cx="520" cy="220" rx="52" ry="34"/>
+      <ellipse cx="640" cy="220" rx="52" ry="34"/>
+    </g>
+    <!-- 第四环断裂 -->
+    <g stroke="#8a2f2b" stroke-width="4">
+      <path d="M500 200 q 20 -14 40 0"/>
+      <path d="M505 242 q 18 12 36 2"/>
+    </g>
+    <circle cx="520" cy="220" r="62" stroke="#8a2f2b" stroke-width="2.5" stroke-dasharray="8 8"/>
+    <text x="520" y="330" fill="#8a2f2b" font-size="22" text-anchor="middle" font-weight="700">坏齿 · 整条从这断开</text>
+    <!-- 拉力箭头 -->
+    <path d="M60 220 h 40 M64 210 l -14 10 l 14 10" stroke="#2a1e13" stroke-width="3.5"/>
+    <path d="M700 220 h 40 M726 210 l 14 10 l -14 10" stroke="#2a1e13" stroke-width="3.5"/>
+    <text x="70" y="180" fill="#2a1e13" font-size="19" opacity=".8">拉力</text>
+    <text x="700" y="180" fill="#2a1e13" font-size="19" opacity=".8">拉力</text>
+    <!-- 对比说明 -->
+    <text x="400" y="440" fill="#2a1e13" font-size="22" text-anchor="middle" font-weight="700">串联：任何一环失效 = 整体失效</text>
+    <text x="400" y="480" fill="#2a1e13" font-size="19" text-anchor="middle" opacity=".7">并联才有冗余兜底 · 拉链没有</text>
+    <text x="770" y="70" fill="#2a1e13" font-size="17" text-anchor="end" opacity=".55">Series Model · 可靠性工程</text>
+  </g>
+</svg>
