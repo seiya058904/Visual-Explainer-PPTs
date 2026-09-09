@@ -1,6 +1,6 @@
 # 网页 HTML PPT 素材仓库
 
-这个仓库用于使用 [`guizang-ppt-skill`](C:\Users\admin\.codex\skills\guizang-ppt-skill\SKILL.md) 制作、保存和迭代单文件 HTML 网页演示文稿。
+这个仓库用于使用 [`guizang-ppt-skill`](.codex/skills/guizang-ppt-skill/SKILL.md) 制作、保存和迭代单文件 HTML 网页演示文稿。
 
 规范来源：<https://github.com/op7418/guizang-ppt-skill>
 
