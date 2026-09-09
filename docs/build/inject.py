@@ -5,7 +5,8 @@ theme: ink-default | indigo-porcelain | forest-ink | kraft | dune
 """
 import sys, re, json, pathlib
 
-SKILL = pathlib.Path(r"C:\Users\admin\.codex\skills\guizang-ppt-skill")
+REPO_ROOT = pathlib.Path(__file__).resolve().parents[2]
+SKILL = REPO_ROOT / ".codex" / "skills" / "guizang-ppt-skill"
 THEMES = {
     "ink-default":        {"--ink":"#0a0a0b","--ink-rgb":"10,10,11","--paper":"#f1efea","--paper-rgb":"241,239,234","--paper-tint":"#e8e5de","--ink-tint":"#18181a"},
     "indigo-porcelain":   {"--ink":"#0a1f3d","--ink-rgb":"10,31,61","--paper":"#f1f3f5","--paper-rgb":"241,243,245","--paper-tint":"#e4e8ec","--ink-tint":"#152a4a"},
