@@ -21,3 +21,6 @@ __pycache__/
 # Editor-local settings
 .vscode/
 .idea/
+
+# WorkBuddy local workspace data (memory logs, session state)
+.workbuddy/
