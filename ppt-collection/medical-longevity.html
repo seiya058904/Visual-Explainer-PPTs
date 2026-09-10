@@ -459,7 +459,7 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
 <body>
 <script>
   (function(){
-    const KEY = 'guizang-ppt-low-power';
+    const KEY = 'guizang-ppt-low-power:' + location.pathname;
     const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
     const stored = localStorage.getItem(KEY);
     window.__lowPowerMode = stored === '1' || (stored === null && reduced);
@@ -1100,7 +1100,7 @@ addEventListener('touchend',e=>{
 go(0);
 </script>
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<script>lucide.createIcons();</script>
+<script>try{if(window.lucide)lucide.createIcons();}catch(e){/* CDN unavailable: static fallback */}</script>
 
 <!-- 动效使用纯 CSS @keyframes（.slide.visible 触发），JS 由 playSlideCSS/pipeAdvanceCSS 接管 -->
 </body>

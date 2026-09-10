@@ -468,7 +468,8 @@
   body.motion-ready [data-anim="left"]{transform:translateX(-24px)}
   body.motion-ready [data-anim="right"]{transform:translateX(24px)}
   body.motion-ready [data-anim="line"]{opacity:0;transform:translateY(10px)}
-  body.motion-ready [data-animate="pipeline"] [data-anim]{opacity:.15}
+  body.motion-ready [data-animate="pipeline"] [data-anim="step"],
+  body.motion-ready [data-animate="pipeline"] [data-anim="arrow"]{opacity:.15}
   body.low-power #deck{transition:none!important}
   body.low-power *,
   body.low-power *::before,
@@ -493,7 +494,7 @@
 <body>
 <script>
   (function(){
-    const KEY = 'guizang-ppt-low-power';
+    const KEY = 'guizang-ppt-low-power:' + location.pathname;
     const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
     const stored = localStorage.getItem(KEY);
     window.__lowPowerMode = stored === '1' || (stored === null && reduced);
@@ -1404,7 +1405,7 @@ go(Number.isFinite(initialSlide) ? initialSlide : 0);
 window.__pptPresenter?.initMode();
 </script>
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<script>lucide.createIcons();</script>
+<script>try{if(window.lucide)lucide.createIcons();}catch(e){/* CDN unavailable: static fallback */}</script>
 
 <!-- ============ Motion One 动效引擎（本地优先,CDN 兜底） ============
      加载策略:先 ./assets/motion.min.js(本地,离线可用),失败 fallback 到 jsDelivr CDN

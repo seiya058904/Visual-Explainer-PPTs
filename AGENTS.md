@@ -24,9 +24,11 @@
 
 ## 1. 项目边界与生命周期
 
-目标：使用 `guizang-ppt-skill` 制作网页 HTML PPT。
+**本仓库的所有项目（含 `ppt-collection/` 全部成品与所有 `2026-*` 项目目录）一律基于 `guizang-ppt-skill` 制作。该 skill 是整个仓库的核心与唯一制作基准：风格体系（Style A / Style B）、主题色、layout、页面 schema、动效与验收流程全部来自它。任何新 deck 都不得脱离该 skill 另起炉灶；引入新的模板体系必须先经用户明确确认。**
 
-- `ppt-collection/`：用户明确认可后的最终单 HTML 成品库，也是只读参考样本。
+本节目标：使用 `guizang-ppt-skill` 制作网页 HTML PPT。
+
+- `ppt-collection/`：用户明确认可后的最终单 HTML 成品库，也是只读参考样本。成品必须以「单 HTML 发布产物」为准：repo 相对图片/`assets/motion.min.js` 一律由 `docs/build/export-standalone.py` 内联为 data URI 生成，禁止手工往 `ppt-collection/` 拷贝 `images/` 或其他资源目录来"补依赖"。
 - `5.9/`：失败品和历史 PPTX 素材，禁止作为案例学习、风格模仿或质量基准。
 - 新项目目录：`YYYY-MM-DD-topic-slug/`
 - 主文件：`index.html`
@@ -214,6 +216,7 @@ Pipeline 是高风险回归点：
   3. 全步骤完成
   4. 再次翻页
 - 动效失败或低功耗模式下，最终静态状态必须完整可读。
+- CSS 侧同样只允许 step/arrow 进 dim 选择器：`[data-animate="pipeline"] [data-anim="step"], [data-animate="pipeline"] [data-anim="arrow"]`。2026-09 审计发现旧模板代际（`.p-step` / waapi / 早期 Motion 变体）仍存在 `[data-anim]` 全量 dim 的历史遗留 CSS，属于已知问题清单，不作为新作品参考。
 
 ---
 
@@ -292,6 +295,8 @@ Pipeline 是高风险回归点：
 Style B：运行 `validate-swiss-deck.mjs`。  
 Presenter mode：运行 `validate-presenter-mode.mjs`。
 
+全仓浏览器 QA：`docs/build/browser-qa.mjs`（真实 Chromium；模式 `pending` / `approved` / `matrix` / `standalone` / `lowpower-cross`，输出 JSON + Markdown）。`matrix` 是 pipeline 三态 / hero / cascade / directional / 低功耗跨 deck / reduced-motion 的固定 regression test，动效引擎或模板改动后必须重跑。
+
 如果使用 `python http.server`，重建后验收需强制 reload 或使用 cache-buster，避免缓存造成“修复无效”假象。
 
 审计应使用独立标签页。若验收过程中切换过低功耗/静态模式，交付前恢复动态模式并确认真实浏览状态。
@@ -320,6 +325,10 @@ Presenter mode：运行 `validate-presenter-mode.mjs`。
 | 缓存导致看不到修复 | cache-buster / hard reload |
 | 全局替换误伤其他页 | 使用 slide 范围内局部补丁 |
 | 首屏预热反而卡顿 | 不做全量 `img.decode()` / blur warmup，除非有冷启动 A/B 证据 |
+| `lucide.createIcons()` 裸调用 | 必须 `try{if(window.lucide)...}catch{}` 护栏，否则 CDN 失败抛 ReferenceError |
+| 自动化 QA 假设每次按键都翻页 | deck 有翻页过渡锁（约 1.2–1.7s 内吞键）：每次按键后必须校验 `__currentSlideIndex`，未到达则静置重试 |
+| 动效断言测到"没动画" | 等 settle 后再采样只会得到 opacity=1；必须在加载/按键的同时采样（opacity min/max 按页分组） |
+| 老文件 GBK 乱码进 JS 模板串 | 乱码若吞掉引号会产生 SyntaxError 使整段脚本失效（hiddenCards 停在 opacity 0）；修复只替换代码行与用户可见文本，注释乱码不扩大范围 |
 
 ---
 

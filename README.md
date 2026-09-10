@@ -2,9 +2,11 @@
 
 A collection of visual explainer and educational presentation projects covering science, technology, engineering, everyday phenomena, and other knowledge topics.
 
+> **Built with `guizang-ppt-skill` — the core of this repository.** Every project here (and every deck in `ppt-collection/`) is created with the `guizang-ppt-skill` web-HTML-PPT framework: its style systems (Style A e-magazine / Style B Swiss international), theme palettes, layouts, slide schema, motion rules, and QA workflow are the single production standard for the whole repo.
+
 ## About
 
-This repository is a long-term maintained collection of visual knowledge-explainer presentation projects. Each project explains one topic through visual storytelling, breaking everyday and technical phenomena down into clear, well-designed slides. The collection grows over time: new topics are added as explainers are designed, reviewed, and approved.
+This repository is a long-term maintained collection of visual knowledge-explainer presentation projects. Each project explains one topic through visual storytelling, breaking everyday and technical phenomena down into clear, well-designed slides. The collection grows over time: new topics are added as explainers are designed, reviewed, and approved. All decks are produced with `guizang-ppt-skill`, which defines the repository's shared visual language and quality bar.
 
 ## Projects
 
@@ -38,7 +40,7 @@ Current projects cover, among others:
 
 ## Conventions
 
-Project naming, the deck-making workflow, and Git conventions are documented in `AGENTS.md` (project rules) and `PPT 高质量文案生成 Prompt｜精简优化版.md` (copywriting standards).
+Project naming, the deck-making workflow, and Git conventions are documented in `AGENTS.md` (project rules) and `PPT 高质量文案生成 Prompt｜精简优化版.md` (copywriting standards). The workflow in both documents is built around `guizang-ppt-skill` — it is the foundation every project in this repository is made with.
 
 ## License
 

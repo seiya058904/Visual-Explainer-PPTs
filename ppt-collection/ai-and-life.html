@@ -112,7 +112,7 @@
 <body>
 <script>
 (function(){
-  const KEY = 'guizang-ppt-low-power';
+  const KEY = 'guizang-ppt-low-power:' + location.pathname;
   const stored = localStorage.getItem(KEY);
   // 默认开启动效（不跟随系统 prefers-reduced-motion）
   window.__lowPowerMode = stored === '1';

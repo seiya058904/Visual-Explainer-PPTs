@@ -438,13 +438,13 @@
 <body>
 <script>
   (function(){
-    const KEY = 'guizang-ppt-low-power';
+    const KEY = 'guizang-ppt-low-power:' + location.pathname;
     const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
     const stored = localStorage.getItem(KEY);
     window.__lowPowerMode = stored === '1' || (stored === null && reduced);
     function updateHint(){
       const hint = document.getElementById('hint');
-      if(hint) hint.textContent = `鈫?鈫?缈婚〉 路 B ${window.__lowPowerMode ? '鍔ㄦ€? : '闈欐€?} 路 ESC 绱㈠紩`;
+      if(hint) hint.textContent = `→→翻页 · B ${window.__lowPowerMode ? '动态' : '静态'} · ESC 索引`;
     }
     window.__setLowPowerMode = function(on, opts={}){
       window.__lowPowerMode = !!on;
@@ -464,7 +464,7 @@
 
 <canvas id="bg-dark" class="bg"></canvas>
 <canvas id="bg-light" class="bg"></canvas>
-<div id="hint">鈫?鈫?缈婚〉 路 B 闈欐€?路 ESC 绱㈠紩</div>
+<div id="hint">→→翻页 · B 静态 · ESC 索引</div>
 
 <div id="deck">
 
@@ -1085,7 +1085,7 @@ addEventListener('touchend',e=>{
 go(0);
 </script>
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<script>lucide.createIcons();</script>
+<script>try{if(window.lucide)lucide.createIcons();}catch(e){/* CDN unavailable: static fallback */}</script>
 
 <!-- ============ Motion One 动效引擎（CDN 加载）============
      加载策略:使用 jsDelivr CDN；若失败则自动降级为静态可读内容
@@ -1143,7 +1143,12 @@ if(motion){
 
     if(recipe === 'pipeline'){
       pipeStep = -1;
-      slide.querySelectorAll('[data-anim="step"]').forEach(el=>{
+      resetAnims(slide);
+      const stepsA = [...slide.querySelectorAll('[data-anim="step"]')];
+      const arrowsA = [...slide.querySelectorAll('[data-anim="arrow"]')];
+      const othersA = [...slide.querySelectorAll('[data-anim]')].filter(el=>el.dataset.anim!=='step'&&el.dataset.anim!=='arrow');
+      if(othersA.length) animate(othersA, {opacity:[0,1], y:[16,0]}, {duration:.75, delay:stagger(.1, {start:.15}), easing:EASE});
+      [...stepsA, ...arrowsA].forEach(el=>{
         el.style.opacity='0.15';
         el.style.transform='none';
       });

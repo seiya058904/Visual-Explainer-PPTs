@@ -453,7 +453,7 @@
 <body>
 <script>
   (function(){
-    const KEY = 'guizang-ppt-low-power';
+    const KEY = 'guizang-ppt-low-power:' + location.pathname;
     const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
     const stored = localStorage.getItem(KEY);
     window.__lowPowerMode = stored === '1' || (stored === null && reduced);
@@ -1333,7 +1333,7 @@ setTimeout(autoScaleFrames, 100);
 go(0);
 </script>
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<script>lucide.createIcons();</script>
+<script>try{if(window.lucide)lucide.createIcons();}catch(e){/* CDN unavailable: static fallback */}</script>
 
 <!-- ============ 动效引擎(纯 CSS @keyframes,替代 Motion One) ============
      原 Motion One <script type="module"> 已替换为纯 CSS 动画方案,
