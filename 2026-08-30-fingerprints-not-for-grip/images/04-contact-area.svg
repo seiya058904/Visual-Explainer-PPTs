@@ -1,23 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="ui-sans-serif,'Noto Sans SC',sans-serif">
-  <!-- 浅色页用 · 指纹脊线减少接触面积（橡胶垫实验） -->
+  <!-- 深色页用 · 指纹脊线减少接触面积（橡胶垫实验） -->
   <g fill="none" stroke-linecap="round">
     <!-- 左：光滑垫 -->
-    <rect x="110" y="240" width="250" height="60" fill="rgba(42,30,19,.25)" stroke="#2a1e13" stroke-width="3"/>
-    <text x="235" y="215" fill="#2a1e13" font-size="20" text-anchor="middle">光滑橡胶垫</text>
-    <text x="235" y="340" fill="#2a1e13" font-size="19" text-anchor="middle" opacity=".8">贴合面积：大</text>
-    <text x="235" y="372" fill="#2a1e13" font-size="19" text-anchor="middle" opacity=".8">摩擦：基准值</text>
+    <rect x="110" y="240" width="250" height="60" fill="rgba(245,241,232,.16)" stroke="#f5f1e8" stroke-width="3"/>
+    <text x="235" y="215" fill="#f5f1e8" font-size="20" text-anchor="middle">光滑橡胶垫</text>
+    <text x="235" y="340" fill="#f5f1e8" font-size="19" text-anchor="middle" opacity=".8">贴合面积：大</text>
+    <text x="235" y="372" fill="#f5f1e8" font-size="19" text-anchor="middle" opacity=".8">摩擦：基准值</text>
     <!-- 右：带脊线垫 -->
-    <g stroke="#2a1e13" stroke-width="3">
+    <g stroke="#f5f1e8" stroke-width="3">
       <path d="M450 250 h 250 M450 268 h 250 M450 286 h 250"/>
     </g>
-    <g stroke="#2a1e13" stroke-width="2.5" opacity=".5">
+    <g stroke="#f5f1e8" stroke-width="2.5" opacity=".5">
       <path d="M450 240 v 34 M490 240 v 34 M530 240 v 34 M570 240 v 34 M610 240 v 34 M650 240 v 34 M690 240 v 34"/>
     </g>
-    <text x="575" y="215" fill="#2a1e13" font-size="20" text-anchor="middle">带脊线橡胶垫</text>
-    <text x="575" y="340" fill="#2a1e13" font-size="19" text-anchor="middle" opacity=".8">贴合面积：更小</text>
-    <text x="575" y="372" fill="#2a1e13" font-size="19" text-anchor="middle" opacity=".8">摩擦：没有更大</text>
+    <text x="575" y="215" fill="#f5f1e8" font-size="20" text-anchor="middle">带脊线橡胶垫</text>
+    <text x="575" y="340" fill="#f5f1e8" font-size="19" text-anchor="middle" opacity=".8">贴合面积：更小</text>
+    <text x="575" y="372" fill="#f5f1e8" font-size="19" text-anchor="middle" opacity=".8">摩擦：没有更大</text>
     <!-- 结论 -->
-    <text x="400" y="470" fill="#2a1e13" font-size="23" text-anchor="middle" font-weight="700">脊线 ≠ 轮胎纹 · 摩擦没有提升</text>
-    <text x="770" y="70" fill="#2a1e13" font-size="17" text-anchor="end" opacity=".55">Warman &amp; Ennos · J Exp Biol · 2009（示意）</text>
+    <text x="400" y="470" fill="#f5f1e8" font-size="23" text-anchor="middle" font-weight="700">脊线 ≠ 轮胎纹 · 摩擦没有提升</text>
+    <text x="770" y="70" fill="#f5f1e8" font-size="17" text-anchor="end" opacity=".55">Warman &amp; Ennos · J Exp Biol · 2009（示意）</text>
   </g>
 </svg>

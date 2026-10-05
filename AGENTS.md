@@ -331,6 +331,10 @@ Presenter mode：运行 `validate-presenter-mode.mjs`。
 | 自动化 QA 假设每次按键都翻页 | deck 有翻页过渡锁（约 1.2–1.7s 内吞键）：每次按键后必须校验 `__currentSlideIndex`，未到达则静置重试 |
 | 动效断言测到"没动画" | 等 settle 后再采样只会得到 opacity=1；必须在加载/按键的同时采样（opacity min/max 按页分组） |
 | 老文件 GBK 乱码进 JS 模板串 | 乱码若吞掉引号会产生 SyntaxError 使整段脚本失效（hiddenCards 停在 opacity 0）；修复只替换代码行与用户可见文本，注释乱码不扩大范围 |
+| 「待核实/口径待核实」草稿核查备注残留进可见文案（含 meta、stat-note、SVG） | 定稿前运行 `rg -n "待核实" index.html images/`，逐条核对一手来源、数值计算和适用条件；有证据才改为准确口径，无证据保留待核实或明确限定，禁止仅删除括注冒充核实。presenter notes 同样不能抹掉事实边界 |
+| SVG 墨色与页面深浅错配（「浅色页用」深墨图放上 dark 页，或反之） | 表现为整张插图"像低透明度/对比度极低"，动效引擎无问题；制作时按图片注释「浅色页用/深色页用」与 slide 的 dark/light 配对，验收时逐张图核对 |
+| browser-qa 的 `-pipeline.png` 常规态截图实为推进翻页后的下一页 | 工具时序所致，内容重复不是 deck 缺陷；pipeline 一律以 `-pipeline-initial/-stepNN/-complete` 三态截图为准 |
+| 封面 meta 行加一个 span 即可能在 1000×560 档超宽折行（webfont 比回退字体宽，700ms 探针会误判单行） | 改动 meta 行后必须等 `document.fonts.ready` + 动画稳定后测 `meta-row.clientHeight`（<45px 为单行），双档验证；优先缩来源缩写而不是删 callout 语义 |
 
 ---
 
@@ -388,7 +392,7 @@ Presenter mode：运行 `validate-presenter-mode.mjs`。
 生成后：
 
 - `<title>...</title>` 闭合
-- 无 `[必填]` 等占位残留
+- 无 `[必填]` 等占位残留；无「待核实/口径待核实」草稿备注残留（含 `images/*.svg` 图内文字）
 - 页面节奏无连续 3 页同类
 - Pipeline 状态完整验证
 - 三档视口无真实内容溢出

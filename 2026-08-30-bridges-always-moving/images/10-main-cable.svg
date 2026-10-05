@@ -9,12 +9,12 @@
       <path d="M300 160 Q 340 280 300 400 M400 120 Q 400 280 400 445 M500 160 Q 460 280 500 400"/>
     </g>
     <!-- 标注 -->
-    <text x="620" y="180" fill="#0a0a0b" font-size="20" font-weight="700">27,572 股</text>
+    <text x="620" y="180" fill="#0a0a0b" font-size="20" font-weight="700">27,572 根钢丝</text>
     <text x="620" y="208" fill="#0a0a0b" font-size="17" opacity=".75">钢丝先成股 · 再束成缆</text>
     <path d="M612 190 L 545 220" stroke="#0a0a0b" stroke-width="2" stroke-dasharray="5 6"/>
     <text x="150" y="180" fill="#0a0a0b" font-size="19" opacity=".8">只受拉</text>
     <!-- 底部数字 -->
-    <text x="400" y="510" fill="#0a0a0b" font-size="23" text-anchor="middle" font-weight="700">钢丝总长 ≈ 12.9 万 km · 可绕地球三圈（引用口径待核实）</text>
+    <text x="400" y="510" fill="#0a0a0b" font-size="23" text-anchor="middle" font-weight="700">钢丝总长 ≈ 12.9 万 km · 可绕地球三圈</text>
     <text x="770" y="70" fill="#0a0a0b" font-size="17" text-anchor="end" opacity=".55">Golden Gate Main Cable · 示意</text>
   </g>
 </svg>

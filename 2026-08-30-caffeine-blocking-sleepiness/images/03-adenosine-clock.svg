@@ -15,8 +15,8 @@
     <path d="M130 440 L 420 200 L 430 440 L 600 210 L 615 440 L 700 250" stroke="#0a0a0b" stroke-width="4.5"/>
     <!-- 咖啡因屏蔽段（虚线降位） -->
     <path d="M250 330 L 420 200" stroke="#8a6d3b" stroke-width="3.5" stroke-dasharray="9 8"/>
-    <text x="250" y="310" fill="#8a6d3b" font-size="20" font-weight="700">咖啡因：广播被静音</text>
-    <text x="130" y="300" fill="#0a0a0b" font-size="20" opacity=".8">越醒越困 · 持续积累</text>
+    <text x="232" y="420" fill="#8a6d3b" font-size="20" font-weight="700">咖啡因：广播被静音</text>
+    <text x="130" y="215" fill="#0a0a0b" font-size="20" opacity=".8">越醒越困 · 持续积累</text>
     <text x="430" y="470" fill="#0a0a0b" font-size="18" opacity=".6">睡眠时间</text>
     <text x="720" y="560" fill="#0a0a0b" font-size="18" text-anchor="end" opacity=".55">示意曲线 · Borbély 双过程模型</text>
   </g>
