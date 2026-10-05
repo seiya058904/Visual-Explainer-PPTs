@@ -29,6 +29,8 @@
 本节目标：使用 `guizang-ppt-skill` 制作网页 HTML PPT。
 
 - `ppt-collection/`：用户明确认可后的最终单 HTML 成品库，也是只读参考样本。成品必须以「单 HTML 发布产物」为准：repo 相对图片/`assets/motion.min.js` 一律由 `docs/build/export-standalone.py` 内联为 data URI 生成，禁止手工往 `ppt-collection/` 拷贝 `images/` 或其他资源目录来"补依赖"。
+  - 导出命名：`project/index.html` → `project.html`，普通 HTML 保留原名；批量目标冲突或本地依赖失败时整批不写入，写入失败回滚。
+  - 默认写暂存目录；`--stage DIR` 指定暂存目录，`--out-dir DIR` 指定最终目录，组合使用时先在 stage 准备、最终写 out-dir。`--check-only` 不创建目录或文件。导出器改动后运行 `python -m unittest discover -s docs/build -p 'test_*.py'`，并对实际输入跑依赖预检和 `standalone` 浏览器 QA。
 - `5.9/`：失败品和历史 PPTX 素材，禁止作为案例学习、风格模仿或质量基准。
 - 新项目目录：`YYYY-MM-DD-topic-slug/`
 - 主文件：`index.html`
