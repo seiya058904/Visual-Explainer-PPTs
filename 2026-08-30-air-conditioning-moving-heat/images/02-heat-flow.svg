@@ -1,48 +1,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="ui-sans-serif,'Noto Sans SC',sans-serif">
-  <!-- 深色页用：浅色描边 · 热从室内被搬到室外 -->
+  <!-- 浅色页用：深墨描边 · 热从室内被搬到室外 -->
   <g fill="none" stroke-linecap="round" stroke-linejoin="round">
     <!-- 房间 -->
-    <rect x="90" y="150" width="420" height="330" stroke="#f1f3f5" stroke-width="3" opacity=".9"/>
+    <rect x="90" y="150" width="420" height="330" stroke="#0a1f3d" stroke-width="3" opacity=".9"/>
     <!-- 室外区域分隔（虚线） -->
-    <line x1="560" y1="80" x2="560" y2="520" stroke="#f1f3f5" stroke-width="2" stroke-dasharray="6 10" opacity=".45"/>
-    <text x="120" y="130" fill="#f1f3f5" font-size="24" opacity=".85" letter-spacing="6">室内 · 26°C</text>
-    <text x="600" y="130" fill="#f1f3f5" font-size="24" opacity=".85" letter-spacing="6">室外 · 35°C</text>
+    <line x1="560" y1="80" x2="560" y2="520" stroke="#0a1f3d" stroke-width="2" stroke-dasharray="6 10" opacity=".45"/>
+    <text x="120" y="130" fill="#0a1f3d" font-size="24" opacity=".85" letter-spacing="6">室内 · 26°C</text>
+    <text x="600" y="130" fill="#0a1f3d" font-size="24" opacity=".85" letter-spacing="6">室外 · 35°C</text>
     <!-- 空调室内机 -->
-    <rect x="110" y="170" width="180" height="52" rx="8" stroke="#f1f3f5" stroke-width="3"/>
-    <line x1="122" y1="212" x2="278" y2="212" stroke="#f1f3f5" stroke-width="2" opacity=".6"/>
+    <rect x="110" y="170" width="180" height="52" rx="8" stroke="#0a1f3d" stroke-width="3"/>
+    <line x1="122" y1="212" x2="278" y2="212" stroke="#0a1f3d" stroke-width="2" opacity=".6"/>
     <!-- 室内向下冷气流（蓝） -->
-    <g stroke="#7fa8c9" stroke-width="4">
+    <g stroke="#3d6b8f" stroke-width="4">
       <path d="M150 240 L150 320"/>
       <path d="M200 240 L200 340"/>
       <path d="M250 240 L250 320"/>
     </g>
-    <g fill="#7fa8c9" stroke="none">
+    <g fill="#3d6b8f" stroke="none">
       <path d="M142 318 L150 334 L158 318 Z"/>
       <path d="M192 338 L200 354 L208 338 Z"/>
       <path d="M242 318 L250 334 L258 318 Z"/>
     </g>
-    <text x="120" y="390" fill="#7fa8c9" font-size="20">冷风 · 蒸发器吸热</text>
+    <text x="120" y="390" fill="#3d6b8f" font-size="20">冷风 · 蒸发器吸热</text>
     <!-- 室外机 -->
-    <rect x="600" y="360" width="150" height="120" rx="8" stroke="#f1f3f5" stroke-width="3"/>
-    <g stroke="#f1f3f5" stroke-width="2.5" opacity=".8">
+    <rect x="600" y="360" width="150" height="120" rx="8" stroke="#0a1f3d" stroke-width="3"/>
+    <g stroke="#0a1f3d" stroke-width="2.5" opacity=".8">
       <circle cx="675" cy="420" r="34"/>
       <path d="M675 392 L675 448 M653 420 L697 420 M660 405 L690 435 M660 435 L690 405"/>
     </g>
-    <text x="608" y="510" fill="#f1f3f5" font-size="20" opacity=".85">室外机 · 冷凝排热</text>
+    <text x="608" y="510" fill="#0a1f3d" font-size="20" opacity=".85">室外机 · 冷凝排热</text>
     <!-- 连接铜管 -->
-    <g stroke="#c9b08a" stroke-width="5">
+    <g stroke="#8a6a3f" stroke-width="5">
       <path d="M290 200 C 430 120, 520 140, 640 300 L 660 360"/>
       <path d="M290 210 C 440 180, 520 220, 620 340 L 630 360"/>
     </g>
-    <text x="380" y="165" fill="#c9b08a" font-size="20">制冷剂 · 载着热走</text>
+    <text x="380" y="165" fill="#8a6a3f" font-size="20">制冷剂 · 载着热走</text>
     <!-- 排热波浪（暖色） -->
-    <g stroke="#d98e5f" stroke-width="4">
+    <g stroke="#b2612f" stroke-width="4">
       <path d="M700 330 q 14 -18 28 0 q 14 18 28 0"/>
       <path d="M700 300 q 14 -18 28 0 q 14 18 28 0" opacity=".75"/>
       <path d="M700 270 q 14 -18 28 0 q 14 18 28 0" opacity=".5"/>
     </g>
-    <text x="780" y="240" fill="#d98e5f" font-size="20" text-anchor="end">房间里的热 · 正被搬出来</text>
+    <text x="780" y="240" fill="#b2612f" font-size="20" text-anchor="end">房间里的热 · 正被搬出来</text>
     <!-- 地平线 -->
-    <line x1="60" y1="520" x2="760" y2="520" stroke="#f1f3f5" stroke-width="2" opacity=".4"/>
+    <line x1="60" y1="520" x2="760" y2="520" stroke="#0a1f3d" stroke-width="2" opacity=".4"/>
   </g>
 </svg>

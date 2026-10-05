@@ -18,8 +18,8 @@
     </g>
     <text x="430" y="200" fill="#8a6d3b" font-size="19" font-weight="700">皂分子 · 尾端插进脂质膜</text>
     <!-- 拆解结果 -->
-    <path d="M560 230 L 660 230" stroke="#2a1e13" stroke-width="3"/>
-    <text x="610" y="215" fill="#2a1e13" font-size="18" text-anchor="middle" opacity=".8">膜被拆散</text>
+    <path d="M560 268 L 660 268" stroke="#2a1e13" stroke-width="3"/>
+    <text x="610" y="253" fill="#2a1e13" font-size="18" text-anchor="middle" opacity=".8">膜被拆散</text>
     <circle cx="640" cy="330" r="34" fill="rgba(42,30,19,.1)" stroke="#2a1e13" stroke-width="3" stroke-dasharray="7 7"/>
     <text x="640" y="337" fill="#2a1e13" font-size="16" text-anchor="middle">失活</text>
     <text x="560" y="410" fill="#2a1e13" font-size="20" font-weight="700">包膜破坏 · 感染能力消失</text>
