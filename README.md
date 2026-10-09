@@ -1,66 +1,165 @@
-# 📐 Visual Explainer PPTs
+<h1 align="center">📐 Visual Explainer PPTs</h1>
 
-**Ideas you can see, not just read.**
+<p align="center">
+  <strong>One question. A clearer way to see it.</strong>
+</p>
 
-A growing collection of browser-native, visually structured explainers for science, engineering, technology and everyday phenomena.
+<p align="center">
+  A collection of browser-native visual explainers about science, technology,<br>
+  engineering, everyday phenomena, and the systems behind them.
+</p>
 
-[**Browse explainers ↓**](#pick-a-question) · [Approved standalone decks](ppt-collection/) · [Production rules](AGENTS.md) · [Writing guide](PPT%20高质量文案生成%20Prompt｜精简优化版.md)
+<p align="center">
+  <a href="#featured-explainers"><strong>🔎 Explore the Explainers</strong></a>
+  &nbsp;·&nbsp;
+  <a href="ppt-collection/">📚 Approved Decks</a>
+  &nbsp;·&nbsp;
+  <a href="#visual-language">🎨 Visual Language</a>
+  &nbsp;·&nbsp;
+  <a href="#making-an-explainer">🛠️ How They're Made</a>
+</p>
 
+<p align="center">
+  <sub>38 APPROVED HTML DECKS &nbsp; · &nbsp; TWO EDITORIAL SYSTEMS &nbsp; · &nbsp; ONE PRODUCTION STANDARD</sub>
+</p>
 
-> **One production language. Many subjects.** Every project is made using the **`guizang-ppt-skill`** web-HTML-PPT framework; its visual systems, slide schema, motion discipline and acceptance workflow are the shared standard.
+---
 
-## Pick a question
+> **A good explainer doesn't just present information. It changes what you understand.**
+>
+> Every deck begins with a question worth answering. Evidence, visual structure, typography, and motion work together to make the explanation easier to follow—not merely more decorative.
 
-Start with the *question*, then follow the deck. Every item below is a directory actually present in this repository; it is a small curated selection rather than a claim that every folder is a released deck.
+<a id="featured-explainers"></a>
+## 🔎 Featured Explainers
 
-这些项目不是单张静态海报，而是围绕一个问题组织的可视化讲解。下面是仓库中已有的部分主题入口：
+Choose a question and follow the argument. These are selected **approved standalone HTML decks** from [`ppt-collection/`](ppt-collection/), rather than a list of every working folder.
 
-| Theme | Project |
-| --- | --- |
-| 🧼 Everyday science | [How soap works](2026-08-30-soap-translating-oil/) · [Why glass is transparent](2026-08-30-glass-transparent-solid/) |
-| 🔍 Digital systems | [Why QR codes are readable](2026-08-15-why-qr-codes-are-readable/) · [How displays make images](2026-08-15-display-how-images-are-made/) |
-| ⚙️ Engineering | [Why bridges move](2026-08-30-bridges-always-moving/) · [The electric-grid bottleneck](2026-08-14-electric-grid-bottleneck/) |
-| ☕ Science of everyday life | [How caffeine affects sleep](2026-08-30-caffeine-blocking-sleepiness/) · [How microwaves heat](2026-08-15-microwave-where-heat-comes-from/) |
-| 🌍 Systems and the world | [Tap water as a process](2026-08-30-tap-water-clean-process/) · [Planetary defense](2026-08-14-planetary-defense-changing-the-odds/) |
-| 🎬 Culture and society | [The art of cinema](2026-05-14-the-art-of-cinema/) · [The container as infrastructure](2026-08-30-container-the-box/) |
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🎧 <a href="ppt-collection/active-noise-cancellation-fighting-sound-with-sound.html">Can sound cancel sound?</a></h3>
+      <p><sub>ACOUSTICS · EVERYDAY TECHNOLOGY</sub></p>
+      <p>How active noise cancellation uses another sound wave to reduce the noise we hear.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>☄️ <a href="ppt-collection/planetary-defense-changing-the-odds.html">What if an asteroid approached Earth?</a></h3>
+      <p><sub>SPACE · PLANETARY DEFENSE</sub></p>
+      <p>From detecting a threat to understanding how an intervention might change the outcome.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>⚡ <a href="ppt-collection/electric-grid-bottleneck.html">Why can the power grid become a bottleneck?</a></h3>
+      <p><sub>INFRASTRUCTURE · ENGINEERING</sub></p>
+      <p>Why generating electricity is only one part of delivering it where and when it is needed.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🍲 <a href="ppt-collection/microwave-where-heat-comes-from.html">Where does microwave heat come from?</a></h3>
+      <p><sub>PHYSICS · EVERYDAY OBJECTS</sub></p>
+      <p>Follow electromagnetic energy into food, and explore why heating is not always uniform.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🖥️ <a href="ppt-collection/display-how-images-are-made.html">How does a display make an image?</a></h3>
+      <p><sub>DISPLAY TECHNOLOGY · LIGHT</sub></p>
+      <p>Pixels, color, display structures, and the physical process behind a picture on a screen.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🎬 <a href="ppt-collection/the-art-of-cinema.html">How does cinema shape our sense of time?</a></h3>
+      <p><sub>ART · CULTURE · STORYTELLING</sub></p>
+      <p>Visual storytelling through framing, rhythm, motion, and the language of film.</p>
+    </td>
+  </tr>
+</table>
 
-目录会随着真实项目增加而扩展；此处仅列已存在的部分主题，不代表所有文件夹都处于同一验收阶段。
+<p align="center">
+  <strong><a href="ppt-collection/">Browse all approved standalone decks →</a></strong>
+</p>
 
-## 🎨 One visual grammar
+> [!TIP]
+> **Want to view a deck?** Open its HTML file on GitHub, choose **Download raw file**, then open the downloaded `.html` file in a browser. The approved exports are designed as standalone HTML files; optional network fonts or enhancements may still require a connection. Deck content is primarily authored in Chinese, while this repository guide is in English.
 
-| System | Character |
-| --- | --- |
-| **Style A** | E-magazine / 电子杂志：叙事节奏、信息与视觉结构并重 |
-| **Style B** | Swiss International / 瑞士国际主义：网格、字阶、留白和清晰的信息层级 |
-| **Authoring** | 结构化页面 schema、受控主题色、可读的中文排版与有证据的事实表达 |
-| **Motion & QA** | 有意义的动效、浏览器真实渲染、布局和溢出验收 |
+<a id="visual-language"></a>
+## 🎨 One Framework. Two Visual Languages.
 
-视觉主题可以变化，但项目必须遵守同一生产规范，不把任意模板混入既有体系。不要仅根据 `5.9/` 中的失败实验来定义成品质量。
+Every presentation is produced under **`guizang-ppt-skill`**, with consistent rules for narrative structure, typography, layouts, motion, and quality assurance. The subject changes; the production discipline does not.
 
-## How the archive is organized
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>📰 Style A — Editorial Magazine</h3>
+      <p><sub>EDITORIAL · E-INK · STORY-LED</sub></p>
+      <p>Expressive typography and carefully paced layouts for subjects that benefit from narrative, context, comparison, and visual explanation.</p>
+      <p><strong>Often suited to:</strong> everyday science, culture, history, and human-centered stories.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>▦ Style B — Swiss International</h3>
+      <p><sub>GRID · HIERARCHY · PRECISION</sub></p>
+      <p>Restrained compositions built around alignment, whitespace, legibility, and a fixed set of structured layouts.</p>
+      <p><strong>Often suited to:</strong> engineering, data, technical systems, and analytical subjects.</p>
+    </td>
+  </tr>
+</table>
+
+Neither is a license to trade accuracy for appearance. Strong visual contrast and meaningful motion support the underlying explanation; they must never obscure facts, labels, or sources.
+
+<a id="making-an-explainer"></a>
+## 🛠️ From Question to Finished Deck
+
+**Research → Write → Structure → Design → Verify → Approve**
+
+1. **Start with the real question.** Define what the viewer should understand, and find evidence that can support it.
+2. **Build the narrative.** Each slide should introduce a useful fact, explain a mechanism, establish a comparison, or change the viewer's understanding.
+3. **Choose the visual system.** Apply the established Style A / Style B layouts, typography, color palettes, and page schema—not a new template for every deck.
+4. **Use motion with intent.** Transitions and staged reveals should help explain relationships. The static or reduced-motion state must remain readable.
+5. **Check in a real browser.** Review legibility, layout, overflow, navigation, and motion at the repository's required viewport sizes, including smaller effective screens.
+6. **Promote only approved work.** A working topic folder is not automatically a released deck. After explicit approval, export and preserve its self-contained HTML in [`ppt-collection/`](ppt-collection/).
+
+> [!IMPORTANT]
+> **An exported HTML file is a deliverable, not the source of truth for future editing.** Working folders retain the source and materials. Approved standalone files are created through the repository's controlled export process.
+
+## 🗂️ Repository Guide
 
 ```text
-YYYY-MM-DD-topic-name/  One project per topic
-ppt-collection/         Approved, standalone HTML exports
-docs/                   Build tools, analyses and process records
-5.9/                    Historical/failed experiments (not a quality reference)
-AGENTS.md               Project and visual-production rules
+YYYY-MM-DD-topic-name/   Source projects, decks, and topic-specific assets
+ppt-collection/          Approved standalone HTML presentations
+docs/                    Drafts, build tools, audits, and process records
+5.9/                     Historical/failed experiments — not design references
+AGENTS.md                Production rules, motion constraints, and acceptance
+PPT 高质量文案生成 Prompt｜精简优化版.md   Writing and research guide
 ```
 
-- **`ppt-collection/`** 保存已认可的单文件 HTML 成品；不应为了补资源而添加与其绑定的额外图片目录。
-- **项目文件夹** 可包含演示 HTML、源素材与过程文件；不是所有工作目录都是最终交付。
-- **`docs/`** 存放构建与验收依据，而不是另一套相互冲突的视觉规范。
+The two normative entry points are the [production and QA rules](AGENTS.md) and the [writing guide](PPT%20高质量文案生成%20Prompt｜精简优化版.md). The writing guide governs research, narrative, factual discipline, and source quality; `AGENTS.md` governs the project's visual system, implementation, browser acceptance, and delivery lifecycle.
 
-## Creating a new explainer
+<details>
+<summary><strong>⚙️ Maintainer notes — export and verification</strong></summary>
 
-1. 先明确一个值得解释的真实问题与可核实的事实依据。
-2. 按 [文案制作规范](PPT%20高质量文案生成%20Prompt｜精简优化版.md) 建立清晰叙事。
-3. 以 `guizang-ppt-skill` 的 Style A / B、布局与动效契约制作网页 PPT。
-4. 通过浏览器检查文字、配图、动效、视口适配及所有溢出。
-5. 获得认可后再由规定的独立导出流程进入 `ppt-collection/`。
+The repository includes a controlled exporter and browser QA tooling under [`docs/build/`](docs/build/). To check an individual source file's local dependencies before exporting:
 
-仓库内的强制流程、排版红线和质量验收见 [`AGENTS.md`](AGENTS.md)。无关的全局格式化不得覆盖这些约束。
+```bash
+python docs/build/export-standalone.py 2026-08-30-soap-translating-oil/index.html --check-only
+```
 
-## License
+For exporter regression tests:
 
-当前仓库**未指定整体开源许可证**。公开展示不自动授予复制、改编或再分发所有成品与素材的权利；各主题使用的资料与第三方媒体应分别核对来源。
+```bash
+python -m unittest discover -s docs/build -p 'test_*.py'
+```
+
+The export tool inlines supported local images and the bundled motion engine into a standalone file. Check the resulting deck in a real browser; successful export alone does not prove its slides, transitions, readability, or navigation are correct. See [`AGENTS.md`](AGENTS.md) for required visual QA and approval rules.
+
+Do not treat [`5.9/`](5.9/) as a template or quality baseline. It contains retained historical or failed experiments.
+
+</details>
+
+## 📜 Rights and Attribution
+
+This repository has **no declared project-wide open-source license**. Public source access and an HTML download do not, by themselves, authorize reuse, modification, or redistribution of every deck or its media. Check any third-party asset's rights and source separately.
+
+---
+
+<p align="center">
+  <sub>Everyday questions. Carefully structured answers. Visual understanding.</sub><br>
+  <sub>Made to explain—not just to decorate.</sub>
+</p>
