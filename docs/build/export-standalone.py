@@ -19,6 +19,7 @@
 """
 import argparse
 import base64
+import json
 import mimetypes
 import os
 import pathlib
@@ -129,35 +130,79 @@ def write_batch(outputs: list[tuple[pathlib.Path, str]], stage: pathlib.Path,
     """Prepare every file before replacement; restore the prior batch on a write error."""
     stage.mkdir(parents=True, exist_ok=True)
     out_dir.mkdir(parents=True, exist_ok=True)
-    with tempfile.TemporaryDirectory(prefix='.standalone-', dir=stage) as staging:
-        prepared = pathlib.Path(staging)
+    prepared = pathlib.Path(tempfile.mkdtemp(prefix='.standalone-', dir=stage))
+    transaction = None
+    safe_to_discard = True
+    try:
         for destination, html in outputs:
             (prepared / destination.name).write_text(html, encoding='utf-8', newline='\n')
 
         # Replacement files/backups must share the output filesystem for atomic rename.
-        with tempfile.TemporaryDirectory(prefix='.standalone-', dir=out_dir) as transaction:
-            transaction = pathlib.Path(transaction)
-            backups: dict[pathlib.Path, pathlib.Path | None] = {}
-            for i, (destination, _) in enumerate(outputs):
-                backup = transaction / f'{i}.backup' if destination.exists() else None
-                if backup is not None:
-                    shutil.copy2(destination, backup)
-                backups[destination] = backup
-                shutil.copyfile(prepared / destination.name, transaction / f'{i}.new')
+        transaction = pathlib.Path(tempfile.mkdtemp(prefix='.standalone-', dir=out_dir))
+        backups: dict[pathlib.Path, tuple[pathlib.Path | None, pathlib.Path]] = {}
+        files = []
+        for i, (destination, _) in enumerate(outputs):
+            backup = transaction / f'{i}.backup' if destination.exists() else None
+            if backup is not None:
+                shutil.copy2(destination, backup)
+            replacement = transaction / f'{i}.new'
+            backups[destination] = (backup, replacement)
+            shutil.copyfile(prepared / destination.name, replacement)
+            files.append({'destination': str(destination.resolve()),
+                          'backup': str(backup.resolve()) if backup is not None else None,
+                          'replacement': str(replacement.resolve())})
 
-            committed: list[pathlib.Path] = []
-            try:
-                for i, (destination, _) in enumerate(outputs):
-                    os.replace(transaction / f'{i}.new', destination)
-                    committed.append(destination)
-            except OSError:
-                for destination in reversed(committed):
-                    backup = backups[destination]
+        def record_recovery(state, committed, rollback_errors, commit_error=None):
+            manifest = {'state': state, 'files': files,
+                        'committed': [str(path.resolve()) for path in committed],
+                        'rollback_errors': rollback_errors, 'commit_error': commit_error}
+            pending = transaction / 'recovery.next.json'
+            pending.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8')
+            os.replace(pending, transaction / 'recovery.json')
+
+        # A durable mapping exists before any destination can lose its old bytes.
+        record_recovery('prepared', [], [])
+        committed: list[pathlib.Path] = []
+        safe_to_discard = False
+        try:
+            for i, (destination, _) in enumerate(outputs):
+                os.replace(transaction / f'{i}.new', destination)
+                committed.append(destination)
+        except OSError as commit_error:
+            rollback_errors = []
+            for destination in reversed(committed):
+                backup, replacement = backups[destination]
+                try:
                     if backup is None:
-                        destination.unlink()
+                        # Restore absence by retaining the new output inside the transaction.
+                        os.replace(destination, replacement)
                     else:
                         os.replace(backup, destination)
-                raise
+                except OSError as rollback_error:
+                    rollback_errors.append({'destination': str(destination.resolve()),
+                                            'error': str(rollback_error)})
+            if rollback_errors:
+                manifest_error = ''
+                try:
+                    record_recovery('rollback_failed', committed, rollback_errors, str(commit_error))
+                except OSError as error:
+                    manifest_error = f'; recovery manifest update failed: {error}'
+                failures = '; '.join(f"{item['destination']}: {item['error']}"
+                                     for item in rollback_errors)
+                raise OSError(f'batch commit failed: {commit_error}; rollback failed: {failures}; '
+                              f'recovery files retained at {transaction}{manifest_error}') from commit_error
+            safe_to_discard = True
+            raise
+        safe_to_discard = True
+    finally:
+        cleanup = [prepared]
+        if transaction is not None and safe_to_discard:
+            cleanup.append(transaction)
+        for directory in cleanup:
+            try:
+                shutil.rmtree(directory)
+            except OSError as error:
+                print(f'WARNING: temporary directory retained at {directory}: {error}', file=sys.stderr)
 
 
 def main(argv: list[str]) -> int:
