@@ -160,10 +160,10 @@ ppt-collection/          Approved standalone HTML presentations
 docs/                    Drafts, build tools, audits, and process records
 5.9/                     Historical/failed experiments — not design references
 AGENTS.md                Production rules, motion constraints, and acceptance
-PPT 高质量文案生成 Prompt｜精简优化版.md   Writing and research guide
+Writing guide (original source filename)   Writing and research guide
 ```
 
-The two normative entry points are the [production and QA rules](AGENTS.md) and the [writing guide](PPT%20高质量文案生成%20Prompt｜精简优化版.md). The writing guide governs research, narrative, factual discipline, and source quality; `AGENTS.md` governs the project's visual system, implementation, browser acceptance, and delivery lifecycle.
+The two normative entry points are the [production and QA rules](AGENTS.md) and the [writing guide](PPT%20%E9%AB%98%E8%B4%A8%E9%87%8F%E6%96%87%E6%A1%88%E7%94%9F%E6%88%90%20Prompt%EF%BD%9C%E7%B2%BE%E7%AE%80%E4%BC%98%E5%8C%96%E7%89%88.md). The writing guide governs research, narrative, factual discipline, and source quality; `AGENTS.md` governs the project's visual system, implementation, browser acceptance, and delivery lifecycle.
 
 <details>
 <summary><strong>⚙️ Maintainer notes — export and verification</strong></summary>
