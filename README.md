@@ -23,6 +23,12 @@
   <sub>38 APPROVED HTML DECKS &nbsp; · &nbsp; TWO EDITORIAL SYSTEMS &nbsp; · &nbsp; ONE PRODUCTION STANDARD</sub>
 </p>
 
+<p align="center">
+  <img src="2026-08-15-active-noise-cancellation-fighting-sound-with-sound/images/01-anc-cover.jpg" width="820" alt="Original cover illustration from the active noise cancellation visual explainer" />
+  <br />
+  <sub>Selected source artwork from an approved explainer. The decks themselves are interactive HTML presentations.</sub>
+</p>
+
 ---
 
 > **A good explainer doesn't just present information. It changes what you understand.**
@@ -79,6 +85,33 @@ Choose a question and follow the argument. These are selected **approved standal
 
 > [!TIP]
 > **Want to view a deck?** Open its HTML file on GitHub, choose **Download raw file**, then open the downloaded `.html` file in a browser. The approved exports are designed as standalone HTML files; optional network fonts or enhancements may still require a connection. Deck content is primarily authored in Chinese, while this repository guide is in English.
+
+## 🖼️ A Few Visual Studies
+
+Every topic calls for a different kind of explanation. These examples are **actual image assets from the source decks**, not screenshots of the full presentations.
+
+<table>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <a href="ppt-collection/display-how-images-are-made.html">
+        <img src="2026-08-15-display-how-images-are-made/images/01-display-pixels.jpg" width="100%" alt="Source visual about how display pixels produce images" />
+      </a>
+      <br />
+      <strong><a href="ppt-collection/display-how-images-are-made.html">Inside a Display →</a></strong>
+      <br />
+      <sub>Pixels, color, and the creation of an image</sub>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <a href="ppt-collection/planetary-defense-changing-the-odds.html">
+        <img src="2026-08-14-planetary-defense-changing-the-odds/images/09-hera.jpg" width="100%" alt="Source image of the Hera spacecraft used in the planetary defense explainer" />
+      </a>
+      <br />
+      <strong><a href="ppt-collection/planetary-defense-changing-the-odds.html">Planetary Defense →</a></strong>
+      <br />
+      <sub>Detection, intervention, and changing a trajectory</sub>
+    </td>
+  </tr>
+</table>
 
 <a id="visual-language"></a>
 ## 🎨 One Framework. Two Visual Languages.
