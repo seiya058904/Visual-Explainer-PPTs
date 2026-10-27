@@ -1,4 +1,4 @@
-<h1 align="center">📐 Visual Explainer PPTs</h1>
+<h1 align="center">Visual Explainer PPTs</h1>
 
 <p align="center">
   <strong>One question. A clearer way to see it.</strong>
@@ -10,13 +10,13 @@
 </p>
 
 <p align="center">
-  <a href="#featured-explainers"><strong>🔎 Explore the Explainers</strong></a>
+  <a href="#featured-explainers"><strong>Explore the explainers</strong></a>
   &nbsp;·&nbsp;
-  <a href="ppt-collection/">📚 Approved Decks</a>
+  <a href="ppt-collection/">Approved decks</a>
   &nbsp;·&nbsp;
-  <a href="#visual-language">🎨 Visual Language</a>
+  <a href="#visual-language">Visual language</a>
   &nbsp;·&nbsp;
-  <a href="#making-an-explainer">🛠️ How They're Made</a>
+  <a href="#making-an-explainer">How they're made</a>
 </p>
 
 <p align="center">
@@ -36,43 +36,43 @@
 > Every deck begins with a question worth answering. Evidence, visual structure, typography, and motion work together to make the explanation easier to follow—not merely more decorative.
 
 <a id="featured-explainers"></a>
-## 🔎 Featured Explainers
+## Featured Explainers
 
 Choose a question and follow the argument. These are selected **approved standalone HTML decks** from [`ppt-collection/`](ppt-collection/), rather than a list of every working folder.
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🎧 <a href="ppt-collection/active-noise-cancellation-fighting-sound-with-sound.html">Can sound cancel sound?</a></h3>
+      <h3><a href="ppt-collection/active-noise-cancellation-fighting-sound-with-sound.html">Can sound cancel sound?</a></h3>
       <p><sub>ACOUSTICS · EVERYDAY TECHNOLOGY</sub></p>
       <p>How active noise cancellation uses another sound wave to reduce the noise we hear.</p>
     </td>
     <td width="50%" valign="top">
-      <h3>☄️ <a href="ppt-collection/planetary-defense-changing-the-odds.html">What if an asteroid approached Earth?</a></h3>
+      <h3><a href="ppt-collection/planetary-defense-changing-the-odds.html">What if an asteroid approached Earth?</a></h3>
       <p><sub>SPACE · PLANETARY DEFENSE</sub></p>
       <p>From detecting a threat to understanding how an intervention might change the outcome.</p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>⚡ <a href="ppt-collection/electric-grid-bottleneck.html">Why can the power grid become a bottleneck?</a></h3>
+      <h3><a href="ppt-collection/electric-grid-bottleneck.html">Why can the power grid become a bottleneck?</a></h3>
       <p><sub>INFRASTRUCTURE · ENGINEERING</sub></p>
       <p>Why generating electricity is only one part of delivering it where and when it is needed.</p>
     </td>
     <td width="50%" valign="top">
-      <h3>🍲 <a href="ppt-collection/microwave-where-heat-comes-from.html">Where does microwave heat come from?</a></h3>
+      <h3><a href="ppt-collection/microwave-where-heat-comes-from.html">Where does microwave heat come from?</a></h3>
       <p><sub>PHYSICS · EVERYDAY OBJECTS</sub></p>
       <p>Follow electromagnetic energy into food, and explore why heating is not always uniform.</p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🖥️ <a href="ppt-collection/display-how-images-are-made.html">How does a display make an image?</a></h3>
+      <h3><a href="ppt-collection/display-how-images-are-made.html">How does a display make an image?</a></h3>
       <p><sub>DISPLAY TECHNOLOGY · LIGHT</sub></p>
       <p>Pixels, color, display structures, and the physical process behind a picture on a screen.</p>
     </td>
     <td width="50%" valign="top">
-      <h3>🎬 <a href="ppt-collection/the-art-of-cinema.html">How does cinema shape our sense of time?</a></h3>
+      <h3><a href="ppt-collection/the-art-of-cinema.html">How does cinema shape our sense of time?</a></h3>
       <p><sub>ART · CULTURE · STORYTELLING</sub></p>
       <p>Visual storytelling through framing, rhythm, motion, and the language of film.</p>
     </td>
@@ -84,9 +84,21 @@ Choose a question and follow the argument. These are selected **approved standal
 </p>
 
 > [!TIP]
-> **Want to view a deck?** Open its HTML file on GitHub, choose **Download raw file**, then open the downloaded `.html` file in a browser. The approved exports are designed as standalone HTML files; optional network fonts or enhancements may still require a connection. Deck content is primarily authored in Chinese, while this repository guide is in English.
+> **Want to view a deck?** Open its HTML file on GitHub, choose **Download raw file**, then open the downloaded `.html` file in a browser. The approved exports are designed as standalone HTML files; optional network fonts or enhancements may still require a connection. To read without downloading, hosted copies of the decks are in the presentation library on the [author's website](https://seiya058904.github.io/#ppt); they are the same decks but may differ slightly from the exports here. Deck content is primarily authored in Chinese, while this repository guide is in English.
 
-## 🖼️ A Few Visual Studies
+## Inside a Deck
+
+Three slides captured from the hosted copies of the decks on the author's website, at 1280×720. Use the arrow keys to move between slides.
+
+<table>
+  <tr>
+    <td width="33%" valign="top"><img src="docs/assets/readme-slide-planetary.jpg" width="100%" alt="A Planetary Defense slide with the headline 39,123 near-Earth asteroids found and three key figures" /><br /><sub>Planetary Defense: figures with their sources</sub></td>
+    <td width="33%" valign="top"><img src="docs/assets/readme-slide-cinema.jpg" width="100%" alt="A Cinema slide about the silent era, with the keywords Body, Cut, and Live" /><br /><sub>The Art of Cinema: Style A, editorial</sub></td>
+    <td width="33%" valign="top"><img src="docs/assets/readme-slide-anc.jpg" width="100%" alt="The opening slide of the active noise cancellation explainer with a headphone diagram" /><br /><sub>Noise Cancellation: Style B, a structured grid</sub></td>
+  </tr>
+</table>
+
+## A Few Visual Studies
 
 Every topic calls for a different kind of explanation. These examples are **actual image assets from the source decks**, not screenshots of the full presentations.
 
@@ -114,20 +126,20 @@ Every topic calls for a different kind of explanation. These examples are **actu
 </table>
 
 <a id="visual-language"></a>
-## 🎨 One Framework. Two Visual Languages.
+## One Framework. Two Visual Languages.
 
 Every presentation is produced under **`guizang-ppt-skill`**, with consistent rules for narrative structure, typography, layouts, motion, and quality assurance. The subject changes; the production discipline does not.
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>📰 Style A — Editorial Magazine</h3>
+      <h3>Style A — Editorial Magazine</h3>
       <p><sub>EDITORIAL · E-INK · STORY-LED</sub></p>
       <p>Expressive typography and carefully paced layouts for subjects that benefit from narrative, context, comparison, and visual explanation.</p>
       <p><strong>Often suited to:</strong> everyday science, culture, history, and human-centered stories.</p>
     </td>
     <td width="50%" valign="top">
-      <h3>▦ Style B — Swiss International</h3>
+      <h3>Style B — Swiss International</h3>
       <p><sub>GRID · HIERARCHY · PRECISION</sub></p>
       <p>Restrained compositions built around alignment, whitespace, legibility, and a fixed set of structured layouts.</p>
       <p><strong>Often suited to:</strong> engineering, data, technical systems, and analytical subjects.</p>
@@ -138,7 +150,7 @@ Every presentation is produced under **`guizang-ppt-skill`**, with consistent ru
 Neither is a license to trade accuracy for appearance. Strong visual contrast and meaningful motion support the underlying explanation; they must never obscure facts, labels, or sources.
 
 <a id="making-an-explainer"></a>
-## 🛠️ From Question to Finished Deck
+## From Question to Finished Deck
 
 **Research → Write → Structure → Design → Verify → Approve**
 
@@ -152,7 +164,7 @@ Neither is a license to trade accuracy for appearance. Strong visual contrast an
 > [!IMPORTANT]
 > **An exported HTML file is a deliverable, not the source of truth for future editing.** Working folders retain the source and materials. Approved standalone files are created through the repository's controlled export process.
 
-## 🗂️ Repository Guide
+## Repository Guide
 
 ```text
 YYYY-MM-DD-topic-name/   Source projects, decks, and topic-specific assets
@@ -166,7 +178,7 @@ Writing guide (original source filename)   Writing and research guide
 The two normative entry points are the [production and QA rules](AGENTS.md) and the [writing guide](PPT%20%E9%AB%98%E8%B4%A8%E9%87%8F%E6%96%87%E6%A1%88%E7%94%9F%E6%88%90%20Prompt%EF%BD%9C%E7%B2%BE%E7%AE%80%E4%BC%98%E5%8C%96%E7%89%88.md). The writing guide governs research, narrative, factual discipline, and source quality; `AGENTS.md` governs the project's visual system, implementation, browser acceptance, and delivery lifecycle.
 
 <details>
-<summary><strong>⚙️ Maintainer notes — export and verification</strong></summary>
+<summary><strong>Maintainer notes — export and verification</strong></summary>
 
 The repository includes a controlled exporter and browser QA tooling under [`docs/build/`](docs/build/). To check an individual source file's local dependencies before exporting:
 
@@ -186,7 +198,7 @@ Do not treat [`5.9/`](5.9/) as a template or quality baseline. It contains retai
 
 </details>
 
-## 📜 Rights and Attribution
+## Rights and Attribution
 
 This repository has **no declared project-wide open-source license**. Public source access and an HTML download do not, by themselves, authorize reuse, modification, or redistribution of every deck or its media. Check any third-party asset's rights and source separately.
 
