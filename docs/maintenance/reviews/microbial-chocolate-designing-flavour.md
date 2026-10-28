@@ -1,5 +1,7 @@
 # 它还不是巧克力 — 深审与交付记录
 
+> 最新布局复验：已修复；四档动态全页通过。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`d91ed1aaf707b9be4bb17e197971e3d38919a6e581c74593e7e9448daf57d2b0`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 > 本轮交付：已从维护源重新导出至原有成品路径；Approved 状态保留。13 页三档逐页检查与断网核心阅读检查通过。最终 SHA-256：`f6efdc4d58b20532cd136c713a1cc9d5b191840a475a54b5920f95b46012a6b7`。事实和视觉变更见下文；旧阶段记录不替代这里的最终状态。
 
 - Artifact: `ppt-collection/microbial-chocolate-designing-flavour.html`
@@ -40,3 +42,8 @@ P2将144–168h限为所引农场研究，非所有自然发酵唯一范围。P6
 - 测试对象为独立不可变副本`.codex/release-revision2/microbial-chocolate-designing-flavour.html`，测试结束后SHA256复核未变：`f6efdc4d58b20532cd136c713a1cc9d5b191840a475a54b5920f95b46012a6b7`。三档逐页报告位于`.codex/qa-release-revision2/approved-microbial-chocolate-designing-flavour.json`。
 - 已实际查看最终导出字节的1000px全页contact sheet，并逐张原尺寸查看修订页P5；未见源→导出后的裁切、断行或隐藏文字回归。三档新修页的source截图复核见上节，未把仅生成截图等同视觉接受。
 - 这次自动化未覆盖物理投影/触控硬件，也未代替专门的presenter完整工具验收。正式成品替换由主任务统一执行；此代理未写入成品库。
+
+
+## 宽矮窗口修复补充
+
+触发页：5, 6, 9。字号按可用高度约束；移除过大的 frame 最小高度。共享字号规则覆盖整份作品，已整份复测，正文未改。

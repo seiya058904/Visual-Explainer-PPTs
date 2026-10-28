@@ -1,8 +1,10 @@
 # 2026-10-28 refinement and final audit
 
+Approved follow-up: all 38 works received a wide/short-window layout check; 30 were repaired and re-exported, 8 retained unchanged. [Current Approved evidence](approved-bottom-clipping.md) and [current hash ledger](approved-bottom-ledger.json) supersede their layout hashes below.
+
 Follow-up: user-reported lower-content clipping in wide/short windows was reproduced and repaired for all ten Pending decks. [Current layout evidence](pending-bottom-clipping.md) supersedes their source hashes and layout coverage below; the original release ledger remains a historical snapshot.
 
-The final inventory contains **38 Approved decks / 569 pages** and **10 Pending decks / 111 pages**. Current artifacts, maintained sources and frozen test files match all 38 publication receipts. The Pending works remain local and unpromoted. **Release verification is tracked by [PR #3](https://github.com/seiya058904/Visual-Explainer-PPTs/pull/3) and the commit-bound [Pages workflow runs](https://github.com/seiya058904/Visual-Explainer-PPTs/actions/workflows/gallery.yml).** The configured public address is https://seiya058904.github.io/Visual-Explainer-PPTs/; source audit results are distinct from deployment results.
+The final inventory contains **38 Approved decks / 569 pages** and **10 Pending decks / 111 pages**. At the initial release snapshot, artifacts, maintained sources and frozen test files matched all 38 publication receipts. The Pending works remain local and unpromoted. **Release verification is tracked by [PR #3](https://github.com/seiya058904/Visual-Explainer-PPTs/pull/3) and the commit-bound [Pages workflow runs](https://github.com/seiya058904/Visual-Explainer-PPTs/actions/workflows/gallery.yml).** The configured public address is https://seiya058904.github.io/Visual-Explainer-PPTs/; source audit results are distinct from deployment results.
 
 This report verifies the stated technical gates. Factual corrections, source citations, actual visual-review scope and unresolved content boundaries are documented per work; it does not assign a blanket factual or media-rights PASS.
 

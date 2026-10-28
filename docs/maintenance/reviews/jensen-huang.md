@@ -1,5 +1,7 @@
 # 黄仁勋：把计算重新点燃的人 · Jensen Huang — 深度维护审阅
 
+> 最新布局复验：已修复；四档动态全页通过。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`0ea09d94654210621432135709900076bfc77c1838638c5daf4f98b37baddc90`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 > 本轮交付：已从维护源重新导出至原有成品路径；Approved 状态保留。20 页三档逐页检查与断网核心阅读检查通过。最终 SHA-256：`35f64b4a1dbae5463d2d3a31f97a9f28d2504d8c1f690ff0114f1181848c4f1b`。事实和视觉变更见下文；旧阶段记录不替代这里的最终状态。
 
 - 源文件：`2026-10-28-legacy-maintenance/jensen-huang.html`
@@ -55,3 +57,8 @@
 - 已核对 stage 与 `.codex/release-seven/jensen-huang.html` 字节相同，SHA-256：`35f64b4a1dbae5463d2d3a31f97a9f28d2504d8c1f690ff0114f1181848c4f1b`。
 - 正式报告：`.codex/qa-release-seven/approved-jensen-huang.json`；三档×20页全部检查，console/pageerror/failed/badSlides均为0；1600档ESC总览通过。
 - 该正式报告仅适用于上述固定字节；不把未运行的发布后公网验证或全38份离线测试写成通过。
+
+
+## 宽矮窗口修复补充
+
+触发页：2, 4, 6, 13, 15, 16。问题页保留底部安全距离。共享字号规则覆盖整份作品，已整份复测，正文未改。

@@ -1,5 +1,7 @@
 # 轮胎：汽车文明真正接触世界的地方 — 维护审阅记录
 
+> 最新布局复验：本项审查通过，无需改动。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`ebb25643ffc238bb8c30fa7590536322095dee78c5c9e29efdc08720a11bbfd4`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 - Artifact: `ppt-collection/tires.html`（基线保留于 Git；现已按源文件导出更新）
 - Maintained source: `2026-10-28-legacy-maintenance/tires.html`
 - Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
@@ -44,3 +46,8 @@ Approved status retained. Source exported through the repository exporter; publi
 - Artifact SHA-256: `ebb25643ffc238bb8c30fa7590536322095dee78c5c9e29efdc08720a11bbfd4`
 - Three-viewport all-page QA: `.codex/qa-tires-factual-final/approved-results.json`.
 - Source: `2026-10-28-legacy-maintenance/tires.html`; pages: 15.
+
+
+## 宽矮窗口修复补充
+
+本轮未改源与成品；两档动态与两档静态逐页检查通过。

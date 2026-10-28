@@ -1,5 +1,7 @@
 # 它只需要20 米 — 深审与交付记录
 
+> 最新布局复验：已修复；四档动态全页通过。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`2e11461e6d4e04a0ee1d7114189c4f88aeb1d09a916d0a3541c83526f1a94b67`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 > 本轮交付：已从维护源重新导出至原有成品路径；Approved 状态保留。13 页三档逐页检查与断网核心阅读检查通过。最终 SHA-256：`d82a125dd4b2df41f2739fdc3774569ae29507b52e01e7a165f4d0ee609b6180`。事实和视觉变更见下文；旧阶段记录不替代这里的最终状态。
 
 - Artifact: `ppt-collection/planetary-defense-changing-the-odds.html`
@@ -34,3 +36,8 @@
 ## Final overview-selection supplement — 2026-10-28
 
 The earlier final three-viewport report recorded overview opening but predated the selection assertion. Targeted real Chromium testing at 1600×900 now opened ESC overview from the first page, closed it, advanced by keyboard to page 2, opened overview again and clicked the first card. The index returned from 1 to 0 and the overview closed; no page errors. Current artifact SHA-256 d82a125dd4b2df41f2739fdc3774569ae29507b52e01e7a165f4d0ee609b6180 was unchanged and matched the tested publication receipt. Evidence: .codex/final-overview-selection/results.json. This supplements only overview interaction; no geometry or factual re-review is claimed.
+
+
+## 宽矮窗口修复补充
+
+触发页：13。字号按可用高度约束；移除过大的 frame 最小高度。共享字号规则覆盖整份作品，已整份复测，正文未改。

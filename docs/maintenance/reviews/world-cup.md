@@ -1,5 +1,7 @@
 # 足球：世界为什么为一颗球停下 — 维护审阅记录
 
+> 最新布局复验：已修复；四档动态全页通过。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`cc0112dce1f0490da737397a4714dbb86fe5d88b3387992933bd30296caf01c6`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 - Artifact: `ppt-collection/world-cup.html`（基线保留于 Git；现已按源文件导出更新）
 - Maintained source: `2026-10-28-legacy-maintenance/world-cup.html`
 - Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
@@ -43,3 +45,8 @@ Approved status retained. Source exported through the repository exporter; publi
 - Artifact SHA-256: `7ad264688fcdd1a0fa327bd70b57a277a7e1b355a46acc4021ed4b97667b50b5`
 - Three-viewport all-page QA: `.codex/qa-clip-fixes/approved-results.json`.
 - Source: `2026-10-28-legacy-maintenance/world-cup.html`; pages: 20.
+
+
+## 宽矮窗口修复补充
+
+触发页：1, 2。字号按可用高度约束；移除过大的 frame 最小高度。共享字号规则覆盖整份作品，已整份复测，正文未改。

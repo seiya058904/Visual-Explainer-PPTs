@@ -1,5 +1,7 @@
 # 天气预报开始不再只靠方程 — 深审与交付记录
 
+> 最新布局复验：已修复；四档动态全页通过。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`49a36e76bcc339f55e61437c07c9843041d1206c577acf2ec61aa810a52af484`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 > 本轮交付：已从维护源重新导出至原有成品路径；Approved 状态保留。13 页三档逐页检查与断网核心阅读检查通过。最终 SHA-256：`e775612d3f1470dd73975b89438b75d216015e35b51a1da206f85846f02745e4`。事实和视觉变更见下文；旧阶段记录不替代这里的最终状态。
 
 - Artifact: `ppt-collection/ai-weather-learning-the-atmosphere.html`
@@ -49,3 +51,8 @@ P2给6000万质控观测补“每日”分母；P6采用正式Science论文90%/1
 - 测试对象为独立不可变副本`.codex/release-revision2/ai-weather-learning-the-atmosphere.html`，测试结束后SHA256复核未变：`e775612d3f1470dd73975b89438b75d216015e35b51a1da206f85846f02745e4`。三档逐页报告位于`.codex/qa-release-revision2/approved-ai-weather-learning-the-atmosphere.json`。
 - 已实际查看最终导出字节的1000px全页contact sheet，并逐张原尺寸查看修订页P6；未见源→导出后的裁切、断行或隐藏文字回归。三档新修页的source截图复核见上节，未把仅生成截图等同视觉接受。
 - 这次自动化未覆盖物理投影/触控硬件，也未代替专门的presenter完整工具验收。正式成品替换由主任务统一执行；此代理未写入成品库。
+
+
+## 宽矮窗口修复补充
+
+触发页：2, 6, 8, 11, 13。字号按可用高度约束；移除过大的 frame 最小高度；问题页保留底部安全距离。共享字号规则覆盖整份作品，已整份复测，正文未改。

@@ -1,5 +1,7 @@
 # 饭热了，盘子呢？ — 深审与交付记录
 
+> 最新布局复验：已修复；四档动态全页通过。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`0374d3e25dc0fe4556911950c3d5aca785992c96608912b704e985c3ba3eba9b`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 > 本轮交付：已从维护源重新导出至原有成品路径；Approved 状态保留。14 页三档逐页检查与断网核心阅读检查通过。最终 SHA-256：`52669e3024812db5de54f47ec4eaeb8fd3b43c64c2004ba92b1a72d5b6983b56`。事实和视觉变更见下文；旧阶段记录不替代这里的最终状态。
 
 - Artifact: `ppt-collection/microwave-where-heat-comes-from.html`
@@ -42,3 +44,8 @@ P3 2.45GHz对应自由空间波长约12.24cm，原12.2cm正确。P11将“盘子
 ## Final overview-selection supplement — 2026-10-28
 
 The earlier final three-viewport report recorded overview opening but predated the selection assertion. Targeted real Chromium testing at 1600×900 now opened ESC overview from the first page, closed it, advanced by keyboard to page 2, opened overview again and clicked the first card. The index returned from 1 to 0 and the overview closed; no page errors. Current artifact SHA-256 52669e3024812db5de54f47ec4eaeb8fd3b43c64c2004ba92b1a72d5b6983b56 was unchanged and matched the tested publication receipt. Evidence: .codex/final-overview-selection/results.json. This supplements only overview interaction; no geometry or factual re-review is claimed.
+
+
+## 宽矮窗口修复补充
+
+触发页：10。问题页保留底部安全距离；P10 标题高度上限、压缩结论条内外间距。共享字号规则覆盖整份作品，已整份复测，正文未改。

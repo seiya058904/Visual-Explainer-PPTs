@@ -1,5 +1,7 @@
 # 钥匙与锁：安全感的技术史 — 静态审阅记录
 
+> 最新布局复验：已修复；四档动态全页通过。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`1965fee2d7070bbb601ba938224cd0820a6e6f8f891bbb0076731126d55ae35c`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 - Artifact: `ppt-collection/keys-and-locks.html`
 - Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Inferred slide count: 20
@@ -39,3 +41,8 @@ Approved status retained. Source exported through the repository exporter; publi
 - Artifact SHA-256: `da273c2c53688842ffabf436dbdbf50fed6e91d01752833781058cd31fec5c7d`
 - Three-viewport all-page QA: `.codex/qa-clip-fixes/approved-results.json`.
 - Source: `2026-10-28-legacy-maintenance/keys-and-locks.html`; pages: 20.
+
+
+## 宽矮窗口修复补充
+
+触发页：2。字号按可用高度约束；移除过大的 frame 最小高度；问题页保留底部安全距离。共享字号规则覆盖整份作品，已整份复测，正文未改。

@@ -1,5 +1,7 @@
 # SPF 50不是 50 倍时间 — 深审与交付记录
 
+> 最新布局复验：本项审查通过，无需改动。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`b5900e0d72f99067ddb2acc58735a30343ad4613af769f49e734933ad51d07eb`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 > 本轮交付：已从维护源重新导出至原有成品路径；Approved 状态保留。14 页三档逐页检查与断网核心阅读检查通过。最终 SHA-256：`b5900e0d72f99067ddb2acc58735a30343ad4613af769f49e734933ad51d07eb`。事实和视觉变更见下文；旧阶段记录不替代这里的最终状态。
 
 - Artifact: `ppt-collection/spf-50-decoding-sunscreen.html`
@@ -37,3 +39,8 @@
 - 测试对象为独立不可变副本`.codex/release-revision2/spf-50-decoding-sunscreen.html`，测试结束后SHA256复核未变：`b5900e0d72f99067ddb2acc58735a30343ad4613af769f49e734933ad51d07eb`。三档逐页报告位于`.codex/qa-release-revision2/approved-spf-50-decoding-sunscreen.json`。
 - 已实际查看最终导出字节的1000px全页contact sheet，并逐张原尺寸查看修订页P7；未见源→导出后的裁切、断行或隐藏文字回归。三档新修页的source截图复核见上节，未把仅生成截图等同视觉接受。
 - 这次自动化未覆盖物理投影/触控硬件，也未代替专门的presenter完整工具验收。正式成品替换由主任务统一执行；此代理未写入成品库。
+
+
+## 宽矮窗口修复补充
+
+本轮未改源与成品；两档动态与两档静态逐页检查通过。

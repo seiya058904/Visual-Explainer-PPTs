@@ -1,5 +1,7 @@
 # 导航：人类如何不再迷路 · We No Longer Remember the City — 深度维护审阅
 
+> 最新布局复验：已修复；四档动态全页通过。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`ad64b94c58ee3d0f17664fbbc3e74fa65bebbd2490d73ca71910535dbb3e36fb`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 > 本轮交付：已从维护源重新导出至原有成品路径；Approved 状态保留。20 页三档逐页检查与断网核心阅读检查通过。最终 SHA-256：`43a06251d1c16bc2be6dd46f9b19f67f595151ca0c32358503072970c8ee012a`。事实和视觉变更见下文；旧阶段记录不替代这里的最终状态。
 
 - 源文件：`2026-10-28-legacy-maintenance/navigation.html`
@@ -58,3 +60,8 @@
 - 固定副本：`.codex/release-seven-final/navigation.html`；SHA-256：`43a06251d1c16bc2be6dd46f9b19f67f595151ca0c32358503072970c8ee012a`；已与最终stage逐字节核对。
 - 正式报告：`.codex/qa-release-seven-final/approved-navigation.json`；三档×20页共60视图，console/pageerror/failed/越界/foot-nav遮挡/不可见正文/坏图均为0。
 - 1600档ESC总览打开与缩略图选页均通过；网络完全隔绝和发布路径由主任务汇总，未在此冒充通过。
+
+
+## 宽矮窗口修复补充
+
+触发页：10, 13, 19。字号按可用高度约束；移除过大的 frame 最小高度；问题页保留底部安全距离。共享字号规则覆盖整份作品，已整份复测，正文未改。

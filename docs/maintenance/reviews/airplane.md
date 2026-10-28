@@ -1,5 +1,7 @@
 # 飞机：悬浮在天空中的现代工业 · Aviation Civilization — 深度维护审阅
 
+> 最新布局复验：本项审查通过，无需改动。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`99a6732b56f3792eb25ea22c9ffa81b1fa9dfc35189a867615bc6b10de4c6f31`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 > 本轮交付：已从维护源重新导出至原有成品路径；Approved 状态保留。20 页三档逐页检查与断网核心阅读检查通过。最终 SHA-256：`99a6732b56f3792eb25ea22c9ffa81b1fa9dfc35189a867615bc6b10de4c6f31`。事实和视觉变更见下文；旧阶段记录不替代这里的最终状态。
 
 - 源文件：`2026-10-28-legacy-maintenance/airplane.html`
@@ -63,3 +65,8 @@
 - 正式报告：`.codex/qa-release-seven-final/approved-airplane.json`；三档有效视口共60页视图，console/pageerror/failed/越界/foot-nav遮挡/不可见正文/坏图均为0。
 - 1600档 ESC 总览打开与缩略图选页均通过；pipeline页完成与退出状态已纳入报告（若本deck存在）。
 - 完整离线视觉等价不在本项声明范围；全库外网隔绝测试及最终发布后证据由主任务汇总。
+
+
+## 宽矮窗口修复补充
+
+本轮未改源与成品；两档动态与两档静态逐页检查通过。
