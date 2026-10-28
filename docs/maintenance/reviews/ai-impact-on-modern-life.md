@@ -3,7 +3,7 @@
 > 本轮交付：已从维护源重新导出至原有成品路径；Approved 状态保留。10 页三档逐页检查与断网核心阅读检查通过。最终 SHA-256：`245ad8d70e8605ae96c657d7a7fb96c8e0b3cec18826c9a221697c63cce83f57`。事实和视觉变更见下文；旧阶段记录不替代这里的最终状态。
 
 - Artifact: `ppt-collection/ai-impact-on-modern-life.html`
-- Status: Approved retained under the user-authorized refinement scope
+- Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Verified slide count: 10
 - Style: A
 - English editorial title: How AI Is Reshaping Modern Life

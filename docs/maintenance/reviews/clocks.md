@@ -3,7 +3,7 @@
 > 最终交付：已从维护源规范导出至原成品路径，Approved 状态保留；10 页三档逐页检查通过，断网静态阅读（含祖先裁切边界）通过。SHA-256：`4f89727071b50f8bd13343134a2f8e828ce804d0e1fa302b3c1667a80b9aa4bf`。
 
 - Artifact: `ppt-collection/clocks.html`
-- Status: approved artifact; this record does not constitute renewed acceptance
+- Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Verified slide count: 10
 - Style: A
 - English editorial title: How Clocks Made Time a Shared System
@@ -17,7 +17,7 @@
 - **Slide 9:** SI second definition of 9,192,631,770 cesium transitions is supported by BIPM. [BIPM second](https://www.bipm.org/en/si-base-units/second).
 - **Slide 10:** Reworded GPS timing claim to distinguish a 1ns one-way signal timing/range equivalent (~30cm) from total position error, which also depends on satellite geometry and corrections.
 
-Corrections are in the dated maintenance copy; approved artifact unchanged. Text/source checks only; no visual or full factual acceptance.
+At the initial factual checkpoint only the maintenance copy had changed. The final verified export now replaces the approved artifact; final evidence below supersedes that checkpoint.
 
 
 ## Visual correction update (2026-10-28)

@@ -2,9 +2,9 @@
 
 > 最终交付：已从维护源规范导出至原成品路径，Approved 状态保留；10 页三档逐页检查通过，断网静态阅读（含祖先裁切边界）通过。SHA-256：`811c2363dfcfde28f0edb9ee57f8655705abae30bf2e4b7555fdb8c29d065c31`。
 
-- Artifact: `ppt-collection/fiber-optics-glass-nervous-system.html`（基线保留，尚未替换）
+- Artifact: `ppt-collection/fiber-optics-glass-nervous-system.html`（基线保留于 Git；现已按源文件导出更新）
 - Maintained source: `2026-10-28-legacy-maintenance/fiber-optics-glass-nervous-system.html`
-- Status: 内容修正已导出至 `.codex/legacy-stage/`；不代表重新接受或视觉通过
+- Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Slides / style: 10 / A
 
 ## 已核查并修正

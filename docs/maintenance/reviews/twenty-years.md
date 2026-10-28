@@ -2,9 +2,9 @@
 
 > 最终交付：已从维护源规范导出至原成品路径，Approved 状态保留；10 页三档逐页检查通过，断网静态阅读（含祖先裁切边界）通过。SHA-256：`ab463739bba28b4b64a0609deb5a285ffc9a6604b2df10dc574a2b6f092c1788`。
 
-- Artifact: `ppt-collection/twenty-years.html`（基线保留，尚未替换）
+- Artifact: `ppt-collection/twenty-years.html`（基线保留于 Git；现已按源文件导出更新）
 - Maintained source: `2026-10-28-legacy-maintenance/twenty-years.html`
-- Status: 多项指标的口径/年份已修正并导出至 `.codex/legacy-stage/`；不代表重新接受或视觉通过
+- Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Slides / style: 10 / A
 
 ## 已核查并修正

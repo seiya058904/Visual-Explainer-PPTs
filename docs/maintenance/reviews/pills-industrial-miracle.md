@@ -3,7 +3,7 @@
 > 最终交付：已从维护源规范导出至原成品路径，Approved 状态保留；28 页三档逐页检查通过，断网静态阅读（含祖先裁切边界）通过。SHA-256：`f548da83b0b234d9d391785051190b5206c1b9d4c8d83dc63ce1624a1cc5bb0c`。
 
 - Artifact: `ppt-collection/pills-industrial-miracle.html`
-- Status: approved artifact; this record does not constitute renewed acceptance
+- Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Verified slide count: 28
 - Style: A
 - English editorial title: The Industrial Miracle Behind a Pill

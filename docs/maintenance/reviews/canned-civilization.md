@@ -3,7 +3,7 @@
 > 最终交付：已从维护源规范导出至原成品路径，Approved 状态保留；15 页三档逐页检查通过，断网静态阅读（含祖先裁切边界）通过。SHA-256：`cdfb13321f792ae6615b79e3fa5a35304100623b8f942f0bd43ce454360d2892`。
 
 - Artifact: `ppt-collection/canned-civilization.html`
-- Status: approved artifact; this record does not constitute renewed acceptance
+- Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Verified slide count: 15
 - Style: A
 - English editorial title: Canned Food and the Making of Modern Life
@@ -16,7 +16,7 @@
 - **Slide 12:** FAO's 13.2% is a 2021 post-harvest-to-retail loss estimate; UNEP's 19% is 2022 consumer-stage food waste and includes retail, food service, and households. The cards now state years and scope. These global rates do not by themselves prove canning reduces loss, so the solution card now describes shelf-life/storage benefit conditionally. Sources: [FAO](https://www.fao.org/policy-support/policy-themes/food-loss-and-food-waste/fao-policy-series--food-loss---food-waste/en), [UNEP Food Waste Index 2024](https://wedocs.unep.org/bitstream/handle/20.500.11822/45275/Food-Waste-Index-2024-key-messages.pdf).
 - **Slide 13:** Steel's recyclability is a material property, not a claim that 100% of cans are actually recovered. Removed the ambiguous 100% recovery figure and clarified that actual recovery depends on collection and sorting. Sources: [worldsteel life-cycle information](https://worldsteel.org/wider-sustainability/life-cycle-thinking/about-lca-lci/), [worldsteel Steel Facts 2024](https://worldsteel.org/wp-content/uploads/steelFacts-2024.pdf).
 
-Corrections are in the dated maintenance copy; approved artifact unchanged. Text/source checks only; no visual or full factual acceptance.
+At the initial factual checkpoint only the maintenance copy had changed. The final verified export now replaces the approved artifact; final evidence below supersedes that checkpoint.
 
 
 ## Visual and historical copy update (2026-10-28)

@@ -54,3 +54,13 @@ P2/6：缩小两难区，不承诺彻底消失；P4图：1秒反应、3m/s²减�
 
 - 实际1000×560截图发现P4次级标注偏小后，逐张调整对应SVG：机制/数据字提升至30px viewBox字号，缩短标签并保留关键数值和适用条件；非批量全局CSS替换。
 - 已实际查看新的1000px原图 `.codex/qa-approved-final/traffic-p4-1000-fixed.png`，机制标签清楚、无裁边；此证据替代前述对应页小字可读性的遗留项。图内来源仍按次级层级呈现，不等于投影硬件认证。
+
+## Final standalone evidence — 2026-10-28
+
+- Status remains **Pending Review**; no collection artifact or public promotion.
+- Maintained source: `2026-08-30-traffic-light-yellow-physics/index.html`; current source SHA-256 `1cfcd153d9b903cc2140ef5c3738f94272f570514b55a849f7aeb6f20c2bc35a`.
+- Final standalone tested file: `.codex/pending-standalone-final/2026-08-30-traffic-light-yellow-physics.html`; SHA-256 `9e2fadd44a7c30f386008a77f7a8760cb47b808ed96b9d85a34f128c61298f0d`.
+- Final-byte official Chromium evidence: `.codex/qa-pending-standalone-final/pending-results.json`; all 11 pages at 1600×900 / 1280×720 / 1000×560 (33 settled page-viewports), zero recorded overflow, footer/nav overlap, invisible text, broken images, console/page errors or failed requests. ESC overview and selection passed at the first viewport, 1600×900, once each.
+- Exact-hash offline evidence: `.codex/offline-pending/results.json`; 11 pages at 1280×720 with external network blocked and offered static mode; zero unreadable text (including ancestor clipping), page errors or local failures. No external picture placement in this deck is required.
+- Expanded presenter interaction evidence: `.codex/presenter-pending-expanded/results.json`, passed. Final presenter schema validation has zero errors and 11 short-talk warnings; these remain concise speaking cues. This does not certify physical touch or HDMI hardware.
+- This append records final byte-bound machine evidence. Actual visual inspection scope and factual boundaries remain in earlier sections; it does not claim a new visual review occurred during ledger reconciliation. Full register: [final audit](../iteration-2026-10-28.md), [release ledger](../release-ledger.json).

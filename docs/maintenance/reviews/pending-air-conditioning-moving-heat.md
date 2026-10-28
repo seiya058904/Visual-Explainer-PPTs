@@ -50,3 +50,13 @@ P1–2：修正冷不存在/房间没变冷，明确出风与降温；P3–5：�
 - 另以1000×560原尺寸查看 P8、P9、P11；上述截图未见遮挡、真实裁切或标题异常换行。证据：`.codex/qa-pending-final/contact-sheets/`、`shots/`。
 - 可读性边界：1000px下SVG的次级标注/来源字较小；主体结论可读，但未把所有图内小字判为投影距离可读。图中文字尺寸的进一步改善及最终验收交主任务收敛。
 - 静态截图不证明动效流畅度或实际投影硬件表现；交互证据沿用上节独立浏览器测试，不宣称用户认可，继续 Pending Review。
+
+## Final standalone evidence — 2026-10-28
+
+- Status remains **Pending Review**; no collection artifact or public promotion.
+- Maintained source: `2026-08-30-air-conditioning-moving-heat/index.html`; current source SHA-256 `be5d3c55200c99125998673518a164a884ed9113150538779327318f26841257`.
+- Final standalone tested file: `.codex/pending-standalone-final/2026-08-30-air-conditioning-moving-heat.html`; SHA-256 `8a9bf6940a5a49b44d1428acd4b1661c4ac3660fc4b999eaac5641e40e9f4993`.
+- Final-byte official Chromium evidence: `.codex/qa-pending-standalone-final/pending-results.json`; all 12 pages at 1600×900 / 1280×720 / 1000×560 (36 settled page-viewports), zero recorded overflow, footer/nav overlap, invisible text, broken images, console/page errors or failed requests. ESC overview and selection passed at the first viewport, 1600×900, once each.
+- Exact-hash offline evidence: `.codex/offline-pending/results.json`; 12 pages at 1280×720 with external network blocked and offered static mode; zero unreadable text (including ancestor clipping), page errors or local failures. No external picture placement in this deck is required.
+- Expanded presenter interaction evidence: `.codex/presenter-pending-expanded/results.json`, passed. Final presenter schema validation has zero errors and 12 short-talk warnings; these remain concise speaking cues. This does not certify physical touch or HDMI hardware.
+- This append records final byte-bound machine evidence. Actual visual inspection scope and factual boundaries remain in earlier sections; it does not claim a new visual review occurred during ledger reconciliation. Full register: [final audit](../iteration-2026-10-28.md), [release ledger](../release-ledger.json).

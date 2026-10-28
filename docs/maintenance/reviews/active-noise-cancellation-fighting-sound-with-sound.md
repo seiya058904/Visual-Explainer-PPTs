@@ -3,7 +3,7 @@
 > 本轮交付：已从维护源重新导出至原有成品路径；Approved 状态保留。15 页三档逐页检查与断网核心阅读检查通过。最终 SHA-256：`7a552eb77bc240e19dad0a6f6f8b682c61e17e44a08d464c462d213f02b42cdf`。事实和视觉变更见下文；旧阶段记录不替代这里的最终状态。
 
 - Artifact: `ppt-collection/active-noise-cancellation-fighting-sound-with-sound.html`
-- Status: Approved retained under the user-authorized refinement scope
+- Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Verified slide count: 15
 - Style: A
 - English editorial title: How Noise Cancelling Headphones Make Silence

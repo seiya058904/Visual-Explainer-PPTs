@@ -1,7 +1,7 @@
 # 钥匙与锁：安全感的技术史 — 静态审阅记录
 
 - Artifact: `ppt-collection/keys-and-locks.html`
-- Status: approved artifact; this record does not constitute renewed acceptance
+- Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Inferred slide count: 20
 - Style: A
 - English editorial title: Keys, Locks, and the History of Security
@@ -19,7 +19,7 @@ The dated source is a copy of the approved HTML with a preserved baseline at `.c
 
 ## Visual review boundary
 
-A 1000×560 contact sheet of all 20 slides showed no obvious clipping in this deck. The approved browser baseline reports footer-overlap flags on slides 14 and 20 at all three viewports; these overlap flags appear to be sensitive to lower-page geometry and are not resolved by the static contact sheet. Treat visual status as preliminary pending post-edit browser QA and direct settled inspection of those pages. No fresh three-viewport QA has yet been run on the maintained copy.
+A 1000×560 contact sheet of all 20 slides showed no obvious clipping in this deck. The approved browser baseline reports footer-overlap flags on slides 14 and 20 at all three viewports; these overlap flags appear to be sensitive to lower-page geometry and are not resolved by the static contact sheet. These were preliminary baseline findings. Subsequent final-byte three-viewport and ancestor-clip checks below resolved the confirmed defects.
 
 ## Final ancestor-clip correction — 2026-10-28
 

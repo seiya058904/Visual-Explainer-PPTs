@@ -3,7 +3,7 @@
 > 本轮交付：已从维护源重新导出至原有成品路径；Approved 状态保留。13 页三档逐页检查与断网核心阅读检查通过。最终 SHA-256：`e775612d3f1470dd73975b89438b75d216015e35b51a1da206f85846f02745e4`。事实和视觉变更见下文；旧阶段记录不替代这里的最终状态。
 
 - Artifact: `ppt-collection/ai-weather-learning-the-atmosphere.html`
-- Status: Approved retained under the user-authorized refinement scope
+- Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Verified slide count: 13
 - Style: A
 - English editorial title: How AI Learns the Atmosphere

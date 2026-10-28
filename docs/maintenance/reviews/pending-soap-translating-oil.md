@@ -53,3 +53,13 @@ P3：普通皂不需额外抗菌配方，但不说绝不破坏微生物；P5：�
 
 - 实际1000×560截图发现P8次级标注偏小后，逐张调整对应SVG：机制/数据字提升至30px viewBox字号，缩短标签并保留关键数值和适用条件；非批量全局CSS替换。
 - 已实际查看新的1000px原图 `.codex/qa-approved-final/soap-p8-1000-fixed.png`，机制标签清楚、无裁边；此证据替代前述对应页小字可读性的遗留项。图内来源仍按次级层级呈现，不等于投影硬件认证。
+
+## Final standalone evidence — 2026-10-28
+
+- Status remains **Pending Review**; no collection artifact or public promotion.
+- Maintained source: `2026-08-30-soap-translating-oil/index.html`; current source SHA-256 `a3bfb0ac456b55c7c816554f910641efb9dc9a97489e8f5cea57c1edfd8a0af4`.
+- Final standalone tested file: `.codex/pending-standalone-final/2026-08-30-soap-translating-oil.html`; SHA-256 `47f14214f61f16ac67435fa5b5f5d8b0830eb8c1a88aa7702f2e2db9d73a96b7`.
+- Final-byte official Chromium evidence: `.codex/qa-pending-standalone-final/pending-results.json`; all 11 pages at 1600×900 / 1280×720 / 1000×560 (33 settled page-viewports), zero recorded overflow, footer/nav overlap, invisible text, broken images, console/page errors or failed requests. ESC overview and selection passed at the first viewport, 1600×900, once each.
+- Exact-hash offline evidence: `.codex/offline-pending/results.json`; 11 pages at 1280×720 with external network blocked and offered static mode; zero unreadable text (including ancestor clipping), page errors or local failures. No external picture placement in this deck is required.
+- Expanded presenter interaction evidence: `.codex/presenter-pending-expanded/results.json`, passed. Final presenter schema validation has zero errors and 11 short-talk warnings; these remain concise speaking cues. This does not certify physical touch or HDMI hardware.
+- This append records final byte-bound machine evidence. Actual visual inspection scope and factual boundaries remain in earlier sections; it does not claim a new visual review occurred during ledger reconciliation. Full register: [final audit](../iteration-2026-10-28.md), [release ledger](../release-ledger.json).

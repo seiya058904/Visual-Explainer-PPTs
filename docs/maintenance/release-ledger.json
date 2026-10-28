@@ -1,0 +1,2312 @@
+{
+  "schemaVersion": 1,
+  "auditDate": "2026-10-28",
+  "verifiedAtUtc": "2026-10-28T14:08:58.498321+00:00",
+  "publicationStatus": "pending-root-update",
+  "acceptanceBoundary": "38 existing Approved artifacts remain Approved; 10 Pending records remain local and unpromoted. Technical verification is not blanket factual or rights clearance.",
+  "totals": {
+    "decks": 48,
+    "approvedDecks": 38,
+    "pendingDecks": 10,
+    "approvedPages": 569,
+    "pendingPages": 111,
+    "approvedSettledPageViewports": 1707,
+    "pendingSettledPageViewports": 333,
+    "viewports": [
+      "1600x900",
+      "1280x720",
+      "1000x560"
+    ],
+    "receiptHashMatches": 38,
+    "offlineExactHashMatches": 48,
+    "presenterPassed": 20,
+    "presenterNotOffered": 28,
+    "presenterSchemaErrors": 0,
+    "pendingShortTalkWarnings": 111,
+    "overview1600Passed": 48,
+    "overviewSelection1600Passed": 48
+  },
+  "receiptEvidence": ".codex/publication-receipts.json",
+  "technicalFindings": [],
+  "technicalStatus": "verified-with-documented-limitations",
+  "limits": [
+    "Offline certification covers core text and embedded/local images under blocked external network, not full visual equivalence. Twelve external picture placements remain unavailable: Bill Gates 9, medical longevity 1, science of garbage 2.",
+    "Presenter is not offered by 28 legacy Approved runtimes; these are N/A, not passes. Twenty offered implementations passed expanded real-browser interaction checks. Pending notes retain 111 short-talk warnings.",
+    "ESC overview and card selection are tested at 1600x900 only, once per deck. Five older reports lack selection fields; their exact current artifact hashes are covered by the targeted supplement.",
+    "The real file:// smoke sample covers only elevator, ANC and pending soap: 3 decks / 36 pages. It verifies core reading, keyboard and wheel, plus presenter shell entry where offered, not end-to-end file-origin audience synchronization.",
+    "Browser touch events are synthetic; no physical touch device or HDMI/projector hardware was tested.",
+    "Factual review scope, unresolved definitions and historical statistics remain in individual cards. No blanket fact-check PASS or media-rights clearance is asserted.",
+    "Local raw QA evidence under .codex is not a public deployment receipt; root owns final build, Git/CI and publication status."
+  ],
+  "presenterEvidence": [
+    ".codex/presenter-approved-expanded/results.json",
+    ".codex/presenter-pending-expanded/results.json",
+    ".codex/skill-validators-final.json"
+  ],
+  "fileUrlEvidence": {
+    "path": ".codex/file-url-smoke/results.json",
+    "deckCount": 3,
+    "pageCount": 36,
+    "records": [
+      {
+        "id": "elevator",
+        "file": "D:\\xia zai\\AI project\\ppt-gallery\\.codex\\final-accepted-candidates\\elevator.html",
+        "sha256": "3fa3de236560b5fffb85a21edae0d5d13eb1b90cbb894608cf3d48216b6e0939",
+        "currentHashMatches": true,
+        "pageCount": 10,
+        "pass": true,
+        "keyboard": true,
+        "wheel": true,
+        "presenter": {
+          "entered": false,
+          "shell": false,
+          "visible": false,
+          "iframes": [],
+          "syncText": [],
+          "offered": false
+        },
+        "limitations": [
+          "This test opens a real file:// URL. Presenter shell entry is checked; end-to-end audience synchronization is not certified. File-origin cross-window synchronization/storage behavior is browser dependent; the actual Chromium origin and visible shell sync status are recorded, not generalized to other browsers. External pictures, webfonts and icon CDN resources are unavailable in this network-blocked run.",
+          "Legacy deck has no presenter entry/runtime; P is not offered and shell check is N/A."
+        ]
+      },
+      {
+        "id": "2026-08-30-soap-translating-oil",
+        "file": "D:\\xia zai\\AI project\\ppt-gallery\\.codex\\pending-standalone-final\\2026-08-30-soap-translating-oil.html",
+        "sha256": "47f14214f61f16ac67435fa5b5f5d8b0830eb8c1a88aa7702f2e2db9d73a96b7",
+        "currentHashMatches": true,
+        "pageCount": 11,
+        "pass": true,
+        "keyboard": true,
+        "wheel": true,
+        "presenter": {
+          "entered": true,
+          "shell": true,
+          "visible": true,
+          "iframes": [
+            {
+              "src": "file:///D:/xia%20zai/AI%20project/ppt-gallery/.codex/pending-standalone-final/2026-08-30-soap-translating-oil.html?mode=preview&session=7zerdlneebu&slide=1",
+              "loaded": true
+            },
+            {
+              "src": "file:///D:/xia%20zai/AI%20project/ppt-gallery/.codex/pending-standalone-final/2026-08-30-soap-translating-oil.html?mode=preview&session=7zerdlneebu&slide=2",
+              "loaded": true
+            }
+          ],
+          "syncText": [
+            "观众屏 · 已同步 · 第 1 页"
+          ],
+          "offered": true
+        },
+        "limitations": [
+          "This test opens a real file:// URL. Presenter shell entry is checked; end-to-end audience synchronization is not certified. File-origin cross-window synchronization/storage behavior is browser dependent; the actual Chromium origin and visible shell sync status are recorded, not generalized to other browsers. External pictures, webfonts and icon CDN resources are unavailable in this network-blocked run."
+        ]
+      },
+      {
+        "id": "active-noise-cancellation-fighting-sound-with-sound",
+        "file": "D:\\xia zai\\AI project\\ppt-gallery\\.codex\\final-accepted-candidates\\active-noise-cancellation-fighting-sound-with-sound.html",
+        "sha256": "7a552eb77bc240e19dad0a6f6f8b682c61e17e44a08d464c462d213f02b42cdf",
+        "currentHashMatches": true,
+        "pageCount": 15,
+        "pass": true,
+        "keyboard": true,
+        "wheel": true,
+        "presenter": {
+          "entered": true,
+          "shell": true,
+          "visible": true,
+          "iframes": [
+            {
+              "src": "file:///D:/xia%20zai/AI%20project/ppt-gallery/.codex/final-accepted-candidates/active-noise-cancellation-fighting-sound-with-sound.html?mode=preview&session=ymujuhy72h&slide=1",
+              "loaded": true
+            },
+            {
+              "src": "file:///D:/xia%20zai/AI%20project/ppt-gallery/.codex/final-accepted-candidates/active-noise-cancellation-fighting-sound-with-sound.html?mode=preview&session=ymujuhy72h&slide=2",
+              "loaded": true
+            }
+          ],
+          "syncText": [
+            "观众屏 · 已同步 · 第 1 页"
+          ],
+          "offered": true
+        },
+        "limitations": [
+          "This test opens a real file:// URL. Presenter shell entry is checked; end-to-end audience synchronization is not certified. File-origin cross-window synchronization/storage behavior is browser dependent; the actual Chromium origin and visible shell sync status are recorded, not generalized to other browsers. External pictures, webfonts and icon CDN resources are unavailable in this network-blocked run."
+        ]
+      }
+    ]
+  },
+  "entries": [
+    {
+      "id": "active-noise-cancellation-fighting-sound-with-sound",
+      "titleZh": "主动降噪：发动机消失了，人声却还在",
+      "status": "approved",
+      "slideCount": 15,
+      "source": "2026-08-15-active-noise-cancellation-fighting-sound-with-sound/index.html",
+      "sourceSha256": "83863b1c2595b5a4b8d8ab30db1b36982ec0285ecda93d41c6556baadc6d9214",
+      "artifact": "ppt-collection/active-noise-cancellation-fighting-sound-with-sound.html",
+      "artifactSha256": "7a552eb77bc240e19dad0a6f6f8b682c61e17e44a08d464c462d213f02b42cdf",
+      "testedFile": ".codex/release-revision2/active-noise-cancellation-fighting-sound-with-sound.html",
+      "testedFileSha256": "7a552eb77bc240e19dad0a6f6f8b682c61e17e44a08d464c462d213f02b42cdf",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-revision2/approved-results.json",
+      "browserTestedFile": ".codex/release-revision2/active-noise-cancellation-fighting-sound-with-sound.html",
+      "browserTestedFileSha256": "7a552eb77bc240e19dad0a6f6f8b682c61e17e44a08d464c462d213f02b42cdf",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 45,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "7a552eb77bc240e19dad0a6f6f8b682c61e17e44a08d464c462d213f02b42cdf",
+        "pageCount": 15,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "passed",
+      "reviewCard": "docs/maintenance/reviews/active-noise-cancellation-fighting-sound-with-sound.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "ai-and-life",
+      "titleZh": "AI是如何影响我们生活的",
+      "status": "approved",
+      "slideCount": 10,
+      "source": "2026-10-28-legacy-maintenance/ai-and-life.html",
+      "sourceSha256": "642c8e8a9afa3ad8bfdbaec940eaec847a600a5656b33e142c233b44e2da2efc",
+      "artifact": "ppt-collection/ai-and-life.html",
+      "artifactSha256": "642c8e8a9afa3ad8bfdbaec940eaec847a600a5656b33e142c233b44e2da2efc",
+      "testedFile": ".codex/final-accepted-candidates/ai-and-life.html",
+      "testedFileSha256": "642c8e8a9afa3ad8bfdbaec940eaec847a600a5656b33e142c233b44e2da2efc",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-ai-legacy-final/approved-results.json",
+      "browserTestedFile": ".codex/release-legacy-revision/ai-and-life.html",
+      "browserTestedFileSha256": "642c8e8a9afa3ad8bfdbaec940eaec847a600a5656b33e142c233b44e2da2efc",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 30,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "642c8e8a9afa3ad8bfdbaec940eaec847a600a5656b33e142c233b44e2da2efc",
+        "pageCount": 10,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/ai-and-life.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "ai-impact-on-modern-life",
+      "titleZh": "AI如何影响现代人类生活",
+      "status": "approved",
+      "slideCount": 10,
+      "source": "2026-05-13-ai-impact-on-modern-life/ai-impact-on-modern-life.html",
+      "sourceSha256": "38cdd918a397801c124da92a4bc85eae24992550923bcf509340415d2d85d5ac",
+      "artifact": "ppt-collection/ai-impact-on-modern-life.html",
+      "artifactSha256": "245ad8d70e8605ae96c657d7a7fb96c8e0b3cec18826c9a221697c63cce83f57",
+      "testedFile": ".codex/release-revision2/ai-impact-on-modern-life.html",
+      "testedFileSha256": "245ad8d70e8605ae96c657d7a7fb96c8e0b3cec18826c9a221697c63cce83f57",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-revision2/approved-results.json",
+      "browserTestedFile": ".codex/release-revision2/ai-impact-on-modern-life.html",
+      "browserTestedFileSha256": "245ad8d70e8605ae96c657d7a7fb96c8e0b3cec18826c9a221697c63cce83f57",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 30,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "245ad8d70e8605ae96c657d7a7fb96c8e0b3cec18826c9a221697c63cce83f57",
+        "pageCount": 10,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/ai-impact-on-modern-life.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "ai-weather-learning-the-atmosphere",
+      "titleZh": "AI 天气预报：天气预报开始不再只靠方程",
+      "status": "approved",
+      "slideCount": 13,
+      "source": "2026-08-14-ai-weather-learning-the-atmosphere/index.html",
+      "sourceSha256": "d40b0d2107df85b181c095de0e6a1acbd3a61301f1a22aa51d60331d3dd67cc5",
+      "artifact": "ppt-collection/ai-weather-learning-the-atmosphere.html",
+      "artifactSha256": "e775612d3f1470dd73975b89438b75d216015e35b51a1da206f85846f02745e4",
+      "testedFile": ".codex/release-revision2/ai-weather-learning-the-atmosphere.html",
+      "testedFileSha256": "e775612d3f1470dd73975b89438b75d216015e35b51a1da206f85846f02745e4",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-revision2/approved-results.json",
+      "browserTestedFile": ".codex/release-revision2/ai-weather-learning-the-atmosphere.html",
+      "browserTestedFileSha256": "e775612d3f1470dd73975b89438b75d216015e35b51a1da206f85846f02745e4",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 39,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "e775612d3f1470dd73975b89438b75d216015e35b51a1da206f85846f02745e4",
+        "pageCount": 13,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "passed",
+      "reviewCard": "docs/maintenance/reviews/ai-weather-learning-the-atmosphere.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "airplane",
+      "titleZh": "飞机",
+      "status": "approved",
+      "slideCount": 20,
+      "source": "2026-10-28-legacy-maintenance/airplane.html",
+      "sourceSha256": "81e2d7300ca49632e38ffbb4868b2a0950ae37e5968b7c85c915b802349baf95",
+      "artifact": "ppt-collection/airplane.html",
+      "artifactSha256": "99a6732b56f3792eb25ea22c9ffa81b1fa9dfc35189a867615bc6b10de4c6f31",
+      "testedFile": ".codex/release-seven-final/airplane.html",
+      "testedFileSha256": "99a6732b56f3792eb25ea22c9ffa81b1fa9dfc35189a867615bc6b10de4c6f31",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-seven-final/approved-results.json",
+      "browserTestedFile": ".codex/release-seven-final/airplane.html",
+      "browserTestedFileSha256": "99a6732b56f3792eb25ea22c9ffa81b1fa9dfc35189a867615bc6b10de4c6f31",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 60,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "99a6732b56f3792eb25ea22c9ffa81b1fa9dfc35189a867615bc6b10de4c6f31",
+        "pageCount": 20,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/airplane.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "bill-gates-biography",
+      "titleZh": "比尔·盖茨：把好奇心写进时代的人",
+      "status": "approved",
+      "slideCount": 20,
+      "source": "2026-10-28-legacy-maintenance/bill-gates-biography.html",
+      "sourceSha256": "9700186fefc5fee2d4d4d6c3fce949ae189ee342f1e1d91612a9860a3c5d3f2f",
+      "artifact": "ppt-collection/bill-gates-biography.html",
+      "artifactSha256": "378b35be23fee05c3a1c215434b7266ab9cd089a04567377c8d04cb35aea8c1c",
+      "testedFile": ".codex/release-seven-final/bill-gates-biography.html",
+      "testedFileSha256": "378b35be23fee05c3a1c215434b7266ab9cd089a04567377c8d04cb35aea8c1c",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-seven-final/approved-results.json",
+      "browserTestedFile": ".codex/release-seven-final/bill-gates-biography.html",
+      "browserTestedFileSha256": "378b35be23fee05c3a1c215434b7266ab9cd089a04567377c8d04cb35aea8c1c",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 60,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "378b35be23fee05c3a1c215434b7266ab9cd089a04567377c8d04cb35aea8c1c",
+        "pageCount": 20,
+        "pass": true,
+        "limitations": [
+          "9 external picture placements unavailable offline; this gate certifies core text and embedded/local image decoding, not complete offline visual equivalence."
+        ],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/bill-gates-biography.md",
+      "networkPhotoCount": 9,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "canned-civilization",
+      "titleZh": "罐头：把季节封存在金属里",
+      "status": "approved",
+      "slideCount": 15,
+      "source": "2026-10-28-legacy-maintenance/canned-civilization.html",
+      "sourceSha256": "cdfb13321f792ae6615b79e3fa5a35304100623b8f942f0bd43ce454360d2892",
+      "artifact": "ppt-collection/canned-civilization.html",
+      "artifactSha256": "cdfb13321f792ae6615b79e3fa5a35304100623b8f942f0bd43ce454360d2892",
+      "testedFile": ".codex/final-accepted-candidates/canned-civilization.html",
+      "testedFileSha256": "cdfb13321f792ae6615b79e3fa5a35304100623b8f942f0bd43ce454360d2892",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-legacy-revision/approved-results.json",
+      "browserTestedFile": ".codex/release-legacy-revision/canned-civilization.html",
+      "browserTestedFileSha256": "cdfb13321f792ae6615b79e3fa5a35304100623b8f942f0bd43ce454360d2892",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 45,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "cdfb13321f792ae6615b79e3fa5a35304100623b8f942f0bd43ce454360d2892",
+        "pageCount": 15,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/canned-civilization.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "chips",
+      "titleZh": "芯片：现代科技背后的隐形心脏",
+      "status": "approved",
+      "slideCount": 24,
+      "source": "2026-10-28-legacy-maintenance/chips.html",
+      "sourceSha256": "63f70e2b6307739accc8aed9e6a814426510e99e4c4bfb9ed59e7ba0995a088a",
+      "artifact": "ppt-collection/chips.html",
+      "artifactSha256": "63f70e2b6307739accc8aed9e6a814426510e99e4c4bfb9ed59e7ba0995a088a",
+      "testedFile": ".codex/legacy-stage/chips.html",
+      "testedFileSha256": "63f70e2b6307739accc8aed9e6a814426510e99e4c4bfb9ed59e7ba0995a088a",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-inventory-fixes/chips-cold-final-qa/approved-results.json",
+      "browserTestedFile": ".codex/legacy-stage/chips.html",
+      "browserTestedFileSha256": "63f70e2b6307739accc8aed9e6a814426510e99e4c4bfb9ed59e7ba0995a088a",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 72,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-chips-cold-final2/results.json",
+      "offline": {
+        "sha256": "63f70e2b6307739accc8aed9e6a814426510e99e4c4bfb9ed59e7ba0995a088a",
+        "pageCount": 24,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/chips.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "clocks",
+      "titleZh": "钟表：人类如何把时间变成制度",
+      "status": "approved",
+      "slideCount": 10,
+      "source": "2026-10-28-legacy-maintenance/clocks.html",
+      "sourceSha256": "0bd452bec5ebab2e6b620434e1e35b10f9b66f9a4f3a524cf839d8313fd05494",
+      "artifact": "ppt-collection/clocks.html",
+      "artifactSha256": "4f89727071b50f8bd13343134a2f8e828ce804d0e1fa302b3c1667a80b9aa4bf",
+      "testedFile": ".codex/final-accepted-candidates/clocks.html",
+      "testedFileSha256": "4f89727071b50f8bd13343134a2f8e828ce804d0e1fa302b3c1667a80b9aa4bf",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-inventory-fixes/stage-qa/approved-results.json",
+      "browserTestedFile": ".codex/legacy-stage/clocks.html",
+      "browserTestedFileSha256": "4f89727071b50f8bd13343134a2f8e828ce804d0e1fa302b3c1667a80b9aa4bf",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 30,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "4f89727071b50f8bd13343134a2f8e828ce804d0e1fa302b3c1667a80b9aa4bf",
+        "pageCount": 10,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/clocks.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "cold-chain",
+      "titleZh": "冷链：现代食物背后的低温文明",
+      "status": "approved",
+      "slideCount": 10,
+      "source": "2026-10-28-legacy-maintenance/cold-chain.html",
+      "sourceSha256": "fb79941645a21d8a5223a3e51a2704b98ef2506fa642ea5e2ed990230e1be857",
+      "artifact": "ppt-collection/cold-chain.html",
+      "artifactSha256": "084d0ca837e3b6a4ba1e825106366a45c7f6601ada64e3c91ea1fcac6c8569e8",
+      "testedFile": ".codex/legacy-stage/cold-chain.html",
+      "testedFileSha256": "084d0ca837e3b6a4ba1e825106366a45c7f6601ada64e3c91ea1fcac6c8569e8",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-inventory-fixes/chips-cold-final-qa/approved-results.json",
+      "browserTestedFile": ".codex/legacy-stage/cold-chain.html",
+      "browserTestedFileSha256": "084d0ca837e3b6a4ba1e825106366a45c7f6601ada64e3c91ea1fcac6c8569e8",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 30,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-chips-cold-final2/results.json",
+      "offline": {
+        "sha256": "084d0ca837e3b6a4ba1e825106366a45c7f6601ada64e3c91ea1fcac6c8569e8",
+        "pageCount": 10,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/cold-chain.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "concrete-liquid-skeleton",
+      "titleZh": "混凝土：流动的母体",
+      "status": "approved",
+      "slideCount": 15,
+      "source": "2026-10-28-legacy-maintenance/concrete-liquid-skeleton.html",
+      "sourceSha256": "2f91d9b81fb6393ba0656210e21e2bcfdc240929e5d0cb84340fbd03f7aaf47c",
+      "artifact": "ppt-collection/concrete-liquid-skeleton.html",
+      "artifactSha256": "2f91d9b81fb6393ba0656210e21e2bcfdc240929e5d0cb84340fbd03f7aaf47c",
+      "testedFile": ".codex/final-accepted-candidates/concrete-liquid-skeleton.html",
+      "testedFileSha256": "2f91d9b81fb6393ba0656210e21e2bcfdc240929e5d0cb84340fbd03f7aaf47c",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-inventory-fixes/concrete-final/approved-results.json",
+      "browserTestedFile": ".codex/legacy-stage/concrete-liquid-skeleton.html",
+      "browserTestedFileSha256": "2f91d9b81fb6393ba0656210e21e2bcfdc240929e5d0cb84340fbd03f7aaf47c",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 45,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "2f91d9b81fb6393ba0656210e21e2bcfdc240929e5d0cb84340fbd03f7aaf47c",
+        "pageCount": 15,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/concrete-liquid-skeleton.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "credit",
+      "titleZh": "信用",
+      "status": "approved",
+      "slideCount": 20,
+      "source": "2026-10-28-legacy-maintenance/credit.html",
+      "sourceSha256": "c1087d3c9bb9f5a7e9b0a075a950337a973c25985d1f181c3219c6e2ff5e706b",
+      "artifact": "ppt-collection/credit.html",
+      "artifactSha256": "90578cc3b2654c474076d9d1aa395b451285232dfd1747603ad68743e32eb0a0",
+      "testedFile": ".codex/release-seven/credit.html",
+      "testedFileSha256": "90578cc3b2654c474076d9d1aa395b451285232dfd1747603ad68743e32eb0a0",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-seven/approved-results.json",
+      "browserTestedFile": ".codex/release-seven/credit.html",
+      "browserTestedFileSha256": "90578cc3b2654c474076d9d1aa395b451285232dfd1747603ad68743e32eb0a0",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 60,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "90578cc3b2654c474076d9d1aa395b451285232dfd1747603ad68743e32eb0a0",
+        "pageCount": 20,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/credit.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "display-how-images-are-made",
+      "titleZh": "显示屏：画面其实不存在",
+      "status": "approved",
+      "slideCount": 15,
+      "source": "2026-08-15-display-how-images-are-made/index.html",
+      "sourceSha256": "dbd27bc621317105a05e9ca6017a31bdab3b0ccb62c33b689e18a6895dafdd9c",
+      "artifact": "ppt-collection/display-how-images-are-made.html",
+      "artifactSha256": "fbe35300bb744e7e4bd0c38f9c74ab4a327e2ffc234ff20f323f7e09e1dfe8e9",
+      "testedFile": ".codex/release-candidates/display-how-images-are-made.html",
+      "testedFileSha256": "fbe35300bb744e7e4bd0c38f9c74ab4a327e2ffc234ff20f323f7e09e1dfe8e9",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release/approved-results.json",
+      "browserTestedFile": ".codex/release-candidates/display-how-images-are-made.html",
+      "browserTestedFileSha256": "fbe35300bb744e7e4bd0c38f9c74ab4a327e2ffc234ff20f323f7e09e1dfe8e9",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 45,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": null
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "fbe35300bb744e7e4bd0c38f9c74ab4a327e2ffc234ff20f323f7e09e1dfe8e9",
+        "pageCount": 15,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "passed",
+      "reviewCard": "docs/maintenance/reviews/display-how-images-are-made.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionSupplement": {
+        "evidence": ".codex/final-overview-selection/results.json",
+        "sha256": "fbe35300bb744e7e4bd0c38f9c74ab4a327e2ffc234ff20f323f7e09e1dfe8e9",
+        "viewport": "1600x900",
+        "pass": true,
+        "initialIndex": 0,
+        "indexBeforeSelection": 1,
+        "selectedIndex": 0
+      },
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "electric-grid-bottleneck",
+      "titleZh": "电网：电力时代看不见的瓶颈",
+      "status": "approved",
+      "slideCount": 13,
+      "source": "2026-08-14-electric-grid-bottleneck-magazine/index.html",
+      "sourceSha256": "3ed5ab47ccba83697f4107737c22bfef7b8dada04075d072ac633e7cdcdd8552",
+      "artifact": "ppt-collection/electric-grid-bottleneck.html",
+      "artifactSha256": "f63813d5a302585419c8f1c4106409f4215bf8ad3079ef059d7064a8de75bd5c",
+      "testedFile": ".codex/release-candidates/electric-grid-bottleneck.html",
+      "testedFileSha256": "f63813d5a302585419c8f1c4106409f4215bf8ad3079ef059d7064a8de75bd5c",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release/approved-results.json",
+      "browserTestedFile": ".codex/release-candidates/electric-grid-bottleneck.html",
+      "browserTestedFileSha256": "f63813d5a302585419c8f1c4106409f4215bf8ad3079ef059d7064a8de75bd5c",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 39,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": null
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "f63813d5a302585419c8f1c4106409f4215bf8ad3079ef059d7064a8de75bd5c",
+        "pageCount": 13,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "passed",
+      "reviewCard": "docs/maintenance/reviews/electric-grid-bottleneck.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionSupplement": {
+        "evidence": ".codex/final-overview-selection/results.json",
+        "sha256": "f63813d5a302585419c8f1c4106409f4215bf8ad3079ef059d7064a8de75bd5c",
+        "viewport": "1600x900",
+        "pass": true,
+        "initialIndex": 0,
+        "indexBeforeSelection": 1,
+        "selectedIndex": 0
+      },
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "elevator",
+      "titleZh": "电梯：让城市向天空生长 · Elevator Civilization",
+      "status": "approved",
+      "slideCount": 10,
+      "source": "2026-10-28-legacy-maintenance/elevator.html",
+      "sourceSha256": "16af88388d2991cedbf8e2e2f875fae88269c4b2e9c1fbf77c293209c2976384",
+      "artifact": "ppt-collection/elevator.html",
+      "artifactSha256": "3fa3de236560b5fffb85a21edae0d5d13eb1b90cbb894608cf3d48216b6e0939",
+      "testedFile": ".codex/release-seven-final/elevator.html",
+      "testedFileSha256": "3fa3de236560b5fffb85a21edae0d5d13eb1b90cbb894608cf3d48216b6e0939",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-seven-final/approved-results.json",
+      "browserTestedFile": ".codex/release-seven-final/elevator.html",
+      "browserTestedFileSha256": "3fa3de236560b5fffb85a21edae0d5d13eb1b90cbb894608cf3d48216b6e0939",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 30,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "3fa3de236560b5fffb85a21edae0d5d13eb1b90cbb894608cf3d48216b6e0939",
+        "pageCount": 10,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/elevator.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "fiber-optics-glass-nervous-system",
+      "titleZh": "光纤：在玻璃微丝中奔跑的文明",
+      "status": "approved",
+      "slideCount": 10,
+      "source": "2026-10-28-legacy-maintenance/fiber-optics-glass-nervous-system.html",
+      "sourceSha256": "dc728d370cb175e9aa3b16de72e625a77938762a46d91e91cfd66abb08ad7ab1",
+      "artifact": "ppt-collection/fiber-optics-glass-nervous-system.html",
+      "artifactSha256": "811c2363dfcfde28f0edb9ee57f8655705abae30bf2e4b7555fdb8c29d065c31",
+      "testedFile": ".codex/final-accepted-candidates/fiber-optics-glass-nervous-system.html",
+      "testedFileSha256": "811c2363dfcfde28f0edb9ee57f8655705abae30bf2e4b7555fdb8c29d065c31",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-last6/approved-results.json",
+      "browserTestedFile": ".codex/release-last6/fiber-optics-glass-nervous-system.html",
+      "browserTestedFileSha256": "811c2363dfcfde28f0edb9ee57f8655705abae30bf2e4b7555fdb8c29d065c31",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 30,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "811c2363dfcfde28f0edb9ee57f8655705abae30bf2e4b7555fdb8c29d065c31",
+        "pageCount": 10,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/fiber-optics-glass-nervous-system.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "glp-1-beyond-weight-loss",
+      "titleZh": "GLP-1 减肥药：减肥药为什么改变了医学",
+      "status": "approved",
+      "slideCount": 13,
+      "source": "2026-08-14-glp-1-beyond-weight-loss/index.html",
+      "sourceSha256": "8b8c16f9d90ea21992e52f22a1bdc08a976b53fde678d4d94fd6ec4d947832fc",
+      "artifact": "ppt-collection/glp-1-beyond-weight-loss.html",
+      "artifactSha256": "e7679b373c951fdba995e4645ead392e104818773ceb519059979ea6abe2164c",
+      "testedFile": ".codex/release-revision2/glp-1-beyond-weight-loss.html",
+      "testedFileSha256": "e7679b373c951fdba995e4645ead392e104818773ceb519059979ea6abe2164c",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-revision2/approved-results.json",
+      "browserTestedFile": ".codex/release-revision2/glp-1-beyond-weight-loss.html",
+      "browserTestedFileSha256": "e7679b373c951fdba995e4645ead392e104818773ceb519059979ea6abe2164c",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 39,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "e7679b373c951fdba995e4645ead392e104818773ceb519059979ea6abe2164c",
+        "pageCount": 13,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "passed",
+      "reviewCard": "docs/maintenance/reviews/glp-1-beyond-weight-loss.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "insurance",
+      "titleZh": "保险：人类如何给不确定性定价 · Insurance",
+      "status": "approved",
+      "slideCount": 15,
+      "source": "2026-10-28-legacy-maintenance/insurance.html",
+      "sourceSha256": "adef7d593f3f38f8f7ae699cf242385a75f287be26cd1c67f57c3c4945c9f0e4",
+      "artifact": "ppt-collection/insurance.html",
+      "artifactSha256": "0f2a990f79841f8754f930f6c110dc409d63203e3d6180d4ad584756ca31beab",
+      "testedFile": ".codex/release-seven/insurance.html",
+      "testedFileSha256": "0f2a990f79841f8754f930f6c110dc409d63203e3d6180d4ad584756ca31beab",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-seven/approved-results.json",
+      "browserTestedFile": ".codex/release-seven/insurance.html",
+      "browserTestedFileSha256": "0f2a990f79841f8754f930f6c110dc409d63203e3d6180d4ad584756ca31beab",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 45,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "0f2a990f79841f8754f930f6c110dc409d63203e3d6180d4ad584756ca31beab",
+        "pageCount": 15,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/insurance.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "jensen-huang",
+      "titleZh": "黄仁勋：把计算重新点燃的人",
+      "status": "approved",
+      "slideCount": 20,
+      "source": "2026-10-28-legacy-maintenance/jensen-huang.html",
+      "sourceSha256": "8ad988ac05343526c605f6b7b7d40b791b337bb9fac674e8d674e4a30950428b",
+      "artifact": "ppt-collection/jensen-huang.html",
+      "artifactSha256": "35f64b4a1dbae5463d2d3a31f97a9f28d2504d8c1f690ff0114f1181848c4f1b",
+      "testedFile": ".codex/release-seven/jensen-huang.html",
+      "testedFileSha256": "35f64b4a1dbae5463d2d3a31f97a9f28d2504d8c1f690ff0114f1181848c4f1b",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-seven/approved-results.json",
+      "browserTestedFile": ".codex/release-seven/jensen-huang.html",
+      "browserTestedFileSha256": "35f64b4a1dbae5463d2d3a31f97a9f28d2504d8c1f690ff0114f1181848c4f1b",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 60,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "35f64b4a1dbae5463d2d3a31f97a9f28d2504d8c1f690ff0114f1181848c4f1b",
+        "pageCount": 20,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/jensen-huang.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "keys-and-locks",
+      "titleZh": "钥匙与锁：安全感的技术史",
+      "status": "approved",
+      "slideCount": 20,
+      "source": "2026-10-28-legacy-maintenance/keys-and-locks.html",
+      "sourceSha256": "446bdce818782484243f99b352886be99c40167e18575afc8d4a236c598a8fcb",
+      "artifact": "ppt-collection/keys-and-locks.html",
+      "artifactSha256": "da273c2c53688842ffabf436dbdbf50fed6e91d01752833781058cd31fec5c7d",
+      "testedFile": ".codex/clip-fixes-candidates-v1/keys-and-locks.html",
+      "testedFileSha256": "da273c2c53688842ffabf436dbdbf50fed6e91d01752833781058cd31fec5c7d",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-clip-fixes/approved-results.json",
+      "browserTestedFile": ".codex/clip-fixes-candidates-v1/keys-and-locks.html",
+      "browserTestedFileSha256": "da273c2c53688842ffabf436dbdbf50fed6e91d01752833781058cd31fec5c7d",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 60,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-clip-fixes/results.json",
+      "offline": {
+        "sha256": "da273c2c53688842ffabf436dbdbf50fed6e91d01752833781058cd31fec5c7d",
+        "pageCount": 20,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/keys-and-locks.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "lithium-battery-tetherless-world",
+      "titleZh": "锂电池：被驯服的移动能量密度",
+      "status": "approved",
+      "slideCount": 10,
+      "source": "2026-10-28-lithium-battery-maintenance/lithium-battery-tetherless-world.html",
+      "sourceSha256": "50ba12f40e6d98f6737e0242bb0df712ce771ace729aea414d68b2f505307703",
+      "artifact": "ppt-collection/lithium-battery-tetherless-world.html",
+      "artifactSha256": "397586f6fc8fbcee8aba124abf43795eaa2078387063ccdbecccd37d8613cae0",
+      "testedFile": ".codex/release-revision2/lithium-battery-tetherless-world.html",
+      "testedFileSha256": "397586f6fc8fbcee8aba124abf43795eaa2078387063ccdbecccd37d8613cae0",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-revision2/approved-results.json",
+      "browserTestedFile": ".codex/release-revision2/lithium-battery-tetherless-world.html",
+      "browserTestedFileSha256": "397586f6fc8fbcee8aba124abf43795eaa2078387063ccdbecccd37d8613cae0",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 30,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "397586f6fc8fbcee8aba124abf43795eaa2078387063ccdbecccd37d8613cae0",
+        "pageCount": 10,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/lithium-battery-tetherless-world.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "medical-longevity",
+      "titleZh": "现代医学：让生命拥有更多时间",
+      "status": "approved",
+      "slideCount": 10,
+      "source": "2026-10-28-legacy-maintenance/medical-longevity.html",
+      "sourceSha256": "4660c543b4a659ba9d2b611457fcab37875e9fa0c82bed8f816adf5a78f30e66",
+      "artifact": "ppt-collection/medical-longevity.html",
+      "artifactSha256": "6301c8f32bd5de70143a4ce71139b0df7a9656cb5b665823a51368a2d1c5edb0",
+      "testedFile": ".codex/clip-fixes-candidates-v1/medical-longevity.html",
+      "testedFileSha256": "6301c8f32bd5de70143a4ce71139b0df7a9656cb5b665823a51368a2d1c5edb0",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-clip-fixes/approved-results.json",
+      "browserTestedFile": ".codex/clip-fixes-candidates-v1/medical-longevity.html",
+      "browserTestedFileSha256": "6301c8f32bd5de70143a4ce71139b0df7a9656cb5b665823a51368a2d1c5edb0",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 30,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-clip-fixes/results.json",
+      "offline": {
+        "sha256": "6301c8f32bd5de70143a4ce71139b0df7a9656cb5b665823a51368a2d1c5edb0",
+        "pageCount": 10,
+        "pass": true,
+        "limitations": [
+          "1 external picture placements unavailable offline; this gate certifies core text and embedded/local image decoding, not complete offline visual equivalence."
+        ],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/medical-longevity.md",
+      "networkPhotoCount": 1,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "microbial-chocolate-designing-flavour",
+      "titleZh": "巧克力发酵：它还不是巧克力",
+      "status": "approved",
+      "slideCount": 13,
+      "source": "2026-08-15-microbial-chocolate-designing-flavour/index.html",
+      "sourceSha256": "5346b40ed0cb09ece2b5326b5c82d86b040a18928a56daf52ae141bdd3ecc480",
+      "artifact": "ppt-collection/microbial-chocolate-designing-flavour.html",
+      "artifactSha256": "f6efdc4d58b20532cd136c713a1cc9d5b191840a475a54b5920f95b46012a6b7",
+      "testedFile": ".codex/release-revision2/microbial-chocolate-designing-flavour.html",
+      "testedFileSha256": "f6efdc4d58b20532cd136c713a1cc9d5b191840a475a54b5920f95b46012a6b7",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-revision2/approved-results.json",
+      "browserTestedFile": ".codex/release-revision2/microbial-chocolate-designing-flavour.html",
+      "browserTestedFileSha256": "f6efdc4d58b20532cd136c713a1cc9d5b191840a475a54b5920f95b46012a6b7",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 39,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "f6efdc4d58b20532cd136c713a1cc9d5b191840a475a54b5920f95b46012a6b7",
+        "pageCount": 13,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "passed",
+      "reviewCard": "docs/maintenance/reviews/microbial-chocolate-designing-flavour.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "microwave-where-heat-comes-from",
+      "titleZh": "微波炉：饭热了，盘子呢？",
+      "status": "approved",
+      "slideCount": 14,
+      "source": "2026-08-15-microwave-where-heat-comes-from/index.html",
+      "sourceSha256": "9194e1acb7b48e297312a28695e99d36b8bba5fee4383f054b6ff4a817a41a78",
+      "artifact": "ppt-collection/microwave-where-heat-comes-from.html",
+      "artifactSha256": "52669e3024812db5de54f47ec4eaeb8fd3b43c64c2004ba92b1a72d5b6983b56",
+      "testedFile": ".codex/release-candidates/microwave-where-heat-comes-from.html",
+      "testedFileSha256": "52669e3024812db5de54f47ec4eaeb8fd3b43c64c2004ba92b1a72d5b6983b56",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release/approved-results.json",
+      "browserTestedFile": ".codex/release-candidates/microwave-where-heat-comes-from.html",
+      "browserTestedFileSha256": "52669e3024812db5de54f47ec4eaeb8fd3b43c64c2004ba92b1a72d5b6983b56",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 42,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": null
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "52669e3024812db5de54f47ec4eaeb8fd3b43c64c2004ba92b1a72d5b6983b56",
+        "pageCount": 14,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "passed",
+      "reviewCard": "docs/maintenance/reviews/microwave-where-heat-comes-from.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionSupplement": {
+        "evidence": ".codex/final-overview-selection/results.json",
+        "sha256": "52669e3024812db5de54f47ec4eaeb8fd3b43c64c2004ba92b1a72d5b6983b56",
+        "viewport": "1600x900",
+        "pass": true,
+        "initialIndex": 0,
+        "indexBeforeSelection": 1,
+        "selectedIndex": 0
+      },
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "navigation",
+      "titleZh": "导航",
+      "status": "approved",
+      "slideCount": 20,
+      "source": "2026-10-28-legacy-maintenance/navigation.html",
+      "sourceSha256": "fb611ec243bd465ae5bdb02a070cd2e816cb268d7acb6f9ceb9998e0891b68e1",
+      "artifact": "ppt-collection/navigation.html",
+      "artifactSha256": "43a06251d1c16bc2be6dd46f9b19f67f595151ca0c32358503072970c8ee012a",
+      "testedFile": ".codex/release-seven-final/navigation.html",
+      "testedFileSha256": "43a06251d1c16bc2be6dd46f9b19f67f595151ca0c32358503072970c8ee012a",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-seven-final/approved-results.json",
+      "browserTestedFile": ".codex/release-seven-final/navigation.html",
+      "browserTestedFileSha256": "43a06251d1c16bc2be6dd46f9b19f67f595151ca0c32358503072970c8ee012a",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 60,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "43a06251d1c16bc2be6dd46f9b19f67f595151ca0c32358503072970c8ee012a",
+        "pageCount": 20,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/navigation.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "pills-industrial-miracle",
+      "titleZh": "药片",
+      "status": "approved",
+      "slideCount": 28,
+      "source": "2026-10-28-legacy-maintenance/pills-industrial-miracle.html",
+      "sourceSha256": "fc758dd3fabff90987f856ba8ec1d0c9209baf8b9c16cf0e97b7b7611067023f",
+      "artifact": "ppt-collection/pills-industrial-miracle.html",
+      "artifactSha256": "f548da83b0b234d9d391785051190b5206c1b9d4c8d83dc63ce1624a1cc5bb0c",
+      "testedFile": ".codex/final-accepted-candidates/pills-industrial-miracle.html",
+      "testedFileSha256": "f548da83b0b234d9d391785051190b5206c1b9d4c8d83dc63ce1624a1cc5bb0c",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-pills-final/approved-results.json",
+      "browserTestedFile": ".codex/final-accepted-candidates/pills-industrial-miracle.html",
+      "browserTestedFileSha256": "f548da83b0b234d9d391785051190b5206c1b9d4c8d83dc63ce1624a1cc5bb0c",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 84,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "f548da83b0b234d9d391785051190b5206c1b9d4c8d83dc63ce1624a1cc5bb0c",
+        "pageCount": 28,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/pills-industrial-miracle.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "planetary-defense-changing-the-odds",
+      "titleZh": "小行星防御：它只需要 20 米",
+      "status": "approved",
+      "slideCount": 13,
+      "source": "2026-08-14-planetary-defense-changing-the-odds/index.html",
+      "sourceSha256": "1cca0a484356aff7ad32da27c3fb6ce247e7c957bfa584efa85b47451e93588d",
+      "artifact": "ppt-collection/planetary-defense-changing-the-odds.html",
+      "artifactSha256": "d82a125dd4b2df41f2739fdc3774569ae29507b52e01e7a165f4d0ee609b6180",
+      "testedFile": ".codex/release-candidates/planetary-defense-changing-the-odds.html",
+      "testedFileSha256": "d82a125dd4b2df41f2739fdc3774569ae29507b52e01e7a165f4d0ee609b6180",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release/approved-results.json",
+      "browserTestedFile": ".codex/release-candidates/planetary-defense-changing-the-odds.html",
+      "browserTestedFileSha256": "d82a125dd4b2df41f2739fdc3774569ae29507b52e01e7a165f4d0ee609b6180",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 39,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": null
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "d82a125dd4b2df41f2739fdc3774569ae29507b52e01e7a165f4d0ee609b6180",
+        "pageCount": 13,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "passed",
+      "reviewCard": "docs/maintenance/reviews/planetary-defense-changing-the-odds.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionSupplement": {
+        "evidence": ".codex/final-overview-selection/results.json",
+        "sha256": "d82a125dd4b2df41f2739fdc3774569ae29507b52e01e7a165f4d0ee609b6180",
+        "viewport": "1600x900",
+        "pass": true,
+        "initialIndex": 0,
+        "indexBeforeSelection": 1,
+        "selectedIndex": 0
+      },
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "qr-code-inside-the-black-white-squares",
+      "titleZh": "二维码：为什么缺一块还能扫？",
+      "status": "approved",
+      "slideCount": 14,
+      "source": "2026-08-15-qr-code-inside-the-black-white-squares/index.html",
+      "sourceSha256": "e34481988b7915a9ef0c3b227d97f622eadd30aa6d52b4cdef001eaadeec34b1",
+      "artifact": "ppt-collection/qr-code-inside-the-black-white-squares.html",
+      "artifactSha256": "a6205b0b1bc1b8f754d2c21a10e0cb59c6e7639e8c4e6ba8caa086d562b9411d",
+      "testedFile": ".codex/release-candidates/qr-code-inside-the-black-white-squares.html",
+      "testedFileSha256": "a6205b0b1bc1b8f754d2c21a10e0cb59c6e7639e8c4e6ba8caa086d562b9411d",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release/approved-results.json",
+      "browserTestedFile": ".codex/release-candidates/qr-code-inside-the-black-white-squares.html",
+      "browserTestedFileSha256": "a6205b0b1bc1b8f754d2c21a10e0cb59c6e7639e8c4e6ba8caa086d562b9411d",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 42,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": null
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "a6205b0b1bc1b8f754d2c21a10e0cb59c6e7639e8c4e6ba8caa086d562b9411d",
+        "pageCount": 14,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "passed",
+      "reviewCard": "docs/maintenance/reviews/qr-code-inside-the-black-white-squares.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionSupplement": {
+        "evidence": ".codex/final-overview-selection/results.json",
+        "sha256": "a6205b0b1bc1b8f754d2c21a10e0cb59c6e7639e8c4e6ba8caa086d562b9411d",
+        "viewport": "1600x900",
+        "pass": true,
+        "initialIndex": 0,
+        "indexBeforeSelection": 1,
+        "selectedIndex": 0
+      },
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "queueing",
+      "titleZh": "排队：现代社会最安静的公平机制",
+      "status": "approved",
+      "slideCount": 10,
+      "source": "2026-10-28-legacy-maintenance/queueing.html",
+      "sourceSha256": "26dd360ae375f6aaf43172bf90117506e26c8f371735fe20e8649c382906853e",
+      "artifact": "ppt-collection/queueing.html",
+      "artifactSha256": "096eb75225470d4857a3788d5f1cc50c048e22e0721649fecfd505dc5320e710",
+      "testedFile": ".codex/final-accepted-candidates/queueing.html",
+      "testedFileSha256": "096eb75225470d4857a3788d5f1cc50c048e22e0721649fecfd505dc5320e710",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-last6/approved-results.json",
+      "browserTestedFile": ".codex/release-last6/queueing.html",
+      "browserTestedFileSha256": "096eb75225470d4857a3788d5f1cc50c048e22e0721649fecfd505dc5320e710",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 30,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "096eb75225470d4857a3788d5f1cc50c048e22e0721649fecfd505dc5320e710",
+        "pageCount": 10,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/queueing.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "science-of-garbage",
+      "titleZh": "垃圾：我们扔掉的东西，并没有离开世界",
+      "status": "approved",
+      "slideCount": 15,
+      "source": "2026-10-28-legacy-maintenance/science-of-garbage.html",
+      "sourceSha256": "c10afb5a86442c11bf834429bb56cdc98e0f58fd1ca77cd6dc179299e318b99f",
+      "artifact": "ppt-collection/science-of-garbage.html",
+      "artifactSha256": "3ac20f7867200915bef0a309427fc6df516b8c9107c8de2d266be7696738b320",
+      "testedFile": ".codex/final-accepted-candidates/science-of-garbage.html",
+      "testedFileSha256": "3ac20f7867200915bef0a309427fc6df516b8c9107c8de2d266be7696738b320",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-content-final/approved-results.json",
+      "browserTestedFile": ".codex/release-content-final/science-of-garbage.html",
+      "browserTestedFileSha256": "3ac20f7867200915bef0a309427fc6df516b8c9107c8de2d266be7696738b320",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 45,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "3ac20f7867200915bef0a309427fc6df516b8c9107c8de2d266be7696738b320",
+        "pageCount": 15,
+        "pass": true,
+        "limitations": [
+          "2 external picture placements unavailable offline; this gate certifies core text and embedded/local image decoding, not complete offline visual equivalence."
+        ],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/science-of-garbage.md",
+      "networkPhotoCount": 2,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "screws",
+      "titleZh": "螺丝",
+      "status": "approved",
+      "slideCount": 20,
+      "source": "2026-10-28-legacy-maintenance/screws.html",
+      "sourceSha256": "709b74e748dd5db67026697520163cb3fcca26581767a836ef530ff90d1b460c",
+      "artifact": "ppt-collection/screws.html",
+      "artifactSha256": "434f0975192ebd99b55d1c9cbf3b752b47950b63e205d74d27dcace07b7ee9fd",
+      "testedFile": ".codex/screws-factual-final/screws.html",
+      "testedFileSha256": "434f0975192ebd99b55d1c9cbf3b752b47950b63e205d74d27dcace07b7ee9fd",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-screws-factual-final-canonical/approved-results.json",
+      "browserTestedFile": ".codex/screws-factual-final/screws.html",
+      "browserTestedFileSha256": "434f0975192ebd99b55d1c9cbf3b752b47950b63e205d74d27dcace07b7ee9fd",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 60,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-screws-factual-final-canonical/results.json",
+      "offline": {
+        "sha256": "434f0975192ebd99b55d1c9cbf3b752b47950b63e205d74d27dcace07b7ee9fd",
+        "pageCount": 20,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/screws.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "spf-50-decoding-sunscreen",
+      "titleZh": "防晒指数：SPF 50 不是 50 倍时间",
+      "status": "approved",
+      "slideCount": 14,
+      "source": "2026-08-15-spf-50-sunscreen-decoding/index.html",
+      "sourceSha256": "19ca1026f0a3bee30d96d9e99ca9a0cfae0e36f7f0c5571f0b7521972fdc3717",
+      "artifact": "ppt-collection/spf-50-decoding-sunscreen.html",
+      "artifactSha256": "b5900e0d72f99067ddb2acc58735a30343ad4613af769f49e734933ad51d07eb",
+      "testedFile": ".codex/release-revision2/spf-50-decoding-sunscreen.html",
+      "testedFileSha256": "b5900e0d72f99067ddb2acc58735a30343ad4613af769f49e734933ad51d07eb",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-revision2/approved-results.json",
+      "browserTestedFile": ".codex/release-revision2/spf-50-decoding-sunscreen.html",
+      "browserTestedFileSha256": "b5900e0d72f99067ddb2acc58735a30343ad4613af769f49e734933ad51d07eb",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 42,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "b5900e0d72f99067ddb2acc58735a30343ad4613af769f49e734933ad51d07eb",
+        "pageCount": 14,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "passed",
+      "reviewCard": "docs/maintenance/reviews/spf-50-decoding-sunscreen.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "the-art-of-cinema",
+      "titleZh": "电影的艺术：把时间制造成梦",
+      "status": "approved",
+      "slideCount": 15,
+      "source": "2026-05-14-the-art-of-cinema/the-art-of-cinema.html",
+      "sourceSha256": "e30b3669c534ba45fbf2b730e95b4bb65f65be4de07d56a1a51d3f1f156e4e38",
+      "artifact": "ppt-collection/the-art-of-cinema.html",
+      "artifactSha256": "fd34bc268eeff06ba026066c8cbcfe39926d65f21a4d81caa6f11896fb6d7d67",
+      "testedFile": ".codex/release-revision2/the-art-of-cinema.html",
+      "testedFileSha256": "fd34bc268eeff06ba026066c8cbcfe39926d65f21a4d81caa6f11896fb6d7d67",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-revision2/approved-results.json",
+      "browserTestedFile": ".codex/release-revision2/the-art-of-cinema.html",
+      "browserTestedFileSha256": "fd34bc268eeff06ba026066c8cbcfe39926d65f21a4d81caa6f11896fb6d7d67",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 45,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "fd34bc268eeff06ba026066c8cbcfe39926d65f21a4d81caa6f11896fb6d7d67",
+        "pageCount": 15,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/the-art-of-cinema.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "tires",
+      "titleZh": "轮胎",
+      "status": "approved",
+      "slideCount": 15,
+      "source": "2026-10-28-legacy-maintenance/tires.html",
+      "sourceSha256": "d1a6156802409aabfb7398976eca776951231e06fb4264e0f3d6052e879efe68",
+      "artifact": "ppt-collection/tires.html",
+      "artifactSha256": "ebb25643ffc238bb8c30fa7590536322095dee78c5c9e29efdc08720a11bbfd4",
+      "testedFile": ".codex/tires-factual-final/tires.html",
+      "testedFileSha256": "ebb25643ffc238bb8c30fa7590536322095dee78c5c9e29efdc08720a11bbfd4",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-tires-factual-final/approved-results.json",
+      "browserTestedFile": ".codex/tires-factual-final/tires.html",
+      "browserTestedFileSha256": "ebb25643ffc238bb8c30fa7590536322095dee78c5c9e29efdc08720a11bbfd4",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 45,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-tires-factual-final/results.json",
+      "offline": {
+        "sha256": "ebb25643ffc238bb8c30fa7590536322095dee78c5c9e29efdc08720a11bbfd4",
+        "pageCount": 15,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/tires.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "twenty-years",
+      "titleZh": "科技二十年：世界被重新编译",
+      "status": "approved",
+      "slideCount": 10,
+      "source": "2026-10-28-legacy-maintenance/twenty-years.html",
+      "sourceSha256": "8e93d8fbebf1bed9cc2cd5985c162daaaf14b63f6dba9a7d9abd7bd737c23f52",
+      "artifact": "ppt-collection/twenty-years.html",
+      "artifactSha256": "ab463739bba28b4b64a0609deb5a285ffc9a6604b2df10dc574a2b6f092c1788",
+      "testedFile": ".codex/final-accepted-candidates/twenty-years.html",
+      "testedFileSha256": "ab463739bba28b4b64a0609deb5a285ffc9a6604b2df10dc574a2b6f092c1788",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-last6/approved-results.json",
+      "browserTestedFile": ".codex/release-last6/twenty-years.html",
+      "browserTestedFileSha256": "ab463739bba28b4b64a0609deb5a285ffc9a6604b2df10dc574a2b6f092c1788",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 30,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "ab463739bba28b4b64a0609deb5a285ffc9a6604b2df10dc574a2b6f092c1788",
+        "pageCount": 10,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/twenty-years.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "weather-forecast",
+      "titleZh": "天气预报：人类如何预测明天 · Weather Forecast",
+      "status": "approved",
+      "slideCount": 15,
+      "source": "2026-10-28-legacy-maintenance/weather-forecast.html",
+      "sourceSha256": "34599b5399ead20ca562b17b2652fe26fadcdbfd4d1cbcff1c180ae7f5344f97",
+      "artifact": "ppt-collection/weather-forecast.html",
+      "artifactSha256": "be1ccd57788d76fa455011deaa288aa75f79fed9cf7099d98ba369c69b0b5b52",
+      "testedFile": ".codex/final-accepted-candidates/weather-forecast.html",
+      "testedFileSha256": "be1ccd57788d76fa455011deaa288aa75f79fed9cf7099d98ba369c69b0b5b52",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-batch2/approved-results.json",
+      "browserTestedFile": ".codex/release-batch2/weather-forecast.html",
+      "browserTestedFileSha256": "be1ccd57788d76fa455011deaa288aa75f79fed9cf7099d98ba369c69b0b5b52",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 45,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "be1ccd57788d76fa455011deaa288aa75f79fed9cf7099d98ba369c69b0b5b52",
+        "pageCount": 15,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/weather-forecast.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "wifi",
+      "titleZh": "Wi-Fi：空气中的互联网秩序",
+      "status": "approved",
+      "slideCount": 15,
+      "source": "2026-10-28-legacy-maintenance/wifi.html",
+      "sourceSha256": "c423e25b668154e8ab5a8bc84a27e6e42826c8a477cb63869a5f9e0747e0f9a5",
+      "artifact": "ppt-collection/wifi.html",
+      "artifactSha256": "555de38d641e80fbf4cdda304def7c72f454e9b7a56b786a2fe248e5627871cd",
+      "testedFile": ".codex/final-accepted-candidates/wifi.html",
+      "testedFileSha256": "555de38d641e80fbf4cdda304def7c72f454e9b7a56b786a2fe248e5627871cd",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-release-legacy-revision/approved-results.json",
+      "browserTestedFile": ".codex/release-legacy-revision/wifi.html",
+      "browserTestedFileSha256": "555de38d641e80fbf4cdda304def7c72f454e9b7a56b786a2fe248e5627871cd",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 45,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offline": {
+        "sha256": "555de38d641e80fbf4cdda304def7c72f454e9b7a56b786a2fe248e5627871cd",
+        "pageCount": 15,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/wifi.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "world-cup",
+      "titleZh": "足球：世界为什么为一颗球停下",
+      "status": "approved",
+      "slideCount": 20,
+      "source": "2026-10-28-legacy-maintenance/world-cup.html",
+      "sourceSha256": "3be5f6aa36bdc41fc340a7064e1db173d74f5f6b4c22b373f4cdd265e38670c6",
+      "artifact": "ppt-collection/world-cup.html",
+      "artifactSha256": "7ad264688fcdd1a0fa327bd70b57a277a7e1b355a46acc4021ed4b97667b50b5",
+      "testedFile": ".codex/clip-fixes-candidates-v1/world-cup.html",
+      "testedFileSha256": "7ad264688fcdd1a0fa327bd70b57a277a7e1b355a46acc4021ed4b97667b50b5",
+      "receiptChecks": {
+        "artifactMatchesReceipt": true,
+        "sourceMatchesReceipt": true,
+        "testedFileMatchesArtifact": true
+      },
+      "browserEvidence": ".codex/qa-clip-fixes/approved-results.json",
+      "browserTestedFile": ".codex/clip-fixes-candidates-v1/world-cup.html",
+      "browserTestedFileSha256": "7ad264688fcdd1a0fa327bd70b57a277a7e1b355a46acc4021ed4b97667b50b5",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 60,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-clip-fixes/results.json",
+      "offline": {
+        "sha256": "7ad264688fcdd1a0fa327bd70b57a277a7e1b355a46acc4021ed4b97667b50b5",
+        "pageCount": 20,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "not-offered",
+      "reviewCard": "docs/maintenance/reviews/world-cup.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "air-conditioning-moving-heat",
+      "titleZh": "空调：冷下来靠搬走热量",
+      "status": "pending",
+      "slideCount": 12,
+      "source": "2026-08-30-air-conditioning-moving-heat/index.html",
+      "sourceSha256": "be5d3c55200c99125998673518a164a884ed9113150538779327318f26841257",
+      "artifact": null,
+      "artifactSha256": null,
+      "testedFile": ".codex/pending-standalone-final/2026-08-30-air-conditioning-moving-heat.html",
+      "testedFileSha256": "8a9bf6940a5a49b44d1428acd4b1661c4ac3660fc4b999eaac5641e40e9f4993",
+      "receiptChecks": {},
+      "browserEvidence": ".codex/qa-pending-standalone-final/pending-results.json",
+      "browserTestedFile": ".codex/pending-standalone-final/2026-08-30-air-conditioning-moving-heat.html",
+      "browserTestedFileSha256": "8a9bf6940a5a49b44d1428acd4b1661c4ac3660fc4b999eaac5641e40e9f4993",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 36,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-pending/results.json",
+      "offline": {
+        "sha256": "8a9bf6940a5a49b44d1428acd4b1661c4ac3660fc4b999eaac5641e40e9f4993",
+        "pageCount": 12,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "passed",
+      "reviewCard": "docs/maintenance/reviews/pending-air-conditioning-moving-heat.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "bridges-always-moving",
+      "titleZh": "桥梁：它从来不是静止的",
+      "status": "pending",
+      "slideCount": 11,
+      "source": "2026-08-30-bridges-always-moving/index.html",
+      "sourceSha256": "a6ad15d7dda3dc312a3785ae5295f4de785ddada9e5d41536101c01a5a2e0f11",
+      "artifact": null,
+      "artifactSha256": null,
+      "testedFile": ".codex/pending-standalone-final/2026-08-30-bridges-always-moving.html",
+      "testedFileSha256": "49d5144635713257180214ff6e80a98995b4f47718acaab7122b2a065b45bd31",
+      "receiptChecks": {},
+      "browserEvidence": ".codex/qa-pending-standalone-final/pending-results.json",
+      "browserTestedFile": ".codex/pending-standalone-final/2026-08-30-bridges-always-moving.html",
+      "browserTestedFileSha256": "49d5144635713257180214ff6e80a98995b4f47718acaab7122b2a065b45bd31",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 33,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-pending/results.json",
+      "offline": {
+        "sha256": "49d5144635713257180214ff6e80a98995b4f47718acaab7122b2a065b45bd31",
+        "pageCount": 11,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "passed",
+      "reviewCard": "docs/maintenance/reviews/pending-bridges-always-moving.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "caffeine-blocking-sleepiness",
+      "titleZh": "咖啡因：它没有给你任何能量",
+      "status": "pending",
+      "slideCount": 11,
+      "source": "2026-08-30-caffeine-blocking-sleepiness/index.html",
+      "sourceSha256": "6ec76f1bcdc9d73167a2974aef57133921f8e18588ec6ac26b37f45a265dd433",
+      "artifact": null,
+      "artifactSha256": null,
+      "testedFile": ".codex/pending-standalone-final/2026-08-30-caffeine-blocking-sleepiness.html",
+      "testedFileSha256": "2258d417e379742fcc96af0e12c8f8b0ef6f77ce80b689c1d4e400a3425ca0a5",
+      "receiptChecks": {},
+      "browserEvidence": ".codex/qa-pending-standalone-final/pending-results.json",
+      "browserTestedFile": ".codex/pending-standalone-final/2026-08-30-caffeine-blocking-sleepiness.html",
+      "browserTestedFileSha256": "2258d417e379742fcc96af0e12c8f8b0ef6f77ce80b689c1d4e400a3425ca0a5",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 33,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-pending/results.json",
+      "offline": {
+        "sha256": "2258d417e379742fcc96af0e12c8f8b0ef6f77ce80b689c1d4e400a3425ca0a5",
+        "pageCount": 11,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "passed",
+      "reviewCard": "docs/maintenance/reviews/pending-caffeine-blocking-sleepiness.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "container-the-box",
+      "titleZh": "集装箱：改变世界的不是船",
+      "status": "pending",
+      "slideCount": 12,
+      "source": "2026-08-30-container-the-box/index.html",
+      "sourceSha256": "4cdbc982fae3ec5e0e6684b899ff4534d7f96ad57d33cedbdb24373ce971dcbe",
+      "artifact": null,
+      "artifactSha256": null,
+      "testedFile": ".codex/pending-standalone-final/2026-08-30-container-the-box.html",
+      "testedFileSha256": "afb00ec64b8c87f5912f0ec1f794b630f8d88a290f74b5ab1d47ee666d5012f6",
+      "receiptChecks": {},
+      "browserEvidence": ".codex/qa-pending-standalone-final/pending-results.json",
+      "browserTestedFile": ".codex/pending-standalone-final/2026-08-30-container-the-box.html",
+      "browserTestedFileSha256": "afb00ec64b8c87f5912f0ec1f794b630f8d88a290f74b5ab1d47ee666d5012f6",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 36,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-pending/results.json",
+      "offline": {
+        "sha256": "afb00ec64b8c87f5912f0ec1f794b630f8d88a290f74b5ab1d47ee666d5012f6",
+        "pageCount": 12,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "passed",
+      "reviewCard": "docs/maintenance/reviews/pending-container-the-box.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "fingerprints-not-for-grip",
+      "titleZh": "指纹：皮肤上最著名的误解",
+      "status": "pending",
+      "slideCount": 10,
+      "source": "2026-08-30-fingerprints-not-for-grip/index.html",
+      "sourceSha256": "b124c6b5edecb02ffbf230cbc280cde5ac10e4b9bfc18d8af5e36364cc6ff90d",
+      "artifact": null,
+      "artifactSha256": null,
+      "testedFile": ".codex/pending-standalone-final/2026-08-30-fingerprints-not-for-grip.html",
+      "testedFileSha256": "f05fb51af4f7e68b62ec249f728d8d438fad18f747b822a26a2d618be824de60",
+      "receiptChecks": {},
+      "browserEvidence": ".codex/qa-pending-standalone-final/pending-results.json",
+      "browserTestedFile": ".codex/pending-standalone-final/2026-08-30-fingerprints-not-for-grip.html",
+      "browserTestedFileSha256": "f05fb51af4f7e68b62ec249f728d8d438fad18f747b822a26a2d618be824de60",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 30,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-pending/results.json",
+      "offline": {
+        "sha256": "f05fb51af4f7e68b62ec249f728d8d438fad18f747b822a26a2d618be824de60",
+        "pageCount": 10,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "passed",
+      "reviewCard": "docs/maintenance/reviews/pending-fingerprints-not-for-grip.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "glass-transparent-solid",
+      "titleZh": "玻璃：一场能量的错身而过",
+      "status": "pending",
+      "slideCount": 11,
+      "source": "2026-08-30-glass-transparent-solid/index.html",
+      "sourceSha256": "61cf9e949283f2f26ef31535924249169770682d5b667689203179fa6071ca7d",
+      "artifact": null,
+      "artifactSha256": null,
+      "testedFile": ".codex/pending-standalone-final/2026-08-30-glass-transparent-solid.html",
+      "testedFileSha256": "41e6392f1174b1180883d54779bef375b3b55023292ead0dc278ae15cc585320",
+      "receiptChecks": {},
+      "browserEvidence": ".codex/qa-pending-standalone-final/pending-results.json",
+      "browserTestedFile": ".codex/pending-standalone-final/2026-08-30-glass-transparent-solid.html",
+      "browserTestedFileSha256": "41e6392f1174b1180883d54779bef375b3b55023292ead0dc278ae15cc585320",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 33,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-pending/results.json",
+      "offline": {
+        "sha256": "41e6392f1174b1180883d54779bef375b3b55023292ead0dc278ae15cc585320",
+        "pageCount": 11,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "passed",
+      "reviewCard": "docs/maintenance/reviews/pending-glass-transparent-solid.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "soap-translating-oil",
+      "titleZh": "肥皂：一块皂里的分子工程",
+      "status": "pending",
+      "slideCount": 11,
+      "source": "2026-08-30-soap-translating-oil/index.html",
+      "sourceSha256": "a3bfb0ac456b55c7c816554f910641efb9dc9a97489e8f5cea57c1edfd8a0af4",
+      "artifact": null,
+      "artifactSha256": null,
+      "testedFile": ".codex/pending-standalone-final/2026-08-30-soap-translating-oil.html",
+      "testedFileSha256": "47f14214f61f16ac67435fa5b5f5d8b0830eb8c1a88aa7702f2e2db9d73a96b7",
+      "receiptChecks": {},
+      "browserEvidence": ".codex/qa-pending-standalone-final/pending-results.json",
+      "browserTestedFile": ".codex/pending-standalone-final/2026-08-30-soap-translating-oil.html",
+      "browserTestedFileSha256": "47f14214f61f16ac67435fa5b5f5d8b0830eb8c1a88aa7702f2e2db9d73a96b7",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 33,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-pending/results.json",
+      "offline": {
+        "sha256": "47f14214f61f16ac67435fa5b5f5d8b0830eb8c1a88aa7702f2e2db9d73a96b7",
+        "pageCount": 11,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "passed",
+      "reviewCard": "docs/maintenance/reviews/pending-soap-translating-oil.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "tap-water-clean-process",
+      "titleZh": "自来水：拧开龙头后的百年工程",
+      "status": "pending",
+      "slideCount": 11,
+      "source": "2026-08-30-tap-water-clean-process/index.html",
+      "sourceSha256": "53f46a7f58bb4e0283b24ba30a0bc2aa8b0d9d8045b2f2a1f491d0e6ebe52bca",
+      "artifact": null,
+      "artifactSha256": null,
+      "testedFile": ".codex/pending-standalone-final/2026-08-30-tap-water-clean-process.html",
+      "testedFileSha256": "e5478b843e367e628179f8e5ad5c388a604c113338dd86fd0186b16d913c4f0e",
+      "receiptChecks": {},
+      "browserEvidence": ".codex/qa-pending-standalone-final/pending-results.json",
+      "browserTestedFile": ".codex/pending-standalone-final/2026-08-30-tap-water-clean-process.html",
+      "browserTestedFileSha256": "e5478b843e367e628179f8e5ad5c388a604c113338dd86fd0186b16d913c4f0e",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 33,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-pending/results.json",
+      "offline": {
+        "sha256": "e5478b843e367e628179f8e5ad5c388a604c113338dd86fd0186b16d913c4f0e",
+        "pageCount": 11,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "passed",
+      "reviewCard": "docs/maintenance/reviews/pending-tap-water-clean-process.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "traffic-light-yellow-physics",
+      "titleZh": "黄灯：三秒钟的物理题",
+      "status": "pending",
+      "slideCount": 11,
+      "source": "2026-08-30-traffic-light-yellow-physics/index.html",
+      "sourceSha256": "1cfcd153d9b903cc2140ef5c3738f94272f570514b55a849f7aeb6f20c2bc35a",
+      "artifact": null,
+      "artifactSha256": null,
+      "testedFile": ".codex/pending-standalone-final/2026-08-30-traffic-light-yellow-physics.html",
+      "testedFileSha256": "9e2fadd44a7c30f386008a77f7a8760cb47b808ed96b9d85a34f128c61298f0d",
+      "receiptChecks": {},
+      "browserEvidence": ".codex/qa-pending-standalone-final/pending-results.json",
+      "browserTestedFile": ".codex/pending-standalone-final/2026-08-30-traffic-light-yellow-physics.html",
+      "browserTestedFileSha256": "9e2fadd44a7c30f386008a77f7a8760cb47b808ed96b9d85a34f128c61298f0d",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 33,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-pending/results.json",
+      "offline": {
+        "sha256": "9e2fadd44a7c30f386008a77f7a8760cb47b808ed96b9d85a34f128c61298f0d",
+        "pageCount": 11,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "passed",
+      "reviewCard": "docs/maintenance/reviews/pending-traffic-light-yellow-physics.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    },
+    {
+      "id": "zipper-line-of-teeth",
+      "titleZh": "拉链：一行可以开合的牙齿",
+      "status": "pending",
+      "slideCount": 11,
+      "source": "2026-08-30-zipper-line-of-teeth/index.html",
+      "sourceSha256": "5e26a1067afa38c6eef9d738799ce95f6dba70ec9837d0e73e58ca0ef460761d",
+      "artifact": null,
+      "artifactSha256": null,
+      "testedFile": ".codex/pending-standalone-final/2026-08-30-zipper-line-of-teeth.html",
+      "testedFileSha256": "7d19583592bd8e61b4bd406b44e68ef41bed1ea5129d375e2206855fd7be8da2",
+      "receiptChecks": {},
+      "browserEvidence": ".codex/qa-pending-standalone-final/pending-results.json",
+      "browserTestedFile": ".codex/pending-standalone-final/2026-08-30-zipper-line-of-teeth.html",
+      "browserTestedFileSha256": "7d19583592bd8e61b4bd406b44e68ef41bed1ea5129d375e2206855fd7be8da2",
+      "browser": {
+        "viewports": [
+          "1600x900",
+          "1280x720",
+          "1000x560"
+        ],
+        "settledPageViewports": 33,
+        "findings": [],
+        "overview1600": true,
+        "overviewSelection1600": true
+      },
+      "offlineEvidence": ".codex/offline-pending/results.json",
+      "offline": {
+        "sha256": "7d19583592bd8e61b4bd406b44e68ef41bed1ea5129d375e2206855fd7be8da2",
+        "pageCount": 11,
+        "pass": true,
+        "limitations": [],
+        "unreadableTextNodes": 0,
+        "pageErrors": [],
+        "localFailures": []
+      },
+      "presenter": "passed",
+      "reviewCard": "docs/maintenance/reviews/pending-zipper-line-of-teeth.md",
+      "networkPhotoCount": 0,
+      "overviewSelectionVerified1600": true
+    }
+  ]
+}

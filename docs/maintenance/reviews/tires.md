@@ -1,8 +1,8 @@
 # 轮胎：汽车文明真正接触世界的地方 — 维护审阅记录
 
-- Artifact: `ppt-collection/tires.html`（基线保留，尚未替换）
+- Artifact: `ppt-collection/tires.html`（基线保留于 Git；现已按源文件导出更新）
 - Maintained source: `2026-10-28-legacy-maintenance/tires.html`
-- Status: 可核查数值与适用范围已修正并导出至 `.codex/legacy-stage/`；不代表重新接受或视觉通过
+- Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Slides / style: 15 / A
 
 ## 已核查并修正

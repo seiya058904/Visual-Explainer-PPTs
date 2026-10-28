@@ -3,7 +3,7 @@
 > 最终交付：已从维护源规范导出至原成品路径，Approved 状态保留；15 页三档逐页检查通过，断网静态阅读（含祖先裁切边界）通过。SHA-256：`be1ccd57788d76fa455011deaa288aa75f79fed9cf7099d98ba369c69b0b5b52`。
 
 - Artifact: `ppt-collection/weather-forecast.html`
-- Status: approved artifact; this record does not constitute renewed acceptance
+- Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Verified slide count: 15
 - Style: A
 - English editorial title: How Weather Forecasts Work

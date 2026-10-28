@@ -1,8 +1,8 @@
 # 足球：世界为什么为一颗球停下 — 维护审阅记录
 
-- Artifact: `ppt-collection/world-cup.html`（基线保留，尚未替换）
+- Artifact: `ppt-collection/world-cup.html`（基线保留于 Git；现已按源文件导出更新）
 - Maintained source: `2026-10-28-legacy-maintenance/world-cup.html`
-- Status: 2022 历史统计和 2026 已结束赛事数据已更新/限定并导出至 `.codex/legacy-stage/`；不代表重新接受或视觉通过
+- Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Slides / style: 20 / A
 
 ## 已核查并修正

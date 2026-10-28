@@ -2,9 +2,9 @@
 
 > 最终交付：已从维护源规范导出至原成品路径，Approved 状态保留；10 页三档逐页检查通过，断网静态阅读（含祖先裁切边界）通过。SHA-256：`096eb75225470d4857a3788d5f1cc50c048e22e0721649fecfd505dc5320e710`。
 
-- Artifact: `ppt-collection/queueing.html`（基线保留，尚未替换）
+- Artifact: `ppt-collection/queueing.html`（基线保留于 Git；现已按源文件导出更新）
 - Maintained source: `2026-10-28-legacy-maintenance/queueing.html`
-- Status: 条件限定已导出至 `.codex/legacy-stage/`；不代表重新接受或视觉通过
+- Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Slides / style: 10 / A
 
 ## 已核查并修正

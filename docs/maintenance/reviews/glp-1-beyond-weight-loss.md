@@ -3,7 +3,7 @@
 > 本轮交付：已从维护源重新导出至原有成品路径；Approved 状态保留。13 页三档逐页检查与断网核心阅读检查通过。最终 SHA-256：`e7679b373c951fdba995e4645ead392e104818773ceb519059979ea6abe2164c`。事实和视觉变更见下文；旧阶段记录不替代这里的最终状态。
 
 - Artifact: `ppt-collection/glp-1-beyond-weight-loss.html`
-- Status: Approved retained under the user-authorized refinement scope
+- Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Verified slide count: 13
 - Style: A
 - English editorial title: GLP-1: Beyond Weight Loss

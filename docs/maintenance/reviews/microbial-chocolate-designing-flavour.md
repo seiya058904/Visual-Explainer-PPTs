@@ -3,7 +3,7 @@
 > 本轮交付：已从维护源重新导出至原有成品路径；Approved 状态保留。13 页三档逐页检查与断网核心阅读检查通过。最终 SHA-256：`f6efdc4d58b20532cd136c713a1cc9d5b191840a475a54b5920f95b46012a6b7`。事实和视觉变更见下文；旧阶段记录不替代这里的最终状态。
 
 - Artifact: `ppt-collection/microbial-chocolate-designing-flavour.html`
-- Status: Approved retained under the user-authorized refinement scope
+- Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Verified slide count: 13
 - Style: A
 - English editorial title: How Microbes Shape Chocolate

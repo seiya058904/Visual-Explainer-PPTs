@@ -1,7 +1,7 @@
 # 芯片：现代科技背后的隐形心脏 — 静态审阅记录
 
 - Artifact: `ppt-collection/chips.html`
-- Status: approved artifact; this record does not constitute renewed acceptance
+- Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Inferred slide count: 24
 - Style: A
 - English editorial title: The Invisible World of Semiconductors
@@ -18,7 +18,7 @@
 
 - **Slide 8 EUV complexity:** Verified the approximate 100,000-part / 5,000-supplier claim in an EU Joint Research Centre report (its source note cites the semiconductor supply-chain study); ASML itself describes its systems as thousands of parts and a 5,000-partner supplier ecosystem. Reworded the source attribution and “about” qualifier. ASML says EUV development took more than two decades. Sources: [European Commission JRC report](https://publications.jrc.ec.europa.eu/repository/bitstream/JRC133850/JRC133850_01.pdf), [ASML supplier ecosystem](https://www.asml.com/technology/how-we-innovate), [ASML EUV systems](https://www.asml.com/en/products/euv-lithography-systems).
 
-Corrections are in the dated maintenance copy; approved artifact unchanged. Text/source checks only; no visual or full factual acceptance.
+At the initial factual checkpoint only the maintenance copy had changed. The final verified export now replaces the approved artifact; final evidence below supersedes that checkpoint.
 
 
 ## Visual maintenance update (2026-10-28)

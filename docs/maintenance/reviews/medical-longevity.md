@@ -1,7 +1,7 @@
 # 让生命拥有更多时间 — 静态审阅记录
 
 - Artifact: `ppt-collection/medical-longevity.html`
-- Status: approved artifact; this record does not constitute renewed acceptance
+- Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Inferred slide count: 10
 - Style: A
 - English editorial title: Modern Medicine and Human Longevity
@@ -20,7 +20,7 @@
 
 - **Slide 9 remote monitoring:** Replaced the broad claim of lower hospitalization and all-cause mortality with a bounded statement about monitoring feeding home-care workflows and outcomes depending on disease, protocol and clinician response. A 2024 systematic review found safety/adherence benefits, while effects on other clinical/quality-of-life measures were inconclusive; more focused heart-failure reviews report benefit, so avoid generalizing to all patients. Sources: [Nature Digital Medicine systematic review](https://pubmed.ncbi.nlm.nih.gov/39025937/), [Lancet Digital Health cardiovascular review](https://www.thelancet.com/article/S2589750022001248/pdf).
 
-Corrections are in the dated maintenance copy; approved artifact unchanged. Text/source checks only; no visual or full factual acceptance.
+At the initial factual checkpoint only the maintenance copy had changed. The final verified export now replaces the approved artifact; final evidence below supersedes that checkpoint.
 
 
 ## Visual correction update (2026-10-28)

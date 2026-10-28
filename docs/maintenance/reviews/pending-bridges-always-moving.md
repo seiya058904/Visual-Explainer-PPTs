@@ -50,3 +50,13 @@ P3：导力也需要强度；P4：压拉是入口，不排除弯剪扭；P5：�
 - 另以1000×560原尺寸查看 P7、P10；上述截图未见遮挡、真实裁切或标题异常换行。证据：`.codex/qa-pending-final/contact-sheets/`、`shots/`。
 - P10 原截图 lead 最末单字“丝。”孤行，已将末句压缩为“把拉力分散到钢丝”，同步源与 deck-10 片段。重新等待字体和动画后拍摄 `bridge-p10-final.png`，实际查看确认回到两行。
 - 静态截图不证明动效流畅度或实际投影硬件表现；交互证据沿用上节独立浏览器测试，不宣称用户认可，继续 Pending Review。
+
+## Final standalone evidence — 2026-10-28
+
+- Status remains **Pending Review**; no collection artifact or public promotion.
+- Maintained source: `2026-08-30-bridges-always-moving/index.html`; current source SHA-256 `a6ad15d7dda3dc312a3785ae5295f4de785ddada9e5d41536101c01a5a2e0f11`.
+- Final standalone tested file: `.codex/pending-standalone-final/2026-08-30-bridges-always-moving.html`; SHA-256 `49d5144635713257180214ff6e80a98995b4f47718acaab7122b2a065b45bd31`.
+- Final-byte official Chromium evidence: `.codex/qa-pending-standalone-final/pending-results.json`; all 11 pages at 1600×900 / 1280×720 / 1000×560 (33 settled page-viewports), zero recorded overflow, footer/nav overlap, invisible text, broken images, console/page errors or failed requests. ESC overview and selection passed at the first viewport, 1600×900, once each.
+- Exact-hash offline evidence: `.codex/offline-pending/results.json`; 11 pages at 1280×720 with external network blocked and offered static mode; zero unreadable text (including ancestor clipping), page errors or local failures. No external picture placement in this deck is required.
+- Expanded presenter interaction evidence: `.codex/presenter-pending-expanded/results.json`, passed. Final presenter schema validation has zero errors and 11 short-talk warnings; these remain concise speaking cues. This does not certify physical touch or HDMI hardware.
+- This append records final byte-bound machine evidence. Actual visual inspection scope and factual boundaries remain in earlier sections; it does not claim a new visual review occurred during ledger reconciliation. Full register: [final audit](../iteration-2026-10-28.md), [release ledger](../release-ledger.json).

@@ -3,7 +3,7 @@
 > 最终交付：已从维护源规范导出至原成品路径，Approved 状态保留；15 页三档逐页检查通过，断网静态阅读（含祖先裁切边界）通过。SHA-256：`555de38d641e80fbf4cdda304def7c72f454e9b7a56b786a2fe248e5627871cd`。
 
 - Artifact: `ppt-collection/wifi.html`
-- Status: approved artifact; this record does not constitute renewed acceptance
+- Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Verified slide count: 15
 - Style: B
 - English editorial title: Wi-Fi: The Last Few Meters of Connection

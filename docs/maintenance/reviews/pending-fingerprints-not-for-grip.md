@@ -48,3 +48,13 @@ P2：删除湿手/乳胶手套伪反例，限定干燥亚克力；P4与接触图
 - 已实际查看三档视口全部页面的30张 contact sheets 中本 deck 的3张；检查标题行数、主题节奏、图文平衡、页脚/导航安全区。pipeline 仅依据 initial / step02 / complete 三态，排除常规 pipeline.png 的翻页时序伪影。
 - 另以1000×560原尺寸查看 P4、P7、P8；上述截图未见遮挡、真实裁切或标题异常换行。证据：`.codex/qa-pending-final/contact-sheets/`、`shots/`。
 - 静态截图不证明动效流畅度或实际投影硬件表现；交互证据沿用上节独立浏览器测试，不宣称用户认可，继续 Pending Review。
+
+## Final standalone evidence — 2026-10-28
+
+- Status remains **Pending Review**; no collection artifact or public promotion.
+- Maintained source: `2026-08-30-fingerprints-not-for-grip/index.html`; current source SHA-256 `b124c6b5edecb02ffbf230cbc280cde5ac10e4b9bfc18d8af5e36364cc6ff90d`.
+- Final standalone tested file: `.codex/pending-standalone-final/2026-08-30-fingerprints-not-for-grip.html`; SHA-256 `f05fb51af4f7e68b62ec249f728d8d438fad18f747b822a26a2d618be824de60`.
+- Final-byte official Chromium evidence: `.codex/qa-pending-standalone-final/pending-results.json`; all 10 pages at 1600×900 / 1280×720 / 1000×560 (30 settled page-viewports), zero recorded overflow, footer/nav overlap, invisible text, broken images, console/page errors or failed requests. ESC overview and selection passed at the first viewport, 1600×900, once each.
+- Exact-hash offline evidence: `.codex/offline-pending/results.json`; 10 pages at 1280×720 with external network blocked and offered static mode; zero unreadable text (including ancestor clipping), page errors or local failures. No external picture placement in this deck is required.
+- Expanded presenter interaction evidence: `.codex/presenter-pending-expanded/results.json`, passed. Final presenter schema validation has zero errors and 10 short-talk warnings; these remain concise speaking cues. This does not certify physical touch or HDMI hardware.
+- This append records final byte-bound machine evidence. Actual visual inspection scope and factual boundaries remain in earlier sections; it does not claim a new visual review occurred during ledger reconciliation. Full register: [final audit](../iteration-2026-10-28.md), [release ledger](../release-ledger.json).

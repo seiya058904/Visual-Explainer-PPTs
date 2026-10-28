@@ -3,7 +3,7 @@
 > 最终交付：已从维护源规范导出至原成品路径，Approved 状态保留；10 页三档逐页检查通过，断网静态阅读（含祖先裁切边界）通过。SHA-256：`642c8e8a9afa3ad8bfdbaec940eaec847a600a5656b33e142c233b44e2da2efc`。
 
 - Artifact: `ppt-collection/ai-and-life.html`
-- Status: approved artifact; this record does not constitute renewed acceptance
+- Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Verified slide count: 10
 - Style: A
 - English editorial title: How AI Is Changing Everyday Life
@@ -21,7 +21,7 @@
 
 - **Slide 9 risk figures now have usable scope:** Gartner's 62% is from a March–May 2025 survey of 302 cybersecurity leaders in North America, EMEA and APAC, where respondents' organizations experienced at least one deepfake attack involving social engineering or automated processes in the prior 12 months. Deloitte's 82% is U.S. GenAI users/experimenters saying the technology could be misused. IEA projects data-centre electricity at ~945 TWh by 2030, more than double 2024's ~415 TWh; its ~30% annual figure applies to accelerated-server electricity in the base case, not all AI server energy. Cards now carry these boundaries. Sources: [Gartner](https://www.gartner.com/en/newsroom/press-releases/2025-09-22-gartner-survey-reveals-generative-artificial-intelligence-attacks-are-on-the-rise), [Deloitte](https://www.deloitte.com/us/en/about/press-room/connectivity-mobile-trends-survey.html), [IEA Energy and AI](https://www.iea.org/reports/energy-and-ai/executive-summary%C2%A0).
 
-Corrections are in the dated maintenance copy; approved artifact unchanged. Text/source checks only; no visual or full factual acceptance.
+At the initial factual checkpoint only the maintenance copy had changed. The final verified export now replaces the approved artifact; final evidence below supersedes that checkpoint.
 
 
 ## Visual maintenance update (2026-10-28)

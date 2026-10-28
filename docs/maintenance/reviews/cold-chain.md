@@ -1,7 +1,7 @@
 # 冷链：现代食物背后的低温文明 — 静态审阅记录
 
 - Artifact: `ppt-collection/cold-chain.html`
-- Status: approved artifact; this record does not constitute renewed acceptance
+- Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Inferred slide count: 10
 - Style: A
 - English editorial title: The Cold Chain Behind Modern Food

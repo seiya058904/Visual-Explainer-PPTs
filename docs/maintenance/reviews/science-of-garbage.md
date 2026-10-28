@@ -3,7 +3,7 @@
 > 最终交付：已从维护源规范导出至原成品路径，Approved 状态保留；15 页三档逐页检查通过，断网静态阅读（含祖先裁切边界）通过。SHA-256：`3ac20f7867200915bef0a309427fc6df516b8c9107c8de2d266be7696738b320`。
 
 - Artifact: `ppt-collection/science-of-garbage.html`
-- Status: approved artifact; this record does not constitute renewed acceptance
+- Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Verified slide count: 15
 - Style: A
 - English editorial title: The Science of Where Garbage Goes

@@ -51,3 +51,13 @@ P2：反射限定为每面约4%及近垂直入射；P3：金属反射与吸收�
 - P8 原截图仍见“0变形”绝对化残留，已将源与 deck-03 片段改为“无下淌”；本 contact sheet 是修订前快照，最终P8截图与SVG小字修补由主任务另行复验，不能用旧图宣称最终接受。
 - 可读性边界：1000px下SVG的次级标注/来源字较小；主体结论可读，但未把所有图内小字判为投影距离可读。图中文字尺寸的进一步改善及最终验收交主任务收敛。
 - 静态截图不证明动效流畅度或实际投影硬件表现；交互证据沿用上节独立浏览器测试，不宣称用户认可，继续 Pending Review。
+
+## Final standalone evidence — 2026-10-28
+
+- Status remains **Pending Review**; no collection artifact or public promotion.
+- Maintained source: `2026-08-30-glass-transparent-solid/index.html`; current source SHA-256 `61cf9e949283f2f26ef31535924249169770682d5b667689203179fa6071ca7d`.
+- Final standalone tested file: `.codex/pending-standalone-final/2026-08-30-glass-transparent-solid.html`; SHA-256 `41e6392f1174b1180883d54779bef375b3b55023292ead0dc278ae15cc585320`.
+- Final-byte official Chromium evidence: `.codex/qa-pending-standalone-final/pending-results.json`; all 11 pages at 1600×900 / 1280×720 / 1000×560 (33 settled page-viewports), zero recorded overflow, footer/nav overlap, invisible text, broken images, console/page errors or failed requests. ESC overview and selection passed at the first viewport, 1600×900, once each.
+- Exact-hash offline evidence: `.codex/offline-pending/results.json`; 11 pages at 1280×720 with external network blocked and offered static mode; zero unreadable text (including ancestor clipping), page errors or local failures. No external picture placement in this deck is required.
+- Expanded presenter interaction evidence: `.codex/presenter-pending-expanded/results.json`, passed. Final presenter schema validation has zero errors and 11 short-talk warnings; these remain concise speaking cues. This does not certify physical touch or HDMI hardware.
+- This append records final byte-bound machine evidence. Actual visual inspection scope and factual boundaries remain in earlier sections; it does not claim a new visual review occurred during ledger reconciliation. Full register: [final audit](../iteration-2026-10-28.md), [release ledger](../release-ledger.json).
