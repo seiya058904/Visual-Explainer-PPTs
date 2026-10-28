@@ -97,15 +97,18 @@ async function inspect(page, index) {
       const value = node.textContent.trim();
       if (!value || node.parentElement.closest('script,style,template,noscript,svg title,svg desc,.notes,.speaker-notes')) continue;
       let el = node.parentElement, opacity = 1, hidden = false;
+      const clipping = [];
       while (el && el !== slide.parentElement) {
         const cs = getComputedStyle(el);
         if (cs.display === 'none' || cs.visibility === 'hidden' || cs.visibility === 'collapse') hidden = true;
         opacity *= Number(cs.opacity);
+        if (/(hidden|clip)/.test(cs.overflowX + cs.overflowY)) clipping.push({box: el.getBoundingClientRect(), x: /(hidden|clip)/.test(cs.overflowX), y: /(hidden|clip)/.test(cs.overflowY)});
         el = el.parentElement;
       }
       const range = document.createRange(); range.selectNodeContents(node);
       const r = range.getBoundingClientRect();
-      const reason = hidden ? 'hidden' : opacity < 0.1 ? 'opacity' : !r.width || !r.height ? 'zero-area' : r.left < -2 || r.right > innerWidth + 2 || r.top < -2 || r.bottom > innerHeight + 2 ? 'outside-viewport' : null;
+      const clipped = clipping.some(c => (c.x && (r.left < c.box.left-2 || r.right > c.box.right+2)) || (c.y && (r.top < c.box.top-2 || r.bottom > c.box.bottom+2)));
+      const reason = hidden ? 'hidden' : opacity < 0.1 ? 'opacity' : !r.width || !r.height ? 'zero-area' : r.left < -2 || r.right > innerWidth + 2 || r.top < -2 || r.bottom > innerHeight + 2 ? 'outside-viewport' : clipped ? 'clipped-by-ancestor' : null;
       text.push(value);
       if (reason) unreadable.push({ text: value.slice(0, 100), reason, opacity: +opacity.toFixed(3) });
     }

@@ -261,18 +261,18 @@ async function qaDeck(browser, deck, url, mode) {
       if (isPipeline && deep) {
         const st0 = await pipelineState(page);
         slideRec.pipelineInitial = st0;
-        await shot(page, `${deck}-p${String(i).padStart(2, '0')}-pipeline-initial.png`).catch(() => {});
+        await shot(page, `${deck}-p${String(i).padStart(2, '0')}-pipeline-initial.png`);
         const steps = st0 ? st0.steps.length : 0;
         const mid = Math.floor(steps / 2);
         for (let s = 0; s < steps; s++) {
           await page.keyboard.press('ArrowRight');
           await page.waitForTimeout(650);
-          if (s === mid - 1) await shot(page, `${deck}-p${String(i).padStart(2, '0')}-pipeline-step${String(mid).padStart(2, '0')}.png`).catch(() => {});
+          if (s === mid - 1) await shot(page, `${deck}-p${String(i).padStart(2, '0')}-pipeline-step${String(mid).padStart(2, '0')}.png`);
         }
         const stN = await pipelineState(page);
         slideRec.pipelineComplete = stN;
         slideRec.pipelineCompleteGeometry = await collectIssues(page);
-        await shot(page, `${deck}-p${String(i).padStart(2, '0')}-pipeline-complete.png`).catch(() => {});
+        await shot(page, `${deck}-p${String(i).padStart(2, '0')}-pipeline-complete.png`);
         // 再按一次应翻页(最后一页则停留)
         await page.keyboard.press('ArrowRight');
         await page.waitForTimeout(TRANSITION);
@@ -283,9 +283,9 @@ async function qaDeck(browser, deck, url, mode) {
       // 截图策略
       if (deep) {
         const fname = `${deck}-p${String(i).padStart(2, '0')}${isPipeline ? '-pipeline' : isDirectional ? '-directional' : ''}.png`;
-        await shot(page, fname).catch(() => {});
+        await shot(page, fname);
       } else if (geo.overflow.length || geo.footOverlap.length || geo.navOverlap.length || geo.brokenImages.length) {
-        await shot(page, `${deck}-v${vp.name}-p${String(i).padStart(2, '0')}-ISSUE.png`).catch(() => {});
+        await shot(page, `${deck}-v${vp.name}-p${String(i).padStart(2, '0')}-ISSUE.png`);
       }
       vpRes.slides.push(slideRec);
     }
@@ -296,15 +296,19 @@ async function qaDeck(browser, deck, url, mode) {
       await page.waitForTimeout(700);
       vpRes.overviewWorks = await page.evaluate(() => {
         const els = [...document.querySelectorAll('#overview, [data-overview], #ppt-presenter-overview')];
+        // Early magazine runtimes retain a lexical `ov` node without an ID.
+        if (typeof ov !== 'undefined' && ov instanceof HTMLElement && !els.includes(ov)) els.push(ov);
         return els.some(el => {
           const cs = getComputedStyle(el);
           if (cs.display === 'none') return false;
           const r = el.getBoundingClientRect();
-          return cs.position === 'fixed' && r.width > innerWidth * 0.8 && r.height > innerHeight * 0.6;
+          const visible = cs.position === 'fixed' && r.width > innerWidth * 0.8 && r.height > innerHeight * 0.6;
+          if (visible) el.setAttribute('data-qa-overview', 'true');
+          return visible;
         });
       });
       if (vpRes.overviewWorks) {
-        const target = page.locator('#overview > div > div').first();
+        const target = page.locator('[data-qa-overview] > div > div').first();
         if (await target.count()) {
           await target.click();
           await page.waitForTimeout(TRANSITION);
@@ -537,9 +541,11 @@ async function lowPowerCross(browser, base) {
 const browser = await chromium.launch({ executablePath: CHROME, headless: true });
 
 if (MODE === 'pending' || MODE === 'approved') {
-  let decks = MODE === 'pending' ? PENDING_DECKS
-    : (opt('manifest', '') ? fs.readFileSync(opt('manifest', ''), 'utf-8').split('\n').map(s => s.trim()).filter(Boolean) : fs.readdirSync('ppt-collection').filter(f => f.endsWith('.html')).map(f => `ppt-collection/${f}`))
-        .map(f => ({ deck: path.basename(f, '.html'), url: `${BASE}/${f}` }));
+  const manifest = opt('manifest', '');
+  const paths = manifest ? fs.readFileSync(manifest, 'utf-8').split('\n').map(s => s.trim()).filter(Boolean)
+    : fs.readdirSync('ppt-collection').filter(f => f.endsWith('.html')).map(f => `ppt-collection/${f}`);
+  let decks = MODE === 'pending' && !manifest ? PENDING_DECKS
+    : paths.map(f => ({ deck: path.basename(f, '.html'), url: `${BASE}/${f}` }));
   if (ONLY) decks = decks.filter(d => ONLY.split(',').some(part => d.deck.includes(part.trim())));
   const results = [];
   const queue = [...decks];

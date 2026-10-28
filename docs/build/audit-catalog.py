@@ -16,10 +16,13 @@ class Document(HTMLParser):
         self.duplicates = []
         self.titles = 0
         self.title_ends = 0
+        self.svg_depth = 0
 
     def handle_starttag(self, tag, attributes):
         attrs = dict(attributes)
-        if tag == 'title':
+        if tag == 'svg':
+            self.svg_depth += 1
+        if tag == 'title' and not self.svg_depth:
             self.titles += 1
         if tag == 'section' and 'slide' in (attrs.get('class') or '').split():
             self.slides += 1
@@ -29,8 +32,10 @@ class Document(HTMLParser):
             self.ids.add(attrs['id'])
 
     def handle_endtag(self, tag):
-        if tag == 'title':
+        if tag == 'title' and not self.svg_depth:
             self.title_ends += 1
+        if tag == 'svg':
+            self.svg_depth = max(0, self.svg_depth - 1)
 
 
 def audit():
