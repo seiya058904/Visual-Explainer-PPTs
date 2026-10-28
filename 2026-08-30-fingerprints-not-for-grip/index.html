@@ -59,10 +59,10 @@
 
   /* ============ Magazine chrome：顶部 meta + 底部 foot ============
      （v1 布局 + v2 字号在此合并为唯一定义，不要在别处二次定义） */
-  .chrome{display:flex;justify-content:space-between;align-items:flex-start;font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.2em;text-transform:uppercase;opacity:.62}
+  .chrome{display:flex;justify-content:space-between;align-items:flex-start;font-family:var(--mono);font-size:max(11px,min(.78vw,1.3867vh));letter-spacing:.2em;text-transform:uppercase;opacity:.62}
   .chrome .left,.chrome .right{display:flex;gap:2.4em;align-items:center}
   .chrome .sep{width:40px;height:1px;background:currentColor;opacity:.4}
-  .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.18em;text-transform:uppercase;opacity:.5}
+  .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;font-family:var(--mono);font-size:max(11px,min(.78vw,1.3867vh));letter-spacing:.18em;text-transform:uppercase;opacity:.5}
   .foot .title{font-family:var(--serif-zh);font-weight:400;letter-spacing:.05em;text-transform:none;opacity:.75;font-size:13px}
 
   .tag{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;padding:6px 14px;border:1px solid currentColor;opacity:.85}
@@ -75,18 +75,18 @@
      · 等宽（IBM Plex Mono）：kicker、meta 小标签、foot 右侧
   */
   .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;opacity:.6;margin-bottom:2.6vh}
-  .display{font-family:var(--serif-en);font-weight:700;font-size:11vw;line-height:.92;letter-spacing:-.025em}
-  .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:7.8vw;line-height:1.04;letter-spacing:-.005em}
-  .h1-zh{font-family:var(--serif-zh);font-weight:700;font-size:4.6vw;line-height:1.12;letter-spacing:-.005em}
-  .h2-zh{font-family:var(--serif-zh);font-weight:600;font-size:3.2vw;line-height:1.2;letter-spacing:0}
-  .h3-zh{font-family:var(--serif-zh);font-weight:500;font-size:1.9vw;line-height:1.35}
-  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,1.22vw);line-height:1.75;opacity:.82;letter-spacing:.01em}
-  .body-serif{font-family:var(--serif-zh);font-weight:400;font-size:max(15px,1.3vw);line-height:1.65;opacity:.88}
-  .lead{font-family:var(--serif-zh);font-weight:400;font-size:1.75vw;line-height:1.5;opacity:.86}
-  .meta{font-family:var(--mono);font-size:max(11px,.88vw);letter-spacing:.16em;text-transform:uppercase;opacity:.6}
-  .big-num{font-family:var(--serif-en);font-weight:800;font-size:10vw;line-height:.85;letter-spacing:-.03em;font-feature-settings:"tnum"}
-  .mid-num{font-family:var(--serif-en);font-weight:700;font-size:5.5vw;line-height:.88;letter-spacing:-.02em;font-feature-settings:"tnum"}
-  .ghost{font-family:var(--serif-en);font-weight:900;font-size:34vw;line-height:.8;opacity:.06;letter-spacing:-.04em;position:absolute;font-feature-settings:"tnum"}
+  .display{font-family:var(--serif-en);font-weight:700;font-size:min(11vw,19.5556vh);line-height:.92;letter-spacing:-.025em}
+  .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:min(7.8vw,13.8667vh);line-height:1.04;letter-spacing:-.005em}
+  .h1-zh{font-family:var(--serif-zh);font-weight:700;font-size:min(4.6vw,8.1778vh);line-height:1.12;letter-spacing:-.005em}
+  .h2-zh{font-family:var(--serif-zh);font-weight:600;font-size:min(3.2vw,5.6889vh);line-height:1.2;letter-spacing:0}
+  .h3-zh{font-family:var(--serif-zh);font-weight:500;font-size:min(1.9vw,3.3778vh);line-height:1.35}
+  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,min(1.22vw,2.1689vh));line-height:1.75;opacity:.82;letter-spacing:.01em}
+  .body-serif{font-family:var(--serif-zh);font-weight:400;font-size:max(15px,min(1.3vw,2.3111vh));line-height:1.65;opacity:.88}
+  .lead{font-family:var(--serif-zh);font-weight:400;font-size:min(1.75vw,3.1111vh);line-height:1.5;opacity:.86}
+  .meta{font-family:var(--mono);font-size:max(11px,min(.88vw,1.5644vh));letter-spacing:.16em;text-transform:uppercase;opacity:.6}
+  .big-num{font-family:var(--serif-en);font-weight:800;font-size:min(10vw,17.7778vh);line-height:.85;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .mid-num{font-family:var(--serif-en);font-weight:700;font-size:min(5.5vw,9.7778vh);line-height:.88;letter-spacing:-.02em;font-feature-settings:"tnum"}
+  .ghost{font-family:var(--serif-en);font-weight:900;font-size:min(34vw,60.4444vh);line-height:.8;opacity:.06;letter-spacing:-.04em;position:absolute;font-feature-settings:"tnum"}
   em{font-style:italic;font-family:var(--serif-en)}
   .en{font-family:var(--serif-en);font-style:italic;font-weight:500}
 
@@ -107,40 +107,40 @@
 
   /* ============ Stat（数字矩阵） ============ */
   .stat{display:flex;flex-direction:column;gap:1vh;align-items:flex-start}
-  .stat .n{font-family:var(--serif-en);font-weight:800;font-size:8vw;line-height:.88;letter-spacing:-.03em;font-feature-settings:"tnum"}
-  .stat .l{font-family:var(--sans-zh);font-size:max(13px,1.05vw);opacity:.7;margin-top:1vh;font-weight:400;line-height:1.5}
+  .stat .n{font-family:var(--serif-en);font-weight:800;font-size:min(8vw,14.2222vh);line-height:.88;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .stat .l{font-family:var(--sans-zh);font-size:max(13px,min(1.05vw,1.8667vh));opacity:.7;margin-top:1vh;font-weight:400;line-height:1.5}
   .stat .m{font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.5;margin-bottom:.2vh}
 
   /* ============ Callout（引用框） ============ */
-  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,1.2vw);line-height:1.55;opacity:.92}
+  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,min(1.2vw,2.1333vh));line-height:1.55;opacity:.92}
   .slide.light .callout{background:rgba(var(--ink-rgb),.05)}
   .slide.dark .callout{background:rgba(var(--paper-rgb),.06)}
   .callout .cite{display:block;margin-top:1.6vh;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6}
-  .callout .q-big{font-family:var(--serif-zh);font-weight:600;font-size:max(17px,1.6vw);line-height:1.42}
+  .callout .q-big{font-family:var(--serif-zh);font-weight:600;font-size:max(17px,min(1.6vw,2.8444vh));line-height:1.42}
 
   /* ============ Platform（平台卡） ============ */
   .plat{display:flex;flex-direction:column;justify-content:flex-end;padding:2vh 0;border-top:1px solid currentColor;border-color:rgba(127,127,127,.35)}
-  .plat .name{font-family:var(--serif-zh);font-weight:700;font-size:1.8vw;margin-bottom:.6vh}
-  .plat .nb{font-family:var(--serif-en);font-weight:700;font-size:3.2vw;letter-spacing:-.02em;line-height:1;font-feature-settings:"tnum"}
+  .plat .name{font-family:var(--serif-zh);font-weight:700;font-size:min(1.8vw,3.2000vh);margin-bottom:.6vh}
+  .plat .nb{font-family:var(--serif-en);font-weight:700;font-size:min(3.2vw,5.6889vh);letter-spacing:-.02em;line-height:1;font-feature-settings:"tnum"}
   .plat .sub{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;opacity:.55;margin-top:.6vh}
-  .plat .fill{font-family:var(--sans-zh);font-weight:300;font-size:2.4vw;opacity:.28;letter-spacing:-.01em;line-height:1}
+  .plat .fill{font-family:var(--sans-zh);font-weight:300;font-size:min(2.4vw,4.2667vh);opacity:.28;letter-spacing:-.01em;line-height:1}
 
   /* ============ Rowline（表格行） ============ */
   .rowline{display:grid;grid-template-columns:1fr 2fr 1fr;gap:2vw;padding:2.2vh 0;border-top:1px solid currentColor;align-items:center;border-color:rgba(127,127,127,.25)}
   .rowline:last-child{border-bottom:1px solid currentColor;border-color:rgba(127,127,127,.25)}
-  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:1.7vw}
-  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.2vw);opacity:.85;line-height:1.55}
+  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:min(1.7vw,3.0222vh)}
+  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,min(1.2vw,2.1333vh));opacity:.85;line-height:1.55}
   .rowline .m{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6;justify-self:end}
 
   /* ============ Pillar（支柱卡片） ============ */
   .pillar{display:flex;flex-direction:column;gap:1.8vh}
-  .pillar .ic{font-family:var(--serif-en);font-style:italic;font-size:2.6vw;opacity:.45;font-weight:400}
+  .pillar .ic{font-family:var(--serif-en);font-style:italic;font-size:min(2.6vw,4.6222vh);opacity:.45;font-weight:400}
   .pillar .ic svg{width:2.8vw;height:2.8vw;stroke-width:1.2;opacity:.7}
-  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:2.4vw;line-height:1.1}
-  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.1vw);opacity:.76;line-height:1.6}
+  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:min(2.4vw,4.2667vh);line-height:1.1}
+  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,min(1.1vw,1.9556vh));opacity:.76;line-height:1.6}
 
   /* ============ Signature / Highlight ============ */
-  .sign{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:2vw;opacity:.7}
+  .sign{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:min(2vw,3.5556vh);opacity:.7}
   .hi{position:relative;display:inline}
   .slide.dark .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--paper-rgb),.15);z-index:-1}
   .slide.light .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--ink-rgb),.08);z-index:-1}
@@ -155,7 +155,7 @@
   /* ============ 图片占位（虚线框，提示设计师位置） ============ */
   .img-slot{border:1.5px dashed rgba(127,127,127,.4);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1vh;padding:2vh 2vw;font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;opacity:.55;position:relative;aspect-ratio:16/9;width:100%;max-height:56vh;margin-inline:auto;box-sizing:border-box}
   .img-slot::before{content:"";position:absolute;inset:8px;border:1px solid currentColor;opacity:.2}
-  .img-slot .plus{font-size:2vw;font-weight:300;opacity:.5;letter-spacing:0}
+  .img-slot .plus{font-size:min(2vw,3.5556vh);font-weight:300;opacity:.5;letter-spacing:0}
   .img-slot .label{position:relative;z-index:2;text-align:center}
   .img-slot.r-4x3{aspect-ratio:4/3}
   .img-slot.r-3x2{aspect-ratio:3/2}
@@ -181,8 +181,8 @@
   .frame-img.h-26{height:26vh}
   .frame-img.h-28{height:28vh}
   .frame-cap{display:flex;justify-content:space-between;align-items:baseline;gap:1vw;margin-top:.8vh;font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.72}
-  .frame-cap .pf{font-family:var(--serif-zh);font-weight:600;font-size:max(13px,1vw);letter-spacing:.04em;text-transform:none;opacity:.94}
-  .frame-cap .nb{font-family:var(--serif-en);font-style:italic;font-size:max(15px,1.2vw);letter-spacing:.02em;text-transform:none;opacity:.88}
+  .frame-cap .pf{font-family:var(--serif-zh);font-weight:600;font-size:max(13px,min(1vw,1.7778vh));letter-spacing:.04em;text-transform:none;opacity:.94}
+  .frame-cap .nb{font-family:var(--serif-en);font-style:italic;font-size:max(15px,min(1.2vw,2.1333vh));letter-spacing:.02em;text-transform:none;opacity:.88}
   .frame-cap .idx{font-family:var(--mono);opacity:.5}
   figure.tile{display:flex;flex-direction:column;margin:0;min-width:0}
   figure.tile > .frame-img{flex:0 0 auto}
@@ -265,21 +265,21 @@
   .h-hero{
     font-family:var(--serif-zh);
     font-weight:900;
-    font-size:10vw;
+    font-size:min(10vw,17.7778vh);
     line-height:.96;
     letter-spacing:-.02em;
   }
   .h-xl{
     font-family:var(--serif-zh);
     font-weight:700;
-    font-size:6.2vw;
+    font-size:min(6.2vw,11.0222vh);
     line-height:1.08;
     letter-spacing:-.01em;
   }
   .h-sub{
     font-family:var(--serif-zh);
     font-weight:500;
-    font-size:3.1vw;
+    font-size:min(3.1vw,5.5111vh);
     line-height:1.25;
     letter-spacing:0;
     opacity:.7;
@@ -287,7 +287,7 @@
   .h-md{
     font-family:var(--serif-zh);
     font-weight:600;
-    font-size:2.3vw;
+    font-size:min(2.3vw,4.0889vh);
     line-height:1.3;
   }
   /* 英文标题专用（Playfair 衬线） */
@@ -302,7 +302,7 @@
     align-items:baseline;
     flex-wrap:wrap;
     font-family:var(--mono);
-    font-size:max(12px,.92vw);
+    font-size:max(12px,min(.92vw,1.6356vh));
     letter-spacing:.16em;
     text-transform:uppercase;
     opacity:.6;
@@ -320,7 +320,7 @@
   }
   .stat-card .stat-label{
     font-family:var(--mono);
-    font-size:max(10px,.78vw);
+    font-size:max(10px,min(.78vw,1.3867vh));
     letter-spacing:.24em;
     text-transform:uppercase;
     opacity:.55;
@@ -328,7 +328,7 @@
   .stat-card .stat-nb{
     font-family:var(--serif-en);
     font-weight:800;
-    font-size:5.8vw;
+    font-size:min(5.8vw,10.3111vh);
     line-height:.9;
     letter-spacing:-.03em;
     font-feature-settings:"tnum";
@@ -345,15 +345,15 @@
   .stat-card .stat-note{
     font-family:var(--sans-zh);
     font-weight:400;
-    font-size:max(13px,1.05vw);
+    font-size:max(13px,min(1.05vw,1.8667vh));
     line-height:1.5;
     opacity:.72;
     margin-top:.6vh;
   }
   /* 当 stat-card 用于 grid-4（2x2），数字适度放大；若页面有标题+引文在上方，可内联 style 覆盖为更小值 */
-  .grid-4 .stat-card .stat-nb{font-size:5vw}
+  .grid-4 .stat-card .stat-nb{font-size:min(5vw,8.8889vh)}
   /* 当只有 3 个，字也可以稍大 */
-  .grid-3 .stat-card .stat-nb{font-size:6.8vw}
+  .grid-3 .stat-card .stat-nb{font-size:min(6.8vw,12.0889vh)}
 
   /* ---------- pipeline（流水线） ---------- */
   .pipeline-section{
@@ -368,7 +368,7 @@
   }
   .pipeline-label{
     font-family:var(--mono);
-    font-size:max(11px,.85vw);
+    font-size:max(11px,min(.85vw,1.5111vh));
     letter-spacing:.24em;
     text-transform:uppercase;
     opacity:.62;
@@ -394,20 +394,20 @@
     font-family:var(--serif-en);
     font-style:italic;
     font-weight:500;
-    font-size:1.15vw;
+    font-size:min(1.15vw,2.0444vh);
     opacity:.45;
   }
   .step-title{
     font-family:var(--sans-zh);
     font-weight:700;
-    font-size:1.55vw;
+    font-size:min(1.55vw,2.7556vh);
     letter-spacing:.01em;
     line-height:1.2;
   }
   .step-desc{
     font-family:var(--sans-zh);
     font-weight:400;
-    font-size:max(12px,.95vw);
+    font-size:max(12px,min(.95vw,1.6889vh));
     line-height:1.45;
     opacity:.72;
   }
@@ -436,7 +436,7 @@
     flex:0 0 auto;
     padding:.7vh .9em .9vh;
     font-family:var(--mono);
-    font-size:max(10px,.8vw);
+    font-size:max(10px,min(.8vw,1.4222vh));
     letter-spacing:.22em;
     text-transform:uppercase;
     opacity:.6;
@@ -481,24 +481,25 @@
 
   /* ---------- 响应式降级 ---------- */
   @media (max-width:900px){
-    .display{font-size:16vw}
-    .display-zh{font-size:12vw}
-    .h1-zh{font-size:7vw}
-    .h-hero{font-size:14vw}
-    .h-xl{font-size:9vw}
+    .display{font-size:min(16vw,28.4444vh)}
+    .display-zh{font-size:min(12vw,21.3333vh)}
+    .h1-zh{font-size:min(7vw,12.4444vh)}
+    .h-hero{font-size:min(14vw,24.8889vh)}
+    .h-xl{font-size:min(9vw,16.0000vh)}
     .pipeline{grid-template-columns:repeat(2,1fr)}
     .grid-2-7-5,.grid-2-6-6,.grid-2-8-4{grid-template-columns:1fr}
   }
 </style>
-<style>/* RESPONSIVE-OVERRIDE */
+<style>/* RESPONSIVE-OVERRIDE: type is capped by the viewport height as well as width.
+   Keep the original 16:9 type scale without clipping in wide/short browser windows. */
 @media (max-height:700px), (max-width:1100px){
-  .h-hero{font-size:8.4vw}
-  .h-xl{font-size:5vw}
-  .h-sub{font-size:2.6vw}
-  .lead{font-size:max(14px,1.6vw)}
-  .stat-nb{font-size:4.6vw}
-  .grid-3 .stat-card .stat-nb{font-size:5.2vw}
-  .callout{font-size:max(13px,1.05vw)}
+  .h-hero{font-size:min(8.4vw,14.9333vh)}
+  .h-xl{font-size:min(5vw,8.8889vh)}
+  .h-sub{font-size:min(2.6vw,4.6222vh)}
+  .lead{font-size:max(14px,min(1.6vw,2.8444vh))}
+  .stat-nb{font-size:min(4.6vw,8.1778vh)}
+  .grid-3 .stat-card .stat-nb{font-size:min(5.2vw,9.2444vh)}
+  .callout{font-size:max(13px,min(1.05vw,1.8667vh))}
 }
 </style>
 </head>
@@ -554,9 +555,9 @@
     <div>EVERYDAY BIOLOGY · EVIDENCE</div>
     <div>VOL. FP · 2026</div>
   </div>
-  <div class="frame" style="display:grid; gap:4.5vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:4.5vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>What Fingerprints Are For · 指纹</div>
-    <h1 class="h-hero" style="font-size:6.8vw" data-anim>皮肤上最著名<br>的误解</h1>
+    <h1 class="h-hero" style="font-size:min(6.8vw,12.0889vh)" data-anim>皮肤上最著名<br>的误解</h1>
     <p class="lead" style="max-width:60vw" data-anim>每个人都知道指纹"防滑"，教科书也这么写过几十年。但当科学家真的去做实验，答案开始变得有意思。</p>
     <div class="meta-row" data-anim>
       <span>10 pages</span><span>·</span><span>一场关于演化 · 触觉 · 证据的科普</span><span>·</span>
@@ -575,9 +576,9 @@
     <div>EVERYDAY BIOLOGY · HOOK</div>
     <div>Hook · 02 / 10</div>
   </div>
-  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:80vh; padding-bottom:3vh">
+  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:0; padding-bottom:3vh">
     <div class="kicker" data-anim>The Grip Test · 握感</div>
-    <h1 class="h-hero" style="font-size:6.2vw" data-anim>如果为了防滑<br>它做得并不好</h1>
+    <h1 class="h-hero" style="font-size:min(6.2vw,11.0222vh)" data-anim>如果为了防滑<br>它做得并不好</h1>
     <p class="lead" style="max-width:62vw" data-anim>指纹像轮胎纹，所以一定更防滑？2009 年研究测了真实指尖与干燥亚克力的摩擦，结果挑战了这个类比，但没有否定所有抓握功能。</p>
     <div class="meta-row" data-anim>
       <span>直觉</span><span>·</span><span>脊线像轮胎纹，增加抓握力</span><span>·</span><span>观察</span><span>·</span><span>特定干燥光滑表面上的结果挑战类比</span>
@@ -626,24 +627,24 @@
     <div>ACT II · THE TEST</div>
     <div>Act II · 04 / 10</div>
   </div>
-  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:80vh; padding-bottom:3vh">
+  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:0; padding-bottom:3vh">
     <div class="kicker" data-anim>2009 · 实验</div>
-    <h1 class="h-hero" style="font-size:6.4vw" data-anim>实验站到了<br>解释的对面</h1>
+    <h1 class="h-hero" style="font-size:min(6.4vw,11.3778vh)" data-anim>实验站到了<br>解释的对面</h1>
     <p class="lead" style="max-width:60vw" data-anim>Warman 与 Ennos 测量真实指尖在干燥亚克力上的摩擦和接触面积：脊线使接触面积减小，结果质疑了该条件下的增摩解释。</p>
     <div class="grid-3" style="flex:0 0 auto; margin-top:1.5vh">
       <div class="stat-card" data-anim>
         <div class="stat-label">Contact · 接触</div>
-        <div class="stat-nb" style="font-size:4.4vw">更小</div>
+        <div class="stat-nb" style="font-size:min(4.4vw,7.8222vh)">更小</div>
         <div class="stat-note">脊线让实际接触面积减少</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Friction · 摩擦</div>
-        <div class="stat-nb" style="font-size:4.4vw">未增加</div>
+        <div class="stat-nb" style="font-size:min(4.4vw,7.8222vh)">未增加</div>
         <div class="stat-note">结论限于受测表面与条件</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Open · 开放</div>
-        <div class="stat-nb" style="font-size:4.4vw">待定</div>
+        <div class="stat-nb" style="font-size:min(4.4vw,7.8222vh)">待定</div>
         <div class="stat-note">真实功能仍是开放问题</div>
       </div>
     </div>
@@ -691,18 +692,18 @@
     <div>ACT II · HYPOTHESIS II</div>
     <div>Act II · 06 / 10</div>
   </div>
-  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:80vh; padding-bottom:3vh">
+  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:0; padding-bottom:3vh">
     <div class="kicker" data-anim>Vibrotactile · 振动假说</div>
-    <h1 class="h-hero" style="font-size:6.2vw" data-anim>脊线<br>像一排麦克风</h1>
+    <h1 class="h-hero" style="font-size:min(6.2vw,11.0222vh)" data-anim>脊线<br>像一排麦克风</h1>
     <p class="lead" style="max-width:62vw" data-anim>第二类候选解释：当指尖划过细小纹理，脊线把机械振动放大并传递给触觉受体。你可能不是靠眼睛，而是靠指尖"听见"布料的粗糙度。</p>
     <div class="grid-2-6-6" style="flex:0 0 auto; margin-top:1vh">
       <div data-anim style="padding:2.4vh 2vw; border-left:3px solid currentColor">
         <div class="kicker" style="opacity:.9">Slide · 划过</div>
-        <p style="font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.6; opacity:.85; margin-top:1.6vh">脊线把纹理转成机械振动。</p>
+        <p style="font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.6; opacity:.85; margin-top:1.6vh">脊线把纹理转成机械振动。</p>
       </div>
       <div data-anim style="padding:2.4vh 2vw; border-left:3px solid currentColor">
         <div class="kicker" style="opacity:.9">Receptor · 受体</div>
-        <p style="font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.6; opacity:.85; margin-top:1.6vh">深层触觉受体接收振动，分辨精细质感。</p>
+        <p style="font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.6; opacity:.85; margin-top:1.6vh">深层触觉受体接收振动，分辨精细质感。</p>
       </div>
     </div>
     <div class="meta-row" data-anim>
@@ -729,7 +730,7 @@
       <div data-anim="left" style="padding:2.6vh 2vw; border-left:3px solid currentColor; opacity:.55">
         <div class="kicker" style="opacity:.9">Observation · 观察</div>
         <h3 class="h-md" style="margin-top:1.6vh">个体差异高度丰富</h3>
-        <ul style="margin-top:2vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.2vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+        <ul style="margin-top:2vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.2vh; font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.55">
           <li>双胞胎的指纹也彼此不同</li>
           <li>数据库规模越大，越支持差异</li>
           <li>但"没找到"不等于"不存在"</li>
@@ -738,7 +739,7 @@
       <div data-anim="right" style="padding:2.6vh 2vw; border-left:3px solid currentColor">
         <div class="kicker" style="opacity:.9">Proof · 证明</div>
         <h3 class="h-md" style="margin-top:1.6vh">残缺指印仍可能误配</h3>
-        <ul style="margin-top:2vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.2vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+        <ul style="margin-top:2vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.2vh; font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.55">
           <li>图像质量会影响可判读细节</li>
           <li>需用实际测试估计错误率</li>
           <li>司法使用需要误差意识</li>
@@ -761,18 +762,18 @@
     <div>ACT III · FORENSICS</div>
     <div>Act III · 08 / 10</div>
   </div>
-  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:80vh; padding-bottom:3vh">
+  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:0; padding-bottom:3vh">
     <div class="kicker" data-anim>The Boundary · 司法边界</div>
-    <h1 class="h-hero" style="font-size:6.2vw" data-anim>指纹比对<br>需要误差率</h1>
+    <h1 class="h-hero" style="font-size:min(6.2vw,11.0222vh)" data-anim>指纹比对<br>需要误差率</h1>
     <p class="lead" style="max-width:62vw" data-anim>2016 年 PCAST 认为潜指纹分析具有基础有效性，属于依赖专家判断的方法；报告同时强调实证错误率，不能宣称绝对无误。</p>
     <div class="grid-2-6-6" style="flex:0 0 auto; margin-top:1vh">
       <div data-anim style="padding:2.4vh 2vw; border-left:3px solid currentColor; opacity:.55">
         <div class="kicker" style="opacity:.9">Expert · 专家判断</div>
-        <p style="font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.6; opacity:.85; margin-top:1.6vh">判断有主观成分，需规范和质量控制。</p>
+        <p style="font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.6; opacity:.85; margin-top:1.6vh">判断有主观成分，需规范和质量控制。</p>
       </div>
       <div data-anim style="padding:2.4vh 2vw; border-left:3px solid currentColor">
         <div class="kicker" style="opacity:.9">Statistics · 统计基础</div>
-        <p style="font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.6; opacity:.85; margin-top:1.6vh">黑箱测试已测得错误，不能声称零误差。</p>
+        <p style="font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.6; opacity:.85; margin-top:1.6vh">黑箱测试已测得错误，不能声称零误差。</p>
       </div>
     </div>
     <div class="meta-row" data-anim>
@@ -791,24 +792,24 @@
     <div>ACT IV · REUSE</div>
     <div>Act IV · 09 / 10</div>
   </div>
-  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:80vh; padding-bottom:3vh">
+  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:0; padding-bottom:3vh">
     <div class="kicker" data-anim>1892 → 2013 · 再利用</div>
-    <h1 class="h-hero" style="font-size:6.2vw" data-anim>从档案<br>到口袋</h1>
+    <h1 class="h-hero" style="font-size:min(6.2vw,11.0222vh)" data-anim>从档案<br>到口袋</h1>
     <p class="lead" style="max-width:62vw" data-anim>1892 年 Galton 建立指纹分类，让它成为现代刑侦的基石；2013 年 Touch ID 把它装进手机。皮肤上的纹路，被身份技术反复利用。</p>
     <div class="grid-3" style="flex:0 0 auto; margin-top:1.5vh">
       <div class="stat-card" data-anim>
         <div class="stat-label">1892 · 分类</div>
-        <div class="stat-nb" style="font-size:4.2vw">Galton</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">Galton</div>
         <div class="stat-note">Finger Prints · 系统分类建立</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">20 世纪 · 档案</div>
-        <div class="stat-nb" style="font-size:4.2vw">刑侦基石</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">刑侦基石</div>
         <div class="stat-note">标准身份特征入库</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">2013 · 口袋</div>
-        <div class="stat-nb" style="font-size:4.2vw">Touch ID</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">Touch ID</div>
         <div class="stat-note">iPhone 5s · 消费级生物识别</div>
       </div>
     </div>
@@ -828,9 +829,9 @@
     <div>THE TAKEAWAY · ANSWER</div>
     <div>Act V · 10 / 10</div>
   </div>
-  <div class="frame" style="display:grid; gap:4.5vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:4.5vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Answer · 收束</div>
-    <h1 class="h-hero" style="font-size:6.6vw" data-anim>指纹教的<br>不是防滑</h1>
+    <h1 class="h-hero" style="font-size:min(6.6vw,11.7333vh)" data-anim>指纹教的<br>不是防滑</h1>
     <p class="lead" style="max-width:62vw" data-anim>一个流传百年的"常识"，被一次实验重新打开；一个"绝对可靠"的标签，被一份报告加上误差率。指纹的故事，是科学如何对待自己的故事。</p>
     <div class="meta-row" data-anim>
       <span>质疑 → 实验 → 假说 → 边界</span>
