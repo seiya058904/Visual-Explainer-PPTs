@@ -1,6 +1,6 @@
 # 2026-10-28 refinement and final audit
 
-The final inventory contains **38 Approved decks / 569 pages** and **10 Pending decks / 111 pages**. Current artifacts, maintained sources and frozen test files match all 38 publication receipts. The Pending works remain local and unpromoted. **Publication status is pending the root agent’s final build, CI and deployment update.**
+The final inventory contains **38 Approved decks / 569 pages** and **10 Pending decks / 111 pages**. Current artifacts, maintained sources and frozen test files match all 38 publication receipts. The Pending works remain local and unpromoted. **Release verification is tracked by [PR #3](https://github.com/seiya058904/Visual-Explainer-PPTs/pull/3) and the commit-bound [Pages workflow runs](https://github.com/seiya058904/Visual-Explainer-PPTs/actions/workflows/gallery.yml).** The configured public address is https://seiya058904.github.io/Visual-Explainer-PPTs/; source audit results are distinct from deployment results.
 
 This report verifies the stated technical gates. Factual corrections, source citations, actual visual-review scope and unresolved content boundaries are documented per work; it does not assign a blanket factual or media-rights PASS.
 

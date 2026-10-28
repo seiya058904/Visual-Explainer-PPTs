@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "auditDate": "2026-10-28",
   "verifiedAtUtc": "2026-10-28T14:08:58.498321+00:00",
-  "publicationStatus": "pending-root-update",
+  "publicationStatus": "tracked-separately-by-commit-bound-pages-deployment",
   "acceptanceBoundary": "38 existing Approved artifacts remain Approved; 10 Pending records remain local and unpromoted. Technical verification is not blanket factual or rights clearance.",
   "totals": {
     "decks": 48,
@@ -2308,5 +2308,6 @@
       "networkPhotoCount": 0,
       "overviewSelectionVerified1600": true
     }
-  ]
+  ],
+  "publicationEvidence": "https://github.com/seiya058904/Visual-Explainer-PPTs/actions/workflows/gallery.yml"
 }
