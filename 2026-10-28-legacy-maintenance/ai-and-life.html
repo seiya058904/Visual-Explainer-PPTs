@@ -45,13 +45,13 @@
   .foot{flex-shrink:0;margin-bottom:2vh;display:flex;justify-content:space-between;align-items:flex-end;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.55}
   .foot .title{font-family:var(--serif-zh);font-weight:400;letter-spacing:.05em;text-transform:none;opacity:.75;font-size:13px}
   .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;opacity:.6;margin-bottom:2.6vh}
-  .lead{font-family:var(--serif-zh);font-weight:400;font-size:1.9vw;line-height:1.4;opacity:.85}
-  .meta-row{display:flex;gap:1.2em;align-items:baseline;flex-wrap:wrap;font-family:var(--mono);font-size:max(12px,.92vw);letter-spacing:.16em;text-transform:uppercase;opacity:.6}
-  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,1.22vw);line-height:1.75;opacity:.82;letter-spacing:.01em}
-  .h-hero{font-family:var(--serif-zh);font-weight:900;font-size:10vw;line-height:.96;letter-spacing:-.02em}
-  .h-xl{font-family:var(--serif-zh);font-weight:700;font-size:6.2vw;line-height:1.08;letter-spacing:-.01em}
-  .h-sub{font-family:var(--serif-zh);font-weight:500;font-size:3.1vw;line-height:1.25;letter-spacing:0;opacity:.7}
-  .h-md{font-family:var(--serif-zh);font-weight:600;font-size:2.3vw;line-height:1.3}
+  .lead{font-family:var(--serif-zh);font-weight:400;font-size:min(1.9vw,3.3778vh);line-height:1.4;opacity:.85}
+  .meta-row{display:flex;gap:1.2em;align-items:baseline;flex-wrap:wrap;font-family:var(--mono);font-size:max(12px,min(.92vw,1.6356vh));letter-spacing:.16em;text-transform:uppercase;opacity:.6}
+  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,min(1.22vw,2.1689vh));line-height:1.75;opacity:.82;letter-spacing:.01em}
+  .h-hero{font-family:var(--serif-zh);font-weight:900;font-size:min(10vw,17.7778vh);line-height:.96;letter-spacing:-.02em}
+  .h-xl{font-family:var(--serif-zh);font-weight:700;font-size:min(6.2vw,11.0222vh);line-height:1.08;letter-spacing:-.01em}
+  .h-sub{font-family:var(--serif-zh);font-weight:500;font-size:min(3.1vw,5.5111vh);line-height:1.25;letter-spacing:0;opacity:.7}
+  .h-md{font-family:var(--serif-zh);font-weight:600;font-size:min(2.3vw,4.0889vh);line-height:1.3}
   .en{font-family:var(--serif-en);font-style:italic;font-weight:500}
   .frame{flex:1;display:flex;flex-direction:column;min-height:0;overflow:hidden;position:relative;z-index:1}
   .grid-2-6-6{display:grid;grid-template-columns:6fr 6fr;gap:4vw;flex:1}
@@ -64,16 +64,16 @@
   .split{display:grid;grid-template-columns:1fr 1fr;gap:4vw;flex:1;align-items:center}
   .fill{flex:1}
   .stat-card{display:flex;flex-direction:column;gap:.8vh;align-items:flex-start;padding:1.6vh 0 2vh 0;border-top:1px solid currentColor;border-color:rgba(127,127,127,.3)}
-  .stat-card .stat-label{font-family:var(--mono);font-size:max(10px,.78vw);letter-spacing:.24em;text-transform:uppercase;opacity:.55}
-  .stat-card .stat-nb{font-family:var(--serif-en);font-weight:800;font-size:5.8vw;line-height:.9;letter-spacing:-.03em;font-feature-settings:"tnum";margin-top:.4vh}
+  .stat-card .stat-label{font-family:var(--mono);font-size:max(10px,min(.78vw,1.3867vh));letter-spacing:.24em;text-transform:uppercase;opacity:.55}
+  .stat-card .stat-nb{font-family:var(--serif-en);font-weight:800;font-size:min(5.8vw,10.3111vh);line-height:.9;letter-spacing:-.03em;font-feature-settings:"tnum";margin-top:.4vh}
   .stat-card .stat-nb .stat-unit{font-family:var(--serif-zh);font-weight:500;font-size:.38em;letter-spacing:0;opacity:.72;margin-left:.14em}
-  .stat-card .stat-note{font-family:var(--sans-zh);font-weight:400;font-size:max(13px,1.05vw);line-height:1.5;opacity:.72;margin-top:.6vh}
-  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,1.2vw);line-height:1.55;opacity:.92}
+  .stat-card .stat-note{font-family:var(--sans-zh);font-weight:400;font-size:max(13px,min(1.05vw,1.8667vh));line-height:1.5;opacity:.72;margin-top:.6vh}
+  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,min(1.2vw,2.1333vh));line-height:1.55;opacity:.92}
   .slide.light .callout{background:rgba(var(--ink-rgb),.05)}
   .slide.dark .callout{background:rgba(var(--paper-rgb),.06)}
   .callout .callout-src{display:block;margin-top:1.6vh;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6}
-  .ghost{font-family:var(--serif-en);font-weight:900;font-size:34vw;line-height:1;opacity:.06;position:absolute;pointer-events:none;user-select:none;z-index:-1}
-  .tag{display:inline-block;padding:.35em 1.2em;font-family:var(--mono);font-size:max(11px,.82vw);letter-spacing:.12em;text-transform:uppercase;border:1px solid currentColor;border-color:rgba(127,127,127,.3);border-radius:999px;opacity:.82}
+  .ghost{font-family:var(--serif-en);font-weight:900;font-size:min(34vw,60.4444vh);line-height:1;opacity:.06;position:absolute;pointer-events:none;user-select:none;z-index:-1}
+  .tag{display:inline-block;padding:.35em 1.2em;font-family:var(--mono);font-size:max(11px,min(.82vw,1.4578vh));letter-spacing:.12em;text-transform:uppercase;border:1px solid currentColor;border-color:rgba(127,127,127,.3);border-radius:999px;opacity:.82}
   .ico-lg{width:2.4em;height:2.4em;stroke-width:1.5}
   .ico-md{width:1.6em;height:1.6em;stroke-width:1.8}
   .ico-sm{width:1em;height:1em;stroke-width:2}
@@ -103,10 +103,15 @@
   body.low-power.waapi-ready [data-anim],
   body.low-power [data-anim]{opacity:1!important;transform:none!important}
   @media (max-width:900px){
-    .h-hero{font-size:14vw}
-    .h-xl{font-size:9vw}
+    .h-hero{font-size:min(14vw,24.8889vh)}
+    .h-xl{font-size:min(9vw,16.0000vh)}
     .split{grid-template-columns:1fr}
   }
+</style>
+<style>/* Keep captions and lower content inside their allocated space. */
+#deck>.slide:nth-child(7)>.frame{margin-bottom:1.5vh}
+#deck>.slide:nth-child(7)>.frame>.grid-2-6-6{flex:0 0 auto;margin-top:3vh!important}
+#deck>.slide:nth-child(7)>.frame{padding-top:3vh!important}
 </style>
 </head>
 <body>
@@ -147,14 +152,14 @@
 <!-- SLIDE 1 · 封面 · hero dark -->
 <!-- ================================================================ -->
 <section class="slide hero dark">
-  <div class="ghost" style="right:-4vw;top:-14vh;font-size:38vw">AI</div>
+  <div class="ghost" style="right:-4vw;top:-14vh;font-size:min(38vw,67.5556vh)">AI</div>
   <div class="chrome">
     <div>A Talk · 2026.05</div>
     <div>Vol.01</div>
   </div>
-  <div class="frame" style="display:grid;gap:4vh;align-content:center;min-height:80vh">
+  <div class="frame" style="display:grid;gap:4vh;align-content:center;min-height:0">
     <div class="kicker" data-anim><i data-lucide="sparkles" class="ico-sm" style="margin-right:.45em;vertical-align:middle"></i>行业分享 · 2026</div>
-    <h1 class="h-hero" style="font-size:8.2vw;line-height:1.08" data-anim>
+    <h1 class="h-hero" style="font-size:min(8.2vw,14.5778vh);line-height:1.08" data-anim>
       AI是如何<br>影响我们生活的
     </h1>
     <h2 class="h-sub" data-anim>从学习、工作、医疗到安全与未来社会</h2>
@@ -234,7 +239,7 @@
   <div class="ghost" style="right:-4vw;top:-10vh">DAILY</div>
   <div class="frame" style="padding-top:5vh">
     <div class="kicker" data-anim><i data-lucide="smartphone" class="ico-sm" style="margin-right:.45em;vertical-align:middle"></i>无感化AI</div>
-    <h2 class="h-xl" style="font-size:6.8vw" data-anim>AI已经进入日常生活</h2>
+    <h2 class="h-xl" style="font-size:min(6.8vw,12.0889vh)" data-anim>AI已经进入日常生活</h2>
     <p class="body-zh" style="margin-top:3vh;max-width:72vw" data-anim>
       短视频推荐、网购推荐、输入法联想、语音助手、地图路线规划、拍照修图、垃圾邮件识别、金融风控……都依赖算法判断。AI改变生活的方式不是突然出现一个机器人，而是把很多日常环节变得更快、更自动、更个性化。
     </p>
@@ -244,10 +249,10 @@
         <div class="callout-src">— 演讲提示</div>
       </div>
       <div style="display:flex;flex-direction:column;gap:2.4vh;justify-content:center" data-anim>
-        <div style="font-family:var(--serif-zh);font-weight:300;font-size:6vw;line-height:.9;opacity:.82;letter-spacing:-.03em">34%</div>
-        <div class="body-zh" style="font-size:max(13px,1.05vw);opacity:.76">全球中位比例"更担忧"AI</div>
-        <div style="font-family:var(--serif-zh);font-weight:300;font-size:4vw;line-height:.9;opacity:.72;letter-spacing:-.03em">47%</div>
-        <div class="body-zh" style="font-size:max(13px,1.05vw);opacity:.76">"听说过一点"——AI已无孔不入</div>
+        <div style="font-family:var(--serif-zh);font-weight:300;font-size:min(6vw,10.6667vh);line-height:.9;opacity:.82;letter-spacing:-.03em">34%</div>
+        <div class="body-zh" style="font-size:max(13px,min(1.05vw,1.8667vh));opacity:.76">全球中位比例"更担忧"AI</div>
+        <div style="font-family:var(--serif-zh);font-weight:300;font-size:min(4vw,7.1111vh);line-height:.9;opacity:.72;letter-spacing:-.03em">47%</div>
+        <div class="body-zh" style="font-size:max(13px,min(1.05vw,1.8667vh));opacity:.76">"听说过一点"——AI已无孔不入</div>
       </div>
     </div>
   </div>
@@ -307,9 +312,9 @@
     <div>Act II · 05 / 10</div>
   </div>
   <div class="ghost" style="right:-4vw;top:-10vh">SHIFT</div>
-  <div class="frame" style="display:grid;gap:6vh;align-content:center;min-height:80vh">
+  <div class="frame" style="display:grid;gap:6vh;align-content:center;min-height:0">
     <div class="kicker" data-anim>Act II</div>
-    <h1 class="h-hero" style="font-size:8.5vw" data-anim>工作与效率</h1>
+    <h1 class="h-hero" style="font-size:min(8.5vw,15.1111vh)" data-anim>工作与效率</h1>
     <p class="lead" style="max-width:55vw" data-anim>
       AI最先改变的是"做事方式"，不是立刻改变"企业命运"。
     </p>
@@ -331,7 +336,7 @@
   <div class="ghost" style="right:-4vw;top:-10vh">EFFECT</div>
   <div class="frame" style="padding-top:5vh">
     <div class="kicker" data-anim><i data-lucide="trending-up" class="ico-sm" style="margin-right:.45em;vertical-align:middle"></i>McKinsey 2025</div>
-    <h2 class="h-xl" style="font-size:6.2vw" data-anim>AI提高工作效率<br>但价值释放仍在早期</h2>
+    <h2 class="h-xl" style="font-size:min(6.2vw,11.0222vh)" data-anim>AI提高工作效率<br>但价值释放仍在早期</h2>
 
     <div class="split" style="margin-top:4vh;gap:3vw;flex:1;align-items:start">
       <div>
@@ -379,7 +384,7 @@
       <div data-anim="left" style="padding:3vh 2vw;border-left:3px solid currentColor;opacity:.55">
         <div class="kicker" style="opacity:.8;margin-bottom:1.6vh">Before · 旧认知</div>
         <h3 class="h-md" style="margin-bottom:2.4vh"><i data-lucide="x-circle" class="ico-sm" style="margin-right:.3em;vertical-align:middle"></i>AI 会替代人</h3>
-        <ul style="padding-left:1.2em;display:flex;flex-direction:column;gap:1.4vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.55">
+        <ul style="padding-left:1.2em;display:flex;flex-direction:column;gap:1.4vh;font-family:var(--sans-zh);font-size:max(14px,min(1.05vw,1.8667vh));line-height:1.55">
           <li>重复性、规则清晰的任务被自动化</li>
           <li>焦点在"哪些岗位会消失"</li>
           <li>人跟机器比效率，焦虑蔓延</li>
@@ -391,7 +396,7 @@
       <div data-anim="right" style="padding:3vh 2vw;border-left:3px solid currentColor">
         <div class="kicker" style="opacity:.8;margin-bottom:1.6vh">After · 新认知</div>
         <h3 class="h-md" style="margin-bottom:2.4vh"><i data-lucide="check-circle" class="ico-sm" style="margin-right:.3em;vertical-align:middle"></i>人 + AI 协作</h3>
-        <ul style="padding-left:1.2em;display:flex;flex-direction:column;gap:1.4vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.55">
+        <ul style="padding-left:1.2em;display:flex;flex-direction:column;gap:1.4vh;font-family:var(--sans-zh);font-size:max(14px,min(1.05vw,1.8667vh));line-height:1.55">
           <li>复杂沟通、判断、创造仍需人类</li>
           <li>焦点在"谁更会使用AI"</li>
           <li>懂AI的人效率倍增</li>
@@ -402,10 +407,10 @@
 
     <div style="display:flex;gap:2vw;margin-top:3.6vh;align-items:center;flex-wrap:wrap">
       <div class="tag" data-anim>WEF 2030 预测</div>
-      <div style="font-family:var(--serif-zh);font-weight:700;font-size:2.6vw;line-height:1;letter-spacing:-.02em" data-anim>
+      <div style="font-family:var(--serif-zh);font-weight:700;font-size:min(2.6vw,4.6222vh);line-height:1;letter-spacing:-.02em" data-anim>
         1.7亿 <span style="font-family:var(--sans-zh);font-weight:400;font-size:.5em;opacity:.65">新岗位净增</span>
       </div>
-      <div style="font-family:var(--sans-zh);font-weight:400;font-size:max(13px,1vw);opacity:.55" data-anim>
+      <div style="font-family:var(--sans-zh);font-weight:400;font-size:max(13px,min(1vw,1.7778vh));opacity:.55" data-anim>
         vs 9200万被替代 · 39%技能需求变化
       </div>
     </div>
@@ -425,9 +430,9 @@
     <div>08 / 10</div>
   </div>
   <div class="ghost" style="right:-4vw;top:-10vh">CARE</div>
-  <div class="frame" style="display:grid;gap:4vh;align-content:center;min-height:76vh">
+  <div class="frame" style="display:grid;gap:4vh;align-content:center;min-height:0">
     <div class="kicker" data-anim><i data-lucide="heart-pulse" class="ico-sm" style="margin-right:.45em;vertical-align:middle"></i>Quote · 医疗AI</div>
-    <blockquote style="font-family:var(--serif-zh);font-weight:700;font-size:4.6vw;line-height:1.25;letter-spacing:-.01em;max-width:72vw">
+    <blockquote style="font-family:var(--serif-zh);font-weight:700;font-size:min(4.6vw,8.1778vh);line-height:1.25;letter-spacing:-.01em;max-width:72vw">
       <span data-anim style="display:block">"医疗AI的意义不是'机器医生取代人类医生'，</span>
       <span data-anim style="display:block">而是让医生更快、更准地获得辅助判断。"</span>
     </blockquote>
@@ -455,7 +460,7 @@
   <div class="ghost" style="right:-4vw;top:-10vh">RISK</div>
   <div class="frame" style="padding-top:4vh">
     <div class="kicker" data-anim><i data-lucide="shield-alert" class="ico-sm" style="margin-right:.45em;vertical-align:middle"></i>AI的阴影面</div>
-    <h2 class="h-xl" style="font-size:5.6vw" data-anim>隐私、安全与环境</h2>
+    <h2 class="h-xl" style="font-size:min(5.6vw,9.9556vh)" data-anim>隐私、安全与环境</h2>
     <p class="body-zh" style="max-width:65vw" data-anim>
       AI越强大，风险也越复杂。从深度伪造到数据隐私，再到算力背后的能源消耗。
     </p>
@@ -463,22 +468,22 @@
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2vw;margin-top:2vh">
       <div class="stat-card" data-anim>
         <div class="stat-label">Deepfake Attacks</div>
-        <div class="stat-nb" style="font-size:4.8vw">62<span class="stat-unit">%</span></div>
+        <div class="stat-nb" style="font-size:min(4.8vw,8.5333vh)">62<span class="stat-unit">%</span></div>
         <div class="stat-note">Gartner 2025：302位网络安全负责人调查，过去12个月</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Worried About Misuse</div>
-        <div class="stat-nb" style="font-size:4.8vw">82<span class="stat-unit">%</span></div>
+        <div class="stat-nb" style="font-size:min(4.8vw,8.5333vh)">82<span class="stat-unit">%</span></div>
         <div class="stat-note">Deloitte美国调查：GenAI用户/尝试者认为技术可能被滥用</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Data Center Energy</div>
-        <div class="stat-nb" style="font-size:4.8vw">2<span class="stat-unit">x</span></div>
+        <div class="stat-nb" style="font-size:min(4.8vw,8.5333vh)">2<span class="stat-unit">x</span></div>
         <div class="stat-note">IEA：约415 TWh（2024）→945 TWh（2030）</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">AI Server Growth</div>
-        <div class="stat-nb" style="font-size:4.8vw">+30<span class="stat-unit">%</span></div>
+        <div class="stat-nb" style="font-size:min(4.8vw,8.5333vh)">+30<span class="stat-unit">%</span></div>
         <div class="stat-note">IEA基准情景：加速服务器用电量年均增约30%（2024–30）</div>
       </div>
     </div>
@@ -487,7 +492,7 @@
       <div class="tag" data-anim>Gartner 2025 · n=302 leaders</div>
       <div class="tag" data-anim>Deloitte 2025 · U.S.</div>
       <div class="tag" data-anim>IEA 2025</div>
-      <div style="font-family:var(--sans-zh);font-weight:400;font-size:max(12px,.9vw);opacity:.55" data-anim>
+      <div style="font-family:var(--sans-zh);font-weight:400;font-size:max(12px,min(.9vw,1.6000vh));opacity:.55" data-anim>
         "过去防假链接，现在还要防假声音、假视频、假身份"
       </div>
     </div>
@@ -507,34 +512,34 @@
     <div>10 / 10</div>
   </div>
   <div class="ghost" style="right:-4vw;top:-10vh">FUTURE</div>
-  <div class="frame" style="display:grid;gap:4vh;align-content:center;min-height:80vh">
+  <div class="frame" style="display:grid;gap:4vh;align-content:center;min-height:0">
     <div class="kicker" data-anim><i data-lucide="compass" class="ico-sm" style="margin-right:.45em;vertical-align:middle"></i>Conclusion</div>
-    <h1 class="h-hero" style="font-size:7.2vw;line-height:1.08">
+    <h1 class="h-hero" style="font-size:min(7.2vw,12.8000vh);line-height:1.08">
       <span data-anim style="display:block">AI不是替代生活，</span>
       <span data-anim style="display:block">而是重组生活</span>
     </h1>
 
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.6vw 2.4vw;max-width:76vw">
-      <p class="body-zh" style="font-size:max(13px,1vw);line-height:1.5;opacity:.9" data-anim>
+      <p class="body-zh" style="font-size:max(13px,min(1vw,1.7778vh));line-height:1.5;opacity:.9" data-anim>
         AI让信息获取更快，但也让辨别真假更重要
       </p>
-      <p class="body-zh" style="font-size:max(13px,1vw);line-height:1.5;opacity:.9" data-anim>
+      <p class="body-zh" style="font-size:max(13px,min(1vw,1.7778vh));line-height:1.5;opacity:.9" data-anim>
         AI让医疗、交通、消费更智能，但需要监管和伦理边界
       </p>
-      <p class="body-zh" style="font-size:max(13px,1vw);line-height:1.5;opacity:.9" data-anim>
+      <p class="body-zh" style="font-size:max(13px,min(1vw,1.7778vh));line-height:1.5;opacity:.9" data-anim>
         AI让学习更个性化，但不能替代独立思考
       </p>
-      <p class="body-zh" style="font-size:max(13px,1vw);line-height:1.5;opacity:.9" data-anim>
+      <p class="body-zh" style="font-size:max(13px,min(1vw,1.7778vh));line-height:1.5;opacity:.9" data-anim>
         AI带来便利的同时，也带来隐私、安全、就业和能源挑战
       </p>
-      <p class="body-zh" style="font-size:max(13px,1vw);line-height:1.5;opacity:.9" data-anim>
+      <p class="body-zh" style="font-size:max(13px,min(1vw,1.7778vh));line-height:1.5;opacity:.9" data-anim>
         AI让工作更高效，但也推动岗位和技能重组
       </p>
     </div>
 
     <div class="rule" style="max-width:76vw;opacity:.18"></div>
 
-    <p class="lead" style="max-width:68vw;font-size:1.5vw" data-anim>
+    <p class="lead" style="max-width:68vw;font-size:min(1.5vw,2.6667vh)" data-anim>
       "未来真正重要的能力，不是单纯'会不会用AI'，<br>
       而是能否把AI当作工具，同时保持人的判断力、创造力和责任感。"
     </p>

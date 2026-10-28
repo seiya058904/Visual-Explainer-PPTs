@@ -74,18 +74,18 @@
      · 等宽（IBM Plex Mono）：kicker、meta 小标签、foot 右侧
   */
   .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;opacity:.6;margin-bottom:2.6vh}
-  .display{font-family:var(--serif-en);font-weight:700;font-size:11vw;line-height:.92;letter-spacing:-.025em}
-  .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:7.8vw;line-height:1.04;letter-spacing:-.005em}
-  .h1-zh{font-family:var(--serif-zh);font-weight:700;font-size:4.6vw;line-height:1.12;letter-spacing:-.005em}
-  .h2-zh{font-family:var(--serif-zh);font-weight:600;font-size:3.2vw;line-height:1.2;letter-spacing:0}
-  .h3-zh{font-family:var(--serif-zh);font-weight:500;font-size:1.9vw;line-height:1.35}
-  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,1.22vw);line-height:1.75;opacity:.82;letter-spacing:.01em}
-  .body-serif{font-family:var(--serif-zh);font-weight:400;font-size:max(15px,1.3vw);line-height:1.65;opacity:.88}
-  .lead{font-family:var(--serif-zh);font-weight:400;font-size:1.9vw;line-height:1.4;opacity:.85}
-  .meta{font-family:var(--mono);font-size:max(11px,.88vw);letter-spacing:.16em;text-transform:uppercase;opacity:.6}
-  .big-num{font-family:var(--serif-en);font-weight:800;font-size:10vw;line-height:.85;letter-spacing:-.03em;font-feature-settings:"tnum"}
-  .mid-num{font-family:var(--serif-en);font-weight:700;font-size:5.5vw;line-height:.88;letter-spacing:-.02em;font-feature-settings:"tnum"}
-  .ghost{font-family:var(--serif-en);font-weight:900;font-size:34vw;line-height:.8;opacity:.06;letter-spacing:-.04em;position:absolute;font-feature-settings:"tnum"}
+  .display{font-family:var(--serif-en);font-weight:700;font-size:min(11vw,19.5556vh);line-height:.92;letter-spacing:-.025em}
+  .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:min(7.8vw,13.8667vh);line-height:1.04;letter-spacing:-.005em}
+  .h1-zh{font-family:var(--serif-zh);font-weight:700;font-size:min(4.6vw,8.1778vh);line-height:1.12;letter-spacing:-.005em}
+  .h2-zh{font-family:var(--serif-zh);font-weight:600;font-size:min(3.2vw,5.6889vh);line-height:1.2;letter-spacing:0}
+  .h3-zh{font-family:var(--serif-zh);font-weight:500;font-size:min(1.9vw,3.3778vh);line-height:1.35}
+  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,min(1.22vw,2.1689vh));line-height:1.75;opacity:.82;letter-spacing:.01em}
+  .body-serif{font-family:var(--serif-zh);font-weight:400;font-size:max(15px,min(1.3vw,2.3111vh));line-height:1.65;opacity:.88}
+  .lead{font-family:var(--serif-zh);font-weight:400;font-size:min(1.9vw,3.3778vh);line-height:1.4;opacity:.85}
+  .meta{font-family:var(--mono);font-size:max(11px,min(.88vw,1.5644vh));letter-spacing:.16em;text-transform:uppercase;opacity:.6}
+  .big-num{font-family:var(--serif-en);font-weight:800;font-size:min(10vw,17.7778vh);line-height:.85;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .mid-num{font-family:var(--serif-en);font-weight:700;font-size:min(5.5vw,9.7778vh);line-height:.88;letter-spacing:-.02em;font-feature-settings:"tnum"}
+  .ghost{font-family:var(--serif-en);font-weight:900;font-size:min(34vw,60.4444vh);line-height:.8;opacity:.06;letter-spacing:-.04em;position:absolute;font-feature-settings:"tnum"}
   em{font-style:italic;font-family:var(--serif-en)}
   .en{font-family:var(--serif-en);font-style:italic;font-weight:500}
 
@@ -106,40 +106,40 @@
 
   /* ============ Stat（数字矩阵） ============ */
   .stat{display:flex;flex-direction:column;gap:1vh;align-items:flex-start}
-  .stat .n{font-family:var(--serif-en);font-weight:800;font-size:8vw;line-height:.88;letter-spacing:-.03em;font-feature-settings:"tnum"}
-  .stat .l{font-family:var(--sans-zh);font-size:max(13px,1.05vw);opacity:.7;margin-top:1vh;font-weight:400;line-height:1.5}
+  .stat .n{font-family:var(--serif-en);font-weight:800;font-size:min(8vw,14.2222vh);line-height:.88;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .stat .l{font-family:var(--sans-zh);font-size:max(13px,min(1.05vw,1.8667vh));opacity:.7;margin-top:1vh;font-weight:400;line-height:1.5}
   .stat .m{font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.5;margin-bottom:.2vh}
 
   /* ============ Callout（引用框） ============ */
-  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,1.2vw);line-height:1.55;opacity:.92}
+  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,min(1.2vw,2.1333vh));line-height:1.55;opacity:.92}
   .slide.light .callout{background:rgba(var(--ink-rgb),.05)}
   .slide.dark .callout{background:rgba(var(--paper-rgb),.06)}
   .callout .cite{display:block;margin-top:1.6vh;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6}
-  .callout .q-big{font-family:var(--serif-zh);font-weight:600;font-size:max(17px,1.6vw);line-height:1.42}
+  .callout .q-big{font-family:var(--serif-zh);font-weight:600;font-size:max(17px,min(1.6vw,2.8444vh));line-height:1.42}
 
   /* ============ Platform（平台卡） ============ */
   .plat{display:flex;flex-direction:column;justify-content:flex-end;padding:2vh 0;border-top:1px solid currentColor;border-color:rgba(127,127,127,.35)}
-  .plat .name{font-family:var(--serif-zh);font-weight:700;font-size:1.8vw;margin-bottom:.6vh}
-  .plat .nb{font-family:var(--serif-en);font-weight:700;font-size:3.2vw;letter-spacing:-.02em;line-height:1;font-feature-settings:"tnum"}
+  .plat .name{font-family:var(--serif-zh);font-weight:700;font-size:min(1.8vw,3.2000vh);margin-bottom:.6vh}
+  .plat .nb{font-family:var(--serif-en);font-weight:700;font-size:min(3.2vw,5.6889vh);letter-spacing:-.02em;line-height:1;font-feature-settings:"tnum"}
   .plat .sub{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;opacity:.55;margin-top:.6vh}
-  .plat .fill{font-family:var(--sans-zh);font-weight:300;font-size:2.4vw;opacity:.28;letter-spacing:-.01em;line-height:1}
+  .plat .fill{font-family:var(--sans-zh);font-weight:300;font-size:min(2.4vw,4.2667vh);opacity:.28;letter-spacing:-.01em;line-height:1}
 
   /* ============ Rowline（表格行） ============ */
   .rowline{display:grid;grid-template-columns:1fr 2fr 1fr;gap:2vw;padding:2.2vh 0;border-top:1px solid currentColor;align-items:center;border-color:rgba(127,127,127,.25)}
   .rowline:last-child{border-bottom:1px solid currentColor;border-color:rgba(127,127,127,.25)}
-  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:1.7vw}
-  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.2vw);opacity:.85;line-height:1.55}
+  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:min(1.7vw,3.0222vh)}
+  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,min(1.2vw,2.1333vh));opacity:.85;line-height:1.55}
   .rowline .m{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6;justify-self:end}
 
   /* ============ Pillar（支柱卡片） ============ */
   .pillar{display:flex;flex-direction:column;gap:1.8vh}
-  .pillar .ic{font-family:var(--serif-en);font-style:italic;font-size:2.6vw;opacity:.45;font-weight:400}
+  .pillar .ic{font-family:var(--serif-en);font-style:italic;font-size:min(2.6vw,4.6222vh);opacity:.45;font-weight:400}
   .pillar .ic svg{width:2.8vw;height:2.8vw;stroke-width:1.2;opacity:.7}
-  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:2.4vw;line-height:1.1}
-  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.1vw);opacity:.76;line-height:1.6}
+  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:min(2.4vw,4.2667vh);line-height:1.1}
+  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,min(1.1vw,1.9556vh));opacity:.76;line-height:1.6}
 
   /* ============ Signature / Highlight ============ */
-  .sign{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:2vw;opacity:.7}
+  .sign{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:min(2vw,3.5556vh);opacity:.7}
   .hi{position:relative;display:inline}
   .slide.dark .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--paper-rgb),.15);z-index:-1}
   .slide.light .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--ink-rgb),.08);z-index:-1}
@@ -154,7 +154,7 @@
   /* ============ 图片占位（虚线框，提示设计师位置） ============ */
   .img-slot{border:1.5px dashed rgba(127,127,127,.4);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1vh;padding:2vh 2vw;font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;opacity:.55;position:relative;aspect-ratio:16/9;width:100%;max-height:56vh;margin-inline:auto;box-sizing:border-box}
   .img-slot::before{content:"";position:absolute;inset:8px;border:1px solid currentColor;opacity:.2}
-  .img-slot .plus{font-size:2vw;font-weight:300;opacity:.5;letter-spacing:0}
+  .img-slot .plus{font-size:min(2vw,3.5556vh);font-weight:300;opacity:.5;letter-spacing:0}
   .img-slot .label{position:relative;z-index:2;text-align:center}
   .img-slot.r-4x3{aspect-ratio:4/3}
   .img-slot.r-3x2{aspect-ratio:3/2}
@@ -180,8 +180,8 @@
   .frame-img.h-26{height:26vh}
   .frame-img.h-28{height:28vh}
   .frame-cap{display:flex;justify-content:space-between;align-items:baseline;gap:1vw;margin-top:.8vh;font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.72}
-  .frame-cap .pf{font-family:var(--serif-zh);font-weight:600;font-size:max(13px,1vw);letter-spacing:.04em;text-transform:none;opacity:.94}
-  .frame-cap .nb{font-family:var(--serif-en);font-style:italic;font-size:max(15px,1.2vw);letter-spacing:.02em;text-transform:none;opacity:.88}
+  .frame-cap .pf{font-family:var(--serif-zh);font-weight:600;font-size:max(13px,min(1vw,1.7778vh));letter-spacing:.04em;text-transform:none;opacity:.94}
+  .frame-cap .nb{font-family:var(--serif-en);font-style:italic;font-size:max(15px,min(1.2vw,2.1333vh));letter-spacing:.02em;text-transform:none;opacity:.88}
   .frame-cap .idx{font-family:var(--mono);opacity:.5}
   figure.tile{display:flex;flex-direction:column;margin:0;min-width:0}
   figure.tile > .frame-img{flex:0 0 auto}
@@ -217,21 +217,21 @@
   .h-hero{
     font-family:var(--serif-zh);
     font-weight:900;
-    font-size:10vw;
+    font-size:min(10vw,17.7778vh);
     line-height:.96;
     letter-spacing:-.02em;
   }
   .h-xl{
     font-family:var(--serif-zh);
     font-weight:700;
-    font-size:6.2vw;
+    font-size:min(6.2vw,11.0222vh);
     line-height:1.08;
     letter-spacing:-.01em;
   }
   .h-sub{
     font-family:var(--serif-zh);
     font-weight:500;
-    font-size:3.1vw;
+    font-size:min(3.1vw,5.5111vh);
     line-height:1.25;
     letter-spacing:0;
     opacity:.7;
@@ -239,7 +239,7 @@
   .h-md{
     font-family:var(--serif-zh);
     font-weight:600;
-    font-size:2.3vw;
+    font-size:min(2.3vw,4.0889vh);
     line-height:1.3;
   }
   /* 英文标题专用（Playfair 衬线） */
@@ -249,7 +249,7 @@
   .lead{
     font-family:var(--serif-zh);
     font-weight:400;
-    font-size:1.75vw;
+    font-size:min(1.75vw,3.1111vh);
     line-height:1.5;
     opacity:.86;
   }
@@ -261,7 +261,7 @@
     align-items:baseline;
     flex-wrap:wrap;
     font-family:var(--mono);
-    font-size:max(12px,.92vw);
+    font-size:max(12px,min(.92vw,1.6356vh));
     letter-spacing:.16em;
     text-transform:uppercase;
     opacity:.6;
@@ -279,7 +279,7 @@
   }
   .stat-card .stat-label{
     font-family:var(--mono);
-    font-size:max(10px,.78vw);
+    font-size:max(10px,min(.78vw,1.3867vh));
     letter-spacing:.24em;
     text-transform:uppercase;
     opacity:.55;
@@ -287,7 +287,7 @@
   .stat-card .stat-nb{
     font-family:var(--serif-en);
     font-weight:800;
-    font-size:5.8vw;
+    font-size:min(5.8vw,10.3111vh);
     line-height:.9;
     letter-spacing:-.03em;
     font-feature-settings:"tnum";
@@ -304,15 +304,15 @@
   .stat-card .stat-note{
     font-family:var(--sans-zh);
     font-weight:400;
-    font-size:max(13px,1.05vw);
+    font-size:max(13px,min(1.05vw,1.8667vh));
     line-height:1.5;
     opacity:.72;
     margin-top:.6vh;
   }
   /* 当 stat-card 用于 grid-4（2x2），数字适度放大；若页面有标题+引文在上方，可内联 style 覆盖为更小值 */
-  .grid-4 .stat-card .stat-nb{font-size:5vw}
+  .grid-4 .stat-card .stat-nb{font-size:min(5vw,8.8889vh)}
   /* 当只有 3 个，字也可以稍大 */
-  .grid-3 .stat-card .stat-nb{font-size:6.8vw}
+  .grid-3 .stat-card .stat-nb{font-size:min(6.8vw,12.0889vh)}
 
   /* ---------- pipeline（流水线） ---------- */
   .pipeline-section{
@@ -327,7 +327,7 @@
   }
   .pipeline-label{
     font-family:var(--mono);
-    font-size:max(11px,.85vw);
+    font-size:max(11px,min(.85vw,1.5111vh));
     letter-spacing:.24em;
     text-transform:uppercase;
     opacity:.62;
@@ -353,20 +353,20 @@
     font-family:var(--serif-en);
     font-style:italic;
     font-weight:500;
-    font-size:1.15vw;
+    font-size:min(1.15vw,2.0444vh);
     opacity:.45;
   }
   .step-title{
     font-family:var(--sans-zh);
     font-weight:700;
-    font-size:1.55vw;
+    font-size:min(1.55vw,2.7556vh);
     letter-spacing:.01em;
     line-height:1.2;
   }
   .step-desc{
     font-family:var(--sans-zh);
     font-weight:400;
-    font-size:max(12px,.95vw);
+    font-size:max(12px,min(.95vw,1.6889vh));
     line-height:1.45;
     opacity:.72;
   }
@@ -391,7 +391,7 @@
     display:block;
     margin-top:.8vh;
     font-family:var(--mono);
-    font-size:max(10px,.8vw);
+    font-size:max(10px,min(.8vw,1.4222vh));
     letter-spacing:.22em;
     text-transform:uppercase;
     opacity:.6;
@@ -408,8 +408,8 @@
   }
 
   /* ---------- chrome & foot 补位（layouts.md 简单写法） ---------- */
-  .chrome{font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.2em;text-transform:uppercase;opacity:.62}
-  .foot{flex-shrink:0;margin-bottom:2vh;font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.18em;text-transform:uppercase;opacity:.5}
+  .chrome{font-family:var(--mono);font-size:max(11px,min(.78vw,1.3867vh));letter-spacing:.2em;text-transform:uppercase;opacity:.62}
+  .foot{flex-shrink:0;margin-bottom:2vh;font-family:var(--mono);font-size:max(11px,min(.78vw,1.3867vh));letter-spacing:.18em;text-transform:uppercase;opacity:.5}
 
   /* ============ 动效系统(CSS @keyframes,替代 Motion One 以支持 file:// 协议) ============
      所有 [data-anim] 元素默认隐藏,由 .slide.visible 触发 CSS 入场动画。
@@ -433,11 +433,11 @@
 
   /* ---------- 响应式降级 ---------- */
   @media (max-width:900px){
-    .display{font-size:16vw}
-    .display-zh{font-size:12vw}
-    .h1-zh{font-size:7vw}
-    .h-hero{font-size:14vw}
-    .h-xl{font-size:9vw}
+    .display{font-size:min(16vw,28.4444vh)}
+    .display-zh{font-size:min(12vw,21.3333vh)}
+    .h1-zh{font-size:min(7vw,12.4444vh)}
+    .h-hero{font-size:min(14vw,24.8889vh)}
+    .h-xl{font-size:min(9vw,16.0000vh)}
     .pipeline{grid-template-columns:repeat(2,1fr)}
     .grid-2-7-5,.grid-2-6-6,.grid-2-8-4{grid-template-columns:1fr}
   }
@@ -488,7 +488,7 @@
     <div>A Talk · 2026.05.14</div>
     <div>Vol.01</div>
   </div>
-  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>歸藏 · 藥</div>
     <h1 class="h-hero" data-anim>药片</h1>
     <h2 class="h-sub" data-anim>一颗小药丸背后的工业奇迹</h2>
@@ -623,11 +623,11 @@
   <div class="frame grid-2-8-4" style="padding-top:5vh">
     <div>
       <div class="kicker" data-anim>Inactive ≠ Unimportant</div>
-      <h2 class="h-xl" style="font-size:5.8vw" data-anim>没有辅料就没有药片</h2>
+      <h2 class="h-xl" style="font-size:min(5.8vw,10.3111vh)" data-anim>没有辅料就没有药片</h2>
       <p class="lead" style="margin-top:2vh; margin-bottom:2vh" data-anim>
         辅料不是药，但它决定药片能不能成型、能不能吞、能不能在规定时间内释放。
       </p>
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(14px,1.15vw); line-height:1.75; opacity:.78; margin-bottom:2vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(14px,min(1.15vw,2.0444vh)); line-height:1.75; opacity:.78; margin-bottom:2vh">
         填充剂提供体积，粘合剂保证成型，崩解剂让药片进入体内迅速散开，润滑剂保证压片不粘冲头。每一种辅料都经过安全性评估和批次质量控制。
       </p>
       <div class="callout" style="margin-top:2vh" data-anim>
@@ -653,19 +653,19 @@
   </div>
   <div class="frame" style="padding-top:4vh">
     <div class="kicker" data-anim>Before / After · 它远不是一颗"药"</div>
-    <h2 class="h-xl" style="font-size:5.2vw; margin-bottom:3vh" data-anim>药片不只有有效成分</h2>
+    <h2 class="h-xl" style="font-size:min(5.2vw,9.2444vh); margin-bottom:3vh" data-anim>药片不只有有效成分</h2>
     <div class="grid-2-6-6" style="gap:5vw 4vh">
       <div data-anim="left" style="padding:3vh 2vw; border-left:3px solid currentColor; opacity:.55">
         <div class="kicker" style="opacity:.9">Before · 直觉</div>
         <h3 class="h-md" style="margin-top:2vh">有效成分就是药片本身</h3>
-        <p style="margin-top:3vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55; opacity:.78">
+        <p style="margin-top:3vh; font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.55; opacity:.78">
           药片通常由有效成分与一种或多种辅料组成；各自比例随药物、剂量和剂型变化。
         </p>
       </div>
       <div data-anim="right" style="padding:3vh 2vw; border-left:3px solid currentColor">
         <div class="kicker" style="opacity:.9">After · 事实</div>
         <h3 class="h-md" style="margin-top:2vh">有效成分比例因药而异</h3>
-        <p style="margin-top:3vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55; opacity:.78">
+        <p style="margin-top:3vh; font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.55; opacity:.78">
           填充剂、黏合剂、崩解剂、润滑剂或包衣等辅料，帮助药片成形、稳定并按设计释放；实际配方由具体制剂决定。
         </p>
       </div>
@@ -685,8 +685,8 @@
   </div>
   <div class="frame" style="padding-top:3vh">
     <div class="kicker" data-anim>Precision You Can Swallow</div>
-    <h2 class="h-xl" style="font-size:5.2vw" data-anim>剂量差之毫厘，疗效谬以千里</h2>
-    <p class="lead" style="margin-bottom:1.5vh; font-size:1.55vw" data-anim>从微克到克，每个数字都经过精密计算</p>
+    <h2 class="h-xl" style="font-size:min(5.2vw,9.2444vh)" data-anim>剂量差之毫厘，疗效谬以千里</h2>
+    <p class="lead" style="margin-bottom:1.5vh; font-size:min(1.55vw,2.7556vh)" data-anim>从微克到克，每个数字都经过精密计算</p>
     <div class="grid-6" style="margin-top:1.5vh">
       <div class="stat-card" data-anim>
         <div class="stat-label">Dose Is Context</div>
@@ -732,9 +732,9 @@
     <div>制造 · Manufacturing</div>
     <div>08 / 28</div>
   </div>
-  <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Repeatability Is Medicine</div>
-    <h1 class="h-hero" style="font-size:6.8vw; line-height:1.2">
+    <h1 class="h-hero" style="font-size:min(6.8vw,12.0889vh); line-height:1.2">
       <span data-anim style="display:block">把粉末压成形状不难，</span>
       <span data-anim style="display:block">难的是</span>
       <span data-anim style="display:block">每一片都一样。</span>
@@ -762,7 +762,7 @@
       <p class="lead" style="margin-top:2vh" data-anim>
         包衣不只是让药片看起来专业——它保护药物不受湿气、光、空气降解。
       </p>
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(14px,1.15vw); line-height:1.75; opacity:.78; margin-top:2vh; margin-bottom:2vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(14px,min(1.15vw,2.0444vh)); line-height:1.75; opacity:.78; margin-top:2vh; margin-bottom:2vh">
         它掩盖苦味改善服药体验；控制药物释放部位（肠溶包衣只在肠道溶解）；区分不同剂型与剂量。常见包衣材料：羟丙甲纤维素、乙基纤维素、丙烯酸树脂等。
       </p>
       <div class="callout" style="margin-top:2vh" data-anim>
@@ -788,7 +788,7 @@
   </div>
   <div class="frame" style="display:grid; gap:3vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Dose Is Space. Release Is Time.</div>
-    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:4.6vw; line-height:1.25; letter-spacing:-.01em; max-width:75vw">
+    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:min(4.6vw,8.1778vh); line-height:1.25; letter-spacing:-.01em; max-width:75vw">
       <span data-anim="line" style="display:block">同一种活性成分，</span>
       <span data-anim="line" style="display:block">可以制成即释或缓释剂型。</span>
       <span data-anim="line" style="display:block">释放速度影响吸收过程，</span>
@@ -813,7 +813,7 @@
   <div class="frame" style="padding-top:3vh">
     <div class="kicker" data-anim>The Pill Must Let Go</div>
     <h2 class="h-xl" data-anim>药片必须"放手"</h2>
-    <p class="lead" style="margin-bottom:1.5vh; font-size:1.55vw" data-anim>溶出度测试是药片质量最重要的体外指标之一</p>
+    <p class="lead" style="margin-bottom:1.5vh; font-size:min(1.55vw,2.7556vh)" data-anim>溶出度测试是药片质量最重要的体外指标之一</p>
     <div class="grid-6" style="margin-top:1.5vh">
       <div class="stat-card" data-anim>
         <div class="stat-label">Dissolution Specification</div>
@@ -862,11 +862,11 @@
   <div class="frame grid-2-8-4" style="padding-top:5vh">
     <div>
       <div class="kicker" data-anim>Stability Is Trust</div>
-      <h2 class="h-xl" style="font-size:5.2vw" data-anim>药片在货架上活多久？</h2>
+      <h2 class="h-xl" style="font-size:min(5.2vw,9.2444vh)" data-anim>药片在货架上活多久？</h2>
       <p class="lead" style="margin-top:2vh; margin-bottom:2vh" data-anim>
         稳定性测试用于评估药片在储存中的变化。ICH 常用加速条件为 40°C/75%RH、最长 6 个月；这不是固定的一年换算。
       </p>
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(14px,1.15vw); line-height:1.75; opacity:.78; margin-bottom:2vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(14px,min(1.15vw,2.0444vh)); line-height:1.75; opacity:.78; margin-bottom:2vh">
         长期试验常用 25°C/60%RH（气候区 II）；目标市场、剂型和包装可要求其他条件。实际有效期须由相应稳定性数据支持。
       </p>
       <div class="callout" style="margin-top:2vh" data-anim>
@@ -890,9 +890,9 @@
     <div>药物开发 · Drug Development</div>
     <div>13 / 28</div>
   </div>
-  <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Act III</div>
-    <h1 class="h-hero" style="font-size:8.5vw" data-anim>从分子到人体</h1>
+    <h1 class="h-hero" style="font-size:min(8.5vw,15.1111vh)" data-anim>从分子到人体</h1>
     <p class="lead" style="max-width:55vw" data-anim>
       实验室里有一万个分子，最终只有一两个能成为你手里的那颗药。
     </p>
@@ -942,11 +942,11 @@
   <div class="frame grid-2-8-4" style="padding-top:5vh">
     <div>
       <div class="kicker" data-anim>Signal of Benefit</div>
-      <h2 class="h-xl" style="font-size:5.8vw" data-anim>第一次看到希望</h2>
+      <h2 class="h-xl" style="font-size:min(5.8vw,10.3111vh)" data-anim>第一次看到希望</h2>
       <p class="lead" style="margin-top:2vh" data-anim>
         二期通常纳入数百名目标患者，以评估初步疗效、安全性并探索剂量。
       </p>
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(14px,1.15vw); line-height:1.75; opacity:.78; margin-top:2vh; margin-bottom:2vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(14px,min(1.15vw,2.0444vh)); line-height:1.75; opacity:.78; margin-top:2vh; margin-bottom:2vh">
         BIO/QLS 对 2011—2020 年开发项目的分析显示，约 29% 的 II 期项目转入下一阶段；不同治疗领域的转化率差异明显。
       </p>
       <div class="callout" style="margin-top:2vh" data-anim>
@@ -972,7 +972,7 @@
   </div>
   <div class="frame">
     <div class="kicker">Proof at Scale</div>
-    <h2 class="h-xl" style="font-size:5.8vw">大规模验证</h2>
+    <h2 class="h-xl" style="font-size:min(5.8vw,10.3111vh)">大规模验证</h2>
     <div class="pipeline-section">
       <div class="pipeline" data-cols="4" style="margin-top:3vh">
         <div class="step" data-anim="step">
@@ -1012,7 +1012,7 @@
   </div>
   <div class="frame" style="display:grid; gap:3vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Benefit Must Outweigh Risk</div>
-    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:4.8vw; line-height:1.25; letter-spacing:-.01em; max-width:75vw">
+    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:min(4.8vw,8.5333vh); line-height:1.25; letter-spacing:-.01em; max-width:75vw">
       <span data-anim="line" style="display:block">先有安全性与有效性证据，</span>
       <span data-anim="line" style="display:block">再判断获益是否大于风险。</span>
       <span data-anim="line" style="display:block">获准上市之后，</span>
@@ -1034,9 +1034,9 @@
     <div>监管 · Regulation</div>
     <div>18 / 28</div>
   </div>
-  <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Most Molecules Do Not Arrive</div>
-    <h1 class="h-hero" style="font-size:6.2vw; line-height:1.2">
+    <h1 class="h-hero" style="font-size:min(6.2vw,11.0222vh); line-height:1.2">
       <span data-anim style="display:block">从候选化合物到获批新药，</span>
       <span data-anim style="display:block">每一步都要过证据关。</span>
     </h1>
@@ -1059,7 +1059,7 @@
   <div class="frame" style="padding-top:3vh">
     <div class="kicker" data-anim>R&amp;D at Scale</div>
     <h2 class="h-xl" data-anim>制药的钱去哪了</h2>
-    <p class="lead" style="margin-bottom:1.5vh; font-size:1.55vw" data-anim>高投入、高风险、长周期的创新经济学</p>
+    <p class="lead" style="margin-bottom:1.5vh; font-size:min(1.55vw,2.7556vh)" data-anim>高投入、高风险、长周期的创新经济学</p>
     <div class="grid-6" style="margin-top:1.5vh">
       <div class="stat-card" data-anim>
         <div class="stat-label">Top Pharma R&amp;D · 2024</div>
@@ -1108,11 +1108,11 @@
   <div class="frame grid-2-8-4" style="padding-top:5vh">
     <div>
       <div class="kicker" data-anim>The Full Story of a Drug</div>
-      <h2 class="h-xl" style="font-size:5.2vw" data-anim>每一片药都有自己的档案</h2>
+      <h2 class="h-xl" style="font-size:min(5.2vw,9.2444vh)" data-anim>每一片药都有自己的档案</h2>
       <p class="lead" style="margin-top:2vh" data-anim>
         NDA 是药企向 FDA 提交的完整证据包——包含临床前与临床全部研究数据。
       </p>
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(14px,1.15vw); line-height:1.75; opacity:.78; margin-top:2vh; margin-bottom:2vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(14px,min(1.15vw,2.0444vh)); line-height:1.75; opacity:.78; margin-top:2vh; margin-bottom:2vh">
         NDA 汇集临床前与临床证据、生产与质量资料、稳定性数据及拟定标签。FDA 通常审评目标为标准审评 10 个月、优先审评 6 个月；目标从受理后 60 天的 filing 日期起算。
       </p>
       <div class="callout" style="margin-top:2vh" data-anim>
@@ -1138,7 +1138,7 @@
   </div>
   <div class="frame">
     <div class="kicker">Approval Is Not the End</div>
-    <h2 class="h-xl" style="font-size:5.8vw">批准只是开始</h2>
+    <h2 class="h-xl" style="font-size:min(5.8vw,10.3111vh)">批准只是开始</h2>
     <div class="pipeline-section">
       <div class="pipeline" data-cols="4" style="margin-top:3vh">
         <div class="step" data-anim="step">
@@ -1176,9 +1176,9 @@
     <div>可及性 · Access</div>
     <div>22 / 28</div>
   </div>
-  <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Act IV</div>
-    <h1 class="h-hero" style="font-size:8.5vw" data-anim>仿制药</h1>
+    <h1 class="h-hero" style="font-size:min(8.5vw,15.1111vh)" data-anim>仿制药</h1>
     <p class="lead" style="max-width:55vw" data-anim>
       让每个人都能吃得起药，和发明新药同样重要。
     </p>
@@ -1199,7 +1199,7 @@
     <div style="display:flex; flex-direction:column; justify-content:space-between; gap:3vh">
       <div>
         <div class="kicker" data-anim>Same Effect, Proven Statistically</div>
-        <h2 class="h-xl" style="font-size:5.2vw" data-anim>和原研药一样吗？</h2>
+        <h2 class="h-xl" style="font-size:min(5.2vw,9.2444vh)" data-anim>和原研药一样吗？</h2>
         <p class="lead" style="margin-top:2vh" data-anim>
           仿制药需要证明与原研药生物等效——即在人体内达到相同的血药浓度曲线。Cmax（峰值浓度）和AUC（总暴露量）的90%置信区间必须在80%-125%之间。
         </p>
@@ -1228,11 +1228,11 @@
   <div class="frame grid-2-8-4" style="padding-top:5vh">
     <div>
       <div class="kicker" data-anim>Quality Is Manufactured</div>
-      <h2 class="h-xl" style="font-size:5.2vw" data-anim>质量无法检验出来</h2>
+      <h2 class="h-xl" style="font-size:min(5.2vw,9.2444vh)" data-anim>质量无法检验出来</h2>
       <p class="lead" style="margin-top:2vh" data-anim>
         CGMP 要求质量嵌入每一个生产步骤——从原料进厂检验到环境监控。
       </p>
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(14px,1.15vw); line-height:1.75; opacity:.78; margin-top:2vh; margin-bottom:2vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(14px,min(1.15vw,2.0444vh)); line-height:1.75; opacity:.78; margin-top:2vh; margin-bottom:2vh">
         从设备验证到批记录，从偏差调查到变更控制。FDA 不批准"好药"，只批准"按规范生产的药"。
       </p>
       <div class="callout" style="margin-top:2vh" data-anim>
@@ -1258,7 +1258,7 @@
   </div>
   <div class="frame">
     <div class="kicker">A Pill Has a Passport</div>
-    <h2 class="h-xl" style="font-size:5.2vw">一颗药片的全球之旅</h2>
+    <h2 class="h-xl" style="font-size:min(5.2vw,9.2444vh)">一颗药片的全球之旅</h2>
     <div class="pipeline-section">
       <div class="pipeline" style="margin-top:2vh">
         <div class="step" data-anim="step">
@@ -1303,7 +1303,7 @@
   </div>
   <div class="frame" style="display:grid; gap:3vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Essential Means Necessary</div>
-    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:4.6vw; line-height:1.25; letter-spacing:-.01em; max-width:78vw">
+    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:min(4.6vw,8.1778vh); line-height:1.25; letter-spacing:-.01em; max-width:78vw">
       <span data-anim="line" style="display:block">列入基本药物清单，</span>
       <span data-anim="line" style="display:block">不等于每个人都能获得。</span>
       <span data-anim="line" style="display:block">价格、供应与医疗服务，</span>
@@ -1329,7 +1329,7 @@
     <div style="display:flex; flex-direction:column; justify-content:space-between; gap:3vh">
       <div>
         <div class="kicker" data-anim>From Mass Medicine to Precise Medicine</div>
-        <h2 class="h-xl" style="font-size:5.2vw; line-height:1.2" data-anim>
+        <h2 class="h-xl" style="font-size:min(5.2vw,9.2444vh); line-height:1.2" data-anim>
           从一枚通用药片<br/>到每个人每一片
         </h2>
         <p class="lead" style="margin-top:2vh" data-anim>
@@ -1355,7 +1355,7 @@
   </div>
   <div class="frame" style="display:grid; gap:3vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Small Pill. Vast Civilization.</div>
-    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:4.6vw; line-height:1.25; letter-spacing:-.01em; max-width:75vw">
+    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:min(4.6vw,8.1778vh); line-height:1.25; letter-spacing:-.01em; max-width:75vw">
       <span data-anim="line" style="display:block">一颗药片，</span>
       <span data-anim="line" style="display:block">连接化学、工程与临床，</span>
       <span data-anim="line" style="display:block">依赖质量、监管与供应链。</span>

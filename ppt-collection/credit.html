@@ -74,18 +74,18 @@
      · 等宽（IBM Plex Mono）：kicker、meta 小标签、foot 右侧
   */
   .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;opacity:.6;margin-bottom:2.6vh}
-  .display{font-family:var(--serif-en);font-weight:700;font-size:11vw;line-height:.92;letter-spacing:-.025em}
-  .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:7.8vw;line-height:1.04;letter-spacing:-.005em}
-  .h1-zh{font-family:var(--serif-zh);font-weight:700;font-size:4.6vw;line-height:1.12;letter-spacing:-.005em}
-  .h2-zh{font-family:var(--serif-zh);font-weight:600;font-size:3.2vw;line-height:1.2;letter-spacing:0}
-  .h3-zh{font-family:var(--serif-zh);font-weight:500;font-size:1.9vw;line-height:1.35}
-  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,1.22vw);line-height:1.75;opacity:.82;letter-spacing:.01em}
-  .body-serif{font-family:var(--serif-zh);font-weight:400;font-size:max(15px,1.3vw);line-height:1.65;opacity:.88}
-  .lead{font-family:var(--serif-zh);font-weight:400;font-size:1.9vw;line-height:1.4;opacity:.85}
-  .meta{font-family:var(--mono);font-size:max(11px,.88vw);letter-spacing:.16em;text-transform:uppercase;opacity:.6}
-  .big-num{font-family:var(--serif-en);font-weight:800;font-size:10vw;line-height:.85;letter-spacing:-.03em;font-feature-settings:"tnum"}
-  .mid-num{font-family:var(--serif-en);font-weight:700;font-size:5.5vw;line-height:.88;letter-spacing:-.02em;font-feature-settings:"tnum"}
-  .ghost{font-family:var(--serif-en);font-weight:900;font-size:34vw;line-height:.8;opacity:.06;letter-spacing:-.04em;position:absolute;font-feature-settings:"tnum"}
+  .display{font-family:var(--serif-en);font-weight:700;font-size:min(11vw,19.5556vh);line-height:.92;letter-spacing:-.025em}
+  .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:min(7.8vw,13.8667vh);line-height:1.04;letter-spacing:-.005em}
+  .h1-zh{font-family:var(--serif-zh);font-weight:700;font-size:min(4.6vw,8.1778vh);line-height:1.12;letter-spacing:-.005em}
+  .h2-zh{font-family:var(--serif-zh);font-weight:600;font-size:min(3.2vw,5.6889vh);line-height:1.2;letter-spacing:0}
+  .h3-zh{font-family:var(--serif-zh);font-weight:500;font-size:min(1.9vw,3.3778vh);line-height:1.35}
+  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,min(1.22vw,2.1689vh));line-height:1.75;opacity:.82;letter-spacing:.01em}
+  .body-serif{font-family:var(--serif-zh);font-weight:400;font-size:max(15px,min(1.3vw,2.3111vh));line-height:1.65;opacity:.88}
+  .lead{font-family:var(--serif-zh);font-weight:400;font-size:min(1.9vw,3.3778vh);line-height:1.4;opacity:.85}
+  .meta{font-family:var(--mono);font-size:max(11px,min(.88vw,1.5644vh));letter-spacing:.16em;text-transform:uppercase;opacity:.6}
+  .big-num{font-family:var(--serif-en);font-weight:800;font-size:min(10vw,17.7778vh);line-height:.85;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .mid-num{font-family:var(--serif-en);font-weight:700;font-size:min(5.5vw,9.7778vh);line-height:.88;letter-spacing:-.02em;font-feature-settings:"tnum"}
+  .ghost{font-family:var(--serif-en);font-weight:900;font-size:min(34vw,60.4444vh);line-height:.8;opacity:.06;letter-spacing:-.04em;position:absolute;font-feature-settings:"tnum"}
   em{font-style:italic;font-family:var(--serif-en)}
   .en{font-family:var(--serif-en);font-style:italic;font-weight:500}
 
@@ -106,40 +106,40 @@
 
   /* ============ Stat（数字矩阵） ============ */
   .stat{display:flex;flex-direction:column;gap:1vh;align-items:flex-start}
-  .stat .n{font-family:var(--serif-en);font-weight:800;font-size:8vw;line-height:.88;letter-spacing:-.03em;font-feature-settings:"tnum"}
-  .stat .l{font-family:var(--sans-zh);font-size:max(13px,1.05vw);opacity:.7;margin-top:1vh;font-weight:400;line-height:1.5}
+  .stat .n{font-family:var(--serif-en);font-weight:800;font-size:min(8vw,14.2222vh);line-height:.88;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .stat .l{font-family:var(--sans-zh);font-size:max(13px,min(1.05vw,1.8667vh));opacity:.7;margin-top:1vh;font-weight:400;line-height:1.5}
   .stat .m{font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.5;margin-bottom:.2vh}
 
   /* ============ Callout（引用框） ============ */
-  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,1.2vw);line-height:1.55;opacity:.92}
+  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,min(1.2vw,2.1333vh));line-height:1.55;opacity:.92}
   .slide.light .callout{background:rgba(var(--ink-rgb),.05)}
   .slide.dark .callout{background:rgba(var(--paper-rgb),.06)}
   .callout .cite{display:block;margin-top:1.6vh;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6}
-  .callout .q-big{font-family:var(--serif-zh);font-weight:600;font-size:max(17px,1.6vw);line-height:1.42}
+  .callout .q-big{font-family:var(--serif-zh);font-weight:600;font-size:max(17px,min(1.6vw,2.8444vh));line-height:1.42}
 
   /* ============ Platform（平台卡） ============ */
   .plat{display:flex;flex-direction:column;justify-content:flex-end;padding:2vh 0;border-top:1px solid currentColor;border-color:rgba(127,127,127,.35)}
-  .plat .name{font-family:var(--serif-zh);font-weight:700;font-size:1.8vw;margin-bottom:.6vh}
-  .plat .nb{font-family:var(--serif-en);font-weight:700;font-size:3.2vw;letter-spacing:-.02em;line-height:1;font-feature-settings:"tnum"}
+  .plat .name{font-family:var(--serif-zh);font-weight:700;font-size:min(1.8vw,3.2000vh);margin-bottom:.6vh}
+  .plat .nb{font-family:var(--serif-en);font-weight:700;font-size:min(3.2vw,5.6889vh);letter-spacing:-.02em;line-height:1;font-feature-settings:"tnum"}
   .plat .sub{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;opacity:.55;margin-top:.6vh}
-  .plat .fill{font-family:var(--sans-zh);font-weight:300;font-size:2.4vw;opacity:.28;letter-spacing:-.01em;line-height:1}
+  .plat .fill{font-family:var(--sans-zh);font-weight:300;font-size:min(2.4vw,4.2667vh);opacity:.28;letter-spacing:-.01em;line-height:1}
 
   /* ============ Rowline（表格行） ============ */
   .rowline{display:grid;grid-template-columns:1fr 2fr 1fr;gap:2vw;padding:2.2vh 0;border-top:1px solid currentColor;align-items:center;border-color:rgba(127,127,127,.25)}
   .rowline:last-child{border-bottom:1px solid currentColor;border-color:rgba(127,127,127,.25)}
-  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:1.7vw}
-  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.2vw);opacity:.85;line-height:1.55}
+  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:min(1.7vw,3.0222vh)}
+  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,min(1.2vw,2.1333vh));opacity:.85;line-height:1.55}
   .rowline .m{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6;justify-self:end}
 
   /* ============ Pillar（支柱卡片） ============ */
   .pillar{display:flex;flex-direction:column;gap:1.8vh}
-  .pillar .ic{font-family:var(--serif-en);font-style:italic;font-size:2.6vw;opacity:.45;font-weight:400}
+  .pillar .ic{font-family:var(--serif-en);font-style:italic;font-size:min(2.6vw,4.6222vh);opacity:.45;font-weight:400}
   .pillar .ic svg{width:2.8vw;height:2.8vw;stroke-width:1.2;opacity:.7}
-  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:2.4vw;line-height:1.1}
-  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.1vw);opacity:.76;line-height:1.6}
+  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:min(2.4vw,4.2667vh);line-height:1.1}
+  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,min(1.1vw,1.9556vh));opacity:.76;line-height:1.6}
 
   /* ============ Signature / Highlight ============ */
-  .sign{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:2vw;opacity:.7}
+  .sign{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:min(2vw,3.5556vh);opacity:.7}
   .hi{position:relative;display:inline}
   .slide.dark .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--paper-rgb),.15);z-index:-1}
   .slide.light .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--ink-rgb),.08);z-index:-1}
@@ -154,7 +154,7 @@
   /* ============ 图片占位（虚线框，提示设计师位置） ============ */
   .img-slot{border:1.5px dashed rgba(127,127,127,.4);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1vh;padding:2vh 2vw;font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;opacity:.55;position:relative;aspect-ratio:16/9;width:100%;max-height:56vh;margin-inline:auto;box-sizing:border-box}
   .img-slot::before{content:"";position:absolute;inset:8px;border:1px solid currentColor;opacity:.2}
-  .img-slot .plus{font-size:2vw;font-weight:300;opacity:.5;letter-spacing:0}
+  .img-slot .plus{font-size:min(2vw,3.5556vh);font-weight:300;opacity:.5;letter-spacing:0}
   .img-slot .label{position:relative;z-index:2;text-align:center}
   .img-slot.r-4x3{aspect-ratio:4/3}
   .img-slot.r-3x2{aspect-ratio:3/2}
@@ -180,8 +180,8 @@
   .frame-img.h-26{height:26vh}
   .frame-img.h-28{height:28vh}
   .frame-cap{display:flex;justify-content:space-between;align-items:baseline;gap:1vw;margin-top:.8vh;font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.72}
-  .frame-cap .pf{font-family:var(--serif-zh);font-weight:600;font-size:max(13px,1vw);letter-spacing:.04em;text-transform:none;opacity:.94}
-  .frame-cap .nb{font-family:var(--serif-en);font-style:italic;font-size:max(15px,1.2vw);letter-spacing:.02em;text-transform:none;opacity:.88}
+  .frame-cap .pf{font-family:var(--serif-zh);font-weight:600;font-size:max(13px,min(1vw,1.7778vh));letter-spacing:.04em;text-transform:none;opacity:.94}
+  .frame-cap .nb{font-family:var(--serif-en);font-style:italic;font-size:max(15px,min(1.2vw,2.1333vh));letter-spacing:.02em;text-transform:none;opacity:.88}
   .frame-cap .idx{font-family:var(--mono);opacity:.5}
   figure.tile{display:flex;flex-direction:column;margin:0;min-width:0}
   figure.tile > .frame-img{flex:0 0 auto}
@@ -217,21 +217,21 @@
   .h-hero{
     font-family:var(--serif-zh);
     font-weight:900;
-    font-size:10vw;
+    font-size:min(10vw,17.7778vh);
     line-height:.96;
     letter-spacing:-.02em;
   }
   .h-xl{
     font-family:var(--serif-zh);
     font-weight:700;
-    font-size:6.2vw;
+    font-size:min(6.2vw,11.0222vh);
     line-height:1.08;
     letter-spacing:-.01em;
   }
   .h-sub{
     font-family:var(--serif-zh);
     font-weight:500;
-    font-size:3.1vw;
+    font-size:min(3.1vw,5.5111vh);
     line-height:1.25;
     letter-spacing:0;
     opacity:.7;
@@ -239,7 +239,7 @@
   .h-md{
     font-family:var(--serif-zh);
     font-weight:600;
-    font-size:2.3vw;
+    font-size:min(2.3vw,4.0889vh);
     line-height:1.3;
   }
   /* 英文标题专用（Playfair 衬线） */
@@ -249,7 +249,7 @@
   .lead{
     font-family:var(--serif-zh);
     font-weight:400;
-    font-size:1.75vw;
+    font-size:min(1.75vw,3.1111vh);
     line-height:1.5;
     opacity:.86;
   }
@@ -261,7 +261,7 @@
     align-items:baseline;
     flex-wrap:wrap;
     font-family:var(--mono);
-    font-size:max(12px,.92vw);
+    font-size:max(12px,min(.92vw,1.6356vh));
     letter-spacing:.16em;
     text-transform:uppercase;
     opacity:.6;
@@ -279,7 +279,7 @@
   }
   .stat-card .stat-label{
     font-family:var(--mono);
-    font-size:max(10px,.78vw);
+    font-size:max(10px,min(.78vw,1.3867vh));
     letter-spacing:.24em;
     text-transform:uppercase;
     opacity:.55;
@@ -287,7 +287,7 @@
   .stat-card .stat-nb{
     font-family:var(--serif-en);
     font-weight:800;
-    font-size:5.8vw;
+    font-size:min(5.8vw,10.3111vh);
     line-height:.9;
     letter-spacing:-.03em;
     font-feature-settings:"tnum";
@@ -304,15 +304,15 @@
   .stat-card .stat-note{
     font-family:var(--sans-zh);
     font-weight:400;
-    font-size:max(13px,1.05vw);
+    font-size:max(13px,min(1.05vw,1.8667vh));
     line-height:1.5;
     opacity:.72;
     margin-top:.6vh;
   }
   /* 当 stat-card 用于 grid-4（2x2），数字适度放大；若页面有标题+引文在上方，可内联 style 覆盖为更小值 */
-  .grid-4 .stat-card .stat-nb{font-size:5vw}
+  .grid-4 .stat-card .stat-nb{font-size:min(5vw,8.8889vh)}
   /* 当只有 3 个，字也可以稍大 */
-  .grid-3 .stat-card .stat-nb{font-size:6.8vw}
+  .grid-3 .stat-card .stat-nb{font-size:min(6.8vw,12.0889vh)}
 
   /* ---------- pipeline（流水线） ---------- */
   .pipeline-section{
@@ -327,7 +327,7 @@
   }
   .pipeline-label{
     font-family:var(--mono);
-    font-size:max(11px,.85vw);
+    font-size:max(11px,min(.85vw,1.5111vh));
     letter-spacing:.24em;
     text-transform:uppercase;
     opacity:.62;
@@ -353,20 +353,20 @@
     font-family:var(--serif-en);
     font-style:italic;
     font-weight:500;
-    font-size:1.15vw;
+    font-size:min(1.15vw,2.0444vh);
     opacity:.45;
   }
   .step-title{
     font-family:var(--sans-zh);
     font-weight:700;
-    font-size:1.55vw;
+    font-size:min(1.55vw,2.7556vh);
     letter-spacing:.01em;
     line-height:1.2;
   }
   .step-desc{
     font-family:var(--sans-zh);
     font-weight:400;
-    font-size:max(12px,.95vw);
+    font-size:max(12px,min(.95vw,1.6889vh));
     line-height:1.45;
     opacity:.72;
   }
@@ -391,7 +391,7 @@
     display:block;
     margin-top:.8vh;
     font-family:var(--mono);
-    font-size:max(10px,.8vw);
+    font-size:max(10px,min(.8vw,1.4222vh));
     letter-spacing:.22em;
     text-transform:uppercase;
     opacity:.6;
@@ -408,8 +408,8 @@
   }
 
   /* ---------- chrome & foot 补位（layouts.md 简单写法） ---------- */
-  .chrome{font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.2em;text-transform:uppercase;opacity:.62}
-  .foot{flex-shrink:0;margin-bottom:2vh;font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.18em;text-transform:uppercase;opacity:.5}
+  .chrome{font-family:var(--mono);font-size:max(11px,min(.78vw,1.3867vh));letter-spacing:.2em;text-transform:uppercase;opacity:.62}
+  .foot{flex-shrink:0;margin-bottom:2vh;font-family:var(--mono);font-size:max(11px,min(.78vw,1.3867vh));letter-spacing:.18em;text-transform:uppercase;opacity:.5}
 
   /* ============ 动效系统(CSS @keyframes,替代 Motion One 以支持 file:// 协议) ============
      所有 [data-anim] 元素默认隐藏,由 .slide.visible 触发 CSS 入场动画。
@@ -433,11 +433,11 @@
 
   /* ---------- 响应式降级 ---------- */
   @media (max-width:900px){
-    .display{font-size:16vw}
-    .display-zh{font-size:12vw}
-    .h1-zh{font-size:7vw}
-    .h-hero{font-size:14vw}
-    .h-xl{font-size:9vw}
+    .display{font-size:min(16vw,28.4444vh)}
+    .display-zh{font-size:min(12vw,21.3333vh)}
+    .h1-zh{font-size:min(7vw,12.4444vh)}
+    .h-hero{font-size:min(14vw,24.8889vh)}
+    .h-xl{font-size:min(9vw,16.0000vh)}
     .pipeline{grid-template-columns:repeat(2,1fr)}
     .grid-2-7-5,.grid-2-6-6,.grid-2-8-4{grid-template-columns:1fr}
   }
@@ -488,7 +488,7 @@
     <div>信用 · Credit</div>
     <div>01 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Trust, Scored</div>
     <h1 class="h-hero" data-anim>信用</h1>
     <h2 class="h-sub" data-anim>把信任变成数字</h2>
@@ -510,20 +510,20 @@
   </div>
   <div class="frame" style="padding-top:5vh">
     <div class="kicker" data-anim>Credit · 信用的本质</div>
-    <h2 class="h-xl" style="margin-bottom:4vh; font-size:5.2vw" data-anim>信用不是钱</h2>
+    <h2 class="h-xl" style="margin-bottom:4vh; font-size:min(5.2vw,9.2444vh)" data-anim>信用不是钱</h2>
 
     <div class="grid-2-6-6" style="gap:5vw 4vh">
       <div data-anim="left" style="padding:3vh 2vw; border-left:3px solid currentColor; opacity:.55">
         <div class="kicker" style="opacity:.9">Before · 常见误解</div>
         <h3 class="h-md" style="margin-top:2vh">信用是钱吗？</h3>
-        <div class="stat-nb" style="margin-top:3vh; font-size:max(14px,1.1vw); line-height:1.75; opacity:.78">
+        <div class="stat-nb" style="margin-top:3vh; font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.75; opacity:.78">
           很多人以为信用就是钱——<br>有信用就能借钱，没钱就代表没信用。
         </div>
       </div>
       <div data-anim="right" style="padding:3vh 2vw; border-left:3px solid currentColor">
         <div class="kicker" style="opacity:.9">After · 重新理解</div>
         <h3 class="h-md" style="margin-top:2vh">信用是未来的承诺</h3>
-        <div class="stat-nb" style="margin-top:3vh; font-size:max(14px,1.1vw); line-height:1.75">
+        <div class="stat-nb" style="margin-top:3vh; font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.75">
           信用不是钱。<br>
           信用是别人相信你未来会还钱的能力。
         </div>
@@ -545,20 +545,20 @@
     <div>第一幕 · 基础 · Foundation</div>
     <div>03 / 20</div>
   </div>
-  <div class="frame" style="padding-top:2.4vh; display:flex; flex-direction:column; justify-content:space-between; min-height:80vh">
+  <div class="frame" style="padding-top:2.4vh; display:flex; flex-direction:column; justify-content:space-between; min-height:0">
     <div style="max-width:60vw">
       <div class="kicker" data-anim>信任的演变</div>
-      <h2 class="h-xl" style="margin-top:1vh; margin-bottom:2vh; font-size:5.2vw" data-anim>从熟人信任，到系统信任</h2>
+      <h2 class="h-xl" style="margin-top:1vh; margin-bottom:2vh; font-size:min(5.2vw,9.2444vh)" data-anim>从熟人信任，到系统信任</h2>
 
       <p class="lead" style="margin-bottom:2.4vh" data-anim>
         过去，信用来自熟人、声誉和关系。
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
         今天，信用来自账户、记录、合同、算法与监管。一个人的信用不再取决于别人是否认识他，而是取决于系统能否验证他。
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
         这种转变让信用从"他认识你吗"变成了"系统能验证你吗"。获准纳入的还款与账户记录，会成为信用评估的一部分；支付记录并不自动等于征信记录。
       </p>
 
@@ -568,8 +568,8 @@
     </div>
     <div style="text-align:center; width:100%; padding-bottom:2vh" data-anim>
       <div class="stat-card" style="display:inline-block; text-align:center">
-        <div class="stat-label" style="font-size:1.8vw">Trust Became</div>
-        <div class="stat-nb" style="font-size:5.2vw">Infrastructure</div>
+        <div class="stat-label" style="font-size:min(1.8vw,3.2000vh)">Trust Became</div>
+        <div class="stat-nb" style="font-size:min(5.2vw,9.2444vh)">Infrastructure</div>
         <div class="stat-note">信任变成了基础设施</div>
       </div>
     </div>
@@ -590,9 +590,9 @@
     <div style="display:flex; flex-direction:column; justify-content:space-between; gap:3vh">
       <div>
         <div class="kicker" data-anim>Account · 账户</div>
-        <h2 class="h-xl" style="margin-top:1vh; margin-bottom:3vh; font-size:5.2vw" data-anim>账户打开入口</h2>
+        <h2 class="h-xl" style="margin-top:1vh; margin-bottom:3vh; font-size:min(5.2vw,9.2444vh)" data-anim>账户打开入口</h2>
 
-        <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+        <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
           2021 年，全球 76% 成年人拥有银行、金融机构或移动货币账户；2011 年这一比例为 51%。仍有约 14 亿成年人没有账户。
         </p>
       </div>
@@ -609,7 +609,7 @@
       </div>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">Unbanked</div>
-        <div class="stat-nb" style="font-size:2.4vw">14亿</div>
+        <div class="stat-nb" style="font-size:min(2.4vw,4.2667vh)">14亿</div>
         <div class="stat-note">仍无账户</div>
       </div>
     </div>
@@ -629,29 +629,29 @@
   <div class="frame grid-2-8-4" style="padding-top:5vh">
     <div>
       <div class="kicker" data-anim>Payment · 支付</div>
-      <h2 class="h-xl" style="margin-top:1vh; margin-bottom:3vh; font-size:5.2vw" data-anim>支付：行为开始留下痕迹</h2>
+      <h2 class="h-xl" style="margin-top:1vh; margin-bottom:3vh; font-size:min(5.2vw,9.2444vh)" data-anim>支付：行为开始留下痕迹</h2>
 
       <p class="lead" style="margin-bottom:3vh" data-anim>
         每一次支付，都是一次微小记录。
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
         世界银行数据显示，全球约三分之二成年人已经进行或接收过数字支付；发展中经济体这一比例从 2014 年的 35% 升至 2021 年的 57%。
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78">
         金融社会正是由这些记录，慢慢拼出一个人的经济画像。
       </p>
     </div>
     <div style="display:flex; flex-direction:column; justify-content:center; gap:2.4vh" data-anim>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">Digital Payments</div>
-        <div class="stat-nb" style="font-size:3.2vw">35% → 57%</div>
+        <div class="stat-nb" style="font-size:min(3.2vw,5.6889vh)">35% → 57%</div>
         <div class="stat-note">发展中经济体 2014→2021</div>
       </div>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">Payments Become</div>
-        <div class="stat-nb" style="font-size:2.6vw">Memory</div>
+        <div class="stat-nb" style="font-size:min(2.6vw,4.6222vh)">Memory</div>
         <div class="stat-note">支付即记忆</div>
       </div>
     </div>
@@ -668,9 +668,9 @@
     <div>第一幕 · 基础 · Foundation</div>
     <div>06 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Credit Report · 信用报告</div>
-    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:5.8vw; line-height:1.2; letter-spacing:-.01em; max-width:72vw">
+    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:min(5.8vw,10.3111vh); line-height:1.2; letter-spacing:-.01em; max-width:72vw">
       <span data-anim="line" style="display:block">"A Memory of Promises"</span>
     </blockquote>
     <p class="lead" style="max-width:55vw; opacity:.65" data-anim>
@@ -696,9 +696,9 @@
     <div style="display:flex; flex-direction:column; justify-content:space-between; gap:3vh">
       <div>
         <div class="kicker" data-anim>Credit Score · 信用评分</div>
-        <h2 class="h-xl" style="margin-top:1vh; margin-bottom:3vh; font-size:5.2vw" data-anim>信用被压成分数</h2>
+        <h2 class="h-xl" style="margin-top:1vh; margin-bottom:3vh; font-size:min(5.2vw,9.2444vh)" data-anim>信用被压成分数</h2>
 
-        <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+        <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
           FICO 基础分通常在 300—850 之间。2025 年 4 月，美国平均 FICO 分数为 715，较上年同期下降 2 分。
         </p>
       </div>
@@ -709,12 +709,12 @@
     <div style="display:flex; flex-direction:column; justify-content:center; gap:2.4vh" data-anim>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">FICO Score Range</div>
-        <div class="stat-nb" style="font-size:3.6vw">300—850</div>
+        <div class="stat-nb" style="font-size:min(3.6vw,6.4000vh)">300—850</div>
         <div class="stat-note">基础分区间</div>
       </div>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">US Average 2025</div>
-        <div class="stat-nb" style="font-size:3vw">715</div>
+        <div class="stat-nb" style="font-size:min(3vw,5.3333vh)">715</div>
         <div class="stat-note">2025 年 4 月 · 同比下降 2 分</div>
       </div>
     </div>
@@ -734,13 +734,13 @@
   <div class="frame grid-2-6-6" style="padding-top:2.4vh">
     <div>
       <div class="kicker" data-anim>How It's Calculated</div>
-      <h2 class="h-xl" style="margin-top:0.8vh; margin-bottom:2vh; font-size:5.2vw" data-anim>分数如何计算</h2>
+      <h2 class="h-xl" style="margin-top:0.8vh; margin-bottom:2vh; font-size:min(5.2vw,9.2444vh)" data-anim>分数如何计算</h2>
 
       <p class="lead" style="margin-bottom:2vh" data-anim>
         FICO 评分并不神秘。
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.65; opacity:.78; margin-bottom:2vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.65; opacity:.78; margin-bottom:2vh">
         核心因素：你是否准时还，欠了多少，记录是否足够长。
       </p>
 
@@ -752,27 +752,27 @@
     <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:1.6vh; align-content:start" data-anim>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">还款历史</div>
-        <div class="stat-nb" style="font-size:2.8vw">35%</div>
+        <div class="stat-nb" style="font-size:min(2.8vw,4.9778vh)">35%</div>
         <div class="stat-note">最重要的因素</div>
       </div>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">债务金额</div>
-        <div class="stat-nb" style="font-size:2.8vw">30%</div>
+        <div class="stat-nb" style="font-size:min(2.8vw,4.9778vh)">30%</div>
         <div class="stat-note">利用率</div>
       </div>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">信用历史长度</div>
-        <div class="stat-nb" style="font-size:2.4vw">15%</div>
+        <div class="stat-nb" style="font-size:min(2.4vw,4.2667vh)">15%</div>
         <div class="stat-note">越长越好</div>
       </div>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">新信用</div>
-        <div class="stat-nb" style="font-size:2.4vw">10%</div>
+        <div class="stat-nb" style="font-size:min(2.4vw,4.2667vh)">10%</div>
         <div class="stat-note">近期查询</div>
       </div>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">信用组合</div>
-        <div class="stat-nb" style="font-size:2.4vw">10%</div>
+        <div class="stat-nb" style="font-size:min(2.4vw,4.2667vh)">10%</div>
         <div class="stat-note">多样性</div>
       </div>
     </div>
@@ -789,9 +789,9 @@
     <div>第二幕 · 系统 · System</div>
     <div>09 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Risk Pricing · 风险定价</div>
-    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:5.8vw; line-height:1.2; letter-spacing:-.01em; max-width:72vw">
+    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:min(5.8vw,10.3111vh); line-height:1.2; letter-spacing:-.01em; max-width:72vw">
       <span data-anim="line" style="display:block">"Risk Has a Price"</span>
     </blockquote>
     <p class="lead" style="max-width:55vw; opacity:.65" data-anim>
@@ -813,16 +813,16 @@
     <div>第二幕 · 系统 · System</div>
     <div>10 / 20</div>
   </div>
-  <div class="frame" style="padding-top:2.4vh; display:flex; flex-direction:column; justify-content:space-between; min-height:80vh">
+  <div class="frame" style="padding-top:2.4vh; display:flex; flex-direction:column; justify-content:space-between; min-height:0">
     <div style="max-width:60vw">
       <div class="kicker" data-anim>Credit Card · 信用卡</div>
-      <h2 class="h-xl" style="margin-top:0.8vh; margin-bottom:2vh; font-size:5.2vw" data-anim>信用卡是循环信贷</h2>
+      <h2 class="h-xl" style="margin-top:0.8vh; margin-bottom:2vh; font-size:min(5.2vw,9.2444vh)" data-anim>信用卡是循环信贷</h2>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
         CFPB 2025 年报告称，截至 2023 年底，约 2.08 亿美国成年人名下有信用卡账户，是日常消费、周转与支付的重要工具。
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
         持卡人先消费、后还款。购买交易是否免息取决于条款及是否按时全额还款；余额结转或预借现金可能计息。这种模式让信用卡成为许多美国人建立信用记录的第一站——按时还款会被报告给信用机构，成为信用评分的重要数据源。
       </p>
 
@@ -833,7 +833,7 @@
     <div style="text-align:center; width:100%; padding-bottom:2vh" data-anim>
       <div class="stat-card" style="display:inline-block; text-align:center">
         <div class="stat-label">Credit Card Users</div>
-        <div class="stat-nb" style="font-size:4.2vw">208M</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">208M</div>
         <div class="stat-note">2023 年底持有账户 · CFPB 2025 报告</div>
       </div>
     </div>
@@ -852,7 +852,7 @@
   </div>
   <div class="frame" style="padding-top:5vh">
     <div class="kicker" data-anim>Loan · 贷款</div>
-    <h2 class="h-xl" style="margin-top:1vh; margin-bottom:2vh; font-size:5.2vw" data-anim>贷款：把未来收入带到今天</h2>
+    <h2 class="h-xl" style="margin-top:1vh; margin-bottom:2vh; font-size:min(5.2vw,9.2444vh)" data-anim>贷款：把未来收入带到今天</h2>
 
     <p class="lead" style="margin-bottom:2vh; max-width:52vw" data-anim>
       房贷、车贷、学生贷款、企业贷款，都在做同一件事：把未来的偿还能力，转换为今天的购买力。
@@ -861,22 +861,22 @@
     <div class="grid-4" style="margin-top:3vh">
       <div class="stat-card" data-anim>
         <div class="stat-label">Mortgage · 房贷</div>
-        <div class="stat-nb" style="font-size:2.4vw">住房</div>
+        <div class="stat-nb" style="font-size:min(2.4vw,4.2667vh)">住房</div>
         <div class="stat-note">最大的一笔个人贷款</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Auto · 车贷</div>
-        <div class="stat-nb" style="font-size:2.4vw">交通</div>
+        <div class="stat-nb" style="font-size:min(2.4vw,4.2667vh)">交通</div>
         <div class="stat-note">抵押贷款</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Student · 学生贷</div>
-        <div class="stat-nb" style="font-size:2.4vw">教育</div>
+        <div class="stat-nb" style="font-size:min(2.4vw,4.2667vh)">教育</div>
         <div class="stat-note">人力资本投资</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Business · 企业贷</div>
-        <div class="stat-nb" style="font-size:2.4vw">创业</div>
+        <div class="stat-nb" style="font-size:min(2.4vw,4.2667vh)">创业</div>
         <div class="stat-note">商业扩展</div>
       </div>
     </div>
@@ -897,9 +897,9 @@
     <div style="display:flex; flex-direction:column; justify-content:space-between; gap:3vh">
       <div>
         <div class="kicker" data-anim>Debt · 债务</div>
-        <h2 class="h-xl" style="margin-top:1vh; margin-bottom:3vh; font-size:5.2vw" data-anim>债务：信用的另一面</h2>
+        <h2 class="h-xl" style="margin-top:1vh; margin-bottom:3vh; font-size:min(5.2vw,9.2444vh)" data-anim>债务：信用的另一面</h2>
 
-        <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+        <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
           IMF 2024 全球债务监测显示，2023 年全球家庭债务约为 GDP 的 54%，非金融企业债务约为 GDP 的 90%。
         </p>
       </div>
@@ -911,12 +911,12 @@
     <div style="display:flex; flex-direction:column; justify-content:center; gap:2.4vh" data-anim>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">Household Debt</div>
-        <div class="stat-nb" style="font-size:3vw">54%</div>
+        <div class="stat-nb" style="font-size:min(3vw,5.3333vh)">54%</div>
         <div class="stat-note">家庭债务 / GDP</div>
       </div>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">Corporate Debt</div>
-        <div class="stat-nb" style="font-size:3vw">90%</div>
+        <div class="stat-nb" style="font-size:min(3vw,5.3333vh)">90%</div>
         <div class="stat-note">企业债务 / GDP</div>
       </div>
     </div>
@@ -933,20 +933,20 @@
     <div>第二幕 · 系统 · System</div>
     <div>13 / 20</div>
   </div>
-  <div class="frame" style="padding-top:2.4vh; display:flex; flex-direction:column; justify-content:space-between; min-height:80vh">
+  <div class="frame" style="padding-top:2.4vh; display:flex; flex-direction:column; justify-content:space-between; min-height:0">
     <div style="max-width:60vw">
       <div class="kicker" data-anim>Rejection · 拒绝</div>
-      <h2 class="h-xl" style="margin-top:0.8vh; margin-bottom:2vh; font-size:5.2vw" data-anim>拒绝：系统也会说"不"</h2>
+      <h2 class="h-xl" style="margin-top:0.8vh; margin-bottom:2vh; font-size:min(5.2vw,9.2444vh)" data-anim>拒绝：系统也会说"不"</h2>
 
       <p class="lead" style="margin-bottom:3vh" data-anim>
         信用不是人人平等的入口。
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
         纽约联储数据显示，2026 年 6 月受访申请人过去 12 个月至少一次被拒绝的比例为 16.1%。收入、历史、数据、身份与经济周期，都会影响一个人是否被系统接纳。
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
         被拒绝不仅意味着贷不到款——它还意味着无法积累信用记录，形成"没有记录→被拒绝→仍然没有记录"的恶性循环。系统在说"不"的同时，也在加深一个人与信用体系之间的鸿沟。
       </p>
 
@@ -958,7 +958,7 @@
     <div style="text-align:center; width:100%; padding-bottom:2vh" data-anim>
       <div class="stat-card" style="display:inline-block; text-align:center">
         <div class="stat-label">Credit Application Rejection</div>
-        <div class="stat-nb" style="font-size:4.2vw">16.1%</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">16.1%</div>
         <div class="stat-note">2026 年 6 月 · 受访申请人占比</div>
       </div>
     </div>
@@ -975,9 +975,9 @@
     <div>第二幕 · 系统 · System</div>
     <div>14 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Credit ≠ Morality</div>
-    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:5.8vw; line-height:1.2; letter-spacing:-.01em; max-width:72vw">
+    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:min(5.8vw,10.3111vh); line-height:1.2; letter-spacing:-.01em; max-width:72vw">
       <span data-anim="line" style="display:block">"Not Morality.</span>
       <span data-anim="line" style="display:block">Probability."</span>
     </blockquote>
@@ -997,20 +997,20 @@
     <div>第三幕 · 未来 · Future</div>
     <div>15 / 20</div>
   </div>
-  <div class="frame" style="padding-top:2.4vh; display:flex; flex-direction:column; justify-content:space-between; min-height:80vh">
+  <div class="frame" style="padding-top:2.4vh; display:flex; flex-direction:column; justify-content:space-between; min-height:0">
     <div style="max-width:60vw">
       <div class="kicker" data-anim>Data Privacy · 数据</div>
-      <h2 class="h-xl" style="margin-top:0.8vh; margin-bottom:2vh; font-size:5.2vw" data-anim>数据越多，越要谨慎</h2>
+      <h2 class="h-xl" style="margin-top:0.8vh; margin-bottom:2vh; font-size:min(5.2vw,9.2444vh)" data-anim>数据越多，越要谨慎</h2>
 
       <p class="lead" style="margin-bottom:3vh" data-anim>
         当人生被数字化，错误就不再只是错误。
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
         CFPB 提醒，信用报告和评分会影响个人财务，消费者应理解报告内容，并纠正错误信息。错误可能变成更高的利率、更低的额度，甚至一次被拒绝的机会。
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
         FTC 的研究曾发现，约五分之一的消费者信用报告中至少有一个错误。该历史研究发表于 2013 年；发现报告错误，不等于每次错误都会改变利率或审批结果。
       </p>
 
@@ -1022,7 +1022,7 @@
     <div style="text-align:center; width:100%; padding-bottom:2vh" data-anim>
       <div class="stat-card" style="display:inline-block; text-align:center">
         <div class="stat-label">Data Needs</div>
-        <div class="stat-nb" style="font-size:3.6vw">Accountability</div>
+        <div class="stat-nb" style="font-size:min(3.6vw,6.4000vh)">Accountability</div>
         <div class="stat-note">数据需要问责</div>
       </div>
     </div>
@@ -1039,16 +1039,16 @@
     <div>第三幕 · 未来 · Future</div>
     <div>16 / 20</div>
   </div>
-  <div class="frame" style="padding-top:0; display:flex; flex-direction:column; gap:1.6vh; min-height:80vh">
+  <div class="frame" style="padding-top:0; display:flex; flex-direction:column; gap:1.6vh; min-height:0">
     <div style="flex:1">
       <div class="kicker" data-anim>Digital Payment · 数字支付</div>
-      <h2 class="h-xl" style="margin-top:0.4vh; margin-bottom:1.6vh; font-size:5.2vw" data-anim>数字支付：信用的燃料变多了</h2>
+      <h2 class="h-xl" style="margin-top:0.4vh; margin-bottom:1.6vh; font-size:min(5.2vw,9.2444vh)" data-anim>数字支付：信用的燃料变多了</h2>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(15px,1.22vw); line-height:1.65; opacity:.78; margin-bottom:1.6vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(15px,min(1.22vw,2.1689vh)); line-height:1.65; opacity:.78; margin-bottom:1.6vh">
         BIS 2024 Red Book 统计显示，无现金支付方式继续增长。支付越数字化，金融系统越能捕捉行为，也越需要保护隐私。
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(15px,1.22vw); line-height:1.65; opacity:.78; margin-bottom:1.6vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(15px,min(1.22vw,2.1689vh)); line-height:1.65; opacity:.78; margin-bottom:1.6vh">
         在中国、印度、肯尼亚等市场，移动支付数据已被用于评估个人信用——交易频率、金额稳定性、消费类型，都能成为替代数据的信号。支付行为不再只是交易，它本身就是信用信息。
       </p>
 
@@ -1060,7 +1060,7 @@
     <div style="text-align:center; width:100%; padding-bottom:1vh" data-anim>
       <div class="stat-card" style="display:inline-block; text-align:center">
         <div class="stat-label">Cashless</div>
-        <div class="stat-nb" style="font-size:3.6vw">Signals</div>
+        <div class="stat-nb" style="font-size:min(3.6vw,6.4000vh)">Signals</div>
         <div class="stat-note">无现金创造信用信号</div>
       </div>
     </div>
@@ -1077,16 +1077,16 @@
     <div>第三幕 · 未来 · Future</div>
     <div>17 / 20</div>
   </div>
-  <div class="frame" style="padding-top:2.4vh; display:flex; flex-direction:column; justify-content:space-between; min-height:80vh">
+  <div class="frame" style="padding-top:2.4vh; display:flex; flex-direction:column; justify-content:space-between; min-height:0">
     <div style="max-width:60vw">
       <div class="kicker" data-anim>Financial Inclusion · 金融包容</div>
-      <h2 class="h-xl" style="margin-top:0.8vh; margin-bottom:2vh; font-size:5.2vw" data-anim>包容也需要保护</h2>
+      <h2 class="h-xl" style="margin-top:0.8vh; margin-bottom:2vh; font-size:min(5.2vw,9.2444vh)" data-anim>包容也需要保护</h2>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
         世界银行认为，数字金融服务可以降低成本、扩大可及性，但也带来消费者保护和网络安全风险。
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
         金融包容的真正挑战在于平衡：放松准入可能让弱势群体陷入过度负债，过度保护又可能把他们挡在门外。好的信用系统，必须同时做好"开门"和"守门"两件事。
       </p>
 
@@ -1097,7 +1097,7 @@
     <div style="text-align:center; width:100%; padding-bottom:2vh" data-anim>
       <div class="stat-card" style="display:inline-block; text-align:center">
         <div class="stat-label">Inclusion Needs</div>
-        <div class="stat-nb" style="font-size:3.6vw">Protection</div>
+        <div class="stat-nb" style="font-size:min(3.6vw,6.4000vh)">Protection</div>
         <div class="stat-note">包容需要保护</div>
       </div>
     </div>
@@ -1116,7 +1116,7 @@
   </div>
   <div class="frame" style="padding-top:5vh">
     <div class="kicker" data-anim>AI Credit · 算法信用</div>
-    <h2 class="h-xl" style="margin-top:1vh; margin-bottom:2vh; font-size:5.2vw" data-anim>算法信用：更快，也更冷</h2>
+    <h2 class="h-xl" style="margin-top:1vh; margin-bottom:2vh; font-size:min(5.2vw,9.2444vh)" data-anim>算法信用：更快，也更冷</h2>
 
     <p class="lead" style="margin-bottom:2vh; max-width:52vw" data-anim>
       AI、替代数据、开放银行正在改变信用评估。问题不再只是系统能不能判断，而是它如何判断、是否公平、能不能解释。
@@ -1125,22 +1125,22 @@
     <div class="grid-4" style="margin-top:3vh">
       <div class="stat-card" data-anim>
         <div class="stat-label">AI 评估</div>
-        <div class="stat-nb" style="font-size:2.2vw">机器学习</div>
+        <div class="stat-nb" style="font-size:min(2.2vw,3.9111vh)">机器学习</div>
         <div class="stat-note">更快决策</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">替代数据</div>
-        <div class="stat-nb" style="font-size:2.2vw">租金·水电</div>
+        <div class="stat-nb" style="font-size:min(2.2vw,3.9111vh)">租金·水电</div>
         <div class="stat-note">扩大覆盖</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">开放银行</div>
-        <div class="stat-nb" style="font-size:2.2vw">交易数据</div>
+        <div class="stat-nb" style="font-size:min(2.2vw,3.9111vh)">交易数据</div>
         <div class="stat-note">更动态</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">公平与解释</div>
-        <div class="stat-nb" style="font-size:2.2vw">透明度</div>
+        <div class="stat-nb" style="font-size:min(2.2vw,3.9111vh)">透明度</div>
         <div class="stat-note">核心挑战</div>
       </div>
     </div>
@@ -1157,9 +1157,9 @@
     <div>第三幕 · 未来 · Future</div>
     <div>19 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>The Future · 未来</div>
-    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:5.8vw; line-height:1.2; letter-spacing:-.01em; max-width:72vw">
+    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:min(5.8vw,10.3111vh); line-height:1.2; letter-spacing:-.01em; max-width:72vw">
       <span data-anim="line" style="display:block">"Identity Becomes Financial"</span>
     </blockquote>
     <p class="lead" style="max-width:55vw; opacity:.65" data-anim>
@@ -1181,9 +1181,9 @@
     <div>信用 · Credit</div>
     <div>20 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Trust Must Be Designed</div>
-    <h1 class="h-hero" style="font-size:7vw; line-height:1.15">
+    <h1 class="h-hero" style="font-size:min(7vw,12.4444vh); line-height:1.15">
       <span data-anim style="display:block">信用，是现代社会</span>
       <span data-anim style="display:block">把信任制度化的方式。</span>
     </h1>

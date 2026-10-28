@@ -74,18 +74,18 @@
      · 等宽（IBM Plex Mono）：kicker、meta 小标签、foot 右侧
   */
   .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;opacity:.6;margin-bottom:2.6vh}
-  .display{font-family:var(--serif-en);font-weight:700;font-size:11vw;line-height:.92;letter-spacing:-.025em}
-  .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:7.8vw;line-height:1.04;letter-spacing:-.005em}
-  .h1-zh{font-family:var(--serif-zh);font-weight:700;font-size:4.6vw;line-height:1.12;letter-spacing:-.005em}
-  .h2-zh{font-family:var(--serif-zh);font-weight:600;font-size:3.2vw;line-height:1.2;letter-spacing:0}
-  .h3-zh{font-family:var(--serif-zh);font-weight:500;font-size:1.9vw;line-height:1.35}
-  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,1.22vw);line-height:1.75;opacity:.82;letter-spacing:.01em}
-  .body-serif{font-family:var(--serif-zh);font-weight:400;font-size:max(15px,1.3vw);line-height:1.65;opacity:.88}
-  .lead{font-family:var(--serif-zh);font-weight:400;font-size:1.9vw;line-height:1.4;opacity:.85}
-  .meta{font-family:var(--mono);font-size:max(11px,.88vw);letter-spacing:.16em;text-transform:uppercase;opacity:.6}
-  .big-num{font-family:var(--serif-en);font-weight:800;font-size:10vw;line-height:.85;letter-spacing:-.03em;font-feature-settings:"tnum"}
-  .mid-num{font-family:var(--serif-en);font-weight:700;font-size:5.5vw;line-height:.88;letter-spacing:-.02em;font-feature-settings:"tnum"}
-  .ghost{font-family:var(--serif-en);font-weight:900;font-size:34vw;line-height:.8;opacity:.06;letter-spacing:-.04em;position:absolute;font-feature-settings:"tnum"}
+  .display{font-family:var(--serif-en);font-weight:700;font-size:min(11vw,19.5556vh);line-height:.92;letter-spacing:-.025em}
+  .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:min(7.8vw,13.8667vh);line-height:1.04;letter-spacing:-.005em}
+  .h1-zh{font-family:var(--serif-zh);font-weight:700;font-size:min(4.6vw,8.1778vh);line-height:1.12;letter-spacing:-.005em}
+  .h2-zh{font-family:var(--serif-zh);font-weight:600;font-size:min(3.2vw,5.6889vh);line-height:1.2;letter-spacing:0}
+  .h3-zh{font-family:var(--serif-zh);font-weight:500;font-size:min(1.9vw,3.3778vh);line-height:1.35}
+  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,min(1.22vw,2.1689vh));line-height:1.75;opacity:.82;letter-spacing:.01em}
+  .body-serif{font-family:var(--serif-zh);font-weight:400;font-size:max(15px,min(1.3vw,2.3111vh));line-height:1.65;opacity:.88}
+  .lead{font-family:var(--serif-zh);font-weight:400;font-size:min(1.9vw,3.3778vh);line-height:1.4;opacity:.85}
+  .meta{font-family:var(--mono);font-size:max(11px,min(.88vw,1.5644vh));letter-spacing:.16em;text-transform:uppercase;opacity:.6}
+  .big-num{font-family:var(--serif-en);font-weight:800;font-size:min(10vw,17.7778vh);line-height:.85;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .mid-num{font-family:var(--serif-en);font-weight:700;font-size:min(5.5vw,9.7778vh);line-height:.88;letter-spacing:-.02em;font-feature-settings:"tnum"}
+  .ghost{font-family:var(--serif-en);font-weight:900;font-size:min(34vw,60.4444vh);line-height:.8;opacity:.06;letter-spacing:-.04em;position:absolute;font-feature-settings:"tnum"}
   em{font-style:italic;font-family:var(--serif-en)}
   .en{font-family:var(--serif-en);font-style:italic;font-weight:500}
 
@@ -106,40 +106,40 @@
 
   /* ============ Stat（数字矩阵） ============ */
   .stat{display:flex;flex-direction:column;gap:1vh;align-items:flex-start}
-  .stat .n{font-family:var(--serif-en);font-weight:800;font-size:8vw;line-height:.88;letter-spacing:-.03em;font-feature-settings:"tnum"}
-  .stat .l{font-family:var(--sans-zh);font-size:max(13px,1.05vw);opacity:.7;margin-top:1vh;font-weight:400;line-height:1.5}
+  .stat .n{font-family:var(--serif-en);font-weight:800;font-size:min(8vw,14.2222vh);line-height:.88;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .stat .l{font-family:var(--sans-zh);font-size:max(13px,min(1.05vw,1.8667vh));opacity:.7;margin-top:1vh;font-weight:400;line-height:1.5}
   .stat .m{font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.5;margin-bottom:.2vh}
 
   /* ============ Callout（引用框） ============ */
-  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,1.2vw);line-height:1.55;opacity:.92}
+  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,min(1.2vw,2.1333vh));line-height:1.55;opacity:.92}
   .slide.light .callout{background:rgba(var(--ink-rgb),.05)}
   .slide.dark .callout{background:rgba(var(--paper-rgb),.06)}
   .callout .cite{display:block;margin-top:1.6vh;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6}
-  .callout .q-big{font-family:var(--serif-zh);font-weight:600;font-size:max(17px,1.6vw);line-height:1.42}
+  .callout .q-big{font-family:var(--serif-zh);font-weight:600;font-size:max(17px,min(1.6vw,2.8444vh));line-height:1.42}
 
   /* ============ Platform（平台卡） ============ */
   .plat{display:flex;flex-direction:column;justify-content:flex-end;padding:2vh 0;border-top:1px solid currentColor;border-color:rgba(127,127,127,.35)}
-  .plat .name{font-family:var(--serif-zh);font-weight:700;font-size:1.8vw;margin-bottom:.6vh}
-  .plat .nb{font-family:var(--serif-en);font-weight:700;font-size:3.2vw;letter-spacing:-.02em;line-height:1;font-feature-settings:"tnum"}
+  .plat .name{font-family:var(--serif-zh);font-weight:700;font-size:min(1.8vw,3.2000vh);margin-bottom:.6vh}
+  .plat .nb{font-family:var(--serif-en);font-weight:700;font-size:min(3.2vw,5.6889vh);letter-spacing:-.02em;line-height:1;font-feature-settings:"tnum"}
   .plat .sub{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;opacity:.55;margin-top:.6vh}
-  .plat .fill{font-family:var(--sans-zh);font-weight:300;font-size:2.4vw;opacity:.28;letter-spacing:-.01em;line-height:1}
+  .plat .fill{font-family:var(--sans-zh);font-weight:300;font-size:min(2.4vw,4.2667vh);opacity:.28;letter-spacing:-.01em;line-height:1}
 
   /* ============ Rowline（表格行） ============ */
   .rowline{display:grid;grid-template-columns:1fr 2fr 1fr;gap:2vw;padding:2.2vh 0;border-top:1px solid currentColor;align-items:center;border-color:rgba(127,127,127,.25)}
   .rowline:last-child{border-bottom:1px solid currentColor;border-color:rgba(127,127,127,.25)}
-  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:1.7vw}
-  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.2vw);opacity:.85;line-height:1.55}
+  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:min(1.7vw,3.0222vh)}
+  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,min(1.2vw,2.1333vh));opacity:.85;line-height:1.55}
   .rowline .m{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6;justify-self:end}
 
   /* ============ Pillar（支柱卡片） ============ */
   .pillar{display:flex;flex-direction:column;gap:1.8vh}
-  .pillar .ic{font-family:var(--serif-en);font-style:italic;font-size:2.6vw;opacity:.45;font-weight:400}
+  .pillar .ic{font-family:var(--serif-en);font-style:italic;font-size:min(2.6vw,4.6222vh);opacity:.45;font-weight:400}
   .pillar .ic svg{width:2.8vw;height:2.8vw;stroke-width:1.2;opacity:.7}
-  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:2.4vw;line-height:1.1}
-  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.1vw);opacity:.76;line-height:1.6}
+  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:min(2.4vw,4.2667vh);line-height:1.1}
+  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,min(1.1vw,1.9556vh));opacity:.76;line-height:1.6}
 
   /* ============ Signature / Highlight ============ */
-  .sign{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:2vw;opacity:.7}
+  .sign{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:min(2vw,3.5556vh);opacity:.7}
   .hi{position:relative;display:inline}
   .slide.dark .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--paper-rgb),.15);z-index:-1}
   .slide.light .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--ink-rgb),.08);z-index:-1}
@@ -154,7 +154,7 @@
   /* ============ 图片占位（虚线框，提示设计师位置） ============ */
   .img-slot{border:1.5px dashed rgba(127,127,127,.4);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1vh;padding:2vh 2vw;font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;opacity:.55;position:relative;aspect-ratio:16/9;width:100%;max-height:56vh;margin-inline:auto;box-sizing:border-box}
   .img-slot::before{content:"";position:absolute;inset:8px;border:1px solid currentColor;opacity:.2}
-  .img-slot .plus{font-size:2vw;font-weight:300;opacity:.5;letter-spacing:0}
+  .img-slot .plus{font-size:min(2vw,3.5556vh);font-weight:300;opacity:.5;letter-spacing:0}
   .img-slot .label{position:relative;z-index:2;text-align:center}
   .img-slot.r-4x3{aspect-ratio:4/3}
   .img-slot.r-3x2{aspect-ratio:3/2}
@@ -180,8 +180,8 @@
   .frame-img.h-26{height:26vh}
   .frame-img.h-28{height:28vh}
   .frame-cap{display:flex;justify-content:space-between;align-items:baseline;gap:1vw;margin-top:.8vh;font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.72}
-  .frame-cap .pf{font-family:var(--serif-zh);font-weight:600;font-size:max(13px,1vw);letter-spacing:.04em;text-transform:none;opacity:.94}
-  .frame-cap .nb{font-family:var(--serif-en);font-style:italic;font-size:max(15px,1.2vw);letter-spacing:.02em;text-transform:none;opacity:.88}
+  .frame-cap .pf{font-family:var(--serif-zh);font-weight:600;font-size:max(13px,min(1vw,1.7778vh));letter-spacing:.04em;text-transform:none;opacity:.94}
+  .frame-cap .nb{font-family:var(--serif-en);font-style:italic;font-size:max(15px,min(1.2vw,2.1333vh));letter-spacing:.02em;text-transform:none;opacity:.88}
   .frame-cap .idx{font-family:var(--mono);opacity:.5}
   figure.tile{display:flex;flex-direction:column;margin:0;min-width:0}
   figure.tile > .frame-img{flex:0 0 auto}
@@ -217,21 +217,21 @@
   .h-hero{
     font-family:var(--serif-zh);
     font-weight:900;
-    font-size:10vw;
+    font-size:min(10vw,17.7778vh);
     line-height:.96;
     letter-spacing:-.02em;
   }
   .h-xl{
     font-family:var(--serif-zh);
     font-weight:700;
-    font-size:6.2vw;
+    font-size:min(6.2vw,11.0222vh);
     line-height:1.08;
     letter-spacing:-.01em;
   }
   .h-sub{
     font-family:var(--serif-zh);
     font-weight:500;
-    font-size:3.1vw;
+    font-size:min(3.1vw,5.5111vh);
     line-height:1.25;
     letter-spacing:0;
     opacity:.7;
@@ -239,7 +239,7 @@
   .h-md{
     font-family:var(--serif-zh);
     font-weight:600;
-    font-size:2.3vw;
+    font-size:min(2.3vw,4.0889vh);
     line-height:1.3;
   }
   /* 英文标题专用（Playfair 衬线） */
@@ -249,7 +249,7 @@
   .lead{
     font-family:var(--serif-zh);
     font-weight:400;
-    font-size:1.75vw;
+    font-size:min(1.75vw,3.1111vh);
     line-height:1.5;
     opacity:.86;
   }
@@ -261,7 +261,7 @@
     align-items:baseline;
     flex-wrap:wrap;
     font-family:var(--mono);
-    font-size:max(12px,.92vw);
+    font-size:max(12px,min(.92vw,1.6356vh));
     letter-spacing:.16em;
     text-transform:uppercase;
     opacity:.6;
@@ -279,7 +279,7 @@
   }
   .stat-card .stat-label{
     font-family:var(--mono);
-    font-size:max(10px,.78vw);
+    font-size:max(10px,min(.78vw,1.3867vh));
     letter-spacing:.24em;
     text-transform:uppercase;
     opacity:.55;
@@ -287,7 +287,7 @@
   .stat-card .stat-nb{
     font-family:var(--serif-en);
     font-weight:800;
-    font-size:5.8vw;
+    font-size:min(5.8vw,10.3111vh);
     line-height:.9;
     letter-spacing:-.03em;
     font-feature-settings:"tnum";
@@ -305,15 +305,15 @@
   .stat-card .stat-note{
     font-family:var(--sans-zh);
     font-weight:400;
-    font-size:max(13px,1.05vw);
+    font-size:max(13px,min(1.05vw,1.8667vh));
     line-height:1.5;
     opacity:.72;
     margin-top:.6vh;
   }
   /* 当 stat-card 用于 grid-4（2x2），数字适度放大；若页面有标题+引文在上方，可内联 style 覆盖为更小值 */
-  .grid-4 .stat-card .stat-nb{font-size:5vw}
+  .grid-4 .stat-card .stat-nb{font-size:min(5vw,8.8889vh)}
   /* 当只有 3 个，字也可以稍大 */
-  .grid-3 .stat-card .stat-nb{font-size:6.8vw}
+  .grid-3 .stat-card .stat-nb{font-size:min(6.8vw,12.0889vh)}
 
   /* ---------- pipeline（流水线） ---------- */
   .pipeline-section{
@@ -328,7 +328,7 @@
   }
   .pipeline-label{
     font-family:var(--mono);
-    font-size:max(11px,.85vw);
+    font-size:max(11px,min(.85vw,1.5111vh));
     letter-spacing:.24em;
     text-transform:uppercase;
     opacity:.62;
@@ -354,20 +354,20 @@
     font-family:var(--serif-en);
     font-style:italic;
     font-weight:500;
-    font-size:1.15vw;
+    font-size:min(1.15vw,2.0444vh);
     opacity:.45;
   }
   .step-title{
     font-family:var(--sans-zh);
     font-weight:700;
-    font-size:1.55vw;
+    font-size:min(1.55vw,2.7556vh);
     letter-spacing:.01em;
     line-height:1.2;
   }
   .step-desc{
     font-family:var(--sans-zh);
     font-weight:400;
-    font-size:max(12px,.95vw);
+    font-size:max(12px,min(.95vw,1.6889vh));
     line-height:1.45;
     opacity:.72;
   }
@@ -392,7 +392,7 @@
     display:block;
     margin-top:.8vh;
     font-family:var(--mono);
-    font-size:max(10px,.8vw);
+    font-size:max(10px,min(.8vw,1.4222vh));
     letter-spacing:.22em;
     text-transform:uppercase;
     opacity:.6;
@@ -409,8 +409,8 @@
   }
 
   /* ---------- chrome & foot 补位（layouts.md 简单写法） ---------- */
-  .chrome{font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.2em;text-transform:uppercase;opacity:.62}
-  .foot{flex-shrink:0;margin-bottom:2vh;font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.18em;text-transform:uppercase;opacity:.5}
+  .chrome{font-family:var(--mono);font-size:max(11px,min(.78vw,1.3867vh));letter-spacing:.2em;text-transform:uppercase;opacity:.62}
+  .foot{flex-shrink:0;margin-bottom:2vh;font-family:var(--mono);font-size:max(11px,min(.78vw,1.3867vh));letter-spacing:.18em;text-transform:uppercase;opacity:.5}
 
   /* ============ 动效系统(CSS @keyframes,替代 Motion One 以支持 file:// 协议) ============
      所有 [data-anim] 元素默认隐藏,由 .slide.visible 触发 CSS 入场动画。
@@ -433,11 +433,11 @@
 
   /* ---------- 响应式降级 ---------- */
   @media (max-width:900px){
-    .display{font-size:16vw}
-    .display-zh{font-size:12vw}
-    .h1-zh{font-size:7vw}
-    .h-hero{font-size:14vw}
-    .h-xl{font-size:9vw}
+    .display{font-size:min(16vw,28.4444vh)}
+    .display-zh{font-size:min(12vw,21.3333vh)}
+    .h1-zh{font-size:min(7vw,12.4444vh)}
+    .h-hero{font-size:min(14vw,24.8889vh)}
+    .h-xl{font-size:min(9vw,16.0000vh)}
     .pipeline{grid-template-columns:repeat(2,1fr)}
     .grid-2-7-5,.grid-2-6-6,.grid-2-8-4{grid-template-columns:1fr}
   }
@@ -488,7 +488,7 @@
     <div>螺丝 · Fasteners</div>
     <div>01 / 20</div>
   </div>
-  <div class="frame" style="display:grid;gap:4vh;align-content:center;min-height:80vh">
+  <div class="frame" style="display:grid;gap:4vh;align-content:center;min-height:0">
     <div class="kicker" data-anim>最小的信任单位</div>
     <h1 class="h-hero" data-anim>螺丝</h1>
     <h2 class="h-sub" data-anim>把世界固定在一起</h2>
@@ -511,12 +511,12 @@
   </div>
   <div class="frame" style="padding-top:5vh">
     <div class="kicker" data-anim>Terminology · 术语</div>
-    <h2 class="h-xl" style="margin-bottom:3vh;font-size:5.2vw" data-anim>螺丝、螺栓、紧固件，不是一回事。</h2>
+    <h2 class="h-xl" style="margin-bottom:3vh;font-size:min(5.2vw,9.2444vh)" data-anim>螺丝、螺栓、紧固件，不是一回事。</h2>
     <div class="grid-2-6-6" style="gap:4vw 3vh">
       <div data-anim="left" style="padding:2.4vh 2vw;border-left:3px solid currentColor;opacity:.55">
         <div class="kicker" style="opacity:.9">Before · 日常语言</div>
-        <h3 class="h-md" style="margin-top:1.4vh;font-size:1.8vw">全都叫"螺丝"</h3>
-        <ul style="margin-top:2vh;padding-left:1.2em;display:flex;flex-direction:column;gap:1.2vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.55">
+        <h3 class="h-md" style="margin-top:1.4vh;font-size:min(1.8vw,3.2000vh)">全都叫"螺丝"</h3>
+        <ul style="margin-top:2vh;padding-left:1.2em;display:flex;flex-direction:column;gap:1.2vh;font-family:var(--sans-zh);font-size:max(14px,min(1.05vw,1.8667vh));line-height:1.55">
           <li>中文里常把所有螺纹件都叫"螺丝"</li>
           <li>但在工程语言里概念更精细</li>
           <li>每个名称背后都有清楚的功能边界</li>
@@ -524,8 +524,8 @@
       </div>
       <div data-anim="right" style="padding:2.4vh 2vw;border-left:3px solid currentColor">
         <div class="kicker" style="opacity:.9">After · 工程语言</div>
-        <h3 class="h-md" style="margin-top:1.4vh;font-size:1.8vw">每一种都有精确的定义</h3>
-        <ul style="margin-top:2vh;padding-left:1.2em;display:flex;flex-direction:column;gap:1.2vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.55">
+        <h3 class="h-md" style="margin-top:1.4vh;font-size:min(1.8vw,3.2000vh)">每一种都有精确的定义</h3>
+        <ul style="margin-top:2vh;padding-left:1.2em;display:flex;flex-direction:column;gap:1.2vh;font-family:var(--sans-zh);font-size:max(14px,min(1.05vw,1.8667vh));line-height:1.55">
           <li>Screw：常见用途是拧入材料或螺纹孔</li>
           <li>Bolt：常见用途是配合螺母夹紧零件</li>
           <li>Nut / Washer / Fastener：各有专属角色</li>
@@ -548,9 +548,9 @@
   <div class="frame grid-2-8-4" style="padding-top:5vh">
     <div>
       <div class="kicker" data-anim>Thread Geometry · 螺纹几何</div>
-      <h2 class="h-xl" style="font-size:5.2vw" data-anim>螺纹：一条旋转上升的机械语言。</h2>
+      <h2 class="h-xl" style="font-size:min(5.2vw,9.2444vh)" data-anim>螺纹：一条旋转上升的机械语言。</h2>
       <p class="lead" style="margin-top:2.4vh" data-anim>A thread is a ramp wrapped around a cylinder.</p>
-      <p style="margin-top:2.4vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.65;opacity:.78" data-anim>
+      <p style="margin-top:2.4vh;font-family:var(--sans-zh);font-size:max(14px,min(1.05vw,1.8667vh));line-height:1.65;opacity:.78" data-anim>
         螺纹的本质，是一条绕在圆柱上的斜坡。旋转运动被它转换成轴向夹紧力。<br><br>
         单线螺纹中，螺距等于每转一圈的轴向前进量；牙型、直径和啮合长度共同影响受力、匹配与抗拉脱能力。<br><br>
         螺丝的精密，不在外形，而在这些几何参数被严格定义。
@@ -559,17 +559,17 @@
     <div style="display:flex;flex-direction:column;gap:2.4vh;justify-content:center">
       <div class="stat-card" data-anim>
         <div class="stat-label">Pitch</div>
-        <div class="stat-nb" style="font-size:4.2vw">螺距</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">螺距</div>
         <div class="stat-note">单线螺纹每转前进量</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Thread Angle</div>
-        <div class="stat-nb" style="font-size:4.2vw">牙型角</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">牙型角</div>
         <div class="stat-note">影响受力与加工</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Diameter</div>
-        <div class="stat-nb" style="font-size:4.2vw">公称直径</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">公称直径</div>
         <div class="stat-note">强度与匹配的基础</div>
       </div>
     </div>
@@ -590,8 +590,8 @@
     <div style="display:flex;flex-direction:column;justify-content:space-between;gap:2vh">
       <div>
         <div class="kicker" data-anim>Standardization · 标准化</div>
-        <h2 class="h-xl" style="font-size:5.2vw" data-anim>1841：标准螺纹让机器开始互相理解。</h2>
-        <p style="margin-top:2.4vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.65;opacity:.78" data-anim>
+        <h2 class="h-xl" style="font-size:min(5.2vw,9.2444vh)" data-anim>1841：标准螺纹让机器开始互相理解。</h2>
+        <p style="margin-top:2.4vh;font-family:var(--sans-zh);font-size:max(14px,min(1.05vw,1.8667vh));line-height:1.65;opacity:.78" data-anim>
           工业革命早期，每个工厂有自己的螺纹规格。一个螺母未必能配另一个工厂的螺栓。<br><br>
           1841 年，Joseph Whitworth 推动了英国标准螺纹体系，核心特征之一是 55° 牙型角。<br><br>
           标准化的意义深远：它推动螺纹零件跨工厂互换，减少维修与配件供应的障碍。
@@ -631,8 +631,8 @@
     <div style="display:flex;flex-direction:column;justify-content:space-between;gap:2vh">
       <div>
         <div class="kicker" data-anim>Standardization · 标准化</div>
-        <h2 class="h-xl" style="font-size:5.2vw" data-anim>1864：美国用 60° 螺纹推动大规模制造。</h2>
-        <p style="margin-top:2.4vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.65;opacity:.78" data-anim>
+        <h2 class="h-xl" style="font-size:min(5.2vw,9.2444vh)" data-anim>1864：美国用 60° 螺纹推动大规模制造。</h2>
+        <p style="margin-top:2.4vh;font-family:var(--sans-zh);font-size:max(14px,min(1.05vw,1.8667vh));line-height:1.65;opacity:.78" data-anim>
           1864 年，William Sellers 在美国提出新的标准螺纹体系。<br><br>
           相比 Whitworth 的 55° 圆顶牙型，Sellers 采用 60° 牙型，牙顶做平。这看似只是几何细节，实际却让加工、测量和互换更容易。<br><br>
           标准螺纹让铁路、机床、枪械、车辆、工厂设备可以共享一套连接语言。
@@ -668,9 +668,9 @@
     <div>第一幕 · 标准 · Standards</div>
     <div>06 / 20</div>
   </div>
-  <div class="frame center" style="text-align:center;min-height:80vh">
+  <div class="frame center" style="text-align:center;min-height:0">
     <div class="kicker" data-anim>Standardization · 标准化</div>
-    <blockquote class="display" style="max-width:74vw;margin:0 auto;font-size:clamp(42px,7vw,90px);line-height:1" data-anim>"Standardization turns parts into systems."</blockquote>
+    <blockquote class="display" style="max-width:74vw;margin:0 auto;font-size:clamp(42px,min(7vw,12.4444vh),90px);line-height:1" data-anim>"Standardization turns parts into systems."</blockquote>
     <p class="lead" style="max-width:52vw;margin:2.4vh auto 0" data-anim>螺丝如果不能被替换、不被理解，就不是现代工业零件。</p>
     <div class="meta-row" style="justify-content:center;margin-top:4vh" data-anim>
       <span>英制</span><span>Unified</span><span>ISO Metric</span><span>互换性</span>
@@ -690,20 +690,20 @@
   </div>
   <div class="frame" style="padding-top:5vh">
     <div class="kicker" data-anim>Preload · 预紧力</div>
-    <h2 class="h-xl" style="margin-bottom:3vh;font-size:5.2vw" data-anim>螺丝真正的工作不是"拧住"，而是"夹紧"。</h2>
+    <h2 class="h-xl" style="margin-bottom:3vh;font-size:min(5.2vw,9.2444vh)" data-anim>螺丝真正的工作不是"拧住"，而是"夹紧"。</h2>
     <div class="grid-2-6-6" style="gap:4vw 3vh">
       <div data-anim="left" style="padding:2.4vh 2vw;border-left:3px solid currentColor;opacity:.55">
         <div class="kicker" style="opacity:.9">Before · 日常理解</div>
-        <h3 class="h-md" style="margin-top:1.4vh;font-size:1.8vw">"拧住"就是卡住不动</h3>
-        <ul style="margin-top:2vh;padding-left:1.2em;display:flex;flex-direction:column;gap:1.2vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.55">
+        <h3 class="h-md" style="margin-top:1.4vh;font-size:min(1.8vw,3.2000vh)">"拧住"就是卡住不动</h3>
+        <ul style="margin-top:2vh;padding-left:1.2em;display:flex;flex-direction:column;gap:1.2vh;font-family:var(--sans-zh);font-size:max(14px,min(1.05vw,1.8667vh));line-height:1.55">
           <li>普通人认为螺丝靠"摩擦力"卡住</li>
           <li>旋转就是拧紧，反方向就是松开</li>
         </ul>
       </div>
       <div data-anim="right" style="padding:2.4vh 2vw;border-left:3px solid currentColor">
         <div class="kicker" style="opacity:.9">After · 工程视角</div>
-        <h3 class="h-md" style="margin-top:1.4vh;font-size:1.8vw">螺栓被拉长 = 弹簧，连接面被压紧</h3>
-        <ul style="margin-top:2vh;padding-left:1.2em;display:flex;flex-direction:column;gap:1.2vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.55">
+        <h3 class="h-md" style="margin-top:1.4vh;font-size:min(1.8vw,3.2000vh)">螺栓被拉长 = 弹簧，连接面被压紧</h3>
+        <ul style="margin-top:2vh;padding-left:1.2em;display:flex;flex-direction:column;gap:1.2vh;font-family:var(--sans-zh);font-size:max(14px,min(1.05vw,1.8667vh));line-height:1.55">
           <li>预紧力使螺栓弹性伸长，像弹簧一样压紧连接件</li>
           <li>夹紧力来自螺栓拉伸，不是螺纹摩擦力</li>
         </ul>
@@ -725,9 +725,9 @@
   <div class="frame grid-2-8-4" style="padding-top:5vh">
     <div>
       <div class="kicker" data-anim>Torque Control · 扭矩控制</div>
-      <h2 class="h-xl" style="font-size:5.2vw" data-anim>扭矩：最常用，也最不完美的控制方式。</h2>
+      <h2 class="h-xl" style="font-size:min(5.2vw,9.2444vh)" data-anim>扭矩：最常用，也最不完美的控制方式。</h2>
       <p class="lead" style="margin-top:2.4vh" data-anim>Torque is the most practical way to estimate preload — but it's far from perfect.</p>
-      <p style="margin-top:2.4vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.65;opacity:.78" data-anim>
+      <p style="margin-top:2.4vh;font-family:var(--sans-zh);font-size:max(14px,min(1.05vw,1.8667vh));line-height:1.65;opacity:.78" data-anim>
         扭矩扳手是最常见的拧紧工具。通过设定扭矩值，间接控制预紧力。<br><br>
         在常见螺栓连接中，大部分施加扭矩消耗于螺纹与支承面的摩擦，只有一部分转化为预紧力；具体比例随润滑、表面和连接设计而变。<br><br>
         因此，单靠扭矩不能精确预测预紧力。若连接安全关键，应按适用规范和经验证的装配程序控制并检查预紧力。
@@ -736,17 +736,17 @@
     <div style="display:flex;flex-direction:column;gap:2.4vh;justify-content:center">
       <div class="stat-card" data-anim>
         <div class="stat-label">Torque → Preload</div>
-        <div class="stat-nb" style="font-size:4.2vw">Indirect</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">Indirect</div>
         <div class="stat-note">扭矩只能间接估算预紧力</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Scatter</div>
-        <div class="stat-nb" style="font-size:4.2vw">Varies</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">Varies</div>
         <div class="stat-note">实际结果受装配条件影响</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Optional Method</div>
-        <div class="stat-nb" style="font-size:4.2vw">Angle<br>Control</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">Angle<br>Control</div>
         <div class="stat-note">可选方法之一 · 按设计与程序验证</div>
       </div>
     </div>
@@ -766,9 +766,9 @@
   <div class="frame grid-2-8-4" style="padding-top:2.4vh">
     <div>
       <div class="kicker" data-anim>Loosening · 松动原因</div>
-      <h2 class="h-xl" style="font-size:5.2vw" data-anim>螺丝会松，不一定是因为没拧紧。</h2>
+      <h2 class="h-xl" style="font-size:min(5.2vw,9.2444vh)" data-anim>螺丝会松，不一定是因为没拧紧。</h2>
       <p class="lead" style="margin-top:1.6vh" data-anim>A screw can loosen even when correctly torqued.</p>
-      <p style="margin-top:1.6vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.65;opacity:.78" data-anim>
+      <p style="margin-top:1.6vh;font-family:var(--sans-zh);font-size:max(14px,min(1.05vw,1.8667vh));line-height:1.65;opacity:.78" data-anim>
         很多时候，螺丝松动不是安装失误，而是环境让它慢慢"放弃"了夹紧力。<br><br>
         横向振动若引起螺纹或支承面循环滑移，就可能诱发自松动并降低预紧力。<br><br>
         热循环引起热胀冷缩，材料嵌入松弛让接触面慢慢塌陷，表面压陷使预紧力随时间衰减。
@@ -777,22 +777,22 @@
     <div style="display:flex;flex-direction:column;gap:1.2vh;justify-content:center">
       <div class="stat-card" data-anim>
         <div class="stat-label">Vibration</div>
-        <div class="stat-nb" style="font-size:4.2vw">振动</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">振动</div>
         <div class="stat-note">横向滑移易引发松动</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Thermal</div>
-        <div class="stat-nb" style="font-size:4.2vw">热循环</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">热循环</div>
         <div class="stat-note">热胀冷缩引发松弛</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Embedment</div>
-        <div class="stat-nb" style="font-size:4.2vw">嵌入松弛</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">嵌入松弛</div>
         <div class="stat-note">接触面塌陷</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Slip</div>
-        <div class="stat-nb" style="font-size:4.2vw">滑动</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">滑动</div>
         <div class="stat-note">横向滑移消解预紧力</div>
       </div>
     </div>
@@ -812,9 +812,9 @@
   <div class="frame grid-2-8-4" style="padding-top:2.4vh">
     <div>
       <div class="kicker" data-anim>Locking · 防松</div>
-      <h2 class="h-xl" style="font-size:5.2vw" data-anim>锁紧：让螺丝对抗时间。</h2>
+      <h2 class="h-xl" style="font-size:min(5.2vw,9.2444vh)" data-anim>锁紧：让螺丝对抗时间。</h2>
       <p class="lead" style="margin-top:1.6vh" data-anim>Locking features resist loosening; threaded joints can remain removable.</p>
-      <p style="margin-top:1.6vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.65;opacity:.78" data-anim>
+      <p style="margin-top:1.6vh;font-family:var(--sans-zh);font-size:max(14px,min(1.05vw,1.8667vh));line-height:1.65;opacity:.78" data-anim>
         防松设计可抑制旋转、降低松脱风险；预紧力能否保持，还取决于连接与装配设计。<br><br>
         从自锁螺母、机械锁止到螺纹锁固胶，每种方法都有适用条件，需要按服役环境验证。<br><br>
         有些防松手段靠增加摩擦力，有些靠机械锁止，有些靠化学粘接——没有一种万能方案。
@@ -823,22 +823,22 @@
     <div style="display:flex;flex-direction:column;gap:1.2vh;justify-content:center">
       <div class="stat-card" data-anim>
         <div class="stat-label">Lock Nut</div>
-        <div class="stat-nb" style="font-size:4.2vw">自锁螺母</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">自锁螺母</div>
         <div class="stat-note">全金属或非金属嵌件</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Thread-locker</div>
-        <div class="stat-nb" style="font-size:4.2vw">厌氧胶</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">厌氧胶</div>
         <div class="stat-note">化学粘接防松</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Cotter Pin</div>
-        <div class="stat-nb" style="font-size:4.2vw">开口销</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">开口销</div>
         <div class="stat-note">机械锁止</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Nylock</div>
-        <div class="stat-nb" style="font-size:4.2vw">尼龙锁紧</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">尼龙锁紧</div>
         <div class="stat-note">尼龙圈锁紧螺母</div>
       </div>
     </div>
@@ -858,9 +858,9 @@
   <div class="frame grid-2-8-4" style="padding-top:2.4vh">
     <div>
       <div class="kicker" data-anim>Materials · 材料</div>
-      <h2 class="h-xl" style="font-size:5.2vw" data-anim>螺丝不是"一块铁"。</h2>
+      <h2 class="h-xl" style="font-size:min(5.2vw,9.2444vh)" data-anim>螺丝不是"一块铁"。</h2>
       <p class="lead" style="margin-top:1.6vh" data-anim>Not all screws are made equal. Material is the hidden variable.</p>
-      <p style="margin-top:1.6vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.65;opacity:.78" data-anim>
+      <p style="margin-top:1.6vh;font-family:var(--sans-zh);font-size:max(14px,min(1.05vw,1.8667vh));line-height:1.65;opacity:.78" data-anim>
         从普通碳钢到镍基高温合金，螺丝的材料决定了它能承受多少拉力、多高温度、多大腐蚀。<br><br>
         碳钢便宜、强度够用，适合大多数场景。合金钢提供更高强度和韧性。不锈钢兼顾耐蚀，强度随牌号与热处理而变。<br><br>
         钛合金适用于部分轻量化设计；镍基合金可用于高温环境，温度限值还取决于牌号、涂层与连接设计。
@@ -869,22 +869,22 @@
     <div style="display:flex;flex-direction:column;gap:1.2vh;justify-content:center">
       <div class="stat-card" data-anim>
         <div class="stat-label">Carbon Steel</div>
-        <div class="stat-nb" style="font-size:4.2vw">碳钢</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">碳钢</div>
         <div class="stat-note">通用、经济、强度适中</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Alloy Steel</div>
-        <div class="stat-nb" style="font-size:4.2vw">合金钢</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">合金钢</div>
         <div class="stat-note">高强度、高韧性</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Stainless</div>
-        <div class="stat-nb" style="font-size:4.2vw">不锈钢</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">不锈钢</div>
         <div class="stat-note">耐腐蚀</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Titanium</div>
-        <div class="stat-nb" style="font-size:4.2vw">钛合金</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">钛合金</div>
         <div class="stat-note">轻量 · 适用温度因牌号而异</div>
       </div>
     </div>
@@ -904,9 +904,9 @@
   <div class="frame grid-2-8-4" style="padding-top:2.4vh">
     <div>
       <div class="kicker" data-anim>Surface Treatment · 表面处理</div>
-      <h2 class="h-xl" style="font-size:5.2vw" data-anim>看不见的保护层。</h2>
+      <h2 class="h-xl" style="font-size:min(5.2vw,9.2444vh)" data-anim>看不见的保护层。</h2>
       <p class="lead" style="margin-top:1.6vh" data-anim>What you can't see is what protects the screw.</p>
-      <p style="margin-top:1.6vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.65;opacity:.78" data-anim>
+      <p style="margin-top:1.6vh;font-family:var(--sans-zh);font-size:max(14px,min(1.05vw,1.8667vh));line-height:1.65;opacity:.78" data-anim>
         表面处理是螺丝的隐形铠甲。它影响紧固件的耐蚀性，选用时还要考虑材料相容性与服役环境。<br><br>
         镀锌是最常见的防腐处理，成本低、效果可靠。镀镉用于部分特定环境，但存在毒性及使用限制。<br><br>
         阳极氧化用于铝制件，钝化处理用于不锈钢恢复耐蚀膜。每一种处理都是对螺丝服役环境的回应。
@@ -915,22 +915,22 @@
     <div style="display:flex;flex-direction:column;gap:1.2vh;justify-content:center">
       <div class="stat-card" data-anim>
         <div class="stat-label">Zinc Plating</div>
-        <div class="stat-nb" style="font-size:4.2vw">镀锌</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">镀锌</div>
         <div class="stat-note">最通用、经济</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Cadmium</div>
-        <div class="stat-nb" style="font-size:4.2vw">镀镉</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">镀镉</div>
         <div class="stat-note">航空级、环保受限</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Anodizing</div>
-        <div class="stat-nb" style="font-size:4.2vw">阳极氧化</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">阳极氧化</div>
         <div class="stat-note">铝制件防腐</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Passivation</div>
-        <div class="stat-nb" style="font-size:4.2vw">钝化</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">钝化</div>
         <div class="stat-note">不锈钢恢复耐蚀膜</div>
       </div>
     </div>
@@ -947,9 +947,9 @@
     <div>第二幕 · 工程 · Engineering</div>
     <div>13 / 20</div>
   </div>
-  <div class="frame center" style="text-align:center;min-height:80vh">
+  <div class="frame center" style="text-align:center;min-height:0">
     <div class="kicker" data-anim>Fatigue · 疲劳</div>
-    <blockquote class="display" style="max-width:68vw;margin:0 auto;font-size:7vw" data-anim>"Fatigue is failure written slowly."</blockquote>
+    <blockquote class="display" style="max-width:68vw;margin:0 auto;font-size:min(7vw,12.4444vh)" data-anim>"Fatigue is failure written slowly."</blockquote>
     <p class="lead" style="max-width:52vw;margin:2.4vh auto 0" data-anim>螺纹根部可能形成应力集中。在足够的循环应力下，裂纹可萌生并扩展；寿命取决于载荷、材料与连接设计。</p>
     <div class="meta-row" style="justify-content:center;margin-top:4vh" data-anim>
       <span>Stress Concentration</span><span>Cyclic Loading</span><span>Crack Propagation</span>
@@ -970,9 +970,9 @@
   <div class="frame grid-2-8-4" style="padding-top:5vh">
     <div>
       <div class="kicker" data-anim>Tolerance · 公差</div>
-      <h2 class="h-xl" style="font-size:5.2vw" data-anim>好螺丝要刚刚好。</h2>
+      <h2 class="h-xl" style="font-size:min(5.2vw,9.2444vh)" data-anim>好螺丝要刚刚好。</h2>
       <p class="lead" style="margin-top:2.4vh" data-anim>Precision is not about perfection — it's about consistency.</p>
-      <p style="margin-top:2.4vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.65;opacity:.78" data-anim>
+      <p style="margin-top:2.4vh;font-family:var(--sans-zh);font-size:max(14px,min(1.05vw,1.8667vh));line-height:1.65;opacity:.78" data-anim>
         螺丝的螺纹不是"越精确越好"，而是"在可控范围内一致"才好。<br><br>
         通规（Go）和止规（No-Go）是螺纹检验的基本工具。量规的通过条件与允许旋入量，需要按适用检验规范判定。<br><br>
         6g（外螺纹）与 6H（内螺纹）是常用等级示例。具体公差与检验方法须按尺寸、涂层和图样选定，不能仅凭行业判断。
@@ -981,17 +981,17 @@
     <div style="display:flex;flex-direction:column;gap:2.4vh;justify-content:center">
       <div class="stat-card" data-anim>
         <div class="stat-label">Go / No-Go</div>
-        <div class="stat-nb" style="font-size:4.2vw">通规 · 止规</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">通规 · 止规</div>
         <div class="stat-note">螺纹检验的基本工具</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Class 6g/6H</div>
-        <div class="stat-nb" style="font-size:4.2vw">常用等级示例</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">常用等级示例</div>
         <div class="stat-note">通用配合</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Interchangeability</div>
-        <div class="stat-nb" style="font-size:3.6vw">互换性</div>
+        <div class="stat-nb" style="font-size:min(3.6vw,6.4000vh)">互换性</div>
         <div class="stat-note">公差保证可互换</div>
       </div>
     </div>
@@ -1010,20 +1010,20 @@
   </div>
   <div class="frame" style="padding-top:5vh">
     <div class="kicker" data-anim>Design Language · 设计语言</div>
-    <h2 class="h-xl" style="margin-bottom:3vh;font-size:5.2vw" data-anim>螺丝也是设计语言。</h2>
+    <h2 class="h-xl" style="margin-bottom:3vh;font-size:min(5.2vw,9.2444vh)" data-anim>螺丝也是设计语言。</h2>
     <div class="grid-2-6-6" style="gap:4vw 3vh">
       <div data-anim="left" style="padding:2.4vh 2vw;border-left:3px solid currentColor;opacity:.55">
         <div class="kicker" style="opacity:.9">Common · 常见工具</div>
-        <h3 class="h-md" style="margin-top:1.4vh;font-size:1.8vw">十字、内六角、梅花</h3>
-        <ul style="margin-top:2vh;padding-left:1.2em;display:flex;flex-direction:column;gap:1.2vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.55">
+        <h3 class="h-md" style="margin-top:1.4vh;font-size:min(1.8vw,3.2000vh)">十字、内六角、梅花</h3>
+        <ul style="margin-top:2vh;padding-left:1.2em;display:flex;flex-direction:column;gap:1.2vh;font-family:var(--sans-zh);font-size:max(14px,min(1.05vw,1.8667vh));line-height:1.55">
           <li>常见槽型通常更容易找到配套工具</li>
           <li>可维修性还取决于结构、零件与维修资料</li>
         </ul>
       </div>
       <div data-anim="right" style="padding:2.4vh 2vw;border-left:3px solid currentColor">
         <div class="kicker" style="opacity:.9">Restricted · 专用工具</div>
-        <h3 class="h-md" style="margin-top:1.4vh;font-size:1.8vw">防拆、三翼、特殊槽型</h3>
-        <ul style="margin-top:2vh;padding-left:1.2em;display:flex;flex-direction:column;gap:1.2vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.55">
+        <h3 class="h-md" style="margin-top:1.4vh;font-size:min(1.8vw,3.2000vh)">防拆、三翼、特殊槽型</h3>
+        <ul style="margin-top:2vh;padding-left:1.2em;display:flex;flex-direction:column;gap:1.2vh;font-family:var(--sans-zh);font-size:max(14px,min(1.05vw,1.8667vh));line-height:1.55">
           <li>特殊槽型可提高未经授权拆卸的门槛</li>
           <li>可用于防篡改或安全；不等于完全不可维修</li>
         </ul>
@@ -1046,8 +1046,8 @@
     <div style="display:flex;flex-direction:column;justify-content:space-between;gap:2vh">
       <div>
         <div class="kicker" data-anim>Aerospace · 航空</div>
-        <h2 class="h-xl" style="font-size:5.2vw" data-anim>航空：螺丝进入最高级的日常安全系统。</h2>
-        <p style="margin-top:2.4vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.65;opacity:.78" data-anim>
+        <h2 class="h-xl" style="font-size:min(5.2vw,9.2444vh)" data-anim>航空：螺丝进入最高级的日常安全系统。</h2>
+        <p style="margin-top:2.4vh;font-family:var(--sans-zh);font-size:max(14px,min(1.05vw,1.8667vh));line-height:1.65;opacity:.78" data-anim>
           航空紧固件的选用与安装，需要遵循适用设计资料和维修要求。<br><br>
           波音称，一架 787 约由 230 万个零部件组成，其中既有紧固件，也有机身结构等大型部件。航空紧固件需要依照适用规范进行材料追溯、批次管理和安装控制。<br><br>
           是否更换、能否重复使用及寿命限制，应按具体零件和制造商维修资料判定。
@@ -1066,7 +1066,7 @@
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Grade</div>
-        <div class="stat-nb" style="font-size:4.2vw">航空级</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">航空级</div>
         <div class="stat-note">材料可追溯 · 批次控制</div>
       </div>
     </div>
@@ -1087,8 +1087,8 @@
     <div style="display:flex;flex-direction:column;justify-content:space-between;gap:2vh">
       <div>
         <div class="kicker" data-anim>Space · 航天</div>
-        <h2 class="h-xl" style="font-size:5.2vw" data-anim>航天：螺丝也要接受标准审判。</h2>
-        <p style="margin-top:2.4vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.65;opacity:.78" data-anim>
+        <h2 class="h-xl" style="font-size:min(5.2vw,9.2444vh)" data-anim>航天：螺丝也要接受标准审判。</h2>
+        <p style="margin-top:2.4vh;font-family:var(--sans-zh);font-size:max(14px,min(1.05vw,1.8667vh));line-height:1.65;opacity:.78" data-anim>
           NASA-STD-5020B（2021；2026 再确认）规定航天螺纹连接的设计与分析要求。<br><br>
           连接需评估强度、疲劳、滑移与有害分离；符合性可通过试验或分析证明，具体要求随载荷与用途而定。<br><br>
           锁紧与冗余也按连接风险设计。不能把复杂系统简化为“每颗螺丝独自承担全部安全”。
@@ -1102,12 +1102,12 @@
     <div style="display:flex;flex-direction:column;gap:2vh;justify-content:center">
       <div class="stat-card" data-anim>
         <div class="stat-label">Standard</div>
-        <div class="stat-nb" style="font-size:4.2vw">NASA-STD-5020B</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">NASA-STD-5020B</div>
         <div class="stat-note">航天螺栓连接标准</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Requirement</div>
-        <div class="stat-nb" style="font-size:3.8vw">Separation<br>Margin</div>
+        <div class="stat-nb" style="font-size:min(3.8vw,6.7556vh)">Separation<br>Margin</div>
         <div class="stat-note">按载荷与环境评估分离裕度</div>
       </div>
     </div>
@@ -1126,40 +1126,40 @@
   </div>
   <div class="frame" style="padding-top:3vh">
     <div class="kicker" data-anim>Failure Modes · 失效模式</div>
-    <h2 class="h-xl" style="font-size:5.2vw" data-anim>螺丝失效：现代工业最讨厌的小问题。</h2>
+    <h2 class="h-xl" style="font-size:min(5.2vw,9.2444vh)" data-anim>螺丝失效：现代工业最讨厌的小问题。</h2>
     <p class="lead" style="margin-top:1.6vh" data-anim>A tiny fastener failure can stop a billion-dollar machine.</p>
-    <p style="margin-top:1.6vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.6;opacity:.78" data-anim>
+    <p style="margin-top:1.6vh;font-family:var(--sans-zh);font-size:max(14px,min(1.05vw,1.8667vh));line-height:1.6;opacity:.78" data-anim>
       螺丝虽小，但它的失效往往是最让人头疼的——从松动到疲劳断裂，从滑牙到拉脱，从腐蚀到装配错误，每种都有预防方法，但识别它需要经验。
     </p>
     <div class="grid-3-3" style="margin-top:2vh;flex:1">
       <div class="stat-card" data-anim>
         <div class="stat-label">Loosening</div>
-        <div class="stat-nb" style="font-size:3.2vw">松动</div>
+        <div class="stat-nb" style="font-size:min(3.2vw,5.6889vh)">松动</div>
         <div class="stat-note">可能丢失夹紧力</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Fatigue Fracture</div>
-        <div class="stat-nb" style="font-size:3.2vw">疲劳断裂</div>
+        <div class="stat-nb" style="font-size:min(3.2vw,5.6889vh)">疲劳断裂</div>
         <div class="stat-note">循环载荷引发断裂</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Strip / Galling</div>
-        <div class="stat-nb" style="font-size:3.2vw">滑牙 / 咬死</div>
+        <div class="stat-nb" style="font-size:min(3.2vw,5.6889vh)">滑牙 / 咬死</div>
         <div class="stat-note">安装时损坏</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Pull-out</div>
-        <div class="stat-nb" style="font-size:3.2vw">拉脱</div>
+        <div class="stat-nb" style="font-size:min(3.2vw,5.6889vh)">拉脱</div>
         <div class="stat-note">螺纹啮合不足</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Corrosion</div>
-        <div class="stat-nb" style="font-size:3.2vw">腐蚀</div>
+        <div class="stat-nb" style="font-size:min(3.2vw,5.6889vh)">腐蚀</div>
         <div class="stat-note">环境侵蚀</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Assembly Error</div>
-        <div class="stat-nb" style="font-size:3.2vw">装配错误</div>
+        <div class="stat-nb" style="font-size:min(3.2vw,5.6889vh)">装配错误</div>
         <div class="stat-note">人为失误</div>
       </div>
     </div>
@@ -1176,9 +1176,9 @@
     <div>第三幕 · 系统 · Systems</div>
     <div>19 / 20</div>
   </div>
-  <div class="frame center" style="text-align:center;min-height:80vh">
+  <div class="frame center" style="text-align:center;min-height:0">
     <div class="kicker" data-anim>Civilization · 文明</div>
-    <blockquote class="display" style="max-width:68vw;margin:0 auto;font-size:7vw" data-anim>"The screw made repair scalable."</blockquote>
+    <blockquote class="display" style="max-width:68vw;margin:0 auto;font-size:min(7vw,12.4444vh)" data-anim>"The screw made repair scalable."</blockquote>
     <p class="lead" style="max-width:52vw;margin:2.4vh auto 0" data-anim>焊接让结构永久，螺纹连接保留了"可以拆开、可以替换"的可能性。这一条螺纹，是现代工业给文明留下的维修入口。</p>
     <div class="meta-row" style="justify-content:center;margin-top:4vh" data-anim>
       <span>标准化</span><span>互换件</span><span>维修体系</span><span>供应链</span>
@@ -1196,9 +1196,9 @@
     <div>螺丝 · Fasteners</div>
     <div>20 / 20</div>
   </div>
-  <div class="frame center" style="min-height:80vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2vh">
-    <h2 class="h-hero" style="font-size:7vw;line-height:1.1" data-anim>世界没有被焊死，</h2>
-    <h2 class="h-hero" style="font-size:7vw;line-height:1.1" data-anim>而是被精密地拧紧。</h2>
+  <div class="frame center" style="min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2vh">
+    <h2 class="h-hero" style="font-size:min(7vw,12.4444vh);line-height:1.1" data-anim>世界没有被焊死，</h2>
+    <h2 class="h-hero" style="font-size:min(7vw,12.4444vh);line-height:1.1" data-anim>而是被精密地拧紧。</h2>
     <p class="lead" style="max-width:48vw;margin-top:3vh" data-anim>几何 · 材料 · 标准 · 公差 · 扭矩 · 预紧力 · 疲劳 · 维护</p>
     <div class="meta-row" style="margin-top:2vh" data-anim>
       <span>螺丝 · Fasteners</span>

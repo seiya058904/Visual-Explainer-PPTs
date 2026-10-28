@@ -63,18 +63,18 @@
 
   /* ============ 字体规则 ============ */
   .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;opacity:.6;margin-bottom:2.6vh}
-  .display{font-family:var(--serif-en);font-weight:700;font-size:11vw;line-height:.92;letter-spacing:-.025em}
-  .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:7.8vw;line-height:1.04;letter-spacing:-.005em}
-  .h1-zh{font-family:var(--serif-zh);font-weight:700;font-size:4.6vw;line-height:1.12;letter-spacing:-.005em}
-  .h2-zh{font-family:var(--serif-zh);font-weight:600;font-size:3.2vw;line-height:1.2;letter-spacing:0}
-  .h3-zh{font-family:var(--serif-zh);font-weight:500;font-size:1.9vw;line-height:1.35}
-  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,1.22vw);line-height:1.75;opacity:.82;letter-spacing:.01em}
-  .body-serif{font-family:var(--serif-zh);font-weight:400;font-size:max(15px,1.3vw);line-height:1.65;opacity:.88}
-  .lead{font-family:var(--serif-zh);font-weight:400;font-size:1.9vw;line-height:1.4;opacity:.85}
-  .meta{font-family:var(--mono);font-size:max(11px,.88vw);letter-spacing:.16em;text-transform:uppercase;opacity:.6}
-  .big-num{font-family:var(--serif-en);font-weight:800;font-size:10vw;line-height:.85;letter-spacing:-.03em;font-feature-settings:"tnum"}
-  .mid-num{font-family:var(--serif-en);font-weight:700;font-size:5.5vw;line-height:.88;letter-spacing:-.02em;font-feature-settings:"tnum"}
-  .ghost{font-family:var(--serif-en);font-weight:900;font-size:34vw;line-height:.8;opacity:.06;letter-spacing:-.04em;position:absolute;font-feature-settings:"tnum"}
+  .display{font-family:var(--serif-en);font-weight:700;font-size:min(11vw,19.5556vh);line-height:.92;letter-spacing:-.025em}
+  .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:min(7.8vw,13.8667vh);line-height:1.04;letter-spacing:-.005em}
+  .h1-zh{font-family:var(--serif-zh);font-weight:700;font-size:min(4.6vw,8.1778vh);line-height:1.12;letter-spacing:-.005em}
+  .h2-zh{font-family:var(--serif-zh);font-weight:600;font-size:min(3.2vw,5.6889vh);line-height:1.2;letter-spacing:0}
+  .h3-zh{font-family:var(--serif-zh);font-weight:500;font-size:min(1.9vw,3.3778vh);line-height:1.35}
+  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,min(1.22vw,2.1689vh));line-height:1.75;opacity:.82;letter-spacing:.01em}
+  .body-serif{font-family:var(--serif-zh);font-weight:400;font-size:max(15px,min(1.3vw,2.3111vh));line-height:1.65;opacity:.88}
+  .lead{font-family:var(--serif-zh);font-weight:400;font-size:min(1.9vw,3.3778vh);line-height:1.4;opacity:.85}
+  .meta{font-family:var(--mono);font-size:max(11px,min(.88vw,1.5644vh));letter-spacing:.16em;text-transform:uppercase;opacity:.6}
+  .big-num{font-family:var(--serif-en);font-weight:800;font-size:min(10vw,17.7778vh);line-height:.85;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .mid-num{font-family:var(--serif-en);font-weight:700;font-size:min(5.5vw,9.7778vh);line-height:.88;letter-spacing:-.02em;font-feature-settings:"tnum"}
+  .ghost{font-family:var(--serif-en);font-weight:900;font-size:min(34vw,60.4444vh);line-height:.8;opacity:.06;letter-spacing:-.04em;position:absolute;font-feature-settings:"tnum"}
   em{font-style:italic;font-family:var(--serif-en)}
   .en{font-family:var(--serif-en);font-style:italic;font-weight:500}
 
@@ -95,40 +95,40 @@
 
   /* ============ Stat（数字矩阵） ============ */
   .stat{display:flex;flex-direction:column;gap:1vh;align-items:flex-start}
-  .stat .n{font-family:var(--serif-en);font-weight:800;font-size:8vw;line-height:.88;letter-spacing:-.03em;font-feature-settings:"tnum"}
-  .stat .l{font-family:var(--sans-zh);font-size:max(13px,1.05vw);opacity:.7;margin-top:1vh;font-weight:400;line-height:1.5}
+  .stat .n{font-family:var(--serif-en);font-weight:800;font-size:min(8vw,14.2222vh);line-height:.88;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .stat .l{font-family:var(--sans-zh);font-size:max(13px,min(1.05vw,1.8667vh));opacity:.7;margin-top:1vh;font-weight:400;line-height:1.5}
   .stat .m{font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.5;margin-bottom:.2vh}
 
   /* ============ Callout（引用框） ============ */
-  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,1.2vw);line-height:1.55;opacity:.92}
+  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,min(1.2vw,2.1333vh));line-height:1.55;opacity:.92}
   .slide.light .callout{background:rgba(var(--ink-rgb),.05)}
   .slide.dark .callout{background:rgba(var(--paper-rgb),.06)}
   .callout .cite{display:block;margin-top:1.6vh;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6}
-  .callout .q-big{font-family:var(--serif-zh);font-weight:600;font-size:max(17px,1.6vw);line-height:1.42}
+  .callout .q-big{font-family:var(--serif-zh);font-weight:600;font-size:max(17px,min(1.6vw,2.8444vh));line-height:1.42}
 
   /* ============ Platform（平台卡） ============ */
   .plat{display:flex;flex-direction:column;justify-content:flex-end;padding:2vh 0;border-top:1px solid currentColor;border-color:rgba(127,127,127,.35)}
-  .plat .name{font-family:var(--serif-zh);font-weight:700;font-size:1.8vw;margin-bottom:.6vh}
-  .plat .nb{font-family:var(--serif-en);font-weight:700;font-size:3.2vw;letter-spacing:-.02em;line-height:1;font-feature-settings:"tnum"}
+  .plat .name{font-family:var(--serif-zh);font-weight:700;font-size:min(1.8vw,3.2000vh);margin-bottom:.6vh}
+  .plat .nb{font-family:var(--serif-en);font-weight:700;font-size:min(3.2vw,5.6889vh);letter-spacing:-.02em;line-height:1;font-feature-settings:"tnum"}
   .plat .sub{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;opacity:.55;margin-top:.6vh}
-  .plat .fill{font-family:var(--sans-zh);font-weight:300;font-size:2.4vw;opacity:.28;letter-spacing:-.01em;line-height:1}
+  .plat .fill{font-family:var(--sans-zh);font-weight:300;font-size:min(2.4vw,4.2667vh);opacity:.28;letter-spacing:-.01em;line-height:1}
 
   /* ============ Rowline（表格行） ============ */
   .rowline{display:grid;grid-template-columns:1fr 2fr 1fr;gap:2vw;padding:2.2vh 0;border-top:1px solid currentColor;align-items:center;border-color:rgba(127,127,127,.25)}
   .rowline:last-child{border-bottom:1px solid currentColor;border-color:rgba(127,127,127,.25)}
-  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:1.7vw}
-  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.2vw);opacity:.85;line-height:1.55}
+  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:min(1.7vw,3.0222vh)}
+  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,min(1.2vw,2.1333vh));opacity:.85;line-height:1.55}
   .rowline .m{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6;justify-self:end}
 
   /* ============ Pillar（支柱卡片） ============ */
   .pillar{display:flex;flex-direction:column;gap:1.8vh}
-  .pillar .ic{font-family:var(--serif-en);font-style:italic;font-size:2.6vw;opacity:.45;font-weight:400}
+  .pillar .ic{font-family:var(--serif-en);font-style:italic;font-size:min(2.6vw,4.6222vh);opacity:.45;font-weight:400}
   .pillar .ic svg{width:2.8vw;height:2.8vw;stroke-width:1.2;opacity:.7}
-  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:2.4vw;line-height:1.1}
-  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.1vw);opacity:.76;line-height:1.6}
+  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:min(2.4vw,4.2667vh);line-height:1.1}
+  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,min(1.1vw,1.9556vh));opacity:.76;line-height:1.6}
 
   /* ============ Signature / Highlight ============ */
-  .sign{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:2vw;opacity:.7}
+  .sign{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:min(2vw,3.5556vh);opacity:.7}
   .hi{position:relative;display:inline}
   .slide.dark .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--paper-rgb),.15);z-index:-1}
   .slide.light .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--ink-rgb),.08);z-index:-1}
@@ -143,7 +143,7 @@
   /* ============ 图片占位（虚线框） ============ */
   .img-slot{border:1.5px dashed rgba(127,127,127,.4);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1vh;padding:2vh 2vw;font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;opacity:.55;position:relative;aspect-ratio:16/9;width:100%;max-height:56vh;margin-inline:auto;box-sizing:border-box}
   .img-slot::before{content:"";position:absolute;inset:8px;border:1px solid currentColor;opacity:.2}
-  .img-slot .plus{font-size:2vw;font-weight:300;opacity:.5;letter-spacing:0}
+  .img-slot .plus{font-size:min(2vw,3.5556vh);font-weight:300;opacity:.5;letter-spacing:0}
   .img-slot .label{position:relative;z-index:2;text-align:center}
   .img-slot.r-4x3{aspect-ratio:4/3}
   .img-slot.r-3x2{aspect-ratio:3/2}
@@ -166,8 +166,8 @@
   .frame-img.h-26{height:26vh}
   .frame-img.h-28{height:28vh}
   .frame-cap{display:flex;justify-content:space-between;align-items:baseline;gap:1vw;margin-top:.8vh;font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.72}
-  .frame-cap .pf{font-family:var(--serif-zh);font-weight:600;font-size:max(13px,1vw);letter-spacing:.04em;text-transform:none;opacity:.94}
-  .frame-cap .nb{font-family:var(--serif-en);font-style:italic;font-size:max(15px,1.2vw);letter-spacing:.02em;text-transform:none;opacity:.88}
+  .frame-cap .pf{font-family:var(--serif-zh);font-weight:600;font-size:max(13px,min(1vw,1.7778vh));letter-spacing:.04em;text-transform:none;opacity:.94}
+  .frame-cap .nb{font-family:var(--serif-en);font-style:italic;font-size:max(15px,min(1.2vw,2.1333vh));letter-spacing:.02em;text-transform:none;opacity:.88}
   .frame-cap .idx{font-family:var(--mono);opacity:.5}
   figure.tile{display:flex;flex-direction:column;margin:0;min-width:0}
   figure.tile > .frame-img{flex:0 0 auto}
@@ -198,21 +198,21 @@
   .h-hero{
     font-family:var(--serif-zh);
     font-weight:900;
-    font-size:10vw;
+    font-size:min(10vw,17.7778vh);
     line-height:.96;
     letter-spacing:-.02em;
   }
   .h-xl{
     font-family:var(--serif-zh);
     font-weight:700;
-    font-size:6.2vw;
+    font-size:min(6.2vw,11.0222vh);
     line-height:1.08;
     letter-spacing:-.01em;
   }
   .h-sub{
     font-family:var(--serif-zh);
     font-weight:500;
-    font-size:3.1vw;
+    font-size:min(3.1vw,5.5111vh);
     line-height:1.25;
     letter-spacing:0;
     opacity:.7;
@@ -220,7 +220,7 @@
   .h-md{
     font-family:var(--serif-zh);
     font-weight:600;
-    font-size:2.3vw;
+    font-size:min(2.3vw,4.0889vh);
     line-height:1.3;
   }
   .h-hero-en,.h-xl-en{font-family:var(--serif-en);letter-spacing:-.025em}
@@ -228,7 +228,7 @@
   .lead{
     font-family:var(--serif-zh);
     font-weight:400;
-    font-size:1.75vw;
+    font-size:min(1.75vw,3.1111vh);
     line-height:1.5;
     opacity:.86;
   }
@@ -239,7 +239,7 @@
     align-items:baseline;
     flex-wrap:wrap;
     font-family:var(--mono);
-    font-size:max(12px,.92vw);
+    font-size:max(12px,min(.92vw,1.6356vh));
     letter-spacing:.16em;
     text-transform:uppercase;
     opacity:.6;
@@ -256,7 +256,7 @@
   }
   .stat-card .stat-label{
     font-family:var(--mono);
-    font-size:max(10px,.78vw);
+    font-size:max(10px,min(.78vw,1.3867vh));
     letter-spacing:.24em;
     text-transform:uppercase;
     opacity:.55;
@@ -264,7 +264,7 @@
   .stat-card .stat-nb{
     font-family:var(--serif-en);
     font-weight:800;
-    font-size:5.8vw;
+    font-size:min(5.8vw,10.3111vh);
     line-height:.9;
     letter-spacing:-.03em;
     font-feature-settings:"tnum";
@@ -281,13 +281,13 @@
   .stat-card .stat-note{
     font-family:var(--sans-zh);
     font-weight:400;
-    font-size:max(13px,1.05vw);
+    font-size:max(13px,min(1.05vw,1.8667vh));
     line-height:1.5;
     opacity:.72;
     margin-top:.6vh;
   }
-  .grid-4 .stat-card .stat-nb{font-size:5vw}
-  .grid-3 .stat-card .stat-nb{font-size:6.8vw}
+  .grid-4 .stat-card .stat-nb{font-size:min(5vw,8.8889vh)}
+  .grid-3 .stat-card .stat-nb{font-size:min(6.8vw,12.0889vh)}
 
   /* ---------- pipeline（流水线） ---------- */
   .pipeline-section{
@@ -302,7 +302,7 @@
   }
   .pipeline-label{
     font-family:var(--mono);
-    font-size:max(11px,.85vw);
+    font-size:max(11px,min(.85vw,1.5111vh));
     letter-spacing:.24em;
     text-transform:uppercase;
     opacity:.62;
@@ -328,20 +328,20 @@
     font-family:var(--serif-en);
     font-style:italic;
     font-weight:500;
-    font-size:1.15vw;
+    font-size:min(1.15vw,2.0444vh);
     opacity:.45;
   }
   .step-title{
     font-family:var(--sans-zh);
     font-weight:700;
-    font-size:1.55vw;
+    font-size:min(1.55vw,2.7556vh);
     letter-spacing:.01em;
     line-height:1.2;
   }
   .step-desc{
     font-family:var(--sans-zh);
     font-weight:400;
-    font-size:max(12px,.95vw);
+    font-size:max(12px,min(.95vw,1.6889vh));
     line-height:1.45;
     opacity:.72;
   }
@@ -361,7 +361,7 @@
     display:block;
     margin-top:.8vh;
     font-family:var(--mono);
-    font-size:max(10px,.8vw);
+    font-size:max(10px,min(.8vw,1.4222vh));
     letter-spacing:.22em;
     text-transform:uppercase;
     opacity:.6;
@@ -376,8 +376,8 @@
     opacity:.6;
   }
 
-  .chrome{font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.2em;text-transform:uppercase;opacity:.62}
-  .foot{flex-shrink:0;margin-bottom:2vh;font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.18em;text-transform:uppercase;opacity:.5}
+  .chrome{font-family:var(--mono);font-size:max(11px,min(.78vw,1.3867vh));letter-spacing:.2em;text-transform:uppercase;opacity:.62}
+  .foot{flex-shrink:0;margin-bottom:2vh;font-family:var(--mono);font-size:max(11px,min(.78vw,1.3867vh));letter-spacing:.18em;text-transform:uppercase;opacity:.5}
 
   /* ============ 动效系统(CSS @keyframes) ============ */
   @keyframes anim-fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
@@ -396,14 +396,17 @@
   body.low-power [data-anim]{opacity:1!important;transform:none!important}
 
   @media (max-width:900px){
-    .display{font-size:16vw}
-    .display-zh{font-size:12vw}
-    .h1-zh{font-size:7vw}
-    .h-hero{font-size:14vw}
-    .h-xl{font-size:9vw}
+    .display{font-size:min(16vw,28.4444vh)}
+    .display-zh{font-size:min(12vw,21.3333vh)}
+    .h1-zh{font-size:min(7vw,12.4444vh)}
+    .h-hero{font-size:min(14vw,24.8889vh)}
+    .h-xl{font-size:min(9vw,16.0000vh)}
     .pipeline{grid-template-columns:repeat(2,1fr)}
     .grid-2-7-5,.grid-2-6-6,.grid-2-8-4{grid-template-columns:1fr}
   }
+</style>
+<style>/* Keep captions and lower content inside their allocated space. */
+#deck>.slide:nth-child(10)>.frame{margin-bottom:1.5vh}
 </style>
 </head>
 <body>
@@ -447,7 +450,7 @@
     <div class="left"><span>技术文明史</span><span class="sep"></span><span>Vol.02</span></div>
     <div class="right">01 / 10</div>
   </div>
-  <div class="frame" style="min-height:80vh;align-content:center">
+  <div class="frame" style="min-height:0;align-content:center">
     <div class="kicker" data-anim>电梯 · 让城市向天空生长</div>
     <div class="h-hero" data-anim style="margin-bottom:1.2vh">垂直城市的<br>发动机</div>
     <div class="h-sub" data-anim style="margin-bottom:2.4vh;max-width:56vw">一部电梯，改变人类向上居住的方式</div>
@@ -474,7 +477,7 @@
   </div>
   <div class="frame" style="padding-top:1vh">
     <div class="kicker" data-anim>Before the Lift</div>
-    <div class="h-xl" data-anim style="font-size:5.5vw;margin-bottom:1.2vh">高度曾经是一种负担</div>
+    <div class="h-xl" data-anim style="font-size:min(5.5vw,9.7778vh);margin-bottom:1.2vh">高度曾经是一种负担</div>
     <div class="lead" data-anim style="max-width:65vw;margin-bottom:2.4vh">在电梯普及前，住得越高意味着体力开销越大。楼上的房间不是"顶层豪宅"，而是"阁楼仓库"。</div>
     <div class="grid-2-6-6" data-animate="directional" style="flex:1">
       <div data-anim="left" style="opacity:.55">
@@ -515,7 +518,7 @@
   </div>
   <div class="frame" data-animate="quote">
     <div class="kicker" data-anim>1854 · New York Crystal Palace</div>
-    <blockquote style="font-family:var(--serif-zh);font-weight:700;font-size:5.2vw;line-height:1.25;max-width:72vw;margin:3vh 0 2.4vh">
+    <blockquote style="font-family:var(--serif-zh);font-weight:700;font-size:min(5.2vw,9.2444vh);line-height:1.25;max-width:72vw;margin:3vh 0 2.4vh">
       <span data-anim="line" style="display:block">砍断绳索后，</span>
       <span data-anim="line" style="display:block">平台没有坠落。</span>
     </blockquote>
@@ -543,7 +546,7 @@
   <div class="frame grid-2-8-4" style="padding-top:2vh">
     <div>
       <div class="kicker" data-anim>1857 · E.V. Haughwout &amp; Co.</div>
-      <div class="h-xl" data-anim style="font-size:5.5vw;margin-bottom:1.8vh">第一部商用客梯，<br>不在摩天楼里</div>
+      <div class="h-xl" data-anim style="font-size:min(5.5vw,9.7778vh);margin-bottom:1.8vh">第一部商用客梯，<br>不在摩天楼里</div>
       <div class="lead" data-anim style="margin-bottom:1.8vh">第一部商用乘客电梯安装在一家百货公司。纽约 E.V. Haughwout 百货公司是一座五层瓷器店，主人意识到：让顾客轻松上楼，就是让生意往上生长。</div>
       <div class="body-zh" data-anim style="opacity:.78">此后的二十多年里，电梯才开始进入办公楼。百货公司比建筑师更早认识到电梯的商业价值——垂直交通不只是便利，而是新的商业逻辑。</div>
       <div class="callout" data-anim style="margin-top:2vh">
@@ -554,12 +557,12 @@
     <div style="display:flex;flex-direction:column;gap:2.4vh;justify-content:center">
       <div class="stat-card" data-anim>
         <div class="stat-label">安装年份</div>
-        <div class="stat-nb" style="font-size:4.5vw">1857</div>
+        <div class="stat-nb" style="font-size:min(4.5vw,8.0000vh)">1857</div>
         <div class="stat-note">世界第一部商用客梯</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">安装地点</div>
-        <div class="stat-nb" style="font-size:4.5vw">百货</div>
+        <div class="stat-nb" style="font-size:min(4.5vw,8.0000vh)">百货</div>
         <div class="stat-note">非写字楼，非摩天楼</div>
       </div>
     </div>
@@ -578,9 +581,9 @@
     <div class="left"><span>第二章 · 摩天楼</span></div>
     <div class="right">05 / 10</div>
   </div>
-  <div class="frame" style="min-height:80vh;align-content:center;gap:6vh">
+  <div class="frame" style="min-height:0;align-content:center;gap:6vh">
     <div class="kicker" data-anim>Act II · The Vertical Age</div>
-    <div class="h-hero" data-anim style="font-size:10vw">摩天楼时代</div>
+    <div class="h-hero" data-anim style="font-size:min(10vw,17.7778vh)">摩天楼时代</div>
     <div class="lead" data-anim style="max-width:55vw">钢铁让建筑能够站立，电梯让建筑能够使用。没有电梯的摩天楼，只是一座无法居住的高塔。</div>
   </div>
   <div class="foot">
@@ -599,7 +602,7 @@
   </div>
   <div class="frame" style="padding-top:1vh">
     <div class="kicker" data-anim>Anatomy of a Lift</div>
-    <div class="h-xl" data-anim style="font-size:6.2vw;margin-bottom:.6vh">电梯如何工作</div>
+    <div class="h-xl" data-anim style="font-size:min(6.2vw,11.0222vh);margin-bottom:.6vh">电梯如何工作</div>
     <div class="pipeline-section">
       <div class="pipeline-label" data-anim>六大核心组件 · Six Core Components</div>
       <div class="pipeline" data-cols="6">
@@ -652,7 +655,7 @@
   </div>
   <div class="frame" data-animate="quote">
     <div class="kicker" data-anim>The Real Invention</div>
-    <blockquote style="font-family:var(--serif-zh);font-weight:700;font-size:5.5vw;line-height:1.25;max-width:68vw;margin:3vh 0 2.4vh">
+    <blockquote style="font-family:var(--serif-zh);font-weight:700;font-size:min(5.5vw,9.7778vh);line-height:1.25;max-width:68vw;margin:3vh 0 2.4vh">
       <span data-anim="line" style="display:block">电梯真正发明的不是升降，</span>
       <span data-anim="line" style="display:block">而是信任。</span>
     </blockquote>
@@ -679,15 +682,15 @@
   </div>
   <div class="frame">
     <div class="kicker" data-anim>By the Numbers</div>
-    <div class="h-xl" data-anim style="font-size:6.2vw">数据里的安全感</div>
+    <div class="h-xl" data-anim style="font-size:min(6.2vw,11.0222vh)">数据里的安全感</div>
     <div class="lead" data-anim style="max-width:70vw;margin-bottom:.6vh">安全数据要先看口径：美国历史事故统计，不能除以全球搭乘次数，算成今日乘客死亡率。</div>
     <div class="grid-6" style="margin-top:2vh;flex:0 0 auto">
       <div class="stat-card" data-anim><div class="stat-label">US Historical Estimate</div><div class="stat-nb">31<span class="stat-unit">人/年</span></div><div class="stat-note">美国电梯与扶梯合计死亡</div></div>
-      <div class="stat-card" data-anim><div class="stat-label">Scope</div><div class="stat-nb" style="font-size:4vw">两类设备</div><div class="stat-note">含工作与非工作事故</div></div>
+      <div class="stat-card" data-anim><div class="stat-label">Scope</div><div class="stat-nb" style="font-size:min(4vw,7.1111vh)">两类设备</div><div class="stat-note">含工作与非工作事故</div></div>
       <div class="stat-card" data-anim><div class="stat-label">Published</div><div class="stat-nb">2013</div><div class="stat-note">CPWR 历史分析发布年份</div></div>
-      <div class="stat-card" data-anim><div class="stat-label">Data Window</div><div class="stat-nb" style="font-size:3vw">1992—2010</div><div class="stat-note">BLS 与 CPSC 数据期间</div></div>
-      <div class="stat-card" data-anim><div class="stat-label">Denominator</div><div class="stat-nb" style="font-size:4vw">不可混除</div><div class="stat-note">地区、设备与人群须一致</div></div>
-      <div class="stat-card" data-anim><div class="stat-label">Safety Depends On</div><div class="stat-nb" style="font-size:4vw">持续维护</div><div class="stat-note">安全装置与作业规范共同作用</div></div>
+      <div class="stat-card" data-anim><div class="stat-label">Data Window</div><div class="stat-nb" style="font-size:min(3vw,5.3333vh)">1992—2010</div><div class="stat-note">BLS 与 CPSC 数据期间</div></div>
+      <div class="stat-card" data-anim><div class="stat-label">Denominator</div><div class="stat-nb" style="font-size:min(4vw,7.1111vh)">不可混除</div><div class="stat-note">地区、设备与人群须一致</div></div>
+      <div class="stat-card" data-anim><div class="stat-label">Safety Depends On</div><div class="stat-nb" style="font-size:min(4vw,7.1111vh)">持续维护</div><div class="stat-note">安全装置与作业规范共同作用</div></div>
     </div>
   </div>
   <div class="foot">
@@ -708,8 +711,8 @@
     <div style="display:flex;flex-direction:column;justify-content:space-between">
       <div>
         <div class="kicker" data-anim>State of the Art</div>
-        <div class="h-xl" data-anim style="font-size:5.2vw;margin-bottom:1.8vh">每秒 10 米，<br>60 秒抵达 124 层</div>
-        <div class="body-serif" data-anim style="font-size:max(15px,1.3vw);line-height:1.65;margin-bottom:1.8vh">迪拜哈利法塔拥有 57 台电梯，其中观景台电梯以每秒 10 米的速度运行——约相当于 36 公里/小时。</div>
+        <div class="h-xl" data-anim style="font-size:min(5.2vw,9.2444vh);margin-bottom:1.8vh">每秒 10 米，<br>60 秒抵达 124 层</div>
+        <div class="body-serif" data-anim style="font-size:max(15px,min(1.3vw,2.3111vh));line-height:1.65;margin-bottom:1.8vh">迪拜哈利法塔拥有 57 台电梯，其中观景台电梯以每秒 10 米的速度运行——约相当于 36 公里/小时。</div>
         <div class="body-zh" data-anim style="opacity:.78">更令人惊叹的是目的层派梯系统：乘客在闸机输入目标楼层，算法即刻计算出最优电梯，最小化等待时间和停靠次数。这不是更大的马达，而是更聪明的调度。</div>
       </div>
       <div class="callout" data-anim style="margin-top:2vh">
@@ -720,17 +723,17 @@
     <div style="display:flex;flex-direction:column;gap:1.6vh;justify-content:center">
       <div class="stat-card" data-anim>
         <div class="stat-label">速度</div>
-        <div class="stat-nb" style="font-size:4vw">10<span class="stat-unit">m/s</span></div>
+        <div class="stat-nb" style="font-size:min(4vw,7.1111vh)">10<span class="stat-unit">m/s</span></div>
         <div class="stat-note">每秒 10 米，约 36 km/h</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">楼层</div>
-        <div class="stat-nb" style="font-size:4vw">124</div>
+        <div class="stat-nb" style="font-size:min(4vw,7.1111vh)">124</div>
         <div class="stat-note">观景台 At The Top</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">电梯数</div>
-        <div class="stat-nb" style="font-size:4vw">57<span class="stat-unit">台</span></div>
+        <div class="stat-nb" style="font-size:min(4vw,7.1111vh)">57<span class="stat-unit">台</span></div>
         <div class="stat-note">含双层轿厢电梯</div>
       </div>
     </div>
@@ -749,9 +752,9 @@
     <div class="left"><span>终章</span></div>
     <div class="right">10 / 10</div>
   </div>
-  <div class="frame" style="min-height:80vh;align-content:center;gap:8vh">
+  <div class="frame" style="min-height:0;align-content:center;gap:8vh">
     <div class="kicker" data-anim>The Next Floor</div>
-    <div class="h-hero" data-anim style="font-size:7vw;line-height:1.15">
+    <div class="h-hero" data-anim style="font-size:min(7vw,12.4444vh);line-height:1.15">
       <span data-anim style="display:block">当电梯学会</span>
       <span data-anim style="display:block">预测你的目的地</span>
     </div>

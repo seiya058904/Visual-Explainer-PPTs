@@ -455,6 +455,11 @@ body.low-power *::before,
 body.low-power *::after{animation:none!important;transition:none!important}
 body.low-power [data-anim]{opacity:1!important;transform:none!important}
 </style>
+<style>/* Keep captions and lower content inside their allocated space. */
+figure.frame-img:has(> .img-cap){display:grid;grid-template-rows:minmax(0,1fr) auto}
+figure.frame-img:has(> .img-cap)>img{min-height:0;height:100%;width:100%;grid-row:1}
+figure.frame-img>.img-cap{grid-row:2}
+</style>
 </head>
 <body>
 <script>

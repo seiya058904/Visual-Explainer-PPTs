@@ -58,18 +58,18 @@
   .rule.v{width:1px;height:100%;margin:0}
 
   .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;opacity:.6;margin-bottom:2.6vh}
-  .display{font-family:var(--serif-en);font-weight:700;font-size:11vw;line-height:.92;letter-spacing:-.025em}
-  .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:7.8vw;line-height:1.04;letter-spacing:-.005em}
-  .h1-zh{font-family:var(--serif-zh);font-weight:700;font-size:4.6vw;line-height:1.12;letter-spacing:-.005em}
-  .h2-zh{font-family:var(--serif-zh);font-weight:600;font-size:3.2vw;line-height:1.2;letter-spacing:0}
-  .h3-zh{font-family:var(--serif-zh);font-weight:500;font-size:1.9vw;line-height:1.35}
-  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,1.22vw);line-height:1.75;opacity:.82;letter-spacing:.01em}
-  .body-serif{font-family:var(--serif-zh);font-weight:400;font-size:max(15px,1.3vw);line-height:1.65;opacity:.88}
-  .lead{font-family:var(--serif-zh);font-weight:400;font-size:1.9vw;line-height:1.4;opacity:.85}
-  .meta{font-family:var(--mono);font-size:max(11px,.88vw);letter-spacing:.16em;text-transform:uppercase;opacity:.6}
-  .big-num{font-family:var(--serif-en);font-weight:800;font-size:10vw;line-height:.85;letter-spacing:-.03em;font-feature-settings:"tnum"}
-  .mid-num{font-family:var(--serif-en);font-weight:700;font-size:5.5vw;line-height:.88;letter-spacing:-.02em;font-feature-settings:"tnum"}
-  .ghost{font-family:var(--serif-en);font-weight:900;font-size:34vw;line-height:.8;opacity:.06;letter-spacing:-.04em;position:absolute;font-feature-settings:"tnum"}
+  .display{font-family:var(--serif-en);font-weight:700;font-size:min(11vw,19.5556vh);line-height:.92;letter-spacing:-.025em}
+  .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:min(7.8vw,13.8667vh);line-height:1.04;letter-spacing:-.005em}
+  .h1-zh{font-family:var(--serif-zh);font-weight:700;font-size:min(4.6vw,8.1778vh);line-height:1.12;letter-spacing:-.005em}
+  .h2-zh{font-family:var(--serif-zh);font-weight:600;font-size:min(3.2vw,5.6889vh);line-height:1.2;letter-spacing:0}
+  .h3-zh{font-family:var(--serif-zh);font-weight:500;font-size:min(1.9vw,3.3778vh);line-height:1.35}
+  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,min(1.22vw,2.1689vh));line-height:1.75;opacity:.82;letter-spacing:.01em}
+  .body-serif{font-family:var(--serif-zh);font-weight:400;font-size:max(15px,min(1.3vw,2.3111vh));line-height:1.65;opacity:.88}
+  .lead{font-family:var(--serif-zh);font-weight:400;font-size:min(1.9vw,3.3778vh);line-height:1.4;opacity:.85}
+  .meta{font-family:var(--mono);font-size:max(11px,min(.88vw,1.5644vh));letter-spacing:.16em;text-transform:uppercase;opacity:.6}
+  .big-num{font-family:var(--serif-en);font-weight:800;font-size:min(10vw,17.7778vh);line-height:.85;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .mid-num{font-family:var(--serif-en);font-weight:700;font-size:min(5.5vw,9.7778vh);line-height:.88;letter-spacing:-.02em;font-feature-settings:"tnum"}
+  .ghost{font-family:var(--serif-en);font-weight:900;font-size:min(34vw,60.4444vh);line-height:.8;opacity:.06;letter-spacing:-.04em;position:absolute;font-feature-settings:"tnum"}
   em{font-style:italic;font-family:var(--serif-en)}
   .en{font-family:var(--serif-en);font-style:italic;font-weight:500}
 
@@ -88,35 +88,35 @@
   .top-right{position:absolute;right:6vw;top:6vh;text-align:right}
 
   .stat{display:flex;flex-direction:column;gap:1vh;align-items:flex-start}
-  .stat .n{font-family:var(--serif-en);font-weight:800;font-size:8vw;line-height:.88;letter-spacing:-.03em;font-feature-settings:"tnum"}
-  .stat .l{font-family:var(--sans-zh);font-size:max(13px,1.05vw);opacity:.7;margin-top:1vh;font-weight:400;line-height:1.5}
+  .stat .n{font-family:var(--serif-en);font-weight:800;font-size:min(8vw,14.2222vh);line-height:.88;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .stat .l{font-family:var(--sans-zh);font-size:max(13px,min(1.05vw,1.8667vh));opacity:.7;margin-top:1vh;font-weight:400;line-height:1.5}
   .stat .m{font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.5;margin-bottom:.2vh}
 
-  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,1.2vw);line-height:1.55;opacity:.92}
+  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,min(1.2vw,2.1333vh));line-height:1.55;opacity:.92}
   .slide.light .callout{background:rgba(var(--ink-rgb),.05)}
   .slide.dark .callout{background:rgba(var(--paper-rgb),.06)}
   .callout .cite{display:block;margin-top:1.6vh;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6}
-  .callout .q-big{font-family:var(--serif-zh);font-weight:600;font-size:max(17px,1.6vw);line-height:1.42}
+  .callout .q-big{font-family:var(--serif-zh);font-weight:600;font-size:max(17px,min(1.6vw,2.8444vh));line-height:1.42}
 
   .plat{display:flex;flex-direction:column;justify-content:flex-end;padding:2vh 0;border-top:1px solid currentColor;border-color:rgba(127,127,127,.35)}
-  .plat .name{font-family:var(--serif-zh);font-weight:700;font-size:1.8vw;margin-bottom:.6vh}
-  .plat .nb{font-family:var(--serif-en);font-weight:700;font-size:3.2vw;letter-spacing:-.02em;line-height:1;font-feature-settings:"tnum"}
+  .plat .name{font-family:var(--serif-zh);font-weight:700;font-size:min(1.8vw,3.2000vh);margin-bottom:.6vh}
+  .plat .nb{font-family:var(--serif-en);font-weight:700;font-size:min(3.2vw,5.6889vh);letter-spacing:-.02em;line-height:1;font-feature-settings:"tnum"}
   .plat .sub{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;opacity:.55;margin-top:.6vh}
-  .plat .fill{font-family:var(--sans-zh);font-weight:300;font-size:2.4vw;opacity:.28;letter-spacing:-.01em;line-height:1}
+  .plat .fill{font-family:var(--sans-zh);font-weight:300;font-size:min(2.4vw,4.2667vh);opacity:.28;letter-spacing:-.01em;line-height:1}
 
   .rowline{display:grid;grid-template-columns:1fr 2fr 1fr;gap:2vw;padding:2.2vh 0;border-top:1px solid currentColor;align-items:center;border-color:rgba(127,127,127,.25)}
   .rowline:last-child{border-bottom:1px solid currentColor;border-color:rgba(127,127,127,.25)}
-  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:1.7vw}
-  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.2vw);opacity:.85;line-height:1.55}
+  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:min(1.7vw,3.0222vh)}
+  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,min(1.2vw,2.1333vh));opacity:.85;line-height:1.55}
   .rowline .m{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6;justify-self:end}
 
   .pillar{display:flex;flex-direction:column;gap:1.8vh}
-  .pillar .ic{font-family:var(--serif-en);font-style:italic;font-size:2.6vw;opacity:.45;font-weight:400}
+  .pillar .ic{font-family:var(--serif-en);font-style:italic;font-size:min(2.6vw,4.6222vh);opacity:.45;font-weight:400}
   .pillar .ic svg{width:2.8vw;height:2.8vw;stroke-width:1.2;opacity:.7}
-  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:2.4vw;line-height:1.1}
-  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.1vw);opacity:.76;line-height:1.6}
+  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:min(2.4vw,4.2667vh);line-height:1.1}
+  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,min(1.1vw,1.9556vh));opacity:.76;line-height:1.6}
 
-  .sign{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:2vw;opacity:.7}
+  .sign{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:min(2vw,3.5556vh);opacity:.7}
   .hi{position:relative;display:inline}
   .slide.dark .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--paper-rgb),.15);z-index:-1}
   .slide.light .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--ink-rgb),.08);z-index:-1}
@@ -129,7 +129,7 @@
 
   .img-slot{border:1.5px dashed rgba(127,127,127,.4);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1vh;padding:2vh 2vw;font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;opacity:.55;position:relative;aspect-ratio:16/9;width:100%;max-height:56vh;margin-inline:auto;box-sizing:border-box}
   .img-slot::before{content:"";position:absolute;inset:8px;border:1px solid currentColor;opacity:.2}
-  .img-slot .plus{font-size:2vw;font-weight:300;opacity:.5;letter-spacing:0}
+  .img-slot .plus{font-size:min(2vw,3.5556vh);font-weight:300;opacity:.5;letter-spacing:0}
   .img-slot .label{position:relative;z-index:2;text-align:center}
   .img-slot.r-4x3{aspect-ratio:4/3}
   .img-slot.r-3x2{aspect-ratio:3/2}
@@ -151,8 +151,8 @@
   .frame-img.h-26{height:26vh}
   .frame-img.h-28{height:28vh}
   .frame-cap{display:flex;justify-content:space-between;align-items:baseline;gap:1vw;margin-top:.8vh;font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.72}
-  .frame-cap .pf{font-family:var(--serif-zh);font-weight:600;font-size:max(13px,1vw);letter-spacing:.04em;text-transform:none;opacity:.94}
-  .frame-cap .nb{font-family:var(--serif-en);font-style:italic;font-size:max(15px,1.2vw);letter-spacing:.02em;text-transform:none;opacity:.88}
+  .frame-cap .pf{font-family:var(--serif-zh);font-weight:600;font-size:max(13px,min(1vw,1.7778vh));letter-spacing:.04em;text-transform:none;opacity:.94}
+  .frame-cap .nb{font-family:var(--serif-en);font-style:italic;font-size:max(15px,min(1.2vw,2.1333vh));letter-spacing:.02em;text-transform:none;opacity:.88}
   .frame-cap .idx{font-family:var(--mono);opacity:.5}
   figure.tile{display:flex;flex-direction:column;margin:0;min-width:0}
   figure.tile > .frame-img{flex:0 0 auto}
@@ -179,21 +179,21 @@
   .h-hero{
     font-family:var(--serif-zh);
     font-weight:900;
-    font-size:10vw;
+    font-size:min(10vw,17.7778vh);
     line-height:.96;
     letter-spacing:-.02em;
   }
   .h-xl{
     font-family:var(--serif-zh);
     font-weight:700;
-    font-size:6.2vw;
+    font-size:min(6.2vw,11.0222vh);
     line-height:1.08;
     letter-spacing:-.01em;
   }
   .h-sub{
     font-family:var(--serif-zh);
     font-weight:500;
-    font-size:3.1vw;
+    font-size:min(3.1vw,5.5111vh);
     line-height:1.25;
     letter-spacing:0;
     opacity:.7;
@@ -201,14 +201,14 @@
   .h-md{
     font-family:var(--serif-zh);
     font-weight:600;
-    font-size:2.3vw;
+    font-size:min(2.3vw,4.0889vh);
     line-height:1.3;
   }
   .h-hero-en,.h-xl-en{font-family:var(--serif-en);letter-spacing:-.025em}
   .lead{
     font-family:var(--serif-zh);
     font-weight:400;
-    font-size:1.75vw;
+    font-size:min(1.75vw,3.1111vh);
     line-height:1.5;
     opacity:.86;
   }
@@ -218,7 +218,7 @@
     align-items:baseline;
     flex-wrap:wrap;
     font-family:var(--mono);
-    font-size:max(12px,.92vw);
+    font-size:max(12px,min(.92vw,1.6356vh));
     letter-spacing:.16em;
     text-transform:uppercase;
     opacity:.6;
@@ -234,7 +234,7 @@
   }
   .stat-card .stat-label{
     font-family:var(--mono);
-    font-size:max(10px,.78vw);
+    font-size:max(10px,min(.78vw,1.3867vh));
     letter-spacing:.24em;
     text-transform:uppercase;
     opacity:.55;
@@ -242,7 +242,7 @@
   .stat-card .stat-nb{
     font-family:var(--serif-en);
     font-weight:800;
-    font-size:5.8vw;
+    font-size:min(5.8vw,10.3111vh);
     line-height:.9;
     letter-spacing:-.03em;
     font-feature-settings:"tnum";
@@ -259,13 +259,13 @@
   .stat-card .stat-note{
     font-family:var(--sans-zh);
     font-weight:400;
-    font-size:max(13px,1.05vw);
+    font-size:max(13px,min(1.05vw,1.8667vh));
     line-height:1.5;
     opacity:.72;
     margin-top:.6vh;
   }
-  .grid-4 .stat-card .stat-nb{font-size:5vw}
-  .grid-3 .stat-card .stat-nb{font-size:6.8vw}
+  .grid-4 .stat-card .stat-nb{font-size:min(5vw,8.8889vh)}
+  .grid-3 .stat-card .stat-nb{font-size:min(6.8vw,12.0889vh)}
 
   .pipeline-section{
     margin-top:4.4vh;
@@ -279,7 +279,7 @@
   }
   .pipeline-label{
     font-family:var(--mono);
-    font-size:max(11px,.85vw);
+    font-size:max(11px,min(.85vw,1.5111vh));
     letter-spacing:.24em;
     text-transform:uppercase;
     opacity:.62;
@@ -305,20 +305,20 @@
     font-family:var(--serif-en);
     font-style:italic;
     font-weight:500;
-    font-size:1.15vw;
+    font-size:min(1.15vw,2.0444vh);
     opacity:.45;
   }
   .step-title{
     font-family:var(--sans-zh);
     font-weight:700;
-    font-size:1.55vw;
+    font-size:min(1.55vw,2.7556vh);
     letter-spacing:.01em;
     line-height:1.2;
   }
   .step-desc{
     font-family:var(--sans-zh);
     font-weight:400;
-    font-size:max(12px,.95vw);
+    font-size:max(12px,min(.95vw,1.6889vh));
     line-height:1.45;
     opacity:.72;
   }
@@ -338,7 +338,7 @@
     display:block;
     margin-top:.8vh;
     font-family:var(--mono);
-    font-size:max(10px,.8vw);
+    font-size:max(10px,min(.8vw,1.4222vh));
     letter-spacing:.22em;
     text-transform:uppercase;
     opacity:.6;
@@ -352,8 +352,8 @@
     text-transform:uppercase;
     opacity:.6;
   }
-  .chrome{font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.2em;text-transform:uppercase;opacity:.62}
-  .foot{flex-shrink:0;margin-bottom:2vh;font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.18em;text-transform:uppercase;opacity:.5}
+  .chrome{font-family:var(--mono);font-size:max(11px,min(.78vw,1.3867vh));letter-spacing:.2em;text-transform:uppercase;opacity:.62}
+  .foot{flex-shrink:0;margin-bottom:2vh;font-family:var(--mono);font-size:max(11px,min(.78vw,1.3867vh));letter-spacing:.18em;text-transform:uppercase;opacity:.5}
 
   @keyframes anim-fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
   @keyframes anim-fadeLine{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
@@ -372,14 +372,18 @@
   body.low-power [data-anim]{opacity:1!important;transform:none!important}
 
   @media (max-width:900px){
-    .display{font-size:16vw}
-    .display-zh{font-size:12vw}
-    .h1-zh{font-size:7vw}
-    .h-hero{font-size:14vw}
-    .h-xl{font-size:9vw}
+    .display{font-size:min(16vw,28.4444vh)}
+    .display-zh{font-size:min(12vw,21.3333vh)}
+    .h1-zh{font-size:min(7vw,12.4444vh)}
+    .h-hero{font-size:min(14vw,24.8889vh)}
+    .h-xl{font-size:min(9vw,16.0000vh)}
     .pipeline{grid-template-columns:repeat(2,1fr)}
     .grid-2-7-5,.grid-2-6-6,.grid-2-8-4{grid-template-columns:1fr}
   }
+</style>
+<style>/* Keep captions and lower content inside their allocated space. */
+#deck>.slide:nth-child(10)>.frame{margin-bottom:1.5vh}
+#deck>.slide:nth-child(11)>.frame{margin-bottom:1.5vh}
 </style>
 </head>
 <body>
@@ -421,9 +425,9 @@
     <div class="left"><span class="sep"></span><span>保险</span></div>
     <div class="right"><span>人类如何给不确定性定价</span><span class="sep"></span><span>01 / 15</span></div>
   </div>
-  <div class="frame" style="display:grid; gap:3vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:3vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>风险分担</div>
-    <div class="h-hero" data-anim style="font-size:min(9vw, 16vh)">保险：人类如何<br>给不确定性定价</div>
+    <div class="h-hero" data-anim style="font-size:min(min(9vw,16.0000vh), 16vh)">保险：人类如何<br>给不确定性定价</div>
     <div class="h-sub" data-anim style="max-width:70%">从一张保单，到一套把风险分散、计算、转移的现代文明系统。</div>
     <div class="lead" data-anim style="max-width:66%; margin-top:1vh">保险不是让风险消失，而是让风险不再一次性击穿人生。</div>
     <div class="meta-row" data-anim><span>Insurance</span><span>·</span><span>Risk Pooling</span><span>·</span><span>Premium</span></div>
@@ -550,7 +554,7 @@
   <div class="chrome"><div>保险</div><div>07 / 15</div></div>
   <div class="frame" style="padding-top:4vh">
     <div class="kicker">合同机制</div>
-    <div class="h-xl" style="font-size:min(5.2vw, 9.2vh)">If it is not defined,<br>it cannot be priced.</div>
+    <div class="h-xl" style="font-size:min(min(5.2vw,9.2444vh), 9.2vh)">If it is not defined,<br>it cannot be priced.</div>
     <div class="lead" style="margin:.8vh 0 1vh 0">保险合同把模糊风险变清楚</div>
     <div class="pipeline-section">
       <div class="pipeline-label">保障要素</div>
@@ -588,7 +592,7 @@
   <div class="frame" style="display:flex; flex-direction:column; gap:2.4vh; padding-top:4vh; align-items:flex-start">
     <div class="kicker" data-anim>免赔额 · Deductible</div>
     <div class="h-xl" data-anim>保险不是为了覆盖所有小麻烦。</div>
-    <div class="en" data-anim style="font-size:2vw; opacity:.6">Insurance is not for every scratch.<br>It is for the hit you cannot absorb.</div>
+    <div class="en" data-anim style="font-size:min(2vw,3.5556vh); opacity:.6">Insurance is not for every scratch.<br>It is for the hit you cannot absorb.</div>
     <div class="callout" data-anim style="margin-top:2vh; max-width:66%">
       <div class="q-big">免赔额让小损失由个人承担，<br>大损失由保险系统承担。</div>
       <span class="callout-src">Deductible · 风险共担机制</span>
@@ -617,7 +621,7 @@
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Data Source</div>
-        <div class="stat-nb" style="font-size:3vw">NAIC</div>
+        <div class="stat-nb" style="font-size:min(3vw,5.3333vh)">NAIC</div>
         <div class="stat-note">2022/2023 Auto Insurance<br>Database Report</div>
       </div>
     </div>
@@ -631,18 +635,18 @@
   <div class="chrome"><div>保险</div><div>10 / 15</div></div>
   <div class="frame" style="padding-top:4vh">
     <div class="kicker" data-anim>理赔成本</div>
-    <div class="h-xl" data-anim style="font-size:min(5.2vw, 9.2vh)">When repair becomes expensive,<br>risk becomes expensive.</div>
+    <div class="h-xl" data-anim style="font-size:min(min(5.2vw,9.2444vh), 9.2vh)">When repair becomes expensive,<br>risk becomes expensive.</div>
     <div class="grid-2-6-6" style="flex:1; margin-top:1.6vh; gap:0">
       <div class="col" style="gap:1.2vh">
         <div class="kicker" data-anim style="margin-bottom:0; opacity:.45">2021</div>
-        <div class="mid-num" style="font-size:5.5vw; line-height:.9; opacity:.55" data-anim>$6,113</div>
+        <div class="mid-num" style="font-size:min(5.5vw,9.7778vh); line-height:.9; opacity:.55" data-anim>$6,113</div>
         <div class="body-zh" data-anim style="opacity:.6">碰撞险平均每次索赔损失</div>
       </div>
       <div class="col" style="gap:1.2vh; border-left:2px solid rgba(127,127,127,.25); padding-left:2.4vw">
         <div class="kicker" data-anim style="margin-bottom:0">2022</div>
-        <div class="mid-num" style="font-size:5.5vw; line-height:.9" data-anim>$7,191</div>
+        <div class="mid-num" style="font-size:min(5.5vw,9.7778vh); line-height:.9" data-anim>$7,191</div>
         <div class="body-zh" data-anim>碰撞险平均每次索赔损失</div>
-        <div class="en" style="font-size:2.2vw; font-weight:700; margin-top:.2vh" data-anim>+17.6%</div>
+        <div class="en" style="font-size:min(2.2vw,3.9111vh); font-weight:700; margin-top:.2vh" data-anim>+17.6%</div>
       </div>
     </div>
     <div class="body-zh" data-anim style="margin-top:1.2vh; max-width:72%">现代汽车更安全，也更复杂。一个保险杠后面可能有雷达、传感器、摄像头和电子模块。保费上涨，有时不是因为事故更多，而是因为每一次事故更贵了。</div>
@@ -655,28 +659,28 @@
   <div class="chrome"><div>保险</div><div>11 / 15</div></div>
   <div class="frame" style="display:flex; flex-direction:column; gap:1.2vh; padding-top:2vh">
     <div class="kicker" data-anim>健康险 · Health Insurance</div>
-    <div class="h-xl" data-anim style="font-size:min(5vw, 9vh)">Health insurance prices biology,<br>medicine and time.</div>
+    <div class="h-xl" data-anim style="font-size:min(min(5vw,8.8889vh), 9vh)">Health insurance prices biology,<br>medicine and time.</div>
     <div class="body-zh" data-anim style="max-width:76%; margin-top:.2vh">健康险定价更复杂，因为身体不是机器。同一种疾病，在不同年龄、不同治疗方案、不同国家医疗系统下，成本完全不同。</div>
     <div class="row" style="gap:1.2vw; margin-top:.4vh; flex:1; align-items:stretch">
       <div class="pillar" style="flex:1; gap:.6vh; border-top:2px solid rgba(127,127,127,.2); padding-top:1.2vh">
-        <div class="ic" style="font-size:1.8vw">01</div>
-        <div class="t" style="font-size:1.6vw">疾病概率</div>
-        <div class="d" style="font-size:max(12px,.88vw)">会不会生病</div>
+        <div class="ic" style="font-size:min(1.8vw,3.2000vh)">01</div>
+        <div class="t" style="font-size:min(1.6vw,2.8444vh)">疾病概率</div>
+        <div class="d" style="font-size:max(12px,min(.88vw,1.5644vh))">会不会生病</div>
       </div>
       <div class="pillar" style="flex:1; gap:.6vh; border-top:2px solid rgba(127,127,127,.2); padding-top:1.2vh">
-        <div class="ic" style="font-size:1.8vw">02</div>
-        <div class="t" style="font-size:1.6vw">治疗成本</div>
-        <div class="d" style="font-size:max(12px,.88vw)">要花多少钱</div>
+        <div class="ic" style="font-size:min(1.8vw,3.2000vh)">02</div>
+        <div class="t" style="font-size:min(1.6vw,2.8444vh)">治疗成本</div>
+        <div class="d" style="font-size:max(12px,min(.88vw,1.5644vh))">要花多少钱</div>
       </div>
       <div class="pillar" style="flex:1; gap:.6vh; border-top:2px solid rgba(127,127,127,.2); padding-top:1.2vh">
-        <div class="ic" style="font-size:1.8vw">03</div>
-        <div class="t" style="font-size:1.6vw">医疗通胀</div>
-        <div class="d" style="font-size:max(12px,.88vw)">价格逐年上涨</div>
+        <div class="ic" style="font-size:min(1.8vw,3.2000vh)">03</div>
+        <div class="t" style="font-size:min(1.6vw,2.8444vh)">医疗通胀</div>
+        <div class="d" style="font-size:max(12px,min(.88vw,1.5644vh))">价格逐年上涨</div>
       </div>
       <div class="pillar" style="flex:1; gap:.6vh; border-top:2px solid rgba(127,127,127,.2); padding-top:1.2vh">
-        <div class="ic" style="font-size:1.8vw">04</div>
-        <div class="t" style="font-size:1.6vw">长期风险</div>
-        <div class="d" style="font-size:max(12px,.88vw)">持续多久</div>
+        <div class="ic" style="font-size:min(1.8vw,3.2000vh)">04</div>
+        <div class="t" style="font-size:min(1.6vw,2.8444vh)">长期风险</div>
+        <div class="d" style="font-size:max(12px,min(.88vw,1.5644vh))">持续多久</div>
       </div>
     </div>
     <div class="body-zh" data-anim style="max-width:72%; margin-top:.2vh">健康险本质上，是把身体的不确定性转化成长期财务安排。</div>
@@ -690,7 +694,7 @@
   <div class="frame" style="display:flex; flex-direction:column; gap:2vh; padding-top:4vh; align-items:center; justify-content:center; text-align:center">
     <div class="kicker" data-anim>寿险 · Life Insurance</div>
     <blockquote style="border:none; margin:0; padding:0">
-      <div class="display" style="font-size:min(5.5vw, 10vh); line-height:1.1; max-width:85%; margin:0 auto">
+      <div class="display" style="font-size:min(min(5.5vw,9.7778vh), 10vh); line-height:1.1; max-width:85%; margin:0 auto">
         <span data-anim>Life is priceless.</span><br>
         <span data-anim>Dependents still need numbers.</span>
       </div>
@@ -708,9 +712,9 @@
 <!-- ============ 13 / 15 灾害保险 · 章节幕 ============ -->
 <section class="slide hero light">
   <div class="chrome"><div>保险</div><div>13 / 15</div></div>
-  <div class="frame" style="display:grid; gap:2.4vh; align-content:center; min-height:80vh; text-align:center">
+  <div class="frame" style="display:grid; gap:2.4vh; align-content:center; min-height:0; text-align:center">
     <div class="kicker" data-anim>灾害保险</div>
-    <div class="h-hero" data-anim style="font-size:min(8vw, 14vh)">当风险变成<br>城市尺度</div>
+    <div class="h-hero" data-anim style="font-size:min(min(8vw,14.2222vh), 14vh)">当风险变成<br>城市尺度</div>
     <div class="lead" data-anim style="max-width:60%; margin:1vh auto 0">A disaster is not one loss.<br>It is thousands at once.</div>
   </div>
   <div class="foot"><div>从个体风险 → 城市尺度风险</div><div>Swiss Re Institute sigma 1/2025</div></div>
@@ -725,17 +729,17 @@
     <div class="grid-3" style="flex:none; margin-top:2vh">
       <div class="stat-card" data-anim>
         <div class="stat-label">Natural Catastrophe Loss</div>
-        <div class="stat-nb" style="font-size:5.2vw">$3,180<span class="stat-unit">亿</span></div>
+        <div class="stat-nb" style="font-size:min(5.2vw,9.2444vh)">$3,180<span class="stat-unit">亿</span></div>
         <div class="stat-note">2024 年全球自然灾害经济损失</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Protection Gap</div>
-        <div class="stat-nb" style="font-size:5.2vw">57%</div>
+        <div class="stat-nb" style="font-size:min(5.2vw,9.2444vh)">57%</div>
         <div class="stat-note">没有保险覆盖的比例</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Uninsured Amount</div>
-        <div class="stat-nb" style="font-size:5.2vw">$1,810<span class="stat-unit">亿</span></div>
+        <div class="stat-nb" style="font-size:min(5.2vw,9.2444vh)">$1,810<span class="stat-unit">亿</span></div>
         <div class="stat-note">保护缺口金额</div>
       </div>
     </div>
@@ -747,9 +751,9 @@
 <!-- ============ 15 / 15 结语 ============ -->
 <section class="slide hero dark">
   <div class="chrome"><div>保险</div><div>15 / 15</div></div>
-  <div class="frame" style="display:grid; gap:3vh; align-content:center; min-height:80vh; text-align:center">
+  <div class="frame" style="display:grid; gap:3vh; align-content:center; min-height:0; text-align:center">
     <div class="kicker" data-anim>结语</div>
-    <div class="h-hero" data-anim style="font-size:min(7.5vw, 14vh)">风险仍然存在，<br>损失可以分担。</div>
+    <div class="h-hero" data-anim style="font-size:min(min(7.5vw,13.3333vh), 14vh)">风险仍然存在，<br>损失可以分担。</div>
     <div class="lead" data-anim style="max-width:60%; margin:1vh auto 0">Insurance does not defeat uncertainty.<br>It makes uncertainty survivable.</div>
     <div class="meta-row" data-anim style="justify-content:center; margin-top:2vh">
       <span>保险：人类如何给不确定性定价</span>

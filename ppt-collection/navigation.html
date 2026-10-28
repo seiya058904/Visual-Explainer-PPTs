@@ -74,18 +74,18 @@
      · 等宽（IBM Plex Mono）：kicker、meta 小标签、foot 右侧
   */
   .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;opacity:.6;margin-bottom:2.6vh}
-  .display{font-family:var(--serif-en);font-weight:700;font-size:11vw;line-height:.92;letter-spacing:-.025em}
-  .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:7.8vw;line-height:1.04;letter-spacing:-.005em}
-  .h1-zh{font-family:var(--serif-zh);font-weight:700;font-size:4.6vw;line-height:1.12;letter-spacing:-.005em}
-  .h2-zh{font-family:var(--serif-zh);font-weight:600;font-size:3.2vw;line-height:1.2;letter-spacing:0}
-  .h3-zh{font-family:var(--serif-zh);font-weight:500;font-size:1.9vw;line-height:1.35}
-  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,1.22vw);line-height:1.75;opacity:.82;letter-spacing:.01em}
-  .body-serif{font-family:var(--serif-zh);font-weight:400;font-size:max(15px,1.3vw);line-height:1.65;opacity:.88}
-  .lead{font-family:var(--serif-zh);font-weight:400;font-size:1.9vw;line-height:1.4;opacity:.85}
-  .meta{font-family:var(--mono);font-size:max(11px,.88vw);letter-spacing:.16em;text-transform:uppercase;opacity:.6}
-  .big-num{font-family:var(--serif-en);font-weight:800;font-size:10vw;line-height:.85;letter-spacing:-.03em;font-feature-settings:"tnum"}
-  .mid-num{font-family:var(--serif-en);font-weight:700;font-size:5.5vw;line-height:.88;letter-spacing:-.02em;font-feature-settings:"tnum"}
-  .ghost{font-family:var(--serif-en);font-weight:900;font-size:34vw;line-height:.8;opacity:.06;letter-spacing:-.04em;position:absolute;font-feature-settings:"tnum"}
+  .display{font-family:var(--serif-en);font-weight:700;font-size:min(11vw,19.5556vh);line-height:.92;letter-spacing:-.025em}
+  .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:min(7.8vw,13.8667vh);line-height:1.04;letter-spacing:-.005em}
+  .h1-zh{font-family:var(--serif-zh);font-weight:700;font-size:min(4.6vw,8.1778vh);line-height:1.12;letter-spacing:-.005em}
+  .h2-zh{font-family:var(--serif-zh);font-weight:600;font-size:min(3.2vw,5.6889vh);line-height:1.2;letter-spacing:0}
+  .h3-zh{font-family:var(--serif-zh);font-weight:500;font-size:min(1.9vw,3.3778vh);line-height:1.35}
+  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,min(1.22vw,2.1689vh));line-height:1.75;opacity:.82;letter-spacing:.01em}
+  .body-serif{font-family:var(--serif-zh);font-weight:400;font-size:max(15px,min(1.3vw,2.3111vh));line-height:1.65;opacity:.88}
+  .lead{font-family:var(--serif-zh);font-weight:400;font-size:min(1.9vw,3.3778vh);line-height:1.4;opacity:.85}
+  .meta{font-family:var(--mono);font-size:max(11px,min(.88vw,1.5644vh));letter-spacing:.16em;text-transform:uppercase;opacity:.6}
+  .big-num{font-family:var(--serif-en);font-weight:800;font-size:min(10vw,17.7778vh);line-height:.85;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .mid-num{font-family:var(--serif-en);font-weight:700;font-size:min(5.5vw,9.7778vh);line-height:.88;letter-spacing:-.02em;font-feature-settings:"tnum"}
+  .ghost{font-family:var(--serif-en);font-weight:900;font-size:min(34vw,60.4444vh);line-height:.8;opacity:.06;letter-spacing:-.04em;position:absolute;font-feature-settings:"tnum"}
   em{font-style:italic;font-family:var(--serif-en)}
   .en{font-family:var(--serif-en);font-style:italic;font-weight:500}
 
@@ -106,40 +106,40 @@
 
   /* ============ Stat（数字矩阵） ============ */
   .stat{display:flex;flex-direction:column;gap:1vh;align-items:flex-start}
-  .stat .n{font-family:var(--serif-en);font-weight:800;font-size:8vw;line-height:.88;letter-spacing:-.03em;font-feature-settings:"tnum"}
-  .stat .l{font-family:var(--sans-zh);font-size:max(13px,1.05vw);opacity:.7;margin-top:1vh;font-weight:400;line-height:1.5}
+  .stat .n{font-family:var(--serif-en);font-weight:800;font-size:min(8vw,14.2222vh);line-height:.88;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .stat .l{font-family:var(--sans-zh);font-size:max(13px,min(1.05vw,1.8667vh));opacity:.7;margin-top:1vh;font-weight:400;line-height:1.5}
   .stat .m{font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.5;margin-bottom:.2vh}
 
   /* ============ Callout（引用框） ============ */
-  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,1.2vw);line-height:1.55;opacity:.92}
+  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,min(1.2vw,2.1333vh));line-height:1.55;opacity:.92}
   .slide.light .callout{background:rgba(var(--ink-rgb),.05)}
   .slide.dark .callout{background:rgba(var(--paper-rgb),.06)}
   .callout .cite{display:block;margin-top:1.6vh;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6}
-  .callout .q-big{font-family:var(--serif-zh);font-weight:600;font-size:max(17px,1.6vw);line-height:1.42}
+  .callout .q-big{font-family:var(--serif-zh);font-weight:600;font-size:max(17px,min(1.6vw,2.8444vh));line-height:1.42}
 
   /* ============ Platform（平台卡） ============ */
   .plat{display:flex;flex-direction:column;justify-content:flex-end;padding:2vh 0;border-top:1px solid currentColor;border-color:rgba(127,127,127,.35)}
-  .plat .name{font-family:var(--serif-zh);font-weight:700;font-size:1.8vw;margin-bottom:.6vh}
-  .plat .nb{font-family:var(--serif-en);font-weight:700;font-size:3.2vw;letter-spacing:-.02em;line-height:1;font-feature-settings:"tnum"}
+  .plat .name{font-family:var(--serif-zh);font-weight:700;font-size:min(1.8vw,3.2000vh);margin-bottom:.6vh}
+  .plat .nb{font-family:var(--serif-en);font-weight:700;font-size:min(3.2vw,5.6889vh);letter-spacing:-.02em;line-height:1;font-feature-settings:"tnum"}
   .plat .sub{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;opacity:.55;margin-top:.6vh}
-  .plat .fill{font-family:var(--sans-zh);font-weight:300;font-size:2.4vw;opacity:.28;letter-spacing:-.01em;line-height:1}
+  .plat .fill{font-family:var(--sans-zh);font-weight:300;font-size:min(2.4vw,4.2667vh);opacity:.28;letter-spacing:-.01em;line-height:1}
 
   /* ============ Rowline（表格行） ============ */
   .rowline{display:grid;grid-template-columns:1fr 2fr 1fr;gap:2vw;padding:2.2vh 0;border-top:1px solid currentColor;align-items:center;border-color:rgba(127,127,127,.25)}
   .rowline:last-child{border-bottom:1px solid currentColor;border-color:rgba(127,127,127,.25)}
-  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:1.7vw}
-  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.2vw);opacity:.85;line-height:1.55}
+  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:min(1.7vw,3.0222vh)}
+  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,min(1.2vw,2.1333vh));opacity:.85;line-height:1.55}
   .rowline .m{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6;justify-self:end}
 
   /* ============ Pillar（支柱卡片） ============ */
   .pillar{display:flex;flex-direction:column;gap:1.8vh}
-  .pillar .ic{font-family:var(--serif-en);font-style:italic;font-size:2.6vw;opacity:.45;font-weight:400}
+  .pillar .ic{font-family:var(--serif-en);font-style:italic;font-size:min(2.6vw,4.6222vh);opacity:.45;font-weight:400}
   .pillar .ic svg{width:2.8vw;height:2.8vw;stroke-width:1.2;opacity:.7}
-  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:2.4vw;line-height:1.1}
-  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.1vw);opacity:.76;line-height:1.6}
+  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:min(2.4vw,4.2667vh);line-height:1.1}
+  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,min(1.1vw,1.9556vh));opacity:.76;line-height:1.6}
 
   /* ============ Signature / Highlight ============ */
-  .sign{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:2vw;opacity:.7}
+  .sign{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:min(2vw,3.5556vh);opacity:.7}
   .hi{position:relative;display:inline}
   .slide.dark .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--paper-rgb),.15);z-index:-1}
   .slide.light .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--ink-rgb),.08);z-index:-1}
@@ -154,7 +154,7 @@
   /* ============ 图片占位（虚线框，提示设计师位置） ============ */
   .img-slot{border:1.5px dashed rgba(127,127,127,.4);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1vh;padding:2vh 2vw;font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;opacity:.55;position:relative;aspect-ratio:16/9;width:100%;max-height:56vh;margin-inline:auto;box-sizing:border-box}
   .img-slot::before{content:"";position:absolute;inset:8px;border:1px solid currentColor;opacity:.2}
-  .img-slot .plus{font-size:2vw;font-weight:300;opacity:.5;letter-spacing:0}
+  .img-slot .plus{font-size:min(2vw,3.5556vh);font-weight:300;opacity:.5;letter-spacing:0}
   .img-slot .label{position:relative;z-index:2;text-align:center}
   .img-slot.r-4x3{aspect-ratio:4/3}
   .img-slot.r-3x2{aspect-ratio:3/2}
@@ -180,8 +180,8 @@
   .frame-img.h-26{height:26vh}
   .frame-img.h-28{height:28vh}
   .frame-cap{display:flex;justify-content:space-between;align-items:baseline;gap:1vw;margin-top:.8vh;font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.72}
-  .frame-cap .pf{font-family:var(--serif-zh);font-weight:600;font-size:max(13px,1vw);letter-spacing:.04em;text-transform:none;opacity:.94}
-  .frame-cap .nb{font-family:var(--serif-en);font-style:italic;font-size:max(15px,1.2vw);letter-spacing:.02em;text-transform:none;opacity:.88}
+  .frame-cap .pf{font-family:var(--serif-zh);font-weight:600;font-size:max(13px,min(1vw,1.7778vh));letter-spacing:.04em;text-transform:none;opacity:.94}
+  .frame-cap .nb{font-family:var(--serif-en);font-style:italic;font-size:max(15px,min(1.2vw,2.1333vh));letter-spacing:.02em;text-transform:none;opacity:.88}
   .frame-cap .idx{font-family:var(--mono);opacity:.5}
   figure.tile{display:flex;flex-direction:column;margin:0;min-width:0}
   figure.tile > .frame-img{flex:0 0 auto}
@@ -217,21 +217,21 @@
   .h-hero{
     font-family:var(--serif-zh);
     font-weight:900;
-    font-size:10vw;
+    font-size:min(10vw,17.7778vh);
     line-height:.96;
     letter-spacing:-.02em;
   }
   .h-xl{
     font-family:var(--serif-zh);
     font-weight:700;
-    font-size:6.2vw;
+    font-size:min(6.2vw,11.0222vh);
     line-height:1.08;
     letter-spacing:-.01em;
   }
   .h-sub{
     font-family:var(--serif-zh);
     font-weight:500;
-    font-size:3.1vw;
+    font-size:min(3.1vw,5.5111vh);
     line-height:1.25;
     letter-spacing:0;
     opacity:.7;
@@ -239,7 +239,7 @@
   .h-md{
     font-family:var(--serif-zh);
     font-weight:600;
-    font-size:2.3vw;
+    font-size:min(2.3vw,4.0889vh);
     line-height:1.3;
   }
   /* 英文标题专用（Playfair 衬线） */
@@ -249,7 +249,7 @@
   .lead{
     font-family:var(--serif-zh);
     font-weight:400;
-    font-size:1.75vw;
+    font-size:min(1.75vw,3.1111vh);
     line-height:1.5;
     opacity:.86;
   }
@@ -261,7 +261,7 @@
     align-items:baseline;
     flex-wrap:wrap;
     font-family:var(--mono);
-    font-size:max(12px,.92vw);
+    font-size:max(12px,min(.92vw,1.6356vh));
     letter-spacing:.16em;
     text-transform:uppercase;
     opacity:.6;
@@ -279,7 +279,7 @@
   }
   .stat-card .stat-label{
     font-family:var(--mono);
-    font-size:max(10px,.78vw);
+    font-size:max(10px,min(.78vw,1.3867vh));
     letter-spacing:.24em;
     text-transform:uppercase;
     opacity:.55;
@@ -287,7 +287,7 @@
   .stat-card .stat-nb{
     font-family:var(--serif-en);
     font-weight:800;
-    font-size:5.8vw;
+    font-size:min(5.8vw,10.3111vh);
     line-height:.9;
     letter-spacing:-.03em;
     font-feature-settings:"tnum";
@@ -304,15 +304,15 @@
   .stat-card .stat-note{
     font-family:var(--sans-zh);
     font-weight:400;
-    font-size:max(13px,1.05vw);
+    font-size:max(13px,min(1.05vw,1.8667vh));
     line-height:1.5;
     opacity:.72;
     margin-top:.6vh;
   }
   /* 当 stat-card 用于 grid-4（2x2），数字适度放大；若页面有标题+引文在上方，可内联 style 覆盖为更小值 */
-  .grid-4 .stat-card .stat-nb{font-size:5vw}
+  .grid-4 .stat-card .stat-nb{font-size:min(5vw,8.8889vh)}
   /* 当只有 3 个，字也可以稍大 */
-  .grid-3 .stat-card .stat-nb{font-size:6.8vw}
+  .grid-3 .stat-card .stat-nb{font-size:min(6.8vw,12.0889vh)}
 
   /* ---------- pipeline（流水线） ---------- */
   .pipeline-section{
@@ -327,7 +327,7 @@
   }
   .pipeline-label{
     font-family:var(--mono);
-    font-size:max(11px,.85vw);
+    font-size:max(11px,min(.85vw,1.5111vh));
     letter-spacing:.24em;
     text-transform:uppercase;
     opacity:.62;
@@ -353,20 +353,20 @@
     font-family:var(--serif-en);
     font-style:italic;
     font-weight:500;
-    font-size:1.15vw;
+    font-size:min(1.15vw,2.0444vh);
     opacity:.45;
   }
   .step-title{
     font-family:var(--sans-zh);
     font-weight:700;
-    font-size:1.55vw;
+    font-size:min(1.55vw,2.7556vh);
     letter-spacing:.01em;
     line-height:1.2;
   }
   .step-desc{
     font-family:var(--sans-zh);
     font-weight:400;
-    font-size:max(12px,.95vw);
+    font-size:max(12px,min(.95vw,1.6889vh));
     line-height:1.45;
     opacity:.72;
   }
@@ -391,7 +391,7 @@
     display:block;
     margin-top:.8vh;
     font-family:var(--mono);
-    font-size:max(10px,.8vw);
+    font-size:max(10px,min(.8vw,1.4222vh));
     letter-spacing:.22em;
     text-transform:uppercase;
     opacity:.6;
@@ -408,8 +408,8 @@
   }
 
   /* ---------- chrome & foot 补位（layouts.md 简单写法） ---------- */
-  .chrome{font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.2em;text-transform:uppercase;opacity:.62}
-  .foot{flex-shrink:0;margin-bottom:2vh;font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.18em;text-transform:uppercase;opacity:.5}
+  .chrome{font-family:var(--mono);font-size:max(11px,min(.78vw,1.3867vh));letter-spacing:.2em;text-transform:uppercase;opacity:.62}
+  .foot{flex-shrink:0;margin-bottom:2vh;font-family:var(--mono);font-size:max(11px,min(.78vw,1.3867vh));letter-spacing:.18em;text-transform:uppercase;opacity:.5}
 
   /* ============ 动效系统(CSS @keyframes,替代 Motion One 以支持 file:// 协议) ============
      所有 [data-anim] 元素默认隐藏,由 .slide.visible 触发 CSS 入场动画。
@@ -433,14 +433,18 @@
 
   /* ---------- 响应式降级 ---------- */
   @media (max-width:900px){
-    .display{font-size:16vw}
-    .display-zh{font-size:12vw}
-    .h1-zh{font-size:7vw}
-    .h-hero{font-size:14vw}
-    .h-xl{font-size:9vw}
+    .display{font-size:min(16vw,28.4444vh)}
+    .display-zh{font-size:min(12vw,21.3333vh)}
+    .h1-zh{font-size:min(7vw,12.4444vh)}
+    .h-hero{font-size:min(14vw,24.8889vh)}
+    .h-xl{font-size:min(9vw,16.0000vh)}
     .pipeline{grid-template-columns:repeat(2,1fr)}
     .grid-2-7-5,.grid-2-6-6,.grid-2-8-4{grid-template-columns:1fr}
   }
+</style>
+<style>/* Keep captions and lower content inside their allocated space. */
+#deck>.slide:nth-child(13)>.frame{margin-bottom:1.5vh}
+#deck>.slide:nth-child(19)>.frame{margin-bottom:1.5vh}
 </style>
 </head>
 <body>
@@ -488,7 +492,7 @@
     <div>导航 · Navigation</div>
     <div>01 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>We No Longer Remember the City</div>
     <h1 class="h-hero">导航</h1>
     <h2 class="h-sub" data-anim>人类如何不再迷路</h2>
@@ -510,23 +514,23 @@
   </div>
   <div class="frame" style="padding-top:4vh">
     <div class="kicker" data-anim>方向感，被外包了</div>
-    <h2 class="h-xl" style="margin-bottom:2vh; font-size:5.2vw" data-anim>We no longer remember the city.<br>We ask it.</h2>
+    <h2 class="h-xl" style="margin-bottom:2vh; font-size:min(5.2vw,9.2444vh)" data-anim>We no longer remember the city.<br>We ask it.</h2>
 
     <div class="grid-2-6-6" style="gap:5vw 4vh">
       <div data-anim="left" style="padding:3vh 2vw; border-left:3px solid currentColor; opacity:.55">
         <div class="kicker" style="opacity:.9">Before · 记忆城市</div>
-        <p style="font-family:var(--sans-zh); font-size:max(15px,1.22vw); line-height:1.75; margin-top:2vh">
+        <p style="font-family:var(--sans-zh); font-size:max(15px,min(1.22vw,2.1689vh)); line-height:1.75; margin-top:2vh">
           过去，人类靠星空、地标、纸质地图和记忆移动。方向感是一种需要学习的能力。
         </p>
       </div>
       <div data-anim="right" style="padding:3vh 2vw; border-left:3px solid currentColor">
         <div class="kicker" style="opacity:.9">After · 询问城市</div>
-        <p style="font-family:var(--sans-zh); font-size:max(15px,1.22vw); line-height:1.75; margin-top:2vh">
+        <p style="font-family:var(--sans-zh); font-size:max(15px,min(1.22vw,2.1689vh)); line-height:1.75; margin-top:2vh">
           今天，我们只需要输入目的地。导航改变的不只是出行方式，而是人类与空间的关系。
         </p>
         <div class="stat" style="margin-top:3vh">
-          <div class="n" style="font-size:3.2vw">20亿</div>
-          <div class="l" style="font-size:max(13px,1vw)">Google Maps 月活用户 · 2024</div>
+          <div class="n" style="font-size:min(3.2vw,5.6889vh)">20亿</div>
+          <div class="l" style="font-size:max(13px,min(1vw,1.7778vh))">Google Maps 月活用户 · 2024</div>
         </div>
       </div>
     </div>
@@ -543,20 +547,20 @@
     <div>第一幕 · 基础 · Foundation</div>
     <div>03 / 20</div>
   </div>
-  <div class="frame" style="padding-top:2.4vh; display:flex; flex-direction:column; justify-content:space-between; min-height:80vh">
+  <div class="frame" style="padding-top:2.4vh; display:flex; flex-direction:column; justify-content:space-between; min-height:0">
     <div style="max-width:60vw">
       <div class="kicker" data-anim>Paper Map · 纸质地图</div>
-      <h2 class="h-xl" style="margin-top:1vh; margin-bottom:2vh; font-size:5.2vw" data-anim>纸质地图：方向感曾经是一种能力</h2>
+      <h2 class="h-xl" style="margin-top:1vh; margin-bottom:2vh; font-size:min(5.2vw,9.2444vh)" data-anim>纸质地图：方向感曾经是一种能力</h2>
 
       <p class="lead" style="margin-bottom:2.4vh" data-anim>
         "A map was not an answer. It was a conversation."
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
         纸质地图要求人主动理解空间。你要知道自己在哪里，判断北方，读懂比例尺，再把二维图像转化成真实道路。它训练的是一种完整的空间能力：观察、记忆、推理和选择。
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78">
         纸质地图慢，但它让人真正参与导航。
       </p>
     </div>
@@ -586,13 +590,13 @@
     <div style="display:flex; flex-direction:column; justify-content:space-between; gap:3vh">
       <div>
         <div class="kicker" data-anim>GPS · 全球定位系统</div>
-        <h2 class="h-xl" style="margin-top:1vh; margin-bottom:3vh; font-size:5.2vw" data-anim>GPS：导航进入卫星时代</h2>
+        <h2 class="h-xl" style="margin-top:1vh; margin-bottom:3vh; font-size:min(5.2vw,9.2444vh)" data-anim>GPS：导航进入卫星时代</h2>
 
-        <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+        <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
           GPS不是手机里的一个小功能，而是一套全球卫星基础设施。它由卫星、地面控制系统和接收设备共同组成。
         </p>
 
-        <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78">
+        <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78">
           手机显示的那个蓝点，背后其实是地球轨道上的精密时钟、无线电信号和数学计算。
         </p>
       </div>
@@ -604,12 +608,12 @@
     <div style="display:flex; flex-direction:column; justify-content:center; gap:2.4vh" data-anim>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">Baseline Constellation</div>
-        <div class="stat-nb" style="font-size:4.2vw">24</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">24</div>
         <div class="stat-note">基准星座设计 · 实际数量会变</div>
       </div>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">Orbit Altitude</div>
-        <div class="stat-nb" style="font-size:3.2vw">20,200km</div>
+        <div class="stat-nb" style="font-size:min(3.2vw,5.6889vh)">20,200km</div>
         <div class="stat-note">距地表约 2.02 万公里</div>
       </div>
     </div>
@@ -626,27 +630,27 @@
     <div>第一幕 · 基础 · Foundation</div>
     <div>05 / 20</div>
   </div>
-  <div class="frame" style="padding-top:2.4vh; display:flex; flex-direction:column; justify-content:space-between; min-height:80vh">
+  <div class="frame" style="padding-top:2.4vh; display:flex; flex-direction:column; justify-content:space-between; min-height:0">
     <div style="max-width:60vw">
       <div class="kicker" data-anim>How GPS Works · 定位原理</div>
-      <h2 class="h-xl" style="margin-top:1vh; margin-bottom:2vh; font-size:5.2vw" data-anim>定位的秘密：不是"看见你"，而是算出你</h2>
+      <h2 class="h-xl" style="margin-top:1vh; margin-bottom:2vh; font-size:min(5.2vw,9.2444vh)" data-anim>定位的秘密：不是"看见你"，而是算出你</h2>
 
       <p class="lead" style="margin-bottom:2.4vh" data-anim>
         "GPS does not watch you. It calculates you."
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
         GPS卫星并不是用摄像头看见你。它广播信号，接收机通过信号发出与接收之间的时间差，计算自己到卫星的距离。
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78">
         通常至少四颗卫星的信号，才能同时解出三维位置与接收机时钟误差。导航的第一层魔法，本质上是时间测量。
       </p>
     </div>
     <div style="text-align:center; width:100%; padding-bottom:2vh" data-anim>
       <div class="stat-card" style="display:inline-block; text-align:center">
         <div class="stat-label">定位原理</div>
-        <div class="stat-nb" style="font-size:3.6vw">距离交会</div>
+        <div class="stat-nb" style="font-size:min(3.6vw,6.4000vh)">距离交会</div>
         <div class="stat-note">含时钟误差的伪距解算</div>
       </div>
     </div>
@@ -663,9 +667,9 @@
     <div>第二幕 · 系统 · System</div>
     <div>06 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Time · 时间维度</div>
-    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:5.8vw; line-height:1.2; letter-spacing:-.01em; max-width:72vw">
+    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:min(5.8vw,10.3111vh); line-height:1.2; letter-spacing:-.01em; max-width:72vw">
       <span data-anim="line" style="display:block">"Position Is Built from Time"</span>
     </blockquote>
     <p class="lead" style="max-width:55vw; opacity:.65" data-anim>
@@ -691,13 +695,13 @@
     <div style="display:flex; flex-direction:column; justify-content:space-between; gap:3vh">
       <div>
         <div class="kicker" data-anim>Blue Dot · 蓝点</div>
-        <h2 class="h-xl" style="margin-top:1vh; margin-bottom:3vh; font-size:5.2vw" data-anim>蓝点：一个被不断修正的位置</h2>
+        <h2 class="h-xl" style="margin-top:1vh; margin-bottom:3vh; font-size:min(5.2vw,9.2444vh)" data-anim>蓝点：一个被不断修正的位置</h2>
 
-        <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+        <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
           手机地图上的蓝点看似稳定，其实一直在被修正。卫星信号会被高楼遮挡、反射，也会受到大气和接收设备影响。
         </p>
 
-        <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78">
+        <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78">
           在城市峡谷里，蓝点漂移不是"地图笨"，而是无线电信号在复杂空间里留下的误差。
         </p>
       </div>
@@ -709,12 +713,12 @@
     <div style="display:flex; flex-direction:column; justify-content:center; gap:2.4vh" data-anim>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">GPS Accuracy</div>
-        <div class="stat-nb" style="font-size:4.2vw">4.9m</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">4.9m</div>
         <div class="stat-note">手机典型精度 · 开阔天空</div>
       </div>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">Challenges</div>
-        <div class="stat-nb" style="font-size:2.2vw">建筑 · 桥梁 · 树木</div>
+        <div class="stat-nb" style="font-size:min(2.2vw,3.9111vh)">建筑 · 桥梁 · 树木</div>
         <div class="stat-note">城市环境影响</div>
       </div>
     </div>
@@ -733,24 +737,24 @@
   </div>
   <div class="frame" style="padding-top:4vh">
     <div class="kicker" data-anim>Digital Map · 电子地图</div>
-    <h2 class="h-xl" style="margin-top:1vh; margin-bottom:2vh; font-size:5.2vw" data-anim>电子地图：把世界变成可搜索数据库</h2>
+    <h2 class="h-xl" style="margin-top:1vh; margin-bottom:2vh; font-size:min(5.2vw,9.2444vh)" data-anim>电子地图：把世界变成可搜索数据库</h2>
 
     <p class="lead" style="margin-bottom:3vh; max-width:52vw" data-anim>
       "A map became searchable."
     </p>
 
-    <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh; max-width:52vw">
+    <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh; max-width:52vw">
       数字地图不只是纸质地图搬进屏幕。真正的变化是：地点变成了数据库。
     </p>
 
-    <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:4vh; max-width:52vw">
+    <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:4vh; max-width:52vw">
       餐厅、医院、停车场、学校、充电站、酒店、公交站，都可以被搜索、排序、评分、推荐。地图不再只是"路在哪里"，而开始回答"我该去哪里"。
     </p>
 
     <div style="text-align:center; width:100%" data-anim>
       <div class="stat-card" style="display:inline-block; text-align:center">
         <div class="stat-label">Google Maps 地点数据</div>
-        <div class="stat-nb" style="font-size:4.2vw">250M+</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">250M+</div>
         <div class="stat-note">商家和地点 · 2024 公布口径</div>
       </div>
     </div>
@@ -769,30 +773,30 @@
   </div>
   <div class="frame" style="padding-top:4vh">
     <div class="kicker" data-anim>Route Planning · 路线规划</div>
-    <h2 class="h-xl" style="margin-top:1vh; margin-bottom:2vh; font-size:5.2vw" data-anim>从最短路到最聪明的路</h2>
+    <h2 class="h-xl" style="margin-top:1vh; margin-bottom:2vh; font-size:min(5.2vw,9.2444vh)" data-anim>从最短路到最聪明的路</h2>
 
     <p class="lead" style="margin-bottom:2vh; max-width:52vw" data-anim>
       "The shortest route is not always the best route."
     </p>
 
-    <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:3vh; max-width:52vw">
+    <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:3vh; max-width:52vw">
       早期导航更像在找最短路径。今天的导航是在做多目标优化：哪条路更快，哪里堵，哪里事故多，哪里转弯少，哪里更省油。
     </p>
 
     <div class="grid-3" style="margin-top:2vh" data-anim>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">距离</div>
-        <div class="stat-nb" style="font-size:2.6vw">最短 vs 最快</div>
+        <div class="stat-nb" style="font-size:min(2.6vw,4.6222vh)">最短 vs 最快</div>
         <div class="stat-note">几何 vs 现实</div>
       </div>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">拥堵</div>
-        <div class="stat-nb" style="font-size:2.6vw">实时避让</div>
+        <div class="stat-nb" style="font-size:min(2.6vw,4.6222vh)">实时避让</div>
         <div class="stat-note">动态调整</div>
       </div>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">多因素</div>
-        <div class="stat-nb" style="font-size:2.6vw">转弯·收费·油耗</div>
+        <div class="stat-nb" style="font-size:min(2.6vw,4.6222vh)">转弯·收费·油耗</div>
         <div class="stat-note">多目标优化</div>
       </div>
     </div>
@@ -809,16 +813,16 @@
     <div>第二幕 · 系统 · System</div>
     <div>10 / 20</div>
   </div>
-  <div class="frame" style="padding-top:2.4vh; display:flex; flex-direction:column; justify-content:space-between; min-height:80vh">
+  <div class="frame" style="padding-top:2.4vh; display:flex; flex-direction:column; justify-content:space-between; min-height:0">
     <div style="max-width:60vw">
       <div class="kicker" data-anim>Real-time Traffic · 实时路况</div>
-      <h2 class="h-xl" style="margin-top:0.8vh; margin-bottom:2vh; font-size:5.2vw" data-anim>实时路况：城市正在向地图回传自己</h2>
+      <h2 class="h-xl" style="margin-top:0.8vh; margin-bottom:2vh; font-size:min(5.2vw,9.2444vh)" data-anim>实时路况：城市正在向地图回传自己</h2>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
         实时路况的本质，是城市把自己的状态回传给地图。车辆速度变慢，系统判断可能拥堵；大量用户绕行，系统更新路线。
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
         事故、施工、封路、天气变化，都会变成算法的一部分。地图不再静止，它开始像城市的心电图。
       </p>
 
@@ -830,7 +834,7 @@
     <div style="text-align:center; width:100%; padding-bottom:2vh" data-anim>
       <div class="stat-card" style="display:inline-block; text-align:center">
         <div class="stat-label">Daily Navigation</div>
-        <div class="stat-nb" style="font-size:4.2vw">10亿km</div>
+        <div class="stat-nb" style="font-size:min(4.2vw,7.4667vh)">10亿km</div>
         <div class="stat-note">Google Maps 用户每日驾驶里程 · 2020</div>
       </div>
     </div>
@@ -849,25 +853,25 @@
   </div>
   <div class="frame" style="padding-top:4vh">
     <div class="kicker" data-anim>Maps as Interface · 出行入口</div>
-    <h2 class="h-xl" style="margin-top:1vh; margin-bottom:2vh; font-size:5.2vw" data-anim>地图不再是地图，而是出行入口</h2>
+    <h2 class="h-xl" style="margin-top:1vh; margin-bottom:2vh; font-size:min(5.2vw,9.2444vh)" data-anim>地图不再是地图，而是出行入口</h2>
 
     <p class="lead" style="margin-bottom:3vh; max-width:52vw" data-anim>
       "Maps are no longer maps. They are interfaces."
     </p>
 
-    <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; max-width:52vw">
+    <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; max-width:52vw">
       现代地图应用已经不只是导航软件。它从"告诉你怎么走"，变成"组织你如何抵达"。
     </p>
 
     <div class="grid-2-6-6" style="margin-top:4vh; gap:4vw" data-anim>
       <div class="stat-card">
-        <div class="stat-label" style="font-size:1.2vw">高德地图</div>
-        <div class="stat-nb" style="font-size:2.4vw">驾车 · 公交 · 打车</div>
+        <div class="stat-label" style="font-size:min(1.2vw,2.1333vh)">高德地图</div>
+        <div class="stat-nb" style="font-size:min(2.4vw,4.2667vh)">驾车 · 公交 · 打车</div>
         <div class="stat-note">整合本地生活与出行</div>
       </div>
       <div class="stat-card">
-        <div class="stat-label" style="font-size:1.2vw">Google Maps</div>
-        <div class="stat-nb" style="font-size:2.4vw">搜索 · 评价 · 路线</div>
+        <div class="stat-label" style="font-size:min(1.2vw,2.1333vh)">Google Maps</div>
+        <div class="stat-nb" style="font-size:min(2.4vw,4.2667vh)">搜索 · 评价 · 路线</div>
         <div class="stat-note">连接全球地点与AI推荐</div>
       </div>
     </div>
@@ -884,16 +888,16 @@
     <div>第二幕 · 系统 · System</div>
     <div>12 / 20</div>
   </div>
-  <div class="frame" style="padding-top:2.4vh; display:flex; flex-direction:column; justify-content:space-between; min-height:80vh">
+  <div class="frame" style="padding-top:2.4vh; display:flex; flex-direction:column; justify-content:space-between; min-height:0">
     <div style="max-width:60vw">
       <div class="kicker" data-anim>Delivery Navigation · 外卖导航</div>
-      <h2 class="h-xl" style="margin-top:0.8vh; margin-bottom:2vh; font-size:5.2vw" data-anim>外卖导航：30分钟里的空间压缩</h2>
+      <h2 class="h-xl" style="margin-top:0.8vh; margin-bottom:2vh; font-size:min(5.2vw,9.2444vh)" data-anim>外卖导航：30分钟里的空间压缩</h2>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
         外卖导航不是简单给骑手指路。它要处理餐厅准备时间、骑手位置、道路拥堵、小区入口、楼栋编号、电梯等待、用户催单和平台承诺。
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
         现代导航第一次深度进入劳动流程：路线不只是路径，而是收入、效率和压力。
       </p>
 
@@ -905,7 +909,7 @@
     <div style="text-align:center; width:100%; padding-bottom:2vh" data-anim>
       <div class="stat-card" style="display:inline-block; text-align:center">
         <div class="stat-label">Key Factors</div>
-        <div class="stat-nb" style="font-size:3.2vw">出餐 · 路况 · 楼栋</div>
+        <div class="stat-nb" style="font-size:min(3.2vw,5.6889vh)">出餐 · 路况 · 楼栋</div>
         <div class="stat-note">多变量实时优化</div>
       </div>
     </div>
@@ -922,20 +926,20 @@
     <div>第二幕 · 系统 · System</div>
     <div>13 / 20</div>
   </div>
-  <div class="frame" style="display:flex; flex-direction:column; justify-content:space-between; min-height:80vh">
+  <div class="frame" style="display:flex; flex-direction:column; justify-content:space-between; min-height:0">
     <div>
       <div class="kicker" data-anim>Autonomous Driving · 自动驾驶</div>
-      <h2 class="h-xl" style="margin-top:0.6vh; margin-bottom:1.6vh; font-size:4.8vw" data-anim>自动驾驶：地图开始为机器服务</h2>
+      <h2 class="h-xl" style="margin-top:0.6vh; margin-bottom:1.6vh; font-size:min(4.8vw,8.5333vh)" data-anim>自动驾驶：地图开始为机器服务</h2>
 
       <p class="lead" style="margin-bottom:2.4vh" data-anim>
         "Machines need a reliable world model."
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(15px,1.22vw); line-height:1.65; opacity:.78; margin-bottom:2vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(15px,min(1.22vw,2.1689vh)); line-height:1.65; opacity:.78; margin-bottom:2vh">
         人类导航可以接受"前方右转"这种模糊指令，但机器通常需要更精确的环境信息。不同自动驾驶方案对地图的依赖不同，常需知道车道边界、限速、交通灯、路缘、施工变化和障碍物。
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(15px,1.22vw); line-height:1.65; opacity:.78">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(15px,min(1.22vw,2.1689vh)); line-height:1.65; opacity:.78">
         于是地图从"给人看的道路图"，变成"给机器用的环境模型"。导航进入了更细、更密、更实时的时代。
       </p>
     </div>
@@ -955,9 +959,9 @@
     <div>第三幕 · 影响 · Impact</div>
     <div>14 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Traffic · 城市交通</div>
-    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:5.8vw; line-height:1.2; letter-spacing:-.01em; max-width:72vw">
+    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:min(5.8vw,10.3111vh); line-height:1.2; letter-spacing:-.01em; max-width:72vw">
       <span data-anim="line" style="display:block">"A Route Suggestion</span>
       <span data-anim="line" style="display:block">Can Move a City"</span>
     </blockquote>
@@ -980,16 +984,16 @@
     <div>第三幕 · 影响 · Impact</div>
     <div>15 / 20</div>
   </div>
-  <div class="frame" style="padding-top:2.4vh; display:flex; flex-direction:column; justify-content:space-between; min-height:80vh">
+  <div class="frame" style="padding-top:2.4vh; display:flex; flex-direction:column; justify-content:space-between; min-height:0">
     <div style="max-width:60vw">
       <div class="kicker" data-anim>Rescue · 救援</div>
-      <h2 class="h-xl" style="margin-top:0.8vh; margin-bottom:2vh; font-size:5.2vw" data-anim>被准确找到，<br>救援才能更快</h2>
+      <h2 class="h-xl" style="margin-top:0.8vh; margin-bottom:2vh; font-size:min(5.2vw,9.2444vh)" data-anim>被准确找到，<br>救援才能更快</h2>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
         导航系统最严肃的用途，不是帮我们找到餐厅，而是在危险时让我们被找到。
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
         迷路、车祸、山野救援、海上搜救、灾害应急，都依赖准确位置。地址、坐标、定位服务和通信网络共同构成了现代社会的"可救援性"。
       </p>
 
@@ -1001,7 +1005,7 @@
     <div style="text-align:center; width:100%; padding-bottom:2vh" data-anim>
       <div class="stat-card" style="display:inline-block; text-align:center">
         <div class="stat-label">Emergency</div>
-        <div class="stat-nb" style="font-size:3.2vw">定位 · 调度 · 救援</div>
+        <div class="stat-nb" style="font-size:min(3.2vw,5.6889vh)">定位 · 调度 · 救援</div>
         <div class="stat-note">位置决定生死</div>
       </div>
     </div>
@@ -1018,9 +1022,9 @@
     <div>第三幕 · 影响 · Impact</div>
     <div>16 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Privacy · 隐私</div>
-    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:5.8vw; line-height:1.2; letter-spacing:-.01em; max-width:72vw">
+    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:min(5.8vw,10.3111vh); line-height:1.2; letter-spacing:-.01em; max-width:72vw">
       <span data-anim="line" style="display:block">"Where You Go</span>
       <span data-anim="line" style="display:block">Says Who You Are"</span>
     </blockquote>
@@ -1043,20 +1047,20 @@
     <div>第三幕 · 影响 · Impact</div>
     <div>17 / 20</div>
   </div>
-  <div class="frame" style="display:flex; flex-direction:column; justify-content:space-between; min-height:80vh">
+  <div class="frame" style="display:flex; flex-direction:column; justify-content:space-between; min-height:0">
     <div style="max-width:60vw">
       <div class="kicker" data-anim>Spatial Cognition · 空间认知</div>
-      <h2 class="h-xl" style="margin-top:0.6vh; margin-bottom:1.6vh; font-size:4.8vw" data-anim>我们会不会越来越不会认路</h2>
+      <h2 class="h-xl" style="margin-top:0.6vh; margin-bottom:1.6vh; font-size:min(4.8vw,8.5333vh)" data-anim>我们会不会越来越不会认路</h2>
 
       <p class="lead" style="margin-bottom:2.4vh" data-anim>
         "Convenience has a cognitive price."
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(15px,1.22vw); line-height:1.65; opacity:.78; margin-bottom:2vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(15px,min(1.22vw,2.1689vh)); line-height:1.65; opacity:.78; margin-bottom:2vh">
         2020年《Scientific Reports》研究发现，研究中，50 名驾驶者的 GPS 使用习惯与空间记忆表现相关；其中一个子样本完成三年后随访。
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(15px,1.22vw); line-height:1.65; opacity:.78; margin-bottom:2vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(15px,min(1.22vw,2.1689vh)); line-height:1.65; opacity:.78; margin-bottom:2vh">
         它不意味着"导航毁掉大脑"，但提醒我们：当系统替我们做太多判断时，人的空间感也可能变得迟钝。
       </p>
 
@@ -1068,7 +1072,7 @@
     <div style="text-align:center; width:100%" data-anim>
       <div class="stat-card" style="display:inline-block; text-align:center">
         <div class="stat-label">Study Finding</div>
-        <div class="stat-nb" style="font-size:3.2vw">GPS → 空间记忆↓</div>
+        <div class="stat-nb" style="font-size:min(3.2vw,5.6889vh)">GPS → 空间记忆↓</div>
         <div class="stat-note">小样本研究 · 相关性与纵向观察</div>
       </div>
     </div>
@@ -1087,34 +1091,34 @@
   </div>
   <div class="frame" style="padding-top:4vh">
     <div class="kicker" data-anim>AI Recommendations · AI 推荐</div>
-    <h2 class="h-xl" style="margin-top:1vh; margin-bottom:2vh; font-size:5.2vw" data-anim>从"路线"到"推荐"：地图开始替你选择</h2>
+    <h2 class="h-xl" style="margin-top:1vh; margin-bottom:2vh; font-size:min(5.2vw,9.2444vh)" data-anim>从"路线"到"推荐"：地图开始替你选择</h2>
 
     <p class="lead" style="margin-bottom:3vh; max-width:52vw" data-anim>
       "The map is becoming an advisor."
     </p>
 
-    <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh; max-width:52vw">
+    <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh; max-width:52vw">
       新的地图应用不只回答"怎么去"，还开始回答"去哪儿"。Google Maps已把Gemini能力接入地点推荐与导航体验。
     </p>
 
-    <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; max-width:52vw">
+    <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; max-width:52vw">
       地图从工具变成顾问，也意味着它正在参与我们的选择。
     </p>
 
     <div class="grid-3" style="margin-top:3vh" data-anim>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">AI 推荐</div>
-        <div class="stat-nb" style="font-size:2.6vw">Gemini 驱动</div>
+        <div class="stat-nb" style="font-size:min(2.6vw,4.6222vh)">Gemini 驱动</div>
         <div class="stat-note">个性化地点</div>
       </div>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">附近探索</div>
-        <div class="stat-nb" style="font-size:2.6vw">评价摘要</div>
+        <div class="stat-nb" style="font-size:min(2.6vw,4.6222vh)">评价摘要</div>
         <div class="stat-note">智能筛选</div>
       </div>
       <div class="stat-card" style="text-align:center">
         <div class="stat-label">路线偏好</div>
-        <div class="stat-nb" style="font-size:2.6vw">个性化</div>
+        <div class="stat-nb" style="font-size:min(2.6vw,4.6222vh)">个性化</div>
         <div class="stat-note">学习习惯</div>
       </div>
     </div>
@@ -1131,20 +1135,20 @@
     <div>第三幕 · 影响 · Impact</div>
     <div>19 / 20</div>
   </div>
-  <div class="frame" style="display:flex; flex-direction:column; min-height:80vh">
+  <div class="frame" style="display:flex; flex-direction:column; min-height:0">
     <div style="flex:1; display:flex; flex-direction:column; justify-content:center; max-width:56vw">
       <div class="kicker" data-anim>Fragility · 脆弱性</div>
-      <h2 class="h-xl" style="margin-top:0.8vh; margin-bottom:2vh; font-size:5.2vw" data-anim>没有信号，现代人会立刻变小</h2>
+      <h2 class="h-xl" style="margin-top:0.8vh; margin-bottom:2vh; font-size:min(5.2vw,9.2444vh)" data-anim>没有信号，现代人会立刻变小</h2>
 
       <p class="lead" style="margin-bottom:2.4vh" data-anim>
         "A lost signal can shrink the world."
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
         导航看起来强大，但并不无敌。高楼会遮挡信号，隧道会切断卫星可见性，地下空间会让定位漂移。
       </p>
 
-      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,1.35vw); line-height:1.75; opacity:.78">
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(16px,min(1.35vw,2.4000vh)); line-height:1.75; opacity:.78">
         真正成熟的导航系统，不只依赖GPS，还会结合惯性传感器、蜂窝网络、Wi-Fi、蓝牙、地图匹配和离线数据。
       </p>
     </div>
@@ -1164,9 +1168,9 @@
     <div>导航 · Navigation</div>
     <div>20 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Navigation Is Not the End of Getting Lost</div>
-    <h1 class="h-hero" style="font-size:7vw; line-height:1.15">
+    <h1 class="h-hero" style="font-size:min(7vw,12.4444vh); line-height:1.15">
       <span data-anim style="display:block">让陌生变得可达，</span>
       <span data-anim style="display:block">把方向交给系统。</span>
     </h1>
