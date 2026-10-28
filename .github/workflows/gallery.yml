@@ -1,4 +1,4 @@
-name: Gallery checks
+name: Gallery checks and Pages
 on:
   push:
     branches: [main, feat/visual-explainer-gallery]
@@ -6,6 +6,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: gallery-${{ github.ref }}
+  cancel-in-progress: false
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -41,5 +44,24 @@ jobs:
         with:
           name: gallery-static-site
           path: dist
-# Publication intentionally remains disabled until the deck/provenance acceptance
-# ledger has been reviewed. This workflow never uploads the repository root.
+      - uses: actions/upload-pages-artifact@v3
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        with:
+          path: dist
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - name: Deploy the verified allowlisted site
+        id: deployment
+        uses: actions/deploy-pages@v4
+# Only dist is uploaded. Candidate sources, maintenance tools and archives remain
+# outside the public artifact. Pull requests can never enter the deploy job.

@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="#featured-explainers"><strong>🔎 Explore the Explainers</strong></a>
+  <a href="https://seiya058904.github.io/Visual-Explainer-PPTs/"><strong>🔎 Explore the Explainers</strong></a>
   &nbsp;·&nbsp;
   <a href="ppt-collection/">📚 Approved Decks</a>
   &nbsp;·&nbsp;
@@ -24,9 +24,9 @@
 </p>
 
 <p align="center">
-  <img src="2026-08-15-active-noise-cancellation-fighting-sound-with-sound/images/01-anc-cover.jpg" width="820" alt="Original cover illustration from the active noise cancellation visual explainer" />
+  <img src="docs/images/gallery-1600x900.webp" width="820" alt="Actual desktop screenshot of the Visual Explainer Library" />
   <br />
-  <sub>Selected source artwork from an approved explainer. The decks themselves are interactive HTML presentations.</sub>
+  <sub>The library, captured in a real browser. Every cover opens an interactive HTML presentation.</sub>
 </p>
 
 ---
@@ -43,11 +43,11 @@ Choose a question and follow the argument. These are selected **approved standal
 The gallery selects six starting points from the same [catalog](site/catalog.json) that drives the full library below. Each preview is captured from the real presentation.
 
 <p align="center">
-  <strong><a href="ppt-collection/">Browse all approved standalone decks →</a></strong>
+  <strong><a href="https://seiya058904.github.io/Visual-Explainer-PPTs/">Browse all 38 interactive explainers →</a></strong>
 </p>
 
 > [!TIP]
-> **Want to view a deck?** Open its HTML file on GitHub, choose **Download raw file**, then open the downloaded `.html` file in a browser. The approved exports are designed as standalone HTML files; optional network fonts or enhancements may still require a connection. Deck content is primarily authored in Chinese, while this repository guide is in English.
+> **Want to view a deck?** Visit the [interactive library](https://seiya058904.github.io/Visual-Explainer-PPTs/) to search, filter and open every approved work. For a local copy, download its raw HTML file and open it in a browser. The approved exports are designed as standalone HTML files; optional network fonts or enhancements may still require a connection. Deck content is primarily authored in Chinese, while this repository guide is in English.
 
 ## 🖼️ A Few Visual Studies
 
@@ -204,3 +204,9 @@ The new static gallery can be built locally with `npm ci` and `npm run build`. S
 - [Wi-Fi: The Last Few Meters of Connection](ppt-collection/wifi.html) — Wi-Fi：空气中的互联网秩序
 - [Why the World Stops for Football](ppt-collection/world-cup.html) — 足球：世界为什么为一颗球停下
 <!-- catalog:end -->
+
+## Maintenance and review evidence
+
+The [48-work audit](docs/maintenance/iteration-2026-10-28.md) links individual review cards and records factual changes, tested artifacts and remaining limits. Ten candidates remain **Pending Review** and are excluded from the public build. See [maintenance instructions](docs/maintenance/gallery-maintenance.md) for reproducible exports, covers, checks and local candidate previews.
+
+Core text and embedded images were checked with external networking blocked. Three historical decks still use online photographs: Bill Gates (9), Medical Longevity (1), and Science of Garbage (2). Their gallery entries disclose this limitation.

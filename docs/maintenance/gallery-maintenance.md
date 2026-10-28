@@ -46,11 +46,13 @@ and their review records. This page must never be copied to the Pages artifact.
 
 ## Deployment boundary
 
-GitHub Pages was not configured at the live baseline (`has_pages: false`). The CI
-workflow builds an allowlisted artifact and tests `/Visual-Explainer-PPTs/` locally.
-It does not publish while the per-deck and third-party provenance review is open.
-Enable Pages and add deployment only after the acceptance ledger has no blocking
-items; do not replace that decision with a successful static build.
+GitHub Pages was not configured at the baseline. `.github/workflows/gallery.yml`
+builds an allowlisted artifact and tests `/Visual-Explainer-PPTs/` before a main-branch
+deployment. PRs build and test but cannot deploy. Enable Pages with the GitHub Actions
+build type; only `dist` is uploaded, never the repository root. The public destination
+is https://seiya058904.github.io/Visual-Explainer-PPTs/ . Deployment completion and
+live checks are recorded separately in the iteration report; a successful build alone
+is not evidence of publication.
 
 ## Rights
 
