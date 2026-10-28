@@ -8,14 +8,21 @@ paths are stable public interfaces; do not rename them casually.
 
 1. `npm ci`
 2. `npm test`
-3. `npm run build` (rebuilds only allowlisted files; for a separate build use `python docs/build/build-gallery.py --out .codex/build-02`)
-4. `python -m http.server 8901 --bind 127.0.0.1`
-5. Open `http://127.0.0.1:8901/dist/`.
+3. `python docs/build/build-gallery.py --out .codex/public/Visual-Explainer-PPTs` (rebuilds only allowlisted files; `npm run build` separately produces `dist` for CI)
+4. `python -m http.server 8902 --bind 127.0.0.1 --directory .codex/public`
+5. Open `http://127.0.0.1:8902/Visual-Explainer-PPTs/`.
 6. `npm run test:site`
 
 Browser tools resolve Playwright normally. If using an existing compatible browser,
 set `PLAYWRIGHT_CHROMIUM_EXECUTABLE` to its verified executable. Otherwise run
 `npx playwright install chromium`. Do not hardcode a user's machine into scripts.
+
+`python docs/build/audit-catalog.py` checks source mappings, approval separation,
+slide counts, closed document titles and literal duplicate IDs across all 48 entries.
+`node docs/build/test-offline.mjs --manifest paths.txt --out .codex/offline` blocks
+external network and checks every slide using the offered static mode. It reports
+external photographs separately; core offline readability is not a claim that all
+network-hosted enhancements or pictures are available offline.
 
 ## Add or refine an explainer
 
@@ -34,7 +41,7 @@ set `PLAYWRIGHT_CHROMIUM_EXECUTABLE` to its verified executable. Otherwise run
 ## Local candidate review
 
 `python docs/build/build-review.py` creates `.codex/review/index.html`.
-Open it on the source server, not the public build. It links the ten candidate sources
+Open it on a separate repository-root source server (`python -m http.server 8901 --bind 127.0.0.1`), not the public build. It links the ten candidate sources
 and their review records. This page must never be copied to the Pages artifact.
 
 ## Deployment boundary

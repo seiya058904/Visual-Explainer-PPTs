@@ -111,7 +111,7 @@ async function sampleAnimRange(page, ms = 2600) {
 async function collectIssues(page) {
   return page.evaluate(() => {
     const vw = innerWidth, vh = innerHeight, TOL = 2;
-    const res = { overflow: [], footOverlap: [], navOverlap: [], brokenImages: [] };
+    const res = { overflow: [], footOverlap: [], navOverlap: [], brokenImages: [], invisibleText: [] };
     const slide = window.__qa.activeSlide();
     if (!slide) return res;
     const foot = window.__qa.foot();
@@ -144,6 +144,12 @@ async function collectIssues(page) {
     }
     for (const img of slide.querySelectorAll('img')) {
       if (img.complete && img.naturalWidth === 0) res.brokenImages.push(img.getAttribute('src'));
+    }
+    for (const el of slide.querySelectorAll('[data-anim]')) {
+      if (!el.textContent.trim() || el.closest('[data-anim="step"], [data-anim="arrow"]')) continue;
+      let opacity = 1, node = el;
+      while (node && node !== slide) { opacity *= +getComputedStyle(node).opacity; node = node.parentElement; }
+      if (opacity < 0.1) res.invisibleText.push({text: el.textContent.trim().slice(0,80), opacity: +opacity.toFixed(3)});
     }
     return res;
   });
@@ -209,8 +215,6 @@ async function qaDeck(browser, deck, url, mode) {
     const total = await page.evaluate(() => window.__qa.slideCount());
     const deep = mode === 'pending' || mode === 'approved';
     const types = await page.evaluate(() => [...document.querySelectorAll('.slide')].map(s => s.dataset.animate || (s.classList.contains('hero') ? 'hero' : 'cascade')));
-    // approved 非首视口只扫高风险页
-    const isHighRisk = i => ['pipeline', 'directional', 'hero'].includes(types[i]) || i === 0 || i === total - 1;
     const slideRecAnimHolder = {};
     for (let i = 0; i < total; i++) {
       // Every page in every requested viewport is part of acceptance.
@@ -251,6 +255,7 @@ async function qaDeck(browser, deck, url, mode) {
       const geo = await collectIssues(page);
       slideRec.overflow = geo.overflow; slideRec.footOverlap = geo.footOverlap;
       slideRec.navOverlap = geo.navOverlap; slideRec.brokenImages = geo.brokenImages;
+      slideRec.invisibleText = geo.invisibleText;
 
       // pipeline 深检
       if (isPipeline && deep) {
@@ -266,6 +271,7 @@ async function qaDeck(browser, deck, url, mode) {
         }
         const stN = await pipelineState(page);
         slideRec.pipelineComplete = stN;
+        slideRec.pipelineCompleteGeometry = await collectIssues(page);
         await shot(page, `${deck}-p${String(i).padStart(2, '0')}-pipeline-complete.png`).catch(() => {});
         // 再按一次应翻页(最后一页则停留)
         await page.keyboard.press('ArrowRight');
@@ -289,7 +295,7 @@ async function qaDeck(browser, deck, url, mode) {
       await page.keyboard.press('Escape');
       await page.waitForTimeout(700);
       vpRes.overviewWorks = await page.evaluate(() => {
-        const els = [...document.querySelectorAll('body *')];
+        const els = [...document.querySelectorAll('#overview, [data-overview], #ppt-presenter-overview')];
         return els.some(el => {
           const cs = getComputedStyle(el);
           if (cs.display === 'none') return false;
@@ -297,7 +303,16 @@ async function qaDeck(browser, deck, url, mode) {
           return cs.position === 'fixed' && r.width > innerWidth * 0.8 && r.height > innerHeight * 0.6;
         });
       });
-      await page.keyboard.press('Escape');
+      if (vpRes.overviewWorks) {
+        const target = page.locator('#overview > div > div').first();
+        if (await target.count()) {
+          await target.click();
+          await page.waitForTimeout(TRANSITION);
+          vpRes.overviewSelectionWorks = await page.evaluate(() => window.__qa.idx() === 0);
+        } else await page.keyboard.press('Escape');
+      } else {
+        await page.keyboard.press('Escape');
+      }
       await page.waitForTimeout(400);
     }
 
@@ -543,13 +558,18 @@ if (MODE === 'pending' || MODE === 'approved') {
   }
   await Promise.all(Array.from({ length: CONCURRENCY }, worker));
   fs.writeFileSync(path.join(OUT, `${MODE}-results.json`), JSON.stringify(results, null, 1));
+  const hasGeometryIssue = s => ['overflow','footOverlap','navOverlap','brokenImages','invisibleText'].some(k => s[k]?.length);
+  const failedDecks = results.filter(r => r.fatal || Object.values(r.viewports || {}).some(v =>
+    v.pageErrors.length || v.console.length || v.failed.length || v.overviewWorks === false || v.overviewSelectionWorks === false || v.slides.some(s =>
+      s.page !== s.actualIndex || hasGeometryIssue(s) || hasGeometryIssue(s.pipelineCompleteGeometry || {}) || s.pipelineAdvanceExits === false)));
+  if (failedDecks.length) { process.exitCode = 1; log('acceptance failures', failedDecks.map(r => r.deck).join(', ')); }
   // Markdown 摘要
   const md = ['# Browser QA — ' + MODE, ''];
   for (const r of results) {
     md.push(`## ${r.deck}`);
     if (r.fatal) { md.push(`- FATAL: ${r.fatal}`); continue; }
     for (const [vn, vp] of Object.entries(r.viewports || {})) {
-      const bad = vp.slides.filter(s => s.overflow.length || s.footOverlap.length || s.navOverlap.length || s.brokenImages.length);
+      const bad = vp.slides.filter(s => hasGeometryIssue(s) || hasGeometryIssue(s.pipelineCompleteGeometry || {}));
       md.push(`- ${vn}: slides=${vp.slides.length} console=${vp.console.length} pageErrors=${vp.pageErrors.length} failed=${vp.failed.length} badSlides=${bad.length} motionReady=${vp.motionReady} overview=${vp.overviewWorks}`);
       for (const s of bad) md.push(`  - p${s.page + 1}: overflow=${s.overflow.length} footOv=${s.footOverlap.length} navOv=${s.navOverlap.length} brokenImg=${s.brokenImages.length} ${JSON.stringify(s.overflow).slice(0, 200)}`);
       if (vp.console.length) md.push(`  - console: ${vp.console.slice(0, 3).join(' | ')}`);
@@ -564,18 +584,21 @@ if (MODE === 'pending' || MODE === 'approved') {
 
 if (MODE === 'matrix') {
   const rows = await animationMatrix(browser, PENDING_DECKS);
+  if (rows.some(r => Object.values(r).some(v => typeof v === 'string' && /^(FAIL|PARTIAL|ERROR)/.test(v)))) process.exitCode = 1;
   fs.writeFileSync(path.join(OUT, 'animation-matrix.json'), JSON.stringify(rows, null, 1));
   log('matrix done');
 }
 
 if (MODE === 'standalone') {
   const rows = await standaloneAudit(browser, BASE);
+  if (rows.some(r => !r.contentVisible || r.localDepsMissing.length || r.pageErrors.length)) process.exitCode = 1;
   fs.writeFileSync(path.join(OUT, 'standalone-results.json'), JSON.stringify(rows, null, 1));
   log('standalone done');
 }
 
 if (MODE === 'lowpower-cross') {
   const r = await lowPowerCross(browser, BASE);
+  if (!r.deckA_on || r.contaminated) process.exitCode = 1;
   fs.writeFileSync(path.join(OUT, 'lowpower-cross.json'), JSON.stringify(r, null, 1));
   log('lowpower-cross', JSON.stringify(r));
 }

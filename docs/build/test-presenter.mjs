@@ -25,12 +25,25 @@ for(const e of entries){
   const reconnect=page.waitForEvent('popup');await page.locator('#ppt-reopen').click();audience=await reconnect;await audience.waitForLoadState();await audience.waitForFunction(()=>window.__currentSlideIndex===1);row.checks.push('audience reconnect at current page');
   await page.locator('[data-ppt-tool=laser]').click();assert.equal(await page.evaluate(()=>window.__pptPresenter.debugState().annotationTool),'laser');
   await page.locator('[data-ppt-tool=circle]').click();assert.equal(await page.evaluate(()=>window.__pptPresenter.debugState().annotationTool),'circle');
+  const ink=await page.locator('#ppt-presenter-ink').boundingBox();
+  await page.mouse.move(ink.x+ink.width*.25,ink.y+ink.height*.3);await page.mouse.down();
+  await page.mouse.move(ink.x+ink.width*.6,ink.y+ink.height*.65,{steps:8});await page.mouse.up();
+  assert.equal(await page.evaluate(()=>window.__pptPresenter.debugState().circles.length),1);
+  await audience.waitForFunction(()=>window.__pptPresenter.debugState().audienceCircles.length===1);
   await page.locator('#ppt-ink-clear').click();assert.equal(await page.evaluate(()=>window.__pptPresenter.debugState().circles.length),0);
+  await audience.waitForFunction(()=>window.__pptPresenter.debugState().audienceCircles.length===0);
   await page.keyboard.press('Escape');
   await page.keyboard.press('b');await page.waitForTimeout(300);assert.equal(await page.evaluate(()=>window.__pptPresenter.debugState().screenMode),'black');
-  await page.keyboard.press('b');row.checks.push('annotation tool selection, clear and black-screen toggle');
-  await page.locator('#ppt-timer-toggle').click();await page.waitForTimeout(1200);assert.notEqual(await page.locator('#ppt-clock').textContent(),'00:00');await page.locator('#ppt-timer-toggle').click();row.checks.push('timer start and pause');
-  await page.locator('#ppt-grid').click();assert.ok(await page.locator('#ppt-presenter-overview').isVisible());await page.locator('#ppt-overview-close').click();
+  await audience.waitForFunction(()=>getComputedStyle(document.querySelector('#ppt-audience-cover')).backgroundColor==='rgb(0, 0, 0)');
+  await page.keyboard.press('b');
+  await page.keyboard.press('w');await audience.waitForFunction(()=>getComputedStyle(document.querySelector('#ppt-audience-cover')).backgroundColor==='rgb(255, 255, 255)');await page.keyboard.press('w');
+  await page.keyboard.press('f');await page.locator('#ppt-next').click();assert.equal(await idx(),2);
+  await page.waitForTimeout(600);assert.equal(await audience.evaluate(()=>window.__currentSlideIndex),1);
+  await page.keyboard.press('f');await audience.waitForFunction(()=>window.__currentSlideIndex===2);
+  row.checks.push('draw/clear circles synchronized; black, white and frozen audience states');
+  await page.locator('#ppt-timer-toggle').click();await page.waitForFunction(()=>document.querySelector('#ppt-clock').textContent!=='00:00',null,{timeout:8000});await page.locator('#ppt-timer-toggle').click();row.checks.push('timer start and pause');
+  await page.locator('#ppt-grid').click();assert.ok(await page.locator('#ppt-presenter-overview').isVisible());await page.locator('.ppt-overview-page').first().click();assert.equal(await idx(),0);await audience.waitForFunction(()=>window.__currentSlideIndex===0);
+  await page.waitForFunction(()=>document.querySelector('#ppt-current-frame').contentWindow.__currentSlideIndex===0 && document.querySelector('#ppt-next-frame').contentWindow.__currentSlideIndex===1);
   for(const id of ['ppt-current-frame','ppt-next-frame']){const box=await page.locator('#'+id).boundingBox();assert.ok(Math.abs(box.width/box.height-16/9)<.03);}
   await page.screenshot({path:`${out}/${e.id}.png`});row.checks.push('overview and 16:9 previews');
   await page.locator('#ppt-exit').click();assert.equal(await page.evaluate(()=>document.body.classList.contains('ppt-presenter')),false);
@@ -41,4 +54,5 @@ for(const e of entries){
  }catch(err){row.passed=false;row.failure=String(err);process.exitCode=1;}
  rows.push(row);fs.writeFileSync(`${out}/results.json`,JSON.stringify(rows,null,2));console.log(e.id,row.passed? 'PASS':row.failure);await ctx.close();
 }
+fs.writeFileSync(`${out}/results.json`,JSON.stringify(rows,null,2));
 await browser.close();

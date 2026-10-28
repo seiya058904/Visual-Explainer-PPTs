@@ -1,7 +1,7 @@
 import {chromium} from 'playwright';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-const url=process.env.GALLERY_URL || 'http://127.0.0.1:8901/dist/';
+const url=process.env.GALLERY_URL || 'http://127.0.0.1:8902/Visual-Explainer-PPTs/';
 const out=process.env.GALLERY_QA_OUT || '.codex/gallery-qa';fs.mkdirSync(out,{recursive:true});
 const browser=await chromium.launch({headless:true,...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE?{executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE}:{})});
 const result={url,viewports:[],links:0};
@@ -35,5 +35,10 @@ try {
  const ctx=await browser.newContext({javaScriptEnabled:false});const noscript=await ctx.newPage();await noscript.goto(url);assert.equal(await noscript.locator('.entry').count(),38);await ctx.close();
  const reduce=await browser.newPage({reducedMotion:'reduce'});await reduce.goto(url);assert.equal(await reduce.locator('h1').evaluate(e=>getComputedStyle(e).opacity),'1');await reduce.close();
  const publicText=await page.content();assert.ok(!publicText.includes('2026-08-30-'));await page.close();
+ const errorPage=await browser.newPage();await errorPage.goto(new URL('404.html',url).href);
+ assert.match(await errorPage.locator('h1').textContent(),/not in the library/);
+ const missing=await errorPage.request.get(new URL('not-a-real-deck.html',url).href);assert.equal(missing.status(),404);
+ await errorPage.getByRole('link',{name:'Return to the library'}).click();assert.equal(await errorPage.locator('.entry').count(),38);await errorPage.close();
+ result.notFoundRecovery=true;
  result.passed=true;
 }catch(error){result.passed=false;result.error=String(error);process.exitCode=1;}finally{fs.writeFileSync(`${out}/results.json`,JSON.stringify(result,null,2));await browser.close();console.log(JSON.stringify(result));}

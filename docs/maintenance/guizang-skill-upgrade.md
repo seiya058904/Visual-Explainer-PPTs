@@ -29,3 +29,12 @@ The user authorizes source-first refinement of 38 Approved works. The 10 Pending
 ## Follow-up rendered preflight
 
 After installing the project-pinned Playwright Chromium, Swiss validator rendered the historical lithium Swiss alternate: 0 errors, warnings for10 low nav-safe content bounds and8 title/lead gaps. This alternate is not the approved lithium artifact. Warnings are recorded, not called visual acceptance.
+
+## Final presenter schema check
+
+All 20 sources that actually offer presenter mode were checked after the repairs:
+10 Approved and 10 Pending, 0 errors. Approved sources have 0 warnings. Pending
+notes retain 111 short-talk warnings (concise speaking cues, not verbatim scripts).
+The initial soap closing-transition error is resolved. The other 28 Approved
+runtimes do not implement the modern presenter shell; no presenter pass is claimed
+for them. The installed upstream templates remain unchanged and synchronized.
