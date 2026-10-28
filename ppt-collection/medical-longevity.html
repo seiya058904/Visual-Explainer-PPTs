@@ -503,7 +503,7 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
   </div>
   <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:80vh">
     <div class="kicker" data-anim>A Talk · 2026.05</div>
-    <h1 class="h-hero" data-anim>让生命拥有更多时间</h1>
+    <h1 class="h-hero" data-anim>让生命<br>拥有更多时间</h1>
     <h2 class="h-sub" data-anim>Modern Medicine &amp; Human Longevity</h2>
     <p class="lead" style="max-width:60vw" data-anim>
       从「活下来」，到「活得更久、更好」。
@@ -538,13 +538,13 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Gain</div>
-        <div class="stat-nb">+6.4 <span class="stat-unit">Years</span></div>
+        <div class="stat-nb">+6.3 <span class="stat-unit">Years</span></div>
         <div class="stat-note">人类历史上最快的寿命增长期</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Every 5 Years</div>
-        <div class="stat-nb">+1.5 <span class="stat-unit">年</span></div>
-        <div class="stat-note">每五年全球预期寿命平均延长</div>
+        <div class="stat-nb">+1.7 <span class="stat-unit">年</span></div>
+        <div class="stat-note">按图示端点计算的每五年均值</div>
       </div>
     </div>
   </div>
@@ -569,18 +569,18 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
     <div class="grid-3" style="margin-top:6vh">
       <div class="stat-card" data-anim>
         <div class="stat-label">Under-5 Deaths</div>
-        <div class="stat-nb">12.8M <span class="stat-unit">→ 4.8M</span></div>
-        <div class="stat-note">全球 5 岁以下儿童死亡人数</div>
+        <div class="stat-nb" style="font-size:clamp(25px,3.6vw,54px); white-space:nowrap">13.0M <span class="stat-unit">→ 4.9M</span></div>
+        <div class="stat-note">全球5岁以下死亡人数，1990→2024</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Decline</div>
-        <div class="stat-nb"><span class="stat-unit">−</span>59<span class="stat-unit">%</span></div>
-        <div class="stat-note">死亡率大幅下降</div>
+        <div class="stat-nb"><span class="stat-unit">−</span>63<span class="stat-unit">%</span></div>
+        <div class="stat-note">死亡人数减少（1990→2024）</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Period</div>
-        <div class="stat-nb">1990 <span class="stat-unit">→ 2023</span></div>
-        <div class="stat-note">三十三年 · 数百万童年被改写</div>
+        <div class="stat-nb">1990 <span class="stat-unit">→ 2024</span></div>
+        <div class="stat-note">三十四年 · 数百万童年被改写</div>
       </div>
     </div>
   </div>
@@ -718,8 +718,8 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Lives Saved</div>
-        <div class="stat-nb">4.5<span class="stat-unit">M</span></div>
-        <div class="stat-note">约避免 450 万例癌症死亡</div>
+        <div class="stat-nb">4.8<span class="stat-unit">M</span></div>
+        <div class="stat-note">截至2023年估计避免480万例死亡（美国）</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">The Weapons</div>
@@ -744,19 +744,33 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
     <div style="display:flex; flex-direction:column; justify-content:space-between; gap:3vh">
       <div>
         <div class="kicker" data-anim>Life Becomes Legible</div>
-        <h2 class="h-xl" data-anim>基因：生命开始被读取</h2>
+        <h2 class="h-xl" data-anim>基因：读懂生命</h2>
         <p class="lead" style="margin-top:3vh" data-anim>
           当生命信息可以被读取，医学便从「看见症状」，走向「理解风险」。疾病不再只是发生后的问题，也成为可以提前管理的变量。
         </p>
       </div>
       <div class="callout" data-anim>
         人类基因组计划：$300M → $1,500
-        <div class="callout-src">全基因组测序成本，从 2003 年到 2015 年</div>
+        <div class="callout-src">全球初稿约2000年成本 → 2015年单人基因组成本；口径不同</div>
       </div>
     </div>
-    <figure class="frame-img r-16x10" data-anim>
-      <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80" alt="DNA 研究实验">
-      <figcaption class="img-cap">基因组学 · 生命数据的读取</figcaption>
+    <figure class="frame-img r-16x10" data-anim style="display:flex;flex-direction:column;padding:2vw;gap:1vh">
+      <svg viewBox="0 0 420 300" role="img" aria-labelledby="gene-helix-title" style="width:100%;height:auto;flex:1 1 0;min-height:0;overflow:visible">
+        <title id="gene-helix-title">DNA 双螺旋结构示意图</title>
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M88 22 C335 74 85 136 332 188 C420 207 332 252 248 278" stroke="var(--ink)" stroke-width="7"/>
+          <path d="M332 22 C85 74 335 136 88 188 C0 207 88 252 172 278" stroke="var(--ink-tint)" stroke-width="7"/>
+          <g stroke="var(--ink)" stroke-width="3" opacity=".55">
+            <path d="M115 31 L305 31"/><path d="M158 51 L262 51"/>
+            <path d="M206 73 L214 73"/><path d="M250 96 L170 96"/>
+            <path d="M286 121 L134 121"/><path d="M292 147 L128 147"/>
+            <path d="M260 170 L160 170"/><path d="M218 194 L202 194"/>
+            <path d="M169 218 L251 218"/><path d="M126 243 L294 243"/>
+            <path d="M112 265 L308 265"/>
+          </g>
+        </g>
+      </svg>
+      <figcaption class="img-cap" style="position:static;text-align:center;margin-top:0;flex:0 0 auto">示意图 · 遗传信息的双螺旋结构</figcaption>
     </figure>
   </div>
   <div class="foot">
@@ -777,12 +791,12 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
         <div class="kicker" data-anim>Care, Always On</div>
         <h2 class="h-xl" data-anim>数字医疗：医生的边界被延伸</h2>
         <p class="lead" style="margin-top:3vh" data-anim>
-          未来的医疗不会只发生在医院。它会进入手表、手机、家庭、云端，在疾病恶化之前，提前发出微弱但关键的信号。
+          远程监测把部分生理数据带回家庭照护流程，帮助团队更早发现变化；是否改善结局，取决于病种、监测方案与临床响应。
         </p>
       </div>
       <div class="callout" data-anim>
-        远程监测与住院率、全因死亡率下降相关
-        <div class="callout-src">— 《柳叶刀》数字健康研究综述</div>
+        远程监测能否减少住院或死亡，取决于病种与照护方案
+        <div class="callout-src">系统综述：多类结局证据不一；部分心衰方案见获益</div>
       </div>
     </div>
     <figure class="frame-img r-16x10" data-anim>
