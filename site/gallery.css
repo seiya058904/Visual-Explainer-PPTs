@@ -8,8 +8,8 @@
 @font-face{font-family:"DM Sans";src:url("fonts/dm-sans-latin-400-normal.woff2") format("woff2");font-weight:400;font-display:swap}
 
 *{box-sizing:border-box}
-html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:24px}
-body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 var(--body);overflow-x:clip}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 var(--body)}
 a{color:inherit;text-decoration:none}
 button,input,select{font:inherit}
 button,a,input,select{-webkit-tap-highlight-color:transparent}
@@ -93,6 +93,7 @@ nav a:hover{color:var(--accent)}
 @media(max-width:760px){.wrap{padding-inline:24px}
 .masthead{min-height:85px}
 .brand{font-size:22px}
+.brand span{font-size:12px}
 nav{gap:20px}
 nav a{font-size:13px}
 nav a:last-child{display:none}

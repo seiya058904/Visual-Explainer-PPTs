@@ -24,7 +24,8 @@
     "citationLabel": "Sony",
     "source": "2026-08-15-active-noise-cancellation-fighting-sound-with-sound/index.html",
     "mappingStatus": "verified",
-    "sourceCandidates": []
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "ai-and-life",
@@ -41,14 +42,15 @@
     ],
     "artifact": "ppt-collection/ai-and-life.html",
     "previewPath": "ppt-collection/ai-and-life.html",
-    "slideCount": 9,
+    "slideCount": 10,
     "style": "A",
     "cover": "site/covers/ai-and-life.webp",
     "featuredRank": null,
-    "citationLabel": "FDA · UNESCO · McKinsey",
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "citationLabel": "McKinsey · HEPI · CNNIC · Pew Research Center · FDA · UNESCO",
+    "source": "2026-10-28-legacy-maintenance/ai-and-life.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "ai-impact-on-modern-life",
@@ -73,7 +75,8 @@
     "citationLabel": "UNESCO · McKinsey",
     "source": "2026-05-13-ai-impact-on-modern-life/ai-impact-on-modern-life.html",
     "mappingStatus": "verified",
-    "sourceCandidates": []
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "ai-weather-learning-the-atmosphere",
@@ -99,7 +102,8 @@
     "citationLabel": "ECMWF",
     "source": "2026-08-14-ai-weather-learning-the-atmosphere/index.html",
     "mappingStatus": "verified",
-    "sourceCandidates": []
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "airplane",
@@ -119,10 +123,11 @@
     "style": "A",
     "cover": "site/covers/airplane.webp",
     "featuredRank": null,
-    "citationLabel": "NASA",
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "citationLabel": "NASA / FAA / IATA / Airbus / Boeing",
+    "source": "2026-10-28-legacy-maintenance/airplane.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "bill-gates-biography",
@@ -144,10 +149,11 @@
     "style": "A",
     "cover": "site/covers/bill-gates-biography.webp",
     "featuredRank": null,
-    "citationLabel": null,
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "citationLabel": "Gates Foundation / Lakeside / Microsoft",
+    "source": "2026-10-28-legacy-maintenance/bill-gates-biography.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 9
   },
   {
     "id": "canned-civilization",
@@ -168,10 +174,11 @@
     "style": "A",
     "cover": "site/covers/canned-civilization.webp",
     "featuredRank": null,
-    "citationLabel": null,
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "citationLabel": "National Park Service · USDA · FAO · UNEP · worldsteel",
+    "source": "2026-10-28-legacy-maintenance/canned-civilization.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "chips",
@@ -191,10 +198,11 @@
     "style": "A",
     "cover": "site/covers/chips.webp",
     "featuredRank": 2,
-    "citationLabel": null,
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "citationLabel": "SIA · ASML · SEMI · TSMC · Apple · NVIDIA",
+    "source": "2026-10-28-legacy-maintenance/chips.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "clocks",
@@ -214,10 +222,11 @@
     "style": "A",
     "cover": "site/covers/clocks.webp",
     "featuredRank": null,
-    "citationLabel": null,
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "citationLabel": "Smithsonian National Museum of American History · NIST · BIPM",
+    "source": "2026-10-28-legacy-maintenance/clocks.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "cold-chain",
@@ -238,10 +247,11 @@
     "style": "A",
     "cover": "site/covers/cold-chain.webp",
     "featuredRank": null,
-    "citationLabel": null,
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "citationLabel": "UNEP–FAO · IIR · WHO",
+    "source": "2026-10-28-legacy-maintenance/cold-chain.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "concrete-liquid-skeleton",
@@ -263,10 +273,11 @@
     "style": "A",
     "cover": "site/covers/concrete-liquid-skeleton.webp",
     "featuredRank": null,
-    "citationLabel": "IEA · USGS · GCCA",
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "citationLabel": "USGS · UN-Habitat · UNEP · ACI · GCCA",
+    "source": "2026-10-28-legacy-maintenance/concrete-liquid-skeleton.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "credit",
@@ -286,10 +297,11 @@
     "style": "A",
     "cover": "site/covers/credit.webp",
     "featuredRank": null,
-    "citationLabel": "World Bank",
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "citationLabel": "World Bank / FICO / CFPB / IMF / NY Fed",
+    "source": "2026-10-28-legacy-maintenance/credit.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "display-how-images-are-made",
@@ -316,7 +328,8 @@
     "citationLabel": "Samsung Display",
     "source": "2026-08-15-display-how-images-are-made/index.html",
     "mappingStatus": "verified",
-    "sourceCandidates": []
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "electric-grid-bottleneck",
@@ -343,7 +356,8 @@
     "mappingStatus": "verified",
     "sourceCandidates": [
       "2026-08-14-electric-grid-bottleneck/index.html"
-    ]
+    ],
+    "networkPhotoCount": 0
   },
   {
     "id": "elevator",
@@ -359,14 +373,15 @@
     ],
     "artifact": "ppt-collection/elevator.html",
     "previewPath": "ppt-collection/elevator.html",
-    "slideCount": 9,
+    "slideCount": 10,
     "style": "A",
     "cover": "site/covers/elevator.webp",
     "featuredRank": null,
-    "citationLabel": null,
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "citationLabel": "Otis / CDC-CPWR / Burj Khalifa",
+    "source": "2026-10-28-legacy-maintenance/elevator.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "fiber-optics-glass-nervous-system",
@@ -390,10 +405,11 @@
     "style": "A",
     "cover": "site/covers/fiber-optics-glass-nervous-system.webp",
     "featuredRank": null,
-    "citationLabel": "Nobel Prize · IEEE · Nature Photonics",
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "citationLabel": "ITU / IEEE / Nature Photonics / TeleGeography",
+    "source": "2026-10-28-legacy-maintenance/fiber-optics-glass-nervous-system.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "glp-1-beyond-weight-loss",
@@ -419,7 +435,8 @@
     "citationLabel": "FDA · WHO",
     "source": "2026-08-14-glp-1-beyond-weight-loss/index.html",
     "mappingStatus": "verified",
-    "sourceCandidates": []
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "insurance",
@@ -435,14 +452,15 @@
     ],
     "artifact": "ppt-collection/insurance.html",
     "previewPath": "ppt-collection/insurance.html",
-    "slideCount": 14,
+    "slideCount": 15,
     "style": "A",
     "cover": "site/covers/insurance.webp",
     "featuredRank": null,
-    "citationLabel": "OECD",
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "citationLabel": "NAIC / Swiss Re / OECD",
+    "source": "2026-10-28-legacy-maintenance/insurance.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "jensen-huang",
@@ -463,10 +481,11 @@
     "style": "A",
     "cover": "site/covers/jensen-huang.webp",
     "featuredRank": null,
-    "citationLabel": "IEEE · Stanford Engineering",
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "citationLabel": "NVIDIA / Stanford / SIA / IEEE",
+    "source": "2026-10-28-legacy-maintenance/jensen-huang.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "keys-and-locks",
@@ -489,9 +508,10 @@
     "cover": "site/covers/keys-and-locks.webp",
     "featuredRank": null,
     "citationLabel": "NIST",
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "source": "2026-10-28-legacy-maintenance/keys-and-locks.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "lithium-battery-tetherless-world",
@@ -519,7 +539,8 @@
     "mappingStatus": "verified",
     "sourceCandidates": [
       "2026-05-16-lithium-battery-ppt/index.html"
-    ]
+    ],
+    "networkPhotoCount": 0
   },
   {
     "id": "medical-longevity",
@@ -540,10 +561,11 @@
     "style": "A",
     "cover": "site/covers/medical-longevity.webp",
     "featuredRank": null,
-    "citationLabel": null,
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "citationLabel": "WHO · UNICEF/UN IGME · WHO immunization · UN · American Cancer Society · NHGRI",
+    "source": "2026-10-28-legacy-maintenance/medical-longevity.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 1
   },
   {
     "id": "microbial-chocolate-designing-flavour",
@@ -569,7 +591,8 @@
     "citationLabel": "Nature Microbiology",
     "source": "2026-08-15-microbial-chocolate-designing-flavour/index.html",
     "mappingStatus": "verified",
-    "sourceCandidates": []
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "microwave-where-heat-comes-from",
@@ -596,7 +619,8 @@
     "citationLabel": "NASA · FDA",
     "source": "2026-08-15-microwave-where-heat-comes-from/index.html",
     "mappingStatus": "verified",
-    "sourceCandidates": []
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "navigation",
@@ -616,10 +640,11 @@
     "style": "A",
     "cover": "site/covers/navigation.webp",
     "featuredRank": null,
-    "citationLabel": null,
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "citationLabel": "GPS.gov / USCG / Google / Scientific Reports",
+    "source": "2026-10-28-legacy-maintenance/navigation.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "pills-industrial-miracle",
@@ -642,9 +667,10 @@
     "cover": "site/covers/pills-industrial-miracle.webp",
     "featuredRank": null,
     "citationLabel": "FDA · WHO",
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "source": "2026-10-28-legacy-maintenance/pills-industrial-miracle.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "planetary-defense-changing-the-odds",
@@ -671,7 +697,8 @@
     "citationLabel": "NASA/JPL CNEOS · NASA",
     "source": "2026-08-14-planetary-defense-changing-the-odds/index.html",
     "mappingStatus": "verified",
-    "sourceCandidates": []
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "qr-code-inside-the-black-white-squares",
@@ -700,7 +727,8 @@
     "mappingStatus": "verified",
     "sourceCandidates": [
       "2026-08-15-why-qr-codes-are-readable/index.html"
-    ]
+    ],
+    "networkPhotoCount": 0
   },
   {
     "id": "queueing",
@@ -720,10 +748,11 @@
     "style": "A",
     "cover": "site/covers/queueing.webp",
     "featuredRank": null,
-    "citationLabel": "Columbia University · OECD",
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "citationLabel": "Little / NHS England / OECD / Walt Disney World",
+    "source": "2026-10-28-legacy-maintenance/queueing.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "science-of-garbage",
@@ -745,9 +774,10 @@
     "cover": "site/covers/science-of-garbage.webp",
     "featuredRank": null,
     "citationLabel": "UNEP",
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "source": "2026-10-28-legacy-maintenance/science-of-garbage.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 2
   },
   {
     "id": "screws",
@@ -767,10 +797,11 @@
     "style": "A",
     "cover": "site/covers/screws.webp",
     "featuredRank": null,
-    "citationLabel": "NASA",
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "citationLabel": "ASME / NASA / Boeing / ISO",
+    "source": "2026-10-28-legacy-maintenance/screws.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "spf-50-decoding-sunscreen",
@@ -795,7 +826,8 @@
     "citationLabel": "FDA",
     "source": "2026-08-15-spf-50-sunscreen-decoding/index.html",
     "mappingStatus": "verified",
-    "sourceCandidates": []
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "the-art-of-cinema",
@@ -813,14 +845,15 @@
     ],
     "artifact": "ppt-collection/the-art-of-cinema.html",
     "previewPath": "ppt-collection/the-art-of-cinema.html",
-    "slideCount": 14,
+    "slideCount": 15,
     "style": "A",
     "cover": "site/covers/the-art-of-cinema.webp",
     "featuredRank": 3,
     "citationLabel": "UNESCO",
     "source": "2026-05-14-the-art-of-cinema/the-art-of-cinema.html",
     "mappingStatus": "verified",
-    "sourceCandidates": []
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "tires",
@@ -840,10 +873,11 @@
     "style": "A",
     "cover": "site/covers/tires.webp",
     "featuredRank": null,
-    "citationLabel": "OECD",
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "citationLabel": "NHTSA / AAA / JRC / IRENA / Pirelli",
+    "source": "2026-10-28-legacy-maintenance/tires.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "twenty-years",
@@ -864,10 +898,11 @@
     "style": "A",
     "cover": "site/covers/twenty-years.webp",
     "featuredRank": null,
-    "citationLabel": null,
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "citationLabel": "ITU / GSMA / Stanford HAI / IRENA / NHGRI / IFR",
+    "source": "2026-10-28-legacy-maintenance/twenty-years.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "weather-forecast",
@@ -884,14 +919,15 @@
     ],
     "artifact": "ppt-collection/weather-forecast.html",
     "previewPath": "ppt-collection/weather-forecast.html",
-    "slideCount": 14,
+    "slideCount": 15,
     "style": "A",
     "cover": "site/covers/weather-forecast.webp",
     "featuredRank": null,
     "citationLabel": "ECMWF",
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "source": "2026-10-28-legacy-maintenance/weather-forecast.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "wifi",
@@ -912,9 +948,10 @@
     "cover": "site/covers/wifi.webp",
     "featuredRank": null,
     "citationLabel": "IEEE",
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "source": "2026-10-28-legacy-maintenance/wifi.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "world-cup",
@@ -935,15 +972,16 @@
     "style": "A",
     "cover": "site/covers/world-cup.webp",
     "featuredRank": 6,
-    "citationLabel": null,
-    "source": null,
-    "mappingStatus": "orphan",
-    "sourceCandidates": []
+    "citationLabel": "FIFA / IFAB / UEFA / FIFA Professional Football Report",
+    "source": "2026-10-28-legacy-maintenance/world-cup.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "air-conditioning-moving-heat",
     "status": "pending",
-    "titleZh": "空调：冷，是一种被搬运的状态",
+    "titleZh": "空调：冷下来靠搬走热量",
     "titleEn": "Air Conditioning Moves Heat",
     "summaryZh": "说明空调通过制冷循环把室内热量搬到室外，并用温度与湿度解释体感差异。",
     "categories": [
@@ -964,7 +1002,8 @@
     "citationLabel": "IEA · UNEP",
     "source": "2026-08-30-air-conditioning-moving-heat/index.html",
     "mappingStatus": "verified",
-    "sourceCandidates": []
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "bridges-always-moving",
@@ -989,7 +1028,8 @@
     "citationLabel": null,
     "source": "2026-08-30-bridges-always-moving/index.html",
     "mappingStatus": "verified",
-    "sourceCandidates": []
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "caffeine-blocking-sleepiness",
@@ -1014,7 +1054,8 @@
     "citationLabel": "FDA",
     "source": "2026-08-30-caffeine-blocking-sleepiness/index.html",
     "mappingStatus": "verified",
-    "sourceCandidates": []
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "container-the-box",
@@ -1039,7 +1080,8 @@
     "citationLabel": null,
     "source": "2026-08-30-container-the-box/index.html",
     "mappingStatus": "verified",
-    "sourceCandidates": []
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "fingerprints-not-for-grip",
@@ -1065,7 +1107,8 @@
     "citationLabel": null,
     "source": "2026-08-30-fingerprints-not-for-grip/index.html",
     "mappingStatus": "verified",
-    "sourceCandidates": []
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "glass-transparent-solid",
@@ -1090,7 +1133,8 @@
     "citationLabel": "WHO",
     "source": "2026-08-30-glass-transparent-solid/index.html",
     "mappingStatus": "verified",
-    "sourceCandidates": []
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "soap-translating-oil",
@@ -1115,7 +1159,8 @@
     "citationLabel": "FDA",
     "source": "2026-08-30-soap-translating-oil/index.html",
     "mappingStatus": "verified",
-    "sourceCandidates": []
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "tap-water-clean-process",
@@ -1141,7 +1186,8 @@
     "citationLabel": "WHO",
     "source": "2026-08-30-tap-water-clean-process/index.html",
     "mappingStatus": "verified",
-    "sourceCandidates": []
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "traffic-light-yellow-physics",
@@ -1167,7 +1213,8 @@
     "citationLabel": null,
     "source": "2026-08-30-traffic-light-yellow-physics/index.html",
     "mappingStatus": "verified",
-    "sourceCandidates": []
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   },
   {
     "id": "zipper-line-of-teeth",
@@ -1192,6 +1239,7 @@
     "citationLabel": null,
     "source": "2026-08-30-zipper-line-of-teeth/index.html",
     "mappingStatus": "verified",
-    "sourceCandidates": []
+    "sourceCandidates": [],
+    "networkPhotoCount": 0
   }
 ]

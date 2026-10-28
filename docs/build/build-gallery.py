@@ -33,7 +33,11 @@ def validate(entries):
     return approved
 
 def image(e, eager=False):
-    return f'<img src="{esc(e["cover"])}" width="960" height="540" alt="{esc(e["titleZh"])} presentation cover" '+('fetchpriority="high"' if eager else 'loading="lazy"')+' decoding="async">'
+    return f'<img src="{esc(e["cover"])}" width="960" height="540" lang="zh-CN" alt="{esc(e["titleZh"])} · 实际 PPT 封面" '+('fetchpriority="high"' if eager else 'loading="lazy"')+' decoding="async">'
+
+
+def network_note(e):
+    return ' / Some photos load online' if e.get('networkPhotoCount', 0) else ''
 
 def build(out):
     entries = catalog_entries(); approved = validate(entries)
@@ -42,7 +46,7 @@ def build(out):
     hero=featured[0]
     categories=sorted({c for e in approved for c in e['categories']})
     features=''.join(f'<article class="feature"><a href="{esc(e["artifact"])}">{image(e)}<h3 lang="zh-CN">{esc(e["titleZh"])}</h3><p>{esc(e["titleEn"])}</p><span class="subject">{esc(e["categories"][0])}</span></a></article>' for e in featured)
-    cards=''.join(f'<article class="entry" data-entry="{esc(e["id"])}"><a href="{esc(e["artifact"])}">{image(e)}<div><h3 lang="zh-CN">{esc(e["titleZh"])}</h3><p class="en">{esc(e["titleEn"])}</p><p class="summary" lang="zh-CN">{esc(e["summaryZh"])}</p><div class="meta">{esc(e["categories"][0])} / {e["slideCount"]} slides</div></div></a></article>' for e in approved)
+    cards=''.join(f'<article class="entry" data-entry="{esc(e["id"])}"><a href="{esc(e["artifact"])}">{image(e)}<div><h3 lang="zh-CN">{esc(e["titleZh"])}</h3><p class="en">{esc(e["titleEn"])}</p><p class="summary" lang="zh-CN">{esc(e["summaryZh"])}</p><div class="meta">{esc(e["categories"][0])} / {e["slideCount"]} slides{network_note(e)}</div></div></a></article>' for e in approved)
     public_data=[{k:e[k] for k in ('id','status','titleZh','titleEn','summaryZh','categories','keywords')} for e in approved]
     data=json.dumps(public_data,ensure_ascii=False).replace('<','\\u003c')
     page=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Visual Explainer Library: Everyday questions, visual answers</title><meta name="description" content="Explore {len(approved)} interactive Chinese presentations about science, technology, and everyday life."><link rel="icon" href="data:,"><link rel="stylesheet" href="site/gallery.css"><script src="site/vendor/gsap.min.js" defer></script><script type="module" src="site/gallery.mjs"></script></head><body id="top"><a class="skip" href="#library">Skip to the library</a><div class="wrap"><header class="masthead"><a class="brand" href="./">Visual Explainer<span>A library of ideas, made visible.</span></a><nav aria-label="Main"><a href="#selected">Selected</a><a href="#library">Library</a><a href="#about">About</a></nav></header><main>
@@ -75,7 +79,7 @@ def build(out):
     for e in approved:
         for key in ('artifact','cover'):
             dest=out/e[key];dest.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(ROOT/e[key],dest)
-    (out/'404.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found</title><body><main><h1>This page is not in the library.</h1><p>The address may have changed.</p><a href="/Visual-Explainer-PPTs/">Return to the library</a></main></body></html>',encoding='utf-8')
+    (out/'404.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found · Visual Explainer</title><link rel="stylesheet" href="/Visual-Explainer-PPTs/site/gallery.css"><body><main class="wrap error-page"><p>404 / Visual Explainer Library</p><h1>This page is not in the library.</h1><p>The address may have changed. Explore the collection to find another question worth following.</p><a class="button" href="/Visual-Explainer-PPTs/">Return to the library</a></main></body></html>',encoding='utf-8')
     (out/'.nojekyll').write_text('')
     print(f'Built {len(approved)} approved entries into {out}')
 
