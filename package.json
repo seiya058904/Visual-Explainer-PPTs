@@ -1,0 +1,1 @@
+{"name":"visual-explainer-library","private":true,"scripts":{"build":"python docs/build/build-gallery.py","test":"node --test tests/*.test.mjs","covers":"node docs/build/capture-covers.mjs","test:site":"node docs/build/test-gallery.mjs"},"dependencies":{"@fontsource/dm-sans":"5.3.0","@fontsource/newsreader":"5.3.0","gsap":"3.15.0"},"devDependencies":{"playwright":"1.62.1"}}

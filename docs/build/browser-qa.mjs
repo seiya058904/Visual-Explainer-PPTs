@@ -21,7 +21,8 @@ import path from 'node:path';
 const require = createRequire(import.meta.url);
 const { chromium } = require(process.env.PLAYWRIGHT_PATH || 'playwright');
 
-const CHROME = 'C:/Users/admin/AppData/Local/ms-playwright/chromium-1237/chrome-win64/chrome.exe';
+const CHROME = process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE || chromium.executablePath();
+if (!fs.existsSync(CHROME)) throw new Error(`Chromium missing: ${CHROME}. Run npx playwright install chromium or set PLAYWRIGHT_CHROMIUM_EXECUTABLE.`);
 const args = process.argv.slice(2);
 const opt = (k, d) => { const i = args.indexOf('--' + k); return i >= 0 ? args[i + 1] : d; };
 const has = k => args.includes('--' + k);
@@ -168,14 +169,15 @@ async function pipelineState(page) {
 }
 
 async function shot(page, file) {
-  await page.screenshot({ path: path.join(SHOTS, file) });
+  const size = page.viewportSize();
+  await page.screenshot({ path: path.join(SHOTS, `${size.width}x${size.height}-${file}`) });
 }
 
 /* ---------- 单 deck QA ---------- */
 async function qaDeck(browser, deck, url, mode) {
   const result = { deck, url, mode, viewports: {}, animations: {}, notes: [] };
   const viewports = mode === 'pending' ? (VIEWPORTS.length ? VIEWPORTS : [V1600, V1280, V1000])
-    : mode === 'approved' ? (VIEWPORTS.length ? VIEWPORTS : [V1600])
+    : mode === 'approved' ? (VIEWPORTS.length ? VIEWPORTS : [V1600, V1280, V1000])
     : [V1600];
 
   for (const vp of viewports) {
@@ -198,17 +200,18 @@ async function qaDeck(browser, deck, url, mode) {
     await page.addScriptTag({ content: PAGE_HELPERS }).catch(() => {});
     await page.waitForFunction(() => document.body.classList.contains('motion-ready'), null, { timeout: 6000 }).catch(() => {});
 
+    await page.evaluate(() => document.fonts.ready);
     // motion-ready?
     vpRes.motionReady = await page.evaluate(() => document.body.classList.contains('motion-ready'));
 
     const total = await page.evaluate(() => window.__qa.slideCount());
-    const deep = mode === 'pending';
+    const deep = mode === 'pending' || mode === 'approved';
     const types = await page.evaluate(() => [...document.querySelectorAll('.slide')].map(s => s.dataset.animate || (s.classList.contains('hero') ? 'hero' : 'cascade')));
     // approved 非首视口只扫高风险页
     const isHighRisk = i => ['pipeline', 'directional', 'hero'].includes(types[i]) || i === 0 || i === total - 1;
     const slideRecAnimHolder = {};
     for (let i = 0; i < total; i++) {
-      if (mode === 'approved' && vp.name !== viewports[0].name && !isHighRisk(i)) continue;
+      // Every page in every requested viewport is part of acceptance.
       if (i > 0) {
         // 按键直到到达第 i 页;记录“到达页自身”的动画采样(pipeline 页会吞键推进 step)
         let idxNow0 = await page.evaluate(() => window.__qa.idx());
@@ -238,6 +241,10 @@ async function qaDeck(browser, deck, url, mode) {
       });
       slideRec.pipeline = isPipeline; slideRec.directional = isDirectional;
 
+      // Animation sampling precedes settling: go() schedules entry after 450ms,
+      // and directional right entry ends up to 1.8s later. Never measure it mid-flight.
+      await page.waitForTimeout(1000);
+      if (slideRec.actualIndex !== i) throw new Error(`Navigation failed: expected ${i}, actual ${slideRec.actualIndex}`);
       // 几何
       const geo = await collectIssues(page);
       slideRec.overflow = geo.overflow; slideRec.footOverlap = geo.footOverlap;
@@ -514,7 +521,7 @@ const browser = await chromium.launch({ executablePath: CHROME, headless: true }
 
 if (MODE === 'pending' || MODE === 'approved') {
   let decks = MODE === 'pending' ? PENDING_DECKS
-    : fs.readFileSync(opt('manifest', ''), 'utf-8').split('\n').map(s => s.trim()).filter(Boolean)
+    : (opt('manifest', '') ? fs.readFileSync(opt('manifest', ''), 'utf-8').split('\n').map(s => s.trim()).filter(Boolean) : fs.readdirSync('ppt-collection').filter(f => f.endsWith('.html')).map(f => `ppt-collection/${f}`))
         .map(f => ({ deck: path.basename(f, '.html'), url: `${BASE}/${f}` }));
   if (ONLY) decks = decks.filter(d => d.deck.includes(ONLY));
   const results = [];
@@ -523,7 +530,11 @@ if (MODE === 'pending' || MODE === 'approved') {
     while (queue.length) {
       const d = queue.shift();
       log('start', d.deck);
-      try { results.push(await qaDeck(browser, d.deck, d.url, MODE)); }
+      try {
+        const result = await qaDeck(browser, d.deck, d.url, MODE);
+        results.push(result);
+        fs.writeFileSync(path.join(OUT, `${MODE}-${d.deck}.json`), JSON.stringify(result, null, 1));
+      }
       catch (e) { results.push({ deck: d.deck, fatal: String(e).slice(0, 300) }); }
       log('done', d.deck);
     }

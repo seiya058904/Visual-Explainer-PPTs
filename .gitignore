@@ -24,3 +24,8 @@ __pycache__/
 
 # WorkBuddy local workspace data (memory logs, session state)
 .workbuddy/
+
+# Reproducible gallery output and local design QA
+dist/
+.hallmark/
+.impeccable/
