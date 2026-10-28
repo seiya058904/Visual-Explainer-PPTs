@@ -14,7 +14,7 @@
     <!-- 油滴悬浮被弹回 -->
     <circle cx="560" cy="330" r="16" fill="rgba(168,90,44,.4)" stroke="#a85a2c" stroke-width="2.5"/>
     <path d="M560 310 q 10 -14 0 -26" stroke="#a85a2c" stroke-width="2.5"/>
-    <text x="500" y="275" fill="#a85a2c" font-size="18" opacity=".85">油滴试图下沉 · 被水"推"回来</text>
+    <text x="500" y="275" fill="#a85a2c" font-size="18" opacity=".85">油水分层 · 取决于相容性与密度</text>
     <!-- 水分子小圈 -->
     <g stroke="#4a7196" stroke-width="2" opacity=".7">
       <circle cx="250" cy="340" r="7"/><circle cx="290" cy="370" r="7"/><circle cx="330" cy="345" r="7"/>

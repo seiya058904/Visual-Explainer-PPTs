@@ -11,12 +11,12 @@
     <!-- 2050 预测柱 -->
     <rect x="470" y="144" width="150" height="336" fill="rgba(10,31,61,.28)" stroke="#0a1f3d" stroke-width="3" stroke-dasharray="10 8"/>
     <text x="545" y="118" fill="#0a1f3d" font-size="30" text-anchor="middle" font-weight="700">5.6 B</text>
-    <text x="545" y="516" fill="#0a1f3d" font-size="22" text-anchor="middle" opacity=".8">2050 · 预期</text>
+    <text x="545" y="516" fill="#0a1f3d" font-size="22" text-anchor="middle" opacity=".8">2050 · 基准情景</text>
     <!-- 增长箭头 -->
     <path d="M350 372 C 420 330, 440 260, 458 190" stroke="#0a1f3d" stroke-width="3.5"/>
     <path d="M446 202 L460 182 L464 206" fill="none" stroke="#0a1f3d" stroke-width="3.5"/>
     <!-- 注释 -->
-    <text x="640" y="90" fill="#0a1f3d" font-size="20" text-anchor="end" opacity=".7">×3.5 · 三十五年</text>
+    <text x="640" y="90" fill="#0a1f3d" font-size="20" text-anchor="end" opacity=".7">×3.5 · 34 年区间</text>
     <text x="720" y="560" fill="#0a1f3d" font-size="18" text-anchor="end" opacity=".55">Units in use · IEA (2018)</text>
   </g>
 </svg>
