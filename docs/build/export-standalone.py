@@ -212,16 +212,19 @@ def main(argv: list[str]) -> int:
     parser.add_argument('--stage', type=pathlib.Path, help='staging directory (relative to cwd or absolute)')
     parser.add_argument('--out-dir', type=pathlib.Path, help='final output directory (relative to repo or absolute)')
     parser.add_argument('--check-only', action='store_true', help='validate without writing files or directories')
+    parser.add_argument('--output-name', help='stable existing filename for a single source (lowercase slug.html)')
     args = parser.parse_intermixed_args(argv)
     stage = (args.stage or REPO / '.codex' / 'audit-2026-09-10' / 'standalone-candidate').resolve()
     out_dir = (REPO / args.out_dir).resolve() if args.out_dir is not None else stage
 
     try:
+        if args.output_name and (len(args.sources) != 1 or not re.fullmatch(r'[a-z0-9][a-z0-9-]*\.html', args.output_name)):
+            raise ValueError('--output-name requires one source and a lowercase slug.html filename')
         sources = [(REPO / name).resolve() for name in args.sources]
         names: dict[str, pathlib.Path] = {}
         destinations = []
         for source in sources:
-            name = output_name(source)
+            name = args.output_name or output_name(source)
             key = name.casefold()  # Reject case-only collisions on every platform.
             if key in names:
                 raise ValueError(f'output conflict: {names[key]} and {source} -> {name}')

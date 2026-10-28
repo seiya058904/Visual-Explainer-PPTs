@@ -21,7 +21,7 @@ set `PLAYWRIGHT_CHROMIUM_EXECUTABLE` to its verified executable. Otherwise run
 
 1. Establish the source-to-artifact mapping and explicit approval status.
 2. Edit the source; preserve factual citations, custom runtime behavior and imagery.
-3. Run `python docs/build/export-standalone.py <source> --check-only`.
+3. Run `python docs/build/export-standalone.py <source> --output-name <existing-id>.html --check-only`. The explicit name preserves legacy public URLs when a source folder has a date prefix.
 4. Export into staging, inspect at all three deck viewports, then replace the approved
    artifact using the exporter's transaction. Pending never enters the collection.
 5. Update its catalog metadata. `source` is a file path; `citationLabel` is only a

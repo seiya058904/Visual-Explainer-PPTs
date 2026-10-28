@@ -118,7 +118,9 @@ async function collectIssues(page) {
     const footBox = foot ? foot.getBoundingClientRect() : null;
     const navBox = window.__qa.navBox();
     for (const el of window.__qa.textEls(slide)) {
-      const r = el.getBoundingClientRect();
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const r = range.getBoundingClientRect();
       if (r.width === 0 || r.height === 0) continue;
       if (r.left < -TOL || r.right > vw + TOL || r.top < -TOL || r.bottom > vh + TOL) {
         res.overflow.push({
@@ -175,7 +177,7 @@ async function shot(page, file) {
 
 /* ---------- 单 deck QA ---------- */
 async function qaDeck(browser, deck, url, mode) {
-  const result = { deck, url, mode, viewports: {}, animations: {}, notes: [] };
+  const result = { deck, url, mode, geometryVersion: 'text-range-v2', viewports: {}, animations: {}, notes: [] };
   const viewports = mode === 'pending' ? (VIEWPORTS.length ? VIEWPORTS : [V1600, V1280, V1000])
     : mode === 'approved' ? (VIEWPORTS.length ? VIEWPORTS : [V1600, V1280, V1000])
     : [V1600];
@@ -523,7 +525,7 @@ if (MODE === 'pending' || MODE === 'approved') {
   let decks = MODE === 'pending' ? PENDING_DECKS
     : (opt('manifest', '') ? fs.readFileSync(opt('manifest', ''), 'utf-8').split('\n').map(s => s.trim()).filter(Boolean) : fs.readdirSync('ppt-collection').filter(f => f.endsWith('.html')).map(f => `ppt-collection/${f}`))
         .map(f => ({ deck: path.basename(f, '.html'), url: `${BASE}/${f}` }));
-  if (ONLY) decks = decks.filter(d => d.deck.includes(ONLY));
+  if (ONLY) decks = decks.filter(d => ONLY.split(',').some(part => d.deck.includes(part.trim())));
   const results = [];
   const queue = [...decks];
   async function worker() {

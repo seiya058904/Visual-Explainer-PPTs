@@ -21,6 +21,9 @@ def validate(entries):
         if e['status'] not in ('approved','pending'): raise ValueError('Unknown status')
         if e['status'] != 'approved': continue
         for field in ('artifact','cover'):
+            relative=pathlib.PurePosixPath(e[field])
+            if relative.is_absolute() or '..' in relative.parts or '\\' in e[field] or ':' in e[field]:
+                raise ValueError(f'Unsafe catalog path: {e[field]}')
             p = (ROOT / e[field]).resolve()
             if not p.is_relative_to(ROOT) or not p.is_file(): raise ValueError(f'Missing/unsafe {field}: {e[field]}')
         if pathlib.PurePosixPath(e['artifact']).parent.as_posix() != 'ppt-collection': raise ValueError('Approved outside collection')
@@ -46,19 +49,21 @@ def build(out):
     <section class="hero" aria-labelledby="hero-title"><div class="hero-copy"><h1 id="hero-title">Look closer.<br>Understand more.</h1><p>Everyday questions, explored through carefully crafted interactive presentations.</p><a class="button" href="#library">Browse the library</a><span class="hero-count">{len(approved)} visual explainers / Read in Chinese</span></div><figure class="hero-art"><a href="{esc(hero['artifact'])}" aria-label="Open {esc(hero['titleEn'])}">{image(hero,True)}</a><figcaption><strong lang="zh-CN">{esc(hero['titleZh'])}</strong><span>Inside the collection</span></figcaption></figure></section>
     <section id="selected" class="selected" aria-labelledby="selected-title"><div class="section-head"><h2 id="selected-title">A few places to begin</h2><p>Six perspectives on the world around us.</p></div><div class="selected-grid">{features}</div></section>
     <section id="library" class="library" aria-labelledby="library-title"><div class="section-head"><h2 id="library-title">The complete library</h2><p>Follow a question. Find a new connection.</p></div><div class="filters"><div class="field"><label for="search">Search in English or Chinese</label><input id="search" type="search" placeholder="Try batteries, 降噪, or everyday life" autocomplete="off"></div><div class="field"><label for="category">Subject</label><select id="category"><option value="">All subjects</option>{''.join(f'<option>{esc(c)}</option>' for c in categories)}</select></div><button class="clear" data-clear>Clear filters</button></div><div class="results-line"><span id="result-count" role="status" aria-live="polite">{len(approved)} explainers</span><span>Open any cover to read</span></div><div id="empty" class="empty" hidden><h3>No matching explainers</h3><p>Try a broader subject or another keyword.</p><button class="clear" data-clear>Clear filters</button></div><div class="index-grid">{cards}</div></section>
-    <section id="about" class="about" aria-labelledby="about-title"><h2 id="about-title">An idea deserves<br>room to unfold.</h2><div><p>These are presentations you can move through, not a stack of static images. Each one follows a question through evidence, diagrams and a visual narrative.</p><p>Open a work and use the arrow keys to explore. Available controls vary by presentation; some include step-by-step diagrams and presenter tools.</p><a href="https://github.com/seiya058904/Visual-Explainer-PPTs">Explore the source repository</a></div></section></main><footer class="footer"><span>Visual Explainer Library<br>Chinese stories. Shared curiosity.</span><a href="#top">Back to top</a></footer></div><script type="application/json" id="catalog-data">{data}</script></body></html>'''
+    <section id="about" class="about" aria-labelledby="about-title"><h2 id="about-title">An idea deserves<br>room to unfold.</h2><div><p>These are presentations you can move through, not a stack of static images. Each one follows a question through evidence, diagrams and a visual narrative.</p><p>Open a work and use the arrow keys to explore. Available controls vary by presentation; some include step-by-step diagrams and presenter tools.</p><a href="https://github.com/seiya058904/Visual-Explainer-PPTs">Explore the source repository</a></div></section></main><footer class="footer"><span>Visual Explainer Library<br>Chinese stories. Shared curiosity.</span><a href="site/credits.html">Sources &amp; attribution</a><a href="#top">Back to top</a></footer></div><script type="application/json" id="catalog-data">{data}</script></body></html>'''
     # Fail before writing when a required build dependency is missing.
     for dependency in ['node_modules/gsap/dist/gsap.min.js', 'node_modules/gsap/README.md'] + [f'node_modules/@fontsource/{font}/{suffix}' for font in ('newsreader','dm-sans') for suffix in ('LICENSE',f'files/{font}-latin-400-normal.woff2')]:
         if not (ROOT/dependency).is_file(): raise ValueError('Missing dependency: '+dependency)
-    allowed={'index.html','404.html','.nojekyll','site/gallery.css','site/gallery.mjs','site/filter.mjs','site/vendor/gsap.min.js','site/vendor/GSAP-README.md'}
+    allowed={'index.html','404.html','.nojekyll','site/gallery.css','site/gallery.mjs','site/filter.mjs','site/vendor/gsap.min.js','site/vendor/GSAP-README.md','site/credits.html','site/licenses/guizang-AGPL-3.0.txt'}
     allowed.update(f'site/fonts/{font}{suffix}' for font in ('newsreader','dm-sans') for suffix in ('-latin-400-normal.woff2','-LICENSE.txt'))
     allowed.update(e[key] for e in approved for key in ('artifact','cover'))
     existing={p.relative_to(out).as_posix() for p in out.rglob('*') if p.is_file()} if out.exists() else set()
     if existing-allowed: raise ValueError('Stale/unexpected output files; use a fresh directory: '+str(sorted(existing-allowed)))
     out.mkdir(parents=True,exist_ok=True)
     (out/'index.html').write_text(page,encoding='utf-8')
-    for name in ('gallery.css','gallery.mjs','filter.mjs'):
+    for name in ('gallery.css','gallery.mjs','filter.mjs','credits.html'):
         (out/'site').mkdir(exist_ok=True);shutil.copy2(ROOT/'site'/name,out/'site'/name)
+    (out/'site/licenses').mkdir(parents=True,exist_ok=True)
+    shutil.copy2(ROOT/'site/licenses/guizang-AGPL-3.0.txt',out/'site/licenses/guizang-AGPL-3.0.txt')
     (out/'site/vendor').mkdir(parents=True,exist_ok=True)
     shutil.copy2(ROOT/'node_modules/gsap/dist/gsap.min.js',out/'site/vendor/gsap.min.js')
     shutil.copy2(ROOT/'node_modules/gsap/README.md',out/'site/vendor/GSAP-README.md')

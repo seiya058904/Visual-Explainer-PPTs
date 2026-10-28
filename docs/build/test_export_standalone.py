@@ -17,6 +17,19 @@ spec.loader.exec_module(exporter)
 
 
 class ExportStandaloneTests(unittest.TestCase):
+    def test_explicit_stable_name(self):
+        source = self.source('dated-project/index.html')
+        self.assertEqual(exporter.main([str(source), '--output-name', 'existing-deck.html', '--out-dir', str(self.out)]), 0)
+        self.assertEqual((self.out / 'existing-deck.html').read_text(), '<h1>deck</h1>')
+
+    def test_explicit_name_rejects_traversal_and_batch(self):
+        first = self.source('first/index.html')
+        second = self.source('second/index.html')
+        for name in ('../escape.html', 'sub/file.html', 'bad.HTML', 'C:\\escape.html'):
+            self.assertEqual(exporter.main([str(first), '--output-name', name, '--out-dir', str(self.out)]), 1)
+        self.assertEqual(exporter.main([str(first), str(second), '--output-name', 'same.html', '--out-dir', str(self.out)]), 1)
+        self.assertFalse(self.out.exists())
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)

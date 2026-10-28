@@ -25,3 +25,7 @@ The upstream is AGPL-3.0. No upstream installation is added to this repository. 
 ## Authorized exception
 
 The user authorizes source-first refinement of 38 Approved works. The 10 Pending works remain Pending after technical QA and cannot be promoted without new explicit approval.
+
+## Follow-up rendered preflight
+
+After installing the project-pinned Playwright Chromium, Swiss validator rendered the historical lithium Swiss alternate: 0 errors, warnings for10 low nav-safe content bounds and8 title/lead gaps. This alternate is not the approved lithium artifact. Warnings are recorded, not called visual acceptance.

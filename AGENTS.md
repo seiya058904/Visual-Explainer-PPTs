@@ -315,6 +315,7 @@ Presenter mode：运行 `validate-presenter-mode.mjs`。
 | `<title>` 未闭合导致空白 | 检查 HTML 闭合 |
 | `data-animate` 放 `.frame` | 移到 `<section>` |
 | Pipeline 标题/lead 变暗 | 只 dim step/arrow，非步骤走 cascade |
+| 演讲者备注滚动或触摸导致翻页 | wheel/touch 只在普通 deck 模式处理；排除 presenter/audience/preview、总览及可编辑控件，验收必须在备注区实际滚动并确认页码不变 |
 | Pipeline 推进异常 | 检查初始化顺序、选择器和 `return true` |
 | `data-anim` 挂父容器 | 拆到独立元素 |
 | 同组文字像“没加载完” | 非明确层级不要随意混用透明度 |
