@@ -40,44 +40,7 @@
 
 Choose a question and follow the argument. These are selected **approved standalone HTML decks** from [`ppt-collection/`](ppt-collection/), rather than a list of every working folder.
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🎧 <a href="ppt-collection/active-noise-cancellation-fighting-sound-with-sound.html">Can sound cancel sound?</a></h3>
-      <p><sub>ACOUSTICS · EVERYDAY TECHNOLOGY</sub></p>
-      <p>How active noise cancellation uses another sound wave to reduce the noise we hear.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>☄️ <a href="ppt-collection/planetary-defense-changing-the-odds.html">What if an asteroid approached Earth?</a></h3>
-      <p><sub>SPACE · PLANETARY DEFENSE</sub></p>
-      <p>From detecting a threat to understanding how an intervention might change the outcome.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>⚡ <a href="ppt-collection/electric-grid-bottleneck.html">Why can the power grid become a bottleneck?</a></h3>
-      <p><sub>INFRASTRUCTURE · ENGINEERING</sub></p>
-      <p>Why generating electricity is only one part of delivering it where and when it is needed.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🍲 <a href="ppt-collection/microwave-where-heat-comes-from.html">Where does microwave heat come from?</a></h3>
-      <p><sub>PHYSICS · EVERYDAY OBJECTS</sub></p>
-      <p>Follow electromagnetic energy into food, and explore why heating is not always uniform.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🖥️ <a href="ppt-collection/display-how-images-are-made.html">How does a display make an image?</a></h3>
-      <p><sub>DISPLAY TECHNOLOGY · LIGHT</sub></p>
-      <p>Pixels, color, display structures, and the physical process behind a picture on a screen.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🎬 <a href="ppt-collection/the-art-of-cinema.html">How does cinema shape our sense of time?</a></h3>
-      <p><sub>ART · CULTURE · STORYTELLING</sub></p>
-      <p>Visual storytelling through framing, rhythm, motion, and the language of film.</p>
-    </td>
-  </tr>
-</table>
+The gallery selects six starting points from the same [catalog](site/catalog.json) that drives the full library below. Each preview is captured from the real presentation.
 
 <p align="center">
   <strong><a href="ppt-collection/">Browse all approved standalone decks →</a></strong>
@@ -196,3 +159,48 @@ This repository has **no declared project-wide open-source license**. Public sou
   <sub>Everyday questions. Carefully structured answers. Visual understanding.</sub><br>
   <sub>Made to explain—not just to decorate.</sub>
 </p>
+
+## Browse the complete library
+
+The new static gallery can be built locally with `npm ci` and `npm run build`. See [gallery maintenance](docs/maintenance/gallery-maintenance.md) for preview, verification and publication status.
+
+<!-- catalog:start -->
+- [How Noise Cancelling Headphones Make Silence](ppt-collection/active-noise-cancellation-fighting-sound-with-sound.html) — 主动降噪：发动机消失了，人声却还在
+- [How AI Is Changing Everyday Life](ppt-collection/ai-and-life.html) — AI是如何影响我们生活的
+- [How AI Is Reshaping Modern Life](ppt-collection/ai-impact-on-modern-life.html) — AI如何影响现代人类生活
+- [How AI Learns the Atmosphere](ppt-collection/ai-weather-learning-the-atmosphere.html) — AI 天气预报：天气预报开始不再只靠方程
+- [The Engineering Inside an Airplane](ppt-collection/airplane.html) — 飞机
+- [Bill Gates: Curiosity, Code, and Influence](ppt-collection/bill-gates-biography.html) — 比尔·盖茨：把好奇心写进时代的人
+- [Canned Food and the Making of Modern Life](ppt-collection/canned-civilization.html) — 罐头：把季节封存在金属里
+- [The Invisible World of Semiconductors](ppt-collection/chips.html) — 芯片：现代科技背后的隐形心脏
+- [How Clocks Made Time a Shared System](ppt-collection/clocks.html) — 钟表：人类如何把时间变成制度
+- [The Cold Chain Behind Modern Food](ppt-collection/cold-chain.html) — 冷链：现代食物背后的低温文明
+- [Concrete: The Liquid Skeleton of Modern Life](ppt-collection/concrete-liquid-skeleton.html) — 混凝土：流动的母体
+- [How Trust Became Credit](ppt-collection/credit.html) — 信用
+- [How Screens Build an Image](ppt-collection/display-how-images-are-made.html) — 显示屏：画面其实不存在
+- [The Bottleneck Behind the Electric Grid](ppt-collection/electric-grid-bottleneck.html) — 电网：电力时代看不见的瓶颈
+- [The Elevator: A Machine That Reshaped the City](ppt-collection/elevator.html) — 电梯：让城市向天空生长 · Elevator Civilization
+- [The Glass Nerves of the Internet](ppt-collection/fiber-optics-glass-nervous-system.html) — 光纤：在玻璃微丝中奔跑的文明
+- [GLP-1: Beyond Weight Loss](ppt-collection/glp-1-beyond-weight-loss.html) — GLP-1 减肥药：减肥药为什么改变了医学
+- [How Insurance Makes Risk Shareable](ppt-collection/insurance.html) — 保险：人类如何给不确定性定价 · Insurance
+- [Jensen Huang and the Long Game of Computing](ppt-collection/jensen-huang.html) — 黄仁勋：把计算重新点燃的人
+- [Keys, Locks, and the History of Security](ppt-collection/keys-and-locks.html) — 钥匙与锁：安全感的技术史
+- [Lithium Batteries and a Cordless World](ppt-collection/lithium-battery-tetherless-world.html) — 锂电池：被驯服的移动能量密度
+- [Modern Medicine and Human Longevity](ppt-collection/medical-longevity.html) — 现代医学：让生命拥有更多时间
+- [How Microbes Shape Chocolate](ppt-collection/microbial-chocolate-designing-flavour.html) — 巧克力发酵：它还不是巧克力
+- [Where the Microwave Heat Comes From](ppt-collection/microwave-where-heat-comes-from.html) — 微波炉：饭热了，盘子呢？
+- [How Navigation Changed the Way We Find Our Way](ppt-collection/navigation.html) — 导航
+- [The Industrial Miracle Behind a Pill](ppt-collection/pills-industrial-miracle.html) — 药片
+- [Planetary Defense: Changing the Odds](ppt-collection/planetary-defense-changing-the-odds.html) — 小行星防御：它只需要 20 米
+- [Inside the Black and White Squares of a QR Code](ppt-collection/qr-code-inside-the-black-white-squares.html) — 二维码：为什么缺一块还能扫？
+- [Why Queues Can Feel Fair](ppt-collection/queueing.html) — 排队：现代社会最安静的公平机制
+- [The Science of Where Garbage Goes](ppt-collection/science-of-garbage.html) — 垃圾：我们扔掉的东西，并没有离开世界
+- [The Screw: A Small Standard That Holds the World](ppt-collection/screws.html) — 螺丝
+- [SPF 50: What the Sunscreen Number Means](ppt-collection/spf-50-decoding-sunscreen.html) — 防晒指数：SPF 50 不是 50 倍时间
+- [The Art and System of Cinema](ppt-collection/the-art-of-cinema.html) — 电影的艺术：把时间制造成梦
+- [The Tire: Where the Car Meets the World](ppt-collection/tires.html) — 轮胎
+- [Twenty Years That Recompiled the World](ppt-collection/twenty-years.html) — 科技二十年：世界被重新编译
+- [How Weather Forecasts Work](ppt-collection/weather-forecast.html) — 天气预报：人类如何预测明天 · Weather Forecast
+- [Wi-Fi: The Last Few Meters of Connection](ppt-collection/wifi.html) — Wi-Fi：空气中的互联网秩序
+- [Why the World Stops for Football](ppt-collection/world-cup.html) — 足球：世界为什么为一颗球停下
+<!-- catalog:end -->

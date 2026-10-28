@@ -1,0 +1,1197 @@
+[
+  {
+    "id": "active-noise-cancellation-fighting-sound-with-sound",
+    "status": "approved",
+    "titleZh": "主动降噪：发动机消失了，人声却还在",
+    "titleEn": "How Noise Cancelling Headphones Make Silence",
+    "summaryZh": "解释主动降噪如何采集噪声并生成反相声波，在耳膜附近降低压力变化，而不是让周围环境消失。",
+    "categories": [
+      "Science"
+    ],
+    "keywords": [
+      "active",
+      "noise",
+      "cancellation",
+      "fighting",
+      "sound"
+    ],
+    "artifact": "ppt-collection/active-noise-cancellation-fighting-sound-with-sound.html",
+    "previewPath": "ppt-collection/active-noise-cancellation-fighting-sound-with-sound.html",
+    "slideCount": 15,
+    "style": "A",
+    "cover": "site/covers/active-noise-cancellation-fighting-sound-with-sound.webp",
+    "featuredRank": 1,
+    "citationLabel": "Sony",
+    "source": "2026-08-15-active-noise-cancellation-fighting-sound-with-sound/index.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": []
+  },
+  {
+    "id": "ai-and-life",
+    "status": "approved",
+    "titleZh": "AI是如何影响我们生活的",
+    "titleEn": "How AI Is Changing Everyday Life",
+    "summaryZh": "梳理人工智能在学习、工作、医疗和日常服务中的应用，并呈现其效率收益与社会边界。",
+    "categories": [
+      "Technology"
+    ],
+    "keywords": [
+      "and",
+      "life"
+    ],
+    "artifact": "ppt-collection/ai-and-life.html",
+    "previewPath": "ppt-collection/ai-and-life.html",
+    "slideCount": 9,
+    "style": "A",
+    "cover": "site/covers/ai-and-life.webp",
+    "featuredRank": null,
+    "citationLabel": "FDA · UNESCO · McKinsey",
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "ai-impact-on-modern-life",
+    "status": "approved",
+    "titleZh": "AI如何影响现代人类生活",
+    "titleEn": "How AI Is Reshaping Modern Life",
+    "summaryZh": "从教育、工作和生活场景讨论人工智能带来的机会、挑战及未来影响。",
+    "categories": [
+      "Technology"
+    ],
+    "keywords": [
+      "impact",
+      "modern",
+      "life"
+    ],
+    "artifact": "ppt-collection/ai-impact-on-modern-life.html",
+    "previewPath": "ppt-collection/ai-impact-on-modern-life.html",
+    "slideCount": 10,
+    "style": "A",
+    "cover": "site/covers/ai-impact-on-modern-life.webp",
+    "featuredRank": null,
+    "citationLabel": "UNESCO · McKinsey",
+    "source": "2026-05-13-ai-impact-on-modern-life/ai-impact-on-modern-life.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": []
+  },
+  {
+    "id": "ai-weather-learning-the-atmosphere",
+    "status": "approved",
+    "titleZh": "AI 天气预报：天气预报开始不再只靠方程",
+    "titleEn": "How AI Learns the Atmosphere",
+    "summaryZh": "介绍天气预报如何融合观测与物理模型重建大气初始状态，并说明 AI 天气模型的作用与局限。",
+    "categories": [
+      "Science"
+    ],
+    "keywords": [
+      "weather",
+      "learning",
+      "the",
+      "atmosphere"
+    ],
+    "artifact": "ppt-collection/ai-weather-learning-the-atmosphere.html",
+    "previewPath": "ppt-collection/ai-weather-learning-the-atmosphere.html",
+    "slideCount": 13,
+    "style": "A",
+    "cover": "site/covers/ai-weather-learning-the-atmosphere.webp",
+    "featuredRank": null,
+    "citationLabel": "ECMWF",
+    "source": "2026-08-14-ai-weather-learning-the-atmosphere/index.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": []
+  },
+  {
+    "id": "airplane",
+    "status": "approved",
+    "titleZh": "飞机",
+    "titleEn": "The Engineering Inside an Airplane",
+    "summaryZh": "拆解飞机飞行所依赖的空气动力学、材料、制造、安全与全球协作系统。",
+    "categories": [
+      "Engineering"
+    ],
+    "keywords": [
+      "airplane"
+    ],
+    "artifact": "ppt-collection/airplane.html",
+    "previewPath": "ppt-collection/airplane.html",
+    "slideCount": 20,
+    "style": "A",
+    "cover": "site/covers/airplane.webp",
+    "featuredRank": null,
+    "citationLabel": "NASA",
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "bill-gates-biography",
+    "status": "approved",
+    "titleZh": "比尔·盖茨：把好奇心写进时代的人",
+    "titleEn": "Bill Gates: Curiosity, Code, and Influence",
+    "summaryZh": "沿着比尔·盖茨的成长、微软创业与慈善经历，讲述兴趣如何转化为长期影响力。",
+    "categories": [
+      "History & people"
+    ],
+    "keywords": [
+      "bill",
+      "gates",
+      "biography"
+    ],
+    "artifact": "ppt-collection/bill-gates-biography.html",
+    "previewPath": "ppt-collection/bill-gates-biography.html",
+    "slideCount": 20,
+    "style": "A",
+    "cover": "site/covers/bill-gates-biography.webp",
+    "featuredRank": null,
+    "citationLabel": null,
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "canned-civilization",
+    "status": "approved",
+    "titleZh": "罐头：把季节封存在金属里",
+    "titleEn": "Canned Food and the Making of Modern Life",
+    "summaryZh": "追溯罐藏技术如何连接食品保存、战争远航、家庭厨房与现代食品工业。",
+    "categories": [
+      "History & people"
+    ],
+    "keywords": [
+      "canned",
+      "civilization"
+    ],
+    "artifact": "ppt-collection/canned-civilization.html",
+    "previewPath": "ppt-collection/canned-civilization.html",
+    "slideCount": 15,
+    "style": "A",
+    "cover": "site/covers/canned-civilization.webp",
+    "featuredRank": null,
+    "citationLabel": null,
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "chips",
+    "status": "approved",
+    "titleZh": "芯片：现代科技背后的隐形心脏",
+    "titleEn": "The Invisible World of Semiconductors",
+    "summaryZh": "从硅片制造到计算应用，说明半导体芯片如何成为现代数字技术的基础。",
+    "categories": [
+      "Technology"
+    ],
+    "keywords": [
+      "chips"
+    ],
+    "artifact": "ppt-collection/chips.html",
+    "previewPath": "ppt-collection/chips.html",
+    "slideCount": 24,
+    "style": "A",
+    "cover": "site/covers/chips.webp",
+    "featuredRank": 2,
+    "citationLabel": null,
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "clocks",
+    "status": "approved",
+    "titleZh": "钟表：人类如何把时间变成制度",
+    "titleEn": "How Clocks Made Time a Shared System",
+    "summaryZh": "从日影计时到原子钟，讲述人类如何把时间测量发展成社会协作与制度基础。",
+    "categories": [
+      "Everyday life"
+    ],
+    "keywords": [
+      "clocks"
+    ],
+    "artifact": "ppt-collection/clocks.html",
+    "previewPath": "ppt-collection/clocks.html",
+    "slideCount": 10,
+    "style": "A",
+    "cover": "site/covers/clocks.webp",
+    "featuredRank": null,
+    "citationLabel": null,
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "cold-chain",
+    "status": "approved",
+    "titleZh": "冷链：现代食物背后的低温文明",
+    "titleEn": "The Cold Chain Behind Modern Food",
+    "summaryZh": "说明冷链如何通过温度控制连接生产、运输与餐桌，支撑现代食品保鲜。",
+    "categories": [
+      "Engineering"
+    ],
+    "keywords": [
+      "cold",
+      "chain"
+    ],
+    "artifact": "ppt-collection/cold-chain.html",
+    "previewPath": "ppt-collection/cold-chain.html",
+    "slideCount": 10,
+    "style": "A",
+    "cover": "site/covers/cold-chain.webp",
+    "featuredRank": null,
+    "citationLabel": null,
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "concrete-liquid-skeleton",
+    "status": "approved",
+    "titleZh": "混凝土：流动的母体",
+    "titleEn": "Concrete: The Liquid Skeleton of Modern Life",
+    "summaryZh": "介绍混凝土从材料配比到基础设施应用的规模、性能与环境代价。",
+    "categories": [
+      "Engineering"
+    ],
+    "keywords": [
+      "concrete",
+      "liquid",
+      "skeleton"
+    ],
+    "artifact": "ppt-collection/concrete-liquid-skeleton.html",
+    "previewPath": "ppt-collection/concrete-liquid-skeleton.html",
+    "slideCount": 15,
+    "style": "A",
+    "cover": "site/covers/concrete-liquid-skeleton.webp",
+    "featuredRank": null,
+    "citationLabel": "IEA · USGS · GCCA",
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "credit",
+    "status": "approved",
+    "titleZh": "信用",
+    "titleEn": "How Trust Became Credit",
+    "summaryZh": "解释信用如何把对未来偿付的信任转化为可记录、评估和交易的金融关系。",
+    "categories": [
+      "Society"
+    ],
+    "keywords": [
+      "credit"
+    ],
+    "artifact": "ppt-collection/credit.html",
+    "previewPath": "ppt-collection/credit.html",
+    "slideCount": 20,
+    "style": "A",
+    "cover": "site/covers/credit.webp",
+    "featuredRank": null,
+    "citationLabel": "World Bank",
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "display-how-images-are-made",
+    "status": "approved",
+    "titleZh": "显示屏：画面其实不存在",
+    "titleEn": "How Screens Build an Image",
+    "summaryZh": "从像素、子像素与刷新过程解释屏幕如何用光构成可见图像。",
+    "categories": [
+      "Science"
+    ],
+    "keywords": [
+      "display",
+      "how",
+      "images",
+      "are",
+      "made"
+    ],
+    "artifact": "ppt-collection/display-how-images-are-made.html",
+    "previewPath": "ppt-collection/display-how-images-are-made.html",
+    "slideCount": 15,
+    "style": "A",
+    "cover": "site/covers/display-how-images-are-made.webp",
+    "featuredRank": null,
+    "citationLabel": "Samsung Display",
+    "source": "2026-08-15-display-how-images-are-made/index.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": []
+  },
+  {
+    "id": "electric-grid-bottleneck",
+    "status": "approved",
+    "titleZh": "电网：电力时代看不见的瓶颈",
+    "titleEn": "The Bottleneck Behind the Electric Grid",
+    "summaryZh": "梳理发电、输电与实时平衡之间的约束，解释电网扩容为何不只取决于新增发电。",
+    "categories": [
+      "Technology"
+    ],
+    "keywords": [
+      "electric",
+      "grid",
+      "bottleneck"
+    ],
+    "artifact": "ppt-collection/electric-grid-bottleneck.html",
+    "previewPath": "ppt-collection/electric-grid-bottleneck.html",
+    "slideCount": 13,
+    "style": "A",
+    "cover": "site/covers/electric-grid-bottleneck.webp",
+    "featuredRank": null,
+    "citationLabel": "IEA",
+    "source": "2026-08-14-electric-grid-bottleneck-magazine/index.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [
+      "2026-08-14-electric-grid-bottleneck/index.html"
+    ]
+  },
+  {
+    "id": "elevator",
+    "status": "approved",
+    "titleZh": "电梯：让城市向天空生长 · Elevator Civilization",
+    "titleEn": "The Elevator: A Machine That Reshaped the City",
+    "summaryZh": "讲述电梯安全机制与城市垂直交通的发展，展示它如何改变建筑和日常生活。",
+    "categories": [
+      "Engineering"
+    ],
+    "keywords": [
+      "elevator"
+    ],
+    "artifact": "ppt-collection/elevator.html",
+    "previewPath": "ppt-collection/elevator.html",
+    "slideCount": 9,
+    "style": "A",
+    "cover": "site/covers/elevator.webp",
+    "featuredRank": null,
+    "citationLabel": null,
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "fiber-optics-glass-nervous-system",
+    "status": "approved",
+    "titleZh": "光纤：在玻璃微丝中奔跑的文明",
+    "titleEn": "The Glass Nerves of the Internet",
+    "summaryZh": "介绍光纤如何以玻璃中的光信号承载长距离通信，并支撑全球数据网络。",
+    "categories": [
+      "Technology"
+    ],
+    "keywords": [
+      "fiber",
+      "optics",
+      "glass",
+      "nervous",
+      "system"
+    ],
+    "artifact": "ppt-collection/fiber-optics-glass-nervous-system.html",
+    "previewPath": "ppt-collection/fiber-optics-glass-nervous-system.html",
+    "slideCount": 10,
+    "style": "A",
+    "cover": "site/covers/fiber-optics-glass-nervous-system.webp",
+    "featuredRank": null,
+    "citationLabel": "Nobel Prize · IEEE · Nature Photonics",
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "glp-1-beyond-weight-loss",
+    "status": "approved",
+    "titleZh": "GLP-1 减肥药：减肥药为什么改变了医学",
+    "titleEn": "GLP-1: Beyond Weight Loss",
+    "summaryZh": "围绕 GLP-1 药物的减重机制与心血管等研究结局，讨论肥胖治疗证据的扩展和边界。",
+    "categories": [
+      "Technology"
+    ],
+    "keywords": [
+      "glp",
+      "beyond",
+      "weight",
+      "loss"
+    ],
+    "artifact": "ppt-collection/glp-1-beyond-weight-loss.html",
+    "previewPath": "ppt-collection/glp-1-beyond-weight-loss.html",
+    "slideCount": 13,
+    "style": "A",
+    "cover": "site/covers/glp-1-beyond-weight-loss.webp",
+    "featuredRank": null,
+    "citationLabel": "FDA · WHO",
+    "source": "2026-08-14-glp-1-beyond-weight-loss/index.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": []
+  },
+  {
+    "id": "insurance",
+    "status": "approved",
+    "titleZh": "保险：人类如何给不确定性定价 · Insurance",
+    "titleEn": "How Insurance Makes Risk Shareable",
+    "summaryZh": "解释保险如何汇集保费、分散风险，并在不确定损失发生时提供约定保障。",
+    "categories": [
+      "Society"
+    ],
+    "keywords": [
+      "insurance"
+    ],
+    "artifact": "ppt-collection/insurance.html",
+    "previewPath": "ppt-collection/insurance.html",
+    "slideCount": 14,
+    "style": "A",
+    "cover": "site/covers/insurance.webp",
+    "featuredRank": null,
+    "citationLabel": "OECD",
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "jensen-huang",
+    "status": "approved",
+    "titleZh": "黄仁勋：把计算重新点燃的人",
+    "titleEn": "Jensen Huang and the Long Game of Computing",
+    "summaryZh": "以黄仁勋的工程经历和 NVIDIA 发展为线索，回顾计算产业的长期转向。",
+    "categories": [
+      "History & people"
+    ],
+    "keywords": [
+      "jensen",
+      "huang"
+    ],
+    "artifact": "ppt-collection/jensen-huang.html",
+    "previewPath": "ppt-collection/jensen-huang.html",
+    "slideCount": 20,
+    "style": "A",
+    "cover": "site/covers/jensen-huang.webp",
+    "featuredRank": null,
+    "citationLabel": "IEEE · Stanford Engineering",
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "keys-and-locks",
+    "status": "approved",
+    "titleZh": "钥匙与锁：安全感的技术史",
+    "titleEn": "Keys, Locks, and the History of Security",
+    "summaryZh": "从早期锁具到数字身份，讲述锁如何表达边界、财产与许可关系。",
+    "categories": [
+      "Everyday life"
+    ],
+    "keywords": [
+      "keys",
+      "and",
+      "locks"
+    ],
+    "artifact": "ppt-collection/keys-and-locks.html",
+    "previewPath": "ppt-collection/keys-and-locks.html",
+    "slideCount": 20,
+    "style": "A",
+    "cover": "site/covers/keys-and-locks.webp",
+    "featuredRank": null,
+    "citationLabel": "NIST",
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "lithium-battery-tetherless-world",
+    "status": "approved",
+    "titleZh": "锂电池：被驯服的移动能量密度",
+    "titleEn": "Lithium Batteries and a Cordless World",
+    "summaryZh": "拆解锂离子电池的材料与储能原理，说明便携设备和电动车如何摆脱电线约束。",
+    "categories": [
+      "Technology"
+    ],
+    "keywords": [
+      "lithium",
+      "battery",
+      "tetherless",
+      "world"
+    ],
+    "artifact": "ppt-collection/lithium-battery-tetherless-world.html",
+    "previewPath": "ppt-collection/lithium-battery-tetherless-world.html",
+    "slideCount": 10,
+    "style": "A",
+    "cover": "site/covers/lithium-battery-tetherless-world.webp",
+    "featuredRank": null,
+    "citationLabel": "Nobel Prize · IEA · USGS",
+    "source": "2026-10-28-lithium-battery-maintenance/lithium-battery-tetherless-world.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [
+      "2026-05-16-lithium-battery-ppt/index.html"
+    ]
+  },
+  {
+    "id": "medical-longevity",
+    "status": "approved",
+    "titleZh": "现代医学：让生命拥有更多时间",
+    "titleEn": "Modern Medicine and Human Longevity",
+    "summaryZh": "回顾现代医学如何降低可预防死亡并延长寿命，同时区分寿命与健康寿命。",
+    "categories": [
+      "Everyday life"
+    ],
+    "keywords": [
+      "medical",
+      "longevity"
+    ],
+    "artifact": "ppt-collection/medical-longevity.html",
+    "previewPath": "ppt-collection/medical-longevity.html",
+    "slideCount": 10,
+    "style": "A",
+    "cover": "site/covers/medical-longevity.webp",
+    "featuredRank": null,
+    "citationLabel": null,
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "microbial-chocolate-designing-flavour",
+    "status": "approved",
+    "titleZh": "巧克力发酵：它还不是巧克力",
+    "titleEn": "How Microbes Shape Chocolate",
+    "summaryZh": "追踪可可发酵中的微生物如何影响风味前体，并说明品种和工艺也会改变结果。",
+    "categories": [
+      "Science"
+    ],
+    "keywords": [
+      "microbial",
+      "chocolate",
+      "designing",
+      "flavour"
+    ],
+    "artifact": "ppt-collection/microbial-chocolate-designing-flavour.html",
+    "previewPath": "ppt-collection/microbial-chocolate-designing-flavour.html",
+    "slideCount": 13,
+    "style": "A",
+    "cover": "site/covers/microbial-chocolate-designing-flavour.webp",
+    "featuredRank": null,
+    "citationLabel": "Nature Microbiology",
+    "source": "2026-08-15-microbial-chocolate-designing-flavour/index.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": []
+  },
+  {
+    "id": "microwave-where-heat-comes-from",
+    "status": "approved",
+    "titleZh": "微波炉：饭热了，盘子呢？",
+    "titleEn": "Where the Microwave Heat Comes From",
+    "summaryZh": "解释微波能量如何被食物吸收并转成热，以及玻璃盘通常通过传导升温。",
+    "categories": [
+      "Science"
+    ],
+    "keywords": [
+      "microwave",
+      "where",
+      "heat",
+      "comes",
+      "from"
+    ],
+    "artifact": "ppt-collection/microwave-where-heat-comes-from.html",
+    "previewPath": "ppt-collection/microwave-where-heat-comes-from.html",
+    "slideCount": 14,
+    "style": "A",
+    "cover": "site/covers/microwave-where-heat-comes-from.webp",
+    "featuredRank": 4,
+    "citationLabel": "NASA · FDA",
+    "source": "2026-08-15-microwave-where-heat-comes-from/index.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": []
+  },
+  {
+    "id": "navigation",
+    "status": "approved",
+    "titleZh": "导航",
+    "titleEn": "How Navigation Changed the Way We Find Our Way",
+    "summaryZh": "从纸图到卫星定位与路线算法，展示导航技术如何改变人类的方向判断。",
+    "categories": [
+      "Technology"
+    ],
+    "keywords": [
+      "navigation"
+    ],
+    "artifact": "ppt-collection/navigation.html",
+    "previewPath": "ppt-collection/navigation.html",
+    "slideCount": 20,
+    "style": "A",
+    "cover": "site/covers/navigation.webp",
+    "featuredRank": null,
+    "citationLabel": null,
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "pills-industrial-miracle",
+    "status": "approved",
+    "titleZh": "药片",
+    "titleEn": "The Industrial Miracle Behind a Pill",
+    "summaryZh": "追踪药物从分子研发、规模化生产到质量控制和药片交付的工程链条。",
+    "categories": [
+      "Engineering"
+    ],
+    "keywords": [
+      "pills",
+      "industrial",
+      "miracle"
+    ],
+    "artifact": "ppt-collection/pills-industrial-miracle.html",
+    "previewPath": "ppt-collection/pills-industrial-miracle.html",
+    "slideCount": 28,
+    "style": "A",
+    "cover": "site/covers/pills-industrial-miracle.webp",
+    "featuredRank": null,
+    "citationLabel": "FDA · WHO",
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "planetary-defense-changing-the-odds",
+    "status": "approved",
+    "titleZh": "小行星防御：它只需要 20 米",
+    "titleEn": "Planetary Defense: Changing the Odds",
+    "summaryZh": "说明近地小行星的发现、跟踪与偏转机制，并强调风险评估与预警能力的边界。",
+    "categories": [
+      "Science"
+    ],
+    "keywords": [
+      "planetary",
+      "defense",
+      "changing",
+      "the",
+      "odds"
+    ],
+    "artifact": "ppt-collection/planetary-defense-changing-the-odds.html",
+    "previewPath": "ppt-collection/planetary-defense-changing-the-odds.html",
+    "slideCount": 13,
+    "style": "A",
+    "cover": "site/covers/planetary-defense-changing-the-odds.webp",
+    "featuredRank": 5,
+    "citationLabel": "NASA/JPL CNEOS · NASA",
+    "source": "2026-08-14-planetary-defense-changing-the-odds/index.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": []
+  },
+  {
+    "id": "qr-code-inside-the-black-white-squares",
+    "status": "approved",
+    "titleZh": "二维码：为什么缺一块还能扫？",
+    "titleEn": "Inside the Black and White Squares of a QR Code",
+    "summaryZh": "拆解二维码的定位图形、纠错编码和解码流程，解释部分污损时仍可能读取的原因。",
+    "categories": [
+      "Science"
+    ],
+    "keywords": [
+      "code",
+      "inside",
+      "the",
+      "black",
+      "white"
+    ],
+    "artifact": "ppt-collection/qr-code-inside-the-black-white-squares.html",
+    "previewPath": "ppt-collection/qr-code-inside-the-black-white-squares.html",
+    "slideCount": 14,
+    "style": "A",
+    "cover": "site/covers/qr-code-inside-the-black-white-squares.webp",
+    "featuredRank": null,
+    "citationLabel": null,
+    "source": "2026-08-15-qr-code-inside-the-black-white-squares/index.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": [
+      "2026-08-15-why-qr-codes-are-readable/index.html"
+    ]
+  },
+  {
+    "id": "queueing",
+    "status": "approved",
+    "titleZh": "排队：现代社会最安静的公平机制",
+    "titleEn": "Why Queues Can Feel Fair",
+    "summaryZh": "从先来先服务到复杂队列，讨论排序规则如何影响等待时间与公平感。",
+    "categories": [
+      "Society"
+    ],
+    "keywords": [
+      "queueing"
+    ],
+    "artifact": "ppt-collection/queueing.html",
+    "previewPath": "ppt-collection/queueing.html",
+    "slideCount": 10,
+    "style": "A",
+    "cover": "site/covers/queueing.webp",
+    "featuredRank": null,
+    "citationLabel": "Columbia University · OECD",
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "science-of-garbage",
+    "status": "approved",
+    "titleZh": "垃圾：我们扔掉的东西，并没有离开世界",
+    "titleEn": "The Science of Where Garbage Goes",
+    "summaryZh": "追踪废弃物从产生、收运到处理和再利用的流向，说明“丢掉”并不意味着消失。",
+    "categories": [
+      "Society"
+    ],
+    "keywords": [
+      "science",
+      "garbage"
+    ],
+    "artifact": "ppt-collection/science-of-garbage.html",
+    "previewPath": "ppt-collection/science-of-garbage.html",
+    "slideCount": 15,
+    "style": "A",
+    "cover": "site/covers/science-of-garbage.webp",
+    "featuredRank": null,
+    "citationLabel": "UNEP",
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "screws",
+    "status": "approved",
+    "titleZh": "螺丝",
+    "titleEn": "The Screw: A Small Standard That Holds the World",
+    "summaryZh": "介绍螺纹、标准化与紧固连接如何帮助现代工业可靠地装配复杂结构。",
+    "categories": [
+      "Engineering"
+    ],
+    "keywords": [
+      "screws"
+    ],
+    "artifact": "ppt-collection/screws.html",
+    "previewPath": "ppt-collection/screws.html",
+    "slideCount": 20,
+    "style": "A",
+    "cover": "site/covers/screws.webp",
+    "featuredRank": null,
+    "citationLabel": "NASA",
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "spf-50-decoding-sunscreen",
+    "status": "approved",
+    "titleZh": "防晒指数：SPF 50 不是 50 倍时间",
+    "titleEn": "SPF 50: What the Sunscreen Number Means",
+    "summaryZh": "解释 SPF 的实验定义与防晒使用条件，澄清它不等于可延长 50 倍暴晒时间。",
+    "categories": [
+      "Science"
+    ],
+    "keywords": [
+      "spf",
+      "decoding",
+      "sunscreen"
+    ],
+    "artifact": "ppt-collection/spf-50-decoding-sunscreen.html",
+    "previewPath": "ppt-collection/spf-50-decoding-sunscreen.html",
+    "slideCount": 14,
+    "style": "A",
+    "cover": "site/covers/spf-50-decoding-sunscreen.webp",
+    "featuredRank": null,
+    "citationLabel": "FDA",
+    "source": "2026-08-15-spf-50-sunscreen-decoding/index.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": []
+  },
+  {
+    "id": "the-art-of-cinema",
+    "status": "approved",
+    "titleZh": "电影的艺术：把时间制造成梦",
+    "titleEn": "The Art and System of Cinema",
+    "summaryZh": "从运动影像、摄影、剪辑到产业与观众，呈现电影如何把技术组织成观影经验。",
+    "categories": [
+      "Arts"
+    ],
+    "keywords": [
+      "the",
+      "art",
+      "cinema"
+    ],
+    "artifact": "ppt-collection/the-art-of-cinema.html",
+    "previewPath": "ppt-collection/the-art-of-cinema.html",
+    "slideCount": 14,
+    "style": "A",
+    "cover": "site/covers/the-art-of-cinema.webp",
+    "featuredRank": 3,
+    "citationLabel": "UNESCO",
+    "source": "2026-05-14-the-art-of-cinema/the-art-of-cinema.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": []
+  },
+  {
+    "id": "tires",
+    "status": "approved",
+    "titleZh": "轮胎",
+    "titleEn": "The Tire: Where the Car Meets the World",
+    "summaryZh": "介绍轮胎如何通过接地、摩擦与结构设计连接车辆控制、安全和道路环境。",
+    "categories": [
+      "Engineering"
+    ],
+    "keywords": [
+      "tires"
+    ],
+    "artifact": "ppt-collection/tires.html",
+    "previewPath": "ppt-collection/tires.html",
+    "slideCount": 15,
+    "style": "A",
+    "cover": "site/covers/tires.webp",
+    "featuredRank": null,
+    "citationLabel": "OECD",
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "twenty-years",
+    "status": "approved",
+    "titleZh": "科技二十年：世界被重新编译",
+    "titleEn": "Twenty Years That Recompiled the World",
+    "summaryZh": "以 2005 至 2025 年为跨度，回顾连接、移动计算与智能技术如何重塑生活。",
+    "categories": [
+      "Society"
+    ],
+    "keywords": [
+      "twenty",
+      "years"
+    ],
+    "artifact": "ppt-collection/twenty-years.html",
+    "previewPath": "ppt-collection/twenty-years.html",
+    "slideCount": 10,
+    "style": "A",
+    "cover": "site/covers/twenty-years.webp",
+    "featuredRank": null,
+    "citationLabel": null,
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "weather-forecast",
+    "status": "approved",
+    "titleZh": "天气预报：人类如何预测明天 · Weather Forecast",
+    "titleEn": "How Weather Forecasts Work",
+    "summaryZh": "概述天气预报从观测、数值计算到不确定性表达的主要流程。",
+    "categories": [
+      "Science"
+    ],
+    "keywords": [
+      "weather",
+      "forecast"
+    ],
+    "artifact": "ppt-collection/weather-forecast.html",
+    "previewPath": "ppt-collection/weather-forecast.html",
+    "slideCount": 14,
+    "style": "A",
+    "cover": "site/covers/weather-forecast.webp",
+    "featuredRank": null,
+    "citationLabel": "ECMWF",
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "wifi",
+    "status": "approved",
+    "titleZh": "Wi-Fi：空气中的互联网秩序",
+    "titleEn": "Wi-Fi: The Last Few Meters of Connection",
+    "summaryZh": "解释 Wi-Fi 如何把有线网络延伸到设备附近，并梳理无线电连接的机制与边界。",
+    "categories": [
+      "Technology"
+    ],
+    "keywords": [
+      "wifi"
+    ],
+    "artifact": "ppt-collection/wifi.html",
+    "previewPath": "ppt-collection/wifi.html",
+    "slideCount": 15,
+    "style": "B",
+    "cover": "site/covers/wifi.webp",
+    "featuredRank": null,
+    "citationLabel": "IEEE",
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "world-cup",
+    "status": "approved",
+    "titleZh": "足球：世界为什么为一颗球停下",
+    "titleEn": "Why the World Stops for Football",
+    "summaryZh": "从赛事传播、参与规模与共同观赛体验，讨论世界杯为何能形成跨地域的集体事件。",
+    "categories": [
+      "Society"
+    ],
+    "keywords": [
+      "world",
+      "cup"
+    ],
+    "artifact": "ppt-collection/world-cup.html",
+    "previewPath": "ppt-collection/world-cup.html",
+    "slideCount": 20,
+    "style": "A",
+    "cover": "site/covers/world-cup.webp",
+    "featuredRank": 6,
+    "citationLabel": null,
+    "source": null,
+    "mappingStatus": "orphan",
+    "sourceCandidates": []
+  },
+  {
+    "id": "air-conditioning-moving-heat",
+    "status": "pending",
+    "titleZh": "空调：冷，是一种被搬运的状态",
+    "titleEn": "Air Conditioning Moves Heat",
+    "summaryZh": "说明空调通过制冷循环把室内热量搬到室外，并用温度与湿度解释体感差异。",
+    "categories": [
+      "Technology"
+    ],
+    "keywords": [
+      "air",
+      "conditioning",
+      "moving",
+      "heat"
+    ],
+    "artifact": null,
+    "previewPath": "2026-08-30-air-conditioning-moving-heat/index.html",
+    "slideCount": 12,
+    "style": "A",
+    "cover": "site/covers/air-conditioning-moving-heat.webp",
+    "featuredRank": null,
+    "citationLabel": "IEA · UNEP",
+    "source": "2026-08-30-air-conditioning-moving-heat/index.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": []
+  },
+  {
+    "id": "bridges-always-moving",
+    "status": "pending",
+    "titleZh": "桥梁：它从来不是静止的",
+    "titleEn": "Why Bridges Are Always Moving",
+    "summaryZh": "介绍桥梁因温度、荷载和风而产生位移，以及伸缩缝等结构如何为运动留出空间。",
+    "categories": [
+      "Engineering"
+    ],
+    "keywords": [
+      "bridges",
+      "always",
+      "moving"
+    ],
+    "artifact": null,
+    "previewPath": "2026-08-30-bridges-always-moving/index.html",
+    "slideCount": 11,
+    "style": "A",
+    "cover": "site/covers/bridges-always-moving.webp",
+    "featuredRank": null,
+    "citationLabel": null,
+    "source": "2026-08-30-bridges-always-moving/index.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": []
+  },
+  {
+    "id": "caffeine-blocking-sleepiness",
+    "status": "pending",
+    "titleZh": "咖啡因：它没有给你任何能量",
+    "titleEn": "How Caffeine Blocks Sleepiness",
+    "summaryZh": "解释咖啡因如何暂时阻断腺苷受体信号、减轻困倦感，但不会消除睡眠需求。",
+    "categories": [
+      "Science"
+    ],
+    "keywords": [
+      "caffeine",
+      "blocking",
+      "sleepiness"
+    ],
+    "artifact": null,
+    "previewPath": "2026-08-30-caffeine-blocking-sleepiness/index.html",
+    "slideCount": 11,
+    "style": "A",
+    "cover": "site/covers/caffeine-blocking-sleepiness.webp",
+    "featuredRank": null,
+    "citationLabel": "FDA",
+    "source": "2026-08-30-caffeine-blocking-sleepiness/index.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": []
+  },
+  {
+    "id": "container-the-box",
+    "status": "pending",
+    "titleZh": "集装箱：改变世界的不是船",
+    "titleEn": "The Shipping Container That Changed Trade",
+    "summaryZh": "讲述标准化集装箱如何降低装卸摩擦、连接海陆运输并重塑全球贸易。",
+    "categories": [
+      "Technology"
+    ],
+    "keywords": [
+      "container",
+      "the",
+      "box"
+    ],
+    "artifact": null,
+    "previewPath": "2026-08-30-container-the-box/index.html",
+    "slideCount": 12,
+    "style": "A",
+    "cover": "site/covers/container-the-box.webp",
+    "featuredRank": null,
+    "citationLabel": null,
+    "source": "2026-08-30-container-the-box/index.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": []
+  },
+  {
+    "id": "fingerprints-not-for-grip",
+    "status": "pending",
+    "titleZh": "指纹：皮肤上最著名的误解",
+    "titleEn": "Fingerprints Were Not Made for Grip",
+    "summaryZh": "检视指纹与摩擦、触觉之间的关系，区分常见解释与仍有限的科学证据。",
+    "categories": [
+      "Everyday life"
+    ],
+    "keywords": [
+      "fingerprints",
+      "not",
+      "for",
+      "grip"
+    ],
+    "artifact": null,
+    "previewPath": "2026-08-30-fingerprints-not-for-grip/index.html",
+    "slideCount": 10,
+    "style": "A",
+    "cover": "site/covers/fingerprints-not-for-grip.webp",
+    "featuredRank": null,
+    "citationLabel": null,
+    "source": "2026-08-30-fingerprints-not-for-grip/index.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": []
+  },
+  {
+    "id": "glass-transparent-solid",
+    "status": "pending",
+    "titleZh": "玻璃：一场能量的错身而过",
+    "titleEn": "Why Glass Is Transparent and Solid",
+    "summaryZh": "解释可见光穿过玻璃的机制，以及固体结构与透明外观并不矛盾。",
+    "categories": [
+      "Science"
+    ],
+    "keywords": [
+      "glass",
+      "transparent",
+      "solid"
+    ],
+    "artifact": null,
+    "previewPath": "2026-08-30-glass-transparent-solid/index.html",
+    "slideCount": 11,
+    "style": "A",
+    "cover": "site/covers/glass-transparent-solid.webp",
+    "featuredRank": null,
+    "citationLabel": "WHO",
+    "source": "2026-08-30-glass-transparent-solid/index.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": []
+  },
+  {
+    "id": "soap-translating-oil",
+    "status": "pending",
+    "titleZh": "肥皂：一块皂里的分子工程",
+    "titleEn": "How Soap Carries Oil Away",
+    "summaryZh": "说明表面活性剂如何帮助水分散油脂和污垢，并讲解洗手时间的常见依据。",
+    "categories": [
+      "Everyday life"
+    ],
+    "keywords": [
+      "soap",
+      "translating",
+      "oil"
+    ],
+    "artifact": null,
+    "previewPath": "2026-08-30-soap-translating-oil/index.html",
+    "slideCount": 11,
+    "style": "A",
+    "cover": "site/covers/soap-translating-oil.webp",
+    "featuredRank": null,
+    "citationLabel": "FDA",
+    "source": "2026-08-30-soap-translating-oil/index.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": []
+  },
+  {
+    "id": "tap-water-clean-process",
+    "status": "pending",
+    "titleZh": "自来水：拧开龙头后的百年工程",
+    "titleEn": "The Engineering Behind Tap Water",
+    "summaryZh": "梳理自来水从水源、处理、输送到龙头的公共工程链条。",
+    "categories": [
+      "Technology"
+    ],
+    "keywords": [
+      "tap",
+      "water",
+      "clean",
+      "process"
+    ],
+    "artifact": null,
+    "previewPath": "2026-08-30-tap-water-clean-process/index.html",
+    "slideCount": 11,
+    "style": "A",
+    "cover": "site/covers/tap-water-clean-process.webp",
+    "featuredRank": null,
+    "citationLabel": "WHO",
+    "source": "2026-08-30-tap-water-clean-process/index.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": []
+  },
+  {
+    "id": "traffic-light-yellow-physics",
+    "status": "pending",
+    "titleZh": "黄灯：三秒钟的物理题",
+    "titleEn": "The Physics of the Yellow Light",
+    "summaryZh": "用停止距离、反应时间与路口规则解释黄灯下的安全决策。",
+    "categories": [
+      "Society"
+    ],
+    "keywords": [
+      "traffic",
+      "light",
+      "yellow",
+      "physics"
+    ],
+    "artifact": null,
+    "previewPath": "2026-08-30-traffic-light-yellow-physics/index.html",
+    "slideCount": 11,
+    "style": "A",
+    "cover": "site/covers/traffic-light-yellow-physics.webp",
+    "featuredRank": null,
+    "citationLabel": null,
+    "source": "2026-08-30-traffic-light-yellow-physics/index.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": []
+  },
+  {
+    "id": "zipper-line-of-teeth",
+    "status": "pending",
+    "titleZh": "拉链：一行可以开合的牙齿",
+    "titleEn": "The Engineering in a Zipper",
+    "summaryZh": "拆解拉链齿、滑块与织带如何协同工作，使柔性开口可以反复闭合。",
+    "categories": [
+      "Technology"
+    ],
+    "keywords": [
+      "zipper",
+      "line",
+      "teeth"
+    ],
+    "artifact": null,
+    "previewPath": "2026-08-30-zipper-line-of-teeth/index.html",
+    "slideCount": 11,
+    "style": "A",
+    "cover": "site/covers/zipper-line-of-teeth.webp",
+    "featuredRank": null,
+    "citationLabel": null,
+    "source": "2026-08-30-zipper-line-of-teeth/index.html",
+    "mappingStatus": "verified",
+    "sourceCandidates": []
+  }
+]
