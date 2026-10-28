@@ -434,7 +434,7 @@
 .slide[data-animate="quote"].visible [data-anim="line"]{animation-name:anim-fadeLine;animation-duration:.8s}
 .slide.visible [data-anim="left"]{animation-name:anim-slideLeft;animation-duration:.8s}
 .slide.visible [data-anim="right"]{animation-name:anim-slideRight;animation-duration:.8s}
-.slide[data-animate="pipeline"] [data-anim]{opacity:.15}
+.slide[data-animate="pipeline"] [data-anim="step"],.slide[data-animate="pipeline"] [data-anim="arrow"]{opacity:.15}
 .slide[data-animate="pipeline"] [data-anim].p-step{opacity:1;animation:anim-fadeUp .5s cubic-bezier(.22,1,.36,1) both}
 body.low-power #deck{transition:none!important}
 body.low-power *,
@@ -552,7 +552,7 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
     </div>
     <figure class="frame-img r-16x10" data-anim>
       <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600&q=80" alt="阅读与童年">
-      <figcaption class="img-cap">西雅图 · 成长年代</figcaption>
+      <figcaption class="img-cap">阅读场景示意 · 非盖茨童年照片</figcaption>
     </figure>
   </div>
   <div class="foot">
@@ -570,10 +570,10 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
   <div class="frame grid-2-7-5" style="padding-top:6vh">
     <div style="display:flex; flex-direction:column; justify-content:space-between; gap:3vh">
       <div>
-        <div class="kicker" data-anim>Lakeside School · 1967</div>
+        <div class="kicker" data-anim>Lakeside School · 1968</div>
         <h2 class="h-xl" data-anim>第一次遇见未来</h2>
         <p class="lead" style="margin-top:3vh" data-anim>
-          在 Lakeside School，他第一次接触计算机。对很多人来说，那只是一台机器；对少年盖茨来说，那像是一扇门。
+          1968 年，在 Lakeside School，他通过终端第一次接触计算机。对很多人来说，那只是一台机器；对少年盖茨来说，那像是一扇门。
         </p>
       </div>
       <div class="callout" data-anim>
@@ -583,7 +583,7 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
     </div>
     <figure class="frame-img r-16x10" data-anim>
       <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80" alt="早期计算机">
-      <figcaption class="img-cap">湖滨中学 · 计算机房</figcaption>
+      <figcaption class="img-cap">电子元件示意 · 非学校实景</figcaption>
     </figure>
   </div>
   <div class="foot">
@@ -601,9 +601,8 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
   <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
     <div class="kicker" data-anim>少年时代 · 安静的语言</div>
     <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:5.8vw; line-height:1.2; letter-spacing:-.01em; max-width:72vw">
-      <span data-anim="line" style="display:block">有些孩子用画笔认识世界，</span>
-      <span data-anim="line" style="display:block">有些孩子用乐器表达自己。</span>
-      <span data-anim="line" style="display:block">盖茨用代码，理解世界如何运转。</span>
+      <span data-anim="line" style="display:block">用代码，</span>
+      <span data-anim="line" style="display:block">理解世界。</span>
     </blockquote>
     <p class="lead" style="max-width:55vw; opacity:.65" data-anim>
       他很早开始写程序。代码给他的不是炫耀感，而是一种秩序：输入、逻辑、反馈、修正。
@@ -628,7 +627,7 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
     <div style="display:flex; flex-direction:column; justify-content:space-between; gap:3vh">
       <div>
         <div class="kicker" data-anim>Paul Allen · 1968</div>
-        <h2 class="h-xl" data-anim>一个朋友，也是一面镜子</h2>
+        <h2 class="h-xl" data-anim>伙伴让想象<br>走得更远</h2>
         <p class="lead" style="margin-top:3vh" data-anim>
           保罗·艾伦是他的童年朋友，也是后来共同创办微软的人。真正珍贵的伙伴关系，往往不是互相赞美，而是一起看见别人尚未看见的东西。
         </p>
@@ -640,7 +639,7 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
     </div>
     <figure class="frame-img r-16x10" data-anim>
       <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80" alt="友谊">
-      <figcaption class="img-cap">友谊 · 共同的想象力</figcaption>
+      <figcaption class="img-cap">友谊 · 共同的想象力 · 示意图</figcaption>
     </figure>
   </div>
   <div class="foot">
@@ -695,7 +694,7 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
     </div>
     <figure class="frame-img r-16x10" data-anim>
       <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=600&q=80" alt="早期个人电脑">
-      <figcaption class="img-cap">Altair 8800 · 点燃想象力的机器</figcaption>
+      <figcaption class="img-cap">电子硬件示意 · 非 Altair 实物</figcaption>
     </figure>
   </div>
   <div class="foot">
@@ -726,7 +725,7 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
     </div>
     <figure class="frame-img r-16x10" data-anim>
       <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="早期办公室">
-      <figcaption class="img-cap">阿尔伯克基 · 微软最初的办公室</figcaption>
+      <figcaption class="img-cap">阿尔伯克基 · 现代办公空间 · 非历史照片</figcaption>
     </figure>
   </div>
   <div class="foot">
@@ -782,7 +781,7 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
     </div>
     <figure class="frame-img r-16x10" data-anim>
       <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=80" alt="计算机界面">
-      <figcaption class="img-cap">Windows · 人机交互的转折点</figcaption>
+      <figcaption class="img-cap">代码场景示意 · 非 Windows 1.0 界面</figcaption>
     </figure>
   </div>
   <div class="foot">
@@ -824,11 +823,11 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
   <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
     <div class="kicker" data-anim>2000 · A New Chapter</div>
     <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:5.8vw; line-height:1.2; letter-spacing:-.01em; max-width:72vw">
-      <span data-anim="line" style="display:block">人生的第二章，有时不是放下成功，</span>
-      <span data-anim="line" style="display:block">而是重新定义成功。</span>
+      <span data-anim="line" style="display:block">人生第二章，</span>
+      <span data-anim="line" style="display:block">重新定义成功。</span>
     </blockquote>
     <p class="lead" style="max-width:55vw; opacity:.65" data-anim>
-      2000 年前后，盖茨逐渐从微软日常管理中抽身，把越来越多时间投入公共健康、教育与贫困问题。
+      2000 年，他卸任微软 CEO；2008 年离开日常工作，把更多时间投入基金会。转身经历了多年，而非一次告别。
     </p>
     <div class="meta-row" data-anim>
       <span>从公司中心走向世界现场</span>
@@ -862,7 +861,7 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
     </div>
     <figure class="frame-img r-16x10" data-anim>
       <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80" alt="全球健康">
-      <figcaption class="img-cap">全球健康 · 看见远方的生命</figcaption>
+      <figcaption class="img-cap">全球健康 · 看见远方的生命 · 示意图</figcaption>
     </figure>
   </div>
   <div class="foot">
@@ -917,7 +916,7 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
     <div style="display:flex; flex-direction:column; justify-content:space-between; gap:3vh">
       <div>
         <div class="kicker" data-anim>Vaccines · The System of Care</div>
-        <h2 class="h-xl" data-anim>疫苗：把爱变成系统</h2>
+        <h2 class="h-xl" data-anim>疫苗需要<br>系统守护</h2>
         <p class="lead" style="margin-top:3vh" data-anim>
           Gavi 自 2000 年以来帮助免疫超过 10 亿名儿童，并避免了数以千万计的未来死亡。盖茨的慈善不是简单捐赠，而是试图用系统、科学和合作，让更多孩子安全长大。
         </p>
@@ -929,7 +928,7 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
     </div>
     <figure class="frame-img r-16x10" data-anim>
       <img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=600&q=80" alt="疫苗">
-      <figcaption class="img-cap">疫苗 · 系统化的守护</figcaption>
+      <figcaption class="img-cap">疫苗 · 系统化的守护 · 示意图</figcaption>
     </figure>
   </div>
   <div class="foot">
@@ -948,13 +947,13 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
     <div class="kicker" data-anim>2006 · The Gift of Trust</div>
     <h2 class="h-xl" data-anim>巴菲特的礼物</h2>
     <p class="lead" style="margin-bottom:5vh" data-anim>
-      2006 年，沃伦·巴菲特承诺向基金会捐赠 300 亿美元，使基金会能够更深入投入长期挑战。
+      2006 年，沃伦·巴菲特宣布以股票逐年捐赠；当时估值约 300 亿美元，使基金会能够更深入投入长期挑战。
     </p>
     <div class="grid-3" style="margin-top:6vh">
       <div class="stat-card" data-anim>
         <div class="stat-label">Pledge</div>
         <div class="stat-nb">$30<span class="stat-unit">B</span></div>
-        <div class="stat-note">巴菲特承诺向基金会捐赠</div>
+        <div class="stat-note">2006 年承诺股票的当时估值</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Year</div>
@@ -996,7 +995,7 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
     </div>
     <figure class="frame-img r-16x10" data-anim>
       <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80" alt="清洁能源">
-      <figcaption class="img-cap">能源创新 · 为下一代负责</figcaption>
+      <figcaption class="img-cap">能源创新 · 为下一代负责 · 示意图</figcaption>
     </figure>
   </div>
   <div class="foot">
@@ -1015,18 +1014,18 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
     <div class="kicker" data-anim>Wealth · Giving It Back</div>
     <h2 class="h-xl" data-anim>财富的归处</h2>
     <p class="lead" style="margin-bottom:5vh" data-anim>
-      2025 年，盖茨宣布基金会将在 2045 年结束运作，并计划未来 20 年投入超过 2000 亿美元。基金会成立前 25 年已投入超过 1000 亿美元。
+      2025 年，盖茨宣布基金会将在 2045 年结束运作，并计划未来 20 年投入超过 2000 亿美元。基金会成立截至 2025 年累计投入逾 1000 亿美元。
     </p>
     <div class="grid-3" style="margin-top:6vh">
       <div class="stat-card" data-anim>
         <div class="stat-label">Planned Giving</div>
         <div class="stat-nb">$200<span class="stat-unit">B+</span></div>
-        <div class="stat-note">未来 20 年计划投入超过 2000 亿美元</div>
+        <div class="stat-note">2025—2045 年计划投入约 2000 亿美元</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Already Given</div>
         <div class="stat-nb">$100<span class="stat-unit">B+</span></div>
-        <div class="stat-note">前 25 年已投入超过 1000 亿美元</div>
+        <div class="stat-note">截至 2025 年累计投入逾 1000 亿美元</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">End</div>
@@ -1050,7 +1049,7 @@ body.low-power [data-anim]{opacity:1!important;transform:none!important}
   <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
     <div class="kicker" data-anim>The Final Chapter · 2025</div>
     <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:5.8vw; line-height:1.2; letter-spacing:-.01em; max-width:72vw">
-      <span data-anim="line" style="display:block">一个人，和他选择相信的世界。</span>
+      <span data-anim="line" style="display:block">好奇心，<br>改变世界的起点。</span>
     </blockquote>
     <p class="lead" style="max-width:60vw; opacity:.65" data-anim>
       他用代码打开了一个时代，又用慈善试图温柔地修补这个世界。<br>
