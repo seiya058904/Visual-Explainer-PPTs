@@ -1,5 +1,7 @@
 # 我们扔掉的东西，并没有离开世界 — 深审与交付记录
 
+> 最新布局复验：已修复；四档动态全页通过。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`bc1df174f01324b0d2d0b20a01edac6a1d83920528275c532bbd35ddf4fb052f`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 > 最终交付：已从维护源规范导出至原成品路径，Approved 状态保留；15 页三档逐页检查通过，断网静态阅读（含祖先裁切边界）通过。SHA-256：`3ac20f7867200915bef0a309427fc6df516b8c9107c8de2d266be7696738b320`。
 
 - Artifact: `ppt-collection/science-of-garbage.html`
@@ -26,3 +28,8 @@ Slide 14’s closing statement is now split into two concise lines (“真正的
 ## 最终验收证据
 
 完整三档报告：`.codex/qa-release-content-final/approved-science-of-garbage.json`。所有页面的实际文字边界、页脚、缺图、脚本及请求检查通过；pipeline适用时覆盖初始/推进/完成/继续翻页。ESC首档验证。离线完整逐页报告：`.codex/offline-final38/results.json`，按上方相同SHA核对。网络照片限制见目录字段；本记录不等于物理投影或所有浏览器认证。
+
+
+## 宽矮窗口修复补充
+
+触发页：6, 7, 8, 9, 12。字号按可用高度约束；移除过大的 frame 最小高度；图片与图注分行，保留图注高度；问题页保留底部安全距离。共享字号规则覆盖整份作品，已整份复测，正文未改。

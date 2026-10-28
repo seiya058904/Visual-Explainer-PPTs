@@ -1,5 +1,7 @@
 # 二维码为什么缺一块还能扫？ — 深审与交付记录
 
+> 最新布局复验：已修复；四档动态全页通过。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`43b70588ff925ecbb941d61af1cd21b2c28309d5a148eec9b6640d4ffb17f2a2`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 > 本轮交付：已从维护源重新导出至原有成品路径；Approved 状态保留。14 页三档逐页检查与断网核心阅读检查通过。最终 SHA-256：`a6205b0b1bc1b8f754d2c21a10e0cb59c6e7639e8c4e6ba8caa086d562b9411d`。事实和视觉变更见下文；旧阶段记录不替代这里的最终状态。
 
 - Artifact: `ppt-collection/qr-code-inside-the-black-white-squares.html`
@@ -36,3 +38,8 @@ P6 21×21到177×177、40版本、每级+4核对正确。P7数字7089/英数字4
 ## Final overview-selection supplement — 2026-10-28
 
 The earlier final three-viewport report recorded overview opening but predated the selection assertion. Targeted real Chromium testing at 1600×900 now opened ESC overview from the first page, closed it, advanced by keyboard to page 2, opened overview again and clicked the first card. The index returned from 1 to 0 and the overview closed; no page errors. Current artifact SHA-256 a6205b0b1bc1b8f754d2c21a10e0cb59c6e7639e8c4e6ba8caa086d562b9411d was unchanged and matched the tested publication receipt. Evidence: .codex/final-overview-selection/results.json. This supplements only overview interaction; no geometry or factual re-review is claimed.
+
+
+## 宽矮窗口修复补充
+
+触发页：2, 7。字号按可用高度约束；移除过大的 frame 最小高度；问题页保留底部安全距离。共享字号规则覆盖整份作品，已整份复测，正文未改。

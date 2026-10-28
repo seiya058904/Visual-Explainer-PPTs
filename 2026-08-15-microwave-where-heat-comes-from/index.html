@@ -490,6 +490,9 @@
     .grid-2-7-5,.grid-2-6-6,.grid-2-8-4{grid-template-columns:1fr}
   }
 </style>
+<style>/* Keep captions and lower content inside their allocated space. */
+#deck>.slide:nth-child(10)>.frame{margin-bottom:1.5vh}
+</style>
 </head>
 <body>
 <script>
@@ -713,7 +716,7 @@
   <div class="chrome"><div>ACT III · NON-UNIFORM HEATING</div><div>10 / 14</div></div>
   <div class="frame" style="padding-top:3vh">
     <div class="kicker" data-anim>Hot &amp; Cold Spots</div>
-    <h2 class="h-xl" style="font-size:5.7vw" data-anim>为什么总有一块特别烫？</h2>
+    <h2 class="h-xl" style="font-size:min(5.7vw,10.1333vh)" data-anim>为什么总有一块特别烫？</h2>
     <p class="lead" style="max-width:64vw;margin-bottom:2vh" data-anim>金属腔体不断反射微波，叠加与干涉形成复杂的驻波分布。</p>
     <div style="display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);gap:3vw;align-items:center;margin-top:3vh" data-anim>
       <figure style="margin:0" data-anim>
@@ -726,7 +729,7 @@
         <div class="rowline"><div class="k">冷热</div><div class="v">同一盘食物，空间温度不均匀</div><div class="m">03</div></div>
       </div>
     </div>
-    <div class="callout" style="margin-top:3vh" data-anim>驻波不是故障；它是家用微波炉里必须被管理的物理结果。</div>
+    <div class="callout" style="margin-top:1.5vh;padding:1vh 2.4vw" data-anim>驻波不是故障；它是家用微波炉里必须被管理的物理结果。</div>
   </div>
   <div class="foot"><div>场分布与材料形状、组成共同影响热点</div><div>PubMed · 10</div></div>
 </section>

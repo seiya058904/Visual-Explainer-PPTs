@@ -74,18 +74,18 @@
      · 等宽（IBM Plex Mono）：kicker、meta 小标签、foot 右侧
   */
   .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;opacity:.6;margin-bottom:2.6vh}
-  .display{font-family:var(--serif-en);font-weight:700;font-size:11vw;line-height:.92;letter-spacing:-.025em}
-  .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:7.8vw;line-height:1.04;letter-spacing:-.005em}
-  .h1-zh{font-family:var(--serif-zh);font-weight:700;font-size:4.6vw;line-height:1.12;letter-spacing:-.005em}
-  .h2-zh{font-family:var(--serif-zh);font-weight:600;font-size:3.2vw;line-height:1.2;letter-spacing:0}
-  .h3-zh{font-family:var(--serif-zh);font-weight:500;font-size:1.9vw;line-height:1.35}
-  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,1.22vw);line-height:1.75;opacity:.82;letter-spacing:.01em}
-  .body-serif{font-family:var(--serif-zh);font-weight:400;font-size:max(15px,1.3vw);line-height:1.65;opacity:.88}
-  .lead{font-family:var(--serif-zh);font-weight:400;font-size:1.9vw;line-height:1.4;opacity:.85}
-  .meta{font-family:var(--mono);font-size:max(11px,.88vw);letter-spacing:.16em;text-transform:uppercase;opacity:.6}
-  .big-num{font-family:var(--serif-en);font-weight:800;font-size:10vw;line-height:.85;letter-spacing:-.03em;font-feature-settings:"tnum"}
-  .mid-num{font-family:var(--serif-en);font-weight:700;font-size:5.5vw;line-height:.88;letter-spacing:-.02em;font-feature-settings:"tnum"}
-  .ghost{font-family:var(--serif-en);font-weight:900;font-size:34vw;line-height:.8;opacity:.06;letter-spacing:-.04em;position:absolute;font-feature-settings:"tnum"}
+  .display{font-family:var(--serif-en);font-weight:700;font-size:min(11vw,19.5556vh);line-height:.92;letter-spacing:-.025em}
+  .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:min(7.8vw,13.8667vh);line-height:1.04;letter-spacing:-.005em}
+  .h1-zh{font-family:var(--serif-zh);font-weight:700;font-size:min(4.6vw,8.1778vh);line-height:1.12;letter-spacing:-.005em}
+  .h2-zh{font-family:var(--serif-zh);font-weight:600;font-size:min(3.2vw,5.6889vh);line-height:1.2;letter-spacing:0}
+  .h3-zh{font-family:var(--serif-zh);font-weight:500;font-size:min(1.9vw,3.3778vh);line-height:1.35}
+  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,min(1.22vw,2.1689vh));line-height:1.75;opacity:.82;letter-spacing:.01em}
+  .body-serif{font-family:var(--serif-zh);font-weight:400;font-size:max(15px,min(1.3vw,2.3111vh));line-height:1.65;opacity:.88}
+  .lead{font-family:var(--serif-zh);font-weight:400;font-size:min(1.9vw,3.3778vh);line-height:1.4;opacity:.85}
+  .meta{font-family:var(--mono);font-size:max(11px,min(.88vw,1.5644vh));letter-spacing:.16em;text-transform:uppercase;opacity:.6}
+  .big-num{font-family:var(--serif-en);font-weight:800;font-size:min(10vw,17.7778vh);line-height:.85;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .mid-num{font-family:var(--serif-en);font-weight:700;font-size:min(5.5vw,9.7778vh);line-height:.88;letter-spacing:-.02em;font-feature-settings:"tnum"}
+  .ghost{font-family:var(--serif-en);font-weight:900;font-size:min(34vw,60.4444vh);line-height:.8;opacity:.06;letter-spacing:-.04em;position:absolute;font-feature-settings:"tnum"}
   em{font-style:italic;font-family:var(--serif-en)}
   .en{font-family:var(--serif-en);font-style:italic;font-weight:500}
 
@@ -106,40 +106,40 @@
 
   /* ============ Stat（数字矩阵） ============ */
   .stat{display:flex;flex-direction:column;gap:1vh;align-items:flex-start}
-  .stat .n{font-family:var(--serif-en);font-weight:800;font-size:8vw;line-height:.88;letter-spacing:-.03em;font-feature-settings:"tnum"}
-  .stat .l{font-family:var(--sans-zh);font-size:max(13px,1.05vw);opacity:.7;margin-top:1vh;font-weight:400;line-height:1.5}
+  .stat .n{font-family:var(--serif-en);font-weight:800;font-size:min(8vw,14.2222vh);line-height:.88;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .stat .l{font-family:var(--sans-zh);font-size:max(13px,min(1.05vw,1.8667vh));opacity:.7;margin-top:1vh;font-weight:400;line-height:1.5}
   .stat .m{font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.5;margin-bottom:.2vh}
 
   /* ============ Callout（引用框） ============ */
-  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,1.2vw);line-height:1.55;opacity:.92}
+  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,min(1.2vw,2.1333vh));line-height:1.55;opacity:.92}
   .slide.light .callout{background:rgba(var(--ink-rgb),.05)}
   .slide.dark .callout{background:rgba(var(--paper-rgb),.06)}
   .callout .cite{display:block;margin-top:1.6vh;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6}
-  .callout .q-big{font-family:var(--serif-zh);font-weight:600;font-size:max(17px,1.6vw);line-height:1.42}
+  .callout .q-big{font-family:var(--serif-zh);font-weight:600;font-size:max(17px,min(1.6vw,2.8444vh));line-height:1.42}
 
   /* ============ Platform（平台卡） ============ */
   .plat{display:flex;flex-direction:column;justify-content:flex-end;padding:2vh 0;border-top:1px solid currentColor;border-color:rgba(127,127,127,.35)}
-  .plat .name{font-family:var(--serif-zh);font-weight:700;font-size:1.8vw;margin-bottom:.6vh}
-  .plat .nb{font-family:var(--serif-en);font-weight:700;font-size:3.2vw;letter-spacing:-.02em;line-height:1;font-feature-settings:"tnum"}
+  .plat .name{font-family:var(--serif-zh);font-weight:700;font-size:min(1.8vw,3.2000vh);margin-bottom:.6vh}
+  .plat .nb{font-family:var(--serif-en);font-weight:700;font-size:min(3.2vw,5.6889vh);letter-spacing:-.02em;line-height:1;font-feature-settings:"tnum"}
   .plat .sub{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;opacity:.55;margin-top:.6vh}
-  .plat .fill{font-family:var(--sans-zh);font-weight:300;font-size:2.4vw;opacity:.28;letter-spacing:-.01em;line-height:1}
+  .plat .fill{font-family:var(--sans-zh);font-weight:300;font-size:min(2.4vw,4.2667vh);opacity:.28;letter-spacing:-.01em;line-height:1}
 
   /* ============ Rowline（表格行） ============ */
   .rowline{display:grid;grid-template-columns:1fr 2fr 1fr;gap:2vw;padding:2.2vh 0;border-top:1px solid currentColor;align-items:center;border-color:rgba(127,127,127,.25)}
   .rowline:last-child{border-bottom:1px solid currentColor;border-color:rgba(127,127,127,.25)}
-  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:1.7vw}
-  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.2vw);opacity:.85;line-height:1.55}
+  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:min(1.7vw,3.0222vh)}
+  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,min(1.2vw,2.1333vh));opacity:.85;line-height:1.55}
   .rowline .m{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6;justify-self:end}
 
   /* ============ Pillar（支柱卡片） ============ */
   .pillar{display:flex;flex-direction:column;gap:1.8vh}
-  .pillar .ic{font-family:var(--serif-en);font-style:italic;font-size:2.6vw;opacity:.45;font-weight:400}
+  .pillar .ic{font-family:var(--serif-en);font-style:italic;font-size:min(2.6vw,4.6222vh);opacity:.45;font-weight:400}
   .pillar .ic svg{width:2.8vw;height:2.8vw;stroke-width:1.2;opacity:.7}
-  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:2.4vw;line-height:1.1}
-  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.1vw);opacity:.76;line-height:1.6}
+  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:min(2.4vw,4.2667vh);line-height:1.1}
+  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,min(1.1vw,1.9556vh));opacity:.76;line-height:1.6}
 
   /* ============ Signature / Highlight ============ */
-  .sign{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:2vw;opacity:.7}
+  .sign{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:min(2vw,3.5556vh);opacity:.7}
   .hi{position:relative;display:inline}
   .slide.dark .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--paper-rgb),.15);z-index:-1}
   .slide.light .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--ink-rgb),.08);z-index:-1}
@@ -154,7 +154,7 @@
   /* ============ 图片占位（虚线框，提示设计师位置） ============ */
   .img-slot{border:1.5px dashed rgba(127,127,127,.4);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1vh;padding:2vh 2vw;font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;opacity:.55;position:relative;aspect-ratio:16/9;width:100%;max-height:56vh;margin-inline:auto;box-sizing:border-box}
   .img-slot::before{content:"";position:absolute;inset:8px;border:1px solid currentColor;opacity:.2}
-  .img-slot .plus{font-size:2vw;font-weight:300;opacity:.5;letter-spacing:0}
+  .img-slot .plus{font-size:min(2vw,3.5556vh);font-weight:300;opacity:.5;letter-spacing:0}
   .img-slot .label{position:relative;z-index:2;text-align:center}
   .img-slot.r-4x3{aspect-ratio:4/3}
   .img-slot.r-3x2{aspect-ratio:3/2}
@@ -180,8 +180,8 @@
   .frame-img.h-26{height:26vh}
   .frame-img.h-28{height:28vh}
   .frame-cap{display:flex;justify-content:space-between;align-items:baseline;gap:1vw;margin-top:.8vh;font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.72}
-  .frame-cap .pf{font-family:var(--serif-zh);font-weight:600;font-size:max(13px,1vw);letter-spacing:.04em;text-transform:none;opacity:.94}
-  .frame-cap .nb{font-family:var(--serif-en);font-style:italic;font-size:max(15px,1.2vw);letter-spacing:.02em;text-transform:none;opacity:.88}
+  .frame-cap .pf{font-family:var(--serif-zh);font-weight:600;font-size:max(13px,min(1vw,1.7778vh));letter-spacing:.04em;text-transform:none;opacity:.94}
+  .frame-cap .nb{font-family:var(--serif-en);font-style:italic;font-size:max(15px,min(1.2vw,2.1333vh));letter-spacing:.02em;text-transform:none;opacity:.88}
   .frame-cap .idx{font-family:var(--mono);opacity:.5}
   figure.tile{display:flex;flex-direction:column;margin:0;min-width:0}
   figure.tile > .frame-img{flex:0 0 auto}
@@ -217,21 +217,21 @@
   .h-hero{
     font-family:var(--serif-zh);
     font-weight:900;
-    font-size:10vw;
+    font-size:min(10vw,17.7778vh);
     line-height:.96;
     letter-spacing:-.02em;
   }
   .h-xl{
     font-family:var(--serif-zh);
     font-weight:700;
-    font-size:6.2vw;
+    font-size:min(6.2vw,11.0222vh);
     line-height:1.08;
     letter-spacing:-.01em;
   }
   .h-sub{
     font-family:var(--serif-zh);
     font-weight:500;
-    font-size:3.1vw;
+    font-size:min(3.1vw,5.5111vh);
     line-height:1.25;
     letter-spacing:0;
     opacity:.7;
@@ -239,7 +239,7 @@
   .h-md{
     font-family:var(--serif-zh);
     font-weight:600;
-    font-size:2.3vw;
+    font-size:min(2.3vw,4.0889vh);
     line-height:1.3;
   }
   /* 英文标题专用（Playfair 衬线） */
@@ -249,7 +249,7 @@
   .lead{
     font-family:var(--serif-zh);
     font-weight:400;
-    font-size:1.75vw;
+    font-size:min(1.75vw,3.1111vh);
     line-height:1.5;
     opacity:.86;
   }
@@ -261,7 +261,7 @@
     align-items:baseline;
     flex-wrap:wrap;
     font-family:var(--mono);
-    font-size:max(12px,.92vw);
+    font-size:max(12px,min(.92vw,1.6356vh));
     letter-spacing:.16em;
     text-transform:uppercase;
     opacity:.6;
@@ -279,7 +279,7 @@
   }
   .stat-card .stat-label{
     font-family:var(--mono);
-    font-size:max(10px,.78vw);
+    font-size:max(10px,min(.78vw,1.3867vh));
     letter-spacing:.24em;
     text-transform:uppercase;
     opacity:.55;
@@ -287,7 +287,7 @@
   .stat-card .stat-nb{
     font-family:var(--serif-en);
     font-weight:800;
-    font-size:5.8vw;
+    font-size:min(5.8vw,10.3111vh);
     line-height:.9;
     letter-spacing:-.03em;
     font-feature-settings:"tnum";
@@ -304,15 +304,15 @@
   .stat-card .stat-note{
     font-family:var(--sans-zh);
     font-weight:400;
-    font-size:max(13px,1.05vw);
+    font-size:max(13px,min(1.05vw,1.8667vh));
     line-height:1.5;
     opacity:.72;
     margin-top:.6vh;
   }
   /* 当 stat-card 用于 grid-4（2x2），数字适度放大；若页面有标题+引文在上方，可内联 style 覆盖为更小值 */
-  .grid-4 .stat-card .stat-nb{font-size:5vw}
+  .grid-4 .stat-card .stat-nb{font-size:min(5vw,8.8889vh)}
   /* 当只有 3 个，字也可以稍大 */
-  .grid-3 .stat-card .stat-nb{font-size:6.8vw}
+  .grid-3 .stat-card .stat-nb{font-size:min(6.8vw,12.0889vh)}
 
   /* ---------- pipeline（流水线） ---------- */
   .pipeline-section{
@@ -327,7 +327,7 @@
   }
   .pipeline-label{
     font-family:var(--mono);
-    font-size:max(11px,.85vw);
+    font-size:max(11px,min(.85vw,1.5111vh));
     letter-spacing:.24em;
     text-transform:uppercase;
     opacity:.62;
@@ -353,20 +353,20 @@
     font-family:var(--serif-en);
     font-style:italic;
     font-weight:500;
-    font-size:1.15vw;
+    font-size:min(1.15vw,2.0444vh);
     opacity:.45;
   }
   .step-title{
     font-family:var(--sans-zh);
     font-weight:700;
-    font-size:1.55vw;
+    font-size:min(1.55vw,2.7556vh);
     letter-spacing:.01em;
     line-height:1.2;
   }
   .step-desc{
     font-family:var(--sans-zh);
     font-weight:400;
-    font-size:max(12px,.95vw);
+    font-size:max(12px,min(.95vw,1.6889vh));
     line-height:1.45;
     opacity:.72;
   }
@@ -391,7 +391,7 @@
     display:block;
     margin-top:.8vh;
     font-family:var(--mono);
-    font-size:max(10px,.8vw);
+    font-size:max(10px,min(.8vw,1.4222vh));
     letter-spacing:.22em;
     text-transform:uppercase;
     opacity:.6;
@@ -408,8 +408,8 @@
   }
 
   /* ---------- chrome & foot 补位（layouts.md 简单写法） ---------- */
-  .chrome{font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.2em;text-transform:uppercase;opacity:.62}
-  .foot{flex-shrink:0;margin-bottom:2vh;font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.18em;text-transform:uppercase;opacity:.5}
+  .chrome{font-family:var(--mono);font-size:max(11px,min(.78vw,1.3867vh));letter-spacing:.2em;text-transform:uppercase;opacity:.62}
+  .foot{flex-shrink:0;margin-bottom:2vh;font-family:var(--mono);font-size:max(11px,min(.78vw,1.3867vh));letter-spacing:.18em;text-transform:uppercase;opacity:.5}
 
   /* ============ 动效系统(CSS @keyframes,替代 Motion One 以支持 file:// 协议) ============
      所有 [data-anim] 元素默认隐藏,由 .slide.visible 触发 CSS 入场动画。
@@ -432,11 +432,11 @@
 
   /* ---------- 响应式降级 ---------- */
   @media (max-width:900px){
-    .display{font-size:16vw}
-    .display-zh{font-size:12vw}
-    .h1-zh{font-size:7vw}
-    .h-hero{font-size:14vw}
-    .h-xl{font-size:9vw}
+    .display{font-size:min(16vw,28.4444vh)}
+    .display-zh{font-size:min(12vw,21.3333vh)}
+    .h1-zh{font-size:min(7vw,12.4444vh)}
+    .h-hero{font-size:min(14vw,24.8889vh)}
+    .h-xl{font-size:min(9vw,16.0000vh)}
     .pipeline{grid-template-columns:repeat(2,1fr)}
     .grid-2-7-5,.grid-2-6-6,.grid-2-8-4{grid-template-columns:1fr}
   }
@@ -492,7 +492,7 @@
     <div>World Cup · 足球叙事</div>
     <div>01 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>世界杯 · 2026</div>
     <h1 class="h-hero" data-anim>足球：<br>世界为什么<br>为一颗球停下</h1>
     <p class="lead" style="max-width:60vw" data-anim>
@@ -572,7 +572,7 @@
       <div data-anim="left" style="padding:3vh 2vw; border-left:3px solid currentColor; opacity:.55">
         <div class="kicker" style="opacity:.9">Low Barrier · 低门槛</div>
         <h3 class="h-md" style="margin-top:2vh">一颗球 · 两个门 · 任何地面</h3>
-        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.55">
           <li>只需要一颗球就能开始</li>
           <li>贫民窟、草地、沙滩、小巷</li>
           <li>没有昂贵装备门槛</li>
@@ -583,7 +583,7 @@
       <div data-anim="right" style="padding:3vh 2vw; border-left:3px solid currentColor">
         <div class="kicker" style="opacity:.9">Infinite Depth · 无限纵深</div>
         <h3 class="h-md" style="margin-top:2vh">战术、体系、哲学</h3>
-        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.55">
           <li>4-3-3 vs 3-5-2 战术博弈</li>
           <li>瓜迪奥拉 vs 穆里尼奥哲学</li>
           <li>数据分析颠覆训练方式</li>
@@ -607,41 +607,41 @@
   </div>
   <div class="frame" style="padding-top:4vh">
     <div class="kicker" data-anim>The Laws · 规则</div>
-    <h2 class="h-xl" style="font-size:5.2vw" data-anim>17条核心规则</h2>
+    <h2 class="h-xl" style="font-size:min(5.2vw,9.2444vh)" data-anim>17条核心规则</h2>
     <p class="lead" style="margin-bottom:2vh" data-anim>17 Laws of the Game — 规则越克制，比赛越开放。</p>
 
     <div class="grid-2-6-6" style="gap:1vh 3vw; margin-top:1vh">
       <div class="rowline" style="grid-template-columns:1fr 3fr; gap:1vw; padding:1.2vh 0">
-        <div class="k" style="font-size:1.4vw">场地</div>
-        <div class="v" style="font-size:max(12px,0.95vw)">球场规格 · 标识线 · 区域</div>
+        <div class="k" style="font-size:min(1.4vw,2.4889vh)">场地</div>
+        <div class="v" style="font-size:max(12px,min(0.95vw,1.6889vh))">球场规格 · 标识线 · 区域</div>
       </div>
       <div class="rowline" style="grid-template-columns:1fr 3fr; gap:1vw; padding:1.2vh 0">
-        <div class="k" style="font-size:1.4vw">球</div>
-        <div class="v" style="font-size:max(12px,0.95vw)">规格 · 气压 · 更换标准</div>
+        <div class="k" style="font-size:min(1.4vw,2.4889vh)">球</div>
+        <div class="v" style="font-size:max(12px,min(0.95vw,1.6889vh))">规格 · 气压 · 更换标准</div>
       </div>
       <div class="rowline" style="grid-template-columns:1fr 3fr; gap:1vw; padding:1.2vh 0">
-        <div class="k" style="font-size:1.4vw">球员</div>
-        <div class="v" style="font-size:max(12px,0.95vw)">11人制 · 替补 · 装备</div>
+        <div class="k" style="font-size:min(1.4vw,2.4889vh)">球员</div>
+        <div class="v" style="font-size:max(12px,min(0.95vw,1.6889vh))">11人制 · 替补 · 装备</div>
       </div>
       <div class="rowline" style="grid-template-columns:1fr 3fr; gap:1vw; padding:1.2vh 0">
-        <div class="k" style="font-size:1.4vw">裁判</div>
-        <div class="v" style="font-size:max(12px,0.95vw)">主裁 · 边裁 · VAR团队</div>
+        <div class="k" style="font-size:min(1.4vw,2.4889vh)">裁判</div>
+        <div class="v" style="font-size:max(12px,min(0.95vw,1.6889vh))">主裁 · 边裁 · VAR团队</div>
       </div>
       <div class="rowline" style="grid-template-columns:1fr 3fr; gap:1vw; padding:1.2vh 0">
-        <div class="k" style="font-size:1.4vw">比赛时间</div>
-        <div class="v" style="font-size:max(12px,0.95vw)">90分钟 · 伤停补时 · 加时</div>
+        <div class="k" style="font-size:min(1.4vw,2.4889vh)">比赛时间</div>
+        <div class="v" style="font-size:max(12px,min(0.95vw,1.6889vh))">90分钟 · 伤停补时 · 加时</div>
       </div>
       <div class="rowline" style="grid-template-columns:1fr 3fr; gap:1vw; padding:1.2vh 0">
-        <div class="k" style="font-size:1.4vw">越位</div>
-        <div class="v" style="font-size:max(12px,0.95vw)">位置判定 · 干扰 · 例外</div>
+        <div class="k" style="font-size:min(1.4vw,2.4889vh)">越位</div>
+        <div class="v" style="font-size:max(12px,min(0.95vw,1.6889vh))">位置判定 · 干扰 · 例外</div>
       </div>
       <div class="rowline" style="grid-template-columns:1fr 3fr; gap:1vw; padding:1.2vh 0">
-        <div class="k" style="font-size:1.4vw">犯规</div>
-        <div class="v" style="font-size:max(12px,0.95vw)">直接/间接任意球 · 点球</div>
+        <div class="k" style="font-size:min(1.4vw,2.4889vh)">犯规</div>
+        <div class="v" style="font-size:max(12px,min(0.95vw,1.6889vh))">直接/间接任意球 · 点球</div>
       </div>
       <div class="rowline" style="grid-template-columns:1fr 3fr; gap:1vw; padding:1.2vh 0">
-        <div class="k" style="font-size:1.4vw">纪律</div>
-        <div class="v" style="font-size:max(12px,0.95vw)">红黄牌 · 警告 · 停赛</div>
+        <div class="k" style="font-size:min(1.4vw,2.4889vh)">纪律</div>
+        <div class="v" style="font-size:max(12px,min(0.95vw,1.6889vh))">红黄牌 · 警告 · 停赛</div>
       </div>
     </div>
     <div class="kicker" style="margin-top:2vh; font-size:10px; opacity:.45" data-anim>IFAB 管理 · 历经百年修订</div>
@@ -660,10 +660,10 @@
   </div>
   <div class="frame" style="display:grid; gap:3vh; align-content:center; text-align:center">
     <div class="kicker" data-anim>Drama · 稀缺即珍贵</div>
-    <div style="font-family:var(--serif-en); font-weight:800; font-size:14vw; line-height:.88; letter-spacing:-.03em; font-feature-settings:'tnum'" data-anim>
+    <div style="font-family:var(--serif-en); font-weight:800; font-size:min(14vw,24.8889vh); line-height:.88; letter-spacing:-.03em; font-feature-settings:'tnum'" data-anim>
       2.68<span style="font-family:var(--serif-en); font-weight:500; font-size:.35em; letter-spacing:0; opacity:.72; margin-left:.14em">球 / 场</span>
     </div>
-    <h2 class="h-xl" style="font-size:4vw; opacity:.78" data-anim>2022 卡塔尔世界杯场均进球</h2>
+    <h2 class="h-xl" style="font-size:min(4vw,7.1111vh); opacity:.78" data-anim>2022 卡塔尔世界杯场均进球</h2>
     <p class="lead" style="max-width:50vw; margin:0 auto" data-anim>
       Scarcity Creates Emotion — 正因进球稀少，每一次破门都像命运突然转身。
     </p>
@@ -680,9 +680,9 @@
     <div>Emotion · 情绪弧线</div>
     <div>06 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Drama · 90 分钟</div>
-    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:5.8vw; line-height:1.2; letter-spacing:-.01em; max-width:72vw">
+    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:min(5.8vw,10.3111vh); line-height:1.2; letter-spacing:-.01em; max-width:72vw">
       <span data-anim="line" style="display:block">"90分钟情绪建筑：</span>
       <span data-anim="line" style="display:block">每一次进攻都是蓄力，</span>
       <span data-anim="line" style="display:block">每一次哨响都是释放。"</span>
@@ -709,7 +709,7 @@
   </div>
   <div class="frame" style="padding-top:5vh">
     <div class="kicker" data-anim>Identity · 身份</div>
-    <h2 class="h-xl" style="font-size:5.8vw" data-anim>国家队：身份被穿在身上</h2>
+    <h2 class="h-xl" style="font-size:min(5.8vw,10.3111vh)" data-anim>国家队：身份被穿在身上</h2>
     <p class="lead" style="margin-bottom:3vh" data-anim>Belonging Has a Color — 世界杯让国家身份变成可见的情绪。</p>
 
     <div class="grid-4" style="margin-top:3vh">
@@ -755,7 +755,7 @@
       <div data-anim="left" style="padding:3vh 2vw; border-left:3px solid currentColor; opacity:.55">
         <div class="kicker" style="opacity:.9">Club Football · 日常</div>
         <h3 class="h-md" style="margin-top:2vh">38轮 · 9个月 · 一座城</h3>
-        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.55">
           <li>每周都有比赛，像生活本身</li>
           <li>熟悉的球场、固定的对手</li>
           <li>积分榜的长期博弈</li>
@@ -766,7 +766,7 @@
       <div data-anim="right" style="padding:3vh 2vw; border-left:3px solid currentColor">
         <div class="kicker" style="opacity:.9">World Cup · 史诗</div>
         <h3 class="h-md" style="margin-top:2vh">48队 · 4年一次 · 全世界</h3>
-        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.55">
           <li>四年一次的全球仪式</li>
           <li>陌生对手 · 异国场地</li>
           <li>单场淘汰的极致压迫</li>
@@ -788,9 +788,9 @@
     <div>Stakes · 赌注</div>
     <div>09 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:8vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:8vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>The Stakes · 残酷</div>
-    <h1 class="h-hero" style="font-size:7vw; line-height:1.15">
+    <h1 class="h-hero" style="font-size:min(7vw,12.4444vh); line-height:1.15">
       <span data-anim style="display:block">单场淘汰 —</span>
       <span data-anim style="display:block">没有第二场比赛，</span>
       <span data-anim style="display:block">没有第二次机会。</span>
@@ -819,7 +819,7 @@
       <div data-anim="left" style="padding:3vh 2vw; border-left:3px solid currentColor">
         <div class="kicker" style="opacity:.9">Individual · 个人才华</div>
         <h3 class="h-md" style="margin-top:2vh">天赋 · 技术 · 决定力</h3>
-        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.55">
           <li><i data-lucide="target" class="ico-sm" style="margin-right:.6em"></i> 梅西 91球/年 — 2012自然年纪录</li>
           <li><i data-lucide="award" class="ico-sm" style="margin-right:.6em"></i> 8座金球奖 — 截至2023年</li>
           <li><i data-lucide="zap" class="ico-sm" style="margin-right:.6em"></i> 罗纳尔多（R9）15球世界杯</li>
@@ -830,7 +830,7 @@
       <div data-anim="right" style="padding:3vh 2vw; border-left:3px solid currentColor">
         <div class="kicker" style="opacity:.9">Collective · 团队灵魂</div>
         <h3 class="h-md" style="margin-top:2vh">体系 · 牺牲 · 化学反应</h3>
-        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.55">
           <li><i data-lucide="users" class="ico-sm" style="margin-right:.6em"></i> 西班牙 2010 — 传控体系</li>
           <li><i data-lucide="handshake" class="ico-sm" style="margin-right:.6em"></i> 德国 2014 — 团队机器</li>
           <li><i data-lucide="shield" class="ico-sm" style="margin-right:.6em"></i> 法国 2018 — 平衡之美</li>
@@ -902,7 +902,7 @@
   </div>
   <div class="frame" style="display:grid;gap:2.4vh;align-content:center;min-height:0;padding-top:6vh">
     <div class="kicker" data-anim>Goalkeeper · 守护者</div>
-    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:4.2vw; line-height:1.2; letter-spacing:-.01em; max-width:78vw">
+    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:min(4.2vw,7.4667vh); line-height:1.2; letter-spacing:-.01em; max-width:78vw">
       <span data-anim="line" style="display:block">"门将不是球队的最后一道防线，</span>
       <span data-anim="line" style="display:block">他是全队情绪的总开关——</span>
       <span data-anim="line" style="display:block">一次扑救点燃全场，</span>
@@ -936,7 +936,7 @@
       <div data-anim="left" style="padding:3vh 2vw; border-left:3px solid currentColor; opacity:.55">
         <div class="kicker" style="opacity:.9">Human · 裁判</div>
         <h3 class="h-md" style="margin-top:2vh">直觉 · 经验 · 不完美</h3>
-        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.55">
           <li>判罚发生在瞬间 · 人类判断并非完美</li>
           <li>跑动距离接近球员</li>
           <li>误判也是比赛一部分</li>
@@ -947,7 +947,7 @@
       <div data-anim="right" style="padding:3vh 2vw; border-left:3px solid currentColor">
         <div class="kicker" style="opacity:.9">Technology · VAR</div>
         <h3 class="h-md" style="margin-top:2vh">回放 · 数据 · 精确</h3>
-        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.55">
           <li>多机位视频回放</li>
           <li>越位半自动判定</li>
           <li>半自动越位工具辅助复核</li>
@@ -971,7 +971,7 @@
   </div>
   <div class="frame" style="padding-top:5vh">
     <div class="kicker" data-anim>Attendance · 现场</div>
-    <h2 class="h-xl" style="font-size:5.8vw" data-anim>人群制造神话</h2>
+    <h2 class="h-xl" style="font-size:min(5.8vw,10.3111vh)" data-anim>人群制造神话</h2>
     <p class="lead" style="margin-bottom:3vh" data-anim>The Crowd Makes Memory — 电视传播比赛，现场制造神话。</p>
 
     <div class="grid-4" style="margin-top:3vh">
@@ -1011,7 +1011,7 @@
   </div>
   <div class="frame" style="padding-top:5vh">
     <div class="kicker" data-anim>Media · 媒体</div>
-    <h2 class="h-xl" style="font-size:5.8vw" data-anim>世界杯已经超出球场</h2>
+    <h2 class="h-xl" style="font-size:min(5.8vw,10.3111vh)" data-anim>世界杯已经超出球场</h2>
     <p class="lead" style="margin-bottom:3vh" data-anim>The Match Never Ends — 比赛结束后，世界杯在短视频与评论区中继续。</p>
 
     <div class="grid-4" style="margin-top:3vh">
@@ -1051,10 +1051,10 @@
   </div>
   <div class="frame" style="display:grid; gap:3vh; align-content:center; text-align:center">
     <div class="kicker" data-anim>Economy · 热爱被组织成产业</div>
-    <div style="font-family:var(--serif-en); font-weight:800; font-size:14vw; line-height:.88; letter-spacing:-.03em; font-feature-settings:'tnum'" data-anim>
+    <div style="font-family:var(--serif-en); font-weight:800; font-size:min(14vw,24.8889vh); line-height:.88; letter-spacing:-.03em; font-feature-settings:'tnum'" data-anim>
       75.7<span style="font-family:var(--serif-en); font-weight:500; font-size:.35em; letter-spacing:0; opacity:.72; margin-left:.14em">亿美元</span>
     </div>
-    <h2 class="h-xl" style="font-size:4vw; opacity:.78" data-anim>FIFA 2019–2022 周期收入</h2>
+    <h2 class="h-xl" style="font-size:min(4vw,7.1111vh); opacity:.78" data-anim>FIFA 2019–2022 周期收入</h2>
     <p class="lead" style="max-width:50vw; margin:0 auto" data-anim>
       Emotion Becomes Economy — 转播权、赞助、门票、旅游，共同组成世界杯背后的巨大机器。
     </p>
@@ -1073,7 +1073,7 @@
   </div>
   <div class="frame" style="padding-top:5vh">
     <div class="kicker" data-anim>Ecosystem · 全球底座</div>
-    <h2 class="h-xl" style="font-size:5.8vw" data-anim>足球产业的底座</h2>
+    <h2 class="h-xl" style="font-size:min(5.8vw,10.3111vh)" data-anim>足球产业的底座</h2>
     <p class="lead" style="margin-bottom:3vh" data-anim>A Global Profession — 世界杯只是顶端，下面是庞大的生态。</p>
 
     <div class="grid-4" style="margin-top:3vh">
@@ -1113,7 +1113,7 @@
   </div>
   <div class="frame" style="padding-top:5vh">
     <div class="kicker" data-anim>Expansion · 扩军</div>
-    <h2 class="h-xl" style="font-size:5.8vw" data-anim>2026：扩军成为现实</h2>
+    <h2 class="h-xl" style="font-size:min(5.8vw,10.3111vh)" data-anim>2026：扩军成为现实</h2>
     <p class="lead" style="margin-bottom:3vh" data-anim>More Nations. More Stories. — 首届 48 队、104 场的赛制已经落地；加拿大、墨西哥与美国共同承办。</p>
 
     <div class="grid-4" style="margin-top:3vh">
@@ -1151,9 +1151,9 @@
     <div>Why · 为什么</div>
     <div>19 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:8vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:8vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>The Core Question</div>
-    <h1 class="h-hero" style="font-size:7vw; line-height:1.15">
+    <h1 class="h-hero" style="font-size:min(7vw,12.4444vh); line-height:1.15">
       <span data-anim style="display:block">所以我们到底</span>
       <span data-anim style="display:block">为什么爱看？</span>
     </h1>
@@ -1174,9 +1174,9 @@
     <div>End · 感谢</div>
     <div>20 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Epilogue</div>
-    <h1 class="h-hero" style="font-size:8.5vw" data-anim>For the Love of the Game</h1>
+    <h1 class="h-hero" style="font-size:min(8.5vw,15.1111vh)" data-anim>For the Love of the Game</h1>
     <p class="lead" style="max-width:55vw" data-anim>
       足球不是世界上最复杂的运动，<br>
       却可能是最接近人类情绪的运动。

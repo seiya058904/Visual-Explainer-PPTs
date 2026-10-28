@@ -1,5 +1,7 @@
 # AI是如何影响我们生活的 — 深审与交付记录
 
+> 最新布局复验：已修复；四档动态全页通过。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`2d6da8aa90fc5f48cb7bdf7f1544be81b335e7acca76bd72dd7524f9246447c4`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 > 最终交付：已从维护源规范导出至原成品路径，Approved 状态保留；10 页三档逐页检查通过，断网静态阅读（含祖先裁切边界）通过。SHA-256：`642c8e8a9afa3ad8bfdbaec940eaec847a600a5656b33e142c233b44e2da2efc`。
 
 - Artifact: `ppt-collection/ai-and-life.html`
@@ -31,3 +33,8 @@ The maintained source increases contrast on slide 3’s Pew country-median figur
 ## 最终验收证据
 
 完整三档报告：`.codex/qa-ai-legacy-final/approved-ai-and-life.json`。所有页面的实际文字边界、页脚、缺图、脚本及请求检查通过；pipeline适用时覆盖初始/推进/完成/继续翻页。ESC首档验证。离线完整逐页报告：`.codex/offline-final38/results.json`，按上方相同SHA核对。网络照片限制见目录字段；本记录不等于物理投影或所有浏览器认证。
+
+
+## 宽矮窗口修复补充
+
+触发页：6, 7, 10。字号按可用高度约束；移除过大的 frame 最小高度；问题页保留底部安全距离；P7 双列改为内容高度，留出下方数据行。共享字号规则覆盖整份作品，已整份复测，正文未改。

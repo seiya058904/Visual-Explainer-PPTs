@@ -1,5 +1,7 @@
 # 螺丝：把世界固定在一起 — 事实复核与维护记录
 
+> 最新布局复验：已修复；四档动态全页通过。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`5f5a922d71263da2806182349b7d94c219214b23decdd9538e47fef899248216`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 - 原状态：Approved保留；本轮修订产物尚未写入`ppt-collection/screws.html`，由主任务在新SHA验收后替换。
 - 维护源：`2026-10-28-legacy-maintenance/screws.html`。
 - 新候选：`.codex/screws-factual-final/screws.html`。
@@ -64,3 +66,8 @@ Approved status retained. Source exported through the repository exporter; publi
 - Artifact SHA-256: `434f0975192ebd99b55d1c9cbf3b752b47950b63e205d74d27dcace07b7ee9fd`
 - Three-viewport all-page QA: `.codex/qa-screws-factual-final-canonical/approved-results.json`.
 - Source: `2026-10-28-legacy-maintenance/screws.html`; pages: 20.
+
+
+## 宽矮窗口修复补充
+
+触发页：5。字号按可用高度约束；移除过大的 frame 最小高度。共享字号规则覆盖整份作品，已整份复测，正文未改。

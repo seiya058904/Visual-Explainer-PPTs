@@ -1,5 +1,7 @@
 # 流动的母体 — 深审与交付记录
 
+> 最新布局复验：已修复；四档动态全页通过。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`7407852e700693a91813f7fb39e4c0b195f14e407c66a619c64fa7229c8f0a61`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 > 最终交付：已从维护源规范导出至原成品路径，Approved 状态保留；15 页三档逐页检查通过，断网静态阅读（含祖先裁切边界）通过。SHA-256：`2f91d9b81fb6393ba0656210e21e2bcfdc240929e5d0cb84340fbd03f7aaf47c`。
 
 - Artifact: `ppt-collection/concrete-liquid-skeleton.html`
@@ -33,3 +35,8 @@ A 1000×560 screenshot showed the stat card clipped because the P4 frame had a f
 ## 最终验收证据
 
 完整三档报告：`.codex/qa-inventory-fixes/concrete-final/approved-concrete-liquid-skeleton.json`。所有页面的实际文字边界、页脚、缺图、脚本及请求检查通过；pipeline适用时覆盖初始/推进/完成/继续翻页。ESC首档验证。离线完整逐页报告：`.codex/offline-final38/results.json`，按上方相同SHA核对。网络照片限制见目录字段；本记录不等于物理投影或所有浏览器认证。
+
+
+## 宽矮窗口修复补充
+
+触发页：2, 15。字号按可用高度约束；移除过大的 frame 最小高度。共享字号规则覆盖整份作品，已整份复测，正文未改。

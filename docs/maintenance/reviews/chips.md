@@ -1,5 +1,7 @@
 # 芯片：现代科技背后的隐形心脏 — 静态审阅记录
 
+> 最新布局复验：已修复；四档动态全页通过。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`0fcd0f924d0cceacab85ab0f1f0fff877a0d222252b777994e6889fae80c7231`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 - Artifact: `ppt-collection/chips.html`
 - Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Inferred slide count: 24
@@ -37,3 +39,8 @@ Approved status retained. Source exported through the repository exporter; publi
 - Artifact SHA-256: `63f70e2b6307739accc8aed9e6a814426510e99e4c4bfb9ed59e7ba0995a088a`
 - Three-viewport all-page QA: `.codex/qa-inventory-fixes/chips-cold-final-qa/approved-results.json`.
 - Source: `2026-10-28-legacy-maintenance/chips.html`; pages: 24.
+
+
+## 宽矮窗口修复补充
+
+触发页：10, 21。字号按可用高度约束；移除过大的 frame 最小高度。共享字号规则覆盖整份作品，已整份复测，正文未改。

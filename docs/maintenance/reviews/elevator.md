@@ -1,5 +1,7 @@
 # 电梯：让城市向天空生长 · Elevator Civilization — 深度维护审阅
 
+> 最新布局复验：已修复；四档动态全页通过。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`7b0b11e4776680dbb19cdb33771ecfba8e58ea5f0c0ec58a164ce5065e0d9be6`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 > 本轮交付：已从维护源重新导出至原有成品路径；Approved 状态保留。10 页三档逐页检查与断网核心阅读检查通过。最终 SHA-256：`3fa3de236560b5fffb85a21edae0d5d13eb1b90cbb894608cf3d48216b6e0939`。事实和视觉变更见下文；旧阶段记录不替代这里的最终状态。
 
 - 源文件：`2026-10-28-legacy-maintenance/elevator.html`
@@ -47,3 +49,8 @@
 - 正式报告：`.codex/qa-release-seven-final/approved-elevator.json`；三档有效视口共30页视图，console/pageerror/failed/越界/foot-nav遮挡/不可见正文/坏图均为0。
 - 1600档 ESC 总览打开与缩略图选页均通过；pipeline页完成与退出状态已纳入报告（若本deck存在）。
 - 完整离线视觉等价不在本项声明范围；全库外网隔绝测试及最终发布后证据由主任务汇总。
+
+
+## 宽矮窗口修复补充
+
+触发页：1, 10。字号按可用高度约束；移除过大的 frame 最小高度；问题页保留底部安全距离。共享字号规则覆盖整份作品，已整份复测，正文未改。

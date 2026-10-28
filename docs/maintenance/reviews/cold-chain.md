@@ -1,5 +1,7 @@
 # 冷链：现代食物背后的低温文明 — 静态审阅记录
 
+> 最新布局复验：本项审查通过，无需改动。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`084d0ca837e3b6a4ba1e825106366a45c7f6601ada64e3c91ea1fcac6c8569e8`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 - Artifact: `ppt-collection/cold-chain.html`
 - Status: Approved retained; source-first refinement integrated after final-byte browser QA. See the final verification section and release ledger.
 - Inferred slide count: 10
@@ -39,3 +41,8 @@ Approved status retained. Source exported through the repository exporter; publi
 - Artifact SHA-256: `084d0ca837e3b6a4ba1e825106366a45c7f6601ada64e3c91ea1fcac6c8569e8`
 - Three-viewport all-page QA: `.codex/qa-inventory-fixes/chips-cold-final-qa/approved-results.json`.
 - Source: `2026-10-28-legacy-maintenance/cold-chain.html`; pages: 10.
+
+
+## 宽矮窗口修复补充
+
+本轮未改源与成品；两档动态与两档静态逐页检查通过。

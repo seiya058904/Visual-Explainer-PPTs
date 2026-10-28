@@ -1,7 +1,7 @@
 {
   "active-noise-cancellation-fighting-sound-with-sound": {
     "source": "ppt-collection/active-noise-cancellation-fighting-sound-with-sound.html",
-    "sha256": "7a552eb77bc240e19dad0a6f6f8b682c61e17e44a08d464c462d213f02b42cdf",
+    "sha256": "58ac3e8fbb65f6d3a5ca3266abba31d5db06d5ec3046c56b9495c4a5576da621",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -9,7 +9,7 @@
   },
   "ai-and-life": {
     "source": "ppt-collection/ai-and-life.html",
-    "sha256": "642c8e8a9afa3ad8bfdbaec940eaec847a600a5656b33e142c233b44e2da2efc",
+    "sha256": "2d6da8aa90fc5f48cb7bdf7f1544be81b335e7acca76bd72dd7524f9246447c4",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -17,7 +17,7 @@
   },
   "ai-impact-on-modern-life": {
     "source": "ppt-collection/ai-impact-on-modern-life.html",
-    "sha256": "245ad8d70e8605ae96c657d7a7fb96c8e0b3cec18826c9a221697c63cce83f57",
+    "sha256": "56bbe470ac858c736e8af25207831af1003a8a7abf3e190fb0ee360d3573fd24",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -25,7 +25,7 @@
   },
   "ai-weather-learning-the-atmosphere": {
     "source": "ppt-collection/ai-weather-learning-the-atmosphere.html",
-    "sha256": "e775612d3f1470dd73975b89438b75d216015e35b51a1da206f85846f02745e4",
+    "sha256": "49a36e76bcc339f55e61437c07c9843041d1206c577acf2ec61aa810a52af484",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -41,7 +41,7 @@
   },
   "bill-gates-biography": {
     "source": "ppt-collection/bill-gates-biography.html",
-    "sha256": "378b35be23fee05c3a1c215434b7266ab9cd089a04567377c8d04cb35aea8c1c",
+    "sha256": "0db6dd06edde1be2ae5073b761329cd6a6347f1b1ba96fdf4986b686c1bfe964",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -49,7 +49,7 @@
   },
   "canned-civilization": {
     "source": "ppt-collection/canned-civilization.html",
-    "sha256": "cdfb13321f792ae6615b79e3fa5a35304100623b8f942f0bd43ce454360d2892",
+    "sha256": "7efdf349cf6a67fea595f2faf6297cfd79cb406b1da7377f67572e21a0b8f2fa",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -57,7 +57,7 @@
   },
   "chips": {
     "source": "ppt-collection/chips.html",
-    "sha256": "63f70e2b6307739accc8aed9e6a814426510e99e4c4bfb9ed59e7ba0995a088a",
+    "sha256": "0fcd0f924d0cceacab85ab0f1f0fff877a0d222252b777994e6889fae80c7231",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -65,7 +65,7 @@
   },
   "clocks": {
     "source": "ppt-collection/clocks.html",
-    "sha256": "4f89727071b50f8bd13343134a2f8e828ce804d0e1fa302b3c1667a80b9aa4bf",
+    "sha256": "b97b6303a76eabd2c35c41d51442d2bc5de31ab10703271dd8d8c817374e6adb",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -81,7 +81,7 @@
   },
   "concrete-liquid-skeleton": {
     "source": "ppt-collection/concrete-liquid-skeleton.html",
-    "sha256": "2f91d9b81fb6393ba0656210e21e2bcfdc240929e5d0cb84340fbd03f7aaf47c",
+    "sha256": "7407852e700693a91813f7fb39e4c0b195f14e407c66a619c64fa7229c8f0a61",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -89,7 +89,7 @@
   },
   "credit": {
     "source": "ppt-collection/credit.html",
-    "sha256": "90578cc3b2654c474076d9d1aa395b451285232dfd1747603ad68743e32eb0a0",
+    "sha256": "2d9d55ba50e33646700439f999dd2859354726e5bb68d2e93c94f8977d589bfb",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -105,7 +105,7 @@
   },
   "electric-grid-bottleneck": {
     "source": "ppt-collection/electric-grid-bottleneck.html",
-    "sha256": "f63813d5a302585419c8f1c4106409f4215bf8ad3079ef059d7064a8de75bd5c",
+    "sha256": "6637e1d18ab5b79a1f690f1e49b654b28abf5b144c2e7d17c2bd6bd4446cb98c",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -113,7 +113,7 @@
   },
   "elevator": {
     "source": "ppt-collection/elevator.html",
-    "sha256": "3fa3de236560b5fffb85a21edae0d5d13eb1b90cbb894608cf3d48216b6e0939",
+    "sha256": "7b0b11e4776680dbb19cdb33771ecfba8e58ea5f0c0ec58a164ce5065e0d9be6",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -121,7 +121,7 @@
   },
   "fiber-optics-glass-nervous-system": {
     "source": "ppt-collection/fiber-optics-glass-nervous-system.html",
-    "sha256": "811c2363dfcfde28f0edb9ee57f8655705abae30bf2e4b7555fdb8c29d065c31",
+    "sha256": "947b9e44c22f84bf42d2c076f74a55086be6612d40eb043c7c70159af05c9db7",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -137,7 +137,7 @@
   },
   "insurance": {
     "source": "ppt-collection/insurance.html",
-    "sha256": "0f2a990f79841f8754f930f6c110dc409d63203e3d6180d4ad584756ca31beab",
+    "sha256": "268a6c69fb813bcb482a6f60242cf167be0a02a72cffb7f6a8d8b6ed8367d7a6",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -145,7 +145,7 @@
   },
   "jensen-huang": {
     "source": "ppt-collection/jensen-huang.html",
-    "sha256": "35f64b4a1dbae5463d2d3a31f97a9f28d2504d8c1f690ff0114f1181848c4f1b",
+    "sha256": "0ea09d94654210621432135709900076bfc77c1838638c5daf4f98b37baddc90",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -153,7 +153,7 @@
   },
   "keys-and-locks": {
     "source": "ppt-collection/keys-and-locks.html",
-    "sha256": "da273c2c53688842ffabf436dbdbf50fed6e91d01752833781058cd31fec5c7d",
+    "sha256": "1965fee2d7070bbb601ba938224cd0820a6e6f8f891bbb0076731126d55ae35c",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -161,7 +161,7 @@
   },
   "lithium-battery-tetherless-world": {
     "source": "ppt-collection/lithium-battery-tetherless-world.html",
-    "sha256": "397586f6fc8fbcee8aba124abf43795eaa2078387063ccdbecccd37d8613cae0",
+    "sha256": "4a5e4f91d44dc8fb3826a1ae477c84e2ed17a6b44d6e35830ff7a53aceea0777",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -169,7 +169,7 @@
   },
   "medical-longevity": {
     "source": "ppt-collection/medical-longevity.html",
-    "sha256": "6301c8f32bd5de70143a4ce71139b0df7a9656cb5b665823a51368a2d1c5edb0",
+    "sha256": "d5aa96300e52eac61f81e2d2e0f8fc781e28e032c2c1cd880447040d2fe3337e",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -177,7 +177,7 @@
   },
   "microbial-chocolate-designing-flavour": {
     "source": "ppt-collection/microbial-chocolate-designing-flavour.html",
-    "sha256": "f6efdc4d58b20532cd136c713a1cc9d5b191840a475a54b5920f95b46012a6b7",
+    "sha256": "d91ed1aaf707b9be4bb17e197971e3d38919a6e581c74593e7e9448daf57d2b0",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -185,7 +185,7 @@
   },
   "microwave-where-heat-comes-from": {
     "source": "ppt-collection/microwave-where-heat-comes-from.html",
-    "sha256": "52669e3024812db5de54f47ec4eaeb8fd3b43c64c2004ba92b1a72d5b6983b56",
+    "sha256": "0374d3e25dc0fe4556911950c3d5aca785992c96608912b704e985c3ba3eba9b",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -193,7 +193,7 @@
   },
   "navigation": {
     "source": "ppt-collection/navigation.html",
-    "sha256": "43a06251d1c16bc2be6dd46f9b19f67f595151ca0c32358503072970c8ee012a",
+    "sha256": "ad64b94c58ee3d0f17664fbbc3e74fa65bebbd2490d73ca71910535dbb3e36fb",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -201,7 +201,7 @@
   },
   "pills-industrial-miracle": {
     "source": "ppt-collection/pills-industrial-miracle.html",
-    "sha256": "f548da83b0b234d9d391785051190b5206c1b9d4c8d83dc63ce1624a1cc5bb0c",
+    "sha256": "91e256a6de2730b12acddb8991ad5b2bcbbe307e5e539a4088df315e79e4b3dd",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -209,7 +209,7 @@
   },
   "planetary-defense-changing-the-odds": {
     "source": "ppt-collection/planetary-defense-changing-the-odds.html",
-    "sha256": "d82a125dd4b2df41f2739fdc3774569ae29507b52e01e7a165f4d0ee609b6180",
+    "sha256": "2e11461e6d4e04a0ee1d7114189c4f88aeb1d09a916d0a3541c83526f1a94b67",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -217,7 +217,7 @@
   },
   "qr-code-inside-the-black-white-squares": {
     "source": "ppt-collection/qr-code-inside-the-black-white-squares.html",
-    "sha256": "a6205b0b1bc1b8f754d2c21a10e0cb59c6e7639e8c4e6ba8caa086d562b9411d",
+    "sha256": "43b70588ff925ecbb941d61af1cd21b2c28309d5a148eec9b6640d4ffb17f2a2",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -225,7 +225,7 @@
   },
   "queueing": {
     "source": "ppt-collection/queueing.html",
-    "sha256": "096eb75225470d4857a3788d5f1cc50c048e22e0721649fecfd505dc5320e710",
+    "sha256": "6fa4968174f335a4bac8f47d6e573422f6d2fa0f36a0caf6d188bb4145dd1b6e",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -233,7 +233,7 @@
   },
   "science-of-garbage": {
     "source": "ppt-collection/science-of-garbage.html",
-    "sha256": "3ac20f7867200915bef0a309427fc6df516b8c9107c8de2d266be7696738b320",
+    "sha256": "bc1df174f01324b0d2d0b20a01edac6a1d83920528275c532bbd35ddf4fb052f",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -241,7 +241,7 @@
   },
   "screws": {
     "source": "ppt-collection/screws.html",
-    "sha256": "434f0975192ebd99b55d1c9cbf3b752b47950b63e205d74d27dcace07b7ee9fd",
+    "sha256": "5f5a922d71263da2806182349b7d94c219214b23decdd9538e47fef899248216",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -257,7 +257,7 @@
   },
   "the-art-of-cinema": {
     "source": "ppt-collection/the-art-of-cinema.html",
-    "sha256": "fd34bc268eeff06ba026066c8cbcfe39926d65f21a4d81caa6f11896fb6d7d67",
+    "sha256": "d150be3d0c8b58823f36cd70c391756767bcc16fdc4381ea61580872effb7a24",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -281,7 +281,7 @@
   },
   "weather-forecast": {
     "source": "ppt-collection/weather-forecast.html",
-    "sha256": "be1ccd57788d76fa455011deaa288aa75f79fed9cf7099d98ba369c69b0b5b52",
+    "sha256": "828ccbebb1ea197f11deb57718c24df8a00a3d56beb1ca6e44eed501b4e4d713",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",
@@ -297,7 +297,7 @@
   },
   "world-cup": {
     "source": "ppt-collection/world-cup.html",
-    "sha256": "7ad264688fcdd1a0fa327bd70b57a277a7e1b355a46acc4021ed4b97667b50b5",
+    "sha256": "cc0112dce1f0490da737397a4714dbb86fe5d88b3387992933bd30296caf01c6",
     "page": 1,
     "viewport": "1600x900",
     "output": "960x540",

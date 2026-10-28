@@ -1,5 +1,7 @@
 # 电网：电力时代看不见的瓶颈 — 深审与交付记录
 
+> 最新布局复验：已修复；四档动态全页通过。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`6637e1d18ab5b79a1f690f1e49b654b28abf5b144c2e7d17c2bd6bd4446cb98c`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 > 本轮交付：已从维护源重新导出至原有成品路径；Approved 状态保留。13 页三档逐页检查与断网核心阅读检查通过。最终 SHA-256：`f63813d5a302585419c8f1c4106409f4215bf8ad3079ef059d7064a8de75bd5c`。事实和视觉变更见下文；旧阶段记录不替代这里的最终状态。
 
 - Artifact: `ppt-collection/electric-grid-bottleneck.html`
@@ -44,3 +46,8 @@ P2核对2026年7月IEA更新：3.6%为2026全球用电增长、3.8%为2027全球
 ## Final overview-selection supplement — 2026-10-28
 
 The earlier final three-viewport report recorded overview opening but predated the selection assertion. Targeted real Chromium testing at 1600×900 now opened ESC overview from the first page, closed it, advanced by keyboard to page 2, opened overview again and clicked the first card. The index returned from 1 to 0 and the overview closed; no page errors. Current artifact SHA-256 f63813d5a302585419c8f1c4106409f4215bf8ad3079ef059d7064a8de75bd5c was unchanged and matched the tested publication receipt. Evidence: .codex/final-overview-selection/results.json. This supplements only overview interaction; no geometry or factual re-review is claimed.
+
+
+## 宽矮窗口修复补充
+
+触发页：3, 4, 8。字号按可用高度约束；移除过大的 frame 最小高度。共享字号规则覆盖整份作品，已整份复测，正文未改。

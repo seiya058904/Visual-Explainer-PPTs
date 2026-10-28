@@ -1,0 +1,1129 @@
+{
+  "schemaVersion": 1,
+  "baselineCommit": "14171ecacd390c5bed043eb52b4d429fc1375b37",
+  "verifiedAtUtc": "2026-10-28T15:36:48.277279+00:00",
+  "scope": "Approved desktop layout follow-up; Pending unchanged; no factual or runtime changes",
+  "totals": {
+    "approvedDecks": 38,
+    "pages": 569,
+    "changedDecks": 30,
+    "unchangedDecks": 8,
+    "changedPages": 457,
+    "changedDynamicPageViewports": 1828,
+    "unchangedDynamicPageViewports": 224,
+    "staticPageViewports": 1138,
+    "staticFailures": 0
+  },
+  "staticEvidence": ".codex/approved-bottom/final-regression-retry/results.json",
+  "entries": [
+    {
+      "id": "active-noise-cancellation-fighting-sound-with-sound",
+      "source": "2026-08-15-active-noise-cancellation-fighting-sound-with-sound/index.html",
+      "sourceSha256": "9622da54c2d4cc0bee532847bb9d06daf9f279933ee0a8822e8dc95d224b83e9",
+      "artifact": "ppt-collection/active-noise-cancellation-fighting-sound-with-sound.html",
+      "beforeSha256": "7a552eb77bc240e19dad0a6f6f8b682c61e17e44a08d464c462d213f02b42cdf",
+      "sha256": "58ac3e8fbb65f6d3a5ca3266abba31d5db06d5ec3046c56b9495c4a5576da621",
+      "browserEvidence": ".codex/approved-bottom/dynamic-final/approved-active-noise-cancellation-fighting-sound-with-sound.json",
+      "pageCount": 15,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        2,
+        6
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度",
+        "问题页保留底部安全距离"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/followup-offline/results.json",
+      "offlineViewport": "1280x600",
+      "offlineSha256": "58ac3e8fbb65f6d3a5ca3266abba31d5db06d5ec3046c56b9495c4a5576da621",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 60,
+      "staticPageViewports": 30
+    },
+    {
+      "id": "ai-and-life",
+      "source": "2026-10-28-legacy-maintenance/ai-and-life.html",
+      "sourceSha256": "0affa76a6e35adbb261f70b9f9ecbd7b29be7b420f8e63bd34fd8358fc371d5c",
+      "artifact": "ppt-collection/ai-and-life.html",
+      "beforeSha256": "642c8e8a9afa3ad8bfdbaec940eaec847a600a5656b33e142c233b44e2da2efc",
+      "sha256": "2d6da8aa90fc5f48cb7bdf7f1544be81b335e7acca76bd72dd7524f9246447c4",
+      "browserEvidence": ".codex/approved-bottom/dynamic-final/approved-ai-and-life.json",
+      "pageCount": 10,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        6,
+        7,
+        10
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度",
+        "问题页保留底部安全距离",
+        "P7 双列改为内容高度，留出下方数据行"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/followup-offline/results.json",
+      "offlineViewport": "1280x600",
+      "offlineSha256": "2d6da8aa90fc5f48cb7bdf7f1544be81b335e7acca76bd72dd7524f9246447c4",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 40,
+      "staticPageViewports": 20
+    },
+    {
+      "id": "ai-impact-on-modern-life",
+      "source": "2026-05-13-ai-impact-on-modern-life/ai-impact-on-modern-life.html",
+      "sourceSha256": "64007823553c218cd92aa60148019af34e852a40cb9ee4c3461f6d02ee6ebb1c",
+      "artifact": "ppt-collection/ai-impact-on-modern-life.html",
+      "beforeSha256": "245ad8d70e8605ae96c657d7a7fb96c8e0b3cec18826c9a221697c63cce83f57",
+      "sha256": "56bbe470ac858c736e8af25207831af1003a8a7abf3e190fb0ee360d3573fd24",
+      "browserEvidence": ".codex/approved-bottom/dynamic/approved-ai-impact-on-modern-life.json",
+      "pageCount": 10,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        1
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/after-wide/results.json",
+      "offlineViewport": "1920x900",
+      "offlineSha256": "56bbe470ac858c736e8af25207831af1003a8a7abf3e190fb0ee360d3573fd24",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 40,
+      "staticPageViewports": 20
+    },
+    {
+      "id": "ai-weather-learning-the-atmosphere",
+      "source": "2026-08-14-ai-weather-learning-the-atmosphere/index.html",
+      "sourceSha256": "bb6935152036f5a5a6b1a6c8113fc8bec5cba3065027ea7d4f6b48306a6f9740",
+      "artifact": "ppt-collection/ai-weather-learning-the-atmosphere.html",
+      "beforeSha256": "e775612d3f1470dd73975b89438b75d216015e35b51a1da206f85846f02745e4",
+      "sha256": "49a36e76bcc339f55e61437c07c9843041d1206c577acf2ec61aa810a52af484",
+      "browserEvidence": ".codex/approved-bottom/dynamic-final/approved-ai-weather-learning-the-atmosphere.json",
+      "pageCount": 13,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        2,
+        6,
+        8,
+        11,
+        13
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度",
+        "问题页保留底部安全距离"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/followup-offline/results.json",
+      "offlineViewport": "1280x600",
+      "offlineSha256": "49a36e76bcc339f55e61437c07c9843041d1206c577acf2ec61aa810a52af484",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 52,
+      "staticPageViewports": 26
+    },
+    {
+      "id": "airplane",
+      "source": "2026-10-28-legacy-maintenance/airplane.html",
+      "sourceSha256": "81e2d7300ca49632e38ffbb4868b2a0950ae37e5968b7c85c915b802349baf95",
+      "artifact": "ppt-collection/airplane.html",
+      "sha256": "99a6732b56f3792eb25ea22c9ffa81b1fa9dfc35189a867615bc6b10de4c6f31",
+      "status": "approved",
+      "changed": false,
+      "pageCount": 20,
+      "problemPages": [],
+      "fixes": [],
+      "browserEvidence": ".codex/approved-bottom/unchanged-dynamic/approved-airplane.json",
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offlineSha256": "99a6732b56f3792eb25ea22c9ffa81b1fa9dfc35189a867615bc6b10de4c6f31",
+      "offlineReusedUnchangedBytes": true,
+      "dynamicViewports": [
+        "1920x900",
+        "1280x600"
+      ],
+      "dynamicPageViewports": 40,
+      "staticPageViewports": 40
+    },
+    {
+      "id": "bill-gates-biography",
+      "source": "2026-10-28-legacy-maintenance/bill-gates-biography.html",
+      "sourceSha256": "0f83d60dd0cf7f8621afacd24bad073cad8d9a77a81358e6942b8fc91dd318f0",
+      "artifact": "ppt-collection/bill-gates-biography.html",
+      "beforeSha256": "378b35be23fee05c3a1c215434b7266ab9cd089a04567377c8d04cb35aea8c1c",
+      "sha256": "0db6dd06edde1be2ae5073b761329cd6a6347f1b1ba96fdf4986b686c1bfe964",
+      "browserEvidence": ".codex/approved-bottom/dynamic-final/approved-bill-gates-biography.json",
+      "pageCount": 20,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        3,
+        4,
+        8,
+        9,
+        11,
+        14,
+        16,
+        18
+      ],
+      "fixes": [
+        "图片与图注分行，保留图注高度",
+        "问题页保留底部安全距离"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/followup-offline/results.json",
+      "offlineViewport": "1280x600",
+      "offlineSha256": "0db6dd06edde1be2ae5073b761329cd6a6347f1b1ba96fdf4986b686c1bfe964",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 80,
+      "staticPageViewports": 40
+    },
+    {
+      "id": "canned-civilization",
+      "source": "2026-10-28-legacy-maintenance/canned-civilization.html",
+      "sourceSha256": "b80638c4006be6ef0431e45f64cfd3a714ca43357f8a7f03437f9d877cef6ca6",
+      "artifact": "ppt-collection/canned-civilization.html",
+      "beforeSha256": "cdfb13321f792ae6615b79e3fa5a35304100623b8f942f0bd43ce454360d2892",
+      "sha256": "7efdf349cf6a67fea595f2faf6297cfd79cb406b1da7377f67572e21a0b8f2fa",
+      "browserEvidence": ".codex/approved-bottom/dynamic/approved-canned-civilization.json",
+      "pageCount": 15,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        9
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/after-wide/results.json",
+      "offlineViewport": "1920x900",
+      "offlineSha256": "7efdf349cf6a67fea595f2faf6297cfd79cb406b1da7377f67572e21a0b8f2fa",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 60,
+      "staticPageViewports": 30
+    },
+    {
+      "id": "chips",
+      "source": "2026-10-28-legacy-maintenance/chips.html",
+      "sourceSha256": "82553acfcdb197d33c3232e5956fa27c2a0277e538e98c43bac916785e124434",
+      "artifact": "ppt-collection/chips.html",
+      "beforeSha256": "63f70e2b6307739accc8aed9e6a814426510e99e4c4bfb9ed59e7ba0995a088a",
+      "sha256": "0fcd0f924d0cceacab85ab0f1f0fff877a0d222252b777994e6889fae80c7231",
+      "browserEvidence": ".codex/approved-bottom/dynamic/approved-chips.json",
+      "pageCount": 24,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        10,
+        21
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/after-wide/results.json",
+      "offlineViewport": "1920x900",
+      "offlineSha256": "0fcd0f924d0cceacab85ab0f1f0fff877a0d222252b777994e6889fae80c7231",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 96,
+      "staticPageViewports": 48
+    },
+    {
+      "id": "clocks",
+      "source": "2026-10-28-legacy-maintenance/clocks.html",
+      "sourceSha256": "453ee758829eb19b1d5b7faefa53b20215641db229ba1599a05f14e15a326c9b",
+      "artifact": "ppt-collection/clocks.html",
+      "beforeSha256": "4f89727071b50f8bd13343134a2f8e828ce804d0e1fa302b3c1667a80b9aa4bf",
+      "sha256": "b97b6303a76eabd2c35c41d51442d2bc5de31ab10703271dd8d8c817374e6adb",
+      "browserEvidence": ".codex/approved-bottom/dynamic/approved-clocks.json",
+      "pageCount": 10,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        3,
+        10
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/after-wide/results.json",
+      "offlineViewport": "1920x900",
+      "offlineSha256": "b97b6303a76eabd2c35c41d51442d2bc5de31ab10703271dd8d8c817374e6adb",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 40,
+      "staticPageViewports": 20
+    },
+    {
+      "id": "cold-chain",
+      "source": "2026-10-28-legacy-maintenance/cold-chain.html",
+      "sourceSha256": "fb79941645a21d8a5223a3e51a2704b98ef2506fa642ea5e2ed990230e1be857",
+      "artifact": "ppt-collection/cold-chain.html",
+      "sha256": "084d0ca837e3b6a4ba1e825106366a45c7f6601ada64e3c91ea1fcac6c8569e8",
+      "status": "approved",
+      "changed": false,
+      "pageCount": 10,
+      "problemPages": [],
+      "fixes": [],
+      "browserEvidence": ".codex/approved-bottom/unchanged-dynamic/approved-cold-chain.json",
+      "offlineEvidence": ".codex/offline-chips-cold-final2/results.json",
+      "offlineSha256": "084d0ca837e3b6a4ba1e825106366a45c7f6601ada64e3c91ea1fcac6c8569e8",
+      "offlineReusedUnchangedBytes": true,
+      "dynamicViewports": [
+        "1920x900",
+        "1280x600"
+      ],
+      "dynamicPageViewports": 20,
+      "staticPageViewports": 20
+    },
+    {
+      "id": "concrete-liquid-skeleton",
+      "source": "2026-10-28-legacy-maintenance/concrete-liquid-skeleton.html",
+      "sourceSha256": "c6575e8696007942fcf3ac7b2becd2fbd3c0b49aa170829404e05477d14c6991",
+      "artifact": "ppt-collection/concrete-liquid-skeleton.html",
+      "beforeSha256": "2f91d9b81fb6393ba0656210e21e2bcfdc240929e5d0cb84340fbd03f7aaf47c",
+      "sha256": "7407852e700693a91813f7fb39e4c0b195f14e407c66a619c64fa7229c8f0a61",
+      "browserEvidence": ".codex/approved-bottom/dynamic/approved-concrete-liquid-skeleton.json",
+      "pageCount": 15,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        2,
+        15
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/after-wide/results.json",
+      "offlineViewport": "1920x900",
+      "offlineSha256": "7407852e700693a91813f7fb39e4c0b195f14e407c66a619c64fa7229c8f0a61",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 60,
+      "staticPageViewports": 30
+    },
+    {
+      "id": "credit",
+      "source": "2026-10-28-legacy-maintenance/credit.html",
+      "sourceSha256": "0720fe4f6aad53920db62fcad34cfb42c41c08e9ce6572ad2acb8643254efbef",
+      "artifact": "ppt-collection/credit.html",
+      "beforeSha256": "90578cc3b2654c474076d9d1aa395b451285232dfd1747603ad68743e32eb0a0",
+      "sha256": "2d9d55ba50e33646700439f999dd2859354726e5bb68d2e93c94f8977d589bfb",
+      "browserEvidence": ".codex/approved-bottom/dynamic/approved-credit.json",
+      "pageCount": 20,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        3
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/after-wide/results.json",
+      "offlineViewport": "1920x900",
+      "offlineSha256": "2d9d55ba50e33646700439f999dd2859354726e5bb68d2e93c94f8977d589bfb",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 80,
+      "staticPageViewports": 40
+    },
+    {
+      "id": "display-how-images-are-made",
+      "source": "2026-08-15-display-how-images-are-made/index.html",
+      "sourceSha256": "dbd27bc621317105a05e9ca6017a31bdab3b0ccb62c33b689e18a6895dafdd9c",
+      "artifact": "ppt-collection/display-how-images-are-made.html",
+      "sha256": "fbe35300bb744e7e4bd0c38f9c74ab4a327e2ffc234ff20f323f7e09e1dfe8e9",
+      "status": "approved",
+      "changed": false,
+      "pageCount": 15,
+      "problemPages": [],
+      "fixes": [],
+      "browserEvidence": ".codex/approved-bottom/unchanged-dynamic/approved-display-how-images-are-made.json",
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offlineSha256": "fbe35300bb744e7e4bd0c38f9c74ab4a327e2ffc234ff20f323f7e09e1dfe8e9",
+      "offlineReusedUnchangedBytes": true,
+      "dynamicViewports": [
+        "1920x900",
+        "1280x600"
+      ],
+      "dynamicPageViewports": 30,
+      "staticPageViewports": 30
+    },
+    {
+      "id": "electric-grid-bottleneck",
+      "source": "2026-08-14-electric-grid-bottleneck-magazine/index.html",
+      "sourceSha256": "4cba13c0244e5e0c5cd393dbc1fa6a2a3a8a3cde711f1770aff597066cb1aaea",
+      "artifact": "ppt-collection/electric-grid-bottleneck.html",
+      "beforeSha256": "f63813d5a302585419c8f1c4106409f4215bf8ad3079ef059d7064a8de75bd5c",
+      "sha256": "6637e1d18ab5b79a1f690f1e49b654b28abf5b144c2e7d17c2bd6bd4446cb98c",
+      "browserEvidence": ".codex/approved-bottom/dynamic/approved-electric-grid-bottleneck.json",
+      "pageCount": 13,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        3,
+        4,
+        8
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/after-wide/results.json",
+      "offlineViewport": "1920x900",
+      "offlineSha256": "6637e1d18ab5b79a1f690f1e49b654b28abf5b144c2e7d17c2bd6bd4446cb98c",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 52,
+      "staticPageViewports": 26
+    },
+    {
+      "id": "elevator",
+      "source": "2026-10-28-legacy-maintenance/elevator.html",
+      "sourceSha256": "e043b45c9d0d3040da738466e2cecd9321a919756e1bd71db7f6b7582d51a3f9",
+      "artifact": "ppt-collection/elevator.html",
+      "beforeSha256": "3fa3de236560b5fffb85a21edae0d5d13eb1b90cbb894608cf3d48216b6e0939",
+      "sha256": "7b0b11e4776680dbb19cdb33771ecfba8e58ea5f0c0ec58a164ce5065e0d9be6",
+      "browserEvidence": ".codex/approved-bottom/dynamic-final/approved-elevator.json",
+      "pageCount": 10,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        1,
+        10
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度",
+        "问题页保留底部安全距离"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/followup-offline/results.json",
+      "offlineViewport": "1280x600",
+      "offlineSha256": "7b0b11e4776680dbb19cdb33771ecfba8e58ea5f0c0ec58a164ce5065e0d9be6",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 40,
+      "staticPageViewports": 20
+    },
+    {
+      "id": "fiber-optics-glass-nervous-system",
+      "source": "2026-10-28-legacy-maintenance/fiber-optics-glass-nervous-system.html",
+      "sourceSha256": "16511fad7e92da4e395757e42124d70dc14b7ae95ce6189b1c887abd03eedbcb",
+      "artifact": "ppt-collection/fiber-optics-glass-nervous-system.html",
+      "beforeSha256": "811c2363dfcfde28f0edb9ee57f8655705abae30bf2e4b7555fdb8c29d065c31",
+      "sha256": "947b9e44c22f84bf42d2c076f74a55086be6612d40eb043c7c70159af05c9db7",
+      "browserEvidence": ".codex/approved-bottom/dynamic/approved-fiber-optics-glass-nervous-system.json",
+      "pageCount": 10,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        3,
+        4,
+        6,
+        8,
+        9
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/after-wide/results.json",
+      "offlineViewport": "1920x900",
+      "offlineSha256": "947b9e44c22f84bf42d2c076f74a55086be6612d40eb043c7c70159af05c9db7",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 40,
+      "staticPageViewports": 20
+    },
+    {
+      "id": "glp-1-beyond-weight-loss",
+      "source": "2026-08-14-glp-1-beyond-weight-loss/index.html",
+      "sourceSha256": "8b8c16f9d90ea21992e52f22a1bdc08a976b53fde678d4d94fd6ec4d947832fc",
+      "artifact": "ppt-collection/glp-1-beyond-weight-loss.html",
+      "sha256": "e7679b373c951fdba995e4645ead392e104818773ceb519059979ea6abe2164c",
+      "status": "approved",
+      "changed": false,
+      "pageCount": 13,
+      "problemPages": [],
+      "fixes": [],
+      "browserEvidence": ".codex/approved-bottom/unchanged-dynamic/approved-glp-1-beyond-weight-loss.json",
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offlineSha256": "e7679b373c951fdba995e4645ead392e104818773ceb519059979ea6abe2164c",
+      "offlineReusedUnchangedBytes": true,
+      "dynamicViewports": [
+        "1920x900",
+        "1280x600"
+      ],
+      "dynamicPageViewports": 26,
+      "staticPageViewports": 26
+    },
+    {
+      "id": "insurance",
+      "source": "2026-10-28-legacy-maintenance/insurance.html",
+      "sourceSha256": "1b7a6486c88eb11e14263d791f5c6831cd879cc31996b18570513a17f657be66",
+      "artifact": "ppt-collection/insurance.html",
+      "beforeSha256": "0f2a990f79841f8754f930f6c110dc409d63203e3d6180d4ad584756ca31beab",
+      "sha256": "268a6c69fb813bcb482a6f60242cf167be0a02a72cffb7f6a8d8b6ed8367d7a6",
+      "browserEvidence": ".codex/approved-bottom/dynamic-final/approved-insurance.json",
+      "pageCount": 15,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        9,
+        10,
+        11
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度",
+        "问题页保留底部安全距离"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/followup-offline/results.json",
+      "offlineViewport": "1280x600",
+      "offlineSha256": "268a6c69fb813bcb482a6f60242cf167be0a02a72cffb7f6a8d8b6ed8367d7a6",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 60,
+      "staticPageViewports": 30
+    },
+    {
+      "id": "jensen-huang",
+      "source": "2026-10-28-legacy-maintenance/jensen-huang.html",
+      "sourceSha256": "98884e8b17fb2247621e85ca1aa406f618c2023c1b8a95cbe4c5e6e9926aeeb8",
+      "artifact": "ppt-collection/jensen-huang.html",
+      "beforeSha256": "35f64b4a1dbae5463d2d3a31f97a9f28d2504d8c1f690ff0114f1181848c4f1b",
+      "sha256": "0ea09d94654210621432135709900076bfc77c1838638c5daf4f98b37baddc90",
+      "browserEvidence": ".codex/approved-bottom/dynamic-final/approved-jensen-huang.json",
+      "pageCount": 20,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        2,
+        4,
+        6,
+        13,
+        15,
+        16
+      ],
+      "fixes": [
+        "问题页保留底部安全距离"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/followup-offline/results.json",
+      "offlineViewport": "1280x600",
+      "offlineSha256": "0ea09d94654210621432135709900076bfc77c1838638c5daf4f98b37baddc90",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 80,
+      "staticPageViewports": 40
+    },
+    {
+      "id": "keys-and-locks",
+      "source": "2026-10-28-legacy-maintenance/keys-and-locks.html",
+      "sourceSha256": "6e634d01d75428b6bdee59d95bc3b1ca4f8182febf3e9b2500fb51310f14028b",
+      "artifact": "ppt-collection/keys-and-locks.html",
+      "beforeSha256": "da273c2c53688842ffabf436dbdbf50fed6e91d01752833781058cd31fec5c7d",
+      "sha256": "1965fee2d7070bbb601ba938224cd0820a6e6f8f891bbb0076731126d55ae35c",
+      "browserEvidence": ".codex/approved-bottom/dynamic-final/approved-keys-and-locks.json",
+      "pageCount": 20,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        2
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度",
+        "问题页保留底部安全距离"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/followup-offline/results.json",
+      "offlineViewport": "1280x600",
+      "offlineSha256": "1965fee2d7070bbb601ba938224cd0820a6e6f8f891bbb0076731126d55ae35c",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 80,
+      "staticPageViewports": 40
+    },
+    {
+      "id": "lithium-battery-tetherless-world",
+      "source": "2026-10-28-lithium-battery-maintenance/lithium-battery-tetherless-world.html",
+      "sourceSha256": "e8ff223916d1b1a85ca27ab2ecae6584f8b15d5a4e3b328b165e085438f542cd",
+      "artifact": "ppt-collection/lithium-battery-tetherless-world.html",
+      "beforeSha256": "397586f6fc8fbcee8aba124abf43795eaa2078387063ccdbecccd37d8613cae0",
+      "sha256": "4a5e4f91d44dc8fb3826a1ae477c84e2ed17a6b44d6e35830ff7a53aceea0777",
+      "browserEvidence": ".codex/approved-bottom/dynamic-final/approved-lithium-battery-tetherless-world.json",
+      "pageCount": 10,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        5
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度",
+        "问题页保留底部安全距离"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/followup-offline/results.json",
+      "offlineViewport": "1280x600",
+      "offlineSha256": "4a5e4f91d44dc8fb3826a1ae477c84e2ed17a6b44d6e35830ff7a53aceea0777",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 40,
+      "staticPageViewports": 20
+    },
+    {
+      "id": "medical-longevity",
+      "source": "2026-10-28-legacy-maintenance/medical-longevity.html",
+      "sourceSha256": "df2d5b82350054b941f1541415cc5517452fc86c8ddee5da437bdbee36149a8a",
+      "artifact": "ppt-collection/medical-longevity.html",
+      "beforeSha256": "6301c8f32bd5de70143a4ce71139b0df7a9656cb5b665823a51368a2d1c5edb0",
+      "sha256": "d5aa96300e52eac61f81e2d2e0f8fc781e28e032c2c1cd880447040d2fe3337e",
+      "browserEvidence": ".codex/approved-bottom/dynamic-final/approved-medical-longevity.json",
+      "pageCount": 10,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        9
+      ],
+      "fixes": [
+        "图片与图注分行，保留图注高度",
+        "问题页保留底部安全距离"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/followup-offline/results.json",
+      "offlineViewport": "1280x600",
+      "offlineSha256": "d5aa96300e52eac61f81e2d2e0f8fc781e28e032c2c1cd880447040d2fe3337e",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 40,
+      "staticPageViewports": 20
+    },
+    {
+      "id": "microbial-chocolate-designing-flavour",
+      "source": "2026-08-15-microbial-chocolate-designing-flavour/index.html",
+      "sourceSha256": "02d24fc942bcfc5a2423feaa5e2f3376d73641b5096ed992821e589fc1cdcb3c",
+      "artifact": "ppt-collection/microbial-chocolate-designing-flavour.html",
+      "beforeSha256": "f6efdc4d58b20532cd136c713a1cc9d5b191840a475a54b5920f95b46012a6b7",
+      "sha256": "d91ed1aaf707b9be4bb17e197971e3d38919a6e581c74593e7e9448daf57d2b0",
+      "browserEvidence": ".codex/approved-bottom/dynamic/approved-microbial-chocolate-designing-flavour.json",
+      "pageCount": 13,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        5,
+        6,
+        9
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/after-wide/results.json",
+      "offlineViewport": "1920x900",
+      "offlineSha256": "d91ed1aaf707b9be4bb17e197971e3d38919a6e581c74593e7e9448daf57d2b0",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 52,
+      "staticPageViewports": 26
+    },
+    {
+      "id": "microwave-where-heat-comes-from",
+      "source": "2026-08-15-microwave-where-heat-comes-from/index.html",
+      "sourceSha256": "350e449d516fc1a10d201be6542207a59ab2163a316933f1cdad97793966b4a9",
+      "artifact": "ppt-collection/microwave-where-heat-comes-from.html",
+      "beforeSha256": "52669e3024812db5de54f47ec4eaeb8fd3b43c64c2004ba92b1a72d5b6983b56",
+      "sha256": "0374d3e25dc0fe4556911950c3d5aca785992c96608912b704e985c3ba3eba9b",
+      "browserEvidence": ".codex/approved-bottom/dynamic-final2-retry/approved-microwave-where-heat-comes-from.json",
+      "pageCount": 14,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        10
+      ],
+      "fixes": [
+        "问题页保留底部安全距离",
+        "P10 标题高度上限、压缩结论条内外间距"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/offline-final2/results.json",
+      "offlineViewport": "1280x720",
+      "offlineSha256": "0374d3e25dc0fe4556911950c3d5aca785992c96608912b704e985c3ba3eba9b",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 56,
+      "staticPageViewports": 28
+    },
+    {
+      "id": "navigation",
+      "source": "2026-10-28-legacy-maintenance/navigation.html",
+      "sourceSha256": "6e9041e5b6867c79a244a435bf3f490ae9ac70f0e8e6ecf092da468e681b9b88",
+      "artifact": "ppt-collection/navigation.html",
+      "beforeSha256": "43a06251d1c16bc2be6dd46f9b19f67f595151ca0c32358503072970c8ee012a",
+      "sha256": "ad64b94c58ee3d0f17664fbbc3e74fa65bebbd2490d73ca71910535dbb3e36fb",
+      "browserEvidence": ".codex/approved-bottom/dynamic-final/approved-navigation.json",
+      "pageCount": 20,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        10,
+        13,
+        19
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度",
+        "问题页保留底部安全距离"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/followup-offline/results.json",
+      "offlineViewport": "1280x600",
+      "offlineSha256": "ad64b94c58ee3d0f17664fbbc3e74fa65bebbd2490d73ca71910535dbb3e36fb",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 80,
+      "staticPageViewports": 40
+    },
+    {
+      "id": "pills-industrial-miracle",
+      "source": "2026-10-28-legacy-maintenance/pills-industrial-miracle.html",
+      "sourceSha256": "525041c7868ff1a9e28da94287aafebc5791e102b80f004a9984ef7ed27ff5c8",
+      "artifact": "ppt-collection/pills-industrial-miracle.html",
+      "beforeSha256": "f548da83b0b234d9d391785051190b5206c1b9d4c8d83dc63ce1624a1cc5bb0c",
+      "sha256": "91e256a6de2730b12acddb8991ad5b2bcbbe307e5e539a4088df315e79e4b3dd",
+      "browserEvidence": ".codex/approved-bottom/dynamic/approved-pills-industrial-miracle.json",
+      "pageCount": 28,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        3
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/after-wide/results.json",
+      "offlineViewport": "1920x900",
+      "offlineSha256": "91e256a6de2730b12acddb8991ad5b2bcbbe307e5e539a4088df315e79e4b3dd",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 112,
+      "staticPageViewports": 56
+    },
+    {
+      "id": "planetary-defense-changing-the-odds",
+      "source": "2026-08-14-planetary-defense-changing-the-odds/index.html",
+      "sourceSha256": "a59e9c7b21120f1634c00948b03e7d871bcb851c1f1efd8dd3401c789e030e1a",
+      "artifact": "ppt-collection/planetary-defense-changing-the-odds.html",
+      "beforeSha256": "d82a125dd4b2df41f2739fdc3774569ae29507b52e01e7a165f4d0ee609b6180",
+      "sha256": "2e11461e6d4e04a0ee1d7114189c4f88aeb1d09a916d0a3541c83526f1a94b67",
+      "browserEvidence": ".codex/approved-bottom/dynamic/approved-planetary-defense-changing-the-odds.json",
+      "pageCount": 13,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        13
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/after-wide/results.json",
+      "offlineViewport": "1920x900",
+      "offlineSha256": "2e11461e6d4e04a0ee1d7114189c4f88aeb1d09a916d0a3541c83526f1a94b67",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 52,
+      "staticPageViewports": 26
+    },
+    {
+      "id": "qr-code-inside-the-black-white-squares",
+      "source": "2026-08-15-qr-code-inside-the-black-white-squares/index.html",
+      "sourceSha256": "065b5558569f064007fc8731a8270c8961230df6ce5076a7ef26bd88bbe3b8ce",
+      "artifact": "ppt-collection/qr-code-inside-the-black-white-squares.html",
+      "beforeSha256": "a6205b0b1bc1b8f754d2c21a10e0cb59c6e7639e8c4e6ba8caa086d562b9411d",
+      "sha256": "43b70588ff925ecbb941d61af1cd21b2c28309d5a148eec9b6640d4ffb17f2a2",
+      "browserEvidence": ".codex/approved-bottom/dynamic-final/approved-qr-code-inside-the-black-white-squares.json",
+      "pageCount": 14,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        2,
+        7
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度",
+        "问题页保留底部安全距离"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/followup-offline/results.json",
+      "offlineViewport": "1280x600",
+      "offlineSha256": "43b70588ff925ecbb941d61af1cd21b2c28309d5a148eec9b6640d4ffb17f2a2",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 56,
+      "staticPageViewports": 28
+    },
+    {
+      "id": "queueing",
+      "source": "2026-10-28-legacy-maintenance/queueing.html",
+      "sourceSha256": "f20106deabae522df4a68062c175e81d931a2b9ec7f00814b6d6945c07f7b9b0",
+      "artifact": "ppt-collection/queueing.html",
+      "beforeSha256": "096eb75225470d4857a3788d5f1cc50c048e22e0721649fecfd505dc5320e710",
+      "sha256": "6fa4968174f335a4bac8f47d6e573422f6d2fa0f36a0caf6d188bb4145dd1b6e",
+      "browserEvidence": ".codex/approved-bottom/dynamic-final/approved-queueing.json",
+      "pageCount": 10,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        2,
+        3,
+        5,
+        7,
+        8,
+        9
+      ],
+      "fixes": [
+        "问题页保留底部安全距离"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/followup-offline/results.json",
+      "offlineViewport": "1280x600",
+      "offlineSha256": "6fa4968174f335a4bac8f47d6e573422f6d2fa0f36a0caf6d188bb4145dd1b6e",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 40,
+      "staticPageViewports": 20
+    },
+    {
+      "id": "science-of-garbage",
+      "source": "2026-10-28-legacy-maintenance/science-of-garbage.html",
+      "sourceSha256": "f437471a80d1bec635193453598004f73843c46a040f97181182e2e3b914fb96",
+      "artifact": "ppt-collection/science-of-garbage.html",
+      "beforeSha256": "3ac20f7867200915bef0a309427fc6df516b8c9107c8de2d266be7696738b320",
+      "sha256": "bc1df174f01324b0d2d0b20a01edac6a1d83920528275c532bbd35ddf4fb052f",
+      "browserEvidence": ".codex/approved-bottom/dynamic-final/approved-science-of-garbage.json",
+      "pageCount": 15,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度",
+        "图片与图注分行，保留图注高度",
+        "问题页保留底部安全距离"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/followup-offline/results.json",
+      "offlineViewport": "1280x600",
+      "offlineSha256": "bc1df174f01324b0d2d0b20a01edac6a1d83920528275c532bbd35ddf4fb052f",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 60,
+      "staticPageViewports": 30
+    },
+    {
+      "id": "screws",
+      "source": "2026-10-28-legacy-maintenance/screws.html",
+      "sourceSha256": "2dcb31b0c36d9df5e9ca7b34d81720d661199f6cdd32189b8159d7438ad48cc6",
+      "artifact": "ppt-collection/screws.html",
+      "beforeSha256": "434f0975192ebd99b55d1c9cbf3b752b47950b63e205d74d27dcace07b7ee9fd",
+      "sha256": "5f5a922d71263da2806182349b7d94c219214b23decdd9538e47fef899248216",
+      "browserEvidence": ".codex/approved-bottom/dynamic-extra/approved-screws.json",
+      "pageCount": 20,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        5
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/extra-wide/results.json",
+      "offlineViewport": "1920x900",
+      "offlineSha256": "5f5a922d71263da2806182349b7d94c219214b23decdd9538e47fef899248216",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 80,
+      "staticPageViewports": 40
+    },
+    {
+      "id": "spf-50-decoding-sunscreen",
+      "source": "2026-08-15-spf-50-sunscreen-decoding/index.html",
+      "sourceSha256": "19ca1026f0a3bee30d96d9e99ca9a0cfae0e36f7f0c5571f0b7521972fdc3717",
+      "artifact": "ppt-collection/spf-50-decoding-sunscreen.html",
+      "sha256": "b5900e0d72f99067ddb2acc58735a30343ad4613af769f49e734933ad51d07eb",
+      "status": "approved",
+      "changed": false,
+      "pageCount": 14,
+      "problemPages": [],
+      "fixes": [],
+      "browserEvidence": ".codex/approved-bottom/unchanged-dynamic/approved-spf-50-decoding-sunscreen.json",
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offlineSha256": "b5900e0d72f99067ddb2acc58735a30343ad4613af769f49e734933ad51d07eb",
+      "offlineReusedUnchangedBytes": true,
+      "dynamicViewports": [
+        "1920x900",
+        "1280x600"
+      ],
+      "dynamicPageViewports": 28,
+      "staticPageViewports": 28
+    },
+    {
+      "id": "the-art-of-cinema",
+      "source": "2026-05-14-the-art-of-cinema/the-art-of-cinema.html",
+      "sourceSha256": "d37f77ed85921c7c0ffebed969ae8e1a39aed2ac56e0dbaa2f017876c1e9a97d",
+      "artifact": "ppt-collection/the-art-of-cinema.html",
+      "beforeSha256": "fd34bc268eeff06ba026066c8cbcfe39926d65f21a4d81caa6f11896fb6d7d67",
+      "sha256": "d150be3d0c8b58823f36cd70c391756767bcc16fdc4381ea61580872effb7a24",
+      "browserEvidence": ".codex/approved-bottom/dynamic-final2-retry/approved-the-art-of-cinema.json",
+      "pageCount": 15,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        7
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度",
+        "问题页保留底部安全距离",
+        "P7 缩紧顶部、卡片行间距"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/offline-final2/results.json",
+      "offlineViewport": "1280x720",
+      "offlineSha256": "d150be3d0c8b58823f36cd70c391756767bcc16fdc4381ea61580872effb7a24",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 60,
+      "staticPageViewports": 30
+    },
+    {
+      "id": "tires",
+      "source": "2026-10-28-legacy-maintenance/tires.html",
+      "sourceSha256": "d1a6156802409aabfb7398976eca776951231e06fb4264e0f3d6052e879efe68",
+      "artifact": "ppt-collection/tires.html",
+      "sha256": "ebb25643ffc238bb8c30fa7590536322095dee78c5c9e29efdc08720a11bbfd4",
+      "status": "approved",
+      "changed": false,
+      "pageCount": 15,
+      "problemPages": [],
+      "fixes": [],
+      "browserEvidence": ".codex/approved-bottom/unchanged-dynamic/approved-tires.json",
+      "offlineEvidence": ".codex/offline-tires-factual-final/results.json",
+      "offlineSha256": "ebb25643ffc238bb8c30fa7590536322095dee78c5c9e29efdc08720a11bbfd4",
+      "offlineReusedUnchangedBytes": true,
+      "dynamicViewports": [
+        "1920x900",
+        "1280x600"
+      ],
+      "dynamicPageViewports": 30,
+      "staticPageViewports": 30
+    },
+    {
+      "id": "twenty-years",
+      "source": "2026-10-28-legacy-maintenance/twenty-years.html",
+      "sourceSha256": "8e93d8fbebf1bed9cc2cd5985c162daaaf14b63f6dba9a7d9abd7bd737c23f52",
+      "artifact": "ppt-collection/twenty-years.html",
+      "sha256": "ab463739bba28b4b64a0609deb5a285ffc9a6604b2df10dc574a2b6f092c1788",
+      "status": "approved",
+      "changed": false,
+      "pageCount": 10,
+      "problemPages": [],
+      "fixes": [],
+      "browserEvidence": ".codex/approved-bottom/unchanged-dynamic/approved-twenty-years.json",
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offlineSha256": "ab463739bba28b4b64a0609deb5a285ffc9a6604b2df10dc574a2b6f092c1788",
+      "offlineReusedUnchangedBytes": true,
+      "dynamicViewports": [
+        "1920x900",
+        "1280x600"
+      ],
+      "dynamicPageViewports": 20,
+      "staticPageViewports": 20
+    },
+    {
+      "id": "weather-forecast",
+      "source": "2026-10-28-legacy-maintenance/weather-forecast.html",
+      "sourceSha256": "b2f62f0ff888953ddf3972e2aec882ffaaa6a5a99afe13c70f46f15e5e0ab1db",
+      "artifact": "ppt-collection/weather-forecast.html",
+      "beforeSha256": "be1ccd57788d76fa455011deaa288aa75f79fed9cf7099d98ba369c69b0b5b52",
+      "sha256": "828ccbebb1ea197f11deb57718c24df8a00a3d56beb1ca6e44eed501b4e4d713",
+      "browserEvidence": ".codex/approved-bottom/dynamic-final/approved-weather-forecast.json",
+      "pageCount": 15,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        11
+      ],
+      "fixes": [
+        "问题页保留底部安全距离"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/followup-offline/results.json",
+      "offlineViewport": "1280x600",
+      "offlineSha256": "828ccbebb1ea197f11deb57718c24df8a00a3d56beb1ca6e44eed501b4e4d713",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 60,
+      "staticPageViewports": 30
+    },
+    {
+      "id": "wifi",
+      "source": "2026-10-28-legacy-maintenance/wifi.html",
+      "sourceSha256": "c423e25b668154e8ab5a8bc84a27e6e42826c8a477cb63869a5f9e0747e0f9a5",
+      "artifact": "ppt-collection/wifi.html",
+      "sha256": "555de38d641e80fbf4cdda304def7c72f454e9b7a56b786a2fe248e5627871cd",
+      "status": "approved",
+      "changed": false,
+      "pageCount": 15,
+      "problemPages": [],
+      "fixes": [],
+      "browserEvidence": ".codex/approved-bottom/unchanged-dynamic/approved-wifi.json",
+      "offlineEvidence": ".codex/offline-final38/results.json",
+      "offlineSha256": "555de38d641e80fbf4cdda304def7c72f454e9b7a56b786a2fe248e5627871cd",
+      "offlineReusedUnchangedBytes": true,
+      "dynamicViewports": [
+        "1920x900",
+        "1280x600"
+      ],
+      "dynamicPageViewports": 30,
+      "staticPageViewports": 30
+    },
+    {
+      "id": "world-cup",
+      "source": "2026-10-28-legacy-maintenance/world-cup.html",
+      "sourceSha256": "438e70d9bb6d3c79d5c894e2ec905a9d12be2cf78285290d180c657e9a677be0",
+      "artifact": "ppt-collection/world-cup.html",
+      "beforeSha256": "7ad264688fcdd1a0fa327bd70b57a277a7e1b355a46acc4021ed4b97667b50b5",
+      "sha256": "cc0112dce1f0490da737397a4714dbb86fe5d88b3387992933bd30296caf01c6",
+      "browserEvidence": ".codex/approved-bottom/dynamic/approved-world-cup.json",
+      "pageCount": 20,
+      "status": "approved",
+      "changed": true,
+      "problemPages": [
+        1,
+        2
+      ],
+      "fixes": [
+        "字号按可用高度约束；移除过大的 frame 最小高度"
+      ],
+      "offlineEvidence": ".codex/approved-bottom/after-wide/results.json",
+      "offlineViewport": "1920x900",
+      "offlineSha256": "cc0112dce1f0490da737397a4714dbb86fe5d88b3387992933bd30296caf01c6",
+      "dynamicViewports": [
+        "1600x900",
+        "1280x720",
+        "1000x560",
+        "1920x900"
+      ],
+      "dynamicPageViewports": 80,
+      "staticPageViewports": 40
+    }
+  ]
+}

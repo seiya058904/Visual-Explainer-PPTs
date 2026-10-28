@@ -60,10 +60,10 @@
 
   /* ============ Magazine chrome：顶部 meta + 底部 foot ============
      （v1 布局 + v2 字号在此合并为唯一定义，不要在别处二次定义） */
-  .chrome{display:flex;justify-content:space-between;align-items:flex-start;font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.2em;text-transform:uppercase;opacity:.62}
+  .chrome{display:flex;justify-content:space-between;align-items:flex-start;font-family:var(--mono);font-size:max(11px,min(.78vw,1.3867vh));letter-spacing:.2em;text-transform:uppercase;opacity:.62}
   .chrome .left,.chrome .right{display:flex;gap:2.4em;align-items:center}
   .chrome .sep{width:40px;height:1px;background:currentColor;opacity:.4}
-  .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.18em;text-transform:uppercase;opacity:.5}
+  .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;font-family:var(--mono);font-size:max(11px,min(.78vw,1.3867vh));letter-spacing:.18em;text-transform:uppercase;opacity:.5}
   .foot .title{font-family:var(--serif-zh);font-weight:400;letter-spacing:.05em;text-transform:none;opacity:.75;font-size:13px}
 
   .tag{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;padding:6px 14px;border:1px solid currentColor;opacity:.85}
@@ -76,18 +76,18 @@
      · 等宽（IBM Plex Mono）：kicker、meta 小标签、foot 右侧
   */
   .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;opacity:.6;margin-bottom:2.6vh}
-  .display{font-family:var(--serif-en);font-weight:700;font-size:11vw;line-height:.92;letter-spacing:-.025em}
-  .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:7.8vw;line-height:1.04;letter-spacing:-.005em}
-  .h1-zh{font-family:var(--serif-zh);font-weight:700;font-size:4.6vw;line-height:1.12;letter-spacing:-.005em}
-  .h2-zh{font-family:var(--serif-zh);font-weight:600;font-size:3.2vw;line-height:1.2;letter-spacing:0}
-  .h3-zh{font-family:var(--serif-zh);font-weight:500;font-size:1.9vw;line-height:1.35}
-  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,1.22vw);line-height:1.75;opacity:.82;letter-spacing:.01em}
-  .body-serif{font-family:var(--serif-zh);font-weight:400;font-size:max(15px,1.3vw);line-height:1.65;opacity:.88}
-  .lead{font-family:var(--serif-zh);font-weight:400;font-size:1.75vw;line-height:1.5;opacity:.86}
-  .meta{font-family:var(--mono);font-size:max(11px,.88vw);letter-spacing:.16em;text-transform:uppercase;opacity:.6}
-  .big-num{font-family:var(--serif-en);font-weight:800;font-size:10vw;line-height:.85;letter-spacing:-.03em;font-feature-settings:"tnum"}
-  .mid-num{font-family:var(--serif-en);font-weight:700;font-size:5.5vw;line-height:.88;letter-spacing:-.02em;font-feature-settings:"tnum"}
-  .ghost{font-family:var(--serif-en);font-weight:900;font-size:34vw;line-height:.8;opacity:.06;letter-spacing:-.04em;position:absolute;font-feature-settings:"tnum"}
+  .display{font-family:var(--serif-en);font-weight:700;font-size:min(11vw,19.5556vh);line-height:.92;letter-spacing:-.025em}
+  .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:min(7.8vw,13.8667vh);line-height:1.04;letter-spacing:-.005em}
+  .h1-zh{font-family:var(--serif-zh);font-weight:700;font-size:min(4.6vw,8.1778vh);line-height:1.12;letter-spacing:-.005em}
+  .h2-zh{font-family:var(--serif-zh);font-weight:600;font-size:min(3.2vw,5.6889vh);line-height:1.2;letter-spacing:0}
+  .h3-zh{font-family:var(--serif-zh);font-weight:500;font-size:min(1.9vw,3.3778vh);line-height:1.35}
+  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,min(1.22vw,2.1689vh));line-height:1.75;opacity:.82;letter-spacing:.01em}
+  .body-serif{font-family:var(--serif-zh);font-weight:400;font-size:max(15px,min(1.3vw,2.3111vh));line-height:1.65;opacity:.88}
+  .lead{font-family:var(--serif-zh);font-weight:400;font-size:min(1.75vw,3.1111vh);line-height:1.5;opacity:.86}
+  .meta{font-family:var(--mono);font-size:max(11px,min(.88vw,1.5644vh));letter-spacing:.16em;text-transform:uppercase;opacity:.6}
+  .big-num{font-family:var(--serif-en);font-weight:800;font-size:min(10vw,17.7778vh);line-height:.85;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .mid-num{font-family:var(--serif-en);font-weight:700;font-size:min(5.5vw,9.7778vh);line-height:.88;letter-spacing:-.02em;font-feature-settings:"tnum"}
+  .ghost{font-family:var(--serif-en);font-weight:900;font-size:min(34vw,60.4444vh);line-height:.8;opacity:.06;letter-spacing:-.04em;position:absolute;font-feature-settings:"tnum"}
   em{font-style:italic;font-family:var(--serif-en)}
   .en{font-family:var(--serif-en);font-style:italic;font-weight:500}
 
@@ -108,40 +108,40 @@
 
   /* ============ Stat（数字矩阵） ============ */
   .stat{display:flex;flex-direction:column;gap:1vh;align-items:flex-start}
-  .stat .n{font-family:var(--serif-en);font-weight:800;font-size:8vw;line-height:.88;letter-spacing:-.03em;font-feature-settings:"tnum"}
-  .stat .l{font-family:var(--sans-zh);font-size:max(13px,1.05vw);opacity:.7;margin-top:1vh;font-weight:400;line-height:1.5}
+  .stat .n{font-family:var(--serif-en);font-weight:800;font-size:min(8vw,14.2222vh);line-height:.88;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .stat .l{font-family:var(--sans-zh);font-size:max(13px,min(1.05vw,1.8667vh));opacity:.7;margin-top:1vh;font-weight:400;line-height:1.5}
   .stat .m{font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.5;margin-bottom:.2vh}
 
   /* ============ Callout（引用框） ============ */
-  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,1.2vw);line-height:1.55;opacity:.92}
+  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,min(1.2vw,2.1333vh));line-height:1.55;opacity:.92}
   .slide.light .callout{background:rgba(var(--ink-rgb),.05)}
   .slide.dark .callout{background:rgba(var(--paper-rgb),.06)}
   .callout .cite{display:block;margin-top:1.6vh;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6}
-  .callout .q-big{font-family:var(--serif-zh);font-weight:600;font-size:max(17px,1.6vw);line-height:1.42}
+  .callout .q-big{font-family:var(--serif-zh);font-weight:600;font-size:max(17px,min(1.6vw,2.8444vh));line-height:1.42}
 
   /* ============ Platform（平台卡） ============ */
   .plat{display:flex;flex-direction:column;justify-content:flex-end;padding:2vh 0;border-top:1px solid currentColor;border-color:rgba(127,127,127,.35)}
-  .plat .name{font-family:var(--serif-zh);font-weight:700;font-size:1.8vw;margin-bottom:.6vh}
-  .plat .nb{font-family:var(--serif-en);font-weight:700;font-size:3.2vw;letter-spacing:-.02em;line-height:1;font-feature-settings:"tnum"}
+  .plat .name{font-family:var(--serif-zh);font-weight:700;font-size:min(1.8vw,3.2000vh);margin-bottom:.6vh}
+  .plat .nb{font-family:var(--serif-en);font-weight:700;font-size:min(3.2vw,5.6889vh);letter-spacing:-.02em;line-height:1;font-feature-settings:"tnum"}
   .plat .sub{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;opacity:.55;margin-top:.6vh}
-  .plat .fill{font-family:var(--sans-zh);font-weight:300;font-size:2.4vw;opacity:.28;letter-spacing:-.01em;line-height:1}
+  .plat .fill{font-family:var(--sans-zh);font-weight:300;font-size:min(2.4vw,4.2667vh);opacity:.28;letter-spacing:-.01em;line-height:1}
 
   /* ============ Rowline（表格行） ============ */
   .rowline{display:grid;grid-template-columns:1fr 2fr 1fr;gap:2vw;padding:2.2vh 0;border-top:1px solid currentColor;align-items:center;border-color:rgba(127,127,127,.25)}
   .rowline:last-child{border-bottom:1px solid currentColor;border-color:rgba(127,127,127,.25)}
-  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:1.7vw}
-  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.2vw);opacity:.85;line-height:1.55}
+  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:min(1.7vw,3.0222vh)}
+  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,min(1.2vw,2.1333vh));opacity:.85;line-height:1.55}
   .rowline .m{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6;justify-self:end}
 
   /* ============ Pillar（支柱卡片） ============ */
   .pillar{display:flex;flex-direction:column;gap:1.8vh}
-  .pillar .ic{font-family:var(--serif-en);font-style:italic;font-size:2.6vw;opacity:.45;font-weight:400}
+  .pillar .ic{font-family:var(--serif-en);font-style:italic;font-size:min(2.6vw,4.6222vh);opacity:.45;font-weight:400}
   .pillar .ic svg{width:2.8vw;height:2.8vw;stroke-width:1.2;opacity:.7}
-  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:2.4vw;line-height:1.1}
-  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.1vw);opacity:.76;line-height:1.6}
+  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:min(2.4vw,4.2667vh);line-height:1.1}
+  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,min(1.1vw,1.9556vh));opacity:.76;line-height:1.6}
 
   /* ============ Signature / Highlight ============ */
-  .sign{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:2vw;opacity:.7}
+  .sign{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:min(2vw,3.5556vh);opacity:.7}
   .hi{position:relative;display:inline}
   .slide.dark .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--paper-rgb),.15);z-index:-1}
   .slide.light .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--ink-rgb),.08);z-index:-1}
@@ -156,7 +156,7 @@
   /* ============ 图片占位（虚线框，提示设计师位置） ============ */
   .img-slot{border:1.5px dashed rgba(127,127,127,.4);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1vh;padding:2vh 2vw;font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;opacity:.55;position:relative;aspect-ratio:16/9;width:100%;max-height:56vh;margin-inline:auto;box-sizing:border-box}
   .img-slot::before{content:"";position:absolute;inset:8px;border:1px solid currentColor;opacity:.2}
-  .img-slot .plus{font-size:2vw;font-weight:300;opacity:.5;letter-spacing:0}
+  .img-slot .plus{font-size:min(2vw,3.5556vh);font-weight:300;opacity:.5;letter-spacing:0}
   .img-slot .label{position:relative;z-index:2;text-align:center}
   .img-slot.r-4x3{aspect-ratio:4/3}
   .img-slot.r-3x2{aspect-ratio:3/2}
@@ -182,8 +182,8 @@
   .frame-img.h-26{height:26vh}
   .frame-img.h-28{height:28vh}
   .frame-cap{display:flex;justify-content:space-between;align-items:baseline;gap:1vw;margin-top:.8vh;font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.72}
-  .frame-cap .pf{font-family:var(--serif-zh);font-weight:600;font-size:max(13px,1vw);letter-spacing:.04em;text-transform:none;opacity:.94}
-  .frame-cap .nb{font-family:var(--serif-en);font-style:italic;font-size:max(15px,1.2vw);letter-spacing:.02em;text-transform:none;opacity:.88}
+  .frame-cap .pf{font-family:var(--serif-zh);font-weight:600;font-size:max(13px,min(1vw,1.7778vh));letter-spacing:.04em;text-transform:none;opacity:.94}
+  .frame-cap .nb{font-family:var(--serif-en);font-style:italic;font-size:max(15px,min(1.2vw,2.1333vh));letter-spacing:.02em;text-transform:none;opacity:.88}
   .frame-cap .idx{font-family:var(--mono);opacity:.5}
   figure.tile{display:flex;flex-direction:column;margin:0;min-width:0}
   figure.tile > .frame-img{flex:0 0 auto}
@@ -266,21 +266,21 @@
   .h-hero{
     font-family:var(--serif-zh);
     font-weight:900;
-    font-size:10vw;
+    font-size:min(10vw,17.7778vh);
     line-height:.96;
     letter-spacing:-.02em;
   }
   .h-xl{
     font-family:var(--serif-zh);
     font-weight:700;
-    font-size:6.2vw;
+    font-size:min(6.2vw,11.0222vh);
     line-height:1.08;
     letter-spacing:-.01em;
   }
   .h-sub{
     font-family:var(--serif-zh);
     font-weight:500;
-    font-size:3.1vw;
+    font-size:min(3.1vw,5.5111vh);
     line-height:1.25;
     letter-spacing:0;
     opacity:.7;
@@ -288,7 +288,7 @@
   .h-md{
     font-family:var(--serif-zh);
     font-weight:600;
-    font-size:2.3vw;
+    font-size:min(2.3vw,4.0889vh);
     line-height:1.3;
   }
   /* 英文标题专用（Playfair 衬线） */
@@ -303,7 +303,7 @@
     align-items:baseline;
     flex-wrap:wrap;
     font-family:var(--mono);
-    font-size:max(12px,.92vw);
+    font-size:max(12px,min(.92vw,1.6356vh));
     letter-spacing:.16em;
     text-transform:uppercase;
     opacity:.6;
@@ -321,7 +321,7 @@
   }
   .stat-card .stat-label{
     font-family:var(--mono);
-    font-size:max(10px,.78vw);
+    font-size:max(10px,min(.78vw,1.3867vh));
     letter-spacing:.24em;
     text-transform:uppercase;
     opacity:.55;
@@ -329,7 +329,7 @@
   .stat-card .stat-nb{
     font-family:var(--serif-en);
     font-weight:800;
-    font-size:5.8vw;
+    font-size:min(5.8vw,10.3111vh);
     line-height:.9;
     letter-spacing:-.03em;
     font-feature-settings:"tnum";
@@ -346,15 +346,15 @@
   .stat-card .stat-note{
     font-family:var(--sans-zh);
     font-weight:400;
-    font-size:max(13px,1.05vw);
+    font-size:max(13px,min(1.05vw,1.8667vh));
     line-height:1.5;
     opacity:.72;
     margin-top:.6vh;
   }
   /* 当 stat-card 用于 grid-4（2x2），数字适度放大；若页面有标题+引文在上方，可内联 style 覆盖为更小值 */
-  .grid-4 .stat-card .stat-nb{font-size:5vw}
+  .grid-4 .stat-card .stat-nb{font-size:min(5vw,8.8889vh)}
   /* 当只有 3 个，字也可以稍大 */
-  .grid-3 .stat-card .stat-nb{font-size:6.8vw}
+  .grid-3 .stat-card .stat-nb{font-size:min(6.8vw,12.0889vh)}
 
   /* ---------- pipeline（流水线） ---------- */
   .pipeline-section{
@@ -369,7 +369,7 @@
   }
   .pipeline-label{
     font-family:var(--mono);
-    font-size:max(11px,.85vw);
+    font-size:max(11px,min(.85vw,1.5111vh));
     letter-spacing:.24em;
     text-transform:uppercase;
     opacity:.62;
@@ -395,20 +395,20 @@
     font-family:var(--serif-en);
     font-style:italic;
     font-weight:500;
-    font-size:1.15vw;
+    font-size:min(1.15vw,2.0444vh);
     opacity:.45;
   }
   .step-title{
     font-family:var(--sans-zh);
     font-weight:700;
-    font-size:1.55vw;
+    font-size:min(1.55vw,2.7556vh);
     letter-spacing:.01em;
     line-height:1.2;
   }
   .step-desc{
     font-family:var(--sans-zh);
     font-weight:400;
-    font-size:max(12px,.95vw);
+    font-size:max(12px,min(.95vw,1.6889vh));
     line-height:1.45;
     opacity:.72;
   }
@@ -437,7 +437,7 @@
     flex:0 0 auto;
     padding:.7vh .9em .9vh;
     font-family:var(--mono);
-    font-size:max(10px,.8vw);
+    font-size:max(10px,min(.8vw,1.4222vh));
     letter-spacing:.22em;
     text-transform:uppercase;
     opacity:.6;
@@ -482,14 +482,18 @@
 
   /* ---------- 响应式降级 ---------- */
   @media (max-width:900px){
-    .display{font-size:16vw}
-    .display-zh{font-size:12vw}
-    .h1-zh{font-size:7vw}
-    .h-hero{font-size:14vw}
-    .h-xl{font-size:9vw}
+    .display{font-size:min(16vw,28.4444vh)}
+    .display-zh{font-size:min(12vw,21.3333vh)}
+    .h1-zh{font-size:min(7vw,12.4444vh)}
+    .h-hero{font-size:min(14vw,24.8889vh)}
+    .h-xl{font-size:min(9vw,16.0000vh)}
     .pipeline{grid-template-columns:repeat(2,1fr)}
     .grid-2-7-5,.grid-2-6-6,.grid-2-8-4{grid-template-columns:1fr}
   }
+</style>
+<style>/* Keep captions and lower content inside their allocated space. */
+#deck>.slide:nth-child(2)>.frame{margin-bottom:1.5vh}
+#deck>.slide:nth-child(6)>.frame{margin-bottom:1.5vh}
 </style>
 </head>
 <body>
@@ -536,21 +540,21 @@
      页面组件参考 references/components.md
      ============================================================ -->
 
-<section class="slide hero dark" data-slide-id="cover" data-animate="hero"><div class="chrome"><div>Acoustics · ANC</div><div>VOL.01</div></div><div class="frame" style="display:grid;grid-template-columns:1.25fr .75fr;gap:4vw;align-items:center;min-height:80vh"><div><div class="kicker" data-anim>用声音消灭声音</div><h1 class="h-hero" style="font-size:7.2vw;max-width:72vw" data-anim>发动机消失了，<br>人声却还在</h1><h2 class="h-sub" data-anim>ACTIVE NOISE CANCELLATION · FIGHTING SOUND WITH SOUND</h2><p class="lead" style="max-width:56vw" data-anim>耳机没有让世界安静，而是在耳膜附近实时制造另一段声音。</p><div class="meta-row" data-anim><span>Listen</span><span>→</span><span>Compute</span><span>→</span><span>Cancel</span></div></div><div class="media-card" data-anim style="height:38vh;background:url('images/01-anc-cover.jpg') center/cover no-repeat;filter:saturate(.72) contrast(1.04)"><div class="media-caption">ENGINE NOISE / CABIN AIR</div></div></div><div class="foot"><div>大众科普 · 一场实时声学控制</div><div>2026.08.15</div></div></section>
+<section class="slide hero dark" data-slide-id="cover" data-animate="hero"><div class="chrome"><div>Acoustics · ANC</div><div>VOL.01</div></div><div class="frame" style="display:grid;grid-template-columns:1.25fr .75fr;gap:4vw;align-items:center;min-height:0"><div><div class="kicker" data-anim>用声音消灭声音</div><h1 class="h-hero" style="font-size:min(7.2vw,12.8000vh);max-width:72vw" data-anim>发动机消失了，<br>人声却还在</h1><h2 class="h-sub" data-anim>ACTIVE NOISE CANCELLATION · FIGHTING SOUND WITH SOUND</h2><p class="lead" style="max-width:56vw" data-anim>耳机没有让世界安静，而是在耳膜附近实时制造另一段声音。</p><div class="meta-row" data-anim><span>Listen</span><span>→</span><span>Compute</span><span>→</span><span>Cancel</span></div></div><div class="media-card" data-anim style="height:38vh;background:url('images/01-anc-cover.jpg') center/cover no-repeat;filter:saturate(.72) contrast(1.04)"><div class="media-caption">ENGINE NOISE / CABIN AIR</div></div></div><div class="foot"><div>大众科普 · 一场实时声学控制</div><div>2026.08.15</div></div></section>
 
 <section class="slide light" data-slide-id="sound-wave"><div class="chrome"><div>Physics · 声学</div><div>02 / 15</div></div><div class="frame" style="padding-top:4vh;justify-content:space-between"><div><div class="kicker" data-anim>SOUND WAVE</div><h2 class="h-xl" data-anim>声音其实是<br>空气的振动</h2><p class="lead" style="max-width:67vw;margin-top:3vh" data-anim>声音不是一个飞过来的物体，而是空气压力连续发生变化，并最终让耳膜跟着振动。</p></div><div class="grid-2-6-6" style="margin-top:4vh"><div class="stat-card" data-anim><div class="stat-label">PRESSURE</div><div class="stat-nb">↑ ↓</div><div class="stat-note">压缩与稀疏不断传播</div></div><div class="stat-card" data-anim><div class="stat-label">PATH</div><div class="stat-nb">Air → Ear</div><div class="stat-note">扬声器 · 空气 · 耳膜</div></div></div></div><div class="foot"><div>Sony Audio Technical Support · Pressure Changes</div><div>02</div></div></section>
 
-<section class="slide hero dark" data-slide-id="anti-phase" data-animate="hero"><div class="chrome"><div>Act I · Wave</div><div>03 / 15</div></div><div class="frame" style="display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-content:center;min-height:80vh"><div><div class="kicker" data-anim>ANTI-PHASE</div><h2 class="h-xl" style="font-size:6vw" data-anim>两个声音，<br>也能更安静</h2></div><div style="display:flex;flex-direction:column;justify-content:center;gap:3vh"><p class="lead" data-anim>原噪声与反相声波叠加后，声压变化显著减小。不是沉默，而是相互抵消。</p><div class="callout" data-anim>Noise<br>＋ Anti-noise<br>＝ Smaller pressure change<div class="callout-src">— 反相叠加</div></div></div></div><div class="foot"><div>Active Noise Cancellation · 反噪声</div><div>WAVE</div></div></section>
+<section class="slide hero dark" data-slide-id="anti-phase" data-animate="hero"><div class="chrome"><div>Act I · Wave</div><div>03 / 15</div></div><div class="frame" style="display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-content:center;min-height:0"><div><div class="kicker" data-anim>ANTI-PHASE</div><h2 class="h-xl" style="font-size:min(6vw,10.6667vh)" data-anim>两个声音，<br>也能更安静</h2></div><div style="display:flex;flex-direction:column;justify-content:center;gap:3vh"><p class="lead" data-anim>原噪声与反相声波叠加后，声压变化显著减小。不是沉默，而是相互抵消。</p><div class="callout" data-anim>Noise<br>＋ Anti-noise<br>＝ Smaller pressure change<div class="callout-src">— 反相叠加</div></div></div></div><div class="foot"><div>Active Noise Cancellation · 反噪声</div><div>WAVE</div></div></section>
 
 <section class="slide light" data-slide-id="noise-is-still-there"><div class="chrome"><div>Misconception · 误解</div><div>04 / 15</div></div><div class="frame" style="padding-top:5vh;justify-content:space-between"><div><div class="kicker" data-anim>NEAR THE EARDRUM</div><h2 class="h-xl" data-anim>噪声其实<br>没有消失</h2><p class="lead" style="max-width:68vw;margin-top:3vh" data-anim>ANC 不会让房间里的发动机停止，也不会把空气中的声波抹掉；它只在耳膜附近改变最后的声压结果。</p></div><div class="callout" style="max-width:74vw;margin-top:5vh" data-anim>世界仍在发声<br>只是耳膜收到的变化变小了<div class="callout-src">— Near the Eardrum</div></div></div><div class="foot"><div>Noise remains in the room · Result changes near the ear</div><div>04</div></div></section>
 
-<section class="slide light" data-slide-id="listening-machine"><div class="chrome"><div>Act II · Listen</div><div>05 / 15</div></div><div class="frame grid-2-7-5" style="padding-top:5vh"><div style="display:flex;flex-direction:column;justify-content:space-between;gap:3vh"><div><div class="kicker" data-anim>LISTENING MACHINE</div><h2 class="h-xl" data-anim>耳机必须先<br>听见噪声</h2><p class="lead" style="margin-top:3vh" data-anim>外向麦克风监听环境，耳机才知道需要对付什么。</p></div><div class="callout" data-anim>没有“耳朵”<br>就没有反噪声。<div class="callout-src">— Feedforward microphone</div></div></div><div class="stat-card" style="display:flex;flex-direction:column;justify-content:center;min-height:34vh" data-anim><div class="stat-label">FIRST MOVE</div><div class="stat-nb" style="font-size:5.2vw">LISTEN</div><div class="stat-note">先捕捉环境，再生成控制信号。</div></div></div><div class="foot"><div>External microphone · 先听见，才谈抵消</div><div>05</div></div></section>
+<section class="slide light" data-slide-id="listening-machine"><div class="chrome"><div>Act II · Listen</div><div>05 / 15</div></div><div class="frame grid-2-7-5" style="padding-top:5vh"><div style="display:flex;flex-direction:column;justify-content:space-between;gap:3vh"><div><div class="kicker" data-anim>LISTENING MACHINE</div><h2 class="h-xl" data-anim>耳机必须先<br>听见噪声</h2><p class="lead" style="margin-top:3vh" data-anim>外向麦克风监听环境，耳机才知道需要对付什么。</p></div><div class="callout" data-anim>没有“耳朵”<br>就没有反噪声。<div class="callout-src">— Feedforward microphone</div></div></div><div class="stat-card" style="display:flex;flex-direction:column;justify-content:center;min-height:34vh" data-anim><div class="stat-label">FIRST MOVE</div><div class="stat-nb" style="font-size:min(5.2vw,9.2444vh)">LISTEN</div><div class="stat-note">先捕捉环境，再生成控制信号。</div></div></div><div class="foot"><div>External microphone · 先听见，才谈抵消</div><div>05</div></div></section>
 
 <section class="slide light" data-slide-id="latency"><div class="chrome"><div>Processing · 处理</div><div>06 / 15</div></div><div class="frame" style="padding-top:4vh"><div class="kicker" data-anim>LATENCY</div><h2 class="h-xl" data-anim>然后，它必须<br>抢时间</h2><p class="lead" style="max-width:72vw;margin-top:3vh" data-anim>处理器根据麦克风捕捉到的声音，计算下一刻该播放怎样的反噪声。延迟越大，抵消越不准确。</p><div class="grid-3" style="margin-top:5vh;flex:0 0 auto"><div class="stat-card" data-anim><div class="stat-label">CAPTURE</div><div class="stat-nb">01</div><div class="stat-note">麦克风捕捉噪声</div></div><div class="stat-card" data-anim><div class="stat-label">COMPUTE</div><div class="stat-nb">02</div><div class="stat-note">DSP 计算反噪声</div></div><div class="stat-card" data-anim><div class="stat-label">TARGET</div><div class="stat-nb">≤ 20 <span class="stat-unit">μs</span></div><div class="stat-note">Sony 早期数字降噪研发目标</div></div></div></div><div class="foot"><div>Sony Group · Digital Noise-Canceling Development</div><div>06</div></div></section>
 
-<section class="slide dark" data-slide-id="ear-feedback"><div class="chrome"><div>Feedback · 闭环</div><div>07 / 15</div></div><div class="frame" style="display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-content:center;min-height:80vh"><div><div class="kicker" data-anim>FEEDBACK</div><h2 class="h-xl" style="font-size:6vw" data-anim>现代耳机还会<br>监听你的耳朵</h2></div><div style="display:flex;flex-direction:column;justify-content:center;gap:3vh"><p class="lead" data-anim>内向麦克风直接测量耳朵实际还听到了多少剩余噪声，让系统形成反馈回路。</p><div class="callout" data-anim>外部麦克风<br>＋ 内部麦克风<br>＋ 扬声器<div class="callout-src">— Feedforward + Feedback</div></div></div></div><div class="foot"><div>Apple / Sony · 两只“耳朵”共同工作</div><div>CLOSED LOOP</div></div></section>
+<section class="slide dark" data-slide-id="ear-feedback"><div class="chrome"><div>Feedback · 闭环</div><div>07 / 15</div></div><div class="frame" style="display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-content:center;min-height:0"><div><div class="kicker" data-anim>FEEDBACK</div><h2 class="h-xl" style="font-size:min(6vw,10.6667vh)" data-anim>现代耳机还会<br>监听你的耳朵</h2></div><div style="display:flex;flex-direction:column;justify-content:center;gap:3vh"><p class="lead" data-anim>内向麦克风直接测量耳朵实际还听到了多少剩余噪声，让系统形成反馈回路。</p><div class="callout" data-anim>外部麦克风<br>＋ 内部麦克风<br>＋ 扬声器<div class="callout-src">— Feedforward + Feedback</div></div></div></div><div class="foot"><div>Apple / Sony · 两只“耳朵”共同工作</div><div>CLOSED LOOP</div></div></section>
 
-<section class="slide hero dark" data-slide-id="low-frequency" data-animate="hero"><div class="chrome"><div>Act III · Selectivity</div><div>08 / 15</div></div><div class="frame" style="display:grid;gap:4vh;align-content:center;min-height:80vh"><div class="kicker" data-anim>LOW FREQUENCY</div><h1 class="h-hero" style="font-size:7.8vw" data-anim>为什么飞机<br>特别容易安静？</h1><p class="lead" style="max-width:64vw" data-anim>发动机、空调和火车的低沉噪声相对持续、规律，系统更容易测量、预测和跟随。</p><div class="meta-row" data-anim><span>LOW</span><span>·</span><span>STEADY</span><span>·</span><span>TRACKABLE</span></div></div><div class="foot"><div>Sony · ANC 对稳定低频噪声效果最好</div><div>ACT III</div></div></section>
+<section class="slide hero dark" data-slide-id="low-frequency" data-animate="hero"><div class="chrome"><div>Act III · Selectivity</div><div>08 / 15</div></div><div class="frame" style="display:grid;gap:4vh;align-content:center;min-height:0"><div class="kicker" data-anim>LOW FREQUENCY</div><h1 class="h-hero" style="font-size:min(7.8vw,13.8667vh)" data-anim>为什么飞机<br>特别容易安静？</h1><p class="lead" style="max-width:64vw" data-anim>发动机、空调和火车的低沉噪声相对持续、规律，系统更容易测量、预测和跟随。</p><div class="meta-row" data-anim><span>LOW</span><span>·</span><span>STEADY</span><span>·</span><span>TRACKABLE</span></div></div><div class="foot"><div>Sony · ANC 对稳定低频噪声效果最好</div><div>ACT III</div></div></section>
 
 <section class="slide light" data-slide-id="speech-limit"><div class="chrome"><div>Limits · 限制</div><div>09 / 15</div></div><div class="frame" style="padding-top:5vh;justify-content:space-between"><div><div class="kicker" data-anim>FAST CHANGES</div><h2 class="h-xl" data-anim>那为什么<br>人声还在？</h2><p class="lead" style="max-width:68vw;margin-top:3vh" data-anim>人声、拍手、狗叫和喇叭包含快速变化与更高频率成分，留给算法反应的时间更少。</p></div><div class="callout" style="max-width:74vw;margin-top:5vh" data-anim>不是 ANC 失灵<br>而是目标本身更难预测<div class="callout-src">— Speech is not a steady target</div></div></div><div class="foot"><div>持续低频 → 更易跟随 · 突发高频 → 更难抵消</div><div>LIMIT</div></div></section>
 
@@ -560,10 +564,10 @@
 
 <section class="slide dark" data-slide-id="music-independent" data-animate="pipeline"><div class="chrome"><div>Control · 控制</div><div>12 / 15</div></div><div class="frame" style="padding-top:3vh"><div class="kicker" data-anim>NO MUSIC REQUIRED</div><h2 class="h-xl" data-anim>没有音乐，<br>它照样能降噪</h2><p class="lead" style="max-width:64vw;margin-top:2vh" data-anim>音乐不是反噪声的来源。按 → 或空格逐步点亮一套独立工作的实时控制链。</p><div class="pipeline" style="margin-top:3vh"><div class="step" data-anim="step"><div class="step-nb">01</div><div class="step-title">Listen</div><div class="step-desc">麦克风捕捉噪声</div></div><div class="step" data-anim="step"><div class="step-nb">02</div><div class="step-title">Model</div><div class="step-desc">系统分析声压变化</div></div><div class="step" data-anim="step"><div class="step-nb">03</div><div class="step-title">Invert</div><div class="step-desc">生成反相声波</div></div><div class="step" data-anim="step"><div class="step-nb">04</div><div class="step-title">Play</div><div class="step-desc">扬声器送到耳膜附近</div></div><div class="step" data-anim="step"><div class="step-nb">05</div><div class="step-title">Repeat</div><div class="step-desc">持续重新计算</div></div></div></div><div class="foot"><div>Music can pause · Control loop continues</div><div>PIPELINE</div></div></section>
 
-<section class="slide light" data-slide-id="transparency-mode"><div class="chrome"><div>Modes · 模式</div><div>13 / 15</div></div><div class="frame grid-2-7-5" style="padding-top:5vh"><div style="display:flex;flex-direction:column;justify-content:space-between;gap:3vh"><div><div class="kicker" data-anim>TRANSPARENCY</div><h2 class="h-xl" data-anim>同一套系统，<br>也能把世界送回来</h2><p class="lead" style="margin-top:3vh" data-anim>麦克风和扬声器既能让环境退到背景，也能把外部声音重新送入耳机。</p></div><div class="callout" data-anim>Cancel<br>↔ Return<div class="callout-src">— Transparency / Ambient Sound</div></div></div><div class="stat-card" style="display:flex;flex-direction:column;justify-content:center;min-height:34vh" data-anim><div class="stat-label">ADAPTIVE AUDIO</div><div class="stat-nb" style="font-size:5vw">REAL TIME</div><div class="stat-note">系统在不同状态之间动态调整。</div></div></div><div class="foot"><div>Apple · Transparency / Adaptive Audio</div><div>13</div></div></section>
+<section class="slide light" data-slide-id="transparency-mode"><div class="chrome"><div>Modes · 模式</div><div>13 / 15</div></div><div class="frame grid-2-7-5" style="padding-top:5vh"><div style="display:flex;flex-direction:column;justify-content:space-between;gap:3vh"><div><div class="kicker" data-anim>TRANSPARENCY</div><h2 class="h-xl" data-anim>同一套系统，<br>也能把世界送回来</h2><p class="lead" style="margin-top:3vh" data-anim>麦克风和扬声器既能让环境退到背景，也能把外部声音重新送入耳机。</p></div><div class="callout" data-anim>Cancel<br>↔ Return<div class="callout-src">— Transparency / Ambient Sound</div></div></div><div class="stat-card" style="display:flex;flex-direction:column;justify-content:center;min-height:34vh" data-anim><div class="stat-label">ADAPTIVE AUDIO</div><div class="stat-nb" style="font-size:min(5vw,8.8889vh)">REAL TIME</div><div class="stat-note">系统在不同状态之间动态调整。</div></div></div><div class="foot"><div>Apple · Transparency / Adaptive Audio</div><div>13</div></div></section>
 
 <section class="slide light" data-slide-id="hearing-safety"><div class="chrome"><div>Safety · 边界</div><div>14 / 15</div></div><div class="frame" style="padding-top:5vh;justify-content:space-between"><div><div class="kicker" data-anim>NOT HEARING PROTECTION</div><h2 class="h-xl" data-anim>更安静，<br>不等于听力保护</h2><p class="lead" style="max-width:70vw;margin-top:3vh" data-anim>消费级 ANC 耳机改善的是听感与环境噪声体验，不能自动视为专业听力保护设备。</p></div><div class="callout" style="max-width:74vw;margin-top:5vh" data-anim>降噪体验 ≠ 安全认证<br>面对高风险噪声，仍要使用合适的听力防护设备。<div class="callout-src">— OSHA guidance</div></div></div><div class="foot"><div>主动控制有边界 · 设备用途不能混淆</div><div>14</div></div></section>
-<section class="slide hero dark" data-slide-id="closing-system" data-animate="hero"><div class="chrome"><div>Conclusion · 收束</div><div>15 / 15</div></div><div class="frame" style="display:grid;gap:3vh;align-content:center;min-height:80vh"><div class="kicker" data-anim>REAL-TIME ACOUSTIC CONTROL</div><h1 class="h-hero" style="font-size:7.6vw" data-anim>耳机一直在<br>和噪声赛跑</h1><p class="lead" style="max-width:68vw" data-anim>它不是让声音凭空消失，而是持续监听、计算、反相、播放，再从头开始。</p><div class="meta-row" data-anim><span>听见</span><span>·</span><span>计算</span><span>·</span><span>抵消</span><span>·</span><span>重复</span></div></div><div class="foot"><div>Active Noise Cancellation · A tiny acoustic control system</div><div>END</div></div></section>
+<section class="slide hero dark" data-slide-id="closing-system" data-animate="hero"><div class="chrome"><div>Conclusion · 收束</div><div>15 / 15</div></div><div class="frame" style="display:grid;gap:3vh;align-content:center;min-height:0"><div class="kicker" data-anim>REAL-TIME ACOUSTIC CONTROL</div><h1 class="h-hero" style="font-size:min(7.6vw,13.5111vh)" data-anim>耳机一直在<br>和噪声赛跑</h1><p class="lead" style="max-width:68vw" data-anim>它不是让声音凭空消失，而是持续监听、计算、反相、播放，再从头开始。</p><div class="meta-row" data-anim><span>听见</span><span>·</span><span>计算</span><span>·</span><span>抵消</span><span>·</span><span>重复</span></div></div><div class="foot"><div>Active Noise Cancellation · A tiny acoustic control system</div><div>END</div></div></section>
 
 </div>
 

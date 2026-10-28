@@ -74,18 +74,18 @@
      · 等宽（IBM Plex Mono）：kicker、meta 小标签、foot 右侧
   */
   .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;opacity:.6;margin-bottom:2.6vh}
-  .display{font-family:var(--serif-en);font-weight:700;font-size:11vw;line-height:.92;letter-spacing:-.025em}
-  .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:7.8vw;line-height:1.04;letter-spacing:-.005em}
-  .h1-zh{font-family:var(--serif-zh);font-weight:700;font-size:4.6vw;line-height:1.12;letter-spacing:-.005em}
-  .h2-zh{font-family:var(--serif-zh);font-weight:600;font-size:3.2vw;line-height:1.2;letter-spacing:0}
-  .h3-zh{font-family:var(--serif-zh);font-weight:500;font-size:1.9vw;line-height:1.35}
-  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,1.22vw);line-height:1.75;opacity:.82;letter-spacing:.01em}
-  .body-serif{font-family:var(--serif-zh);font-weight:400;font-size:max(15px,1.3vw);line-height:1.65;opacity:.88}
-  .lead{font-family:var(--serif-zh);font-weight:400;font-size:1.9vw;line-height:1.4;opacity:.85}
-  .meta{font-family:var(--mono);font-size:max(11px,.88vw);letter-spacing:.16em;text-transform:uppercase;opacity:.6}
-  .big-num{font-family:var(--serif-en);font-weight:800;font-size:10vw;line-height:.85;letter-spacing:-.03em;font-feature-settings:"tnum"}
-  .mid-num{font-family:var(--serif-en);font-weight:700;font-size:5.5vw;line-height:.88;letter-spacing:-.02em;font-feature-settings:"tnum"}
-  .ghost{font-family:var(--serif-en);font-weight:900;font-size:34vw;line-height:.8;opacity:.06;letter-spacing:-.04em;position:absolute;font-feature-settings:"tnum"}
+  .display{font-family:var(--serif-en);font-weight:700;font-size:min(11vw,19.5556vh);line-height:.92;letter-spacing:-.025em}
+  .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:min(7.8vw,13.8667vh);line-height:1.04;letter-spacing:-.005em}
+  .h1-zh{font-family:var(--serif-zh);font-weight:700;font-size:min(4.6vw,8.1778vh);line-height:1.12;letter-spacing:-.005em}
+  .h2-zh{font-family:var(--serif-zh);font-weight:600;font-size:min(3.2vw,5.6889vh);line-height:1.2;letter-spacing:0}
+  .h3-zh{font-family:var(--serif-zh);font-weight:500;font-size:min(1.9vw,3.3778vh);line-height:1.35}
+  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,min(1.22vw,2.1689vh));line-height:1.75;opacity:.82;letter-spacing:.01em}
+  .body-serif{font-family:var(--serif-zh);font-weight:400;font-size:max(15px,min(1.3vw,2.3111vh));line-height:1.65;opacity:.88}
+  .lead{font-family:var(--serif-zh);font-weight:400;font-size:min(1.9vw,3.3778vh);line-height:1.4;opacity:.85}
+  .meta{font-family:var(--mono);font-size:max(11px,min(.88vw,1.5644vh));letter-spacing:.16em;text-transform:uppercase;opacity:.6}
+  .big-num{font-family:var(--serif-en);font-weight:800;font-size:min(10vw,17.7778vh);line-height:.85;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .mid-num{font-family:var(--serif-en);font-weight:700;font-size:min(5.5vw,9.7778vh);line-height:.88;letter-spacing:-.02em;font-feature-settings:"tnum"}
+  .ghost{font-family:var(--serif-en);font-weight:900;font-size:min(34vw,60.4444vh);line-height:.8;opacity:.06;letter-spacing:-.04em;position:absolute;font-feature-settings:"tnum"}
   em{font-style:italic;font-family:var(--serif-en)}
   .en{font-family:var(--serif-en);font-style:italic;font-weight:500}
 
@@ -106,40 +106,40 @@
 
   /* ============ Stat（数字矩阵） ============ */
   .stat{display:flex;flex-direction:column;gap:1vh;align-items:flex-start}
-  .stat .n{font-family:var(--serif-en);font-weight:800;font-size:8vw;line-height:.88;letter-spacing:-.03em;font-feature-settings:"tnum"}
-  .stat .l{font-family:var(--sans-zh);font-size:max(13px,1.05vw);opacity:.7;margin-top:1vh;font-weight:400;line-height:1.5}
+  .stat .n{font-family:var(--serif-en);font-weight:800;font-size:min(8vw,14.2222vh);line-height:.88;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .stat .l{font-family:var(--sans-zh);font-size:max(13px,min(1.05vw,1.8667vh));opacity:.7;margin-top:1vh;font-weight:400;line-height:1.5}
   .stat .m{font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.5;margin-bottom:.2vh}
 
   /* ============ Callout（引用框） ============ */
-  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,1.2vw);line-height:1.55;opacity:.92}
+  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,min(1.2vw,2.1333vh));line-height:1.55;opacity:.92}
   .slide.light .callout{background:rgba(var(--ink-rgb),.05)}
   .slide.dark .callout{background:rgba(var(--paper-rgb),.06)}
   .callout .cite{display:block;margin-top:1.6vh;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6}
-  .callout .q-big{font-family:var(--serif-zh);font-weight:600;font-size:max(17px,1.6vw);line-height:1.42}
+  .callout .q-big{font-family:var(--serif-zh);font-weight:600;font-size:max(17px,min(1.6vw,2.8444vh));line-height:1.42}
 
   /* ============ Platform（平台卡） ============ */
   .plat{display:flex;flex-direction:column;justify-content:flex-end;padding:2vh 0;border-top:1px solid currentColor;border-color:rgba(127,127,127,.35)}
-  .plat .name{font-family:var(--serif-zh);font-weight:700;font-size:1.8vw;margin-bottom:.6vh}
-  .plat .nb{font-family:var(--serif-en);font-weight:700;font-size:3.2vw;letter-spacing:-.02em;line-height:1;font-feature-settings:"tnum"}
+  .plat .name{font-family:var(--serif-zh);font-weight:700;font-size:min(1.8vw,3.2000vh);margin-bottom:.6vh}
+  .plat .nb{font-family:var(--serif-en);font-weight:700;font-size:min(3.2vw,5.6889vh);letter-spacing:-.02em;line-height:1;font-feature-settings:"tnum"}
   .plat .sub{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;opacity:.55;margin-top:.6vh}
-  .plat .fill{font-family:var(--sans-zh);font-weight:300;font-size:2.4vw;opacity:.28;letter-spacing:-.01em;line-height:1}
+  .plat .fill{font-family:var(--sans-zh);font-weight:300;font-size:min(2.4vw,4.2667vh);opacity:.28;letter-spacing:-.01em;line-height:1}
 
   /* ============ Rowline（表格行） ============ */
   .rowline{display:grid;grid-template-columns:1fr 2fr 1fr;gap:2vw;padding:2.2vh 0;border-top:1px solid currentColor;align-items:center;border-color:rgba(127,127,127,.25)}
   .rowline:last-child{border-bottom:1px solid currentColor;border-color:rgba(127,127,127,.25)}
-  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:1.7vw}
-  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.2vw);opacity:.85;line-height:1.55}
+  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:min(1.7vw,3.0222vh)}
+  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,min(1.2vw,2.1333vh));opacity:.85;line-height:1.55}
   .rowline .m{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6;justify-self:end}
 
   /* ============ Pillar（支柱卡片） ============ */
   .pillar{display:flex;flex-direction:column;gap:1.8vh}
-  .pillar .ic{font-family:var(--serif-en);font-style:italic;font-size:2.6vw;opacity:.45;font-weight:400}
+  .pillar .ic{font-family:var(--serif-en);font-style:italic;font-size:min(2.6vw,4.6222vh);opacity:.45;font-weight:400}
   .pillar .ic svg{width:2.8vw;height:2.8vw;stroke-width:1.2;opacity:.7}
-  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:2.4vw;line-height:1.1}
-  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.1vw);opacity:.76;line-height:1.6}
+  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:min(2.4vw,4.2667vh);line-height:1.1}
+  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,min(1.1vw,1.9556vh));opacity:.76;line-height:1.6}
 
   /* ============ Signature / Highlight ============ */
-  .sign{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:2vw;opacity:.7}
+  .sign{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:min(2vw,3.5556vh);opacity:.7}
   .hi{position:relative;display:inline}
   .slide.dark .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--paper-rgb),.15);z-index:-1}
   .slide.light .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--ink-rgb),.08);z-index:-1}
@@ -154,7 +154,7 @@
   /* ============ 图片占位（虚线框，提示设计师位置） ============ */
   .img-slot{border:1.5px dashed rgba(127,127,127,.4);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1vh;padding:2vh 2vw;font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;opacity:.55;position:relative;aspect-ratio:16/9;width:100%;max-height:56vh;margin-inline:auto;box-sizing:border-box}
   .img-slot::before{content:"";position:absolute;inset:8px;border:1px solid currentColor;opacity:.2}
-  .img-slot .plus{font-size:2vw;font-weight:300;opacity:.5;letter-spacing:0}
+  .img-slot .plus{font-size:min(2vw,3.5556vh);font-weight:300;opacity:.5;letter-spacing:0}
   .img-slot .label{position:relative;z-index:2;text-align:center}
   .img-slot.r-4x3{aspect-ratio:4/3}
   .img-slot.r-3x2{aspect-ratio:3/2}
@@ -180,8 +180,8 @@
   .frame-img.h-26{height:26vh}
   .frame-img.h-28{height:28vh}
   .frame-cap{display:flex;justify-content:space-between;align-items:baseline;gap:1vw;margin-top:.8vh;font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.72}
-  .frame-cap .pf{font-family:var(--serif-zh);font-weight:600;font-size:max(13px,1vw);letter-spacing:.04em;text-transform:none;opacity:.94}
-  .frame-cap .nb{font-family:var(--serif-en);font-style:italic;font-size:max(15px,1.2vw);letter-spacing:.02em;text-transform:none;opacity:.88}
+  .frame-cap .pf{font-family:var(--serif-zh);font-weight:600;font-size:max(13px,min(1vw,1.7778vh));letter-spacing:.04em;text-transform:none;opacity:.94}
+  .frame-cap .nb{font-family:var(--serif-en);font-style:italic;font-size:max(15px,min(1.2vw,2.1333vh));letter-spacing:.02em;text-transform:none;opacity:.88}
   .frame-cap .idx{font-family:var(--mono);opacity:.5}
   figure.tile{display:flex;flex-direction:column;margin:0;min-width:0}
   figure.tile > .frame-img{flex:0 0 auto}
@@ -217,21 +217,21 @@
   .h-hero{
     font-family:var(--serif-zh);
     font-weight:900;
-    font-size:10vw;
+    font-size:min(10vw,17.7778vh);
     line-height:.96;
     letter-spacing:-.02em;
   }
   .h-xl{
     font-family:var(--serif-zh);
     font-weight:700;
-    font-size:6.2vw;
+    font-size:min(6.2vw,11.0222vh);
     line-height:1.08;
     letter-spacing:-.01em;
   }
   .h-sub{
     font-family:var(--serif-zh);
     font-weight:500;
-    font-size:3.1vw;
+    font-size:min(3.1vw,5.5111vh);
     line-height:1.25;
     letter-spacing:0;
     opacity:.7;
@@ -239,7 +239,7 @@
   .h-md{
     font-family:var(--serif-zh);
     font-weight:600;
-    font-size:2.3vw;
+    font-size:min(2.3vw,4.0889vh);
     line-height:1.3;
   }
   /* 英文标题专用（Playfair 衬线） */
@@ -249,7 +249,7 @@
   .lead{
     font-family:var(--serif-zh);
     font-weight:400;
-    font-size:1.75vw;
+    font-size:min(1.75vw,3.1111vh);
     line-height:1.5;
     opacity:.86;
   }
@@ -261,7 +261,7 @@
     align-items:baseline;
     flex-wrap:wrap;
     font-family:var(--mono);
-    font-size:max(12px,.92vw);
+    font-size:max(12px,min(.92vw,1.6356vh));
     letter-spacing:.16em;
     text-transform:uppercase;
     opacity:.6;
@@ -279,7 +279,7 @@
   }
   .stat-card .stat-label{
     font-family:var(--mono);
-    font-size:max(10px,.78vw);
+    font-size:max(10px,min(.78vw,1.3867vh));
     letter-spacing:.24em;
     text-transform:uppercase;
     opacity:.55;
@@ -287,7 +287,7 @@
   .stat-card .stat-nb{
     font-family:var(--serif-en);
     font-weight:800;
-    font-size:5.8vw;
+    font-size:min(5.8vw,10.3111vh);
     line-height:.9;
     letter-spacing:-.03em;
     font-feature-settings:"tnum";
@@ -304,15 +304,15 @@
   .stat-card .stat-note{
     font-family:var(--sans-zh);
     font-weight:400;
-    font-size:max(13px,1.05vw);
+    font-size:max(13px,min(1.05vw,1.8667vh));
     line-height:1.5;
     opacity:.72;
     margin-top:.6vh;
   }
   /* 当 stat-card 用于 grid-4（2x2），数字适度放大；若页面有标题+引文在上方，可内联 style 覆盖为更小值 */
-  .grid-4 .stat-card .stat-nb{font-size:5vw}
+  .grid-4 .stat-card .stat-nb{font-size:min(5vw,8.8889vh)}
   /* 当只有 3 个，字也可以稍大 */
-  .grid-3 .stat-card .stat-nb{font-size:6.8vw}
+  .grid-3 .stat-card .stat-nb{font-size:min(6.8vw,12.0889vh)}
 
   /* ---------- pipeline（流水线） ---------- */
   .pipeline-section{
@@ -327,7 +327,7 @@
   }
   .pipeline-label{
     font-family:var(--mono);
-    font-size:max(11px,.85vw);
+    font-size:max(11px,min(.85vw,1.5111vh));
     letter-spacing:.24em;
     text-transform:uppercase;
     opacity:.62;
@@ -353,20 +353,20 @@
     font-family:var(--serif-en);
     font-style:italic;
     font-weight:500;
-    font-size:1.15vw;
+    font-size:min(1.15vw,2.0444vh);
     opacity:.45;
   }
   .step-title{
     font-family:var(--sans-zh);
     font-weight:700;
-    font-size:1.55vw;
+    font-size:min(1.55vw,2.7556vh);
     letter-spacing:.01em;
     line-height:1.2;
   }
   .step-desc{
     font-family:var(--sans-zh);
     font-weight:400;
-    font-size:max(12px,.95vw);
+    font-size:max(12px,min(.95vw,1.6889vh));
     line-height:1.45;
     opacity:.72;
   }
@@ -391,7 +391,7 @@
     display:block;
     margin-top:.8vh;
     font-family:var(--mono);
-    font-size:max(10px,.8vw);
+    font-size:max(10px,min(.8vw,1.4222vh));
     letter-spacing:.22em;
     text-transform:uppercase;
     opacity:.6;
@@ -408,8 +408,8 @@
   }
 
   /* ---------- chrome & foot 补位（layouts.md 简单写法） ---------- */
-  .chrome{font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.2em;text-transform:uppercase;opacity:.62}
-  .foot{flex-shrink:0;margin-bottom:2vh;font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.18em;text-transform:uppercase;opacity:.5}
+  .chrome{font-family:var(--mono);font-size:max(11px,min(.78vw,1.3867vh));letter-spacing:.2em;text-transform:uppercase;opacity:.62}
+  .foot{flex-shrink:0;margin-bottom:2vh;font-family:var(--mono);font-size:max(11px,min(.78vw,1.3867vh));letter-spacing:.18em;text-transform:uppercase;opacity:.5}
 
   /* ============ 动效系统(CSS @keyframes,替代 Motion One 以支持 file:// 协议) ============
      所有 [data-anim] 元素默认隐藏,由 .slide.visible 触发 CSS 入场动画。
@@ -433,14 +433,17 @@
 
   /* ---------- 响应式降级 ---------- */
   @media (max-width:900px){
-    .display{font-size:16vw}
-    .display-zh{font-size:12vw}
-    .h1-zh{font-size:7vw}
-    .h-hero{font-size:14vw}
-    .h-xl{font-size:9vw}
+    .display{font-size:min(16vw,28.4444vh)}
+    .display-zh{font-size:min(12vw,21.3333vh)}
+    .h1-zh{font-size:min(7vw,12.4444vh)}
+    .h-hero{font-size:min(14vw,24.8889vh)}
+    .h-xl{font-size:min(9vw,16.0000vh)}
     .pipeline{grid-template-columns:repeat(2,1fr)}
     .grid-2-7-5,.grid-2-6-6,.grid-2-8-4{grid-template-columns:1fr}
   }
+</style>
+<style>/* Keep captions and lower content inside their allocated space. */
+#deck>.slide:nth-child(2)>.frame{margin-bottom:1.5vh}
 </style>
 </head>
 <body>
@@ -488,7 +491,7 @@
     <div>技术文明史</div>
     <div>01 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>From Keys to Access</div>
     <h1 class="h-hero" data-anim>钥匙与锁：<br>安全感的技术史</h1>
     <h2 class="h-sub" data-anim>人类如何把"不安"设计成一种秩序</h2>
@@ -509,9 +512,9 @@
     <div>第一章 · 本质</div>
     <div>02 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Security Begins With a Boundary</div>
-    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:5.8vw; line-height:1.2; letter-spacing:-.01em; max-width:72vw">
+    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:min(5.8vw,10.3111vh); line-height:1.2; letter-spacing:-.01em; max-width:72vw">
       <span data-anim="line" style="display:block">锁不是简单的金属装置。</span>
       <span data-anim="line" style="display:block">它是一种社会语言：</span>
       <span data-anim="line" style="display:block">这里有主人、这里有边界、</span>
@@ -541,17 +544,17 @@
     <div class="grid-3" style="margin-top:3vh;flex:0 0 auto">
       <div class="stat-card" data-anim>
         <div class="stat-label">起源年代</div>
-        <div class="stat-nb" style="font-size:5vw;line-height:1.1;white-space:nowrap">~4000 <span class="stat-unit">年前</span></div>
+        <div class="stat-nb" style="font-size:min(5vw,8.8889vh);line-height:1.1;white-space:nowrap">~4000 <span class="stat-unit">年前</span></div>
         <div class="stat-note">古埃及木制锁具</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">已知早期实例</div>
-        <div class="stat-nb" style="font-size:5vw;line-height:1.1;white-space:nowrap">古埃及</div>
+        <div class="stat-nb" style="font-size:min(5vw,8.8889vh);line-height:1.1;white-space:nowrap">古埃及</div>
         <div class="stat-note">木制弹子锁实例约四千年</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">核心原理</div>
-        <div class="stat-nb" style="font-size:5vw;line-height:1.1;white-space:nowrap">弹子 <span class="stat-unit">结构</span></div>
+        <div class="stat-nb" style="font-size:min(5vw,8.8889vh);line-height:1.1;white-space:nowrap">弹子 <span class="stat-unit">结构</span></div>
         <div class="stat-note">用机关而非力量来守护</div>
       </div>
     </div>
@@ -568,9 +571,9 @@
     <div>第二章 · 起源</div>
     <div>04 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:8vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:8vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>The Key Was the Solution</div>
-    <h1 class="h-hero" style="font-size:7vw; line-height:1.15">
+    <h1 class="h-hero" style="font-size:min(7vw,12.4444vh); line-height:1.15">
       <span data-anim style="display:block">钥匙第一次</span>
       <span data-anim style="display:block">成为"答案"</span>
     </h1>
@@ -622,9 +625,9 @@
     <div>第三章 · 金属时代</div>
     <div>06 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:3.6vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:3.6vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Security Became Art</div>
-    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:4.8vw; line-height:1.25; letter-spacing:-.01em; max-width:72vw">
+    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:min(4.8vw,8.5333vh); line-height:1.25; letter-spacing:-.01em; max-width:72vw">
       <span data-anim="line" style="display:block">这时的锁不只是防盗装置，</span>
       <span data-anim="line" style="display:block">也是一种身份展示。</span>
       <span data-anim="line" style="display:block">锁越复杂，越像是在告诉别人：</span>
@@ -654,7 +657,7 @@
       <div data-anim="left" style="padding:3vh 2vw; border-left:3px solid currentColor; opacity:.55">
         <div class="kicker" style="opacity:.9">Before · 乡村时代</div>
         <h3 class="h-md" style="margin-top:2vh">公共与私有的模糊边界</h3>
-        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.55">
           <li>人口分散，交易稀少</li>
           <li>锁具需求有限</li>
           <li>私人财产概念模糊</li>
@@ -663,7 +666,7 @@
       <div data-anim="right" style="padding:3vh 2vw; border-left:3px solid currentColor">
         <div class="kicker" style="opacity:.9">After · 城市兴起</div>
         <h3 class="h-md" style="margin-top:2vh">私有观念需要技术支撑</h3>
-        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.55">
           <li>人口密集，交易频繁</li>
           <li>锁在门、箱柜、储物器广泛使用</li>
           <li>用技术划出私人边界</li>
@@ -690,7 +693,7 @@
       <div data-anim="left" style="padding:3vh 2vw; border-left:3px solid currentColor; opacity:.55">
         <div class="kicker" style="opacity:.9">Before · 传统铁锁</div>
         <h3 class="h-md" style="margin-top:2vh">靠外形迷惑入侵者</h3>
-        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.55">
           <li>铁匠手工艺，非标准化</li>
           <li>安全依赖"看起来复杂"</li>
         </ul>
@@ -698,7 +701,7 @@
       <div data-anim="right" style="padding:3vh 2vw; border-left:3px solid currentColor">
         <div class="kicker" style="opacity:.9">After · 1778</div>
         <h3 class="h-md" style="margin-top:2vh">双动制栓锁</h3>
-        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.55">
           <li>Robert Barron 专利</li>
           <li>两个制栓升到不同高度才能开锁</li>
           <li>安全转向内部逻辑严谨</li>
@@ -725,17 +728,17 @@
     <div class="grid-3" style="margin-top:3vh;flex:0 0 auto">
       <div class="stat-card" data-anim>
         <div class="stat-label">发明者</div>
-        <div class="stat-nb" style="font-size:5vw;line-height:1.1;white-space:nowrap">Joseph <span class="stat-unit">Bramah</span></div>
+        <div class="stat-nb" style="font-size:min(5vw,8.8889vh);line-height:1.1;white-space:nowrap">Joseph <span class="stat-unit">Bramah</span></div>
         <div class="stat-note">英国工程师</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">首次制造</div>
-        <div class="stat-nb" style="font-size:5vw;line-height:1.1;white-space:nowrap">1784</div>
+        <div class="stat-nb" style="font-size:min(5vw,8.8889vh);line-height:1.1;white-space:nowrap">1784</div>
         <div class="stat-note">1787 年获专利</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">核心突破</div>
-        <div class="stat-nb" style="font-size:5vw;line-height:1.1;white-space:nowrap">机械化 <span class="stat-unit">零件</span></div>
+        <div class="stat-nb" style="font-size:min(5vw,8.8889vh);line-height:1.1;white-space:nowrap">机械化 <span class="stat-unit">零件</span></div>
         <div class="stat-note">不再只是铁匠的手艺</div>
       </div>
     </div>
@@ -752,9 +755,9 @@
     <div>第五章 · 现代化</div>
     <div>10 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:8vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:8vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>No Lock Is Absolute</div>
-    <h1 class="h-hero" style="font-size:7vw; line-height:1.15">
+    <h1 class="h-hero" style="font-size:min(7vw,12.4444vh); line-height:1.15">
       <span data-anim style="display:block">"不可打开"的</span>
       <span data-anim style="display:block">神话被打破</span>
     </h1>
@@ -779,7 +782,7 @@
       <div data-anim="left" style="padding:3vh 2vw; border-left:3px solid currentColor; opacity:.55">
         <div class="kicker" style="opacity:.9">Before · 普通制栓锁</div>
         <h3 class="h-md" style="margin-top:2vh">阻挡入侵，但不留痕迹</h3>
-        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.55">
           <li>被撬锁后无法察觉</li>
           <li>安全是被动的</li>
         </ul>
@@ -787,7 +790,7 @@
       <div data-anim="right" style="padding:3vh 2vw; border-left:3px solid currentColor">
         <div class="kicker" style="opacity:.9">After · 1818</div>
         <h3 class="h-md" style="margin-top:2vh">Chubb 检测锁</h3>
-        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.55">
           <li>Jeremiah Chubb 加入 detector 结构</li>
           <li>制栓抬得过高 → 机构锁住</li>
           <li>显示曾被尝试打开</li>
@@ -842,9 +845,9 @@
     <div>第六章 · 现代门锁</div>
     <div>13 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Small Key. Vast Influence.</div>
-    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:5.8vw; line-height:1.2; letter-spacing:-.01em; max-width:72vw">
+    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:min(5.8vw,10.3111vh); line-height:1.2; letter-spacing:-.01em; max-width:72vw">
       <span data-anim="line" style="display:block">真正伟大的设计，</span>
       <span data-anim="line" style="display:block">往往不是变得更复杂，</span>
       <span data-anim="line" style="display:block">而是让复杂被隐藏起来。</span>
@@ -866,9 +869,9 @@
     <div>第七章 · 信任的复制</div>
     <div>14 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:2.5vh; align-content:center; min-height:70vh">
+  <div class="frame" style="display:grid; gap:2.5vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Access Became Organized</div>
-    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:4.8vw; line-height:1.2; letter-spacing:-.01em; max-width:72vw">
+    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:min(4.8vw,8.5333vh); line-height:1.2; letter-spacing:-.01em; max-width:72vw">
       <span data-anim="line" style="display:block">钥匙不只打开门，</span>
       <span data-anim="line" style="display:block">也改变管理方式。</span>
       <span data-anim="line" style="display:block">它把“谁能进入哪里”</span>
@@ -898,7 +901,7 @@
       <div data-anim="left" style="padding:3vh 2vw; border-left:3px solid currentColor; opacity:.55">
         <div class="kicker" style="opacity:.9">Before · 机械时代</div>
         <h3 class="h-md" style="margin-top:2vh">金属钥匙</h3>
-        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.55">
           <li>物理齿痕决定权限</li>
           <li>丢失后风险持续存在</li>
           <li>不可撤销</li>
@@ -907,7 +910,7 @@
       <div data-anim="right" style="padding:3vh 2vw; border-left:3px solid currentColor">
         <div class="kicker" style="opacity:.9">After · 20 世纪后期</div>
         <h3 class="h-md" style="margin-top:2vh">磁卡钥匙</h3>
-        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+        <ul style="margin-top:3vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,min(1.1vw,1.9556vh)); line-height:1.55">
           <li>齿痕变成了数据</li>
           <li>可写入、删除、重置</li>
           <li>权限可动态管理</li>
@@ -995,9 +998,9 @@
     <div>第十章 · 身体即钥匙</div>
     <div>18 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:8vh; align-content:center; min-height:80vh">
+  <div class="frame" style="display:grid; gap:8vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>You Become the Key</div>
-    <h1 class="h-hero" style="font-size:7vw; line-height:1.15">
+    <h1 class="h-hero" style="font-size:min(7vw,12.4444vh); line-height:1.15">
       <span data-anim style="display:block">生物识别：</span>
       <span data-anim style="display:block">身体成为钥匙</span>
     </h1>
@@ -1022,17 +1025,17 @@
     <div class="grid-3" style="margin-top:3vh;flex:0 0 auto">
       <div class="stat-card" data-anim>
         <div class="stat-label">Passkeys</div>
-        <div class="stat-nb" style="font-size:5vw;line-height:1.1;white-space:nowrap">FIDO <span class="stat-unit">标准</span></div>
+        <div class="stat-nb" style="font-size:min(5vw,8.8889vh);line-height:1.1;white-space:nowrap">FIDO <span class="stat-unit">标准</span></div>
         <div class="stat-note">加密密钥对替代密码</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Aliro 1.0</div>
-        <div class="stat-nb" style="font-size:5vw;line-height:1.1;white-space:nowrap">NFC <span class="stat-unit">/ BLE / UWB</span></div>
+        <div class="stat-nb" style="font-size:min(5vw,8.8889vh);line-height:1.1;white-space:nowrap">NFC <span class="stat-unit">/ BLE / UWB</span></div>
         <div class="stat-note">CSA 统一数字访问标准</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">载体</div>
-        <div class="stat-nb" style="font-size:5vw;line-height:1.1;white-space:nowrap">手机 <span class="stat-unit">/ 手表 / 汽车</span></div>
+        <div class="stat-nb" style="font-size:min(5vw,8.8889vh);line-height:1.1;white-space:nowrap">手机 <span class="stat-unit">/ 手表 / 汽车</span></div>
         <div class="stat-note">钥匙不再被握在手里</div>
       </div>
     </div>
@@ -1049,7 +1052,7 @@
     <div>终章</div>
     <div>20 / 20</div>
   </div>
-  <div class="frame" style="display:grid; gap:2.2vh; align-content:center; min-height:72vh">
+  <div class="frame" style="display:grid; gap:2.2vh; align-content:center; min-height:0">
     <div class="kicker" data-anim>Every Lock Is a Question of Trust</div>
     <h1 class="h-hero" data-anim>锁的终点，<br>是信任</h1>
     <h2 class="h-sub" data-anim>从木制机关到智能门禁</h2>

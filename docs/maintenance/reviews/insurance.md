@@ -1,5 +1,7 @@
 # 保险：人类如何给不确定性定价 · Insurance — 深度维护审阅
 
+> 最新布局复验：已修复；四档动态全页通过。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`268a6c69fb813bcb482a6f60242cf167be0a02a72cffb7f6a8d8b6ed8367d7a6`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 > 本轮交付：已从维护源重新导出至原有成品路径；Approved 状态保留。15 页三档逐页检查与断网核心阅读检查通过。最终 SHA-256：`0f2a990f79841f8754f930f6c110dc409d63203e3d6180d4ad584756ca31beab`。事实和视觉变更见下文；旧阶段记录不替代这里的最终状态。
 
 - 源文件：`2026-10-28-legacy-maintenance/insurance.html`
@@ -52,3 +54,8 @@
 - 已核对 stage 与 `.codex/release-seven/insurance.html` 字节相同，SHA-256：`0f2a990f79841f8754f930f6c110dc409d63203e3d6180d4ad584756ca31beab`。
 - 正式报告：`.codex/qa-release-seven/approved-insurance.json`；三档×20页全部检查，console/pageerror/failed/badSlides均为0；1600档ESC总览通过。
 - 该正式报告仅适用于上述固定字节；不把未运行的发布后公网验证或全38份离线测试写成通过。
+
+
+## 宽矮窗口修复补充
+
+触发页：9, 10, 11。字号按可用高度约束；移除过大的 frame 最小高度；问题页保留底部安全距离。共享字号规则覆盖整份作品，已整份复测，正文未改。

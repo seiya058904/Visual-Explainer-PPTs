@@ -1,5 +1,7 @@
 # 药片 — 深审与交付记录
 
+> 最新布局复验：已修复；四档动态全页通过。1920×900、1280×600 逐页文字裁切/页脚检查通过。当前成品 SHA-256：`91e256a6de2730b12acddb8991ad5b2bcbbe307e5e539a4088df315e79e4b3dd`。见[宽矮窗口专项记录](../approved-bottom-clipping.md)；下文首轮发布哈希为历史快照。
+
 > 最终交付：已从维护源规范导出至原成品路径，Approved 状态保留；28 页三档逐页检查通过，断网静态阅读（含祖先裁切边界）通过。SHA-256：`f548da83b0b234d9d391785051190b5206c1b9d4c8d83dc63ce1624a1cc5bb0c`。
 
 - Artifact: `ppt-collection/pills-industrial-miracle.html`
@@ -36,3 +38,8 @@ P10删除旧句残留，完整说明同成分的即释/缓释剂型与释放曲�
 ## 最终验收证据
 
 完整三档报告：`.codex/qa-pills-final/approved-pills-industrial-miracle.json`。所有页面的实际文字边界、页脚、缺图、脚本及请求检查通过；pipeline适用时覆盖初始/推进/完成/继续翻页。ESC首档验证。离线完整逐页报告：`.codex/offline-final38/results.json`，按上方相同SHA核对。网络照片限制见目录字段；本记录不等于物理投影或所有浏览器认证。
+
+
+## 宽矮窗口修复补充
+
+触发页：3。字号按可用高度约束；移除过大的 frame 最小高度。共享字号规则覆盖整份作品，已整份复测，正文未改。
