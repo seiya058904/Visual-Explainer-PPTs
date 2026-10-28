@@ -1,6 +1,12 @@
 <h1 align="center">📐 Visual Explainer PPTs</h1>
 
 <p align="center">
+  <strong><a href="https://seiya058904.github.io/Visual-Explainer-PPTs/">🌐 Open the Live PPT Collection →</a></strong>
+  <br />
+  <a href="https://seiya058904.github.io/Visual-Explainer-PPTs/">seiya058904.github.io/Visual-Explainer-PPTs</a>
+</p>
+
+<p align="center">
   <strong>One question. A clearer way to see it.</strong>
 </p>
 
@@ -10,8 +16,6 @@
 </p>
 
 <p align="center">
-  <a href="https://seiya058904.github.io/Visual-Explainer-PPTs/"><strong>🔎 Explore the Explainers</strong></a>
-  &nbsp;·&nbsp;
   <a href="ppt-collection/">📚 Approved Decks</a>
   &nbsp;·&nbsp;
   <a href="#visual-language">🎨 Visual Language</a>
@@ -24,7 +28,9 @@
 </p>
 
 <p align="center">
-  <img src="docs/images/gallery-1600x900.webp" width="820" alt="Actual desktop screenshot of the Visual Explainer Library" />
+  <a href="https://seiya058904.github.io/Visual-Explainer-PPTs/">
+    <img src="docs/images/gallery-1600x900.webp" width="820" alt="Actual desktop screenshot of the Visual Explainer Library" />
+  </a>
   <br />
   <sub>The library, captured in a real browser. Every cover opens an interactive HTML presentation.</sub>
 </p>
