@@ -670,7 +670,7 @@
   </div>
   <div class="frame center" style="text-align:center;min-height:80vh">
     <div class="kicker" data-anim>Standardization · 标准化</div>
-    <blockquote class="display" style="max-width:68vw;margin:0 auto" data-anim>"Standardization turns parts into systems."</blockquote>
+    <blockquote class="display" style="max-width:74vw;margin:0 auto;font-size:clamp(42px,7vw,90px);line-height:1" data-anim>"Standardization turns parts into systems."</blockquote>
     <p class="lead" style="max-width:52vw;margin:2.4vh auto 0" data-anim>螺丝如果不能被替换、不被理解，就不是现代工业零件。</p>
     <div class="meta-row" style="justify-content:center;margin-top:4vh" data-anim>
       <span>英制</span><span>Unified</span><span>ISO Metric</span><span>互换性</span>
@@ -729,25 +729,25 @@
       <p class="lead" style="margin-top:2.4vh" data-anim>Torque is the most practical way to estimate preload — but it's far from perfect.</p>
       <p style="margin-top:2.4vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.65;opacity:.78" data-anim>
         扭矩扳手是最常见的拧紧工具。通过设定扭矩值，间接控制预紧力。<br><br>
-        问题在于：摩擦消耗了高达 80%–90% 的扭矩。真正用于产生预紧力的能量，只有很小一部分。<br><br>
-        润滑状态、表面粗糙度、拧紧速度都会影响扭矩–预紧力关系。同一个扭矩值，实际预紧力偏差可能超过 30%。
+        在常见螺栓连接中，大部分施加扭矩消耗于螺纹与支承面的摩擦，只有一部分转化为预紧力；具体比例随润滑、表面和连接设计而变。<br><br>
+        因此，单靠扭矩不能精确预测预紧力。若连接安全关键，应按适用规范和经验证的装配程序控制并检查预紧力。
       </p>
     </div>
     <div style="display:flex;flex-direction:column;gap:2.4vh;justify-content:center">
       <div class="stat-card" data-anim>
         <div class="stat-label">Torque → Preload</div>
-        <div class="stat-nb">80-90<span class="stat-unit">%</span></div>
-        <div class="stat-note">扭矩被摩擦消耗</div>
+        <div class="stat-nb" style="font-size:4.2vw">Indirect</div>
+        <div class="stat-note">扭矩只能间接估算预紧力</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Scatter</div>
-        <div class="stat-nb">±30<span class="stat-unit">%</span></div>
-        <div class="stat-note">相同扭矩下的预紧力偏差</div>
+        <div class="stat-nb" style="font-size:4.2vw">Varies</div>
+        <div class="stat-note">实际结果受装配条件影响</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Best Method</div>
         <div class="stat-nb" style="font-size:4.2vw">Angle<br>Control</div>
-        <div class="stat-note">扭矩+角度法更精准</div>
+        <div class="stat-note">可选方法之一 · 按设计与程序验证</div>
       </div>
     </div>
   </div>
@@ -957,7 +957,7 @@
   </div>
   <div class="foot">
     <div>Page 13 · 疲劳</div>
-    <div>Fatigue is the #1 cause of fastener failure.</div>
+    <div>Cyclic loading can gradually grow a crack.</div>
   </div>
 </section>
 
@@ -1049,7 +1049,7 @@
         <h2 class="h-xl" style="font-size:5.2vw" data-anim>航空：螺丝进入最高级的日常安全系统。</h2>
         <p style="margin-top:2.4vh;font-family:var(--sans-zh);font-size:max(14px,1.05vw);line-height:1.65;opacity:.78" data-anim>
           在航空领域，每颗螺丝都经过材料追溯、批次控制、扭矩校验。<br><br>
-          一架波音 787 包含约 230 万个紧固件，每一个都必须承受振动、温差、气压变化、腐蚀环境和循环疲劳。<br><br>
+          波音称，一架 787 约由 230 万个零部件组成，其中既有紧固件，也有机身结构等大型部件。航空紧固件需要依照适用规范进行材料追溯、批次管理和安装控制。<br><br>
           航空紧固件的更换周期被严格定义——不是"坏了再换"，而是"到寿命必须换"。
         </p>
       </div>
@@ -1060,9 +1060,9 @@
     </div>
     <div style="display:flex;flex-direction:column;gap:2vh;justify-content:center">
       <div class="stat-card" data-anim>
-        <div class="stat-label">Fasteners per 787</div>
+        <div class="stat-label">Parts per 787 · Boeing</div>
         <div class="stat-nb">2.3<span class="stat-unit">M</span></div>
-        <div class="stat-note">波音 787 紧固件数量</div>
+        <div class="stat-note">整机零部件数量，不是紧固件数量</div>
       </div>
       <div class="stat-card" data-anim>
         <div class="stat-label">Grade</div>
