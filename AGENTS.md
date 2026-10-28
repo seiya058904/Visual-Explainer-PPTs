@@ -257,6 +257,7 @@ Pipeline 是高风险回归点：
 - 右栏 `align-self: stretch; min-height: 0`
 - figure `flex: 1 1 auto; min-height` 合理
 - stat-card 保持 auto 高度
+- 带图注的 figure 必须为 caption 保留独立行；图片 `height:100%` 不能占满父级后再把图注推到裁切区。含联网图片的作品须在图片加载成功后检查，断网的空图不能替代图注验收。
 - 由图片区域让位，文字卡完整保留
 
 ### 沉底列
@@ -297,7 +298,7 @@ Pipeline 是高风险回归点：
 
 第三档用于覆盖浏览器缩放或较小有效视口；不能只用标准 16:9 两档验收。
 
-涉及字号、内容高度或底部遮挡时，另测 1920×900、1536×730、1280×600 等宽而矮的有效视口。`vw` 字号须考虑可用高度；`.frame` 的固定最小高度不能再叠加页眉/页脚把内容推出可用区。对所有真实文字节点检查祖先裁切与页脚安全距离，不能只检查可见叶子元素或视口边界。待审核作品专项回归：`node docs/build/test-pending-layout.mjs`（验证实际页码后再测量）。
+涉及字号、内容高度或底部遮挡时，另测 1920×900、1536×730、1280×600 等宽而矮的有效视口。`vw` 字号须考虑可用高度；`.frame` 的固定最小高度不能再叠加页眉/页脚把内容推出可用区。对所有真实文字节点检查祖先裁切与页脚安全距离，不能只检查可见叶子元素或视口边界。专项回归：待审核作品 `node docs/build/test-pending-layout.mjs`；已认可作品 `node docs/build/test-approved-layout.mjs`（验证实际页码后再测量）。
 
 Style B：运行 `validate-swiss-deck.mjs`。  
 Presenter mode：运行 `validate-presenter-mode.mjs`。
