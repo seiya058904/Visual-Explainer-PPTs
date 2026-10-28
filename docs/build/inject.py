@@ -3,10 +3,10 @@
 用法: python inject.py <deck_dir> <slides_file> <html_title> <theme_name> <notes_file>
 theme: ink-default | indigo-porcelain | forest-ink | kraft | dune
 """
-import sys, re, json, pathlib
+import sys, re, json, pathlib, os, runpy
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[2]
-SKILL = REPO_ROOT / ".codex" / "skills" / "guizang-ppt-skill"
+SKILL = pathlib.Path(os.environ.get("GUIZANG_SKILL_ROOT", str(REPO_ROOT / ".codex" / "skills" / "guizang-ppt-skill")))
 THEMES = {
     "ink-default":        {"--ink":"#0a0a0b","--ink-rgb":"10,10,11","--paper":"#f1efea","--paper-rgb":"241,239,234","--paper-tint":"#e8e5de","--ink-tint":"#18181a"},
     "indigo-porcelain":   {"--ink":"#0a1f3d","--ink-rgb":"10,31,61","--paper":"#f1f3f5","--paper-rgb":"241,243,245","--paper-tint":"#e4e8ec","--ink-tint":"#152a4a"},
@@ -51,6 +51,7 @@ def main():
     # 校验没有残留
     assert "<!-- SLIDES_HERE -->" not in tpl, "SLIDES_HERE 未被替换"
     assert "[必填]" not in tpl, "存在 [必填] 残留"
+    tpl = runpy.run_path(str(REPO_ROOT / "docs/build/runtime-compat.py"))["isolate_presenter_gestures"](tpl)
     out = deck / "index.html"
     out.write_text(tpl, encoding="utf-8")
     print(f"OK {out} ({len(tpl)} bytes, theme={theme})")

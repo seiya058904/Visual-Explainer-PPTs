@@ -19,7 +19,7 @@
     <text x="588" y="345" fill="#f1f3f5" font-size="17" text-anchor="middle">过不去</text>
     <!-- 说明 -->
     <text x="400" y="180" fill="#f1f3f5" font-size="22" font-weight="700">黄灯太短 · 选择变成赌博</text>
-    <text x="400" y="230" fill="#f1f3f5" font-size="19" opacity=".8">好的配时，让这段区间彻底消失</text>
+    <text x="400" y="230" fill="#f1f3f5" font-size="19" opacity=".8">合理配时可缩小两难区，个体差异仍存在</text>
     <text x="770" y="560" fill="#f1f3f5" font-size="17" text-anchor="end" opacity=".55">Dilemma Zone · 示意</text>
   </g>
 </svg>

@@ -570,7 +570,7 @@
     <div class="stat-card" style="margin-top:-2vh;max-width:32vw" data-anim>
       <div class="stat-label">Quality-controlled observations</div>
       <div class="stat-nb" style="line-height:1.08;white-space:nowrap">≈ 60<span class="stat-unit">million</span></div>
-      <div class="stat-note">ECMWF 业务初始条件背后的观测规模</div>
+      <div class="stat-note">ECMWF每日可用于IFS的质控观测量</div>
     </div>
   </div>
   <div class="foot"><div class="title">Data Assimilation · ECMWF</div><div>02 · 13</div></div>
@@ -655,7 +655,7 @@
     <div class="grid-3" style="margin-top:5vh;gap:3.8vw">
       <div class="stat-card" data-anim><div class="stat-label">Forecast Horizon</div><div class="stat-nb">10<span class="stat-unit">days</span></div><div class="stat-note">全球天气状态的中期预测</div></div>
       <div class="stat-card" data-anim><div class="stat-label">Inference Time</div><div class="stat-nb">&lt; 60<span class="stat-unit">s</span></div><div class="stat-note">单台 Google TPU v4 上完成一次预测</div></div>
-      <div class="stat-card" data-anim><div class="stat-label">Verification Targets</div><div class="stat-nb">89.3<span class="stat-unit">%</span></div><div class="stat-note">2760 个变量与预报时效组合中的报告结果</div></div>
+      <div class="stat-card" data-anim><div class="stat-label">Verification Targets</div><div class="stat-nb">90<span class="stat-unit">%</span></div><div class="stat-note">1380项检验中优于HRES的比例</div></div>
     </div>
     <div class="meta-row" style="margin-top:5vh" data-anim><span>GraphCast</span><span>·</span><span>0.25° global grid</span><span>·</span><span>Science · 2023</span></div>
   </div>
@@ -671,7 +671,7 @@
     <div class="kicker" data-anim>AIFS Goes Operational · 25 Feb 2025</div>
     <h1 class="h-hero" style="font-size:7.2vw;line-height:1.08" data-anim>2025，AI<br>开始正式预报天气</h1>
     <p class="lead" style="max-width:64vw" data-anim>真正重要的节点不是论文发表，而是气象中心愿不愿意把 AI 放进每天运行的业务系统。</p>
-    <div class="meta-row" data-anim><span>AIFS</span><span>·</span><span>与 IFS 并行运行</span><span>·</span><span>≈1000× lower forecasting energy use</span></div>
+    <div class="meta-row" data-anim><span>AIFS</span><span>·</span><span>与 IFS 并行运行</span><span>·</span><span>单次预报能耗约为1/1000；不含训练与同化</span></div>
   </div>
   <div class="foot"><div class="title">AIFS · ECMWF operational forecast</div><div>07 · 13</div></div>
 </section>
@@ -688,7 +688,7 @@
     <div class="grid-3" style="margin-top:4vh;gap:3.8vw;flex:0 0 auto">
       <div class="pillar" data-anim><div class="ic">01</div><div class="t">微小差异</div><div class="d">当前大气无法被无限精确地测量，微小差异会随时间放大。</div></div>
       <div class="pillar" data-anim><div class="ic">02</div><div class="t">51 个未来</div><div class="d">AIFS ENS 一次产生 51 个稍有差异的 AI 预测成员。</div></div>
-      <div class="pillar" data-anim><div class="ic">03</div><div class="t">分裂或收敛</div><div class="d">未来越一致，可信度越高；路线越快分裂，不确定性越大。</div></div>
+      <div class="pillar" data-anim><div class="ic">03</div><div class="t">分裂或收敛</div><div class="d">成员分歧可提示不确定性，但成员一致不保证正确，还需检验集合校准。</div></div>
     </div>
     <div class="callout" style="margin-top:1vh;margin-bottom:1vh;padding:1.1vh 1.5vw;max-width:70vw" data-anim><div class="q-big" style="font-size:1.3vw">便宜到可以同时探索很多个未来。</div><span class="callout-src" style="margin-top:.7vh;font-size:9px">— AIFS ENS · ECMWF · July 2025</span></div>
   </div>
@@ -719,23 +719,23 @@
     <div class="left"><span>Chapter IV · Where AI Helps</span></div>
     <div class="right"><span>10 / 13</span></div>
   </div>
-  <div class="frame" style="padding-top:4vh">
+  <div class="frame" style="padding-top:2vh">
     <div class="kicker" data-anim>Cyclone Tracks · 热带气旋路径</div>
     <h2 class="h-xl" data-anim>AI 很会判断<br>风暴往哪走</h2>
-    <p class="lead" style="max-width:70vw;margin-top:2.2vh" data-anim>路径主要受更大尺度的大气环流控制，而学习这些大尺度结构，恰好是当前 AI 模型表现很强的领域。</p>
-    <div class="grid-2-6-6" style="margin-top:5vh;gap:5vw 4vh">
-      <div data-anim="left" style="padding:3vh 2vw;border-left:3px solid currentColor;opacity:.58">
+    <p class="lead" style="max-width:70vw;margin-top:1.2vh" data-anim>路径主要受更大尺度的大气环流控制，而学习这些大尺度结构，恰好是当前 AI 模型表现很强的领域。</p>
+    <div class="grid-2-6-6" style="margin-top:2.5vh;gap:5vw 4vh">
+      <div data-anim="left" style="padding:2vh 2vw;border-left:3px solid currentColor;opacity:.58">
         <div class="kicker" style="opacity:.9">Track · 路径</div>
-        <div class="h-md" style="margin-top:2vh">目前 AI 的突出强项</div>
-        <div class="body-zh" style="margin-top:2.2vh">GraphCast、AIFS 和 NOAA AIGFS 的报告，都指向更好的热带气旋路径预测。</div>
+        <div class="h-md" style="margin-top:1.3vh">目前 AI 的突出强项</div>
+        <div class="body-zh" style="margin-top:1.2vh">GraphCast、AIFS 和 NOAA AIGFS 的报告，都指向更好的热带气旋路径预测。</div>
       </div>
-      <div data-anim="right" style="padding:3vh 2vw;border-left:3px solid currentColor">
+      <div data-anim="right" style="padding:2vh 2vw;border-left:3px solid currentColor">
         <div class="kicker" style="opacity:.9">Large-scale structure · 大尺度结构</div>
-        <div class="h-md" style="margin-top:2vh">它学到的是风暴所处的环境</div>
-        <div class="body-zh" style="margin-top:2.2vh">这不是“平均天气不错”，而是在真正重要的高影响任务上产生价值。</div>
+        <div class="h-md" style="margin-top:1.3vh">它学到的是风暴所处的环境</div>
+        <div class="body-zh" style="margin-top:1.2vh">这不是“平均天气不错”，而是在真正重要的高影响任务上产生价值。</div>
       </div>
     </div>
-    <div class="meta-row" style="margin-top:4vh" data-anim><span>Track ≠ Intensity</span><span>·</span><span>最高约 20% 路径提升 · ECMWF</span></div>
+    <div class="meta-row" style="margin-top:2vh" data-anim><span>Track ≠ Intensity</span><span>·</span><span>最高约 20% 路径提升 · ECMWF</span></div>
   </div>
   <div class="foot"><div class="title">Cyclone Tracks · A current AI strength</div><div>10 · 13</div></div>
 </section>
@@ -808,7 +808,7 @@ const SPEAKER_NOTES = [
   {id:'numerical-weather-prediction',title:'然后，让方程推动大气',section:'The Physics Engine',minutes:1.8,purpose:'用一条流水线解释传统数值天气预报',talk:['先把大气变量放进三维网格。','再用描述运动和热力学的方程计算很短时间之后的状态。','把结果再次作为输入，重复推进到未来。'],transition:'这种方法非常成功，但每一次推进和每一种可能未来都要付出计算成本。',advance:'每讲完一个步骤，按方向键或空格点亮下一步。'},
   {id:'compute-cost',title:'精度来自计算',section:'The Cost',minutes:1.5,purpose:'建立传统预报体系的计算瓶颈',talk:['更细网格意味着更多计算单元。','更多物理过程意味着更多相互作用需要求解。','集合预测还要同时运行许多略有不同的未来。'],transition:'如果历史数据已经记录了大气如何变化，能不能让模型直接学习这种变化？'},
   {id:'learned-forecasting',title:'AI 换掉了最昂贵的一步',section:'The Shift',minutes:1.9,purpose:'完成从物理求解到学习状态演化的机制转折',talk:['AI 天气模型不是更快地求解同一套方程。','它从几十年的历史大气状态中学习状态之间的转移关系。','输入当前状态后，模型直接给出下一个状态，再继续向前滚动。'],transition:'GraphCast 让这个想法第一次以速度和精度的组合变得很难忽略。'},
-  {id:'graphcast-breakthrough',title:'十天，不到一分钟',section:'First Breakthrough',minutes:2.0,purpose:'用 GraphCast 建立 AI 天气预测的第一处硬证据',talk:['GraphCast 在约 0.25° 全球网格上预测十天大气状态。','论文报告它在 2760 个验证目标中的 89.3% 优于当时 ECMWF HRES。','训练模型很昂贵，但运行一次未来突然变得非常便宜。'],transition:'下一步的关键不再只是论文指标，而是 AI 是否进入真实的业务系统。'},
+  {id:'graphcast-breakthrough',title:'十天，不到一分钟',section:'First Breakthrough',minutes:2.0,purpose:'用 GraphCast 建立 AI 天气预测的第一处硬证据',talk:['GraphCast 在约 0.25° 全球网格上预测十天大气状态。','论文报告它在 1380 个验证目标中的 90% 优于当时 ECMWF HRES。','训练模型很昂贵，但运行一次未来突然变得非常便宜。'],transition:'下一步的关键不再只是论文指标，而是 AI 是否进入真实的业务系统。'},
   {id:'aifs-operational',title:'2025，AI 开始正式预报天气',section:'From Lab to Service',minutes:1.8,purpose:'标记 AI 天气模型从研究成果进入国家级业务体系',talk:['ECMWF 在 2025 年 2 月 25 日让 AIFS 正式投入运行。','它没有关闭传统 IFS，而是与 IFS 并行。','约千倍的预测能耗下降，让 AI 的价值从实验室走向日常业务。'],transition:'当一次预测变便宜，真正被改变的就不只是速度，而是我们能同时探索多少个未来。'},
   {id:'ensemble-forecasting',title:'未来不是一个答案',section:'Many Futures',minutes:1.8,purpose:'解释集合预测为何比单次预测更有用',talk:['当前状态存在误差，微小差异可能随时间放大。','AIFS ENS 一次产生 51 个 AI 预测成员。','成员越收敛，可信度越高；越分裂，不确定性越大。'],transition:'同样的计算效率，还能让国家级系统把未来尺度进一步拉长。'},
   {id:'noaa-aigfs',title:'16 天，只用 0.3%',section:'Efficiency Scale',minutes:1.7,purpose:'用 NOAA AIGFS 建立效率的具体尺度',talk:['NOAA 报告 AIGFS 一次可以预测 16 天。','单次运行约需要 40 分钟。','所用计算资源约为业务 GFS 的 0.3%，说明便宜本身就是一种能力。'],transition:'效率不是抽象指标，它已经开始影响 AI 能在哪些高影响任务上被使用。'},
@@ -1527,8 +1527,13 @@ addEventListener('keydown',e=>{
   if(e.key==='End')go(total-1);
 });
 
+function deckGestureAllowed(e){
+  return !overviewOn && !document.body.matches('.ppt-presenter,.ppt-audience,.ppt-preview')
+    && !e.target?.closest?.('input,textarea,select,button,a,[contenteditable="true"]');
+}
 let wheelTO=null,wheelAcc=0;
 addEventListener('wheel',e=>{
+  if(!deckGestureAllowed(e)){wheelAcc=0;return;}
   wheelAcc+=e.deltaY+e.deltaX;
   if(Math.abs(wheelAcc)>50){
     if(wheelAcc>0 && window.__pipeAdvance && window.__pipeAdvance()){
@@ -1541,8 +1546,9 @@ addEventListener('wheel',e=>{
 },{passive:true});
 
 let tx=0,ty=0;
-addEventListener('touchstart',e=>{tx=e.touches[0].clientX;ty=e.touches[0].clientY},{passive:true});
+addEventListener('touchstart',e=>{if(!deckGestureAllowed(e)){tx=null;return;}tx=e.touches[0].clientX;ty=e.touches[0].clientY},{passive:true});
 addEventListener('touchend',e=>{
+  if(tx===null||!deckGestureAllowed(e))return;
   const dx=(e.changedTouches[0].clientX-tx);
   const dy=(e.changedTouches[0].clientY-ty);
   if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)){

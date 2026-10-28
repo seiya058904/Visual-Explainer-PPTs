@@ -547,9 +547,9 @@
 
 <section class="slide light" data-slide-id="versions"><div class="chrome"><div>Capacity · 容量</div><div>06 / 14</div></div><div class="frame" style="padding-top:3vh"><div class="kicker" data-anim>VERSION 1 → 40</div><h2 class="h-xl" data-anim>二维码也有<br>“大小型号”</h2><div class="grid-2-6-6" style="margin-top:5vh"><div class="stat-card" data-anim><div class="stat-label">SMALLEST</div><div class="stat-nb">21×21</div><div class="stat-note">Version 1 modules</div></div><div class="stat-card" data-anim><div class="stat-label">LARGEST</div><div class="stat-nb">177×177</div><div class="stat-note">Version 40 · 每级每边 +4</div></div></div></div><div class="foot"><div>40 Versions · 版本越高，格子越多</div><div>V1 → V40</div></div></section>
 
-<section class="slide dark" data-slide-id="capacity"><div class="chrome"><div>Data Density · 密度</div><div>07 / 14</div></div><div class="frame" style="padding-top:4vh"><div class="kicker" data-anim>CAPACITY</div><h2 class="h-xl" data-anim>越复杂，<br>不一定只是因为字更多</h2><p class="lead" style="max-width:72vw;margin-top:3vh" data-anim>需要多少格子，同时取决于数据量、数据类型和纠错等级。同一信息也可能因为内部编码模式不同，生成不同图案。</p><div class="grid-3" style="margin-top:5vh;flex:0 0 auto"><div class="stat-card" data-anim><div class="stat-label">NUMERIC</div><div class="stat-nb">7,089</div><div class="stat-note">最大理论数字字符</div></div><div class="stat-card" data-anim><div class="stat-label">ALPHANUMERIC</div><div class="stat-nb">4,296</div><div class="stat-note">最大英数字符</div></div><div class="stat-card" data-anim><div class="stat-label">KANJI</div><div class="stat-nb">1,817</div><div class="stat-note">最大汉字数量</div></div></div></div><div class="foot"><div>DENSO WAVE · Information capacity</div><div>DATA ≠ ONLY TEXT</div></div></section>
+<section class="slide dark" data-slide-id="capacity"><div class="chrome"><div>Data Density · 密度</div><div>07 / 14</div></div><div class="frame" style="padding-top:4vh"><div class="kicker" data-anim>CAPACITY</div><h2 class="h-xl" data-anim>越复杂，<br>不一定只是因为字更多</h2><p class="lead" style="max-width:72vw;margin-top:3vh" data-anim>需要多少格子，同时取决于数据量、数据类型和纠错等级。同一信息也可能因为内部编码模式不同，生成不同图案。</p><div class="grid-3" style="margin-top:5vh;flex:0 0 auto"><div class="stat-card" data-anim><div class="stat-label">NUMERIC</div><div class="stat-nb">7,089</div><div class="stat-note">Version40-L理论数字容量</div></div><div class="stat-card" data-anim><div class="stat-label">ALPHANUMERIC</div><div class="stat-nb">4,296</div><div class="stat-note">Version40-L限定英数字符容量</div></div><div class="stat-card" data-anim><div class="stat-label">KANJI</div><div class="stat-nb">1,817</div><div class="stat-note">Kanji模式最大值；限兼容字符集</div></div></div></div><div class="foot"><div>DENSO WAVE · Information capacity</div><div>DATA ≠ ONLY TEXT</div></div></section>
 
-<section class="slide hero dark" data-slide-id="error-correction"><div class="chrome"><div>Act II · Survive Damage</div><div>08 / 14</div></div><div class="frame" style="display:grid;gap:4vh;align-content:center;min-height:80vh"><div class="kicker" data-anim>ERROR CORRECTION</div><h1 class="h-hero" style="font-size:8vw" data-anim>它故意存了一些<br>“多余信息”</h1><p class="lead" style="max-width:64vw" data-anim>折皱、油污、刮伤、反光都可能破坏图案。冗余信息让读取器有机会从残余数据中恢复原始内容。</p><div class="meta-row" data-anim><span>L 7%</span><span>M 15%</span><span>Q 25%</span><span>H 30%</span></div></div><div class="foot"><div>Reed–Solomon · 纠错等级</div><div>ACT II</div></div></section>
+<section class="slide hero dark" data-slide-id="error-correction"><div class="chrome"><div>Act II · Survive Damage</div><div>08 / 14</div></div><div class="frame" style="display:grid;gap:4vh;align-content:center;min-height:80vh"><div class="kicker" data-anim>ERROR CORRECTION</div><h1 class="h-hero" style="font-size:8vw" data-anim>它故意存了一些<br>“多余信息”</h1><p class="lead" style="max-width:64vw" data-anim>折皱、油污、刮伤、反光都可能破坏图案。冗余信息让读取器有机会从残余数据中恢复原始内容。</p><div class="meta-row" data-anim><span>L 7%</span><span>M 15%</span><span>Q 25%</span><span>H 30%</span></div></div><div class="foot"><div>Reed–Solomon · 约占全部码字的可恢复率，非遮挡面积</div><div>ACT II</div></div></section>
 
 <section class="slide light" data-slide-id="reed-solomon"><div class="chrome"><div>Recovery · 恢复</div><div>09 / 14</div></div><div class="frame" style="padding-top:5vh;justify-content:space-between"><div><div class="kicker" data-anim>REED–SOLOMON</div><h2 class="h-xl" data-anim>缺了一块，<br>为什么还能恢复？</h2><p class="lead" style="max-width:68vw;margin-top:3vh" data-anim>不是“猜”出了消失的数据，而是提前把恢复所需的数学关系一起保存进去。</p></div><div class="callout" style="max-width:74vw;margin-top:5vh" data-anim>剩余数据<br>＋ 纠错关系<br>＝ 仍可能反推出原始内容<div class="callout-src">— Data + Error-Correction Codewords</div></div></div><div class="foot"><div>二维码不是复制两遍，而是用数学冗余提高效率</div><div>RECOVER</div></div></section>
 
@@ -1295,8 +1295,13 @@ addEventListener('keydown',e=>{
   if(e.key==='End')go(total-1);
 });
 
+function deckGestureAllowed(e){
+  return !overviewOn && !document.body.matches('.ppt-presenter,.ppt-audience,.ppt-preview')
+    && !e.target?.closest?.('input,textarea,select,button,a,[contenteditable="true"]');
+}
 let wheelTO=null,wheelAcc=0;
 addEventListener('wheel',e=>{
+  if(!deckGestureAllowed(e)){wheelAcc=0;return;}
   wheelAcc+=e.deltaY+e.deltaX;
   if(Math.abs(wheelAcc)>50){
     if(wheelAcc>0 && window.__pipeAdvance && window.__pipeAdvance()){
@@ -1309,8 +1314,9 @@ addEventListener('wheel',e=>{
 },{passive:true});
 
 let tx=0,ty=0;
-addEventListener('touchstart',e=>{tx=e.touches[0].clientX;ty=e.touches[0].clientY},{passive:true});
+addEventListener('touchstart',e=>{if(!deckGestureAllowed(e)){tx=null;return;}tx=e.touches[0].clientX;ty=e.touches[0].clientY},{passive:true});
 addEventListener('touchend',e=>{
+  if(tx===null||!deckGestureAllowed(e))return;
   const dx=(e.changedTouches[0].clientX-tx);
   const dy=(e.changedTouches[0].clientY-ty);
   if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)){

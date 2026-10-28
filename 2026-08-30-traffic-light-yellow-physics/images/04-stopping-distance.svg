@@ -2,22 +2,22 @@
   <!-- 浅色页用 · 刹停两段距离随速度变化 -->
   <g fill="none" stroke-linecap="round">
     <!-- 30 km/h -->
-    <text x="90" y="200" fill="#0a1f3d" font-size="20">30 km/h</text>
-    <rect x="220" y="180" width="60" height="34" fill="rgba(10,31,61,.5)"/>
-    <rect x="280" y="180" width="60" height="34" fill="rgba(10,31,61,.9)"/>
-    <text x="360" y="204" fill="#0a1f3d" font-size="18" opacity=".8">反应 6 m + 制动 6 m</text>
+    <text x="90" y="200" fill="#0a1f3d" font-size="30">30 km/h</text>
+    <rect x="220" y="180" width="50" height="34" fill="rgba(10,31,61,.5)"/>
+    <rect x="270" y="180" width="70" height="34" fill="rgba(10,31,61,.9)"/>
+    <text x="220" y="155" fill="#0a1f3d" font-size="30" opacity=".8">8.3 m 反应 + 11.6 m 制动</text>
     <!-- 60 km/h -->
-    <text x="90" y="300" fill="#0a1f3d" font-size="20">60 km/h</text>
-    <rect x="220" y="280" width="120" height="34" fill="rgba(10,31,61,.5)"/>
-    <rect x="340" y="280" width="240" height="34" fill="rgba(10,31,61,.9)"/>
-    <text x="600" y="304" fill="#0a1f3d" font-size="18" opacity=".8">反应 12 m + 制动 24 m</text>
+    <text x="90" y="300" fill="#0a1f3d" font-size="30">60 km/h</text>
+    <rect x="220" y="280" width="100" height="34" fill="rgba(10,31,61,.5)"/>
+    <rect x="320" y="280" width="278" height="34" fill="rgba(10,31,61,.9)"/>
+    <text x="770" y="350" text-anchor="end" fill="#0a1f3d" font-size="30" opacity=".8">16.7 m 反应 + 46.3 m 制动</text>
     <!-- 图例 -->
     <rect x="90" y="390" width="24" height="18" fill="rgba(10,31,61,.5)"/>
-    <text x="124" y="405" fill="#0a1f3d" font-size="19">反应距离 · ≈1 秒没踩刹车</text>
+    <text x="124" y="405" fill="#0a1f3d" font-size="30">反应 · 1秒后开始制动</text>
     <rect x="90" y="430" width="24" height="18" fill="rgba(10,31,61,.9)"/>
-    <text x="124" y="445" fill="#0a1f3d" font-size="19">制动距离 · 踩下刹车之后</text>
+    <text x="124" y="445" fill="#0a1f3d" font-size="30">制动 · 踩刹车后行程</text>
     <!-- 结论 -->
-    <text x="400" y="520" fill="#0a1f3d" font-size="23" text-anchor="middle" font-weight="700">速度 ×2 · 刹停距离 ×3 以上</text>
-    <text x="770" y="70" fill="#0a1f3d" font-size="17" text-anchor="end" opacity=".55">示意值 · 干燥路面（量级）</text>
+    <text x="400" y="520" fill="#0a1f3d" font-size="30" text-anchor="middle" font-weight="700">速度×2 · 本例刹停距离×3.2</text>
+    <text x="770" y="70" fill="#0a1f3d" font-size="26" text-anchor="end" opacity=".55">计算例 · t=1 s，a=3 m/s²</text>
   </g>
 </svg>

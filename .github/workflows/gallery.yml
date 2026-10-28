@@ -1,0 +1,67 @@
+name: Gallery checks and Pages
+on:
+  push:
+    branches: [main, feat/visual-explainer-gallery]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: gallery-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: npm test
+      - run: python docs/build/audit-catalog.py
+      - run: python -m unittest discover -s docs/build -p 'test_*.py'
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - name: Serve under the production project prefix
+        run: |
+          mkdir -p .codex/public/Visual-Explainer-PPTs
+          cp -a dist/. .codex/public/Visual-Explainer-PPTs/
+          python -m http.server 8902 --bind 127.0.0.1 --directory .codex/public > /tmp/gallery-server.log 2>&1 &
+      - run: npm run test:site
+        env:
+          GALLERY_URL: http://127.0.0.1:8902/Visual-Explainer-PPTs/
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gallery-browser-evidence
+          path: .codex/gallery-qa
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gallery-static-site
+          path: dist
+      - uses: actions/upload-pages-artifact@v3
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        with:
+          path: dist
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - name: Deploy the verified allowlisted site
+        id: deployment
+        uses: actions/deploy-pages@v4
+# Only dist is uploaded. Candidate sources, maintenance tools and archives remain
+# outside the public artifact. Pull requests can never enter the deploy job.

@@ -31,6 +31,7 @@
 - `ppt-collection/`：用户明确认可后的最终单 HTML 成品库，也是只读参考样本。成品必须以「单 HTML 发布产物」为准：repo 相对图片/`assets/motion.min.js` 一律由 `docs/build/export-standalone.py` 内联为 data URI 生成，禁止手工往 `ppt-collection/` 拷贝 `images/` 或其他资源目录来"补依赖"。
   - 导出命名：`project/index.html` → `project.html`，普通 HTML 保留原名；批量目标冲突或本地依赖失败时整批不写入，写入失败逐项回滚。若回滚自身失败，必须保留输出目录中 `.standalone-*` 的原文件备份与 `recovery.json`，报错须给出恢复路径；确认所有旧文件恢复前不得清理该事务目录。manifest 更新失败时保留提交前的映射，不以缺少最终状态判定备份无用。
   - 默认写暂存目录；`--stage DIR` 指定暂存目录，`--out-dir DIR` 指定最终目录，组合使用时先在 stage 准备、最终写 out-dir。`--check-only` 不创建目录或文件。导出器改动后运行 `python -m unittest discover -s docs/build -p 'test_*.py'`，并对实际输入跑依赖预检和 `standalone` 浏览器 QA。
+- 本轮用户已授权精修 38 份已认可成品，须保持源文件 → 导出 → 浏览器验证的追溯关系；10 份候选的技术验收不构成用户批准，正式站构建只允许 Approved。
 - `5.9/`：失败品和历史 PPTX 素材，禁止作为案例学习、风格模仿或质量基准。
 - 新项目目录：`YYYY-MM-DD-topic-slug/`
 - 主文件：`index.html`
@@ -103,6 +104,7 @@
 - 术语首次出现：中文名 + 英文锚点 + 一句人话解释。
 - 抽象机制尽量配可感知的量或日常类比，但类比不能代替机制。
 - 每页关键数据 1–3 个；结论必须保留边界条件。
+- 相除或跨组比较前，核对统计年份、地区、设备和人群口径；不能用一国事故数除以全球使用量制造风险率。示意照片须明确标为示意，不能把现代素材标注成真实历史地点或设备。
 
 ---
 
@@ -267,6 +269,7 @@ Pipeline 是高风险回归点：
 - 审计应以真实文字/卡片内容边界为准。
 - 横向轮播页面要把绝对坐标换算为相对当前 slide 坐标。
 - 不把 `.frame` 容器自身当作内容溢出对象。
+- 文字仍在视口内也可能被祖先 `.frame` 的裁切边界截断；除视口与页脚外，应检查实际文字是否超出带 `overflow:hidden/clip` 的祖先。离线回退字体也要复测长英文数字卡，在线字体下通过不代表回退字体下安全。
 
 ---
 
@@ -297,7 +300,7 @@ Pipeline 是高风险回归点：
 Style B：运行 `validate-swiss-deck.mjs`。  
 Presenter mode：运行 `validate-presenter-mode.mjs`。
 
-全仓浏览器 QA：`docs/build/browser-qa.mjs`（真实 Chromium；模式 `pending` / `approved` / `matrix` / `standalone` / `lowpower-cross`，输出 JSON + Markdown）。`matrix` 是 pipeline 三态 / hero / cascade / directional / 低功耗跨 deck / reduced-motion 的固定 regression test，动效引擎或模板改动后必须重跑。
+全仓浏览器 QA：`docs/build/browser-qa.mjs`（真实 Chromium；模式 `pending` / `approved` / `matrix` / `standalone` / `lowpower-cross`，输出 JSON + Markdown）。Approved 与 Pending 均须三档全页检查，截图文件名必须包含视口以避免证据覆盖；浏览器路径使用环境变量或 Playwright 默认解析，不写死用户目录。`matrix` 是 pipeline 三态 / hero / cascade / directional / 低功耗跨 deck / reduced-motion 的固定 regression test，动效引擎或模板改动后必须重跑。
 
 如果使用 `python http.server`，重建后验收需强制 reload 或使用 cache-buster，避免缓存造成“修复无效”假象。
 
@@ -314,6 +317,7 @@ Presenter mode：运行 `validate-presenter-mode.mjs`。
 | `<title>` 未闭合导致空白 | 检查 HTML 闭合 |
 | `data-animate` 放 `.frame` | 移到 `<section>` |
 | Pipeline 标题/lead 变暗 | 只 dim step/arrow，非步骤走 cascade |
+| 演讲者备注滚动或触摸导致翻页 | wheel/touch 只在普通 deck 模式处理；排除 presenter/audience/preview、总览及可编辑控件，验收必须在备注区实际滚动并确认页码不变 |
 | Pipeline 推进异常 | 检查初始化顺序、选择器和 `return true` |
 | `data-anim` 挂父容器 | 拆到独立元素 |
 | 同组文字像“没加载完” | 非明确层级不要随意混用透明度 |
@@ -329,7 +333,7 @@ Presenter mode：运行 `validate-presenter-mode.mjs`。
 | 首屏预热反而卡顿 | 不做全量 `img.decode()` / blur warmup，除非有冷启动 A/B 证据 |
 | `lucide.createIcons()` 裸调用 | 必须 `try{if(window.lucide)...}catch{}` 护栏，否则 CDN 失败抛 ReferenceError |
 | 自动化 QA 假设每次按键都翻页 | deck 有翻页过渡锁（约 1.2–1.7s 内吞键）：每次按键后必须校验 `__currentSlideIndex`，未到达则静置重试 |
-| 动效断言测到"没动画" | 等 settle 后再采样只会得到 opacity=1；必须在加载/按键的同时采样（opacity min/max 按页分组） |
+| 动效断言测到"没动画" | 等 settle 后再采样只会得到 opacity=1；必须在加载/按键的同时采样（opacity min/max 按页分组）；采样后另等翻页延迟及最晚入场结束再测几何/截图，不能把 1600ms 采样窗口当成最终稳定态 |
 | 老文件 GBK 乱码进 JS 模板串 | 乱码若吞掉引号会产生 SyntaxError 使整段脚本失效（hiddenCards 停在 opacity 0）；修复只替换代码行与用户可见文本，注释乱码不扩大范围 |
 | 「待核实/口径待核实」草稿核查备注残留进可见文案（含 meta、stat-note、SVG） | 定稿前运行 `rg -n "待核实" index.html images/`，逐条核对一手来源、数值计算和适用条件；有证据才改为准确口径，无证据保留待核实或明确限定，禁止仅删除括注冒充核实。presenter notes 同样不能抹掉事实边界 |
 | SVG 墨色与页面深浅错配（「浅色页用」深墨图放上 dark 页，或反之） | 表现为整张插图"像低透明度/对比度极低"，动效引擎无问题；制作时按图片注释「浅色页用/深色页用」与 slide 的 dark/light 配对，验收时逐张图核对 |

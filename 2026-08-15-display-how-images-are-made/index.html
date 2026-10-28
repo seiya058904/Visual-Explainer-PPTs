@@ -580,7 +580,7 @@
   <div class="chrome"><div>COLOUR · 加色混合</div><div>04 / 15</div></div>
   <div class="frame" style="display:grid;gap:5vh;align-content:center;min-height:80vh">
     <div class="kicker" data-anim>RGB · 三种光</div>
-    <blockquote style="font-family:var(--serif-zh);font-weight:700;font-size:5.4vw;line-height:1.2;max-width:72vw"><span data-anim="line" style="display:block">三种颜色，</span><span data-anim="line" style="display:block">已经足够混合出世界。</span></blockquote>
+    <blockquote style="font-family:var(--serif-zh);font-weight:700;font-size:5.4vw;line-height:1.2;max-width:72vw"><span data-anim="line" style="display:block">三种光，</span><span data-anim="line" style="display:block">混合出丰富颜色。</span></blockquote>
     <p class="lead" style="max-width:58vw" data-anim>当红、绿、蓝三个通道以不同强度发光或透光，大脑会把它们合成为我们看到的颜色。</p>
     <div class="meta-row" data-anim><span>Red</span><span>·</span><span>Green</span><span>·</span><span>Blue</span></div>
   </div>
@@ -615,7 +615,7 @@
     <figure class="frame-img fit-contain r-16x10" style="position:absolute;right:0;top:1vh;width:32vw;height:22vh" data-anim><img src="images/06-lcd-layer.jpg" alt="LCD 背光与液晶层结构图"><figcaption class="img-cap">LCD light path · Samsung Display</figcaption></figure>
     <div class="pipeline-section"><div class="pipeline-label" data-anim>从背光到眼睛 · LIGHT PATH</div><div class="pipeline">
       <div class="step" data-anim="step"><div class="step-nb">01</div><div class="step-title">Backlight</div><div class="step-desc">先产生一整片光</div></div>
-      <div class="step" data-anim="step"><div class="step-nb">02</div><div class="step-title">Polarizer</div><div class="step-desc">限制光的方向</div></div>
+      <div class="step" data-anim="step"><div class="step-nb">02</div><div class="step-title">Polarizer</div><div class="step-desc">选择光的偏振方向</div></div>
       <div class="step" data-anim="step"><div class="step-nb">03</div><div class="step-title">Liquid Crystal</div><div class="step-desc">改变光的通过量</div></div>
       <div class="step" data-anim="step"><div class="step-nb">04</div><div class="step-title">RGB Filter</div><div class="step-desc">筛出红绿蓝</div></div>
       <div class="step" data-anim="step"><div class="step-nb">05</div><div class="step-title">Eyes</div><div class="step-desc">大脑合成画面</div></div>
@@ -670,7 +670,7 @@
     <h2 class="h-xl" style="margin-bottom:4vh" data-anim>1ms 和 240Hz<br>根本不是一回事</h2>
     <div class="grid-2-6-6" style="gap:5vw 4vh">
       <div data-anim="left" style="padding:3vh 2vw;border-left:3px solid currentColor"><div class="kicker">Refresh Rate</div><h3 class="h-md" style="margin-top:2vh">新帧多久到来？</h3><p style="margin-top:3vh;font-size:max(14px,1.15vw);line-height:1.65">60Hz、144Hz、240Hz 描述显示器更新画面的节奏。</p></div>
-      <div data-anim="right" style="padding:3vh 2vw;border-left:3px solid currentColor"><div class="kicker">Response Time</div><h3 class="h-md" style="margin-top:2vh">像素多久完成变化？</h3><p style="margin-top:3vh;font-size:max(14px,1.15vw);line-height:1.65">1ms 描述像素从一种颜色变化到另一种颜色需要多久，不等于每 1ms 刷新一次。</p></div>
+      <div data-anim="right" style="padding:3vh 2vw;border-left:3px solid currentColor"><div class="kicker">Response Time</div><h3 class="h-md" style="margin-top:2vh">像素多久完成变化？</h3><p style="margin-top:3vh;font-size:max(14px,1.15vw);line-height:1.65">标称1ms可能采用GtG或MPRT：前者测颜色过渡，后者与运动清晰度有关；都不等于每1ms刷新。</p></div>
     </div>
   </div>
   <div class="foot"><div>Source · VESA Adaptive-Sync / ClearMR</div><div>Two different measurements</div></div>
@@ -745,7 +745,7 @@ const SPEAKER_NOTES = [
   {id:'display-cover',title:'画面其实不存在',purpose:'先建立反直觉问题：画面是像素、光和时间共同形成的结果',talk:['请观众想象把屏幕不断放大，照片最终会拆成许多小位置。','这场分享不做选购指南，而是追问一块黑色玻璃如何把数字变成颜色。','后面会沿着位置、光、时间和同步四条线展开。'],transition:'先从最基本的单位像素开始。'},
   {id:'pixel-count',title:'4K，其实是 829 万个位置',purpose:'把分辨率从营销词转成像素数量',talk:['3840×2160 相乘得到 8,294,400 个像素位置。','每个位置都要参与每一帧画面的形成。','分辨率回答的是画面由多少个位置组成。'],transition:'每个位置内部还不是一个颜色，而是三个通道。'},
   {id:'rgb-subpixels',title:'一个像素里，还有三个小像素',purpose:'引入 RGB 子像素结构',talk:['典型像素可以由红、绿、蓝三个子像素共同组成。','三个通道的强度组合，才形成最终颜色。','屏幕不是直接存放一张照片，而是在控制这些通道。'],transition:'接下来解释三种光为什么能覆盖如此多的颜色。'},
-  {id:'additive-colour',title:'三种颜色，已经足够混合出世界',purpose:'用加色混合完成颜色认知',talk:['这里的颜色来自光的加法，而不是颜料的叠加。','每个通道可以有不同强度，所以 RGB 组合远不止三种颜色。','观众看到的“一个颜色”其实是三个子像素共同贡献的结果。'],transition:'有了颜色之后，还要回答这些光从哪里来。'},
+  {id:'additive-colour',title:'三种光，混合出丰富颜色',purpose:'用加色混合完成颜色认知',talk:['这里的颜色来自光的加法，而不是颜料的叠加。','每个通道可以有不同强度，所以 RGB 组合远不止三种颜色。','观众看到的“一个颜色”其实是三个子像素共同贡献的结果。'],transition:'有了颜色之后，还要回答这些光从哪里来。'},
   {id:'lcd-light-source',title:'LCD 的像素其实不会发光',purpose:'说明 LCD 依赖外部背光',talk:['LCD 的关键不是像素自己发光，而是控制背后的光。','背光、液晶、偏振片和 RGB 滤光片分工不同。','因此 LCD 的黑色本质上是尽量挡住背光。'],transition:'液晶具体如何控制一束光？'},
   {id:'liquid-crystal-valve',title:'液晶其实是一扇光阀门',purpose:'用顺序解释 LCD 光路',talk:['这页按光路顺序推进，不要一次讲完。','背光先提供光，偏振片限定方向，液晶改变通过量。','RGB 滤光片最后决定颜色，大脑再把结果合成画面。'],transition:'如果不再需要背光，显示结构会发生什么变化？'},
   {id:'oled-shift',title:'OLED 把背光整个拿掉了',purpose:'完成 LCD 到 OLED 的技术转折',talk:['OLED 的最大结构变化是没有传统 LCD 背光。','每个像素可以自己产生并控制光。','这会直接改变黑位、对比度和局部亮暗的关系。'],transition:'黑色正好能把两种结构的差异表现出来。'},
@@ -1468,8 +1468,13 @@ addEventListener('keydown',e=>{
   if(e.key==='End')go(total-1);
 });
 
+function deckGestureAllowed(e){
+  return !overviewOn && !document.body.matches('.ppt-presenter,.ppt-audience,.ppt-preview')
+    && !e.target?.closest?.('input,textarea,select,button,a,[contenteditable="true"]');
+}
 let wheelTO=null,wheelAcc=0;
 addEventListener('wheel',e=>{
+  if(!deckGestureAllowed(e)){wheelAcc=0;return;}
   wheelAcc+=e.deltaY+e.deltaX;
   if(Math.abs(wheelAcc)>50){
     if(wheelAcc>0 && window.__pipeAdvance && window.__pipeAdvance()){
@@ -1482,8 +1487,9 @@ addEventListener('wheel',e=>{
 },{passive:true});
 
 let tx=0,ty=0;
-addEventListener('touchstart',e=>{tx=e.touches[0].clientX;ty=e.touches[0].clientY},{passive:true});
+addEventListener('touchstart',e=>{if(!deckGestureAllowed(e)){tx=null;return;}tx=e.touches[0].clientX;ty=e.touches[0].clientY},{passive:true});
 addEventListener('touchend',e=>{
+  if(tx===null||!deckGestureAllowed(e))return;
   const dx=(e.changedTouches[0].clientX-tx);
   const dy=(e.changedTouches[0].clientY-ty);
   if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)){

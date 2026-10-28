@@ -27,8 +27,8 @@
     <text x="520" y="200" fill="#8fb3d9" font-size="20">水被沟槽导走</text>
     <!-- 标注 -->
     <text x="120" y="120" fill="#f5f1e8" font-size="22" font-weight="700">脊 = 堤 · 沟 = 渠</text>
-    <text x="120" y="360" fill="#f5f1e8" font-size="19" opacity=".8">湿表面上：水有了去处，皮肤才能贴住物体</text>
-    <text x="120" y="430" fill="#f5f1e8" font-size="19" opacity=".8">灵长类雨林场景 · 经典解释</text>
+    <text x="120" y="360" fill="#f5f1e8" font-size="19" opacity=".8">湿表面的排水与接触机制：候选解释</text>
+    <text x="120" y="430" fill="#f5f1e8" font-size="19" opacity=".8">排水假说 · 不能替代条件明确的实验</text>
     <text x="770" y="70" fill="#f5f1e8" font-size="17" text-anchor="end" opacity=".55">Drainage Hypothesis（示意）</text>
   </g>
 </svg>

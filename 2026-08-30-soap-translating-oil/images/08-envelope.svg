@@ -4,9 +4,9 @@
     <!-- 完整病毒 -->
     <circle cx="250" cy="280" r="90" fill="rgba(42,30,19,.08)" stroke="#2a1e13" stroke-width="4"/>
     <circle cx="250" cy="280" r="60" stroke="#2a1e13" stroke-width="2" stroke-dasharray="6 6" opacity=".6"/>
-    <text x="250" y="272" fill="#2a1e13" font-size="20" text-anchor="middle">RNA</text>
-    <text x="250" y="300" fill="#2a1e13" font-size="18" text-anchor="middle" opacity=".7">脂质包膜</text>
-    <text x="250" y="410" fill="#2a1e13" font-size="20" text-anchor="middle" font-weight="700">包膜病毒 · 结构同油污</text>
+    <text x="250" y="260" fill="#2a1e13" font-size="30" text-anchor="middle">RNA</text>
+    <text x="250" y="315" fill="#2a1e13" font-size="30" text-anchor="middle" opacity=".7">脂质包膜</text>
+    <text x="250" y="410" fill="#2a1e13" font-size="30" text-anchor="middle" font-weight="700">完整脂质包膜</text>
     <!-- 皂分子进攻 -->
     <g stroke="#8a6d3b" stroke-width="3.5">
       <path d="M370 250 l 50 -20"/>
@@ -16,15 +16,15 @@
     <g fill="#8a6d3b">
       <circle cx="425" cy="228" r="9"/><circle cx="440" cy="306" r="9"/><circle cx="420" cy="368" r="9"/>
     </g>
-    <text x="430" y="200" fill="#8a6d3b" font-size="19" font-weight="700">皂分子 · 尾端插进脂质膜</text>
+    <text x="430" y="165" fill="#8a6d3b" font-size="30" font-weight="700">皂分子插入膜</text>
     <!-- 拆解结果 -->
     <path d="M560 268 L 660 268" stroke="#2a1e13" stroke-width="3"/>
-    <text x="610" y="253" fill="#2a1e13" font-size="18" text-anchor="middle" opacity=".8">膜被拆散</text>
+    <text x="610" y="253" fill="#2a1e13" font-size="30" text-anchor="middle" opacity=".8">膜被拆散</text>
     <circle cx="640" cy="330" r="34" fill="rgba(42,30,19,.1)" stroke="#2a1e13" stroke-width="3" stroke-dasharray="7 7"/>
-    <text x="640" y="337" fill="#2a1e13" font-size="16" text-anchor="middle">失活</text>
-    <text x="560" y="410" fill="#2a1e13" font-size="20" font-weight="700">包膜破坏 · 感染能力消失</text>
+    <text x="640" y="337" fill="#2a1e13" font-size="28" text-anchor="middle">失活</text>
+    <text x="640" y="430" text-anchor="middle" fill="#2a1e13" font-size="30" font-weight="700">感染力丧失</text>
     <!-- 边界注释 -->
-    <text x="120" y="520" fill="#2a1e13" font-size="18" opacity=".75">注意：仅对"包膜病毒"有效 · 无包膜病毒结构不同，此机制不适用</text>
-    <text x="770" y="70" fill="#2a1e13" font-size="17" text-anchor="end" opacity=".55">示意 · 非等比</text>
+    <text x="400" y="520" text-anchor="middle" fill="#2a1e13" font-size="30" opacity=".75">仅示包膜机制；无包膜病毒结构不同</text>
+    <text x="770" y="70" fill="#2a1e13" font-size="24" text-anchor="end" opacity=".55">示意 · 非等比</text>
   </g>
 </svg>

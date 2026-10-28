@@ -3,7 +3,7 @@
 import glob, pathlib, subprocess, sys
 
 DECKS = [
-    ("air-conditioning-moving-heat", "deck-01", "空调：冷是一种被搬运的状态 · Air Conditioning", "indigo-porcelain"),
+    ("air-conditioning-moving-heat", "deck-01", "空调：冷下来靠搬走热量 · Air Conditioning", "indigo-porcelain"),
     ("soap-translating-oil", "deck-02", "肥皂：把油污拆成能冲走的碎片 · Soap", "dune"),
     ("glass-transparent-solid", "deck-03", "玻璃：一场能量的错身而过 · Glass", "indigo-porcelain"),
     ("caffeine-blocking-sleepiness", "deck-04", "咖啡因：它没有给你任何能量 · Caffeine", "ink-default"),

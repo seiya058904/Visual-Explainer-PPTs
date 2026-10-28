@@ -21,7 +21,8 @@ import path from 'node:path';
 const require = createRequire(import.meta.url);
 const { chromium } = require(process.env.PLAYWRIGHT_PATH || 'playwright');
 
-const CHROME = 'C:/Users/admin/AppData/Local/ms-playwright/chromium-1237/chrome-win64/chrome.exe';
+const CHROME = process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE || chromium.executablePath();
+if (!fs.existsSync(CHROME)) throw new Error(`Chromium missing: ${CHROME}. Run npx playwright install chromium or set PLAYWRIGHT_CHROMIUM_EXECUTABLE.`);
 const args = process.argv.slice(2);
 const opt = (k, d) => { const i = args.indexOf('--' + k); return i >= 0 ? args[i + 1] : d; };
 const has = k => args.includes('--' + k);
@@ -110,14 +111,16 @@ async function sampleAnimRange(page, ms = 2600) {
 async function collectIssues(page) {
   return page.evaluate(() => {
     const vw = innerWidth, vh = innerHeight, TOL = 2;
-    const res = { overflow: [], footOverlap: [], navOverlap: [], brokenImages: [] };
+    const res = { overflow: [], footOverlap: [], navOverlap: [], brokenImages: [], invisibleText: [] };
     const slide = window.__qa.activeSlide();
     if (!slide) return res;
     const foot = window.__qa.foot();
     const footBox = foot ? foot.getBoundingClientRect() : null;
     const navBox = window.__qa.navBox();
     for (const el of window.__qa.textEls(slide)) {
-      const r = el.getBoundingClientRect();
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const r = range.getBoundingClientRect();
       if (r.width === 0 || r.height === 0) continue;
       if (r.left < -TOL || r.right > vw + TOL || r.top < -TOL || r.bottom > vh + TOL) {
         res.overflow.push({
@@ -141,6 +144,12 @@ async function collectIssues(page) {
     }
     for (const img of slide.querySelectorAll('img')) {
       if (img.complete && img.naturalWidth === 0) res.brokenImages.push(img.getAttribute('src'));
+    }
+    for (const el of slide.querySelectorAll('[data-anim]')) {
+      if (!el.textContent.trim() || el.closest('[data-anim="step"], [data-anim="arrow"]')) continue;
+      let opacity = 1, node = el;
+      while (node && node !== slide) { opacity *= +getComputedStyle(node).opacity; node = node.parentElement; }
+      if (opacity < 0.1) res.invisibleText.push({text: el.textContent.trim().slice(0,80), opacity: +opacity.toFixed(3)});
     }
     return res;
   });
@@ -168,14 +177,15 @@ async function pipelineState(page) {
 }
 
 async function shot(page, file) {
-  await page.screenshot({ path: path.join(SHOTS, file) });
+  const size = page.viewportSize();
+  await page.screenshot({ path: path.join(SHOTS, `${size.width}x${size.height}-${file}`) });
 }
 
 /* ---------- 单 deck QA ---------- */
 async function qaDeck(browser, deck, url, mode) {
-  const result = { deck, url, mode, viewports: {}, animations: {}, notes: [] };
+  const result = { deck, url, mode, geometryVersion: 'text-range-v2', viewports: {}, animations: {}, notes: [] };
   const viewports = mode === 'pending' ? (VIEWPORTS.length ? VIEWPORTS : [V1600, V1280, V1000])
-    : mode === 'approved' ? (VIEWPORTS.length ? VIEWPORTS : [V1600])
+    : mode === 'approved' ? (VIEWPORTS.length ? VIEWPORTS : [V1600, V1280, V1000])
     : [V1600];
 
   for (const vp of viewports) {
@@ -198,17 +208,16 @@ async function qaDeck(browser, deck, url, mode) {
     await page.addScriptTag({ content: PAGE_HELPERS }).catch(() => {});
     await page.waitForFunction(() => document.body.classList.contains('motion-ready'), null, { timeout: 6000 }).catch(() => {});
 
+    await page.evaluate(() => document.fonts.ready);
     // motion-ready?
     vpRes.motionReady = await page.evaluate(() => document.body.classList.contains('motion-ready'));
 
     const total = await page.evaluate(() => window.__qa.slideCount());
-    const deep = mode === 'pending';
+    const deep = mode === 'pending' || mode === 'approved';
     const types = await page.evaluate(() => [...document.querySelectorAll('.slide')].map(s => s.dataset.animate || (s.classList.contains('hero') ? 'hero' : 'cascade')));
-    // approved 非首视口只扫高风险页
-    const isHighRisk = i => ['pipeline', 'directional', 'hero'].includes(types[i]) || i === 0 || i === total - 1;
     const slideRecAnimHolder = {};
     for (let i = 0; i < total; i++) {
-      if (mode === 'approved' && vp.name !== viewports[0].name && !isHighRisk(i)) continue;
+      // Every page in every requested viewport is part of acceptance.
       if (i > 0) {
         // 按键直到到达第 i 页;记录“到达页自身”的动画采样(pipeline 页会吞键推进 step)
         let idxNow0 = await page.evaluate(() => window.__qa.idx());
@@ -238,26 +247,32 @@ async function qaDeck(browser, deck, url, mode) {
       });
       slideRec.pipeline = isPipeline; slideRec.directional = isDirectional;
 
+      // Animation sampling precedes settling: go() schedules entry after 450ms,
+      // and directional right entry ends up to 1.8s later. Never measure it mid-flight.
+      await page.waitForTimeout(1000);
+      if (slideRec.actualIndex !== i) throw new Error(`Navigation failed: expected ${i}, actual ${slideRec.actualIndex}`);
       // 几何
       const geo = await collectIssues(page);
       slideRec.overflow = geo.overflow; slideRec.footOverlap = geo.footOverlap;
       slideRec.navOverlap = geo.navOverlap; slideRec.brokenImages = geo.brokenImages;
+      slideRec.invisibleText = geo.invisibleText;
 
       // pipeline 深检
       if (isPipeline && deep) {
         const st0 = await pipelineState(page);
         slideRec.pipelineInitial = st0;
-        await shot(page, `${deck}-p${String(i).padStart(2, '0')}-pipeline-initial.png`).catch(() => {});
+        await shot(page, `${deck}-p${String(i).padStart(2, '0')}-pipeline-initial.png`);
         const steps = st0 ? st0.steps.length : 0;
         const mid = Math.floor(steps / 2);
         for (let s = 0; s < steps; s++) {
           await page.keyboard.press('ArrowRight');
           await page.waitForTimeout(650);
-          if (s === mid - 1) await shot(page, `${deck}-p${String(i).padStart(2, '0')}-pipeline-step${String(mid).padStart(2, '0')}.png`).catch(() => {});
+          if (s === mid - 1) await shot(page, `${deck}-p${String(i).padStart(2, '0')}-pipeline-step${String(mid).padStart(2, '0')}.png`);
         }
         const stN = await pipelineState(page);
         slideRec.pipelineComplete = stN;
-        await shot(page, `${deck}-p${String(i).padStart(2, '0')}-pipeline-complete.png`).catch(() => {});
+        slideRec.pipelineCompleteGeometry = await collectIssues(page);
+        await shot(page, `${deck}-p${String(i).padStart(2, '0')}-pipeline-complete.png`);
         // 再按一次应翻页(最后一页则停留)
         await page.keyboard.press('ArrowRight');
         await page.waitForTimeout(TRANSITION);
@@ -268,9 +283,9 @@ async function qaDeck(browser, deck, url, mode) {
       // 截图策略
       if (deep) {
         const fname = `${deck}-p${String(i).padStart(2, '0')}${isPipeline ? '-pipeline' : isDirectional ? '-directional' : ''}.png`;
-        await shot(page, fname).catch(() => {});
+        await shot(page, fname);
       } else if (geo.overflow.length || geo.footOverlap.length || geo.navOverlap.length || geo.brokenImages.length) {
-        await shot(page, `${deck}-v${vp.name}-p${String(i).padStart(2, '0')}-ISSUE.png`).catch(() => {});
+        await shot(page, `${deck}-v${vp.name}-p${String(i).padStart(2, '0')}-ISSUE.png`);
       }
       vpRes.slides.push(slideRec);
     }
@@ -280,15 +295,28 @@ async function qaDeck(browser, deck, url, mode) {
       await page.keyboard.press('Escape');
       await page.waitForTimeout(700);
       vpRes.overviewWorks = await page.evaluate(() => {
-        const els = [...document.querySelectorAll('body *')];
+        const els = [...document.querySelectorAll('#overview, [data-overview], #ppt-presenter-overview')];
+        // Early magazine runtimes retain a lexical `ov` node without an ID.
+        if (typeof ov !== 'undefined' && ov instanceof HTMLElement && !els.includes(ov)) els.push(ov);
         return els.some(el => {
           const cs = getComputedStyle(el);
           if (cs.display === 'none') return false;
           const r = el.getBoundingClientRect();
-          return cs.position === 'fixed' && r.width > innerWidth * 0.8 && r.height > innerHeight * 0.6;
+          const visible = cs.position === 'fixed' && r.width > innerWidth * 0.8 && r.height > innerHeight * 0.6;
+          if (visible) el.setAttribute('data-qa-overview', 'true');
+          return visible;
         });
       });
-      await page.keyboard.press('Escape');
+      if (vpRes.overviewWorks) {
+        const target = page.locator('[data-qa-overview] > div > div').first();
+        if (await target.count()) {
+          await target.click();
+          await page.waitForTimeout(TRANSITION);
+          vpRes.overviewSelectionWorks = await page.evaluate(() => window.__qa.idx() === 0);
+        } else await page.keyboard.press('Escape');
+      } else {
+        await page.keyboard.press('Escape');
+      }
       await page.waitForTimeout(400);
     }
 
@@ -513,30 +541,41 @@ async function lowPowerCross(browser, base) {
 const browser = await chromium.launch({ executablePath: CHROME, headless: true });
 
 if (MODE === 'pending' || MODE === 'approved') {
-  let decks = MODE === 'pending' ? PENDING_DECKS
-    : fs.readFileSync(opt('manifest', ''), 'utf-8').split('\n').map(s => s.trim()).filter(Boolean)
-        .map(f => ({ deck: path.basename(f, '.html'), url: `${BASE}/${f}` }));
-  if (ONLY) decks = decks.filter(d => d.deck.includes(ONLY));
+  const manifest = opt('manifest', '');
+  const paths = manifest ? fs.readFileSync(manifest, 'utf-8').split('\n').map(s => s.trim()).filter(Boolean)
+    : fs.readdirSync('ppt-collection').filter(f => f.endsWith('.html')).map(f => `ppt-collection/${f}`);
+  let decks = MODE === 'pending' && !manifest ? PENDING_DECKS
+    : paths.map(f => ({ deck: path.basename(f, '.html'), url: `${BASE}/${f}` }));
+  if (ONLY) decks = decks.filter(d => ONLY.split(',').some(part => d.deck.includes(part.trim())));
   const results = [];
   const queue = [...decks];
   async function worker() {
     while (queue.length) {
       const d = queue.shift();
       log('start', d.deck);
-      try { results.push(await qaDeck(browser, d.deck, d.url, MODE)); }
+      try {
+        const result = await qaDeck(browser, d.deck, d.url, MODE);
+        results.push(result);
+        fs.writeFileSync(path.join(OUT, `${MODE}-${d.deck}.json`), JSON.stringify(result, null, 1));
+      }
       catch (e) { results.push({ deck: d.deck, fatal: String(e).slice(0, 300) }); }
       log('done', d.deck);
     }
   }
   await Promise.all(Array.from({ length: CONCURRENCY }, worker));
   fs.writeFileSync(path.join(OUT, `${MODE}-results.json`), JSON.stringify(results, null, 1));
+  const hasGeometryIssue = s => ['overflow','footOverlap','navOverlap','brokenImages','invisibleText'].some(k => s[k]?.length);
+  const failedDecks = results.filter(r => r.fatal || Object.values(r.viewports || {}).some(v =>
+    v.pageErrors.length || v.console.length || v.failed.length || v.overviewWorks === false || v.overviewSelectionWorks === false || v.slides.some(s =>
+      s.page !== s.actualIndex || hasGeometryIssue(s) || hasGeometryIssue(s.pipelineCompleteGeometry || {}) || s.pipelineAdvanceExits === false)));
+  if (failedDecks.length) { process.exitCode = 1; log('acceptance failures', failedDecks.map(r => r.deck).join(', ')); }
   // Markdown 摘要
   const md = ['# Browser QA — ' + MODE, ''];
   for (const r of results) {
     md.push(`## ${r.deck}`);
     if (r.fatal) { md.push(`- FATAL: ${r.fatal}`); continue; }
     for (const [vn, vp] of Object.entries(r.viewports || {})) {
-      const bad = vp.slides.filter(s => s.overflow.length || s.footOverlap.length || s.navOverlap.length || s.brokenImages.length);
+      const bad = vp.slides.filter(s => hasGeometryIssue(s) || hasGeometryIssue(s.pipelineCompleteGeometry || {}));
       md.push(`- ${vn}: slides=${vp.slides.length} console=${vp.console.length} pageErrors=${vp.pageErrors.length} failed=${vp.failed.length} badSlides=${bad.length} motionReady=${vp.motionReady} overview=${vp.overviewWorks}`);
       for (const s of bad) md.push(`  - p${s.page + 1}: overflow=${s.overflow.length} footOv=${s.footOverlap.length} navOv=${s.navOverlap.length} brokenImg=${s.brokenImages.length} ${JSON.stringify(s.overflow).slice(0, 200)}`);
       if (vp.console.length) md.push(`  - console: ${vp.console.slice(0, 3).join(' | ')}`);
@@ -551,18 +590,21 @@ if (MODE === 'pending' || MODE === 'approved') {
 
 if (MODE === 'matrix') {
   const rows = await animationMatrix(browser, PENDING_DECKS);
+  if (rows.some(r => Object.values(r).some(v => typeof v === 'string' && /^(FAIL|PARTIAL|ERROR)/.test(v)))) process.exitCode = 1;
   fs.writeFileSync(path.join(OUT, 'animation-matrix.json'), JSON.stringify(rows, null, 1));
   log('matrix done');
 }
 
 if (MODE === 'standalone') {
   const rows = await standaloneAudit(browser, BASE);
+  if (rows.some(r => !r.contentVisible || r.localDepsMissing.length || r.pageErrors.length)) process.exitCode = 1;
   fs.writeFileSync(path.join(OUT, 'standalone-results.json'), JSON.stringify(rows, null, 1));
   log('standalone done');
 }
 
 if (MODE === 'lowpower-cross') {
   const r = await lowPowerCross(browser, BASE);
+  if (!r.deckA_on || r.contaminated) process.exitCode = 1;
   fs.writeFileSync(path.join(OUT, 'lowpower-cross.json'), JSON.stringify(r, null, 1));
   log('lowpower-cross', JSON.stringify(r));
 }
