@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/readme-cover.svg" width="100%" alt="VISUAL EXPLAINERS — illustrated project cover" />
+</p>
+
 <h1 align="center">📐 Visual Explainer PPTs</h1>
 
 <p align="center">

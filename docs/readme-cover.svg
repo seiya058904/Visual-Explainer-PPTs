@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="cover-title cover-desc">
+  <title id="cover-title">Visual-Explainer-PPTs — illustrated project cover</title>
+  <desc id="cover-desc">Look closer. Understand more. A decorative vector illustration accompanies the project title.</desc>
+  <rect width="1200" height="360" rx="24" fill="#F4F0E6"/>
+  <path d="M56 70h38" stroke="#B83F30" stroke-width="4" stroke-linecap="round"/>
+  <text x="110" y="76" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#B83F30" letter-spacing="2">EVERYDAY QUESTIONS / VISUAL ANSWERS</text>
+  <text x="56" y="174" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" fill="#30383C" letter-spacing="0">VISUAL EXPLAINERS</text>
+  
+  <text x="58" y="220" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#30383C" letter-spacing="0">Look closer. Understand more.</text>
+  <text x="58" y="315" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#B83F30" letter-spacing="2">RESEARCH · STRUCTURE · DESIGN</text>
+  <g transform="translate(758 53)">
+  <rect x="63" y="27" width="263" height="186" rx="5" fill="#DAD5C9" transform="rotate(8 190 120)"/>
+  <rect x="32" y="35" width="263" height="186" rx="5" fill="#E9E1D3" transform="rotate(-5 164 128)"/>
+  <rect x="28" y="48" width="263" height="186" rx="5" fill="#FFFDF8" stroke="#D1C8B8"/>
+  <path d="M51 76h31" stroke="#C64735" stroke-width="4"/>
+  <path d="M51 99h112M51 114h88" stroke="#30383C" stroke-width="7"/>
+  <path d="M51 144h91M51 154h73M51 164h84" stroke="#A5A39D" stroke-width="3"/>
+  <circle cx="230" cy="151" r="36" fill="#DCE3E0"/>
+  <path d="M230 115A36 36 0 0 1 266 151H230Z" fill="#C64735"/>
+  <path d="M51 204h216" stroke="#E7E2D8" stroke-width="2"/>
+  <circle cx="57" cy="191" r="3" fill="#C64735"/><circle cx="70" cy="191" r="3" fill="#D9C6B6"/><circle cx="83" cy="191" r="3" fill="#D9C6B6"/>
+  </g>
+</svg>
