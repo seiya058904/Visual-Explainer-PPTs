@@ -1,0 +1,72 @@
+{
+  "approvalDate": "2026-10-29",
+  "approvalBasis": "Owner explicitly approved all ten pending works in this conversation.",
+  "deckViewportChecks": 333,
+  "offlinePages": 111,
+  "galleryLinks": 48,
+  "galleryViewports": 5,
+  "unitTests": 2,
+  "pythonTests": 28,
+  "artifacts": [
+    {
+      "id": "air-conditioning-moving-heat",
+      "source": "2026-08-30-air-conditioning-moving-heat/index.html",
+      "artifact": "ppt-collection/air-conditioning-moving-heat.html",
+      "sha256": "4a7b8191804e06594430fb77a018ea5cafbf0d41e4f8477efb13c2507aa11167"
+    },
+    {
+      "id": "bridges-always-moving",
+      "source": "2026-08-30-bridges-always-moving/index.html",
+      "artifact": "ppt-collection/bridges-always-moving.html",
+      "sha256": "a8795def6e41e510bafb5cf3f48d0e74ff4ad789f5a6b0519f8f304ceae14e47"
+    },
+    {
+      "id": "caffeine-blocking-sleepiness",
+      "source": "2026-08-30-caffeine-blocking-sleepiness/index.html",
+      "artifact": "ppt-collection/caffeine-blocking-sleepiness.html",
+      "sha256": "6bfc0053730135923a367f0c47503e94ce20a12d8bbc94efec05d886f9cd681b"
+    },
+    {
+      "id": "container-the-box",
+      "source": "2026-08-30-container-the-box/index.html",
+      "artifact": "ppt-collection/container-the-box.html",
+      "sha256": "4ff4c616ec01737e3f6d2ecc73205fa31a246f62a86f9419befc7cdbf3455d05"
+    },
+    {
+      "id": "fingerprints-not-for-grip",
+      "source": "2026-08-30-fingerprints-not-for-grip/index.html",
+      "artifact": "ppt-collection/fingerprints-not-for-grip.html",
+      "sha256": "61ae4bc114d6d6281d451ce81a32939c226ec79ef5bb142eeb62e60f8b8cd93e"
+    },
+    {
+      "id": "glass-transparent-solid",
+      "source": "2026-08-30-glass-transparent-solid/index.html",
+      "artifact": "ppt-collection/glass-transparent-solid.html",
+      "sha256": "aff69f18c037aea75672555035e51033c4a9244a6b83eb7bad1e49ebad779494"
+    },
+    {
+      "id": "soap-translating-oil",
+      "source": "2026-08-30-soap-translating-oil/index.html",
+      "artifact": "ppt-collection/soap-translating-oil.html",
+      "sha256": "101f1ade1c8b846ac9a448f75e6912903730e673f2cb62d993e7647b74161a38"
+    },
+    {
+      "id": "tap-water-clean-process",
+      "source": "2026-08-30-tap-water-clean-process/index.html",
+      "artifact": "ppt-collection/tap-water-clean-process.html",
+      "sha256": "b8dff7eefbe8e46834be6842f589c86619f53f2bf98f75895076115f93eaec12"
+    },
+    {
+      "id": "traffic-light-yellow-physics",
+      "source": "2026-08-30-traffic-light-yellow-physics/index.html",
+      "artifact": "ppt-collection/traffic-light-yellow-physics.html",
+      "sha256": "c61ada52960e7d9b4da314cc95693e9f47808beeddeaf3ce0b00e1bbeadc9028"
+    },
+    {
+      "id": "zipper-line-of-teeth",
+      "source": "2026-08-30-zipper-line-of-teeth/index.html",
+      "artifact": "ppt-collection/zipper-line-of-teeth.html",
+      "sha256": "4c8d8061fe671bf01b046b51e3b7801a4d96efe7b980fbb0ea70c93f8f224083"
+    }
+  ]
+}

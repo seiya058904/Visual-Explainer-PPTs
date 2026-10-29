@@ -24,7 +24,7 @@
 </p>
 
 <p align="center">
-  <sub>38 APPROVED HTML DECKS &nbsp; · &nbsp; TWO EDITORIAL SYSTEMS &nbsp; · &nbsp; ONE PRODUCTION STANDARD</sub>
+  <sub>48 APPROVED HTML DECKS &nbsp; · &nbsp; TWO EDITORIAL SYSTEMS &nbsp; · &nbsp; ONE PRODUCTION STANDARD</sub>
 </p>
 
 <p align="center">
@@ -49,7 +49,7 @@ Choose a question and follow the argument. These are selected **approved standal
 The gallery selects six starting points from the same [catalog](site/catalog.json) that drives the full library below. Each preview is captured from the real presentation.
 
 <p align="center">
-  <strong><a href="https://seiya058904.github.io/Visual-Explainer-PPTs/">Browse all 38 interactive explainers →</a></strong>
+  <strong><a href="https://seiya058904.github.io/Visual-Explainer-PPTs/">Browse all 48 interactive explainers →</a></strong>
 </p>
 
 > [!TIP]
@@ -209,10 +209,20 @@ The new static gallery can be built locally with `npm ci` and `npm run build`. S
 - [How Weather Forecasts Work](ppt-collection/weather-forecast.html) — 天气预报：人类如何预测明天 · Weather Forecast
 - [Wi-Fi: The Last Few Meters of Connection](ppt-collection/wifi.html) — Wi-Fi：空气中的互联网秩序
 - [Why the World Stops for Football](ppt-collection/world-cup.html) — 足球：世界为什么为一颗球停下
+- [Air Conditioning Moves Heat](ppt-collection/air-conditioning-moving-heat.html) — 空调：冷下来靠搬走热量
+- [Why Bridges Are Always Moving](ppt-collection/bridges-always-moving.html) — 桥梁：它从来不是静止的
+- [How Caffeine Blocks Sleepiness](ppt-collection/caffeine-blocking-sleepiness.html) — 咖啡因：它没有给你任何能量
+- [The Shipping Container That Changed Trade](ppt-collection/container-the-box.html) — 集装箱：改变世界的不是船
+- [Fingerprints Were Not Made for Grip](ppt-collection/fingerprints-not-for-grip.html) — 指纹：皮肤上最著名的误解
+- [Why Glass Is Transparent and Solid](ppt-collection/glass-transparent-solid.html) — 玻璃：一场能量的错身而过
+- [How Soap Carries Oil Away](ppt-collection/soap-translating-oil.html) — 肥皂：一块皂里的分子工程
+- [The Engineering Behind Tap Water](ppt-collection/tap-water-clean-process.html) — 自来水：拧开龙头后的百年工程
+- [The Physics of the Yellow Light](ppt-collection/traffic-light-yellow-physics.html) — 黄灯：三秒钟的物理题
+- [The Engineering in a Zipper](ppt-collection/zipper-line-of-teeth.html) — 拉链：一行可以开合的牙齿
 <!-- catalog:end -->
 
 ## Maintenance and review evidence
 
-The [48-work audit](docs/maintenance/iteration-2026-10-28.md) links individual review cards and records factual changes, tested artifacts and remaining limits. Ten candidates remain **Pending Review** and are excluded from the public build. See [maintenance instructions](docs/maintenance/gallery-maintenance.md) for reproducible exports, covers, checks and local candidate previews.
+The [48-work audit](docs/maintenance/iteration-2026-10-28.md) links individual review cards and records factual changes, tested artifacts and remaining limits. On October 29, the owner approved all ten former candidates; all 48 works now belong to the formal collection. The dated audit retains its original review scope. See [maintenance instructions](docs/maintenance/gallery-maintenance.md) for reproducible exports, covers, checks and local candidate previews.
 
 Core text and embedded images were checked with external networking blocked. Three historical decks still use online photographs: Bill Gates (9), Medical Longevity (1), and Science of Garbage (2). Their gallery entries disclose this limitation.

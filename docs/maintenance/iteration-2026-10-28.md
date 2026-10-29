@@ -112,3 +112,8 @@ python docs/build/build-review.py
 ```
 
 `SOURCE`, `ID`, `STAGE`, `MANIFEST` and `QA_FOLDER` denote the per-batch values recorded in the ledger and review cards, not one fictional all-at-once run. The public build contains Approved assets only. The local candidate review entry is http://127.0.0.1:8901/.codex/review/ while the repository source server is running; its ten links remain Pending.
+
+
+## 2026-10-29 owner approval and promotion
+
+The owner explicitly approved all ten former Pending works. All 48 works are now Approved; the dated table above preserves October 28 status. The ten new formal HTML artifacts were exported through the existing transaction, without changing deck sources. Current validation: 333 slide/viewport checks across three sizes, 111 offline pages, five gallery viewports and all 48 links passed; 2 Node tests and 28 Python tests passed. Ten covers and the mobile gallery were visually inspected. Source and artifact hashes are recorded in [approval receipt](approval-2026-10-29.json). Raw current outputs remain in the dashboard task directory. This approval does not claim a new independent review of every scientific statement.

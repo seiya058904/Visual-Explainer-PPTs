@@ -31,7 +31,7 @@
 - `ppt-collection/`：用户明确认可后的最终单 HTML 成品库，也是只读参考样本。成品必须以「单 HTML 发布产物」为准：repo 相对图片/`assets/motion.min.js` 一律由 `docs/build/export-standalone.py` 内联为 data URI 生成，禁止手工往 `ppt-collection/` 拷贝 `images/` 或其他资源目录来"补依赖"。
   - 导出命名：`project/index.html` → `project.html`，普通 HTML 保留原名；批量目标冲突或本地依赖失败时整批不写入，写入失败逐项回滚。若回滚自身失败，必须保留输出目录中 `.standalone-*` 的原文件备份与 `recovery.json`，报错须给出恢复路径；确认所有旧文件恢复前不得清理该事务目录。manifest 更新失败时保留提交前的映射，不以缺少最终状态判定备份无用。
   - 默认写暂存目录；`--stage DIR` 指定暂存目录，`--out-dir DIR` 指定最终目录，组合使用时先在 stage 准备、最终写 out-dir。`--check-only` 不创建目录或文件。导出器改动后运行 `python -m unittest discover -s docs/build -p 'test_*.py'`，并对实际输入跑依赖预检和 `standalone` 浏览器 QA。
-- 本轮用户已授权精修 38 份已认可成品，须保持源文件 → 导出 → 浏览器验证的追溯关系；10 份候选的技术验收不构成用户批准，正式站构建只允许 Approved。
+- 2026-10-29 用户已明确批准原 10 份候选，当前共 48 份已认可成品；须保持源文件 → 导出 → 浏览器验证的追溯关系。后续候选仍须用户明确批准，技术验收不自动晋级，正式站构建只允许 Approved。
 - `5.9/`：失败品和历史 PPTX 素材，禁止作为案例学习、风格模仿或质量基准。
 - 新项目目录：`YYYY-MM-DD-topic-slug/`
 - 主文件：`index.html`

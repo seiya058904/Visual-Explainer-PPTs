@@ -980,7 +980,7 @@
   },
   {
     "id": "air-conditioning-moving-heat",
-    "status": "pending",
+    "status": "approved",
     "titleZh": "空调：冷下来靠搬走热量",
     "titleEn": "Air Conditioning Moves Heat",
     "summaryZh": "说明空调通过制冷循环把室内热量搬到室外，并用温度与湿度解释体感差异。",
@@ -993,8 +993,8 @@
       "moving",
       "heat"
     ],
-    "artifact": null,
-    "previewPath": "2026-08-30-air-conditioning-moving-heat/index.html",
+    "artifact": "ppt-collection/air-conditioning-moving-heat.html",
+    "previewPath": "ppt-collection/air-conditioning-moving-heat.html",
     "slideCount": 12,
     "style": "A",
     "cover": "site/covers/air-conditioning-moving-heat.webp",
@@ -1003,11 +1003,15 @@
     "source": "2026-08-30-air-conditioning-moving-heat/index.html",
     "mappingStatus": "verified",
     "sourceCandidates": [],
-    "networkPhotoCount": 0
+    "networkPhotoCount": 0,
+    "approval": {
+      "date": "2026-10-29",
+      "basis": "User explicitly approved the ten pending works for the formal collection."
+    }
   },
   {
     "id": "bridges-always-moving",
-    "status": "pending",
+    "status": "approved",
     "titleZh": "桥梁：它从来不是静止的",
     "titleEn": "Why Bridges Are Always Moving",
     "summaryZh": "介绍桥梁因温度、荷载和风而产生位移，以及伸缩缝等结构如何为运动留出空间。",
@@ -1019,8 +1023,8 @@
       "always",
       "moving"
     ],
-    "artifact": null,
-    "previewPath": "2026-08-30-bridges-always-moving/index.html",
+    "artifact": "ppt-collection/bridges-always-moving.html",
+    "previewPath": "ppt-collection/bridges-always-moving.html",
     "slideCount": 11,
     "style": "A",
     "cover": "site/covers/bridges-always-moving.webp",
@@ -1029,11 +1033,15 @@
     "source": "2026-08-30-bridges-always-moving/index.html",
     "mappingStatus": "verified",
     "sourceCandidates": [],
-    "networkPhotoCount": 0
+    "networkPhotoCount": 0,
+    "approval": {
+      "date": "2026-10-29",
+      "basis": "User explicitly approved the ten pending works for the formal collection."
+    }
   },
   {
     "id": "caffeine-blocking-sleepiness",
-    "status": "pending",
+    "status": "approved",
     "titleZh": "咖啡因：它没有给你任何能量",
     "titleEn": "How Caffeine Blocks Sleepiness",
     "summaryZh": "解释咖啡因如何暂时阻断腺苷受体信号、减轻困倦感，但不会消除睡眠需求。",
@@ -1045,8 +1053,8 @@
       "blocking",
       "sleepiness"
     ],
-    "artifact": null,
-    "previewPath": "2026-08-30-caffeine-blocking-sleepiness/index.html",
+    "artifact": "ppt-collection/caffeine-blocking-sleepiness.html",
+    "previewPath": "ppt-collection/caffeine-blocking-sleepiness.html",
     "slideCount": 11,
     "style": "A",
     "cover": "site/covers/caffeine-blocking-sleepiness.webp",
@@ -1055,11 +1063,15 @@
     "source": "2026-08-30-caffeine-blocking-sleepiness/index.html",
     "mappingStatus": "verified",
     "sourceCandidates": [],
-    "networkPhotoCount": 0
+    "networkPhotoCount": 0,
+    "approval": {
+      "date": "2026-10-29",
+      "basis": "User explicitly approved the ten pending works for the formal collection."
+    }
   },
   {
     "id": "container-the-box",
-    "status": "pending",
+    "status": "approved",
     "titleZh": "集装箱：改变世界的不是船",
     "titleEn": "The Shipping Container That Changed Trade",
     "summaryZh": "讲述标准化集装箱如何降低装卸摩擦、连接海陆运输并重塑全球贸易。",
@@ -1071,8 +1083,8 @@
       "the",
       "box"
     ],
-    "artifact": null,
-    "previewPath": "2026-08-30-container-the-box/index.html",
+    "artifact": "ppt-collection/container-the-box.html",
+    "previewPath": "ppt-collection/container-the-box.html",
     "slideCount": 12,
     "style": "A",
     "cover": "site/covers/container-the-box.webp",
@@ -1081,11 +1093,15 @@
     "source": "2026-08-30-container-the-box/index.html",
     "mappingStatus": "verified",
     "sourceCandidates": [],
-    "networkPhotoCount": 0
+    "networkPhotoCount": 0,
+    "approval": {
+      "date": "2026-10-29",
+      "basis": "User explicitly approved the ten pending works for the formal collection."
+    }
   },
   {
     "id": "fingerprints-not-for-grip",
-    "status": "pending",
+    "status": "approved",
     "titleZh": "指纹：皮肤上最著名的误解",
     "titleEn": "Fingerprints Were Not Made for Grip",
     "summaryZh": "检视指纹与摩擦、触觉之间的关系，区分常见解释与仍有限的科学证据。",
@@ -1098,8 +1114,8 @@
       "for",
       "grip"
     ],
-    "artifact": null,
-    "previewPath": "2026-08-30-fingerprints-not-for-grip/index.html",
+    "artifact": "ppt-collection/fingerprints-not-for-grip.html",
+    "previewPath": "ppt-collection/fingerprints-not-for-grip.html",
     "slideCount": 10,
     "style": "A",
     "cover": "site/covers/fingerprints-not-for-grip.webp",
@@ -1108,11 +1124,15 @@
     "source": "2026-08-30-fingerprints-not-for-grip/index.html",
     "mappingStatus": "verified",
     "sourceCandidates": [],
-    "networkPhotoCount": 0
+    "networkPhotoCount": 0,
+    "approval": {
+      "date": "2026-10-29",
+      "basis": "User explicitly approved the ten pending works for the formal collection."
+    }
   },
   {
     "id": "glass-transparent-solid",
-    "status": "pending",
+    "status": "approved",
     "titleZh": "玻璃：一场能量的错身而过",
     "titleEn": "Why Glass Is Transparent and Solid",
     "summaryZh": "解释可见光穿过玻璃的机制，以及固体结构与透明外观并不矛盾。",
@@ -1124,8 +1144,8 @@
       "transparent",
       "solid"
     ],
-    "artifact": null,
-    "previewPath": "2026-08-30-glass-transparent-solid/index.html",
+    "artifact": "ppt-collection/glass-transparent-solid.html",
+    "previewPath": "ppt-collection/glass-transparent-solid.html",
     "slideCount": 11,
     "style": "A",
     "cover": "site/covers/glass-transparent-solid.webp",
@@ -1134,11 +1154,15 @@
     "source": "2026-08-30-glass-transparent-solid/index.html",
     "mappingStatus": "verified",
     "sourceCandidates": [],
-    "networkPhotoCount": 0
+    "networkPhotoCount": 0,
+    "approval": {
+      "date": "2026-10-29",
+      "basis": "User explicitly approved the ten pending works for the formal collection."
+    }
   },
   {
     "id": "soap-translating-oil",
-    "status": "pending",
+    "status": "approved",
     "titleZh": "肥皂：一块皂里的分子工程",
     "titleEn": "How Soap Carries Oil Away",
     "summaryZh": "说明表面活性剂如何帮助水分散油脂和污垢，并讲解洗手时间的常见依据。",
@@ -1150,8 +1174,8 @@
       "translating",
       "oil"
     ],
-    "artifact": null,
-    "previewPath": "2026-08-30-soap-translating-oil/index.html",
+    "artifact": "ppt-collection/soap-translating-oil.html",
+    "previewPath": "ppt-collection/soap-translating-oil.html",
     "slideCount": 11,
     "style": "A",
     "cover": "site/covers/soap-translating-oil.webp",
@@ -1160,11 +1184,15 @@
     "source": "2026-08-30-soap-translating-oil/index.html",
     "mappingStatus": "verified",
     "sourceCandidates": [],
-    "networkPhotoCount": 0
+    "networkPhotoCount": 0,
+    "approval": {
+      "date": "2026-10-29",
+      "basis": "User explicitly approved the ten pending works for the formal collection."
+    }
   },
   {
     "id": "tap-water-clean-process",
-    "status": "pending",
+    "status": "approved",
     "titleZh": "自来水：拧开龙头后的百年工程",
     "titleEn": "The Engineering Behind Tap Water",
     "summaryZh": "梳理自来水从水源、处理、输送到龙头的公共工程链条。",
@@ -1177,8 +1205,8 @@
       "clean",
       "process"
     ],
-    "artifact": null,
-    "previewPath": "2026-08-30-tap-water-clean-process/index.html",
+    "artifact": "ppt-collection/tap-water-clean-process.html",
+    "previewPath": "ppt-collection/tap-water-clean-process.html",
     "slideCount": 11,
     "style": "A",
     "cover": "site/covers/tap-water-clean-process.webp",
@@ -1187,11 +1215,15 @@
     "source": "2026-08-30-tap-water-clean-process/index.html",
     "mappingStatus": "verified",
     "sourceCandidates": [],
-    "networkPhotoCount": 0
+    "networkPhotoCount": 0,
+    "approval": {
+      "date": "2026-10-29",
+      "basis": "User explicitly approved the ten pending works for the formal collection."
+    }
   },
   {
     "id": "traffic-light-yellow-physics",
-    "status": "pending",
+    "status": "approved",
     "titleZh": "黄灯：三秒钟的物理题",
     "titleEn": "The Physics of the Yellow Light",
     "summaryZh": "用停止距离、反应时间与路口规则解释黄灯下的安全决策。",
@@ -1204,8 +1236,8 @@
       "yellow",
       "physics"
     ],
-    "artifact": null,
-    "previewPath": "2026-08-30-traffic-light-yellow-physics/index.html",
+    "artifact": "ppt-collection/traffic-light-yellow-physics.html",
+    "previewPath": "ppt-collection/traffic-light-yellow-physics.html",
     "slideCount": 11,
     "style": "A",
     "cover": "site/covers/traffic-light-yellow-physics.webp",
@@ -1214,11 +1246,15 @@
     "source": "2026-08-30-traffic-light-yellow-physics/index.html",
     "mappingStatus": "verified",
     "sourceCandidates": [],
-    "networkPhotoCount": 0
+    "networkPhotoCount": 0,
+    "approval": {
+      "date": "2026-10-29",
+      "basis": "User explicitly approved the ten pending works for the formal collection."
+    }
   },
   {
     "id": "zipper-line-of-teeth",
-    "status": "pending",
+    "status": "approved",
     "titleZh": "拉链：一行可以开合的牙齿",
     "titleEn": "The Engineering in a Zipper",
     "summaryZh": "拆解拉链齿、滑块与织带如何协同工作，使柔性开口可以反复闭合。",
@@ -1230,8 +1266,8 @@
       "line",
       "teeth"
     ],
-    "artifact": null,
-    "previewPath": "2026-08-30-zipper-line-of-teeth/index.html",
+    "artifact": "ppt-collection/zipper-line-of-teeth.html",
+    "previewPath": "ppt-collection/zipper-line-of-teeth.html",
     "slideCount": 11,
     "style": "A",
     "cover": "site/covers/zipper-line-of-teeth.webp",
@@ -1240,6 +1276,10 @@
     "source": "2026-08-30-zipper-line-of-teeth/index.html",
     "mappingStatus": "verified",
     "sourceCandidates": [],
-    "networkPhotoCount": 0
+    "networkPhotoCount": 0,
+    "approval": {
+      "date": "2026-10-29",
+      "basis": "User explicitly approved the ten pending works for the formal collection."
+    }
   }
 ]

@@ -5,7 +5,7 @@ import {matches, normalize} from '../site/filter.mjs';
 const catalog=JSON.parse(fs.readFileSync(new URL('../site/catalog.json',import.meta.url),'utf8'));
 test('catalog accounts for every approved file, with no pending public artifacts',()=>{
  const approved=catalog.filter(e=>e.status==='approved');
- assert.equal(approved.length,38);assert.equal(catalog.filter(e=>e.status==='pending').length,10);
+ assert.equal(approved.length,48);assert.equal(catalog.filter(e=>e.status==='pending').length,0);
  assert.equal(new Set(catalog.map(e=>e.id)).size,48);
  assert.deepEqual(approved.map(e=>e.artifact.split('/').pop()).sort(),fs.readdirSync('ppt-collection').filter(f=>f.endsWith('.html')).sort());
  for(const e of catalog){assert.ok(e.titleZh&&e.titleEn&&e.summaryZh);assert.ok(e.categories.length);assert.ok(fs.existsSync(e.previewPath));if(e.status==='pending')assert.equal(e.artifact,null);}

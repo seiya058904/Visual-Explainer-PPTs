@@ -41,7 +41,7 @@ network-hosted enhancements or pictures are available offline.
 ## Local candidate review
 
 `python docs/build/build-review.py` creates `.codex/review/index.html`.
-Open it on a separate repository-root source server (`python -m http.server 8901 --bind 127.0.0.1`), not the public build. It links the ten candidate sources
+Open it on a separate repository-root source server (`python -m http.server 8901 --bind 127.0.0.1`), not the public build. It links any currently pending sources (none after the owner approved the ten former candidates on October 29)
 and their review records. This page must never be copied to the Pages artifact.
 
 ## Deployment boundary
