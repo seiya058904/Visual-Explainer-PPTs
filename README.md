@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="docs/readme-cover.svg" width="100%" alt="VISUAL EXPLAINERS — illustrated project cover" />
+  <a href="https://seiya058904.github.io/Visual-Explainer-PPTs/">
+    <img src="docs/readme-cover.svg" width="100%" alt="VISUAL EXPLAINERS — illustrated project cover" />
+  </a>
 </p>
 
 <h1 align="center">📐 Visual Explainer PPTs</h1>
@@ -20,7 +22,7 @@
 </p>
 
 <p align="center">
-  <a href="ppt-collection/">📚 Approved Decks</a>
+  <a href="#browse-the-complete-library">📚 All 48 Decks</a>
   &nbsp;·&nbsp;
   <a href="#visual-language">🎨 Visual Language</a>
   &nbsp;·&nbsp;
@@ -66,20 +68,20 @@ Every topic calls for a different kind of explanation. These examples are **actu
 <table>
   <tr>
     <td width="50%" align="center" valign="top">
-      <a href="ppt-collection/display-how-images-are-made.html">
+      <a href="https://seiya058904.github.io/Visual-Explainer-PPTs/ppt-collection/display-how-images-are-made.html">
         <img src="2026-08-15-display-how-images-are-made/images/01-display-pixels.jpg" width="100%" alt="Source visual about how display pixels produce images" />
       </a>
       <br />
-      <strong><a href="ppt-collection/display-how-images-are-made.html">Inside a Display →</a></strong>
+      <strong><a href="https://seiya058904.github.io/Visual-Explainer-PPTs/ppt-collection/display-how-images-are-made.html">Inside a Display →</a></strong>
       <br />
       <sub>Pixels, color, and the creation of an image</sub>
     </td>
     <td width="50%" align="center" valign="top">
-      <a href="ppt-collection/planetary-defense-changing-the-odds.html">
+      <a href="https://seiya058904.github.io/Visual-Explainer-PPTs/ppt-collection/planetary-defense-changing-the-odds.html">
         <img src="2026-08-14-planetary-defense-changing-the-odds/images/09-hera.jpg" width="100%" alt="Source image of the Hera spacecraft used in the planetary defense explainer" />
       </a>
       <br />
-      <strong><a href="ppt-collection/planetary-defense-changing-the-odds.html">Planetary Defense →</a></strong>
+      <strong><a href="https://seiya058904.github.io/Visual-Explainer-PPTs/ppt-collection/planetary-defense-changing-the-odds.html">Planetary Defense →</a></strong>
       <br />
       <sub>Detection, intervention, and changing a trajectory</sub>
     </td>
@@ -159,20 +161,15 @@ Do not treat [`5.9/`](5.9/) as a template or quality baseline. It contains retai
 
 </details>
 
-## 📜 Rights and Attribution
+<a id="browse-the-complete-library"></a>
+## 📚 Browse the Complete Library
 
-This repository has **no declared project-wide open-source license**. Public source access and an HTML download do not, by themselves, authorize reuse, modification, or redistribution of every deck or its media. Check any third-party asset's rights and source separately.
+[Search and explore the live library →](https://seiya058904.github.io/Visual-Explainer-PPTs/#library)
 
----
+For source access and downloads, expand the complete index below. The original Chinese titles are preserved alongside their English labels. To build the gallery locally, use `npm ci` and `npm run build`; see [gallery maintenance](docs/maintenance/gallery-maintenance.md) for preview and verification.
 
-<p align="center">
-  <sub>Everyday questions. Carefully structured answers. Visual understanding.</sub><br>
-  <sub>Made to explain—not just to decorate.</sub>
-</p>
-
-## Browse the complete library
-
-The new static gallery can be built locally with `npm ci` and `npm run build`. See [gallery maintenance](docs/maintenance/gallery-maintenance.md) for preview, verification and publication status.
+<details>
+<summary><strong>View all 48 approved decks and source files</strong></summary>
 
 <!-- catalog:start -->
 - [How Noise Cancelling Headphones Make Silence](ppt-collection/active-noise-cancellation-fighting-sound-with-sound.html) — 主动降噪：发动机消失了，人声却还在
@@ -225,8 +222,21 @@ The new static gallery can be built locally with `npm ci` and `npm run build`. S
 - [The Engineering in a Zipper](ppt-collection/zipper-line-of-teeth.html) — 拉链：一行可以开合的牙齿
 <!-- catalog:end -->
 
+</details>
+
 ## Maintenance and review evidence
 
 The [48-work audit](docs/maintenance/iteration-2026-10-28.md) links individual review cards and records factual changes, tested artifacts and remaining limits. On October 29, the owner approved all ten former candidates; all 48 works now belong to the formal collection. The dated audit retains its original review scope. See [maintenance instructions](docs/maintenance/gallery-maintenance.md) for reproducible exports, covers, checks and local candidate previews.
 
 Core text and embedded images were checked with external networking blocked. Three historical decks still use online photographs: Bill Gates (9), Medical Longevity (1), and Science of Garbage (2). Their gallery entries disclose this limitation.
+
+## 📜 Rights and Attribution
+
+This repository has **no declared project-wide open-source license**. Public source access and an HTML download do not, by themselves, authorize reuse, modification, or redistribution of every deck or its media. Check any third-party asset's rights and source separately.
+
+---
+
+<p align="center">
+  <sub>Everyday questions. Carefully structured answers. Visual understanding.</sub><br>
+  <sub>Made to explain—not just to decorate.</sub>
+</p>
