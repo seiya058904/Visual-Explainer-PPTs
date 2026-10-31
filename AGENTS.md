@@ -409,46 +409,9 @@ Presenter mode：运行 `validate-presenter-mode.mjs`。
 
 ---
 
-## 13. 记忆沉淀硬规则
+## 13. 项目经验维护
 
-> 本规则是**强制闭环**，不是建议。它解决两个历史问题：(1) 修复完成后 AI 可能忘记沉淀；(2) 把经验追加成海量时间线复盘，造成 `AGENTS.md` 膨胀。
->
-> 原则：**强制沉淀，但禁止强制追加**。
-> 也就是：**发现错误 → 判断是否可复用 → 可复用则修改现有长期规则 → 必要时才新增一条**。
-> 而不是：**发现错误 → 往 `AGENTS.md` 末尾再加一篇复盘**。
-
-### 13.1 何时必须触发经验判断
-
-每次出现以下**任一**情况，都必须在本次任务结束前执行一次经验判断：
-
-- 用户指出了错误或缺陷
-- 浏览器验收发现了此前未记录的问题
-- 原有规则导致错误结果
-- 修复方式具有跨页面或跨项目复用价值
-- 发现新的高频失败模式、验收盲区或流程缺陷
-
-### 13.2 判断结果只能是两种
-
-**A. 可复用**
-必须在本次任务结束前，将结论**合并进 `AGENTS.md` 的现有规则或「高频失败模式」表**。优先修改已有规则，不新建时间线式复盘。
-
-**B. 不可复用**
-不写入长期记忆。典型情况：纯内容改字、单页偶发需求、只适用于当前主题的特殊调整。
-
-**禁止修复完成后跳过这一步。**
-
-### 13.3 已有规则优先，不重复追加
-
-- 如果问题暴露的是现有规则错误或不完整，**直接修订旧规则**，而不是在文件末尾追加一条相似的新规则。
-- 已按日期命名的历史复盘章节不再新增；新的可复用结论只进「高频失败模式」表或被收敛进第 3/4/5/6/7/8/9 节对应规则。
-
-### 13.4 任务结束前检查
-
-任务收尾时问自己：
-
-> 本轮是否产生了未来项目应该知道的新信息？
-
-如果回答是，`AGENTS.md` 必须已经更新（合并进现有规则或高频失败模式表）；否则视为任务未完成。
+任务结束前判断是否有值得复用的经验；仅当本次任务授权修改项目规则时，将结论合并进现有规则或高频失败模式，避免重复追加和时间线式复盘。只读审计或未授权规则修改时，在报告中提出建议，不改写 `AGENTS.md`。修改用户长期记忆仍须用户明确请求。
 
 ---
 
@@ -458,3 +421,8 @@ Presenter mode：运行 `validate-presenter-mode.mjs`。
 - 不提交编辑器配置、依赖目录、测试报告和临时日志。
 - 每次提交聚焦一个 deck 或一个明确的仓库维护事项。
 - 不在用户未明确要求时执行部署、发布或其他不可逆外部操作。
+
+## Browser tool selection
+
+- Prefer Ego Browser for exploratory navigation, visual review and interactive checks when available. Use Playwright for repeatable regression, CI, isolation, request interception or other automation requiring its APIs; combine tools when useful. If Ego is unavailable, use a suitable existing browser tool.
+- Keep this repository's required browser commands, versions, profiles and safety boundaries; an exploratory check does not replace required automated tests. Do not alter real user data or production state for testing. Report the tools, coverage and any untested paths.
