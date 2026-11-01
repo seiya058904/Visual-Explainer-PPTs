@@ -18,7 +18,13 @@
 - 通用文案质量 → 文案 Prompt 为准。
 - 本项目制作字段、视觉实现与验收 → `AGENTS.md` 为准。
 
-`docs/` 下的 build、draft、analysis、archive 等均为过程产物，不是规范。
+`docs/` 下的 build、draft、analysis、archive 等主要是工具与过程资料，不替代上述制作规范。展示站的维护步骤见 `docs/maintenance/gallery-maintenance.md`。
+
+### 展示站维护任务
+
+- 展示站源码位于 `site/`，`site/catalog.json` 是目录事实源；维护展示站前先读 `docs/maintenance/gallery-maintenance.md`，不要套用制作新 deck 的流程。
+- 根目录 `npm test` 运行展示站 Node 测试，`npm run build` 构建 `dist/`，`npm run test:site` 做站点浏览器回归；`npm run covers` 在来源服务已启动时更新变化的成品封面。按维护文档准备对应服务和验证范围，文档改动不必重建站点。
+- `.github/workflows/gallery.yml` 维护 Pages 构建/验证与发布流程；只把 Approved 成品放入公开产物，Pending 留本地。构建成功不等于部署成功，推送和部署仍需对应授权。
 
 ---
 
